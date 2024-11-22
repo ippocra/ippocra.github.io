@@ -13,5 +13,5 @@ We user [polyglot](https://github.com/untra/polyglot) as multilingual plugin and
 
 # Deployment
 
-Github Pages
+Automatically deployed on each push on `main` via `github-action`.
 
