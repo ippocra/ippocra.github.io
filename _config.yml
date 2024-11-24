@@ -34,9 +34,9 @@ minimal_mistakes_skin: "mint"
 locale               : "en"
 logo: "/assets/images/ippo-outline-green.png"
 masthead_title: "Ippocra"
-
 sass:
   quiet_deps: true    # Disable printing deprecation warnings to terminal
+teaser: /assets/images/teaser-news-blog.png
 
 defaults:
   # _posts

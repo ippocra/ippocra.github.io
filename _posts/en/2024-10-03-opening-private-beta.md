@@ -6,6 +6,8 @@ categories: news
 lang: en
 ---
 
+![image-center](/assets/images/opening-beta-flower.png){: .align-center}
+
 We are very pleased to announce that we have opened our private beta.
 
 From today is possible to register an account on to try and test it. Register here!

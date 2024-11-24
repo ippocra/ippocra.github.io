@@ -6,7 +6,7 @@ categories: news
 lang: it
 ---
 
-# Lancio della Beta Privata
+![image-center](/assets/images/opening-beta-flower.png){: .align-center}
 
 Siamo molto felici di annunciare che oggi abbiamo lanciato la beta privata di Ippocra.
 E' possibile registrarsi a questo [link](https://app.ippocra.com/register).
