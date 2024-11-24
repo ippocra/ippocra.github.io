@@ -41,23 +41,37 @@ teaser: /assets/images/teaser-news-blog.png
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
 
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: false
+
+# Site Sidebar used in the post
+author:
+  name: "Ippocra"
+  avatar: "assets/images/ippocra-logo-white-ippo-green-background.png"
+  bio: "Your health records at your fingertips"
+  location: "Planet Earth"
+  links:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: https://www.facebook.com/profile.php?id=61564933710120
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: https://www.linkedin.com/company/ippocra/
 
 # Site Footer
 footer:
@@ -68,8 +82,7 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: https://www.linkedin.com/company/ippocra/
-    - label: "Terms"
-      url: "/legal/terms/"
+
 
 pagination:
   enabled: true
