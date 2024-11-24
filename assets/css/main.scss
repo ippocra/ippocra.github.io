@@ -32,3 +32,24 @@ search: false
 #footer {
     background-color: #439ba6;
 }
+
+#footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-links > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.legal-links li {
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size: 0.75em;
+    list-style-type: none;
+    text-decoration: underline;
+    //text-align: right;
+}

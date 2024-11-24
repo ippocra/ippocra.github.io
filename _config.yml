@@ -68,6 +68,8 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: https://www.linkedin.com/company/ippocra/
+    - label: "Terms"
+      url: "/legal/terms/"
 
 pagination:
   enabled: true
