@@ -1,7 +1,7 @@
 ---
 layout: splash
 lang: it
-permalink: /legal/cookies-policy
+permalink: /legal/cookies-policy/
 title: Cookies Policy
 ---
 

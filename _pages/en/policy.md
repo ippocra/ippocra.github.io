@@ -1,7 +1,7 @@
 ---
 layout: splash
 lang: en
-permalink: /legal/policy
+permalink: /legal/policy/
 title: Informativa sulla Privacy di Ippocra
 ---
 

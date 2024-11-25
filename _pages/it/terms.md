@@ -1,7 +1,7 @@
 ---
 layout: splash
 lang: it
-permalink: /legal/terms
+permalink: /legal/terms/
 title: Termini e Condizioni
 ---
 
