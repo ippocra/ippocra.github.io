@@ -106,6 +106,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-minifier
 
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
 # Polyglot
 
 languages: ["it", "en"]
