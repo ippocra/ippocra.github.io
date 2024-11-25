@@ -114,7 +114,7 @@ parallel_localization: false
 
 
 include:
-  - _pages/
+  - _pages
 
 exclude:
   - README.md
