@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Your health records at your fingertips. Easily store, find 
   and share all your health data. Any time, from anywhere.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ippocra.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
@@ -104,6 +104,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-minifier
 
 # Polyglot
 
