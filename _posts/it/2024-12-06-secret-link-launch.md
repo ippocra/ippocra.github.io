@@ -1,7 +1,7 @@
 ---
 
 title:  "Lancio del Secret Link"
-date:   2024-12-03 16:30:00 +0100
+date:   2024-12-06 10:00:00 +0100
 categories: news
 lang: it
 header:
@@ -22,7 +22,7 @@ Finora la risposta é sempre stata: **PANIC**.
 Da oggi non piú! Grazie alla nuova funziona del Secret-Link e' facilissimo condividere i 
 vostri documenti che avete su Ippocra con lo specialista. 
 
-# INSERT GIF
+![image-center](/assets/images/secret-link-creation.gif){: .align-center}
 
 Andando sul secret-link lo specialista potrá vedere tutte le analisi ed i referti, ed
 ottenere tutte le informazioni di cui ha bisogno!

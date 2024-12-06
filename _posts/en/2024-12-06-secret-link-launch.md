@@ -1,7 +1,7 @@
 ---
 
 title:  "Secret-Link is now available!"
-date:   2024-12-03 16:30:00 +0100
+date:   2024-12-06 10:00:00 +0100
 categories: news
 lang: en
 header:
@@ -23,7 +23,7 @@ your new specialist, either scannig the QR Code, or simply providing the link to
 doctor. The secret-link will be active only for a short period of time, and then it will 
 auto-destroy, preserving your documents.
 
-#INSERT GIF
+![image-center](/assets/images/secret-link-creation.gif){: .align-center}
 
 *Bonus track: we also launched a new website!*
 
