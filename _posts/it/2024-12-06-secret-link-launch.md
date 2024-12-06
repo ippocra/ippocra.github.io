@@ -29,8 +29,7 @@ ottenere tutte le informazioni di cui ha bisogno!
 
 *Bonus track: abbiamo anche un nuovo sito :D*
 
-Abbiamo un nuovo sito, dove troverete anche questo post, che ci permetterá di far vedere e 
-capire come funziona Ippocra e come usare Ippocra. Troverete sempre piú informazioni. 
+Abbiamo un nuovo sito, dove vi trovate **adesso!**. Ci risentiamo presto con nuovi aggiornamenti.
 Per restare connessi potete seguirci anche su [Facebook](https://www.facebook.com/profile.php?id=61564933710120) o su [LinkedIn](https://www.linkedin.com/company/ippocra/).
 
 Stay tuned!

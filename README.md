@@ -16,6 +16,9 @@ To build the site:
 
     bundle exec jekyll serve
 
+Or the shortcut script:
+
+    ./build_website.sh
 
 We use [polyglot](https://github.com/untra/polyglot) as multilingual plugin and 
 [minimal-mistakes](https://mmistakes.github.io/) as theme with modification.

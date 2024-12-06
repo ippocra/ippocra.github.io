@@ -27,7 +27,7 @@ auto-destroy, preserving your documents.
 
 *Bonus track: we also launched a new website!*
 
-We have a new website, where you can find this post, and many other in the future!
+We have a new website, where you are **now!** Soon we will come with more news.
 In the meantime you can also follow us on [Facebook](https://www.facebook.com/profile.php?id=61564933710120) 
 or on [LinkedIn](https://www.linkedin.com/company/ippocra/).
 
