@@ -25,7 +25,7 @@ vostri documenti che avete su Ippocra con lo specialista.
 ![image-center](/assets/images/secret-link-creation.gif){: .align-center}
 
 Andando sul secret-link lo specialista potrá vedere tutte le analisi ed i referti, ed
-ottenere tutte le informazioni di cui ha bisogno!
+ottenere tutte le informazioni di cui ha bisogno! Prova tu stesso: [Secret-link](https://app.ippocra.com/secretlinks/fe5eece2-8717-4e65-abea-97fa295c869a).
 
 *Bonus track: abbiamo anche un nuovo sito :D*
 

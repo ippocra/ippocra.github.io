@@ -25,6 +25,8 @@ auto-destroy, preserving your documents.
 
 ![image-center](/assets/images/secret-link-creation.gif){: .align-center}
 
+Try yourself: [Secret-link](https://app.ippocra.com/secretlinks/fe5eece2-8717-4e65-abea-97fa295c869a).
+
 *Bonus track: we also launched a new website!*
 
 We have a new website, where you are **now!** Soon we will come with more news.
