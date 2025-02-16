@@ -114,7 +114,7 @@ jekyll-minifier:
 
 languages: ["it", "en"]
 default_lang: "it"
-exclude_from_localization: ["javascript", "images", "css", "public", "README.md"]
+exclude_from_localization: ["javascript", "images", "css", "public", "README.md", "sitemap"]
 parallel_localization: false
 
 

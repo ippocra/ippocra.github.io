@@ -12,6 +12,14 @@ For inquiries regarding permissions, licensing, or other information, please con
 
 We use bundle to set up the enviroment: https://jekyllrb.com/tutorials/using-jekyll-with-bundler/#configure-bundler-install-path
 
+Set up the path for the bundle:
+
+    bundle config set --local path 'vendor/bundle'
+
+Install all the gems:
+
+    bundle install
+
 To build the site:
 
     bundle exec jekyll serve
