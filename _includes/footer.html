@@ -1,30 +1,31 @@
 <div id="footer-links">
   <div class="page__footer-follow">
-      <ul class="social-icons">
-        {% if site.data.ui-text[site.locale].follow_label %}
-          <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-        {% endif %}
-    
-        {% if site.footer.links %}
-          {% for link in site.footer.links %}
-            {% if link.label and link.url %}
-              <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-    
-        {% unless site.atom_feed.hide %}
-          <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-        {% endunless %}
-      </ul>
-    </div>
-    
-    <div class="legal-links">
-      <ul>
-        <li><a href="/legal/terms/">Terms</a></li>
-        <li><a href="/legal/policy/">Privacy Policy</a></li>
-        <li><a href="/legal/cookies-policy/">Cookies Policy</a></li>
-      </ul>
-    </div>
+    <ul class="social-icons">
+      {% if site.data.ui-text[site.locale].follow_label %}
+        <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
+      {% endif %}
+  
+      {% if site.footer.links %}
+        {% for link in site.footer.links %}
+          {% if link.label and link.url %}
+            <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+  
+      {% unless site.atom_feed.hide %}
+        <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
+      {% endunless %}
+    </ul>
   </div>
+  
+  <div class="legal-links">
+
+    <ul>
+      <li><a href="/legal/terms/">Terms</a></li>
+      <li><a href="/legal/policy/">Privacy Policy</a></li>
+      <li><a href="/legal/cookies-policy/">Cookies Policy</a></li>
+    </ul>
+  </div>
+</div>
   <div class="page__footer-copyright"><b>&copy; 2025 <a href="{{ site.copyright_url | default: site.url }}">{{ site.copyright | default: site.title }}</a></b> 
