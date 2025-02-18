@@ -1,10 +1,11 @@
 <div id="footer-links">
-  <div class="page__footer-follow">
+  <div id="footer__social-icons" class="page__footer-follow">
+    {% if site.data.ui-text[site.locale].follow_label %}
+    <p>
+      <strong>{{ site.data.ui-text[site.locale].follow_label }}</strong>
+    </p>
+    {% endif %}
     <ul class="social-icons">
-      {% if site.data.ui-text[site.locale].follow_label %}
-        <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-      {% endif %}
-  
       {% if site.footer.links %}
         {% for link in site.footer.links %}
           {% if link.label and link.url %}
@@ -18,9 +19,12 @@
       {% endunless %}
     </ul>
   </div>
-  
-  <div class="legal-links">
-
+  <div id="footer__contact">
+    <p><strong>CONTACT US</strong></p>
+    <p>email: <strong>info@ippocra.com</strong></p>
+  </div>
+  <div id="footer__legal-links">
+    <p><strong>LEGAL</strong></p>
     <ul>
       <li><a href="/legal/terms/">Terms</a></li>
       <li><a href="/legal/policy/">Privacy Policy</a></li>
