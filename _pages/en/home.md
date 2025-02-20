@@ -18,10 +18,10 @@ intro:
 
 feature_row:
 feature_row_left:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+  - image_path: /assets/images/family_in_front_of_the_sea.jpg
     alt: "Private Customers"
     title: "Ippocra for Private Customers"
-    excerpt: 'use the **smart search** to find what you need, **automatically organize**,
+    excerpt: 'Use the **smart search** to find what you need, **automatically organize**,
     keep yuor data **safe with our encryption**, securely share them wiht medical professionals 
     via the **secret-link**'
     url: "/customers"
@@ -29,14 +29,15 @@ feature_row_left:
     btn_class: "btn--primary"
 feature_row_right:
   - image_path: /assets/images/woman-medic.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Right Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
+    alt: "Ippocra for Business Customers"
+    title: "Ippocra for Business Customers"
+    excerpt: 'Easily **digitalize** your reports and provide them to your customers securely via the **secret-link**. Provide
+    the Ippocra experience to your customers, and be able to have **your info in front** of their eyes.'
+    url: "/business"
     btn_label: "Read More"
     btn_class: "btn--primary"    
 ---
-# Get the information you need in a snapshot thanks to the smart search. 
+# Easily search your health data, and securely share them 
 {: .text-center}
 
 
