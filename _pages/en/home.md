@@ -18,21 +18,21 @@ intro:
 
 feature_row:
 feature_row_left:
-  - image_path: /assets/images/family_in_front_of_the_sea.jpg
+  - image_path: /assets/images/big_green_ippo_on_white.png
     alt: "Private Customers"
     title: "Ippocra for Private Customers"
-    excerpt: 'Use the **smart search** to find what you need, **automatically organize**,
-    keep yuor data **safe with our encryption**, securely share them wiht medical professionals 
-    via the **secret-link**'
+    excerpt: 'Use the **smart search** to find what you need, **automatically organize** your data,
+    keep yuor data **safe with our encryption**, securely share them with medical professionals 
+    via the **secret-link**.'
     url: "/customers"
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row_right:
-  - image_path: /assets/images/woman-medic.jpg
+  - image_path: /assets/images/big_white_ippo_on_green.png
     alt: "Ippocra for Business Customers"
     title: "Ippocra for Business Customers"
-    excerpt: 'Easily **digitalize** your reports and provide them to your customers securely via the **secret-link**. Provide
-    the Ippocra experience to your customers, and be able to have **your info in front** of their eyes.'
+    excerpt: 'Easily **digitalize** your reports and provide them to your customers securely via the **secret-link**. Provide the Ippocra experience to **your customers**, and be have **your brand and info** 
+    always available to them'
     url: "/business"
     btn_label: "Read More"
     btn_class: "btn--primary"    
