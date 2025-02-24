@@ -21,9 +21,9 @@ feature_row_left:
   - image_path: /assets/images/big_green_ippo_on_white.png
     alt: "Private Customers"
     title: "Ippocra for Private Customers"
-    excerpt: 'Use the **smart search** to find what you need, **automatically organize** your data,
-    keep yuor data **safe with our encryption**, securely share them with medical professionals 
-    via the **secret-link**.'
+    excerpt: 'Use the <a href="customers#smart_search">**smart search**</a> to find what you need, <a href="customers#automatic_organization">**automatically organize**</a> your data,
+    keep yuor data <a href="customers#security_first">**safe with our encryption**</a>, 
+    securely share them with medical professionals via the <a href="customers#secret_link">**secret-link**</a>.'
     url: "/customers"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -40,23 +40,12 @@ feature_row_right:
 # Easily search your health data, and securely share them 
 {: .text-center}
 
+<hr/>
 
 {% include feature_row id="feature_row_left" type="left" %}
 
 {% include feature_row id="feature_row_right" type="right" %}
 
-<!-- <div id="screenshots">
-{% include feature_row id="feature_row_showcase" %}
-</div> -->
-
-<div id="hero-headline">
-Open Beta
-</div>
-
-
-<div id="hero-paragraph">
-<b>Ippocra</b> is now in open beta!
-</div>
 
 <center>
 <a id="register-call" href="https://app.ippocra.com/register" class="btn btn--primary">Register here!</a>
