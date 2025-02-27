@@ -6,10 +6,6 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.2"
   overlay_image: /assets/images/sfondo-verde-header.avif
-  actions:
-    - label: "Try it out"
-      url: "https://app.ippocra.com"
-      btn: btn--primary
   
 excerpt: "Your health records at your fingertips."
 
@@ -18,7 +14,7 @@ intro:
 
 feature_row:
 feature_row_left:
-  - image_path: /assets/images/big_green_ippo_on_white.png
+  - image_path: /assets/images/white_bigger_rectangular_with_green_ippo_inside.png
     alt: "Private Customers"
     title: "Ippocra for Private Customers"
     excerpt: 'Use the <a href="customers#smart_search">**smart search**</a> to find what you need, <a href="customers#automatic_organization">**automatically organize**</a> your data,
@@ -28,17 +24,14 @@ feature_row_left:
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row_right:
-  - image_path: /assets/images/big_white_ippo_on_green.png
+  - image_path: /assets/images/green_bigger_rectangular_with_white_ippo_inside.png
     alt: "Ippocra for Business Customers"
     title: "Ippocra for Business Customers"
-    excerpt: 'Easily **digitalize** your reports and provide them to your customers securely via the **secret-link**. Provide the Ippocra experience to **your customers**, and be have **your brand and info** 
-    always available to them'
+    excerpt: 'Easily <a href="business#digitalize">**digitalize**</a> your reports and provide them to your customers securely via the <a href="business#secret-link">**secret-link**</a>. Provide the Ippocra experience to <a href="business#your-customers">**your customers**</a>, and have your business in the forefront when they are looking at their <a href="business#brand-forefront">**health records**</a>.'
     url: "/business"
     btn_label: "Read More"
     btn_class: "btn--primary"    
 ---
-# Easily search your health data, and securely share them 
-{: .text-center}
 
 <hr/>
 
@@ -47,9 +40,6 @@ feature_row_right:
 {% include feature_row id="feature_row_right" type="right" %}
 
 
-<center>
-<a id="register-call" href="https://app.ippocra.com/register" class="btn btn--primary">Register here!</a>
-</center>
 
 
 
