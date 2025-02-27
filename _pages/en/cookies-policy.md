@@ -43,7 +43,7 @@ The Site uses the following cookies:
 
 * ***Strictly necessary.*** These cookies are necessary for the proper functioning and security of the Site and cannot be disabled in our systems. The installation and use of these cookies do not require user consent. You can set your browser to block these cookies, but some parts of the Site may not work.
 
-  * ***Functionality.*** These cookies allow the Site to provide certain features. The installation and use of these cookies do not require user consent. You can set your browser to block these cookies, but some services may not function correctly.
+* ***Functionality.*** These cookies allow the Site to provide certain features. The installation and use of these cookies do not require user consent. You can set your browser to block these cookies, but some services may not function correctly.
 
 **b. Performance Cookies.** 
 

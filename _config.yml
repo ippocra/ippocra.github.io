@@ -116,7 +116,11 @@ languages: ["it", "en"]
 default_lang: "it"
 exclude_from_localization: ["javascript", "images", "css", "public", "README.md", "sitemap"]
 parallel_localization: false
-
+# practical values langsep are "|", "•", "·", "-", "–"
+langsep: "|"
+keywords: 
+  en: health, reports, analysis, receipts, blood work, records, sharing, organizing, finding, archiving, retrieving, clinic, medics, doctors, individuals
+  it: salute, referti, analisi, ricevute, sangue, condivisione, organizzazione, ricerca, archiviazione, cliniche, private, medicina, dottori, privati
 
 include:
   - _pages

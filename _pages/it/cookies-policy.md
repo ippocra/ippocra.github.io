@@ -39,7 +39,7 @@ Il Sito utilizza i seguenti cookies:
 
 * ***strettamente necessari.*** Tali cookie sono necessari al corretto funzionamento e alla sicurezza del Sito e non possono essere disattivati nei nostri sistemi. L’installazione e l’uso di questi cookie non richiede il consenso dell’utente. È possibile impostare il browser usato per la navigazione per bloccare questi cookie, ma alcune parti del Sito potrebbero non funzionare.
 
-  * ***di funzionalità.*** Tali cookies consentono al Sito di fornire funzionalità. L’installazione e l’uso di questi cookie non richiedono il consenso dell’utente. È possibile impostare il browser usato per la navigazione per bloccare questi cookie, ma alcuni servizi potrebbero non funzionare correttamente. 
+* ***di funzionalità.*** Tali cookies consentono al Sito di fornire funzionalità. L’installazione e l’uso di questi cookie non richiedono il consenso dell’utente. È possibile impostare il browser usato per la navigazione per bloccare questi cookie, ma alcuni servizi potrebbero non funzionare correttamente. 
 
 **b. Cookie di prestazione.** 
 
