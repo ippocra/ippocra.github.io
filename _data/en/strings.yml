@@ -1,0 +1,8 @@
+navigation:
+  individuals:
+    title: Individuals
+    url: /customers
+  business:
+    title: Business
+    url: /business
+    

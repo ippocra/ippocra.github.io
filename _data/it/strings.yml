@@ -1,0 +1,7 @@
+navigation:
+  individuals:
+    title: Privati
+    url: /customers
+  business:
+    title: Professionisti
+    url: /business

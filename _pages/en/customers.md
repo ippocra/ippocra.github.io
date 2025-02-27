@@ -10,7 +10,7 @@ feature_row_smart_search:
     alt: "Smart search"
     title: <span id="smart_search">Smart Search</span>
     excerpt: 'Use the **smart search** to find what you need. We extract what is **inside** the document, so you
-    can search using any keyword you want with any language your document are! (for example here we are searching **Ematocrito** because we have an italian document)'
+    can search using any keyword you want with any language your document are!'
 
 feature_row_automatic_organization:
   - image_path: /assets/images/green_bigger_rectangular_with_white_ippo_inside.png
