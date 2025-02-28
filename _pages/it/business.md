@@ -8,7 +8,7 @@ feature_row:
 feature_row_digitalize:
   - image_path: /assets/images/white_bigger_rectangular_with_green_ippo_inside.png
     title: <span id="digitalize">Digitalizza i tuoi referti</span>
-    excerpt: "**Digitalizza i tuoi referti**, e mandali ai tuoi clienti in maniera sicura e facilmente fruibili. Dimentica file zip criptati con casuali password. **Non 
+    excerpt: "**Digitalizza i tuoi referti**, e inviali ai tuoi clienti in maniera sicura e facilmente fruibili. Dimentica file zip criptati con casuali password. **Non 
     perder piú tempo** per ritrovare un referto e rimandarlo al cliente. Usa **l'integrazione di 
     Ippocra**!"
 
@@ -46,5 +46,5 @@ feature_row_brand_forefront:
     <h1>Contattaci per una demo!</h1>
 </div>
 
-Mandaci una email a **info@ippocra.com** e ti ricontatteremo immediatamente!
+Scrivici a **info@ippocra.com** e ti ricontatteremo immediatamente!
 {: .text-center}

@@ -21,7 +21,7 @@ feature_row_left:
     excerpt: 'Use the <a href="customers#smart_search">**smart search**</a> to find what you need, <a href="customers#automatic_organization">**automatically organize**</a> your data,
     keep yuor data <a href="customers#security_first">**safe with our encryption**</a>, 
     securely share them with medical professionals via the <a href="customers#secret_link">**secret-link**</a>.'
-    excerpt: 'Usa la <a href="customers#smart_search">**ricerca smart**</a> per trovare quello che cerchi, <a href="customers#automatic_organization">**organizza in maniera automatica**</a> i tuoi dati, mantieni i tuoi dati sicuri con <a href="customers#security_first">**la nostra criptazione**</a>, condividili in maniera secura con i professionisti medici attraverso il <a href="customers#secret_link">**secret-link**</a>.'
+    excerpt: 'Usa la <a href="customers#smart_search">**ricerca smart**</a> per trovare quello che cerchi, <a href="customers#automatic_organization">**organizza in maniera automatica**</a> i tuoi dati, mantieni i tuoi dati sicuri con <a href="customers#security_first">**la nostra criptazione**</a>, condividili in maniera sicura con i professionisti medici attraverso il <a href="customers#secret_link">**secret-link**</a>.'
     url: "/customers"
     btn_label: "Scopri di piú"
     btn_class: "btn--primary"
