@@ -1,6 +1,6 @@
 ---
 
-title:  "Lancio del Secret Link"
+title:  "Lancio del IppoLink"
 date:   2024-12-06 10:00:00 +0100
 categories: news
 lang: it
@@ -10,7 +10,7 @@ header:
 
 ![image-center](/assets/images/sea_and_clouds.jpg){: .align-center}
 
-Grandi novitá: abbiamo rinnovato il nostro sito ed abbiamo lanciato la nuova funzionalitá "Secret Link".
+Grandi novitá: abbiamo rinnovato il nostro sito ed abbiamo lanciato la nuova funzionalitá "IppoLink".
 
 ## Nuovo Secret-Link
 
@@ -21,9 +21,9 @@ Finora la risposta é sempre stata: **PANIC**.
 Da oggi non piú! Grazie alla nuova funzione del Secret-Link e' facilissimo condividere i 
 vostri documenti che avete su Ippocra con lo specialista. 
 
-![image-center](/assets/images/secret-link-creation.gif){: .align-center}
+![image-center](/assets/images/ippolink-creation.gif){: .align-center}
 
-Andando sul secret-link lo specialista potrá vedere tutte le analisi ed i referti, ed
+Andando sul ippolink lo specialista potrá vedere tutte le analisi ed i referti, ed
 ottenere tutte le informazioni di cui ha bisogno! Prova tu stesso: [Secret-link](https://app.ippocra.com/secretlinks/fe5eece2-8717-4e65-abea-97fa295c869a).
 
 *Bonus track: abbiamo rinnovato il nostro sito :D*

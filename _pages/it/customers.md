@@ -27,10 +27,10 @@ feature_row_security:
 
 feature_row_secret_link:
   - image_path: /assets/images/green_bigger_rectangular_with_white_ippo_inside.png
-    alt: "Secret Link"
-    title: <span id="secret_link">Secret Link</span>
-    excerpt: "I tuoi dati medici sono utili soltanto se **puoi condividerli con il personale medico**. E' per questo che abbiamo inventato il **secret-link**! Per esempio, quando devi andare da un nuovo specialista, come puoi portare i tuoi documenti medici? Semplice: crea un 
-    secret-link. Questo automaticamente scadrá il giorno della data di scadenza, tenendo **i tuoi 
+    alt: "IppoLink"
+    title: <span id="ippolink">IppoLink</span>
+    excerpt: "I tuoi dati medici sono utili soltanto se **puoi condividerli con il personale medico**. E' per questo che abbiamo inventato l'**ippolink**! Per esempio, quando devi andare da un nuovo specialista, come puoi portare i tuoi documenti medici? Semplice: crea un 
+    ippolink. Questo automaticamente scadrá il giorno della data di scadenza, tenendo **i tuoi 
     documenti al sicuro**. Evita di condividere i tuoi dati medici attraverso canali non sicuro, com
     software di messaggeria istantanea, dove protrebbero essere utilizzati per istruire dell'AI. 
     **Mantieni i tuoi dati al sicuro. Condividili in sicurezza, solo con chi vuoi tu, 

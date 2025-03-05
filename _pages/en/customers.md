@@ -29,9 +29,9 @@ feature_row_security:
 
 feature_row_secret_link:
   - image_path: /assets/images/green_bigger_rectangular_with_white_ippo_inside.png
-    alt: "Secret Link"
-    title: <span id="secret_link">Secret Link</span>
-    excerpt: "Your health data are useful only if **you can share them securely with professionals**. That's why we have invented the **secret-link**! For example, when you need to go to a new doctor: how can you share your medical history? Just create a secret-link with the relevant information! The secret-link will automatically expire after the expiration date, keeping your **data secure**. Avoid to share your data via not trusted means, like instant messaging applications, where they could be used to train some random AI. **Keep your data safe. Securely share them. Only when you want to**"
+    alt: "IppoLink"
+    title: <span id="ippolink">IppoLink</span>
+    excerpt: "Your health data are useful only if **you can share them securely with professionals**. That's why we have invented the **ippolink**! For example, when you need to go to a new doctor: how can you share your medical history? Just create a ippolink with the relevant information! The ippolink will automatically expire after the expiration date, keeping your **data secure**. Avoid to share your data via not trusted means, like instant messaging applications, where they could be used to train some random AI. **Keep your data safe. Securely share them. Only when you want to**"
 
 ---
 

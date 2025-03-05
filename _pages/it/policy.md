@@ -172,7 +172,7 @@ In ogni caso, l'Utente dovrà utilizzare connessioni internet sicure e mantenere
 
 **4.7. Condivisione dei dati con terzi**
 
-I tuoi dati personali possono essere condivisi tra gli utenti del Sito, in particolare tra Utenti Privati, Professionisti e Strutture Sanitarie relativamente relativamente a dati sanitari del paziente e dei componenti del suo piano, o a terzo soggetti ai quali l'utente decide di inviare i suoi dati mediante creazione di un link segreto generato per il singolo trasferimento (“**Secret Link**”). 
+I tuoi dati personali possono essere condivisi tra gli utenti del Sito, in particolare tra Utenti Privati, Professionisti e Strutture Sanitarie relativamente relativamente a dati sanitari del paziente e dei componenti del suo piano, o a terzo soggetti ai quali l'utente decide di inviare i suoi dati mediante creazione di un link segreto generato per il singolo trasferimento (“**IppoLink**”). 
 
 I professionisti e le strutture sanitarie, rispetto ai dati da loro raccolti e poi archiviati sul Sito e condivisi con i pazienti, agiscono da Titolari del trattamento.
 

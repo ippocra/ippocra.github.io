@@ -20,10 +20,10 @@ health situation. Usually the reponse to that was: **PANIC**.
 
 Not anymore! Thanks to the *Secret-Link* functionality you can securely share the date with
 your new specialist, either scannig the QR Code, or simply providing the link to the 
-doctor. The secret-link will be active only for a short period of time, and then it will 
+doctor. The ippolink will be active only for a short period of time, and then it will 
 auto-destroy, preserving your documents.
 
-![image-center](/assets/images/secret-link-creation.gif){: .align-center}
+![image-center](/assets/images/ippolink-creation.gif){: .align-center}
 
 Try yourself: [Secret-link](https://app.ippocra.com/secretlinks/fe5eece2-8717-4e65-abea-97fa295c869a).
 

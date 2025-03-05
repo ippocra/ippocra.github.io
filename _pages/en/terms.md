@@ -240,7 +240,7 @@ If the User uses the services not only for themselves but also for other Benefic
 
 The User is aware and understands that the confirmations above are absolutely necessary to allow the Company to create an account or enable the use of services for other Beneficiaries. Furthermore, the User agrees to indemnify and hold harmless the Company and Professionals from any damage, loss, cost, or liability, direct or indirect, arising from the violation of these terms of service or the User’s failure to validly represent the family member they claim to act on behalf of.
 
-\- **Consultation and/or Document Transmission**. The User can consult the documents by receiving from another User or from Professionals and/or healthcare structures a secret link to access the document. The link has a limited and predefined duration. Similarly, the User can transmit their own documents or documents and/or files uploaded for themselves or other Beneficiaries (e.g., family doctor, Professionals and/or healthcare structures) by creating a private link with a limited expiration, predefined duration, and selected by the user when creating the link.
+\- **Consultation and/or Document Transmission**. The User can consult the documents by receiving from another User or from Professionals and/or healthcare structures a ippolink to access the document. The link has a limited and predefined duration. Similarly, the User can transmit their own documents or documents and/or files uploaded for themselves or other Beneficiaries (e.g., family doctor, Professionals and/or healthcare structures) by creating a private link with a limited expiration, predefined duration, and selected by the user when creating the link.
 
 **\- Subscription Plans**.
 
@@ -254,7 +254,7 @@ Several subscription plans are available to the User. More information is availa
 
 The Professional and/or Healthcare Structure agrees to indemnify and hold harmless the Company from any damage, loss, cost, or liability, direct or indirect, arising from a violation of the service terms.
 
-\- **Consultation and/or Document Transmission**. The User can consult the documents by receiving from another User or Professionals and/or healthcare structures a secret link to access the document. The link has a limited and predefined duration. Similarly, the User can transmit their own documents or documents and/or files uploaded for themselves or other Beneficiaries (e.g., family doctor, Professionals and/or healthcare structures) by creating a private link with a limited expiration, predefined duration, and selected by the user when creating the link.
+\- **Consultation and/or Document Transmission**. The User can consult the documents by receiving from another User or Professionals and/or healthcare structures a ippolink to access the document. The link has a limited and predefined duration. Similarly, the User can transmit their own documents or documents and/or files uploaded for themselves or other Beneficiaries (e.g., family doctor, Professionals and/or healthcare structures) by creating a private link with a limited expiration, predefined duration, and selected by the user when creating the link.
 
 **\- Subscription Plans**.
 

@@ -16,7 +16,7 @@ feature_row_your-customers:
   - image_path: /assets/images/green_bigger_rectangular_with_white_ippo_inside.png
     title: <span id="your-customers">Ippocra experience for your customers</span>
     excerpt: 'Differentiate yor service, providing to your customers to have the Ippocra experience! Via our
-    Ippo plan, anyone can create a free plan, and import the documents shared via the secret link. You bring 
+    Ippo plan, anyone can create a free plan, and import the documents shared via the ippolink. You bring 
     the peace of mind to them, and they will come back to re-use your services, thanks to be able to have 
     all neatly organized and easily searchable.'
 

@@ -177,7 +177,7 @@ In any case, the User must use secure internet connections and keep their device
 
 **4.7. Sharing data with third parties**
 
-Your personal data may be shared between the Site users, particularly between Private Users, Professionals, and Healthcare Facilities regarding patient health data and their treatment plans, or with third parties to whom the user decides to send their data by creating a secret link generated for the individual transfer (“**Secret Link**”).
+Your personal data may be shared between the Site users, particularly between Private Users, Professionals, and Healthcare Facilities regarding patient health data and their treatment plans, or with third parties to whom the user decides to send their data by creating a ippolink generated for the individual transfer (“**IppoLink**”).
 
 Professionals and healthcare facilities, regarding the data they collect and later store on the Site and share with patients, act as Data Controllers.
 
