@@ -21,7 +21,7 @@ feature_row_left:
     excerpt: 'Use the <a href="customers#smart_search">**smart search**</a> to find what you need, <a href="customers#automatic_organization">**automatically organize**</a> your data,
     keep yuor data <a href="customers#security_first">**safe with our encryption**</a>, 
     securely share them with medical professionals via the <a href="customers#ippolink">**ippolink**</a>.'
-    excerpt: 'Usa la <a href="customers#smart_search">**ricerca smart**</a> per trovare quello che cerchi, <a href="customers#automatic_organization">**organizza in maniera automatica**</a> i tuoi dati, mantieni i tuoi dati sicuri con <a href="customers#security_first">**la nostra criptazione**</a>, condividili in maniera sicura con i professionisti medici attraverso <a href="customers#ippolink">**ippolink**</a>.'
+    excerpt: 'Usa la <a href="customers#smart_search">**ricerca smart**</a> per trovare quello che cerchi, <a href="customers#automatic_organization">**organizza in maniera automatica**</a> i tuoi dati, mantieni i tuoi dati sicuri con <a href="customers#security_first">**la nostra criptazione**</a>, condividili in maniera sicura con i professionisti medici attraverso l`<a href="customers#ippolink">**ippolink**</a>.'
     url: "/customers"
     btn_label: "Scopri di piú"
     btn_class: "btn--primary"
@@ -30,7 +30,7 @@ feature_row_right:
     alt: "Ippocra per i Professionisti"
     title: "Ippocra per i Professionisti"
     excerpt: '<a href="business#digitalize">**Digitalizza**</a> facilmente i tuoi referti 
-    e mandali ai tuoi clienti in maniera sicura attraverso il <a href="business#ippolink">**ippolink**</a>. Fornisci la Ippocra experience ai <a href="business#your-customers">**tuoi clienti**</a>, e metti la tua clinica o il tuo studio <a href="business#brand-forefront">**davanti ai loro occhi**</a>.'
+    e mandali ai tuoi clienti in maniera sicura attraverso l`<a href="business#ippolink">**ippolink**</a>. Fornisci la Ippocra experience ai <a href="business#your-customers">**tuoi clienti**</a>, e metti la tua clinica o il tuo studio <a href="business#brand-forefront">**davanti ai loro occhi**</a>.'
     url: "/business"
     btn_label: "Esplora"
     btn_class: "btn--primary"    
