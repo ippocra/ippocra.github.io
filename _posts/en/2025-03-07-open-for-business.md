@@ -26,7 +26,7 @@ Today we are closing the beta and we are **opening to the world**.
 
 Ippocra has four new subscription plans for the private user:
 
-![image-center](/assets/images/plans_it.png)
+![image-center](/assets/images/plans_en.png)
 
 Our free plan, **Ippo**, gives the ability to have an account on Ippocra without any
 payment, and has the ability to receive and store the documents via the IppoLink!
@@ -44,7 +44,7 @@ email or any other means, you are not sharing the documents themselves directly 
 but only the link to these. This is extremely important, because with this approach, the documents
 do not get fagocitated and then used to train some random AI, exposing your data.
 
-![image-center](/assets/images/ippolink_creation_it.gif)
+![image-center](/assets/images/ippolink_creation_en.gif)
 
 With our Ippo plan, you can import your health data if your clinic or doctor uses Ippocra. 
 
@@ -75,13 +75,13 @@ the blood work analysis shown up, which also had urine's exams inside! They were
 useless to the doctor in this instance ;), but we had them handy! As you can see from the gif, now also the nefrologist report 
 shows up, because it containes the work uri within. This is what we call **Smart Search**.
 
-![image-center](/assets/images/search_uri_it.gif)
+![image-center](/assets/images/search_uri_en.gif)
 
 
 ## Our paid plans
 
 Our paid plans (Just Me, Family e Family⁺) are different from our Ippo plan, which is free. These are subscription plans 
-that renw either monthly or yearly.
+that renew either monthly or yearly.
 
 These are paid plans because provides the ability to upload own health documents to the Platform, and given that Ippocra
 does not share data with no-one, the payment is necessary, given that **if you pay the product, you are not the product**.
