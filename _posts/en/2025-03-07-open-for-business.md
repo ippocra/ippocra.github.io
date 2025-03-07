@@ -1,9 +1,9 @@
 ---
 
-title:  "We are opne for business!"
+title:  "We are open for business!"
 date:   2025-03-07 11:00:00 +0100
 categories: news
-lang: it
+lang: en
 header:
     teaser: /assets/images/sunset_with_fishing_boats.jpg
 ---
@@ -14,13 +14,13 @@ header:
 
 # Ippocra is open for business!
 
-After months of test, tries and adjustements, burocratic necessary steps, we are extremely
+After months of test, tries, adjustements and bureaucratic necessary steps, we are extremely
 pleased to announce that Ippocra "<strong>is open for business</strong>"!
 
 First of all, I would like to thank all our Beta users, who have provided lots of suggestions 
-to improve the Platform so far, participating to our [open beta](/private-beta). Without
+to improve the Platform so far, participating in our [open beta](/private-beta). Without
 them we wouldn't be where we are now. That's why they will be *grandfather-in*, because
-our approach to customer service is the customers are extremely important and they coe first.
+we like them a lot.
 
 Today we are closing the beta and we are **opening to the world**.
 
@@ -35,78 +35,77 @@ You may ask... What is an IppoLink?
 
 ## IppoLink: share your health data securely and quickly
 
-Un Ippolink è un link che permette di condividere i propri documenti sanitari con un'altra 
-persona, in maniera veloce e sicura. Se invece sei una struttura sanitaria, ti permette di 
-inviare il referto al tuo paziente, sempre in maniera veloce e sicura. E soprattutto **facile**.
+A Ippolink is a link which provides you a secure and easy way to share your own health documents
+with another person. If you are a clinic instead, you can use the Ippolink to share the reports
+with your patient, always ina fast and secure way. And in a **easy* way.
 
-Un Ippolink è facile da creare, e facile da utilizzare! Inoltre, mandando un IppoLink tramite
-Whatsapp, email o qualsiasi altro mezzo, non condividiamo i dati sanitari, bensí soltanto il 
-link a questi, facendo si che questi non vengano fagocitati e dati in pasto come dati di training
-alle Intelligenze Artificiali.
+It's easy to create a new IppoLink, and easy to use! More over, sending an IppoLink via Whatsapp,
+email or any other means, you are not sharing the documents themselves directly on this platform,
+but only the link to these. This is extremely important, because with this approach, the documents
+do not get fagocitated and then used to train some random AI, exposing your data.
 
 ![image-center](/assets/images/ippolink_creation_it.gif)
 
-Con Il nostro piano Ippo, puoi importare i tuoi dati sanitari, se la tua clinica o struttura sanitaria
-a cui ti rivolgi utilizza Ippocra.
+With our Ippo plan, you can import your health data if your clinic or doctor uses Ippocra. 
 
-Ma Ippocra offre molto di piú: un documento immesso nella piattaforma, viene categorizzato in analisi, referto o ricevuta, la data dell'esame viene automaticamente estratta, ed infine, grazie alla nostra tecnologia, è anche possibile 
-utilizzare la Ricerca Smart, che permette di ricercare all'interno dei documenti, cosicchè si riesce a trovare 
-sempre tutto velocemente.
+But there is more that you can do on Ippocra: when a document gets added to the Platform, 
+it gets categorized into analysis, report or receipt, the exam's date gets extracted automatically, 
+and, thanks to Ippocra technology, it is possible to use the Smart Search, which gives you the ability 
+to find everything quickly.
 
-## Perchè esiste Ippocra
+## Why Ippocra exists?
 
-Ippocra nasce dal classico *Every good work of software starts by scratching a developer’s personal itch.* -- *Qualsiasi 
-software di buona fattura nasce per quando uno sviluppatore si gratta un prurito personale* (cit. [The Cathedral and the Bazar](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar)). 
+Ippocra was born from the classic *Every good work of software starts by scratching a developer’s personal itch.* (cit. [The Cathedral and the Bazar](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar)). 
 
-In particolare il problema lo aveva Michele (il nostro Founder and CEO.. -- *si, é Michele che sta scrivendo questo 
-post, anche se usa la terza persona. Abbiate pazienza*), il quale non riusciva a trovare ed organizzare i documenti medici suoi, e della sua famiglia.
+To be precise, Michele (our founder and CEO.. -- *yes, Michele is writing this post using the third singular person. Please, give him some slack*) was the one having the problem to solve, because he coulnd't find a decent way to organize and 
+find his own health record, and the one of his family.
 
-Quando c'era la necessitá di ricorrere ad un medico, di qualsiasi tipo, sia perchè era magari in un altro paese, sia perchè
-non si trova mai niente (si, l'aveva fatta la famosa cartellina A4, ma è totalmente inutile, specie se cerchiamo le cose di 4 persone), i dati personali precedenti non erano **mai** disponibili. Non potevano essere condivisi facilmente 
-con il nuovo medico, non potevano essere organizzati. Erano **inutili ed inutilizzabili**.
+When there is the need to go to a doctor, of any kind, maybe because he was in another country, maybe because it is 
+impossible to find anything when you need it (yes, he had all the documents in a A4 binder, but it's totally useless, because it is never with you, and when you search you can't find anything anyway.), the health record were **never** available. 
+They couldn't be shared easily with the new doctor, and they couldn't be organized. They were simply **useless**.
 
-Da lí nasce [Ippocra](https://ippocra.com), un modo per risolvere questo problema e far diventare l'organizzazione dei dati medici 
-una cosa semplice ed automatica, dove l'utente aggiunge semplicemente un documento, ed Ippocra fa tutto il resto.
+That's the reason [Ippocra](https://ippocra.com) was born, as a way to solve this problem and make the organization
+of health record **easy and automatic**, where the used simply uploads a document, and Ippocra does all the rest.
 
-## Tratto da una storia vera
+## Taken from a true story
 
-Qualche settimana fa, Michele è andato dal nefrologo per una visita di controllo di suo figlio. Quando il nefrologo
-ha chiesto se avevamo qualche esame di urine per caso, Michele si è loggato su [Ippocra](https://app.ippocra.com/), ha scritto **uri** sulla barra di ricerca, e sono uscite le analisi del sangue **e delle urine**, che 
-il medico ha visionato. Ovviamente non sono servite a nulla, ma le avevamo a disposizione ;). Come si vede dalla gif, 
-adesso si trova anche il referto del nefrologo, perché contiene la parola urine. (Questa e' quella che chiamiamo la Ricerca Smart).
+Some weeks ago, Michele went to a nefrologist for a check-up visit for his son. When the neforlogist asked if we had
+some urine's exams done in the past, Michele logged into [Ippocra](https://app.ippocra.com/), he wrote **uri** on the search bar, and 
+the blood work analysis shown up, which also had urine's exams inside! They were completely
+useless to the doctor in this instance ;), but we had them handy! As you can see from the gif, now also the nefrologist report 
+shows up, because it containes the work uri within. This is what we call **Smart Search**.
 
 ![image-center](/assets/images/search_uri_it.gif)
 
 
-## I nostri piani a pagamento
+## Our paid plans
 
-A differenza del piano Ippo, che è gratuito, gli altri piani (Just Me, Family e Family⁺), sono piani a pagamento con rinnovo mensile o annuale.
+Our paid plans (Just Me, Family e Family⁺) are different from our Ippo plan, which is free. These are subscription plans 
+that renw either monthly or yearly.
 
-I piani sono a pagamento perche' permettono di caricare i propri documenti privati, e, visto che Ippocra non condivide 
-i dati con nessuno, il pagamento è necessario **perchè si paga il prodotto, non si è il prodotto**. Il Just Me è per una persona ed un amministratore, mentre il Family ed il Family⁺ possono avere piú persone e piú amministratori a seconda 
-del piano.
+These are paid plans because provides the ability to upload own health documents to the Platform, and given that Ippocra
+does not share data with no-one, the payment is necessary, given that **if you pay the product, you are not the product**.
+Just Me is for one person, one admin, the Family and Family⁺ can have more persons and admins, according to the plan tier.
 
-E l'Ippo che è gratuito? Con l'Ippo si possono solo importare documenti giá presenti su Ippocra, quindi significa che 
-qualcuno sta giá pagando. In particolare se una [struttura sanitaria ha deciso di utilizzare Ippocra](/business), 
-sono loro che pagano il servizio, ed in concomitanza lo offrono ai propri utenti, con un costo zero per quest'ultimi.
+So why the Ippo is free? Ippo is free because you can only import the documents already present on Ippocra. This means 
+that someone is already paiying to have the documents hosted. Especially, if they are coming from a [clinic that uses Ippocra](/business), they are the one footing the bill, providing the Ippocra experience to thier customers for free.
 
-## Ma e' sicuro?
+## Is it safe?
 
-Ricordiamo che Michele e' il primo utilizzatore di Ippocra, ed a queste cose ci tiene. 
-I dati sono criptati con l'AES 256, e questo significa che anche in una eventuale data breach, gli hacker
-otterrebbero soltanto dati impossibile da leggere senza la chiave per decriptarli (che pensa te, non teniamo
-nello stesso posto ;)). 
+Let's remember that Michele is the first user of Ippoca, and he really cares about this stuff.
+The data are encrypted with the AES 256, and this means that even in a hypothetical data breach, the
+data that can be obtained are impossible to read without the decrypting key (which, go figure, we do not keep in
+the same space ;)).
 
-Ippocra ha una [solidissima policy privacy](/legal/privacy-policy) ed ha giá un Data Protection Officer attivo, indicato 
-nella stessa.
+Ippocra has a very  [strong policy privacy](/legal/privacy-policy) and has Data Protection Officer 
+already active, which you can find it in there.
 
-## Bene, come faccio ad abbonarmi?
+## Super, I'm in. How can I subscribe?
 
-Vai su **[Ippocra](https://app.ippocra.com)** e registrati, a quel punto ti verrá chiesto di scegliere 
-quale piano utilizzare, e potrai quindi iniziare ad utilizzare Ippocra. Puoi trovare i prezzi dei nostri 
-piani **[qui](/pricing)**.
+Go to **[Ippocra](https://app.ippocra.com)** and register, after that pick the plan that suits you best and then
+you are ready to use Ippocra. You can explore our plans and their prices **[here](/pricing)**.
 
-Un saluto ed a presto <br/>
+Ciao for now, <br/>
 Michele.
 
 

@@ -14,7 +14,7 @@ header:
 
 # Ippocra is open for business!
 
-Dopo mesi di test, prove e aggiustamenti, incombenze burocratiche, siamo estremamenti lieti 
+Dopo mesi di test, prove, aggiustamenti e incombenze burocratiche, siamo estremamenti lieti 
 di annunciare che Ippocra "<strong>is open for business</strong>"!
 
 Innanzitutto, vogliamo ringraziare tutti i nostri utenti Beta, che hanno fornito tantissimi
@@ -106,7 +106,7 @@ Vai su **[Ippocra](https://app.ippocra.com)** e registrati, a quel punto ti verr
 quale piano utilizzare, e potrai quindi iniziare ad utilizzare Ippocra. Puoi trovare i prezzi dei nostri 
 piani **[qui](/pricing)**.
 
-Un saluto ed a presto <br/>
+Ciao for now, <br/>
 Michele.
 
 
