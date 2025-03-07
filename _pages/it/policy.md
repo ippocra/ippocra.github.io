@@ -160,7 +160,7 @@ Si rimanda al punto 5.2 per approfondimento sul tema.
 
 **4.5. Identità del Titolare del Trattamento**
 
-Il titolare del Trattamento è **IPPOCRA S.R.L.,** C.F 03010040420start-up innovativa ai sensi del D.L. 179/2012 convertito in Legge 221/2012 e successivamente modificato dal d.l. 76/2013 in vigore dal 28 giugno 2013 e dall'art. 3, comma 10-bis del D.L. 24 gennaio 2015 n. 3 convertito, con modificazioni, dalla Legge 24 marzo 2015 n. 33, con sede in Ancona, Via Podgora 47\.
+Il titolare del Trattamento è **IPPOCRA S.R.L.,** C.F 03010040420 start-up innovativa ai sensi del D.L. 179/2012 convertito in Legge 221/2012 e successivamente modificato dal d.l. 76/2013 in vigore dal 28 giugno 2013 e dall'art. 3, comma 10-bis del D.L. 24 gennaio 2015 n. 3 convertito, con modificazioni, dalla Legge 24 marzo 2015 n. 33, con sede in Ancona, Via Podgora 47\.
 
 **4.6. Misure di protezione dei dati**
 

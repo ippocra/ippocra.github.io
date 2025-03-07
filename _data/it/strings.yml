@@ -5,3 +5,6 @@ navigation:
   business:
     title: Professionisti
     url: /business
+  pricing:
+    title: Prezzi
+    url: /pricing
