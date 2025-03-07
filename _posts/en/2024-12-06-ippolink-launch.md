@@ -23,9 +23,11 @@ your new specialist, either scannig the QR Code, or simply providing the link to
 doctor. The ippolink will be active only for a short period of time, and then it will 
 auto-destroy, preserving your documents.
 
-![image-center](/assets/images/ippolink-creation.gif){: .align-center}
+![image-center](/assets/images/ippolink-creation_it.gif){: .align-center}
 
-Try yourself: [IppoLink](https://app.ippocra.com/ippolinks/fe5eece2-8717-4e65-abea-97fa295c869a).
+Try yourself: [IppoLink](https://app.ippocra.com/ippolinks/fe5eece2-8717-4e65-abea-97fa295c869a). 
+
+*Note: this will expire on the 10th of December!*
 
 *Bonus track: we also launched a new website!*
 
@@ -34,3 +36,6 @@ In the meantime you can also follow us on [Facebook](https://www.facebook.com/pr
 or on [LinkedIn](https://www.linkedin.com/company/ippocra/).
 
 Stay tuned!
+
+
+*Edit: The Secret-link is called now **IppoLink***

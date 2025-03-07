@@ -3,6 +3,7 @@
 title:  "Opening Private Beta"
 date:   2024-10-03 13:50:17 +0100
 categories: news
+permalink: "/private-beta"
 lang: en
 header:
     teaser: /assets/images/opening-beta-flower.png
