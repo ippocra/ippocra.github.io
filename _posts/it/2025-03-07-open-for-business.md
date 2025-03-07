@@ -20,7 +20,7 @@ di annunciare che Ippocra "<strong>is open for business</strong>"!
 Innanzitutto, vogliamo ringraziare tutti i nostri utenti Beta, che hanno fornito tantissimi
 suggerimenti e spunti per migliorare la Piattaforma strada facendo, ed hanno partecipato 
 alla nostra [open beta](/private-beta). Senza loro non saremmo dove siamo giá arrivati. Per 
-questo tutti loro verranno *grandfather-in*, perché la nostra politica e' sempre gli utenti prima di tutto. 
+questo tutti loro verranno *grandfather-in*, perché la nostra politica è sempre gli utenti prima di tutto. 
 
 Oggi chiudiamo la beta e ci **apriamo Ippocra al mondo**.
 
@@ -29,7 +29,7 @@ Ippocra si propone con quattro nuovi piani di abbonamento per l'utente privato:
 ![image-center](/assets/images/plans_it.png)
 
 Il nostro Piano gratuito, <strong>Ippo</strong>, permette di avere un account su Ippocra 
-in maniera gratuita, ed avere la possibilitá di ricevere id documenti tramite l'IppoLink!
+in maniera gratuita, ed avere la possibilitá di ricevere i documenti tramite l'IppoLink!
 
 E magari pensi... Ma cos'è un IppoLink?
 
@@ -56,7 +56,7 @@ sempre tutto velocemente.
 ## Perchè esiste Ippocra
 
 Ippocra nasce dal classico *Every good work of software starts by scratching a developer’s personal itch.* -- *Qualsiasi 
-software di buona fattura nasce per quando uno sviluppatore si gratta un prurito personale* (cit. [The Cathedral and the Bazar](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar)). 
+software di buona fattura nasce quando uno sviluppatore si gratta un prurito personale* (cit. [The Cathedral and the Bazar](https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar)). 
 
 In particolare il problema lo aveva Michele (il nostro Founder and CEO.. -- *si, é Michele che sta scrivendo questo 
 post, anche se usa la terza persona. Abbiate pazienza*), il quale non riusciva a trovare ed organizzare i documenti medici suoi, e della sua famiglia.
