@@ -1,6 +1,6 @@
 ---
 
-title:  "Siamo aperti!"
+title:  "We are opne for business!"
 date:   2025-03-07 11:00:00 +0100
 categories: news
 lang: it
@@ -14,26 +14,26 @@ header:
 
 # Ippocra is open for business!
 
-Dopo mesi di test, prove e aggiustamenti, incombenze burocratiche, siamo estremamenti lieti 
-di annunciare che Ippocra "<strong>is open for business</strong>"!
+After months of test, tries and adjustements, burocratic necessary steps, we are extremely
+pleased to announce that Ippocra "<strong>is open for business</strong>"!
 
-Innanzitutto, vogliamo ringraziare tutti i nostri utenti Beta, che hanno fornito tantissimi
-suggerimenti e spunti per migliorare la Piattaforma strada facendo, ed hanno partecipato 
-alla nostra [open beta](/private-beta). Senza loro non saremmo dove siamo giá arrivati. Per 
-questo tutti loro verranno *grandfather-in*, perché la nostra politica e' sempre gli utenti prima di tutto. 
+First of all, I would like to thank all our Beta users, who have provided lots of suggestions 
+to improve the Platform so far, participating to our [open beta](/private-beta). Without
+them we wouldn't be where we are now. That's why they will be *grandfather-in*, because
+our approach to customer service is the customers are extremely important and they coe first.
 
-Oggi chiudiamo la beta e ci **apriamo Ippocra al mondo**.
+Today we are closing the beta and we are **opening to the world**.
 
-Ippocra si propone con quattro nuovi piani di abbonamento per l'utente privato:
+Ippocra has four new subscription plans for the private user:
 
 ![image-center](/assets/images/plans_it.png)
 
-Il nostro Piano gratuito, <strong>Ippo</strong>, permette di avere un account su Ippocra 
-in maniera gratuita, ed avere la possibilitá di ricevere id documenti tramite l'IppoLink!
+Our free plan, **Ippo**, gives the ability to have an account on Ippocra without any
+payment, and has the ability to receive and store the documents via the IppoLink!
 
-E magari pensi... Ma cos'è un IppoLink?
+You may ask... What is an IppoLink?
 
-## IppoLink: condividi i tuoi dati in maniera sicura e veloce
+## IppoLink: share your health data securely and quickly
 
 Un Ippolink è un link che permette di condividere i propri documenti sanitari con un'altra 
 persona, in maniera veloce e sicura. Se invece sei una struttura sanitaria, ti permette di 
