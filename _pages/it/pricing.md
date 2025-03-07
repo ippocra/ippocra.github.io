@@ -25,7 +25,7 @@ title: Prezzi
 # Sei un Professionista o una Struttura Sanitaria?
 {: .text-center}
 
-Se sei un Professionista o una struttura Sanitaria, esplora la nostra offerta andando sulla [pagina dedicata ai professionisti](/business/).
+Se sei un Professionista o una struttura Sanitaria, esplora la nostra offerta andando sulla [pagina dedicata ai professionisti](/business).
 {: .text-center }
 
 

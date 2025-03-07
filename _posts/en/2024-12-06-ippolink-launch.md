@@ -12,7 +12,7 @@ header:
 
 We just launched a new functionality and we have a new website!
 
-## Secret-Link is now online!
+## IppoLink is now online!
 
 If you found yourself going to a new doctor, you know that the first question they will 
 have is if you have old analysis or report that you can share to provide a view of your 
@@ -25,7 +25,7 @@ auto-destroy, preserving your documents.
 
 ![image-center](/assets/images/ippolink-creation.gif){: .align-center}
 
-Try yourself: [Secret-link](https://app.ippocra.com/secretlinks/fe5eece2-8717-4e65-abea-97fa295c869a).
+Try yourself: [IppoLink](https://app.ippocra.com/ippolinks/fe5eece2-8717-4e65-abea-97fa295c869a).
 
 *Bonus track: we also launched a new website!*
 

@@ -23,7 +23,7 @@ title: Pricing
 # Are you a Business?
 {: .text-center}
 
-If you are a Business, read more on our [dedicated business page](/business/).
+If you are a Business, read more on our [dedicated business page](/business).
 {: .text-center }
 
 

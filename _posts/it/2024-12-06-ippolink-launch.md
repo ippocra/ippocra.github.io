@@ -12,7 +12,7 @@ header:
 
 Grandi novitá: abbiamo rinnovato il nostro sito ed abbiamo lanciato la nuova funzionalitá "IppoLink".
 
-## Nuovo Secret-Link
+## Nuovo Ippolink
 
 Se siete stati da un nuovo dottore o dottoressa, sapete benissimo che la prima domanda che 
 lo specialista vi pone é quali esami medici avete a disposizione che possono visionare.
@@ -24,7 +24,7 @@ vostri documenti che avete su Ippocra con lo specialista.
 ![image-center](/assets/images/ippolink-creation.gif){: .align-center}
 
 Andando sul ippolink lo specialista potrá vedere tutte le analisi ed i referti, ed
-ottenere tutte le informazioni di cui ha bisogno! Prova tu stesso: [Secret-link](https://app.ippocra.com/secretlinks/fe5eece2-8717-4e65-abea-97fa295c869a).
+ottenere tutte le informazioni di cui ha bisogno! Prova tu stesso: [Ippolink](https://app.ippocra.com/ippolinks/fe5eece2-8717-4e65-abea-97fa295c869a).
 
 *Bonus track: abbiamo rinnovato il nostro sito :D*
 

@@ -41,5 +41,5 @@ The post must be written in `_posts/it` and in `_post/en` with the filename foll
 
 Rembemr to set `lang: it` in the `_posts/it` and `lang:en` in `_post/en`.
 
-Check the `_posts/it/2024-10-03-opening-private-beta.md)` and `_posts/en/2024-10-03-opening-private-beta.md` 
+Check the `_posts/it/2024-10-03-opening-private-beta.md` and `_posts/en/2024-10-03-opening-private-beta.md` 
 as a guide.
