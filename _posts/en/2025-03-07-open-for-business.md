@@ -42,7 +42,7 @@ with your patient, always ina fast and secure way. And in a **easy* way.
 It's easy to create a new IppoLink, and easy to use! More over, sending an IppoLink via Whatsapp,
 email or any other means, you are not sharing the documents themselves directly on this platform,
 but only the link to these. This is extremely important, because with this approach, the documents
-do not get fagocitated and then used to train some random AI, exposing your data.
+do not get engulf and then used to train some random AI, exposing your data.
 
 ![image-center](/assets/images/ippolink_creation_en.gif)
 
