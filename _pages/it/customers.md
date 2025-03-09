@@ -6,7 +6,7 @@ title: Ippocra per Privati
 
 feature_row:
 feature_row_smart_search:
-  - image_path: /assets/images/white_bigger_rectangular_with_green_ippo_inside.png
+  - image_path: /assets/images/search_uri_it.gif
     alt: "Ricerca smart"
     title: <span id="smart_search">Ricerca smart</span>
     excerpt: "Utilizza la **ricerca smart** per trovare quello che cerchi. Ippocra estrae i dati 
@@ -26,7 +26,7 @@ feature_row_security:
     
 
 feature_row_secret_link:
-  - image_path: /assets/images/green_bigger_rectangular_with_white_ippo_inside.png
+  - image_path: /assets/images/ippolink_creation_it.gif
     alt: "IppoLink"
     title: <span id="ippolink">IppoLink</span>
     excerpt: "I tuoi dati medici sono utili soltanto se **puoi condividerli con il personale medico**. E' per questo che abbiamo inventato l'**ippolink**! Per esempio, quando devi andare da un nuovo specialista, come puoi portare i tuoi documenti medici? Semplice: crea un 
