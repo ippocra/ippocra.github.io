@@ -97,7 +97,7 @@ The data are encrypted with the AES 256, and this means that even in a hypotheti
 data that can be obtained are impossible to read without the decrypting key (which, go figure, we do not keep in
 the same space ;)).
 
-Ippocra has a very  [strong policy privacy](/legal/privacy-policy) and has Data Protection Officer 
+Ippocra has a very  [strong policy privacy](/legal/policy/) and has Data Protection Officer 
 already active, which you can find it in there.
 
 ## Super, I'm in. How can I subscribe?

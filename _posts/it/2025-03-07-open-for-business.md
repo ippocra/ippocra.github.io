@@ -97,7 +97,7 @@ I dati sono criptati con l'AES 256, e questo significa che anche in una eventual
 otterrebbero soltanto dati impossibile da leggere senza la chiave per decriptarli (che pensa te, non teniamo
 nello stesso posto ;)). 
 
-Ippocra ha una [solidissima policy privacy](/legal/privacy-policy) ed ha giá un Data Protection Officer attivo, indicato 
+Ippocra ha una [solidissima policy privacy](/legal/policy/) ed ha giá un Data Protection Officer attivo, indicato 
 nella stessa.
 
 ## Bene, come faccio ad abbonarmi?
