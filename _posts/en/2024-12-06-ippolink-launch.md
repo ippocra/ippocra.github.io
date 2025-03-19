@@ -1,6 +1,6 @@
 ---
 
-title:  "Secret-Link is now available!"
+title:  "IppoLink is now available!"
 date:   2024-12-06 10:00:00 +0100
 categories: news
 lang: en
