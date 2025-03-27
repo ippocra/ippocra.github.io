@@ -13,22 +13,24 @@ header:
 *A natural gradient, always spectacular.*
 {: .text-center }
 
-## Nuovo tipo di dato supportato: i .zip
+## New data type unlocked: the .zip
 
-Parlando con i nostri utenti, abbiamo capito che c'era un nuovo formato 
-che sarebbe stato molto comodo poter caricare su [Ippocra](http://ippocra.com): gli archivi in 
-formato `.zip`.
+Talking to our users, we have understood the need to support a new data type, 
+which would be extremely handy to have on [Ippocra](http://ippocra.com): the archive 
+in `.zip` format.
 
-Per esempio, alcuni tipi di CT-scan e TAC, vengono ricevuti sotto forma
-di archivi in formato zip, ed i nostri utenti avrebbero voluto archiviare questi dati, 
-in maniera cryptata e sicura, come tutti gli altri dati; eppoi essere in grado di condividerli attraverso 
-i nostri [Ippolinks](https://ippocra.com/news/2025/03/07/open-for-business.html#ippolink-condividi-i-tuoi-dati-in-maniera-sicura-e-veloce).
+For example, some CT-scans or TACs, are usually provided in archived zip format, 
+and our users would like to archive these data, always using our encrypted and secure 
+technology, as all the other medical data; and finally, they would like to share these
+via our [ippolinks](https://ippocra.com/en/news/2025/03/07/open-for-business.html#ippolink-share-your-health-data-securely-and-quickly).
 
-Oggi presentiamo questa nuova capacità:
 
-![image-center](/assets/images/archive_it.png){: .align-center}
-*Abbiamo fatto spazio per lo zippone*
+Today we are presenting this new feature:
 
-Quindi, oltre a PDFs o alle foto fatte per esempio da telefono, da oggi anche gli zip possono essere caricati.
 
-A presto!
+![image-center](/assets/images/archive_en.png){: .align-center}
+*We made space for the zip-file*
+
+So, on top of PDFs and pictures maybe taken from the mobile, today also `.zip` files can be uploaded.
+
+Ciao for now!
