@@ -5,7 +5,7 @@ date:   2025-03-07 11:00:00 +0100
 categories: news
 lang: en
 header:
-    teaser: /assets/images/sunset_with_fishing_boats.jpg
+    teaser: /assets/images/sunrise_with_fishing_boats.jpg
 ---
 
 ![image-center](/assets/images/sunrise_with_fishing_boats.jpg){: .align-center}
