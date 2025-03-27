@@ -1,6 +1,6 @@
 ---
 
-title:  "Secret-Link is now available!"
+title:  "IppoLink is now available!"
 date:   2024-12-06 10:00:00 +0100
 categories: news
 lang: en
@@ -23,7 +23,7 @@ your new specialist, either scannig the QR Code, or simply providing the link to
 doctor. The ippolink will be active only for a short period of time, and then it will 
 auto-destroy, preserving your documents.
 
-![image-center](/assets/images/ippolink-creation_it.gif){: .align-center}
+![image-center](/assets/images/secret-link-creation.gif){: .align-center}
 
 Try yourself: [IppoLink](https://app.ippocra.com/ippolinks/fe5eece2-8717-4e65-abea-97fa295c869a). 
 
