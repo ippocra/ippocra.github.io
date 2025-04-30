@@ -6,7 +6,7 @@ categories: news
 lang: en
 permalink:
 header:
-    teaser: /assets/images/sunset_in_prospettiva.jpg
+    teaser: /assets/images/sunset_in_prospettiva_shorter.jpg
 ---
 
 ![image-center](/assets/images/sunset_in_prospettiva_shorter.jpg){: .align-center}

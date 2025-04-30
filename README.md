@@ -1,6 +1,6 @@
 ## Copyright
 
-© [2024] [Ippocra]. All rights reserved.
+© [2025] [Ippocra]. All rights reserved.
 
 This website and its contents, hosted at [https://ippocra.github.io](https://ippocra.github.io) and [https://ippocra.com](https://ippocra.com), are the intellectual property of [Ippocra]. Unauthorized use, reproduction, or distribution of any material without prior written consent is prohibited.
 
@@ -26,7 +26,7 @@ To build the site:
 
 Or the shortcut script:
 
-    ./build_website.sh
+    bin/build_website.sh
 
 We use [polyglot](https://github.com/untra/polyglot) as multilingual plugin and 
 [minimal-mistakes](https://mmistakes.github.io/) as theme with modification.
@@ -43,3 +43,11 @@ Rembemr to set `lang: it` in the `_posts/it` and `lang:en` in `_post/en`.
 
 Check the `_posts/it/2024-10-03-opening-private-beta.md` and `_posts/en/2024-10-03-opening-private-beta.md` 
 as a guide.
+
+To create a new post automatically run
+
+    bin/new_post.py Title of my new post
+
+You need slugify installed as requirements:
+
+    pip install python-slugify
