@@ -1,0 +1,67 @@
+---
+title: "Take the ippo for a test drive"
+categories: news
+permalink: "/take-ippo-for-a-ride"
+lang: it
+header:
+    teaser: /assets/images/scorci_di_conero.jpg
+---
+
+
+
+![image-center](/assets/images/scorci_di_conero.jpg){: .align-center}
+*Una passeggiata con Ippo per il Conero? :)*
+
+## Una passeggiata con Ippo
+
+**Ippo** è la nostra mascot. È divertente, è verde (eheh), ma soprattutto, iniziando da oggi, è possibile
+andarci a fare una passeggiata!
+
+Abbiamo riconfigurato i nostri piani, e ora, con il nostro piano gratuito (Ippo), è possibile caricare i propri documenti, 
+cosí puoi portare Ippo a fare una passeggiata, e capire come i tuoi documenti medici possono diventare utile e facili da trovare, invece che perderli in continuo e fonte di mal di testa.
+
+Puoi create un profilo Persona per te, e un altro aggiuntivo, cosí puoi anche capire come riuscire a tenere in ordine,
+in maniera facile ed immediata, i tuoi documenti e quella di una persona a te cara.
+
+Tutti i documenti caricati sono automaticamente criptati, e sono conservati su Servers Europei, in maniera tale 
+da rispettare la GDPR.
+
+Una volta che il documento è stato caricato, Ippo automaticamente estrae la data del documento, lo categorizza, e 
+attiva anche la ricerca smart, che dá la capacitá di ricercara anche all'interno del documento per parole chiavi.
+
+Puoi caricare direttamente una foto fatta con il tuo telefono su Ippocra, e  Ippo riuscirá ad estrarre tutte le 
+informazioni, senza che ti debba preouccupare di scannerizzare. Abbiamo costruito Ippocra per essere utilizzata 
+prima di tutto dal telefono.
+
+E come scritto, **non vendiamo o condividiamo i tuoi documenti con nessuno**. Come puoi essere sicuro di ció? 
+Perché abbiamo i piani a pagamento. **Ricorda: se non paghi il prodotto, sei il prodotto.** Se vuoi 
+utilizzare Ippocra e continuare a caricare i tuoi documenti, dopo i primi 5 che sono gratuiti, devi scegliere
+[uno dei nostri piani a pagamento](https:ippocra.com/en/pricing).
+
+Qui, ad Ippocra, crediamo che i dati personali devono essere mantenuti sicuri, e rimanere privati. Sono i tuoi.
+
+*Trivia:* lo sapvei che se carichi un referto o un PDF su WhatsApp, ora il contenuto puó essere estratto e 
+potrebbe essere utilizzato per sviluppare l'Intelligenza Artificiale? Personalmente, è una cosa a cui io non 
+voglio partecipare.
+
+Ed è per questo che utilizzo Ippocra, visto che, attraverso l'**Ippolink**, posso condividere i miei dati medici
+solo con le persone che voglio, e solo per un periodo di tempo limitata, evitando di disseminare 
+le mie informazioni mediche in giro.
+
+**Infatti io mando l'Ippolink via WhatsApp**, perché è sicuro e non possono estrarre nessuna informazione 
+da lí.
+
+![image-center](/assets/images/ippo-outline-green.png){: .align-center}
+<br/>
+*Dite ciao a Ippo: pronto per una passeggiata, o per partire per un'avventura!*
+
+# Piú siamo e meglio stiamo!
+
+Abbiamo anche cambiato il nostro piano *Just Me*. Adesso sia chiamo **Just Us**, e puó avere fino a due 
+amministratori e fino a due profili personali.
+
+Vuoi fare una passeggiata con Ippo?
+
+{: .text-center }
+
+[La passeggiata inizia da qui!](https://app.ippocra.com/register){: .btn .btn--primary .btn--action .btn--large}

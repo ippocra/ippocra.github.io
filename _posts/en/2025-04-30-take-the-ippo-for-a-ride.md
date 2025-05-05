@@ -4,13 +4,13 @@ categories: news
 permalink: "/take-ippo-for-a-ride"
 lang: en
 header:
-    teaser: FILL ME!
+    teaser: /assets/images/scorci_di_conero.jpg
 ---
 
 
 
 ![image-center](/assets/images/scorci_di_conero.jpg){: .align-center}
-*A panoramic view of the Conero*
+*Do you want to take a ride with Ippo on the Conero? :)*
 
 ## Strolling with Ippo
 
