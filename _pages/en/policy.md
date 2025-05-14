@@ -2,7 +2,7 @@
 layout: splash
 lang: en
 permalink: /legal/policy/
-title: Informativa sulla Privacy di Ippocra
+title: Privacy Policy
 ---
 
 Below you can find an automatic translation from the italian version.
