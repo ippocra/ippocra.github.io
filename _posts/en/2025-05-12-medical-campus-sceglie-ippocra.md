@@ -15,7 +15,7 @@ header:
 
 [Medical Campus](https://medicalcampus.it/) has chosen [Ippocra](https://ippocra.com) as the innovative 
 solution to send their own reports. From today, the doctors working at Medical Campus will be able to 
-send the reports via the Ippolink, without the need to prin them, and having a way to share them with 
+send the reports via the Ippolink, without the need to print them, and having a way to share them with 
 the patient in a secure and rapid manner. When the patient receives the ippolink, they can either download it
 or they can import it, after making an account, on Ippocra, starting the collection of their own medical data. 
 They will be able to add more documents as they come.

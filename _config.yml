@@ -120,7 +120,7 @@ parallel_localization: false
 langsep: "|"
 keywords: 
   en: health, reports, analysis, receipts, blood work, records, sharing, organizing, finding, archiving, retrieving, clinic, medics, doctors, individuals
-  it: salute, referti, analisi, ricevute, sangue, condivisione, organizzazione, ricerca, archiviazione, cliniche, private, medicina, dottori, privati
+  it: salute, referti, analisi, ricevute, sangue, condivisione, organizzazione, ricerca, archiviazione, cliniche, private, medicina, dottori, privati, refertazione
 
 include:
   - _pages
