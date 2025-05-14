@@ -30,6 +30,6 @@ _"Quando il team di Ippocra ci ha proposto l'utilizzo della piattaforma abbiamo 
 essere un'ottima occasione per innovare il modo in cui dare i nostri referti, ed inoltre creare un nostro 
 archivio sempre disponibile, di facile consultazione, sempre protetto dalla sicurezza che Ippocra offre. 
 Medical Campus innova da sempre, sia con la nostra divisione formazione e corsi, dove siamo uno dei leader 
-in Italia, ed ora anche nella refertazione, offrendo al cliente un modo innovativo e sicuro per ottenere e volendo salvare 
-i propri referti."_ -- Valentina Sanguigni, Amministratore Delegato Medical Campus.
+in Italia, ed ora anche nella refertazione, offrendo al cliente un modo innovativo e sicuro per ottenere 
+e salvare i propri referti."_ -- Valentina Sanguigni, Amministratore Delegato Medical Campus.
 
