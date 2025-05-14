@@ -26,10 +26,7 @@ la conferma che Ippocra propone una soluzione che risolve i problemi dei nostri 
 proponendo un modo innovativo nella gestione dei dati sanitari, priveligiando la sicurezza senza dimenticare 
 la facilità d'uso, sempre essendo GDPR conformi"_ -- Michele Mattioni, CEO Ippocra.
 
-_"Quando il team di Ippocra ci ha proposto l'utilizzo della piattaforma abbiamo capito da subito che poteva 
-essere un'ottima occasione per innovare il modo in cui dare i nostri referti, ed inoltre creare un nostro 
-archivio sempre disponibile, di facile consultazione, sempre protetto dalla sicurezza che Ippocra offre. 
-Medical Campus innova da sempre, sia con la nostra divisione formazione e corsi, dove siamo uno dei leader 
-in Italia, ed ora anche nella refertazione, offrendo al cliente un modo innovativo e sicuro per ottenere 
-e salvare i propri referti."_ -- Valentina Sanguigni, Amministratore Delegato Medical Campus.
+_"Quando il team di Ippocra ci ha proposo l'utilizzo della piattaforma, abbiamo subito colto l'opportunità di innovare il nostro modo di fornire i referti. È stato evidente fin da subito che si trattava di una soluzione efficace non solo per migliorare la consegna dei referti, ma anche per creare un archivio digitale sempre accessibile, facile da consultare e protetto dalla sicurezza garantita da Ippocra.
+
+La nostra missione è l’innovazione: abbiamo iniziato con DentalCampus, diventando uno dei principali punti di riferimento in Italia per la formazione odontoiatrica, e proseguiamo ora con MedicalCampus, Poliambulatorio dedicato all’erogazione di prestazioni mediche e odontoiatriche. E ora grazie a Ippocra, offriremo anche ai nostri pazienti un modo moderno, sicuro e comodo per ricevere e archiviare i propri referti."_ -- Valentina Sanguigni, Amministratore Delegato di Dental e Medical Campus.
 

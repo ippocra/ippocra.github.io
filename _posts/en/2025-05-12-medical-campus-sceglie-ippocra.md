@@ -23,12 +23,13 @@ They will be able to add more documents as they come.
 _"We are very pleased to have been choosen by Medical Campus. We see this collaboration as the confirmation 
 that Ippocra is proposing a solution that solves the problems of our users (business users, in this case), with 
 a new and innovative way to manage the medical documents, with the focus on the security and without forgetting
-the easy of use, always being GDP compliant."_ -- Michele Mattioni, CEO Ippocra.
+the easy of use, always being GDPR compliant."_ -- Michele Mattioni, CEO Ippocra.
 
-_"Quando il team di Ippocra ci ha proposto l'utilizzo della piattaforma abbiamo capito da subito che poteva 
-essere un'ottima occasione per innovare il modo in cui dare i nostri referti, ed inoltre creare un nostro 
-archivio sempre disponibile, di facile consultazione, sempre protetto dalla sicurezza che Ippocra offre. 
-Medical Campus innova da sempre, sia con la nostra divisione formazione e corsi, dove siamo uno dei leader 
-in Italia, ed ora anche nella refertazione, offrendo al cliente un modo innovativo e sicuro per ottenere e volendo salvare 
-i propri referti."_ -- Valentina Sanguigni, Amministratore Delegato Medical Campus.
+_"When Ippocra's team has proposed to use thier Platform, we have quickly choosen the opportunity to innovate how 
+we provide our reports to our patients. It was clear from the beginning that it was an efficient solution, not only
+to improve how we provide the reports, but also to have a digital archive always available, easy to search and protected
+by the Ippocra security.
+
+Our mission is the innovation: we have started with DentalCampus, becoming one of the leaders in Italy for the dental education, and now we carry on with MedicalCampus, a Polyclinic focused on medical and dental services. And now, thanks to
+Ippocra, we will offer also to our patients a modern, safe, and easy way to receive and archive their own reports."_ -- Valentina Sanguigni, Amministratore Delegato di Dental e Medical Campus.
 
