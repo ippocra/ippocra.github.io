@@ -25,13 +25,14 @@ def create_new_post(title_parts):
             post.write("categories: news\n")
             post.write(f'permalink: "/{slugify(title)}"\n')
             post.write(f"lang: {lang}\n")
+            post.write(f'page_id: {slugify(title)}\n')
             post.write("header:\n")
             post.write("    teaser: FILL ME!\n")
             post.write("---\n")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Create a new Jekyll post")
-    parser.add_argument("title", nargs="+", help="Title of the post")
+    parser.add_argument("title", nargs="+", help="Title of the post. The date will be set to today automatically.")
     args = parser.parse_args()
 
     create_new_post(args.title)
