@@ -2,51 +2,172 @@
 layout: splash
 lang: it
 permalink: /customers
-title: Ippocra per Privati
-
-feature_row:
-feature_row_smart_search:
-  - image_path: /assets/images/search_uri_it.gif
-    alt: "Ricerca smart"
-    title: <span id="smart_search">Ricerca smart</span>
-    excerpt: "Utilizza la **ricerca smart** per trovare quello che cerchi. Ippocra estrae i dati 
-    **dentro** al documento, cosí puo cercare utilizzando qualsiasi parola contenuta all'interno del documento!"
-
-feature_row_automatic_organization:
-  - image_path: /assets/images/green_bigger_rectangular_with_white_ippo_inside.png
-    alt: "Organizzazione Automatica"
-    title: <span id="automatic_organization">Organizzazione Automatica</span>
-    excerpt: "Carica un documento medico, un PDF o una foto che hai fatto con il telefono, e Ippocra **estrarrá automaticamente** la data dell'esame, **categorizzerá** il documento, e potrai poi ritrovarlo facilmente grazie alla **Ricerca Smart**!"
-
-feature_row_security:
-  - image_path: /assets/images/white_bigger_rectangular_with_green_ippo_inside.png
-    title: <span id="security_first">Sicuri con la nostra criptazione</span>
-    excerpt: "I tuoi documenti medici sono **tuoi**. E' per questo che criptiamo i dati nei nostri servers con le piú avanzate tecniche, e non diamo i tuoi dati a nessun altro. E' per questo
-    che Ippocra ha una sottoscrizione. **Tu paghi il prodotto, non sei tu il prodotto** ;)"
-    
-
-feature_row_secret_link:
-  - image_path: /assets/images/ippolink_creation_it.gif
-    alt: "IppoLink"
-    title: <span id="ippolink">IppoLink</span>
-    excerpt: "I tuoi dati medici sono utili soltanto se **puoi condividerli con il personale medico**. E' per questo che abbiamo inventato l'**ippolink**! Per esempio, quando devi andare da un nuovo specialista, come puoi portare i tuoi documenti medici? Semplice: crea un 
-    ippolink. Questo automaticamente scadrá il giorno della data di scadenza, tenendo **i tuoi 
-    documenti al sicuro**. Evita di condividere i tuoi dati medici attraverso canali non sicuro, com
-    software di messaggeria istantanea, dove protrebbero essere utilizzati per istruire dell'AI. 
-    **Mantieni i tuoi dati al sicuro. Condividili in sicurezza, solo con chi vuoi tu, 
-    per quanto lo vuoi tu**."
-
+title: Ippocra for individuals
 ---
 
-<div class="headline-title-pages">
-<h1>Ippocra per Privati</h1>
-</div>
+<head>
+    <meta charset="utf-8">
+    <title>Ippocra for le Persone - La tua Salute, Reimmaginata</title>
+    <meta name="description" content="Securely manage and share your health records with Ippocra. Smart search, automatic organization, and secure sharing at your fingertips.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes scaleIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        @keyframes floatEffect {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0px); }
+        }
 
-{% include feature_row id="feature_row_smart_search" type="left" %}
+        .animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
+        .animate-slideInLeft { animation: slideInLeft 0.8s ease-out forwards; }
+        .animate-slideInRight { animation: slideInRight 0.8s ease-out forwards; }
+        .animate-scaleIn { animation: scaleIn 0.6s ease-out forwards; }
+        .animate-float { animation: floatEffect 3s ease-in-out infinite; }
 
-{% include feature_row id="feature_row_automatic_organization" type="right" %}
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-600 { animation-delay: 0.6s; }
+        .delay-700 { animation-delay: 0.7s; }
+        .delay-800 { animation-delay: 0.8s; }
+        .delay-900 { animation-delay: 0.9s; }
+        .delay-1000 { animation-delay: 1s; }
+    </style>
+</head>
 
-{% include feature_row id="feature_row_security" type="left" %}
+<main class="font-sans text-gray-800 bg-gradient-to-br from-emerald-50 to-teal-50 min-h-screen flex flex-col flex-grow">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-16 md:py-24 text-center">
+        <div class="absolute inset-0 bg-gradient-to-br from-green-50 to-teal-100 opacity-50"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6 animate-fadeIn delay-200">
+                La tua salute, <br class="hidden sm:inline">Reimmaginata.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 mb-10 mx-auto animate-fadeIn delay-400">
+                Conserva, trova e condividi facilmente tutti i tuoi dati sanitari in modo sicuro. <br class="hidden sm:inline">In qualsiasi momento, ovunque tu sia.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 animate-fadeIn delay-600">
+                <a href="https://app.ippocra.com/register"><button class="bg-teal-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:bg-teal-700 transition duration-300 transform hover:scale-105">
+                    Inizia gratis
+                </button></a>
+                <a href="#learn-more"><button class="bg-white text-teal-600 border border-teal-200 px-8 py-4 rounded-full text-lg font-semibold shadow-md hover:bg-teal-50 transition duration-300 transform hover:scale-105">
+                    Scopri di più
+                </button></a>
+            </div>
 
-{% include feature_row id="feature_row_secret_link" type="right" %}
+            <!-- <div class="relative w-full max-w-4xl mx-auto mt-16 animate-scaleIn delay-800">
+                <div class="aspect-video bg-gray-200 rounded-3xl shadow-xl overflow-hidden flex items-center justify-center text-gray-500 text-2xl font-bold border-4 border-white/50">
+                    <span class="p-8 text-center">
+                        Dashboard dei Dati Sanitari Sicuri
+                        <br>
+                        <span class="text-sm font-normal">(Segnaposto Video)</span>
+                    </span>
+                </div>
+                <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-emerald-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float delay-100"></div>
+                <div class="absolute -top-6 -right-6 w-32 h-32 bg-teal-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float delay-300"></div>
+            </div> -->
+        </div>
+    </section>
 
+    <!-- Features Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 id="learn-more" class="text-4xl font-bold text-center text-gray-900 mb-12 animate-fadeIn delay-100">
+                Funzionalità pensate per te
+            </h2>
+
+            <!-- Feature 1: Smart Search -->
+            <div class="flex flex-col md:flex-row items-center justify-center mb-20 md:mb-24 gap-12 animate-slideInLeft delay-300">
+                <div class="md:w-1/2 flex justify-center order-2 md:order-1">
+                    <div class="w-full max-w-md h-72 bg-gray-100 rounded-2xl shadow-lg flex items-center justify-center text-gray-500 font-medium border border-gray-200">
+                        <img src="assets/images/search_uri_it.gif">
+                    </div>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 text-center md:text-left">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Ricerca Intelligente</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Naviga facilmente tra i tuoi documenti sanitari. La nostra <strong>ricerca intelligente</strong> estrae il contenuto all’interno dei tuoi documenti, permettendoti di trovare tutto usando qualsiasi parola chiave, in qualsiasi lingua siano scritti!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 2: Automatic Organization -->
+            <div class="flex flex-col md:flex-row-reverse items-center justify-center mb-20 md:mb-24 gap-12 animate-slideInRight delay-500">
+                <div class="md:w-1/2 flex justify-center order-2 md:order-1">
+                    <div class="w-full max-w-md h-72 bg-gray-100 rounded-2xl shadow-lg flex items-center justify-center text-gray-500 font-medium border border-gray-200">
+                        <img src="assets/images/autocategorization_it.png">
+                    </div>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 text-center md:text-right">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Organizzazione Automatica</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Carica semplicemente un documento sanitario – un PDF o anche una foto dal tuo telefono. Ippocra <strong>estrae automaticamente</strong> la data dell’esame, categorizza il documento e ne digitalizza il testo, rendendolo immediatamente ricercabile tramite la nostra Ricerca Intelligente.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 3: Security First -->
+            <div class="flex flex-col md:flex-row items-center justify-center mb-20 md:mb-24 gap-12 animate-slideInLeft delay-700">
+                <div class="md:w-1/2 flex justify-center order-2 md:order-1">
+                    <div class="w-full max-w-md h-72 bg-gray-100 rounded-2xl shadow-lg flex items-center justify-center text-gray-500 font-medium border border-gray-200">
+                        <img src="assets/images/ippocra-logo-white-ippo-green-background.png" class="object-fill">
+                    </div>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 text-center md:text-left">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Sicuro con la nostra Crittografia</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I tuoi dati sanitari sono <strong>solo tuoi</strong>. Usiamo crittografia all’avanguardia per proteggere i tuoi dati su disco, e non li condivideremo mai con nessuno. Il nostro modello in abbonamento garantisce: <strong>Paghi per il prodotto, non sei il prodotto.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 4: IppoLink -->
+            <div class="flex flex-col md:flex-row-reverse items-center justify-center gap-12 animate-slideInRight delay-900">
+                <div class="md:w-1/2 flex justify-center order-2 md:order-1">
+                    <div class="w-full max-w-md h-72 bg-gray-100 rounded-2xl shadow-lg flex items-center justify-center text-gray-500 font-medium border border-gray-200">
+                        <img src="assets/images/ippolink_creation_it.gif">
+                    </div>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2 text-center md:text-right">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">IppoLink: Condivisione Sicura</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        I tuoi dati sanitari sono più utili quando puoi <strong>condividerli in modo sicuro con i professionisti</strong>. Con <strong>IppoLink</strong>, puoi creare facilmente link temporanei con scadenza per condividere la tua storia clinica con nuovi medici. Evita metodi non sicuri come i messaggi istantanei – <strong>mantieni i tuoi dati al sicuro e condividili solo quando vuoi tu.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-teal-600 to-teal-900 text-white text-center">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 animate-fadeIn delay-100">
+                Pronto a prendere il controllo della tua salute?
+            </h2>
+            <p class="text-xl mb-10 mx-auto animate-fadeIn delay-300">
+                Unisciti a migliaia di persone che si affidano a Ippocra per gestire i propri documenti sanitari in modo sicuro e senza sforzi.
+            </p>
+            <a href="https://app.ippocra.com/register"><button class="bg-white text-emerald-600 px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:scale-105 animate-scaleIn delay-500">
+                Registrati ora
+            </button></a>
+        </div>
+    </section>
+</main>
