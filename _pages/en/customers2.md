@@ -65,7 +65,7 @@ title: Ippocra for individuals
             <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6 animate-fadeIn delay-200">
                 Your Health, <br class="hidden sm:inline">Reimagined.
             </h1>
-            <p class="text-lg md:text-xl text-gray-700 mb-10 max-w-2xl mx-auto animate-fadeIn delay-400">
+            <p class="text-lg md:text-xl text-gray-700 mb-10 mx-auto animate-fadeIn delay-400">
                 Effortlessly store, find, and share all your health data securely. <br class="hidden sm:inline">Anytime, from anywhere.
             </p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 animate-fadeIn delay-600">
@@ -117,7 +117,7 @@ title: Ippocra for individuals
             <div class="flex flex-col md:flex-row-reverse items-center justify-center mb-20 md:mb-24 gap-12 animate-slideInRight delay-500">
                 <div class="md:w-1/2 flex justify-center order-2 md:order-1">
                     <div class="w-full max-w-md h-72 bg-gray-100 rounded-2xl shadow-lg flex items-center justify-center text-gray-500 font-medium border border-gray-200">
-                        Automatic Organization Visual (Image Placeholder)
+                        <img src="assets/images/autocategorization_en.png">
                     </div>
                 </div>
                 <div class="md:w-1/2 order-1 md:order-2 text-center md:text-right">
@@ -132,7 +132,7 @@ title: Ippocra for individuals
             <div class="flex flex-col md:flex-row items-center justify-center mb-20 md:mb-24 gap-12 animate-slideInLeft delay-700">
                 <div class="md:w-1/2 flex justify-center order-2 md:order-1">
                     <div class="w-full max-w-md h-72 bg-gray-100 rounded-2xl shadow-lg flex items-center justify-center text-gray-500 font-medium border border-gray-200">
-                        Security Encryption Visual (Image Placeholder)
+                        <img src="assets/images/ippocra-logo-white-ippo-green-background.png" class="object-fill">
                     </div>
                 </div>
                 <div class="md:w-1/2 order-1 md:order-2 text-center md:text-left">
@@ -162,11 +162,11 @@ title: Ippocra for individuals
 
     <!-- Call to Action Section -->
     <section class="py-16 md:py-24 bg-gradient-to-r from-teal-600 to-teal-900 text-white text-center">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl md:text-5xl font-extrabold mb-6 animate-fadeIn delay-100">
                 Ready to Take Control of Your Health?
             </h2>
-            <p class="text-xl mb-10 max-w-2xl mx-auto animate-fadeIn delay-300">
+            <p class="text-xl mb-10 mx-auto animate-fadeIn delay-300">
                 Join thousands of individuals who trust Ippocra to manage their health records securely and effortlessly.
             </p>
             <a href="https://app.ippocra.com/register"><button class="bg-white text-emerald-600 px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:scale-105 animate-scaleIn delay-500">
