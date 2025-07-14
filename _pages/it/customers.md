@@ -163,7 +163,8 @@ title: Ippocra for individuals
                 Pronto a prendere il controllo della tua salute?
             </h2>
             <p class="text-xl mb-10 mx-auto animate-fadeIn delay-300">
-                Unisciti a migliaia di persone che si affidano a Ippocra per gestire i propri documenti sanitari in modo sicuro e senza sforzi.
+                Unisciti a migliaia di persone che si affidano a Ippocra per gestire i propri documenti sanitari in modo sicuro e 
+                senza difficoltà.
             </p>
             <a href="https://app.ippocra.com/register"><button class="bg-white text-emerald-600 px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:scale-105 animate-scaleIn delay-500">
                 Registrati ora
