@@ -1,6 +1,5 @@
 <head>
-    <meta charset="utf-8">
-    <title>Ippocra for Business - Modern Health Data Solutions</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @keyframes fadeIn {
@@ -53,38 +52,7 @@
 </head>
 <body class="bg-slate-50 text-slate-700 antialiased">
 
-    <!-- Header -->
-    <header id="site-header" class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-0">
-                
-                <!-- Desktop CTAs -->
-                <div class="hidden lg:flex items-center space-x-4">
-                    <a href="mailto:info@ippocra.com" class="px-6 py-2.5 text-sm font-medium text-white bg-amber-500 rounded-lg hover:bg-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 transition-all duration-150 ease-in-out transform hover:scale-105">
-                        Request Demo
-                    </a>
-                    <a href="#login" class="px-6 py-2.5 text-sm font-medium text-sky-600 bg-sky-100 rounded-lg hover:bg-sky-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-all duration-150 ease-in-out">
-                        Login
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <div class="lg:hidden">
-                    <button id="mobile-menu-button" type="button" class="text-slate-500 hover:text-sky-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-sky-500" aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-3.75 5.25h10.5" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200">
-
-        </div>
-    </header>
+    
 
     <main id="main-content">
         <!-- Hero Section -->
@@ -303,30 +271,7 @@
     </main>
 
    
-
     <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuButton.addEventListener('click', () => {
-            const expanded = mobileMenuButton.getAttribute('aria-expanded') === 'true' || false;
-            mobileMenuButton.setAttribute('aria-expanded', !expanded);
-            mobileMenu.classList.toggle('hidden');
-            // Toggle icon
-            if (!expanded) {
-                mobileMenuButton.innerHTML = `
-                    <span class="sr-only">Close main menu</span>
-                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>`;
-            } else {
-                mobileMenuButton.innerHTML = `
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-3.75 5.25h10.5" />
-                    </svg>`;
-            }
-        });
 
         // FAQ Accordion Toggles (manual, no loops)
         const faqToggle1 = document.getElementById('faq-toggle-1');
@@ -364,9 +309,6 @@
                 faqIcon3.classList.toggle('rotate-180');
             });
         }
-        
-        // Update current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
 
         // Initial load animations for hero
         document.addEventListener('DOMContentLoaded', () => {
@@ -382,8 +324,7 @@
             if(ctaSectionContent) ctaSectionContent.style.opacity = '1';
         });
 
-        // Intersection Observer for scroll animations
-        const scrollTargets = document.querySelectorAll('.scroll-target');
+        
 
         const observerCallback = (entries) => {
             // NO forEach or loops here as per instructions. This means we can only observe one target like this.
