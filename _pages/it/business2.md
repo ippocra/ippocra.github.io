@@ -1,8 +1,8 @@
 ---
 layout: default
-lang: en
+lang: it
 permalink: /business2
-title: Ippocra for Business
+title: Ippocra per il Business
 
 ---
 
