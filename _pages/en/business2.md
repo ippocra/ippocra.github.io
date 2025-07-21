@@ -1,9 +1,0 @@
----
-layout: default
-lang: en
-permalink: /business2
-title: Ippocra for Business
-
----
-
-{% include_relative _inner_business.html %}
