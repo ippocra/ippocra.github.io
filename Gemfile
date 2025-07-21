@@ -10,7 +10,8 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.4.1"
 
 # Minimal mistakes theme
-gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :tag => "4.27.1"
+
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
@@ -19,7 +20,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-polyglot"
   gem "jekyll-seo-tag"
-  gem "jekyll-paginate-v2"
+  #gem "jekyll-paginate-v2"
   gem "jekyll-minifier"
   gem 'jekyll-redirect-from'
 end
