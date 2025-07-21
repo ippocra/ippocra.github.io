@@ -1,6 +1,6 @@
 <head>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/tailwindcss@4.1.11"></script>
     <style>
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -42,12 +42,10 @@
         @import url('https://rsms.me/inter/inter.css');
         body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
-        .hero-bg-gradient {
-            background: linear-gradient(135deg, #e8f9e4 0%, #ccfbf1 100%);
-        }
         .cta-bg-gradient {
-            background: linear-gradient(135deg, #e8f9e4 0%, #ccfbf1 100%);
+            background: linear-gradient(135deg, #e8f9e4 0%, #9df3e0 100%);
         }
+
     </style>
 </head>
 <body class="bg-slate-50 text-slate-700 antialiased">
@@ -55,18 +53,19 @@
     <main id="main-content">
         <!-- Hero Section -->
         <section id="hero" class="relative hero-bg-gradient overflow-hidden pt-20 pb-20 md:pt-32 md:pb-32">
+            <div class="absolute inset-0 bg-gradient-to-br from-green-50 to-teal-100 opacity-50"></div>
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="animate-fadeInUp" style="opacity:0;">
                     <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900">
-                        Elevate Your Practice with <span class="text-emerald-600">Ippocra for Business</span>
+                        Elevate Your Practice with <span class="text-teal-600">Ippocra for Business</span>
                     </h1>
                     <p class="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-slate-600 leading-relaxed">
                         Seamlessly digitize health records, enhance client engagement, and keep your brand at the forefront. The future of patient data management is here.
                     </p>
                     <div class="mt-10 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
                         <a href="mailto:info@ippocra.com" class="w-full sm:w-auto inline-flex items-center justify-center 
-                        px-8 py-3.5 text-base font-medium text-white bg-emerald-500 border border-transparent rounded-xl 
-                        shadow-md hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 
+                        px-8 py-3.5 text-base font-medium text-white bg-teal-500 border border-transparent rounded-xl 
+                        shadow-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 
                         focus:ring-offset-2 focus:ring-offset-slate-50 hover:text-white 
                         transition-all duration-150 ease-in-out transform hover:scale-105 animate-pulseGlow">
                             Request a Demo Today
@@ -74,7 +73,7 @@
                                 <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
                             </svg>
                         </a>
-                        <a href="#learn-more" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-emerald-700 bg-emerald-100 border border-emerald-200 rounded-xl hover:bg-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-slate-50 transition-colors">
+                        <a href="#learn-more" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-teal-700 bg-teal-100 border border-teal-200 rounded-xl hover:bg-teal-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-slate-50 transition-colors">
                             Learn More
                         </a>
                     </div>
@@ -95,7 +94,7 @@
                     <!-- Benefit 1: Digitalize Reports -->
                     <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 scroll-animated-item scroll-animated-item-1">
                         <div class="flex-shrink-0">
-                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-emerald-100 text-emerald-500">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-teal-100 text-teal-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                                   <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                                 </svg>
@@ -135,7 +134,7 @@
         </section>
 
         <!-- How It Works Section -->
-        <section id="how-it-works" class="py-16 sm:py-24 bg-emerald-50 scroll-target">
+        <section id="how-it-works" class="py-16 sm:py-24 bg-teal-50 scroll-target">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 scroll-animated-item">
                     <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Simple Steps to a Smarter Practice</h2>
@@ -144,7 +143,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12">
                     <!-- Step 1 -->
                     <div class="text-center scroll-animated-item scroll-animated-item-1">
-                        <div class="mx-auto mb-6 flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-md text-emerald-500 text-3xl font-bold">1</div>
+                        <div class="mx-auto mb-6 flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-md text-teal-500 text-3xl font-bold">1</div>
                         <h3 class="text-xl font-semibold text-slate-800">Easy Integration</h3>
                         <p class="mt-2 text-slate-600">Connect Ippocra with your existing systems quickly. We provide support 
                             to ensure a smooth setup process thanks to out <b>Ippocra Connector</b>.</p>
@@ -152,7 +151,7 @@
                     </div>
                     <!-- Step 2 -->
                     <div class="text-center scroll-animated-item scroll-animated-item-2">
-                        <div class="mx-auto mb-6 flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-md text-emerald-500 text-3xl font-bold">2</div>
+                        <div class="mx-auto mb-6 flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-md text-teal-500 text-3xl font-bold">2</div>
                         <h3 class="text-xl font-semibold text-slate-800">Securely Share Data</h3>
                         <p class="mt-2 text-slate-600">Send reports and health information to your clients through our secure platform via the <b>Ippolinks</b>. 
                             Data is protected and easily accessible.</p>
@@ -160,7 +159,7 @@
                     </div>
                     <!-- Step 3 -->
                     <div class="text-center scroll-animated-item scroll-animated-item-3">
-                        <div class="mx-auto mb-6 flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-md text-emerald-500 text-3xl font-bold">3</div>
+                        <div class="mx-auto mb-6 flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-md text-teal-500 text-3xl font-bold">3</div>
                         <h3 class="text-xl font-semibold text-slate-800">Boost Engagement</h3>
                         <p class="mt-2 text-slate-600">Clients appreciate the convenience and control, leading to higher satisfaction and stronger 
                             relationships with your practice thanks to the <b>Sponsored Plan</b>.</p>
@@ -188,8 +187,8 @@
                                 </div>
                                 <div>
                                     <a href="https://ippocra.com/en/medical-campus-sceglie-ippocra" class="w-full sm:w-auto inline-flex items-center justify-center 
-                                        px-8 py-3.5 text-base font-medium text-white text-center bg-emerald-500 border border-transparent rounded-xl 
-                                        shadow-md hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 
+                                        px-8 py-3.5 text-base font-medium text-white text-center bg-teal-500 border border-transparent rounded-xl 
+                                        shadow-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 
                                         focus:ring-offset-2 focus:ring-offset-slate-50 hover:text-white visited:text-white
                                         transition-all duration-150 ease-in-out transform hover:scale-105 animate-pulseGlow">
                                         Read More
@@ -198,11 +197,11 @@
                             </div>
                         </div>
                         <div class="mt-8 md:mt-0 md:w-1/2 md:pl-12 flex justify-center animate-fadeInUp" style="opacity:0; animation-delay: 0.4s;">
-                            <div class="w-72 h-72 sm:w-80 sm:h-80 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-500 p-4">
+                            <div class="w-72 h-72 sm:w-80 sm:h-80 bg-teal-100 rounded-full flex items-center justify-center text-teal-500 p-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-24 h-24 opacity-50">
                                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
                                 </svg>
-                                <span class="absolute text-center text-emerald-700 font-medium">Commitment to Excellence</span>
+                                <span class="absolute text-center text-teal-700 font-medium">Commitment to Excellence</span>
                             </div>
                         </div>
                     </div>
@@ -221,9 +220,9 @@
                     <!-- FAQ Item 1 -->
                     <div class="scroll-animated-item scroll-animated-item-1">
                         <div class="bg-slate-50 rounded-xl p-1 hover:bg-slate-100 transition-colors">
-                            <button id="faq-toggle-1" aria-expanded="false" aria-controls="faq-answer-1" class="flex items-center justify-between w-full p-5 text-left text-lg font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded-lg">
+                            <button id="faq-toggle-1" aria-expanded="false" aria-controls="faq-answer-1" class="flex items-center justify-between w-full p-5 text-left text-lg font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-lg">
                                 <span>What are the main benefits for my clinic?</span>
-                                <svg id="faq-icon-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-emerald-500 transform transition-transform duration-300">
+                                <svg id="faq-icon-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-teal-500 transform transition-transform duration-300">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                                 </svg>
                             </button>
@@ -235,9 +234,9 @@
                     <!-- FAQ Item 2 -->
                      <div class="scroll-animated-item scroll-animated-item-2">
                         <div class="bg-slate-50 rounded-xl p-1 hover:bg-slate-100 transition-colors">
-                            <button id="faq-toggle-2" aria-expanded="false" aria-controls="faq-answer-2" class="flex items-center justify-between w-full p-5 text-left text-lg font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded-lg">
+                            <button id="faq-toggle-2" aria-expanded="false" aria-controls="faq-answer-2" class="flex items-center justify-between w-full p-5 text-left text-lg font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-lg">
                                 <span>How secure is patient data with Ippocra?</span>
-                                 <svg id="faq-icon-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-emerald-500 transform transition-transform duration-300">
+                                 <svg id="faq-icon-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-teal-500 transform transition-transform duration-300">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                                 </svg>
                             </button>
@@ -249,9 +248,9 @@
                     <!-- FAQ Item 3 -->
                     <div class="scroll-animated-item scroll-animated-item-3">
                         <div class="bg-slate-50 rounded-xl p-1 hover:bg-slate-100 transition-colors">
-                            <button id="faq-toggle-3" aria-expanded="false" aria-controls="faq-answer-3" class="flex items-center justify-between w-full p-5 text-left text-lg font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 rounded-lg">
+                            <button id="faq-toggle-3" aria-expanded="false" aria-controls="faq-answer-3" class="flex items-center justify-between w-full p-5 text-left text-lg font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-teal-500 rounded-lg">
                                 <span>Is it difficult to integrate Ippocra?</span>
-                                <svg id="faq-icon-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-emerald-500 transform transition-transform duration-300">
+                                <svg id="faq-icon-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-teal-500 transform transition-transform duration-300">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                                 </svg>
                             </button>
@@ -275,9 +274,9 @@
                         </p>
                         <div class="mt-10">
                             <a href="mailto:info@ippocra.com?subject=Demo Request for Ippocra for Business" 
-                            class="inline-flex items-center justify-center px-10 py-4 text-lg font-medium text-white bg-emerald-500 
-                            border border-transparent rounded-xl shadow-lg hover:bg-emerald-600 focus:outline-none 
-                            focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-cyan-100 hover:text-white transition-all 
+                            class="inline-flex items-center justify-center px-10 py-4 text-lg font-medium text-white bg-teal-500 
+                            border border-transparent rounded-xl shadow-lg hover:bg-teal-600 focus:outline-none 
+                            focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-cyan-100 hover:text-white transition-all 
                             duration-150 ease-in-out transform hover:scale-105">
                                 Contact Us for a Demo
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-3">
