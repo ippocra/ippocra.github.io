@@ -42,12 +42,10 @@
         @import url('https://rsms.me/inter/inter.css');
         body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
-        .hero-bg-gradient {
-            background: linear-gradient(135deg, #e8f9e4 0%, #ccfbf1 100%);
-        }
         .cta-bg-gradient {
             background: linear-gradient(135deg, #e8f9e4 0%, #ccfbf1 100%);
         }
+
     </style>
 </head>
 <body class="bg-slate-50 text-slate-700 antialiased">
@@ -55,6 +53,7 @@
     <main id="main-content">
         <!-- Hero Section -->
         <section id="hero" class="relative hero-bg-gradient overflow-hidden pt-20 pb-20 md:pt-32 md:pb-32">
+            <div class="absolute inset-0 bg-gradient-to-br from-green-50 to-teal-100 opacity-50"></div>
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="animate-fadeInUp" style="opacity:0;">
                     <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900">
