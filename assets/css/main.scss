@@ -9,32 +9,6 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 
-
-#hero-headline {
-    font-size: $h-size-2;
-    font-weight: bold;
-    
-    text-align: center;
-    //font-size: large;
-}
-
-#hero-paragraph {
-    //font-weight: 700;
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-#register-call {
-    font-size: $h-size-2;
-}
-
-.headline-title-pages {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
 #footer {
     background-color: #439ba6;
 }
