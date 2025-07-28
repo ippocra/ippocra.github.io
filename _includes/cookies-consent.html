@@ -1,67 +1,93 @@
-<!-- Only add all this in production, why would I analyse myself when writing the post anyway. -->
-<!-- {% if jekyll.environment == 'production' %} -->
-
-<!-- Add cookie consent css & js -->
-<link rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
-    data-cfasync="false"></script>
-
-<!-- Add google analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E2VKDEXM14"></script>
+<style>
+    #cookie-notice {padding: 0.5rem 1rem; 
+                    display: none; 
+                    text-align: center; 
+                    position: fixed; 
+                    bottom: 0; 
+                    width: 100%; 
+                    background: #222; 
+                    color: rgba(255,255,255,0.8);
+                }
+    #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+    @media (max-width: 767px) {
+        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+        #cookie-notice a {position: relative; bottom: 4px;}
+    }
+</style>
+<div id="cookie-notice"><span>{{ site.data[site.active_lang].strings.cookies.message }}</span>
+    <a id="cookie-notice-accept" class="btn btn--primary btn-sm">{{ site.data[site.active_lang].strings.cookies.approve }}</a>
+    <a id="cookie-notice-decline" class="btn btn--inverse btn-sm">{{ site.data[site.active_lang].strings.cookies.decline }} </a>
+    <span class="divider">|</span>
+    <a href="/legal/policy" class="btn btn-sm">{{ site.data[site.active_lang].strings.cookies.more_info }}</a></div>
+<div id="cookie-placeholder"></div>
 
 <script>
-    // Reads the value of a cookie by name or returns empty string
-    function getCookie(name) {
-        var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
-        return b ? b.pop() : '';
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
     }
 
-    // Actually starting analytics up
-    function addAnalytics() {
+    if(readCookie('cookie-notice-dismissed') === null) {
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+
+    if(readCookie('cookie-notice-dismissed')=='true') {
+
+        // Insert async script
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-E2VKDEXM14';
+
+        const footer = document.querySelector('footer');
+        if (footer && footer.parentNode) {
+            footer.parentNode.insertBefore(script, footer.nextSibling);
+        }
+
+        // insert GA 
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'G-E2VKDEXM14');
     }
+    
 
-    // Waiting for the load event
-    window.addEventListener("load", function () {
-        console.log("Launching cookie conset train");
-        // Reading "cookieconsent_status" cookie
-        const cookieConsent = getCookie('cookieconsent_status');
 
-        // Start analytics if user consented or did not deny
-        if (cookieConsent === 'allow' || cookieConsent === '') {
-            addAnalytics();
-        }
-
-        // Initialise cookie consent banner
-        window.cookieconsent.initialise({
-            "palette": {
-                "popup": {
-                    "background": "#efefef",
-                    "text": "#404040"
-                },
-                "button": {
-                    "background": "#8ec760",
-                    "text": "#ffffff"
-                }
-            },
-            "type": "opt-out",
-            "content": {
-                "allow": "Approve",
-                "dismiss": "Approve",
-                "deny": "Reject"
-            },
-            // Reload the page on user choice to make sure cookie is set
-            onStatusChange: function (status, chosenBefore) {
-                location.reload();
-            }
-        })
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-dismissed','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
     });
-</script>
+    document.getElementById('cookie-notice-decline').addEventListener("click",function() {
+        
+        createCookie('cookie-notice-dismissed','false',31);
+        // Clear any stranded cookies
+        document.cookie.split(';').forEach(function(cookie) {
+            const name = cookie.trim().split('=')[0];
+            if (name.startsWith('_ga')) {
+                document.cookie = `${name}=; Max-Age=0; path=/; domain=${location.hostname}`;
+            }
+        });
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
 
-<!-- {% endif %} -->
+</script>

@@ -8,3 +8,8 @@ navigation:
   pricing:
     title: Prezzi
     url: /pricing
+cookies:
+  message: "Vorremmo utilizzare cookies di terze parti per migliorare la funzionalità di questo sito."
+  approve: "Approvo"
+  more_info: "Piú Informazioni"
+  decline: "Declino"

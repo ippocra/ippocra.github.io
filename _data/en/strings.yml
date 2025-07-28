@@ -8,3 +8,8 @@ navigation:
   pricing:
     title: Pricing
     url: /pricing
+cookies:
+  message: "We would like to use third party cookies and scripts to improve the functionality of this website."
+  approve: "Approve"
+  more_info: "More Info"
+  decline: "Decline"
