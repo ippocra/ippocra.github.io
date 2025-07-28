@@ -5,6 +5,11 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+
+#btn-register:hover {
+  color: #fff
+}
+
 #footer {
     background-color: #439ba6;
 }
