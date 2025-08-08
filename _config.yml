@@ -20,9 +20,9 @@
 
 title: Ippocra
 email: info@ippocra.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Your health records at your fingertips. Easily store, find 
-  and share all your health data. Any time, from anywhere.
+description:
+  en: Your health records at your fingertips. Easily store, find and share all your health data. Any time, from anywhere.
+  it: I tuoi referti medici a portata di mano. Organizza facilemente, trova e condividi in sicurezza i tuoi dati medici. Quando vuoi, dove vuoi.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ippocra.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -121,7 +121,7 @@ parallel_localization: false
 langsep: "|"
 keywords: 
   en: health, reports, analysis, receipts, blood work, records, sharing, organizing, finding, archiving, retrieving, clinic, medics, doctors, individuals
-  it: salute, referti, analisi, ricevute, sangue, condivisione, organizzazione, ricerca, archiviazione, cliniche, private, medicina, dottori, privati, refertazione
+  it: salute, referti, analisi, ricevute, sangue, condivisione, organizzazione, ricerca, archiviazione, cliniche, private, medicina, dottori, privati, refertazione, gestionale medico, autmento del fatturato, facile, veloce, semplificare
 
 include:
   - _pages

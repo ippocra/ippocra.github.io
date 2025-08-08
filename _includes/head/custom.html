@@ -1,4 +1,9 @@
 <link rel="shortcut icon" type="image/png" href="/assets/images/android-chrome-512x512-1-150x150.png">
 {% I18n_Headers %}
+<!--
+ assigned in seo.html 
+    <meta name="description" content="{{ page.description | default: site.description[site.active_lang] }}"> 
+-->
+<meta name="keywords" content="{{ page.keywords | default: site.keywords[site.active_lang] }}">
 <!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
