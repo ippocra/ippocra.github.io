@@ -26,6 +26,8 @@ description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ippocra.com" # the base hostname & protocol for your site, e.g. http://example.com
 
+paginate: null
+# --- Pagination v2 settings ---
 
 # Build settings
 theme: minimal-mistakes-jekyll
@@ -83,19 +85,9 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: https://www.linkedin.com/company/ippocra/
 
-
 pagination:
-  enabled: true
-  collection: 'posts'
-  per_page: 5
-  permalink: '/page/:num/'  # Pages are index.html inside this folder (default)
-  title: ':title - page :num'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  trail:
-    before: 2
-    after: 2
+  enabled: false # We will enable it per-page in front matter, not globally
+
 
 
 plugins:
@@ -106,6 +98,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-minifier
   - jekyll-redirect-from
+  - jekyll-paginate-v2
 
 jekyll-minifier:
   uglifier_args:
