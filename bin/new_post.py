@@ -21,9 +21,9 @@ def create_new_post(title_parts):
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         with open(filename, 'w', encoding='utf-8') as post:
             post.write("---\n")
-            post.write(f'title: "{title.replace("&", "&amp;")}"\n')
+            post.write(f'title: {title.replace("&", "&amp;")}\n')
             post.write("categories: news\n")
-            post.write(f'permalink: "/{slugify(title)}"\n')
+            post.write(f'permalink: /{slugify(title)}\n')
             post.write(f"lang: {lang}\n")
             post.write(f'page_id: {slugify(title)}\n')
             post.write("header:\n")

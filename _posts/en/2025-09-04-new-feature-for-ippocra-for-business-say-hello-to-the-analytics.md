@@ -1,7 +1,7 @@
 ---
-title: "New feature for Ippocra for business: say hello to the Analytics"
+title: New feature for Ippocra for business - say hello to the Analytics
 categories: news
-permalink: "/new-feature-for-ippocra-for-business-say-hello-to-the-analytics"
+permalink: /new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 lang: en
 page_id: new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 header:

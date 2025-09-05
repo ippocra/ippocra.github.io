@@ -1,7 +1,7 @@
 ---
-title: "New feature for Ippocra for business: say hello to the Analytics"
+title: New feature for Ippocra for business - say hello to the Analytics
 categories: news
-permalink: "/new-feature-for-ippocra-for-business-vi-presentiamo-gli-analytics"
+permalink: /new-feature-for-ippocra-for-business-vi-presentiamo-gli-analytics
 lang: it
 page_id: new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 header:
@@ -15,14 +15,14 @@ I nostri utenti business ci hanno chiesto come ed in che modo i loro pazienti ut
 Ippocra. In particolare le domande erano: ricevono ed aprono gli Ippolink che mandiamo? 
 Visualizzano i referti inviati?
 
-Questo domande, ed altre sono molto importanti, perchè danno l'idea di come Ippocra viene 
+Questo domande, ed altre sono molto importanti, perché danno l'idea di come Ippocra viene 
 utilizzata, e se le persone la trovano utile.
 
 Internamente noi abbiamo una data room, in cui monitoriamo questi comportamenti, e fino 
-ad oggi invivamo dei report customizzati ad ogni nostro utente. 
+ad oggi inviavamo dei reports dedicati ad ogni nostro utente business. 
 
 Tuttavia questo non dava la possibilità di avere i dati in tempo reale e non forniva una
-visione complessiva della situatione.
+visione complessiva della situazione.
 
 # Gli analytics su Ippocra Business
 
