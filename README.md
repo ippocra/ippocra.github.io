@@ -78,3 +78,13 @@ To create a new post automatically run
 You need slugify installed as requirements:
 
     pip install python-slugify
+
+### Zoomable images
+
+Use this type of markdown, so you get an automatic link to the bigger image.
+
+    [![](img.png)](img.png)
+
+for example, with a real image, will look like this:
+
+    [![image-center](/assets/images/analytics-ita-top.png)](/assets/images/analytics-ita-top.png){: .align-center}
