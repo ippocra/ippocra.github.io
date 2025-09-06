@@ -37,4 +37,5 @@ Inoltre è possibile osservare il trend dei click sugli **Ippolink** e delle vis
 
 Gli analytics sono disponibili da oggi per tutti i piani Business.  
 
-Se sei un medico o un professionista sanitario e desideri scoprire come Ippocra possa supportare la tua pratica o il tuo studio, leggi [qui](https://ippocra.com/business) e prenota la tua call gratuita!
+Se sei un **medico** o un **professionista sanitario** e desideri scoprire come Ippocra possa supportare 
+la tua pratica o il tuo studio, leggi **[qui](https://ippocra.com/business)** e prenota la **tua call gratuita**!
