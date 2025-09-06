@@ -10,6 +10,33 @@ For inquiries regarding permissions, licensing, or other information, please con
 
 # Marketing site for Ippocra
 
+## Development set up
+
+### Ruby install
+
+We want to use at least ruby 3.3.9, which is very fast on building the website.
+
+To do that:
+
+1) install RVM
+
+- follow this for Ubuntu: https://github.com/rvm/ubuntu_rvm
+- general installation: https://rvm.io/rvm/install
+
+2) make sure the shell is set
+
+    bin/bash --login
+
+3) Install ruby 3.3.9
+
+    rvm install 3.3.9 
+
+or select it if already installed:
+
+    rvm use 3.3.9
+
+### Jekyll install
+
 We use bundle to set up the enviroment: https://jekyllrb.com/tutorials/using-jekyll-with-bundler/#configure-bundler-install-path
 
 Set up the path for the bundle:

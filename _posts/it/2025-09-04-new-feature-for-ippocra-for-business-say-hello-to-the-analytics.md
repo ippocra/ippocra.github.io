@@ -1,44 +1,40 @@
 ---
-title: New feature for Ippocra for business - say hello to the Analytics
+title: Nuova funzionalità per Ippocra Business - vi presentiamo i Business Analytics
 categories: news
-permalink: /new-feature-for-ippocra-for-business-vi-presentiamo-gli-analytics
+permalink: /nuova-funzionalita-per-ippocra-business-vi-presentiamo-gli-analytics
 lang: it
 page_id: new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 header:
     teaser: /assets/images/forte-altavilla-luna.jpg
 ---
 
-![image-center](/assets/images/forte-altavilla-luna.jpg){: .align-center}
-*Ippocra Business ora con gli analytics -- Per capire come i tuoi pazienti la utilizzano.*
+![image-center](/assets/images/forte-altavilla-luna.jpg){: .align-center}**Ippocra Business ora con gli Analytics – il telescopio per vedere meglio la luna!**  
 
-I nostri utenti business ci hanno chiesto come ed in che modo i loro pazienti utilizzavano 
-Ippocra. In particolare le domande erano: ricevono ed aprono gli Ippolink che mandiamo? 
-Visualizzano i referti inviati?
+I nostri clienti business ci hanno chiesto di capire come i loro pazienti interagiscano con Ippocra. Le domande più frequenti erano:  
 
-Questo domande, ed altre sono molto importanti, perché danno l'idea di come Ippocra viene 
-utilizzata, e se le persone la trovano utile.
+- *Ricevono e aprono gli Ippolink che inviamo?*  
+- *Visualizzano i referti inviati?*  
 
-Internamente noi abbiamo una data room, in cui monitoriamo questi comportamenti, e fino 
-ad oggi inviavamo dei reports dedicati ad ogni nostro utente business. 
+Queste informazioni, insieme ad altre, sono fondamentali perché mostrano come Ippocra venga realmente utilizzata e se gli utenti la trovino utile.  
 
-Tuttavia questo non dava la possibilità di avere i dati in tempo reale e non forniva una
-visione complessiva della situazione.
+Internamente disponiamo di una **data‑room** dove monitoriamo questi comportamenti. Fino a poco tempo fa fornivamo report dedicati a ciascun cliente business, ma questi non consentivano l’accesso ai dati in tempo reale né offrivano una visione d’insieme della situazione.  
 
-# Gli analytics su Ippocra Business
+---  
 
-Siamo molto contenti di presentarvi i nostri analitici. 
+## Gli Analytics su Ippocra Business  
 
-![image-center](/assets/images/analytics-ita-top.png){: .align-center}
+Siamo lieti di presentarvi i nuovi strumenti di analisi.  
 
-Permettono di avere in un colpo d'occhio quante Persone sono nel piano, quanti Documenti sono 
-stati caricati sulla Ippocra ed infine quante volte questi sono stati visualizzati.
+![Immagine centrata](/assets/images/analytics-ita-top.png){: .align-center}  
 
-Inoltre danno la possibilità di vedere il trend di quanti Ippolink sono stati visitati, 
-e quanti Documenti sono stati visualizzati.
+Grazie agli analytics potete, a colpo d’occhio:  
 
-Disponibili da oggi per tutti i nostri piani Business.
+- vedere quante persone sono attive nel vostro piano;  
+- conoscere il numero di documenti caricati su Ippocra;  
+- controllare quante volte tali documenti sono stati visualizzati.  
 
-Sei un medico o un professionista sanitario e vuoi sapere come Ippocra può aiutare la tua
-pratica o il tuo studio? Leggi [quà](https://ippocra.com/business) e prenota la tua call gratuita!
+Inoltre è possibile osservare il trend dei click sugli **Ippolink** e delle visualizzazioni dei documenti.  
 
+Gli analytics sono disponibili da oggi per tutti i piani Business.  
 
+Se sei un medico o un professionista sanitario e desideri scoprire come Ippocra possa supportare la tua pratica o il tuo studio, leggi [qui](https://ippocra.com/business) e prenota la tua call gratuita!
