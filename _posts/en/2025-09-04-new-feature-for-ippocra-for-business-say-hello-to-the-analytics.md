@@ -6,6 +6,7 @@ lang: en
 page_id: new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 header:
     teaser: /assets/images/forte-altavilla-luna.jpg
+classes: wide
 ---
 
 ![image-center](/assets/images/forte-altavilla-luna.jpg){: .align-center}**Ippocra Business now with Analytics – the telescope to better see the moon!**  
@@ -25,7 +26,7 @@ Internally we have a **data‑room** where we monitor these behaviors. Until rec
 
 We are pleased to introduce our new analytics tools.  
 
-![Centered image](/assets/images/analytics-ita-top.png){: .align-center}  
+[![](/assets/images/analytics-ita-top.png)](/assets/images/analytics-ita-top.png){: .align-center}  
 
 Thanks to the analytics you can, at a glance:  
 
@@ -35,6 +36,6 @@ Thanks to the analytics you can, at a glance:
 
 You can also observe the trend of clicks on **Ippolinks** and document views.  
 
-Analytics are available starting today for all Business plans.  
+Analytics are already available on all the Business plans.  
 
 If you are a **doctor** or a **healthcare professional** and want to discover how Ippocra can support your practice or clinic, read **[here](https://ippocra.com/en/business)** and schedule your **free call**!

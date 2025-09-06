@@ -6,9 +6,12 @@ lang: it
 page_id: new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 header:
     teaser: /assets/images/forte-altavilla-luna.jpg
+classes: wide
 ---
 
-![image-center](/assets/images/forte-altavilla-luna.jpg){: .align-center}**Ippocra Business ora con gli Analytics – il telescopio per vedere meglio la luna!**  
+<!-- [![](img.jpg)](img.jpg) -->
+![image-center](/assets/images/forte-altavilla-luna.jpg){: .align-center}
+**Ippocra Business ora con gli Analytics – il telescopio per vedere meglio la luna!**  
 
 I nostri clienti business ci hanno chiesto di capire come i loro pazienti interagiscano con Ippocra. Le domande più frequenti erano:  
 
@@ -25,7 +28,7 @@ Internamente disponiamo di una **data‑room** dove monitoriamo questi comportam
 
 Siamo lieti di presentarvi i nuovi strumenti di analisi.  
 
-![Immagine centrata](/assets/images/analytics-ita-top.png){: .align-center}  
+[![image-center](/assets/images/analytics-ita-top.png)](/assets/images/analytics-ita-top.png){: .align-center}  
 
 Grazie agli analytics potete, a colpo d’occhio:  
 
@@ -35,7 +38,7 @@ Grazie agli analytics potete, a colpo d’occhio:
 
 Inoltre è possibile osservare il trend dei click sugli **Ippolink** e delle visualizzazioni dei documenti.  
 
-Gli analytics sono disponibili da oggi per tutti i piani Business.  
+Gli analytics sono già disponibili per tutti i piani Business.  
 
 Se sei un **medico** o un **professionista sanitario** e desideri scoprire come Ippocra possa supportare 
 la tua pratica o il tuo studio, leggi **[qui](https://ippocra.com/business)** e prenota la **tua call gratuita**!

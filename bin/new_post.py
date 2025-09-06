@@ -28,6 +28,7 @@ def create_new_post(title_parts):
             post.write(f'page_id: {slugify(title)}\n')
             post.write("header:\n")
             post.write("    teaser: FILL ME!\n")
+            post.write("classes: wide")
             post.write("---\n")
 
 if __name__ == "__main__":
