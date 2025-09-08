@@ -26,7 +26,7 @@ Internally we have a **data‑room** where we monitor these behaviors. Until rec
 
 We are pleased to introduce our new analytics tools.  
 
-[![](/assets/images/analytics-ita-top.png)](/assets/images/analytics-ita-top.png){: .align-center}  
+[![](/assets/images/analytics-en-top.png)](/assets/images/analytics-en-top.png){: .align-center}  
 
 Thanks to the analytics you can, at a glance:  
 
