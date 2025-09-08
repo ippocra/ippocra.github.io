@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:mattions/polyglot.git
+  remote: https://github.com/mattions/polyglot.git
   revision: 01aaeb8d0df210db371a8ed89a2624010b3c6cd6
   branch: fix_regex_relative_url
   specs:
