@@ -65,7 +65,7 @@
                     Digitalizza facilmente le cartelle cliniche, migliora il coinvolgimento dei clienti e mantieni il tuo brand in primo piano. Il futuro della gestione dei dati sanitari è qui.
                 </p>
                 <div class="mt-10 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="mailto:info@ippocra.com" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-white bg-teal-500 border border-transparent rounded-xl shadow-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-slate-50 hover:text-white transition-all duration-150 ease-in-out transform hover:scale-105 animate-pulseGlow">
+                    <a href="#demo-booking" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-white bg-teal-500 border border-transparent rounded-xl shadow-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-slate-50 hover:text-white transition-all duration-150 ease-in-out transform hover:scale-105 animate-pulseGlow">
                         Richiedi una demo oggi
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20" class="w-5 h-5 ml-2">
                             <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
@@ -271,7 +271,7 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-3xl mx-auto text-center">
                     <div class="animate-fadeInUp" style="opacity:0; animation-delay: 0.1s;">
-                        <h2 class="text-3xl sm:text-4xl font-extrabold text-cyan-800 tracking-tight">
+                        <h2 id="demo-booking" class="text-3xl sm:text-4xl font-extrabold text-cyan-800 tracking-tight">
                             Sei pronto a vedere Ippocra in azione?</h2>
                         <p class="mt-4 text-lg text-cyan-700 leading-relaxed">
                             Scopri come Ippocra for Business può rivoluzionare il tuo flusso di lavoro, 
@@ -344,15 +344,6 @@
                             <input type="hidden" name="utm_medium"   id="utm_medium">
                             <input type="hidden" name="utm_campaign" id="utm_campaign">
                             <input type="hidden" name="utm_content"  id="utm_content">
-
-                            <!-- (Facoltativo) reCAPTCHA v2 -->
-                            <!--
-                            <div class="flex justify-center">
-                                <div class="g-recaptcha" data-sitekey="TUO_SITE_KEY"></div>
-                            </div>
-                            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                            -->
-
                             <!-- PULSANTE DI INVIO -->
                             <div class="pt-2">
                                 <button type="submit"
@@ -377,10 +368,10 @@
                             </form>
                         <!-- ==================== END FORM ==================== -->
                              <!-- Messaggio di ringraziamento (mostrato via JS) -->
-                        <div id="thanksMsg"
-                            class="hidden text-center text-green-600 font-medium mt-4">
-                        Grazie! Abbiamo ricevuto la tua richiesta.
-                        </div>
+                            <div id="thanksMsg"
+                                class="hidden text-center text-green-600 font-medium mt-4">
+                            Grazie! Abbiamo ricevuto la tua richiesta.
+                            </div>
   
                         </div>
                     </div>
@@ -389,76 +380,13 @@
         </section>
     </main>
 
-  <!-- ==================== SCRIPT PER GLI UTM ==================== -->
-<script>
-  // ✅ 1️⃣ Aspettiamo che il DOM sia pronto
-  document.addEventListener('DOMContentLoaded', () => {
+  <!-- ==================== Script for the form submission ==================== -->
 
-    // ---------- Popolamento dei campi UTM ----------
-    const url = new URL(window.location);
-    const setUTM = (id, param, defaultValue) => {
-      const el = document.getElementById(id);
-      if (el) el.value = url.searchParams.get(param) || defaultValue;
-    };
-    setUTM('utm_source',   'utm_source', "Marketing_website");
-    setUTM('utm_medium',   'utm_medium', '');
-    setUTM('utm_campaign', 'utm_campaign', '');
-    setUTM('utm_content',  'utm_content', '');
-    
-    // ---------- Gestione del submit ----------
-    const form   = document.getElementById('ippocraForm');
-    const btn    = form.querySelector('button[type="submit"]');
-    const thanks = document.getElementById('thanksMsg');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();                 // blocchiamo il submit tradizionale
-      btn.disabled = true;                // evitiamo doppi click
-      btn.dataset.originalText = btn.innerHTML;
-      btn.innerHTML = '<svg class="animate-spin h-5 w-5 mr-2 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8z"/></svg> Invio…';
-
-      try {
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-        });
-
-        // ----------- Controllo della risposta -----------
-        if (!response.ok) {
-          // Brevo/Make può restituire 4xx/5xx con messaggio JSON o testo
-          let errMsg = `Errore ${response.status}`;
-          const ct = response.headers.get('content-type') || '';
-          if (ct.includes('application/json')) {
-            const data = await response.json();
-            errMsg += ': ' + (data.message || JSON.stringify(data));
-          } else {
-            const txt = await response.text();
-            errMsg += ': ' + txt;
-          }
-          throw new Error(errMsg);
-        }
-
-        // Se la risposta è JSON, possiamo leggerla (non obbligatorio)
-        const ct = response.headers.get('content-type') || '';
-        if (ct.includes('application/json')) {
-          await response.json(); // solo per “consumare” il body
-        }
-
-        // ----------- Successo -----------
-        form.reset();                     // puliamo i campi
-        thanks.classList.remove('hidden'); // mostriamo il messaggio di ringraziamento
-        setTimeout(() => thanks.classList.add('hidden'), 5000);
-      } catch (err) {
-        // ----------- Gestione errori ----------
-        console.error('Submit fallito:', err);
-        alert('Si è verificato un problema durante l\'invio. Per favore riprova più tardi.');
-      } finally {
-        // ----------- Ripristino UI ----------
-        btn.disabled = false;
-        btn.innerHTML = btn.dataset.originalText;
-      }
-    });
-  });
-</script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfhA8ErAAAAAH-lPKmj2J_KglSFM6r-Sti3Vc8_"></script>
+    <script src="/assets/js/form_submission.js"></script>
+    <script>
+        setUtmSourceIfEmpty("Marketing_website");
+    </script>
 
     <script>
 
@@ -566,7 +494,5 @@
             }, { threshold: 0.1 });
             faqObserver.observe(faqSection);
         }
-
-
     </script>
 </body>
