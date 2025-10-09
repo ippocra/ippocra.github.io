@@ -1,22 +1,23 @@
 ---
-title: referti-medici-come-i-professionisti-devono-gestirli
+title: Referti Medici -- come i professionisti devono gestirli?
 categories: news
 permalink: /referti-medici-come-i-professionisti-devono-gestirli
 lang: it
 page_id: referti-medici-come-i-professionisti-devono-gestirli
 header:
-    teaser: assets/images/grotte-passetto.jpg
+    teaser: assets/images/porta_a_mare_mole.jpg
 classes: wide
+---
 
 
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/grotte-passetto.jpg){: .align-center}
-**Ippocra Business – Archivia e conserva i referti correttamente, raggiungi la pace dei sensi**
+![image-center](assets/images/porta_a_mare_mole.jpg){: .align-center}
+**La via per archiviare e gestire i referti in maniera semplice.**
 
 
 ## I tuoi referti sono conservati a norma di legge?
 
-Quando un medico crea un referto, per quanto tempo e come deve essere conservato?
+Quando un medico crea un referto, per quanto tempo questo come deve essere conservato ed in che modo?
 
 Secondo la circolare del Ministero della Sanità n. 900 del 19 dicembre 1986, le cartelle cliniche e i relativi referti devono essere conservati **illimitatamente** nel tempo, in quanto atti ufficiali indispensabili a garantire la certezza del diritto e fonte storica sanitaria. La normativa previgente (art. 17 D.P.R. 128/1969) fissava comunque un minimo di **10 anni** dalla dimissione del paziente, termine oggi considerato il minimo obbligatorio. In pratica, la prassi più diffusa è la conservazione **permanente** dei documenti clinici.
 
@@ -61,8 +62,6 @@ Il medico che ha redatto il referto, così come altri professionisti sanitari ch
 
 All’interno di una struttura sanitaria, l’accesso ai referti può essere consentito a:
 
-
-
 * medici che prendono in carico il paziente successivamente;
 * infermieri e tecnici sanitari coinvolti nel processo di cura;
 * personale amministrativo limitatamente ai dati necessari per la gestione documentale.
@@ -88,7 +87,7 @@ I Dottori possono essere invitati in due modalitá:
 * Modalità collaboratore, se il dottore collabora con il Poliambulatorio come Privato
 * Modalità dipendente, se il dottore è dipendente del Poliambulatorio
 
-Questa distinzione è fondamentale per come deve essere trattato l’accesso e la visualizzazione dei referti da parte degli utenti, facendo sì che le informazioni siano disponibili con un dettaglio di precisione incrementale, in modo tale da massimizzare la privacy del paziente.
+Questa distinzione è fondamentale per come deve essere trattato l’accesso e la visualizzazione dei referti da parte del personale del Poliambulatorio, facendo sì che le informazioni siano disponibili con un dettaglio di precisione incrementale, in modo tale da massimizzare la privacy del paziente.
 
 Il personale di Ippocra non accede ai contenuti dei referti, se non nei limiti strettamente necessari all’erogazione tecnica del servizio. In quanto **Responsabile del trattamento**, è vincolato alla riservatezza e all’obbligo di trattare i dati solo su istruzioni del Titolare. I dati non vengono comunicati a terzi se non in adempimento a obblighi legali o su ordine dell’autorità competente.
 
@@ -97,8 +96,6 @@ Il personale di Ippocra non accede ai contenuti dei referti, se non nei limiti s
 
 La piattaforma Ippocra implementa:
 
-
-
 * **autenticazione sicura** per tutti gli utenti (pazienti, medici, strutture);
 * **permessi granulari** per ruoli diversi;
 * **registrazione di ogni accesso** (audit trail) per garantire la tracciabilità e la conformità al principio di accountability del GDPR;
@@ -106,31 +103,20 @@ La piattaforma Ippocra implementa:
 
 Tali caratteristiche permettono a Ippocra di fornire un canale digitale conforme e affidabile per lo scambio di informazioni tra medico e paziente, in sostituzione di metodi insicuri come email o supporti fisici.
 
-
 ## Come invitare un collaboratore al piano
 
 Per invitare un collaboratore al piano, l’amministratore del piano deve Andare su *Piano* e su *Gestisci Dottori*
 
  
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
+![image-center](assets/images/gestisci-dottori-it.png){: .align-center}
 
 
 Qui si può invitare un nuovo Dottore come collaboratore o dipendente. Basta inserire una email e cliccare invia invito.
 
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
- 
+![image-center](assets/images/invito_dottore_collaboratore-it.png){: .align-center} 
 
 Il Dottore riceverà una email di invito, con la possibilità di creare un utente ed unirsi a questo piano.
 
-Ogni Dottore può avere più di un piano, per esempio un piano per ogni Polimedica con cui collabora, ed anche un piano personale per i propri pazienti visti in maniera privata.
+Ogni Dottore può avere più di un piano, per esempio un piano per ogni PoliAmbulatorio con cui collabora, ed anche un piano dedicato, nel caso in cui visiti i propri pazienti in maniera privata.
 
-Vuoi una demo gratuita oggi per capire come Ippocra può diventare la soluzione per la gestione ordinata dei tuoi referti? Scrivici a [info@ippocra.com](mailto:info@ippocra.com) o compila il form qui.
+Vuoi una demo gratuita oggi per capire come Ippocra può diventare la soluzione per la gestione ordinata dei tuoi referti? Scrivici a [info@ippocra.com](mailto:info@ippocra.com) o compila il [form](https://ippocra.com/business) qui.

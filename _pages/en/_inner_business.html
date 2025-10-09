@@ -269,15 +269,13 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-3xl mx-auto text-center">
                     <div class="animate-fadeInUp" style="opacity:0; animation-delay: 0.1s;">
-                        <h2 class="text-3xl sm:text-4xl font-extrabold text-cyan-800 tracking-tight">Ready to See Ippocra in Action?</h2>
+
+                        <h2 id="demo-booking" class="text-3xl sm:text-4xl font-extrabold text-cyan-800 tracking-tight">
+                        Ready to See Ippocra in Action?</h2>
                         <p class="mt-4 text-lg text-cyan-700 leading-relaxed">
-                            Discover how Ippocra for Business can revolutionize your workflow, enhance patient care, and grow your practice. Schedule a personalized demo with our team today.
-                        </p>
-                        <div class="mt-10">
-                                <h2 id="demo-booking" class="text-3xl sm:text-4xl font-extrabold text-cyan-800 tracking-tight">
-                            Ready to See Ippocra in Action?</h2>
-                        <p class="mt-4 text-lg text-cyan-700 leading-relaxed">
-                            Discover how Ippocra for Business can revolutionize your workflow, enhance patient care, and grow your practice. Schedule a personalized demo with our team today.
+                            Discover how Ippocra for Business can revolutionize your workflow, 
+                            enhance patient care, and grow your practice. 
+                            Schedule a personalized demo with our team today.
                         </p>
                         <div class="mt-10">
                             <h3 class="text-3xl sm:text-4xl font-extrabold text-cyan-800 tracking-tight">
@@ -348,10 +346,10 @@
 
                             <!-- (Facoltativo) reCAPTCHA v2 -->
                             
-                            <div class="flex justify-center">
+                            <!-- <div class="flex justify-center">
                                 <div class="g-recaptcha" data-sitekey="6LfhA8ErAAAAAH-lPKmj2J_KglSFM6r-Sti3Vc8_"></div>
                             </div>
-                            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                            <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
                            
 
                             <!-- PULSANTE DI INVIO -->
@@ -382,15 +380,82 @@
                                 class="hidden text-center text-green-600 font-medium mt-4">
                             Thanks! We've got your request.
                             </div>
-                        </div>
-                         
+                        </div>    
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-   
+   <script>
+  // ✅ 1️⃣ Aspettiamo che il DOM sia pronto
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // ---------- Popolamento dei campi UTM ----------
+    const url = new URL(window.location);
+    const setUTM = (id, param, defaultValue) => {
+      const el = document.getElementById(id);
+      if (el) el.value = url.searchParams.get(param) || defaultValue;
+    };
+    setUTM('utm_source',   'utm_source', "Marketing_website");
+    setUTM('utm_medium',   'utm_medium', '');
+    setUTM('utm_campaign', 'utm_campaign', '');
+    setUTM('utm_content',  'utm_content', '');
+    
+    // ---------- Gestione del submit ----------
+    const form   = document.getElementById('ippocraForm');
+    const btn    = form.querySelector('button[type="submit"]');
+    const thanks = document.getElementById('thanksMsg');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();                 // blocchiamo il submit tradizionale
+      btn.disabled = true;                // evitiamo doppi click
+      btn.dataset.originalText = btn.innerHTML;
+      btn.innerHTML = '<svg class="animate-spin h-5 w-5 mr-2 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8z"/></svg> Invio…';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+        });
+
+        // ----------- Controllo della risposta -----------
+        if (!response.ok) {
+          // Brevo/Make può restituire 4xx/5xx con messaggio JSON o testo
+          let errMsg = `Errore ${response.status}`;
+          const ct = response.headers.get('content-type') || '';
+          if (ct.includes('application/json')) {
+            const data = await response.json();
+            errMsg += ': ' + (data.message || JSON.stringify(data));
+          } else {
+            const txt = await response.text();
+            errMsg += ': ' + txt;
+          }
+          throw new Error(errMsg);
+        }
+
+        // Se la risposta è JSON, possiamo leggerla (non obbligatorio)
+        const ct = response.headers.get('content-type') || '';
+        if (ct.includes('application/json')) {
+          await response.json(); // solo per “consumare” il body
+        }
+
+        // ----------- Successo -----------
+        form.reset();                     // puliamo i campi
+        thanks.classList.remove('hidden'); // mostriamo il messaggio di ringraziamento
+        setTimeout(() => thanks.classList.add('hidden'), 5000);
+      } catch (err) {
+        // ----------- Gestione errori ----------
+        console.error('Submit fallito:', err);
+        alert('Si è verificato un problema durante l\'invio. Per favore riprova più tardi.');
+      } finally {
+        // ----------- Ripristino UI ----------
+        btn.disabled = false;
+        btn.innerHTML = btn.dataset.originalText;
+      }
+    });
+  });
+</script>
     <script>
 
         // FAQ Accordion Toggles (manual, no loops)
