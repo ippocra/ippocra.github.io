@@ -12,7 +12,7 @@ classes: wide
 
 <!-- [![](img.jpg)](img.jpg) -->
 ![image-center](assets/images/porta_a_mare_mole.jpg){: .align-center}
-**La via per archiviare e gestire i referti in maniera semplice.**
+**Ippocra: La via per archiviare e gestire i referti in maniera semplice.**
 
 
 ## I tuoi referti sono conservati a norma di legge?
@@ -119,4 +119,4 @@ Il Dottore riceverà una email di invito, con la possibilità di creare un utent
 
 Ogni Dottore può avere più di un piano, per esempio un piano per ogni PoliAmbulatorio con cui collabora, ed anche un piano dedicato, nel caso in cui visiti i propri pazienti in maniera privata.
 
-Vuoi una demo gratuita oggi per capire come Ippocra può diventare la soluzione per la gestione ordinata dei tuoi referti? Scrivici a [info@ippocra.com](mailto:info@ippocra.com) o compila il [form](https://ippocra.com/business) qui.
+Vuoi una demo gratuita oggi per capire come Ippocra può diventare la soluzione per la gestione ordinata dei tuoi referti? Scrivici a **info@ippocra.com** o compila il **[form](https://ippocra.com/business)**.

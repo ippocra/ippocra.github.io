@@ -13,7 +13,7 @@ classes: wide
 
 <!-- [![](img.jpg)](img.jpg) -->
 ![image-center](assets/images/porta_a_mare_mole.jpg){: .align-center}
-**The way to store and manage reports easily.**
+**Ippocra: The way to store and manage reports easily.**
 
 
 ## **Are your reports kept in accordance with the law?**
@@ -123,4 +123,4 @@ The Doctor will receive an invitation email, with the option to create a user ac
 
 Each Doctor can belong to multiple plans—for example, one plan per polyclinic they work with, and a dedicated plan for private patient visits.
 
-Want a free demo today to see how Ippocra can become the solution for orderly management of your reports? Write to **info@ippocra.com** or fill out the **[form](https://ippocra.com/en/business)** here.
+Want a free demo today to see how Ippocra can become the solution for orderly management of your reports? Write to **info@ippocra.com** or fill out the **[form](https://ippocra.com/en/business)**.
