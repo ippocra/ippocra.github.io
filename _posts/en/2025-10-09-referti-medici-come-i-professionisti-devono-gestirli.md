@@ -29,9 +29,9 @@ There are exceptions: for **minor** patients, documentation is usually kept long
 
 ### **Medical report: who can access it?**
 
-Health documentation contains **special categories of personal data**, protected by EU Regulation 2016/679 (GDPR) and Italian Legislative Decree 196/2003 as amended by Legislative Decree 101/2018. **GENERAL PRINCIPLES**
+Health documentation contains **special categories of personal data**, protected by EU Regulation 2016/679 (GDPR) and Italian Legislative Decree 196/2003 as amended by Legislative Decree 101/2018. 
 
-
+**GENERAL PRINCIPLES**:
 
 * **Purpose:** data may be processed and retained without specific consent when processing is necessary for health‑care provision or a legal obligation (art. 9 GDPR).
 * **Limitation and minimisation:** the limitation‑of‑storage principle (art. 5 GDPR) allows exceptions when retention is imposed by law or needed for legal defence. The obligations listed above therefore constitute the legal basis for prolonged storage.
@@ -46,7 +46,7 @@ Health documentation contains **special categories of personal data**, protected
 * **Administrative fines:** breaching security and retention obligations constitutes a GDPR violation, with penalties of up to **€20 million or 4 % of worldwide annual turnover**.
 * **Reputational risk:** loss or improper disclosure of health reports can erode patient trust and severely damage the professional’s or institution’s image.
 
-Data‑protection rules and professional secrecy restrict access to medical reports to authorised parties only, based on the necessity principle.
+Data‑protection rules and professional secrecy restrict access to medical reports to authorized parties only, based on the necessity principle.
 
 
 #### **Patient (data subject)**
@@ -69,12 +69,12 @@ Within a healthcare facility, access to reports may be granted to:
 * nurses and allied health technicians involved in the care process;
 * administrative personnel, limited to the data needed for document management.
 
-The facility, as **data controller**, must define roles and authorisation profiles, adopting security measures such as individual credentials and access‑traceability. The patient also has the right to know, where applicable, who has consulted his/her data.
+The facility, as **data controller**, must define roles and authorization profiles, adopting security measures such as individual credentials and access‑traceability. The patient also has the right to know, where applicable, who has consulted his/her data.
 
 
 #### **External parties**
 
-Third parties (insurers, employers, non‑delegated family members) cannot access reports unless expressly authorised by the patient or required by law. For minors, the right of access belongs to parents or legal guardians.
+Third parties (insurers, employers, non‑delegated family members) cannot access reports unless expressly authorized by the patient or required by law. For minors, the right of access belongs to parents or legal guardians.
 
 
 ## **Ippocra: the solution for proper report preservation**
@@ -84,8 +84,6 @@ Correctly managing the archiving, access and viewing of reports is highly comple
 Our **Business‑admin** users can now invite specialist doctors to their plan, allowing them to use the system to archive reports in a GDPR‑compliant manner.
 
 Doctors can be invited in two ways:
-
-
 
 * **Collaborator mode**, when the doctor works with the polyclinic as a private practitioner;
 * **Employee mode**, when the doctor is employed by the polyclinic.

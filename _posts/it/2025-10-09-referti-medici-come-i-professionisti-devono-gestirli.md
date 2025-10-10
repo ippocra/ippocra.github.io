@@ -28,9 +28,9 @@ Ci sono delle eccezioni: in caso di pazienti **minori**, la documentazione viene
 
 ### Referto medico: chi può accedervi?
 
-La documentazione sanitaria contiene **dati personali di natura particolare**, tutelati dal Regolamento UE 2016/679 (GDPR) e dal D.Lgs. 196/2003 come modificato dal D.Lgs. 101/2018. PRINCIPI GENERALI:
+La documentazione sanitaria contiene **dati personali di natura particolare**, tutelati dal Regolamento UE 2016/679 (GDPR) e dal D.Lgs. 196/2003 come modificato dal D.Lgs. 101/2018. 
 
-
+**PRINCIPI GENERALI**:
 
 * **Finalità:** i dati possono essere trattati e conservati senza consenso specifico quando il trattamento è necessario per motivi di assistenza sanitaria o per obbligo legale (art. 9 GDPR).
 * **Limitazione e minimizzazione:** il principio di limitazione dei tempi di conservazione (art. 5 GDPR) ammette eccezioni quando la conservazione è imposta dalla legge o necessaria per la difesa in giudizio. Gli obblighi sopra indicati costituiscono dunque base giuridica per la conservazione prolungata.
