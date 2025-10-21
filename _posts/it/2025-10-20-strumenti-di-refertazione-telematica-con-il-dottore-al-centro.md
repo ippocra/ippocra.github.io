@@ -1,5 +1,5 @@
 ---
-title: strumenti_di_refertazione_telematica_con_il_dottore_al_centro
+title: Il referto? Da oggi lo puoi scrivere da dentro Ippocra
 categories: news
 permalink: /strumenti-di-refertazione-telematica-con-il-dottore-al-centro
 lang: it
@@ -20,8 +20,24 @@ offrire degli strumenti semplici e veloci, che permettano di raggiungere il
 miglior risultato nel minimo tempo.
 
 Con questa idea abbiamo costruito il nostro editor di Documenti, che permette 
-al Dottore di scrivere un referto focalizzandosi nella diagnosi, eppoi permette di visualizzare l'Anteprima, salvarlo e mandarlo direttamente al proprio paziente
-in maniera digitalmente sicura usando i nostri Ippolinks.
+al Dottore di scrivere un referto focalizzandosi nella diagnosi, permette di visualizzare 
+l'Anteprima, ed infine salvarlo e mandarlo direttamente al proprio paziente in maniera 
+digitalmente sicura usando i nostri Ippolinks.
+
+# Scrivere un referto non è mai stato così semplice
+
+Scegli il paziente per il quale vuoi scrivere il referto, clicca Scrivi Referto, 
+e scrivi semplicemente la diagnosi con il nostro editor. 
+
+Puoi visualizzare l'anteprima del documento, o salvarlo direttamente e contestualmente 
+inviarlo al paziente in maniera automatica.
+
+![image-center](assets/images/editor_documenti-it.gif)
+
+Tutti i referti vengono conservati secondo GDPR conforme, e con la possibilità di essere visualizzati
+soltanto dalle persone autorizzati. 
+Per saperne di piú, leggi anche [come devono essere gestiti i referti medici da parte dei professionisti](https://ippocra.com/referti-medici-come-i-professionisti-devono-gestirli)
+
 
 
 
