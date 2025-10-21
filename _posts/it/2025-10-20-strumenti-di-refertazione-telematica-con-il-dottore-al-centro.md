@@ -13,5 +13,15 @@ classes: wide
 ![image-center](assets/images/scalinata-passetto-sunrise.jpg){: .align-center}
 **La tranquillità di scrivere i referti, sapendo di utilizzare uno strumento sicuro**
 
-# Semplifica il tuo lavoro: da oggi l'editor dei documenti disponibile!
+# Semplifica il tuo lavoro: da oggi è disponibile l'editor dei documenti!
+
+Ippocra nasce per connettere Dottori con i propri Pazienti, ed allo stesso tempo
+offrire degli strumenti semplici e veloci, che permettano di raggiungere il 
+miglior risultato nel minimo tempo.
+
+Con questa idea abbiamo costruito il nostro editor di Documenti, che permette 
+al Dottore di scrivere un referto focalizzandosi nella diagnosi, eppoi permette di visualizzare l'Anteprima, salvarlo e mandarlo direttamente al proprio paziente
+in maniera digitalmente sicura usando i nostri Ippolinks.
+
+
 
