@@ -67,10 +67,33 @@
         gtag('js', new Date());
 
         gtag('config', 'G-E2VKDEXM14');
+
+        /* ---------- Meta (Facebook) Pixel ---------- */
+        // 1️⃣ Insert the Pixel base script (async)
+        const fbScript = document.createElement('script');
+        fbScript.async = true;
+        fbScript.src = 'https://connect.facebook.net/en_US/fbevents.js';
+        if (footer && footer.parentNode) {
+            footer.parentNode.insertBefore(fbScript, footer.nextSibling);
+        }
+
+        // 2️⃣ Initialise the Pixel once the library is loaded
+        //    (the same pattern GA uses – we push commands onto _fbq)
+        !(function(f,b,e,v,n,t,s){
+            if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)})(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+        
+        fbq('init', '1163199582414876');   
+        fbq('track', 'PageView');
+        // End Meta Pixel
     }
     
-
-
     document.getElementById('cookie-notice-accept').addEventListener("click",function() {
         createCookie('cookie-notice-dismissed','true',31);
         document.getElementById('cookie-notice').style.display = 'none';
