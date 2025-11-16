@@ -1,0 +1,33 @@
+
+.logo-carousel {
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  
+  width: max-content;
+  
+  animation: scroll-left 20s linear infinite;
+}
+
+.logo-item {
+  max-height: 3rem;
+  width: auto;
+  object-fit: contain;
+}
+
+/* -------------------------------------------------------------
+   KEYFRAMES – infinite leftward scroll
+   ------------------------------------------------------------- */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,273 +1,468 @@
 <head>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes pulseGlow {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.4); }
-            50% { box-shadow: 0 0 0 10px rgba(56, 189, 248, 0); }
-        }
-        .animate-fadeInUp {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-        .animate-fadeIn {
-            animation: fadeIn 0.8s ease-out forwards;
-        }
-        .scroll-target .scroll-animated-item {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .scroll-target.is-visible .scroll-animated-item {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .scroll-target.is-visible .scroll-animated-item-1 { transition-delay: 0.1s; }
-        .scroll-target.is-visible .scroll-animated-item-2 { transition-delay: 0.2s; }
-        .scroll-target.is-visible .scroll-animated-item-3 { transition-delay: 0.3s; }
-        .scroll-target.is-visible .scroll-animated-item-4 { transition-delay: 0.4s; }
-        .scroll-target.is-visible .scroll-animated-item-5 { transition-delay: 0.5s; }
-        .scroll-target.is-visible .scroll-animated-item-6 { transition-delay: 0.6s; }
 
-        html { scroll-behavior: smooth; }
-        @import url('https://rsms.me/inter/inter.css');
-        body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
-        /* .hero-bg-gradient {
-            background: linear-gradient(135deg, #eff8ed 0%, #daf9d8 100%);
-        }
-        .cta-bg-gradient {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-        } */
-    </style>
+    <link rel="stylesheet" href="{{ '/node_modules/fontawesome/css/all.min.css' | relative_url }}">
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <!-- Tailwind -->
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50 text-slate-700 antialiased from-teal-50 to-teal-50">
+
+<body class="text-slate-700 antialiased">
     <main id="main-content">
         <!-- Hero Section -->
-        <section id="hero" class="relative overflow-hidden pt-20 pb-20 md:pt-32 md:pb-32">
-            <div class="absolute inset-0 bg-gradient-to-br from-green-50 to-teal-100 opacity-50"></div>
+        <section id="hero" class="section-blank">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="animate-fadeInUp" style="opacity:0;">
-                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900">
-                        Your <span class="text-teal-600">Health Records</span> at Your Fingertips
+                    <h1 class="page-title">
+                        Manage, compare, send, and track reports with secure links, without changing your management
+                        software.
                     </h1>
-                    <p class="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-slate-600 leading-relaxed">
-                        <span class="text-teal-600 font-bold">Ippocra</span> empowers everyone to manage their health data securely and efficiently.
-                        It is designed for both <b>private users</b> and <b>healthcare professionals</b>,
-                        providing a comprehensive solution for health data management.
-                    </p>
-                    <div class="mt-10 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-                        <a href="/customers" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 text-base 
-                        font-medium text-white bg-teal-500 border border-transparent rounded-xl shadow-md hover:bg-teal-600 
-                        focus:outline-none focus:ring-2 focus:ring-teal-500 visited:text-white focus:text-white
-                        focus:ring-offset-2 focus:ring-offset-slate-50 transition-all duration-150 ease-in-out transform hover:scale-105">
-                            Ippocra for Private Users
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2">
-                                <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
-                            </svg>
+                    <div class="mt-6 max-w-2xl mx-auto leading-relaxed">
+                        <p class="paragraph-lg">
+                            Manage, send, and track reports with secure links, integrating without changing your
+                            management
+                            software.
+                        </p>
+                    </div>
+                    <div class="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                        <a href="/customers" class="secondary-button">
+                            Book a Demo Now
                         </a>
-                        <a href="/business" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 
-                        text-base font-medium text-white bg-teal-500 border border-transparent rounded-xl shadow-md hover:bg-teal-600 
-                        focus:outline-none focus:ring-2 focus:ring-teal-500 visited:text-white focus:text-white
-                        focus:ring-offset-2 focus:ring-offset-slate-50 transition-all duration-150 ease-in-out transform hover:scale-105">
-                            Ippocra for Healthcare Professionals
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2">
-                                <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+                        <a href="/business" class="main-color-button">
+                            Try it for Free
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 ml-2 -rotate-45">
+                                <path fill-rule="evenodd"
+                                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                                    clip-rule="evenodd" />
                             </svg>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-50 to-transparent pointer-events-none"></div>
         </section>
-        <!-- Features Section -->
-        <section id="features" class="py-16 md:py-20 px-6 md:px-8 lg:px-12 bg-white">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-12">
-                    Key Features
+
+        <!-- Used by -->
+        <section id="usedby" class="section-blank">
+            <div class="logo-carousel">
+                <div class="logo-track">
+                    <!-- ==== First copy ================================================= -->
+                    <img class="logo-item" src="assets/images/medical-campus-logo.png" alt="Logo 1">
+                    <img class="logo-item" src="assets/images/medical-campus-logo.png" alt="Logo 1">
+                    <img class="logo-item" src="assets/images/medical-campus-logo.png" alt="Logo 1">
+                    <img class="logo-item" src="assets/images/medical-campus-logo.png" alt="Logo 1">
+                    <!-- ==== Second copy (identical) ===================================== -->
+                    <img class="logo-item" src="assets/images/medical-campus-logo.png" alt="Logo 1">
+                    <img class="logo-item" src="assets/images/medical-campus-logo.png" alt="Logo 1">
+                    <img class="logo-item" src="assets/images/medical-campus-logo.png" alt="Logo 1">
+                    <img class="logo-item" src="assets/images/medical-campus-logo.png" alt="Logo 1">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="features" class="section-blank">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center">
+                    Why Choose Ippocra
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <p class="mt-3 text-center paragraph-bold">
+                    Discover the main benefits Ippocra offers to make your medical records management safer, faster, and
+                    more compliant.
+                </p>
 
-                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300 group">
-                        <div class="p-4 rounded-full bg-teal-100 text-teal-600 mb-6 group-hover:bg-teal-200 transition-colors duration-300">
-                            <i data-lucide="file-search" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Smart Search</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Find the document you need, via our Smart Search, searching the keywords you remember.
-                        </p>
-                    </div>
+                <div class="mt-5">
+                    <!-- Start of the cards -->
 
-                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300 group">
-                        <div class="p-4 rounded-full bg-teal-100 text-teal-600 mb-6 group-hover:bg-teal-200 transition-colors duration-300">
-                            <i data-lucide="calendar-clock" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Chronological Document Access</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Your document, automatically chronologically organized, easy to access.
-                        </p>
-                    </div>
-
-                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300 group">
-                        <div class="p-4 rounded-full bg-teal-100 text-teal-600 mb-6 group-hover:bg-teal-200 transition-colors duration-300">
-                            <i data-lucide="chart-no-axes-combined" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Automated Chart Summaries</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Efficiently summarize extensive patient records, saving valuable time for consultations. 
-                            <i>(coming soon)</i>
-                        </p>
-                    </div>
-
-                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300 group">
-                        <div class="p-4 rounded-full bg-teal-100 text-teal-600 mb-6 group-hover:bg-teal-200 transition-colors duration-300">
-                            <i data-lucide="shield-check" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">GDPR-Compliant Security</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Your patient data is secured with industry-leading encryption and compliance protocols.
-                        </p>
-                    </div>
-
-                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300 group">
-                        <div class="p-4 rounded-full bg-teal-100 text-teal-600 mb-6 group-hover:bg-teal-200 transition-colors duration-300">
-                            <i data-lucide="user-plus" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Seamless EMR Integration</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Integrate Ippocra effortlessly with your existing Electronic Medical Record systems.
-                        </p>
-                    </div>
-
-                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300 group">
-                        <div class="p-4 rounded-full bg-teal-100 text-teal-600 mb-6 group-hover:bg-teal-200 transition-colors duration-300">
-                            <i data-lucide="globe" class="w-8 h-8"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Multilingual Support</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Serve a diverse patient population with support for multiple languages and medical terminologies.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-                        <!-- Our Customers Section: Logos and Industries -->
-        <section id="our-customers" class="py-16 sm:py-24 bg-slate-50 scroll-target">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16 scroll-animated-item">
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Trusted by Leading Healthcare Providers</h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">Ippocra supports a wide array of practices in delivering top-tier patient care.</p>
-                </div>
-
-                <!-- Industries Served -->
-                <div class="mt-20 text-center scroll-animated-item scroll-animated-item-3">
-                    <h3 class="text-2xl font-bold text-slate-900 mb-8">Serving a Broad Spectrum of Medical Disciplines</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                        <div class="bg-teal-50 rounded-lg p-6 flex items-center justify-center text-teal-700 font-medium shadow-sm">General Practice</div>
-                        <div class="bg-teal-50 rounded-lg p-6 flex items-center justify-center text-teal-700 font-medium shadow-sm">Specialist Clinics</div>
-                        <div class="bg-teal-50 rounded-lg p-6 flex items-center justify-center text-teal-700 font-medium shadow-sm">Hospitals & Labs</div>
-                        <div class="bg-teal-50 rounded-lg p-6 flex items-center justify-center text-teal-700 font-medium shadow-sm">Physical Therapy</div>
-                        <div class="bg-teal-50 rounded-lg p-6 flex items-center justify-center text-teal-700 font-medium shadow-sm">Dental Practices</div>
-                        <div class="bg-teal-50 rounded-lg p-6 flex items-center justify-center text-teal-700 font-medium shadow-sm">Diagnostic Centers</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- How It Works Section -->
-        <section id="how-it-works" class="py-16 md:py-20 px-6 md:px-8 lg:px-12 bg-teal-50">
-            <div class="max-w-6xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-12">
-                    How Ippocra Transforms Your Health Data Management
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
-                    <!-- Step -->
-                    <div class="flex flex-col bg-white p-8 rounded-2xl shadow-md border border-teal-100 transform hover:-translate-y-2 transition-transform duration-300 h-full">
-                        <div class="flex flex-col items-center h-full">
-                            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-teal-600 text-white text-3xl font-bold mb-6 shadow-lg">1</div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Input Clinical Data</h3>
-                            <p class="text-gray-700 leading-relaxed text-center mb-6">
-                                Securely input symptoms, medical history, lab results, and imaging reports, using 
-                                our intuitive interface.
+                    <div class="flex flex-row text-left card-odd">
+                        <div class="flex flex-col items-start h-full">
+                            <h3 class="mt-0 section-title">Reduce the Risk of <span class="text-teal-600">Fines</span>
+                            </h3>
+                            <p class="mt-5 leading-relaxed">
+                                Through certified and traceable delivery of medical records, you eliminate fines of up
+                                to €85,000 associated with non-compliant practices.
                             </p>
-                            <div class="mt-auto w-full h-32 bg-teal-100 rounded-lg flex items-center justify-center text-teal-400 font-medium border border-teal-200">
-                                <i data-lucide="stethoscope" class="w-12 h-12 mr-2"></i> Clinical Data Input
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step -->
-                    <div class="flex flex-col bg-white p-8 rounded-2xl shadow-md border border-teal-100 transform hover:-translate-y-2 transition-transform duration-300 h-full">
-                        <div class="flex flex-col items-center h-full">
-                            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-teal-600 text-white text-3xl font-bold mb-6 shadow-lg">2</div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Privacy First</h3>
-                            <p class="text-gray-700 leading-relaxed text-center mb-6">
-                                Ippocra's advanced cryptographic algorithms process the data and keep them secure.
-                            </p>
-                            <div class="mt-auto w-full h-32 bg-teal-100 rounded-lg flex items-center justify-center text-teal-400 font-medium border border-teal-200">
-                                <i data-lucide="globe-lock" class="w-12 h-12 mr-2"></i> Keep it private
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Step -->
-                    <div class="flex flex-col bg-white p-8 rounded-2xl shadow-md border border-teal-100 transform hover:-translate-y-2 transition-transform duration-300 h-full">
-                        <div class="flex flex-col items-center h-full">
-                            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-teal-600 text-white text-3xl font-bold mb-6 shadow-lg">3</div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Secure sharing</h3>
-                            <p class="text-gray-700 leading-relaxed text-center mb-6">
-                                Share your documents with in an easy and secure way via our IppoLinks.
-                            </p>
-                            <div class="mt-auto w-full h-32 bg-teal-100 rounded-lg flex items-center justify-center text-teal-400 font-medium border border-teal-200">
-                                <i data-lucide="check-circle" class="w-12 h-12 mr-2"></i> Share securely
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-            
-
-            <!-- Call to Action Section -->
-            <section id="contact" class="py-16 md:py-20 px-6 md:px-8 lg:px-12 bg-teal-600 text-white text-center">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-extrabold mb-6">
-                        Ready to improve your Health Management?
-                    </h2>
-                    <p class="text-lg md:text-xl opacity-90 mb-10">
-                        Join the growing number of our users, both as patient or healthcare professionals, 
-                        leveraging Ippocra for cutting-edge health data management and improved patient care.
-                    </p>
-                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="https://app.ippocra.com/register">
-                            <button class="bg-white text-emerald-600 px-10 py-5 rounded-full text-xl font-bold shadow-2xl hover:bg-gray-100 transition duration-300 transform hover:scale-105 animate-scaleIn delay-500">
-                                Sign Up Now
+                            <button class="mt-5 secondary-button">
+                                Find Out How
                             </button>
-                        </a>
+                        </div>
+                        <div class="p-8 justify-center h-full card-image">
+                            <i class="fas fa-gavel fa-3x text-teal-600"></i>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row text-right card-even">
+                        <div class="p-8 justify-center h-full card-image">
+                            <i class="fas fa-clock fa-3x text-teal-600"></i>
+                        </div>
+                        <div class="flex flex-col items-end h-full">
+                            <h3 class="mt-0 section-title">Save <span class="text-teal-600">Precious Time</span>
+                            </h3>
+                            <p class="mt-5 leading-relaxed">
+                                Streamline user management with an
+                                easy-to-use interface that simplifies
+                                adding, editing, and organizing.
+                            </p>
+                            <button class="mt-5 secondary-button">
+                                Start Now
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row text-left card-odd">
+                        <div class="flex flex-col items-start h-full">
+                            <h3 class="mt-0 section-title">Build <span class="text-teal-600">Patient</span> Loyalty
+                            </h3>
+                            <p class="mt-5 leading-relaxed">
+                                Customize reports with your clinic's branding and give patients easy and secure access
+                                to their document history.
+                            </p>
+                            <button class="mt-5 secondary-button">
+                                Learn more
+                            </button>
+                        </div>
+                        <div class="p-8 justify-center h-full card-image">
+                            <i class="fas fa-heart fa-3x text-teal-600"></i>
+                        </div>
+                    </div>
+                    <!-- End of the cards -->
+                </div>
+            </div>
+        </section>
+
+        <!-- FSE Section -->
+        <section id="fse" class="section-main-hard-gradient">
+            <div class="section-container">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="mt-0 section-title text-white text-center">
+                        Take the first step towards integration with the SE File
+                    </h2>
+                    <p class="mt-3 text-white text-center paragraph-md">
+                        Prepare for the mandatory Electronic Health Record (EHR) in 2026. Ippocra guarantees
+                        compatibility
+                        and simplified processes for centralized management of medical records.
+                    </p>
+
+                    <div class="p-8 justify-center h-full card-image">
+                        Badge FSE Ready
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+
+        <!-- How We Speed ​​Up Your Clinic -->
+        <section id="speedup" class="section-main-soft-gradient">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center">
+                    How We Speed ​​Up Your Clinic
+                </h2>
+                <p class="mt-3 text-center paragraph-md paragraph-bold">
+                    The platform that simplifies your work, reduces risks, and integrates with your clinic. Discover the
+                    features that prepare you for the Electronic Health Record (EHR) and increase control, security, and
+                    productivity.
+                </p>
+
+                <div class="mt-20 icon-grid">
+
+                    <!-- Intelligent Search -->
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-search fa-3x"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Intelligent Search
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Track every report generated, delivered, and viewed, find what you need with intelligent
+                            search, and compare them instantly.
+                        </p>
+                    </div>
+
+                    <!-- Data Analysis -->
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-chart-bar fa-3x"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Data Analysis
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            View detailed graphs of submissions, openings, and history. For informed decisions and
+                            improved performance for your business.
+                        </p>
+                    </div>
+
+                    <!-- Seamless Synchronization -->
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-sync-alt fa-3x"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Seamless synchronization
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Sends, histories, and communications always aligned, without manual intervention or
+                            duplication.
+                        </p>
+                    </div>
+
+                    <!-- Patient Notifications -->
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-bell fa-3x"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Patient Notifications
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Automatically send notifications for each new report, reducing calls and queries.
+                        </p>
+                    </div>
+
+                    <!-- Team Collaboration -->
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-users fa-3x"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Team Collaboration
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Shared access for doctors and administrators, simplified internal communication, and secure
+                            document sharing.
+                        </p>
+                    </div>
+
+                    <!-- Advanced Access Control -->
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-lock fa-3x"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Advanced access control
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Secure permission management: only authorized personnel have access to medical records and
+                            sensitive data, in compliance with GDPR regulations.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Connector -->
+        <section id="connector" class="section-blank">
+            <div class="section-container">
+                <div class="flex flex-row">
+                    <div class="max-w-6xl mx-auto">
+                        <h2 class="mt-0 section-title text-center">Integrates with
+                            Your Management System</h2>
+                        <p class="mt-3 text-center paragraph-md paragraph-bold">
+                            With native integration and support for the most popular systems, we make it easy to comply
+                            with the
+                            Electronic Health Record (EHR).
+                        </p>
+                    </div>
+                    <div class="icon-grid">
+                        <div>icon</div>
+                        <div>icon</div>
+                        <div>icon</div>
+                        <div>icon</div>
+                        <div>icon</div>
+                        <div>icon</div>
+                        <div>icon</div>
+                        <div>icon</div>
+                        <div>icon</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- join -->
+        <section id="join" class="section-accent-soft-gradient">
+            <div class="justify-center section-container">
+                <h2 class="mt-0 section-title text-center">Protect your clinic from fines and
+                    inefficiencies by
+                    offering
+                    faster and more transparent service to
+                    patients.</h2>
+                <p class="mt-3 text-center paragraph-md paragraph-bold">
+                    Start your 30-day free trial now – no obligation, no
+                    risk.
+                </p>
+                <button class="mt-5 secondary-button text-center">
+                    Start Free Trial
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-5 ml-2 -rotate-45">
+                        <path fill-rule="evenodd"
+                            d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Want Ippocra? -->
+        <section id="wantIppo" class="section-main-hard-gradient py-12">
+            <div class="section-container max-w-6xl mx-auto px-4">
+                <div class="flex flex-col lg:flex-row gap-10">
+
+                    <!-- ==================== LEFT COLUMN – INFO ==================== -->
+                    <div class="flex flex-col w-full lg:w-1/2 space-y-8">
+
+                        <!-- Title & Intro -->
+                        <div class="text-center lg:text-left">
+                            <h2 class="mt-0 section-title text-white">
+                                Do you want to test Ippocra in your clinic?
+                            </h2>
+                            <p class="mt-3 text-white paragraph-md">
+                                Book a personalized demo with our team of experts now.
+                            </p>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="space-y-4 text-white">
+
+                            <!-- Phone -->
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-phone-alt fa-lg"></i>
+                                <a href="tel:+1234567890" class="hover:underline">
+                                    +1 234 567 890
+                                </a>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-envelope fa-lg"></i>
+                                <a href="mailto:demo@ippocra.com" class="hover:underline">
+                                    demo@ippocra.com
+                                </a>
+                            </div>
+
+                            <!-- Physical address -->
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-map-marker-alt fa-lg"></i>
+                                <address class="not-italic">
+                                    123 Health Avenue<br>
+                                    Suite 400<br>
+                                    Zurich, CH 8000
+                                </address>
+                            </div>
+
+                            <!-- Optional social links -->
+                            <div class="flex gap-4 pt-2">
+                                <a href="#" aria-label="LinkedIn" class="text-white hover:text-gray-300">
+                                    <i class="fab fa-linkedin fa-lg"></i>
+                                </a>
+                                <a href="#" aria-label="Twitter" class="text-white hover:text-gray-300">
+                                    <i class="fab fa-twitter-square fa-lg"></i>
+                                </a>
+                                <a href="#" aria-label="Facebook" class="text-white hover:text-gray-300">
+                                    <i class="fab fa-facebook-square fa-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==================== RIGHT COLUMN – FORM ==================== -->
+                    <div class="w-full lg:w-1/2 bg-white bg-opacity-10 rounded-lg p-6 backdrop-filter backdrop-blur-sm">
+                        <form action="/contact-demo" method="POST" class="grid gap-4">
+
+                            <!-- Name -->
+                            <div>
+                                <label for="name" class="sr-only">Full name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-2 rounded border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                    placeholder="Your full name">
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="sr-only">Email address</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-2 rounded border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                    placeholder="you@example.com">
+                            </div>
+
+                            <!-- Phone (optional) -->
+                            <div>
+                                <label for="phone" class="sr-only">Phone number</label>
+                                <input type="tel" id="phone" name="phone"
+                                    class="w-full px-4 py-2 rounded border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                    placeholder="Phone (optional)">
+                            </div>
+
+                            <!-- Message / Demo request -->
+                            <div>
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    class="w-full px-4 py-2 rounded border border-gray-300 bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                                    placeholder="Tell us a bit about your clinic and what you’d like to see"></textarea>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="text-center mt-2">
+                                <button type="submit"
+                                    class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-6 rounded transition-colors duration-200">
+                                    Request Demo
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section-transparent">
+            <div class="section-container">
+                <div class="flex flex-column">
+                    <div>
+                        <h2 class="mt-0 section-title text-center">
+                            Frequently Asked Questions
+                        </h2>
+                        <p class="mt-3 paragraph-md">
+                            If you have any further questions, please contact us and we will be happy to answer any
+                            questions you may have.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-list">
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Is it difficult to integrate Hippocra into the current management system?
+                        </summary>
+                        <div class="faq-answer">
+                            No.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
     </main>
-    
-        <script>
+
+    <script>
 
         // Initial load animations for hero
         document.addEventListener('DOMContentLoaded', () => {
             const heroContent = document.querySelector('#hero .animate-fadeInUp');
-            if(heroContent) heroContent.style.opacity = '1';
-            
+            if (heroContent) heroContent.style.opacity = '1';
+
             const ctaSectionContent = document.querySelector('.cta-bg-gradient .animate-fadeInUp');
-            if(ctaSectionContent) ctaSectionContent.style.opacity = '1';
+            if (ctaSectionContent) ctaSectionContent.style.opacity = '1';
         });
 
         // Intersection Observer for scroll animations
@@ -294,7 +489,7 @@
             }, { threshold: 0.1 });
             testimonialsObserver.observe(testimonialsSection);
         }
-        
+
         // Observer for #success-stories section
         const successStoriesSection = document.getElementById('success-stories');
         if (successStoriesSection) {
@@ -310,4 +505,3 @@
         lucide.createIcons();
     </script>
 </body>
-

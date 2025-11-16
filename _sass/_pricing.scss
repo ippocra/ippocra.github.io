@@ -1,0 +1,33 @@
+/* --------------------------------------------------------------
+   Pricing table
+   -------------------------------------------------------------- */
+table { width: 100%; }
+
+thead {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: .5em;
+  background-color: $background-color;
+}
+
+th, td { padding: .5em; }
+th { font-weight: bold; }
+
+td {
+  text-align: center;
+  border-bottom: 1px solid mix(#000, $border-color, 25%);
+  font-size: .75em;
+}
+
+tr, td, th { vertical-align: middle; }
+
+.checkmark {
+  color: green;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.btn--action {
+  background: #439ba6;
+  color: white;
+}

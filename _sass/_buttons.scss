@@ -1,0 +1,53 @@
+/* --------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------- */
+.shared-button-class {
+    min-width: 10rem !important;
+    min-height: 3rem;
+
+    width: auto;
+    display: inline-block;
+
+    max-width: 12rem;
+
+    border-radius: 9999px !important;
+    padding: 0 1.5rem;
+    transition:
+        background-color .2s ease,
+        box-shadow .2s ease,
+        transform .1s ease;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        box-shadow:
+            0 2px 4px -1px rgba(0, 0, 0, .2),
+            0 4px 5px 0 rgba(0, 0, 0, .14),
+            0 1px 10px 0 rgba(0, 0, 0, .12);
+    }
+
+    &:active {
+        box-shadow:
+            0 2px 4px -1px rgba(0, 0, 0, .2),
+            0 4px 5px 0 rgba(0, 0, 0, .14),
+            0 1px 10px 0 rgba(0, 0, 0, .12);
+    }
+}
+
+.secondary-button {
+    @extend .shared-button-class;
+    background-color: $color-secondary;
+    color: $color-primary !important;
+    border: 3px solid $color-primary;
+}
+
+.main-color-button {
+    @extend .shared-button-class;
+    background-color: $color-primary;
+    color: #fff !important;
+    border: none;
+}

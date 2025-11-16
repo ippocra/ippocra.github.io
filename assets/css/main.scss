@@ -1,98 +1,32 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 search: false
 ---
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+/* --------------------------------------------------------------
+   Theme imports – Minimal Mistakes + external font
+   -------------------------------------------------------------- */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
 
+/* External font – keep it at the top so the compiled CSS preserves order */
+@import url('https://rsms.me/inter/inter.css');
 
-#btn-register:hover {
-  color: #fff
-}
+/* --------------------------------------------------------------
+   Core imports – theme, variables, external fonts
+   -------------------------------------------------------------- */
+@import "../../_sass/palette"; 
+@import "../../_sass/theme-imports";
+@import "../../_sass/variables";
 
-#footer {
-    background-color: #439ba6;
-}
-
-#footer-links {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.page__footer-follow {
-  
-    li {
-      display: block;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      font-family: $sans-serif-narrow;
-      font-size: $type-size-6;
-      text-transform: uppercase;
-    }
-}
-
-.footer__legal-links-inner {
-    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-    font-size: 0.75em;
-    text-decoration: underline;
-}
-
-#footer__contact {
-    font-size: 0.75em;
-}
-
-.page__footer-copyright{
-    text-align: center;
-}
-
-@media all and (max-width:800px) //800px for tablets and phones.
-{
-    #footer-links
-    {
-        flex-direction: column;
-    }
-}
-
-// PRICING 
-
-table {
-  width: 100%;
-}
-
-thead {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding-bottom: 0.5em;
-  background-color: $background-color;
-}
-
-th {
-  padding: 0.5em;
-  font-weight: bold;
-}
-
-td {
-  padding: 0.5em;
-  text-align: center;
-  border-bottom: 1px solid mix(#000, $border-color, 25%);
-  font-size: 0.75em;
-}
-
-tr,
-td,
-th {
-  vertical-align: middle;
-}
-
-
-.checkmark {
-  color: green;
-  font-size: 1.2em;
-  font-style: bold;
-}
-
-.btn--action {
-  background: #439ba6;
-  color: white;
-}
+/* --------------------------------------------------------------
+   Site‑specific sections – order matters (later rules override earlier)
+   -------------------------------------------------------------- */
+@import "../../_sass/footer";
+@import "../../_sass/pricing";
+@import "../../_sass/animations";
+@import "../../_sass/buttons";
+@import "../../_sass/typography";
+@import "../../_sass/card";
+@import "../../_sass/section";
+@import "../../_sass/icons";
+@import "../../_sass/logo-carousel";
+@import "../../_sass/faq";

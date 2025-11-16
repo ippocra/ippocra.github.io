@@ -1,0 +1,45 @@
+/* --------------------------------------------------------------
+   Footer‑related rules
+   -------------------------------------------------------------- */
+#footer {
+    background-color: $color-primary;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer navigation list */
+.page__footer-follow li {
+    display: block;
+    padding: 5px 0;
+    font-family: $sans-serif-narrow;
+    font-size: $type-size-6;
+    text-transform: uppercase;
+}
+
+/* Legal links */
+.footer__legal-links-inner {
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+        "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    font-size: 0.75em;
+    text-decoration: underline;
+}
+
+/* Contact */
+#footer__contact {
+    font-size: 0.75em;
+}
+
+/* Copyright */
+.page__footer-copyright {
+    text-align: center;
+}
+
+/* Responsive footer layout */
+@media all and (max-width: 800px) {
+    #footer-links {
+        flex-direction: column;
+    }
+}

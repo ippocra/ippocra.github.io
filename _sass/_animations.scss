@@ -1,0 +1,64 @@
+/* --------------------------------------------------------------
+   Animations (keyframes + helper classes)
+   -------------------------------------------------------------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(56, 189, 248, .4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px rgba(56, 189, 248, 0);
+    }
+}
+
+/* Helper classes */
+.animate-fadeInUp {
+    animation: fadeInUp .8s ease-out forwards;
+}
+
+.animate-fadeIn {
+    animation: fadeIn .8s ease-out forwards;
+}
+
+/* Scroll‑animation helpers */
+.scroll-target .scroll-animated-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .6s ease-out, transform .6s ease-out;
+}
+
+.scroll-target.is-visible .scroll-animated-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered delays – SCSS loop keeps it DRY */
+@for $i from 1 through 6 {
+    .scroll-target.is-visible .scroll-animated-item-#{$i} {
+        transition-delay: #{0.1 * $i}s;
+    }
+}

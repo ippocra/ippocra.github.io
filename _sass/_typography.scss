@@ -1,0 +1,42 @@
+/* --------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------- */
+
+.page-title {
+  font-size: xxx-large;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: $dark-text;
+}
+
+.section-title {
+  font-size: xx-large;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: $dark-text;
+}
+
+.section-header {
+  font-size: larger;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: $dark-text;
+}
+
+.paragraph-lg {
+  font-size: larger;
+  color: $gray-text;
+}
+
+.paragraph-md {
+  font-size: medium;
+  color: $gray-text;
+}
+
+.paragraph-bold {
+  font-weight: 600;
+}
+
+.text-white {
+  color: #fff !important;
+}
