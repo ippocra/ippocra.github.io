@@ -1,37 +1,28 @@
 /* -------------------------------------------------
    FAQ component – feel free to tweak colors/fonts
    ------------------------------------------------- */
-.faq-list {
-   margin: 0 auto;
-}
 
-/* Each item */
 .faq-item {
    border: 1px solid #e2e8f0;
-   /* light gray border */
-   border-radius: 0.5rem;
+   border-radius: 1rem;
    margin-bottom: 1rem;
    overflow: hidden;
 }
 
-/* Question line – clickable header */
 .faq-question {
    cursor: pointer;
    padding: 1rem 1.5rem;
    background: #f8fafc;
-   /* very light gray */
    font-weight: 600;
    position: relative;
 }
 
-/* Answer block */
 .faq-answer {
    padding: 1rem 1.5rem;
    background: #ffffff;
    line-height: 1.6;
 }
 
-/* Optional smooth height transition (works in most browsers) */
 .faq-item[open] .faq-answer {
    animation: slideDown 0.25s ease-out forwards;
 }

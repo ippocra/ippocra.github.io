@@ -38,6 +38,12 @@
     }
 }
 
+.submit-button {
+    @extend .shared-button-class;
+    background-color: #000;
+    color: #fff !important;
+}
+
 .secondary-button {
     @extend .shared-button-class;
     background-color: $color-secondary;
@@ -50,4 +56,19 @@
     background-color: $color-primary;
     color: #fff !important;
     border: none;
+}
+
+.hero-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .hero-button-container {
+        flex-direction: row;
+        gap: 0;
+        column-gap: 1.5rem;
+    }
 }

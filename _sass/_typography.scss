@@ -40,3 +40,12 @@
 .text-white {
   color: #fff !important;
 }
+
+@media (min-width: 1024px) {
+  .section-title {
+    font-size: xxx-large;
+  }
+  .paragraph-md {
+    font-size: large
+  }
+}

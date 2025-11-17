@@ -33,11 +33,11 @@
 }
 
 @media (min-width: 768px) {
-  .card-common {
-    padding: 4rem;
-  }
 
   .card-image {
-    display: inherit;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

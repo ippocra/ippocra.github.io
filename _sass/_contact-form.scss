@@ -1,0 +1,19 @@
+.contact-form {
+    background-color: #f2f3f3;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.input-field {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #fff;
+}
+
+.input-field::placeholder{
+    font-size: medium;
+
+}
