@@ -51,6 +51,13 @@
     border: 3px solid $color-primary;
 }
 
+.secondary-accent-button {
+    @extend .shared-button-class;
+    background-color: $color-secondary;
+    color: $color-accent !important;
+    border: 3px solid $color-accent;
+}
+
 .main-color-button {
     @extend .shared-button-class;
     background-color: $color-primary;

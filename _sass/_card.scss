@@ -9,7 +9,7 @@
 
 .card-odd {
   @extend .card-common;
-  background-color: rgba($color-accent, .05);
+  background-color: rgba($color-accent, .1);
   border-radius: 1rem;
   border: 1px solid rgba($color-accent, .35);
 }
@@ -24,6 +24,9 @@
   display: none;
 }
 
+.card-info {
+  width: 100%
+}
 
 /* Responsive */
 @media (min-width: 640px) {
@@ -39,5 +42,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .card-info {
+    width: 50%
   }
 }
