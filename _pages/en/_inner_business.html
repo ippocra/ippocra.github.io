@@ -318,33 +318,12 @@
                                     info@ippocra.com
                                 </a>
                             </div>
-
-                            <!-- PEC -->
-                            <div class="flex items-center gap-3 text-white">
-                                <i class="fas fa-envelope fa-lg"></i>
-                                <a href="mailto:ippocra@pec.it" class="text-white hover:underline">
-                                    ippocra@pec.it
-                                </a>
-                            </div>
-
-                            <!-- Physical address -->
-                            <div class="flex items-start gap-3 text-white">
-                                <div class="h-24px">
-                                    <i class="fas fa-map-marker-alt fa-lg"></i>
-                                </div>
-
-                                <address class="text-white not-italic">
-                                    Via Podgora 47<br>
-                                    60126, Ancona<br>
-                                    Italy
-                                </address>
-                            </div>
                         </div>
                     </div>
 
                     <!-- ==================== RIGHT COLUMN – FORM ==================== -->
                     <div class="contact-form lg:w-3/5 space-y-8">
-                        <h2 class="mt-0 section-header">Request a Free Demo</h2>
+                        <h2 class="mt-0 section-header">Request a free demo</h2>
 
                         <form id="ippocraForm" method="POST"
                             action="https://hook.eu2.make.com/kmko599vdgvoi5xyyttkq4h2g3b9uys9"
@@ -352,20 +331,20 @@
 
                             <!-- Name -->
                             <div>
-                                <label for="name" class="sr-only">First name</label>
+                                <label for="name" class="sr-only">Name</label>
                                 <input type="text" id="name" name="name" class="input-field" required
-                                    placeholder="Your first name">
+                                    placeholder="Your Name">
                             </div>
 
                             <div>
-                                <label for="lastname" class="sr-only">Last name</label>
+                                <label for="lastname" class="sr-only">Surname</label>
                                 <input type="text" id="lastname" name="lastname" class="input-field" required
-                                    placeholder="Your last name">
+                                    placeholder="Your Surname">
                             </div>
 
                             <!-- Email -->
                             <div>
-                                <label for="email" class="sr-only">Email address</label>
+                                <label for="email" class="sr-only">Email</label>
                                 <input type="email" id="email" name="email" class="input-field"
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
                                     placeholder="email@example.com">
@@ -373,23 +352,46 @@
 
                             <!-- Phone -->
                             <div>
-                                <label for="phone" class="sr-only">Phone number</label>
-                                <input type="tel" id="phone" name="phone" class="input-field" required
-                                    placeholder="Phone">
+                                <label for="phone_prefix" class="sr-only">International Prefix</label>
+                                <div class="flex gap-2 items-center">
+                                    <!-- smaller prefix select -->
+                                    <select id="phone_prefix" name="phone_prefix" class="input-field flex-2 w-2" aria-label="Prefisso internazionale">
+                                        <option value="0044">0044</option>
+                                        <option value="0039">0039</option>
+                                        <option value="001">001</option>
+                                        <option value="0049">0049</option>
+                                        <option value="0033">0033</option>
+                                        <option value="0034">0034</option>
+                                        <option value="007">007</option>
+                                        <option value="0061">0061</option>
+                                        <option value="other">Other…</option>
+                                    </select>
+
+                                    <!-- larger phone input (takes remaining space) -->
+                                    <input type="tel" id="phone" name="phone" class="input-field flex-3 min-w-3" inputmode="tel" pattern="[0-9]*" required
+                                        placeholder="Phone (only numbers)">
+                                </div>
+
+                                <!-- campo per inserire un prefisso personalizzato quando si sceglie "Altro" -->
+                                <div id="phone_prefix_custom_wrap" class="mt-2 hidden">
+                                    <label for="phone_prefix_custom" class="sr-only">International prefix - specify</label>
+                                    <input type="text" id="phone_prefix_custom" name="phone_prefix_custom" class="input-field w-20"
+                                        placeholder="0044" inputmode="tel" aria-label="Prefisso personalizzato">
+                                </div>
                             </div>
 
                             <!-- Message / Demo request -->
                             <div>
                                 <label for="message" class="sr-only">Message</label>
                                 <textarea id="message" name="message" rows="4" class="input-field" required
-                                    placeholder="Tell us a bit about your clinic and what you'd like to see"></textarea>
+                                    placeholder="Tell us something about your clinic or studio and what are you interested on."></textarea>
                             </div>
 
                             <!-- Submit button -->
                             <div class="text-center">
                                 <button class="submit-button"
                                     type="submit">
-                                    Request Demo
+                                    Request the Demo
                                 </button>
                             </div>
                         </form>
@@ -453,7 +455,8 @@
                             Is it difficult to integrate Ippocra with our management software?
                         </summary>
                         <div class="faq-answer">
-                            No, Ippocra connects to the most commonly used systems without complex interventions. Integration with your managment system is simple and you will receive support on every step of the way from our technical team.
+                            No, Ippocra connects to the most commonly used systems without complex interventions. 
+                            Integration with your management system is simple and you will receive support on every step of the way from our technical team.
                         </div>
                     </details>
 
@@ -510,21 +513,92 @@
         document.addEventListener('DOMContentLoaded', () => {
 
             const form = document.getElementById('ippocraForm');
+            if (!form) return;
+
+            const btn = form.querySelector('button[type="submit"]') || form.querySelector('.submit-button');
+            const thanks = document.getElementById('thanksMsg');
+
+            const phoneEl = document.getElementById('phone');
+            const prefixEl = document.getElementById('phone_prefix');
+            const customWrap = document.getElementById('phone_prefix_custom_wrap');
+            const customEl = document.getElementById('phone_prefix_custom');
+
+            // show/hide custom prefix input when user selects "Altro"
+            if (prefixEl && customWrap && customEl) {
+                const toggleCustom = () => {
+                    if (prefixEl.value === 'other') {
+                        customWrap.classList.remove('hidden');
+                        customEl.required = true;
+                        customEl.focus();
+                    } else {
+                        customWrap.classList.add('hidden');
+                        customEl.required = false;
+                        customEl.value = '';
+                    }
+                };
+                prefixEl.addEventListener('change', toggleCustom);
+                toggleCustom();
+            }
+
+            // keep phone input numeric while typing
+            if (phoneEl) {
+                phoneEl.addEventListener('input', (e) => {
+                    const cleaned = e.target.value.replace(/\D/g, '');
+                    if (e.target.value !== cleaned) e.target.value = cleaned;
+                });
+            }
+
             form.addEventListener('submit', async (e) => {
                 e.preventDefault();                 // blocchiamo il submit tradizionale
-                btn.disabled = true;                // evitiamo doppi click
-                btn.dataset.originalText = btn.innerHTML;
-                btn.innerHTML = '<svg class="animate-spin h-5 w-5 mr-2 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8z"/></svg> Invio…';
+
+                if (btn) {
+                    btn.disabled = true;                // evitiamo doppi click
+                    btn.dataset.originalText = btn.innerHTML;
+                    btn.innerHTML = '<svg class="animate-spin h-5 w-5 mr-2 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8z"/></svg> Invio…';
+                }
 
                 try {
+                    // costruisci FormData e concatena prefisso+numero (solo cifre, senza spazi)
+                     const formData = new FormData(form);
+
+                    // escape della descrizione/messaggio per essere valido come stringa JSON
+                    const messageEl = form.querySelector('#message');
+                    if (messageEl) {
+                        const rawMsg = messageEl.value || '';
+                        // JSON.stringify produce una stringa quotata e correttamente escape-ata;
+                        // rimuoviamo le virgolette esterne per ottenere il contenuto escape-ato.
+                        const escapedMsg = JSON.stringify(rawMsg).slice(1, -1);
+                        formData.set('message', escapedMsg);
+                    }
+
+                    // determina prefisso (select o custom)
+                    let prefixValue = '';
+                    if (prefixEl) {
+                        if (prefixEl.value === 'other' && customEl) {
+                            prefixValue = customEl.value || '';
+                        } else {
+                            prefixValue = prefixEl.value || '';
+                        }
+                    }
+
+                    const rawPhone = phoneEl ? phoneEl.value : '';
+                    // combina e rimuove tutto ciò che non è cifra
+                    const combined = (prefixValue + rawPhone).replace(/\D/g, '');
+
+                    if (!combined) throw new Error('Telefono non valido');
+
+                    // sovrascrivi il campo phone con il valore combinato (solo cifre)
+                    formData.set('phone', combined);
+                    // rimuovi i singoli campi legati al prefisso per evitare duplicati
+                    formData.delete('phone_prefix');
+                    formData.delete('phone_prefix_custom');
+
                     const response = await fetch(form.action, {
                         method: 'POST',
-                        body: new FormData(form),
+                        body: formData,
                     });
 
-                    // ----------- Controllo della risposta -----------
                     if (!response.ok) {
-                        // Brevo/Make può restituire 4xx/5xx con messaggio JSON o testo
                         let errMsg = `Errore ${response.status}`;
                         const ct = response.headers.get('content-type') || '';
                         if (ct.includes('application/json')) {
@@ -537,24 +611,26 @@
                         throw new Error(errMsg);
                     }
 
-                    // Se la risposta è JSON, possiamo leggerla (non obbligatorio)
+                    // consume JSON if present
                     const ct = response.headers.get('content-type') || '';
                     if (ct.includes('application/json')) {
-                        await response.json(); // solo per “consumare” il body
+                        await response.json();
                     }
 
-                    // ----------- Successo -----------
-                    form.reset();                     // puliamo i campi
-                    thanks.classList.remove('hidden'); // mostriamo il messaggio di ringraziamento
-                    setTimeout(() => thanks.classList.add('hidden'), 5000);
+                    // Success
+                    form.reset();
+                    if (thanks) {
+                        thanks.classList.remove('hidden');
+                        setTimeout(() => thanks.classList.add('hidden'), 5000);
+                    }
                 } catch (err) {
-                    // ----------- Gestione errori ----------
                     console.error('Submit fallito:', err);
                     alert('Si è verificato un problema durante l\'invio. Per favore riprova più tardi.');
                 } finally {
-                    // ----------- Ripristino UI ----------
-                    btn.disabled = false;
-                    btn.innerHTML = btn.dataset.originalText;
+                    if (btn) {
+                        btn.disabled = false;
+                        btn.innerHTML = btn.dataset.originalText || 'Invia';
+                    }
                 }
             });
         });
