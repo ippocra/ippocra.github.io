@@ -571,57 +571,66 @@
                         }
                     }
 
+                    // prendi il numero locale e mantieni solo le cifre
                     const rawPhone = phoneEl ? phoneEl.value : '';
-                    // combina e rimuove tutto ciò che non è cifra
-                    const combined = (prefixValue + rawPhone).replace(/\D/g, '');
+                    const digitsOnlyPhone = (rawPhone || '').replace(/\D/g, '');
+
+                    // valida che il numero locale contenga esattamente 7 cifre
+                    if (digitsOnlyPhone.length !== 7) {
+                        throw new Error('Telefono non valido: il numero locale deve contenere esattamente 7 cifre');
+                    }
+
+                    // combina prefisso + numero (solo cifre)
+                    const combined = (prefixValue + digitsOnlyPhone).replace(/\D/g, '');
 
                     if (!combined) throw new Error('Telefono non valido');
 
-                    // sovrascrivi il campo phone con il valore combinato (solo cifre)
-                    formData.set('phone', combined);
-                    // rimuovi i singoli campi legati al prefisso per evitare duplicati
-                    formData.delete('phone_prefix');
-                    formData.delete('phone_prefix_custom');
+                     // sovrascrivi il campo phone con il valore combinato (solo cifre)
+                     formData.set('phone', combined);
+                     // rimuovi i singoli campi legati al prefisso per evitare duplicati
+                     formData.delete('phone_prefix');
+                     formData.delete('phone_prefix_custom');
 
-                    const response = await fetch(form.action, {
-                        method: 'POST',
-                        body: formData,
-                    });
+                     const response = await fetch(form.action, {
+                         method: 'POST',
+                         body: formData,
+                     });
 
                     if (!response.ok) {
-                        let errMsg = `Errore ${response.status}`;
-                        const ct = response.headers.get('content-type') || '';
-                        if (ct.includes('application/json')) {
-                            const data = await response.json();
-                            errMsg += ': ' + (data.message || JSON.stringify(data));
-                        } else {
-                            const txt = await response.text();
-                            errMsg += ': ' + txt;
-                        }
-                        throw new Error(errMsg);
-                    }
+                         let errMsg = `Errore ${response.status}`;
+                         const ct = response.headers.get('content-type') || '';
+                         if (ct.includes('application/json')) {
+                             const data = await response.json();
+                             errMsg += ': ' + (data.message || JSON.stringify(data));
+                         } else {
+                             const txt = await response.text();
+                             errMsg += ': ' + txt;
+                         }
+                         throw new Error(errMsg);
+                     }
 
-                    // consume JSON if present
-                    const ct = response.headers.get('content-type') || '';
-                    if (ct.includes('application/json')) {
-                        await response.json();
-                    }
+                     // consume JSON if present
+                     const ct = response.headers.get('content-type') || '';
+                     if (ct.includes('application/json')) {
+                         await response.json();
+                     }
 
-                    // Success
-                    form.reset();
-                    if (thanks) {
-                        thanks.classList.remove('hidden');
-                        setTimeout(() => thanks.classList.add('hidden'), 5000);
-                    }
-                } catch (err) {
+                     // Success
+                     form.reset();
+                     if (thanks) {
+                         thanks.classList.remove('hidden');
+                         setTimeout(() => thanks.classList.add('hidden'), 5000);
+                     }
+                 } catch (err) {
                     console.error('Submit fallito:', err);
-                    alert('Si è verificato un problema durante l\'invio. Per favore riprova più tardi.');
-                } finally {
-                    if (btn) {
-                        btn.disabled = false;
-                        btn.innerHTML = btn.dataset.originalText || 'Invia';
-                    }
-                }
+                    // mostra il messaggio d'errore specifico se presente
+                    alert(err && err.message ? err.message : 'Si è verificato un problema durante l\'invio. Per favore riprova più tardi.');
+                 } finally {
+                     if (btn) {
+                         btn.disabled = false;
+                         btn.innerHTML = btn.dataset.originalText || 'Invia';
+                     }
+                 }
             });
         });
     </script>
