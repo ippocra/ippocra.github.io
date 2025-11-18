@@ -275,42 +275,23 @@
             if(ctaSectionContent) ctaSectionContent.style.opacity = '1';
         });
 
-        // Intersection Observer for scroll animations
-        // Observer for #our-customers section
-        const ourCustomersSection = document.getElementById('our-customers');
-        if (ourCustomersSection) {
-            const ourCustomersObserver = new IntersectionObserver((entries) => {
-                if (entries[0] && entries[0].isIntersecting) {
-                    ourCustomersSection.classList.add('is-visible');
-                    ourCustomersObserver.unobserve(ourCustomersSection); // Optional: stop observing once visible
-                }
-            }, { threshold: 0.1 });
-            ourCustomersObserver.observe(ourCustomersSection);
-        }
-
-        // Observer for #testimonials section
-        const testimonialsSection = document.getElementById('testimonials');
-        if (testimonialsSection) {
-            const testimonialsObserver = new IntersectionObserver((entries) => {
-                if (entries[0] && entries[0].isIntersecting) {
-                    testimonialsSection.classList.add('is-visible');
-                    testimonialsObserver.unobserve(testimonialsSection);
-                }
-            }, { threshold: 0.1 });
-            testimonialsObserver.observe(testimonialsSection);
-        }
         
-        // Observer for #success-stories section
-        const successStoriesSection = document.getElementById('success-stories');
-        if (successStoriesSection) {
-            const successStoriesObserver = new IntersectionObserver((entries) => {
-                if (entries[0] && entries[0].isIntersecting) {
-                    successStoriesSection.classList.add('is-visible');
-                    successStoriesObserver.unobserve(successStoriesSection);
+        // Generic function to observe and animate sections
+        function observeAndAnimate(selector, visibleClass = 'is-visible', threshold = 0.1) {
+            const el = document.querySelector(selector);
+            if (!el) return;
+
+            const observer = new IntersectionObserver((entries) => {
+                const entry = entries[0];
+                if (entry.isIntersecting) {
+                    el.classList.add(visibleClass);
+                    observer.unobserve(el); // Stop observing after it becomes visible
                 }
-            }, { threshold: 0.1 });
-            successStoriesObserver.observe(successStoriesSection);
+            }, { threshold });
+
+            observer.observe(el);
         }
+        observeAndAnimate('#our-customers');
 
         lucide.createIcons();
     </script>

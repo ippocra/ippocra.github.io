@@ -1,0 +1,40 @@
+/* -------------------------------------------------
+   FAQ component – feel free to tweak colors/fonts
+   ------------------------------------------------- */
+
+.faq-item {
+   border: 1px solid #e2e8f0;
+   border-radius: 1rem;
+   margin-bottom: 1rem;
+   overflow: hidden;
+}
+
+.faq-question {
+   cursor: pointer;
+   padding: 1rem 1.5rem;
+   background: #f8fafc;
+   font-weight: 600;
+   position: relative;
+}
+
+.faq-answer {
+   padding: 1rem 1.5rem;
+   background: #ffffff;
+   line-height: 1.6;
+}
+
+.faq-item[open] .faq-answer {
+   animation: slideDown 0.25s ease-out forwards;
+}
+
+@keyframes slideDown {
+   from {
+      opacity: 0;
+      transform: translateY(-0.5rem);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}

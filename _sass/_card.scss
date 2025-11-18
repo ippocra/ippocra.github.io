@@ -1,0 +1,50 @@
+/* --------------------------------------------------------------
+   Card component
+   -------------------------------------------------------------- */
+.card-common {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-odd {
+  @extend .card-common;
+  background-color: rgba($color-accent, .1);
+  border-radius: 1rem;
+  border: 1px solid rgba($color-accent, .35);
+}
+
+.card-even {
+  @extend .card-common;
+  background-color: none;
+  border: none;
+}
+
+.card-image {
+  display: none;
+}
+
+.card-info {
+  width: 100%
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .card-common {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .card-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-info {
+    width: 50%
+  }
+}

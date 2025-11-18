@@ -1,0 +1,67 @@
+/* --------------------------------------------------------------
+   Colour palette – central place to tweak your brand colours
+   -------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------
+   Simple scalar variables (easy to read, useful for quick tweaks)
+   ------------------------------------------------------------------ */
+$color-primary: #3b9ba8; // main brand colour
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-light: lighten($color-primary, 15%);
+
+$color-secondary: #fff; // secondary button background
+$color-secondary-text: #3b9ba8; // secondary button text
+
+$color-accent: #406EBA; // accent for highlights / calls‑to‑action
+$color-muted: #475569; // body text, muted UI elements
+$color-background: #f8f9fa; // page background (fallback for light theme)
+
+$dark-text: #0f172a;
+$gray-text: #475569;
+
+/* ------------------------------------------------------------------
+   A map for “semantic” colour tokens – handy for loops &
+   runtime CSS custom properties
+   ------------------------------------------------------------------ */
+$palette: (
+   primary: $color-primary,
+   primary-dark: $color-primary-dark,
+   primary-light: $color-primary-light,
+
+   secondary: $color-secondary,
+   secondary-text: $color-secondary-text,
+
+   accent: $color-accent,
+   muted: $color-muted,
+   background: $color-background
+);
+
+/* ------------------------------------------------------------------
+   Helper function – `color($key)` returns the raw hex value
+   ------------------------------------------------------------------ */
+@function color($key) {
+   @return map-get($palette, $key);
+}
+
+/* ------------------------------------------------------------------
+   Export the same palette as CSS custom properties
+   (so you can switch themes in the browser later)
+   ------------------------------------------------------------------ */
+:root {
+   @each $name, $value in $palette {
+      --color-#{$name}: #{$value};
+   }
+}
+
+/* ------------------------------------------------------------------
+   Optional dark‑mode overrides – just add a `[data-theme="dark"]`
+   block wherever you like (e.g. in a separate `_dark.scss` file)
+   ------------------------------------------------------------------ */
+[data-theme="dark"] {
+   --color-primary: #2c7a7b;
+   --color-primary-dark: #23666a;
+   --color-primary-light: #4ab0b9;
+
+   --color-background: #1a202c;
+   --color-muted: #a0aec0;
+}
