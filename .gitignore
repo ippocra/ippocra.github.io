@@ -12,3 +12,10 @@ Zone:Identifier
 .venv
 .vscode
 *:Zone.Identifier
+.DS_Store
+_data/.DS_Store
+_includes/.DS_Store
+_pages/.DS_Store
+_posts/.DS_Store
+assets/.DS_Store
+node_modules/@fortawesome/fontawesome-free/.DS_Store
