@@ -72,10 +72,22 @@
     gap: 1rem;
 }
 
+.wide-button {
+    max-width: 20rem !important;
+}
+
+.hero-button {
+    max-width: 20rem !important;
+}
+
 @media (min-width: 640px) {
     .hero-button-container {
         flex-direction: row;
         gap: 0;
         column-gap: 1.5rem;
+    }
+
+    .hero-button {
+        max-width: 12rem !important;
     }
 }
