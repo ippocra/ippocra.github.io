@@ -2,11 +2,15 @@
    FAQ component – feel free to tweak colors/fonts
    ------------------------------------------------- */
 
-.faq-item {
+.faq-base {
    border: 1px solid #e2e8f0;
    border-radius: 1rem;
-   margin-bottom: 1rem;
    overflow: hidden;
+}
+
+.faq-item {
+   @extend .faq-base;
+   margin-bottom: 1rem;
 }
 
 .faq-question {
