@@ -1,12 +1,4 @@
 GIT
-  remote: https://github.com/mattions/polyglot.git
-  revision: 01aaeb8d0df210db371a8ed89a2624010b3c6cd6
-  branch: fix_regex_relative_url
-  specs:
-    jekyll-polyglot (1.10.0)
-      jekyll (>= 4.0, >= 3.0)
-
-GIT
   remote: https://github.com/mmistakes/minimal-mistakes.git
   revision: b7e170c5cfbaefc9754a3639ba851acf306ed5b1
   tag: 4.27.1
@@ -85,6 +77,8 @@ GEM
       json-minify (~> 0.0.3)
       uglifier (~> 4.1)
     jekyll-paginate (1.1.0)
+    jekyll-polyglot (1.11.0)
+      jekyll (>= 4.0, >= 3.0)
     jekyll-redirect-from (0.16.0)
       jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (3.0.0)
@@ -154,7 +148,7 @@ DEPENDENCIES
   jekyll (~> 4.4.1)
   jekyll-feed (~> 0.12)
   jekyll-minifier
-  jekyll-polyglot!
+  jekyll-polyglot (~> 1.11.0)
   jekyll-redirect-from
   jekyll-seo-tag
   minimal-mistakes-jekyll!
