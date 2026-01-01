@@ -1,6 +1,6 @@
 ## Copyright
 
-© [2025] [Ippocra]. All rights reserved.
+© [2026] [Ippocra]. All rights reserved.
 
 This website and its contents, hosted at [https://ippocra.github.io](https://ippocra.github.io) and [https://ippocra.com](https://ippocra.com), are the intellectual property of [Ippocra]. Unauthorized use, reproduction, or distribution of any material without prior written consent is prohibited.
 
