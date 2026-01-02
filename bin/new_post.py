@@ -25,6 +25,8 @@ def create_new_post(title_parts):
             post.write("categories: news\n")
             post.write(f'permalink: /{slugify(title)}\n')
             post.write(f"lang: {lang}\n")
+            post.write(f"description: <FILL ME!!!>\n")
+            post.write(f"keywords: <FILL ME!!!>\n")
             post.write(f'page_id: {slugify(title)}\n')
             post.write("header:\n")
             post.write("    teaser: FILL ME!\n")

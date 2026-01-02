@@ -103,5 +103,5 @@ Fai il primo passo oggi: carica un recente risultato di laboratorio, prova la ri
 
 
 
-<a href="https://app.ippocra.com/register?utm_source=website&utm_medium=store_medical_reports_it" class="btn btn--primary btn--x-large">Crea un account gratuito oggi --></a>
+<a href="https://app.ippocra.com/register?utm_source=website&utm_medium=store_medical_reports_it" class="btn btn--primary btn--x-large">Crea un account gratuito oggi <i class="fa-solid fa-arrow-right"></i></a>
 {: .text-center}
