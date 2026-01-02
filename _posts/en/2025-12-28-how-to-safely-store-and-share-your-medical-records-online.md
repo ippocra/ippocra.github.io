@@ -99,5 +99,5 @@ Take the first step today: upload a recent lab result, try the smart search, and
 
 *Ready to get started? Discover a reliable, encrypted solution for managing health records and enjoy peace of mind.*
 
-<a href="https://app.ippocra.com/register?utm_source=website&utm_medium=store_medical_reports_en" class="btn btn--primary btn--x-large">Create a free account today</a>
+<a href="https://app.ippocra.com/register?utm_source=website&utm_medium=store_medical_reports_en" class="btn btn--primary btn--x-large">Create a free account today <i class="fa-solid fa-arrow-right"></i></a>
 {: .text-center}
