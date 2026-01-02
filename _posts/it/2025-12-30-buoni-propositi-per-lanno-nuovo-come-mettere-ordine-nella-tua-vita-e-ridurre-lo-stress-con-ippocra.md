@@ -5,7 +5,7 @@ permalink: /buoni-propositi-per-lanno-nuovo-come-mettere-ordine-nella-tua-vita-e
 lang: it
 page_id: buoni-propositi-per-lanno-nuovo-come-mettere-ordine-nella-tua-vita-e-ridurre-lo-stress-con-ippocra
 header:
-    teaser: FILL ME!
+    teaser: assets/images/tree_panorama.webp
 classes: wide
 ---
 
