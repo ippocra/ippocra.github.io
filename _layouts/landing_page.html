@@ -7,8 +7,11 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
-        <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preload" href="/assets/css/tailwind.css"
+          as="style" onload="this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="/assets/css/tailwind.css">
+    </noscript>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">

@@ -51,7 +51,7 @@ le mie informazioni mediche in giro.
 **Infatti io condivido l'Ippolink via WhatsApp**, perché è sicuro e non possono estrarre nessuna informazione 
 da lí.
 
-![image-center](/assets/images/ippo-outline-green.png){: .align-center}
+![image-center](/assets/images/ippo-outline-green.webp){: .align-center}
 <br/>
 *Dite ciao a Ippo: pronto per una passeggiata, o per partire per un'avventura!*
 
