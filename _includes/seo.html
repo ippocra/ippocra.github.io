@@ -11,9 +11,15 @@
 {%- assign page_title = page_title | markdownify | strip_html | strip_newlines | escape_once -%}
 {%- assign seo_title  = seo_title  | markdownify | strip_html | strip_newlines | escape_once -%}
 
-{%- assign canonical_url = page.canonical_url | default: page.url | replace: "/index.html", "/" | absolute_url %}
+{%- assign lang = page.lang | default: site.active_lang | default: site.default_lang | default: site.locale | replace: "_", "-" | default: "en" -%}
+{%- assign base_url = page.canonical_url | default: page.url | replace: "/index.html", "/" -%}
+{%- if lang != site.default_lang -%}
+  {%- assign canonical_url = base_url | prepend: "/" | prepend: lang | absolute_url -%}
+{%- else -%}
+  {%- assign canonical_url = base_url | absolute_url -%}
+{%- endif -%}
 
-{%- assign seo_description = page.description | default: site.description[site.active_lang] -%}
+{%- assign seo_description = page.description | default: page.excerpt | default: site.description -%}
 {%- if seo_description -%}
   {%- assign seo_description = seo_description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | escape_once | strip -%}
 {%- endif -%}
@@ -46,7 +52,18 @@
 {% endif %}
 
 <meta property="og:type" content="{{ og_type }}">
-<meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
+{%- if site.languages and site.languages != empty -%}
+  {%- for code in site.languages -%}
+    {%- assign locale = site.data.locales[code] | default: "en_US" -%}
+    {%- if code == lang %}
+      <meta property="og:locale" content="{{ locale }}">
+    {% else %}
+      <meta property="og:locale:alternate" content="{{ locale }}">
+    {% endif -%}
+  {%- endfor -%}
+{%- else %}
+  <meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
+{% endif -%}
 <meta property="og:site_name" content="{{ site.title | escape_once | strip }}">
 <meta property="og:title" content="{{ page_title }}">
 <meta property="og:url" content="{{ canonical_url }}">
