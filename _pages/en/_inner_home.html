@@ -243,9 +243,21 @@
                         .featured-scroll { display:flex; gap:2rem; align-items:center; width:200%; animation:scroll-logos 30s linear infinite; animation-play-state: running; }
                         .featured-scroll:hover, .featured-scroll:focus-within { animation-play-state: paused; }
                         .featured-logos { display:flex; gap:2rem; align-items:center; }
-                        .featured-logos a img { height:44px; width:auto; filter:grayscale(0.0); opacity:0.9; transition:opacity .2s, transform .2s; }
+                        .featured-logos a { flex: 0 0 auto; padding: 0 .75rem; display:inline-flex; align-items:center; justify-content:center; }
+                        .featured-logos a img { height:auto; width:auto; max-height:44px; max-width:240px; object-fit:contain; filter:grayscale(0.0); opacity:0.9; transition:opacity .2s, transform .2s; }
                         .featured-logos a:hover img { opacity:1; transform:scale(1.02); }
                         @keyframes scroll-logos { 0% { transform:translateX(0);} 100% { transform:translateX(-50%);} }
+
+                        /* Mobile layout: keep aspect ratio, enlarge logos and enable auto-scroll */
+                        @media (max-width: 640px) {
+                            .featured-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; padding: 1rem 0; animation: scroll-logos 24s linear infinite; }
+                            .featured-logos { gap: 1rem; }
+                            .featured-logos a { padding: 0 .85rem; }
+                            .featured-logos a img { height:auto; max-height:96px; max-width:320px; }
+                            /* Show the duplicated logos row on mobile to keep seamless infinite scroll */
+                            .featured-scroll .featured-logos[aria-hidden="true"] { display: flex; }
+                        }
+
                         @media (prefers-reduced-motion: reduce) { .featured-scroll { animation:none; } }
                     </style>
 
