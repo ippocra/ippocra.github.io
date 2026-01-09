@@ -51,7 +51,7 @@ it will expire automatically, avoiding spreading your information around.
 **You can share the ippolink via WhatsApp**, because that's secure and they cannot 
 extract the information from there.
 
-![image-center](/assets/images/ippo-outline-green.png){: .align-center}
+![image-center](/assets/images/ippo-outline-green.webp){: .align-center}
 <br/>
 *Say hello to Ippo: ready to take a stroll, or to go on adventure with you!*
 

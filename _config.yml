@@ -32,7 +32,7 @@ theme: minimal-mistakes-jekyll
 #minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 minimal_mistakes_skin: "mint"
 locale               : "en"
-logo: "/assets/images/ippo-outline-green.png"
+logo: "/assets/images/ippo-outline-green.webp"
 masthead_title: "Ippocra"
 sass:
   quiet_deps: true    # Disable printing deprecation warnings to terminal

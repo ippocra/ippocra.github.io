@@ -18,11 +18,12 @@ gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mis
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-polyglot", git: 'https://github.com/mattions/polyglot.git', branch: 'fix_regex_relative_url'
+  gem "jekyll-polyglot", "~> 1.11.0"
   gem "jekyll-seo-tag"
   #gem "jekyll-paginate-v2"
   gem "jekyll-minifier"
   gem 'jekyll-redirect-from'
+  gem "jekyll-tailwindcss"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

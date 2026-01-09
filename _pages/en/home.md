@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: landing_page
 lang: en
 permalink: /
 title: "Ippocra, your health records at your fingertips"

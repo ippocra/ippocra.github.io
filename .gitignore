@@ -18,4 +18,4 @@ _includes/.DS_Store
 _pages/.DS_Store
 _posts/.DS_Store
 assets/.DS_Store
-node_modules/@fortawesome/fontawesome-free/.DS_Store
+node_modules

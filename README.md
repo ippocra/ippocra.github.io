@@ -1,6 +1,6 @@
 ## Copyright
 
-© [2025] [Ippocra]. All rights reserved.
+© [2026] [Ippocra]. All rights reserved.
 
 This website and its contents, hosted at [https://ippocra.github.io](https://ippocra.github.io) and [https://ippocra.com](https://ippocra.com), are the intellectual property of [Ippocra]. Unauthorized use, reproduction, or distribution of any material without prior written consent is prohibited.
 
@@ -67,7 +67,7 @@ Automatically deployed on each push on `main` via `github-action`.
 
 The post must be written in `_posts/it` and in `_post/en` with the filename following the format `YYYY-MM-DD-title-of-the-post.md` 
 
-Rembemr to set `lang: it` in the `_posts/it` and `lang:en` in `_post/en`.
+Remember to set `lang: it` in the `_posts/it` and `lang:en` in `_post/en`.
 
 Check the `_posts/it/2024-10-03-opening-private-beta.md` and `_posts/en/2024-10-03-opening-private-beta.md` 
 as a guide.
@@ -89,3 +89,8 @@ Use this type of markdown, so you get an automatic link to the bigger image.
 for example, with a real image, will look like this:
 
     [![image-center](/assets/images/analytics-ita-top.png)](/assets/images/analytics-ita-top.png){: .align-center}
+
+For better performance, use only `webp` format for the images. You can convert them via
+
+    convert image_input.png image_output.webp
+
