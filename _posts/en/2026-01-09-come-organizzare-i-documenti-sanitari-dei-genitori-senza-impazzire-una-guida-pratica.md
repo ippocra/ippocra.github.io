@@ -18,7 +18,7 @@ classes: wide
 
 Do you know that feeling of anxiety that hits you when the doctor asks, *“Can you show me the latest 2022 test?”* and you know that test is buried somewhere in a WhatsApp chat, a messy drawer, or a computer folder called “Misc”?
 
-If you manage the health of an elderly parent, or even just yours and that of your [children]({% post_url 2026-01-02-user-story-non-trovavamo-un-referto-anche-dopo-avere-messo-la-sala-a-soqquadro %}){:target="_blank"}, you know exactly what I’m talking about. Document management becomes a burden that [triggers stress and anxiety]({% post_url 2025-12-30-buoni-propositi-per-lanno-nuovo-come-mettere-ordine-nella-tua-vita-e-ridurre-lo-stress-con-ippocra %}){:target="_blank"}.
+If you manage the health of an elderly parent, or even just yours and that of your [children]({% post_url en/2026-01-02-user-story-non-trovavamo-un-referto-anche-dopo-avere-messo-la-sala-a-soqquadro %}){:target="_blank"}, you know exactly what I’m talking about. Document management becomes a burden that [triggers stress and anxiety]({% post_url en/2025-12-30-buoni-propositi-per-lanno-nuovo-come-mettere-ordine-nella-tua-vita-e-ridurre-lo-stress-con-ippocra %}){:target="_blank"}.
 
 Just a few days ago, a new user of ours, whom we’ll call Marco (*a fictitious name for privacy reasons*), wrote us a sentence that perfectly sums up the mood of thousands of Italian caregivers:
 
@@ -106,7 +106,7 @@ While a report is the technical account of a single exam (e.g., an ultrasound or
 
 ### **How can I read reports online easily?**
 
-Today many healthcare facilities make results available on their portals. However, they may only be accessible for up to 45 days before they have to be removed. The most practical solution is to use an **[app for medical reports]({% post_url 2025-12-28-how-to-safely-store-and-share-your-medical-records-online %})**{:target="_blank"} like Ippocra, which lets you centralise, read, and organise everything in a single protected digital archive.
+Today many healthcare facilities make results available on their portals. However, they may only be accessible for up to 45 days before they have to be removed. The most practical solution is to use an **[app for medical reports]({% post_url en/2025-12-28-how-to-safely-store-and-share-your-medical-records-online %})**{:target="_blank"} like Ippocra, which lets you centralise, read, and organise everything in a single protected digital archive.
 
 ### **Is there an app to download the medical reports of the whole family?**
 

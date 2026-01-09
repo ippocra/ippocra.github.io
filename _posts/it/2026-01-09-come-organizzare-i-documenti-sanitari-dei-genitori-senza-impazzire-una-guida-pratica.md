@@ -18,7 +18,7 @@ classes: wide
 
 Hai presente quella sensazione di ansia che ti prende quando il medico ti chiede: *"Mi fa vedere l'ultimo esame del 2022?"*e tu sai che quell'esame è sepolto da qualche parte in una chat di WhatsApp, in un cassetto disordinato o in una cartella del computer chiamata "Varie"?
 
-Se gestisci la salute di un genitore anziano, o anche solo la tua e quella [dei tuoi figli]({% post_url 2026-01-02-user-story-non-trovavamo-un-referto-anche-dopo-avere-messo-la-sala-a-soqquadro %}){:target="_blank"}, sai bene di cosa parlo. La gestione documentale diventa un peso, che [scatena stress ed ansia]({% post_url 2025-12-30-buoni-propositi-per-lanno-nuovo-come-mettere-ordine-nella-tua-vita-e-ridurre-lo-stress-con-ippocra %}){:target="_blank"}.
+Se gestisci la salute di un genitore anziano, o anche solo la tua e quella [dei tuoi figli]({% post_url it/2026-01-02-user-story-non-trovavamo-un-referto-anche-dopo-avere-messo-la-sala-a-soqquadro %}){:target="_blank"}, sai bene di cosa parlo. La gestione documentale diventa un peso, che [scatena stress ed ansia]({% post_url it/2025-12-30-buoni-propositi-per-lanno-nuovo-come-mettere-ordine-nella-tua-vita-e-ridurre-lo-stress-con-ippocra %}){:target="_blank"}.
 
 Proprio pochi giorni fa, un nostro nuovo utente, che chiameremo Marco (*nome inventato per motivi di privacy*), ci ha scritto una frase che riassume perfettamente lo stato d'animo di migliaia di caregiver italiani:
 
@@ -106,7 +106,7 @@ Mentre il referto è il resoconto tecnico di un singolo esame (es. un’ecografi
 ### **Come posso leggere i referti online in modo semplice?**
 
 Oggi molte strutture sanitarie rendono i risultati disponibili sui propri portali. Tuttavia, possono essere disponibili solo per massimo 45 giorno, poi devono essere tolti. La soluzione più pratica è utilizzare 
-un’**[app per referti medici]({% post_url 2025-12-28-how-to-safely-store-and-share-your-medical-records-online %})**{:target="_blank"} come Ippocra, che ti permette di centralizzare, leggere e organizzare tutto in un unico archivio digitale protetto.
+un’**[app per referti medici]({% post_url it/2025-12-28-how-to-safely-store-and-share-your-medical-records-online %})**{:target="_blank"} come Ippocra, che ti permette di centralizzare, leggere e organizzare tutto in un unico archivio digitale protetto.
 
 ### **Esiste un’app per scaricare i referti medici di tutta la famiglia?**
 
