@@ -20,10 +20,6 @@
 
 title: Ippocra
 email: info@ippocra.com
-description:
-  en: Your health records at your fingertips. Easily store, find and share all your health data. Any time, from anywhere.
-  it: I tuoi referti medici a portata di mano. Organizza facilemente, trova e condividi in sicurezza i tuoi dati medici. Quando vuoi, dove vuoi.
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ippocra.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 
