@@ -35,13 +35,13 @@ Katerina non cercava soltanto uno spazio di archiviazione. Aveva bisogno di un s
 
 Il problema non è la tua disorganizzazione, ma la frammentazione tecnologica:
 
-* **Mancanza di comunicazione: l**a Clinica A non ha alcun modo di accedere ai dati della Clinica B. I dati restano prigionieri di portali isolati.
-* **Supporti obsoleti:&#x20;**&#x72;icevere i referti medici su CD o su chiavette USB è inutile se il tuo computer (o quello del medico) non ha più gli ingressi adatti.
-* **Invio tramite canali impropri:&#x20;**&#x75;sare le email per inviare decine di PDF è insicuro; i file sono spesso troppo pesanti e la privacy non è garantita.
+* **Mancanza di comunicazione:** la Clinica A non ha alcun modo di accedere ai dati della Clinica B. I dati restano prigionieri di portali isolati.
+* **Supporti obsoleti:** ricevere i referti medici su CD o su chiavette USB è inutile se il tuo computer (o quello del medico) non ha più gli ingressi adatti.
+* **Invio tramite canali impropri:** usare le email per inviare decine di PDF è insicuro; i file sono spesso troppo pesanti e la privacy non è garantita.
 
 Il rischio? Che il medico formuli una diagnosi basata su informazioni parziali, o che tu debba ripetere esami costosi e invasivi.
 
-<a href="https://www.ippocra.com/" class="btn btn--primary btn--x-large">Gestisci i tuoi referti medici in modo professionale: Prova Ippocra<i class="fa-solid fa-arrow-right"></i></a>
+<a href="https://app.ippocra.com/register" class="btn btn--primary btn--x-large">Gestisci i tuoi referti medici in modo professionale: Prova Ippocra<i class="fa-solid fa-arrow-right"></i></a>
 {: .text-center}
 
 ## Un metodo efficiente per la gestione multi-struttura
@@ -75,8 +75,8 @@ Segue l'esempio di Katerina: centralizza la tua storia clinica e rendila fluida,
 
 ### FAQ Tecniche sulla condivisione
 
-**Posso caricare referti medici provenienti da qualsiasi ospedale?&#x20;**&#x53;ì. Ippocra è una piattaforma aperta e agnostica: puoi caricare PDF, foto di documenti cartacei o file digitali provenienti da qualunque struttura, pubblica o privata, italiana o estera.
+**Posso caricare referti medici provenienti da qualsiasi ospedale? Sì. Ippocra è una piattaforma aperta e agnostica: puoi caricare PDF, foto di documenti cartacei o file digitali provenienti da qualunque struttura, pubblica o privata, italiana o estera.
 
-**Qual è il vantaggio del link di condivisione rispetto all'email?&#x20;**&#x4C;'email non è un canale sicuro per i dati sanitari e ha limiti di peso per gli allegati. Il link di Ippocra garantisce crittografia avanzata, visualizzazione ottimale dei documenti e la possibilità di impostare una scadenza temporanea per l'accesso.
+**Qual è il vantaggio del link di condivisione rispetto all'email? L'email non è un canale sicuro per i dati sanitari e ha limiti di peso per gli allegati. Il link di Ippocra garantisce crittografia avanzata, visualizzazione ottimale dei documenti e la possibilità di impostare una scadenza temporanea per l'accesso.
 
-**Come posso digitalizzare i vecchi referti medici cartacei?&#x20;**&#x54;i basta utilizzare la funzione di acquisizione fotografica dall'app di Ippocra. La tecnologia integrata ottimizza l'immagine per renderla leggibile come un documento originale, pronti per essere indicizzati e condivisi.
+**Come posso digitalizzare i vecchi referti medici cartacei? Ti basta utilizzare la funzione di acquisizione fotografica dall'app di Ippocra. La tecnologia integrata ottimizza l'immagine per renderla leggibile come un documento originale, pronti per essere indicizzati e condivisi.
