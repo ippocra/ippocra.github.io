@@ -3,7 +3,7 @@ title: "Sharing Medical Reports Between Different Facilities: Management Guide"
 categories: news
 permalink: /how-to-share-medical-reports-between-different-facilities
 lang: en
-description: Do you have many medical reports scattered across various clinics? Discover how Giulia centralized and shared her medical history securely using Ippocra.
+description: Do you have many medical reports scattered across various clinics? Discover how Katerina centralized and shared her medical history securely using Ippocra.
 keywords: sharing medical reports, health document management, healthcare interoperability, personal clinical archive, medical data privacy, sending clinical analyses, digital health record.
 page_id: come-condividere-referti-medici-tra-strutture-diverse
 header:
