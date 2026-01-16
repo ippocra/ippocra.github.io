@@ -15,7 +15,7 @@ We just launched a new functionality and we have a new website!
 
 ## IppoLink is now online!
 
-If you found yourself going to a new doctor, you know that the first question they will 
+Since we [opened our private beta]({% post_url en/2024-10-03-opening-private-beta %}){:target="_blank"}, our users have requested a seamless way to share their medical data securely. If you found yourself going to a new doctor, you know that the first question they will 
 have is if you have old analysis or report that you can share to provide a view of your 
 health situation. Usually the reponse to that was: **PANIC**.
 

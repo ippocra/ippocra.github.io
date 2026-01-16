@@ -16,15 +16,14 @@ header:
 ## Ippocra x Medical Campus
 
 [Medical Campus](https://medicalcampus.it/) has chosen [Ippocra](https://ippocra.com) as the innovative 
-solution to send their own reports. From today, the doctors working at Medical Campus will be able to 
+solution to send their own reports. Since we [introduced the IppoLink feature]({% post_url en/2024-12-06-ippolink-launch %}){:target="_blank"}, healthcare providers have recognized its potential for secure patient communication. From today, the doctors working at Medical Campus will be able to 
 send the reports via the Ippolink, without the need to print them, and having a way to share them with 
 the patient in a secure and rapid manner. When the patient receives the ippolink, they can either download it
-or they can import it, after making an account, on Ippocra, starting the collection of their own medical data. 
-They will be able to add more documents as they come.
+or they can import it, after making an account, on Ippocra, starting the collection of their own medical data—just as [our platform allows with the free Ippo plan]({% post_url en/2025-05-07-take-the-ippo-for-a-ride %}){:target="_blank"}. They will be able to add more documents as they come.
 
 _"We are very pleased to have been choosen by Medical Campus. We see this collaboration as the confirmation 
 that Ippocra is proposing a solution that solves the problems of our users (business users, in this case), with 
-a new and innovative way to manage the medical documents, with the focus on the security and without forgetting
+a new and innovative way to manage the medical documents—an approach we've been developing [since opening for business]({% post_url en/2025-03-07-open-for-business %}){:target="_blank"}—with the focus on the security and without forgetting
 the easy of use, always being GDPR compliant."_ -- Michele Mattioni, CEO Ippocra.
 
 _"When Ippocra's team has proposed to use thier Platform, we have quickly choosen the opportunity to innovate how 

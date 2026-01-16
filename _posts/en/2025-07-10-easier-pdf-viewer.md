@@ -16,7 +16,7 @@ header:
 # A newly optimized PDFViewer, directly on the platform
 
 At [Ippocra](https://ippocra.com) we have a constant communication with our users, and 
-we are looking to improve our products to match our customers desires and needs.
+we are looking to improve our products to match our customers desires and needs. When we [added support for ZIP archives]({% post_url en/2025-03-27-archive-support %}){:target="_blank"}, users also requested a better way to view documents on mobile devices.
 
 That's why we are very happy to announce the availability of a newly customized and embedded PDF 
 Viewer, which is mobile friendly and supports to pinch-to-zoom capability. What is that?
@@ -35,7 +35,7 @@ Let me add three dots for the suspense!
 
 More over, the *back button* brings you back to your documents list, 
 maintaining your search, in case you have done one. Because the 
-**Smart Search** let's you search what you need, when you need.
+**Smart Search** that we first [introduced in our beta]({% post_url en/2024-10-03-opening-private-beta %}){:target="_blank"}—and that you can use with [the free Ippo plan]({% post_url en/2025-05-07-take-the-ippo-for-a-ride %}){:target="_blank"}—lets you search what you need, when you need it.
 
 As usual, you may need to open the PDF externally, so you can simply do it
 using the button at the bottom of the page. You decide which way works best

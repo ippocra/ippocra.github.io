@@ -17,12 +17,12 @@ classes: wide
 
 # Offri il piano sponsorizzato al tuo cliente
 
-Fin dall'inizio Ippocra permette di salvare i documenti ricevuti tramite Ippolink nel proprio piano
+Fin dall'inizio Ippocra permette di salvare i documenti ricevuti tramite [Ippolink]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"} nel proprio piano
 personale, scegliendo il profilo della persona. Questo rimane possibile con il nostro piano gratuito 
-_Ippo_ per tutti.
+_Ippo_ per tutti. [Quando abbiamo lanciato la piattaforma per i business nel 2025]({% post_url it/2025-03-07-open-for-business %}){:target="_blank"}abbiamo sviluppato questa idea con una strategia completa.
 
 A partire da oggi, Ippocra introduce una nuova opportunità: il **piano sponsorizzato**, attivabile 
-dai nostri utenti business per i loro clienti.
+dai nostri utenti business per i loro clienti. Utilizzando questo strumento, [potete coltivare la relazione con i vostri pazienti proprio come Medical Campus ha deciso di fare]({% post_url it/2025-05-14-medical-campus-sceglie-ippocra %}){:target="_blank"}.
 
 Quando un nuovo utente riceve un Ippolink da un utente business con il piano sponsorizzato attivo, 
 gli viene proposto di registrarsi con un piano _Family_ gratuito. Il piano ha una durata di **12 mesi** 

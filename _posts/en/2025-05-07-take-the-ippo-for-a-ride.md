@@ -19,8 +19,7 @@ header:
 **Ippo** is our mascot. It is funny, it's green (eheh), but most importantly, starting from 
 today, is possible to take it for a ride!
 
-We have revamped our plans, and now, our free plan (Ippo), gives you the ability to upload documents,
-so you can take Ippo for a ride, and understand how your medical documents can become an asset for you.
+When we [opened for business]({% post_url en/2025-03-07-open-for-business %}){:target="_blank"}, we introduced multiple subscription plans. Now, we have revamped our plans, and our free plan (Ippo) gives you the ability to upload documents, so you can take Ippo for a ride, and understand how your medical documents can become an asset for you.
 
 You can create a profile Person for you, and also for another Person, so you can start to upload the 
 documents for both!
@@ -29,7 +28,7 @@ All the documents uploaded are automatically encrypted, and they are stored in E
 compliant mode.
 
 Once you uploaded a document, automatically we will extract the date of the exam, categorize it, and 
-also activate the smart search, which provides you the possibility to search also the content of 
+also activate the smart search—the same intelligent search feature that powers [our document management system]({% post_url en/2024-10-03-opening-private-beta %}){:target="_blank"}—which provides you the possibility to search also the content of 
 the document.
 
 You can take a picture directly with your phone, and upload it to Ippocra, and Ippo will take care 
@@ -46,8 +45,7 @@ At Ippocra we believe that personal data must stay secure, and private. They are
 *Trivia*: did you know that if you share a report on WhatsApp, now the content gets extracted and 
 could possibily be used to train the generative AI? Personally speaking, I'm not up for that.
 
-Instead, with Ippocra, you can provide your medical data in a secure way via the Ippolink,
-which can be sent to the medical personal (or whoever **you** have decided to send it to), and 
+Instead, with Ippocra and the [IppoLink feature we launched]({% post_url en/2024-12-06-ippolink-launch %}){:target="_blank"}, you can provide your medical data in a secure way, which can be sent to the medical personal (or whoever **you** have decided to send it to), and 
 it will expire automatically, avoiding spreading your information around.
 
 **You can share the ippolink via WhatsApp**, because that's secure and they cannot 

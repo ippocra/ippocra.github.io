@@ -20,7 +20,7 @@ di annunciare che Ippocra "<strong>is open for business</strong>"!
 
 Innanzitutto, vogliamo ringraziare tutti i nostri utenti Beta, che hanno fornito tantissimi
 suggerimenti e spunti per migliorare la Piattaforma strada facendo, ed hanno partecipato 
-alla nostra [open beta](/private-beta). Senza loro non saremmo dove siamo giá arrivati. Per 
+alla nostra [open beta]({% post_url it/2024-10-03-opening-private-beta %}){:target="_blank"}. Senza loro non saremmo dove siamo giá arrivati. Per 
 questo tutti loro verranno *grandfather-in*, perché la nostra politica è sempre gli utenti prima di tutto. 
 
 Oggi chiudiamo la beta e ci **apriamo Ippocra al mondo**.
@@ -30,7 +30,7 @@ Ippocra si propone con quattro nuovi piani di abbonamento per l'utente privato:
 ![image-center](/assets/images/plans_it.png)
 
 Il nostro Piano gratuito, <strong>Ippo</strong>, permette di avere un account su Ippocra 
-in maniera gratuita, ed avere la possibilitá di ricevere i documenti tramite l'IppoLink!
+in maniera gratuita, ed avere la possibilitá di ricevere i documenti tramite l'[IppoLink]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"}!
 
 E magari pensi... Ma cos'è un IppoLink?
 

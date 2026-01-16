@@ -16,14 +16,14 @@ header:
 
 ## New data type unlocked: the .zip
 
-Talking to our users, we have understood the need to support a new data type, 
+When we [started the private beta]({% post_url en/2024-10-03-opening-private-beta %}){:target="_blank"}, we focused on PDFs and photos. As the platform evolved and we introduced more features, users began requesting support for complex medical data formats. 
 which would be extremely handy to have on [Ippocra](http://ippocra.com): the archive 
 in `.zip` format.
 
 For example, some CT-scans or TACs, are usually provided in archived zip format, 
 and our users would like to archive these data, always using our encrypted and secure 
 technology, as all the other medical data; and finally, they would like to share these
-via our [ippolinks](https://ippocra.com/en/news/2025/03/07/open-for-business.html#ippolink-share-your-health-data-securely-and-quickly).
+via our [IppoLinks]({% post_url en/2024-12-06-ippolink-launch %}){:target="_blank"} that we introduced after [opening our platform for business]({% post_url en/2025-03-07-open-for-business %}){:target="_blank"}.
 
 
 Today we are presenting this new feature:

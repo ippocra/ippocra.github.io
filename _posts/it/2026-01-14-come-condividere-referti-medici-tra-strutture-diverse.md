@@ -46,11 +46,11 @@ Il rischio? Che il medico formuli una diagnosi basata su informazioni parziali, 
 
 ## Un metodo efficiente per la gestione multi-struttura
 
-Katerina ha deciso di smettere di dipendere dai portali delle singole cliniche. Ha scelto **Ippocra**.
+Katerina ha deciso di smettere di dipendere dai portali delle singole cliniche. Ha scelto **Ippocra**, la piattaforma che [abbiamo lanciato nel 2025 per consentire a tutti di organizzare i propri documenti medici]({% post_url it/2025-03-07-open-for-business %}){:target="_blank"}.
 
 ### 1. Centralizzazione dei referti medici
 
-Invece di lasciare che i dati si spargano ovunque, Katerina ha iniziato a convogliare ogni nuovo documento su Ippocra. Il sistema non si limita a ospitare i file: riconosce la tipologia di esame e la data della prestazione.
+Invece di lasciare che i dati si spargano ovunque, Katerina ha iniziato a convogliare ogni nuovo documento su Ippocra. Il sistema non si limita a ospitare i file: riconosce la tipologia di esame e la data della prestazione, proprio come abbiamo sviluppato [nei nostri strumenti di archiviazione quando aggiungemmo il supporto ZIP nel marzo 2025]({% post_url it/2025-03-27-archive-support %}){:target="_blank"}.
 
 ### 2. Una cronologia clinica sempre accessibile
 
@@ -58,7 +58,7 @@ La differenza tra un archivio e Ippocra sta nell'organizzazione automatica in un
 
 ### 3. Condivisione sicura e controllo degli accessi
 
-Per condividere la sua storia clinica con un nuovo specialista, Katerina ha smesso di stampare fogli e di inviare allegati pesanti. Ora genera un **ippoLink**, un link di condivisione protetto. Il medico ottiene un accesso temporaneo per visualizzare i referti medici in alta definizione. Una volta terminata la necessità, Katerina può revocare l'accesso, mantenendo la piena proprietà dei propri dati sensibili.
+Per condividere la sua storia clinica con un nuovo specialista, Katerina ha smesso di stampare fogli e di inviare allegati pesanti. [Con la tecnologia degli Ippolink che abbiamo introdotto nel 2024]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"}, genera un link di condivisione protetto. Il medico ottiene un accesso temporaneo per visualizzare i referti medici in alta definizione. Una volta terminata la necessità, Katerina può revocare l'accesso, mantenendo la piena proprietà dei propri dati sensibili.
 
 ## Non permettere che la burocrazia fermi le tue cure
 

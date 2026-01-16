@@ -15,7 +15,7 @@ classes: wide
 ![image-center](/assets/images/forte-altavilla-luna.jpg){: .align-center}
 **Ippocra Business ora con gli Analytics – il telescopio per vedere meglio la luna!**  
 
-I nostri clienti business ci hanno chiesto di capire come i loro pazienti interagiscano con Ippocra. Le domande più frequenti erano:  
+I nostri clienti business ci hanno chiesto di capire come i loro pazienti interagiscano con Ippocra. Dopo il [lancio dell'IppoLink]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"} e l'[espansione della nostra piattaforma per i fornitori di servizi sanitari]({% post_url it/2025-05-14-medical-campus-sceglie-ippocra %}){:target="_blank"}le domande più frequenti erano:  
 
 - *Ricevono e aprono gli Ippolink che inviamo?*  
 - *Visualizzano i referti inviati?*  
@@ -38,7 +38,7 @@ Grazie agli analytics potete, a colpo d’occhio:
 - conoscere il numero di documenti caricati su Ippocra;  
 - controllare quante volte tali documenti sono stati visualizzati.  
 
-Inoltre è possibile osservare il trend dei click sugli **Ippolink** e delle visualizzazioni dei documenti.  
+Inoltre è possibile osservare il trend dei click sugli [**Ippolink**]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"} e delle visualizzazioni dei documenti. Queste metriche aiutano i professionisti sanitari a capire il coinvolgimento dei pazienti con [l'archiviazione e condivisione dei documenti medici]({% post_url it/2025-07-10-easier-pdf-viewer %}){:target="_blank"}.
 
 Gli analytics sono già disponibili per tutti i piani Business.  
 

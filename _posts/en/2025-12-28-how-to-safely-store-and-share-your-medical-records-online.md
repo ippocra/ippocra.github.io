@@ -14,7 +14,7 @@ classes: wide
 **Built for you and your family: How to safely store and share your medical records on the cloud**
 
 
-Keeping your health information private while having it always at hand can seem like a challenge. With the right tools you can benefit from **secure medical‑record storage**, **encrypted health documents**, and effortless sharing without compromising privacy. Below you’ll find every step to safely store and share your health documents, leveraging the features that make a **personal health‑record management platform** truly useful.
+Keeping your health information private while having it always at hand can seem like a challenge. With the right tools you can benefit from **secure medical‑record storage**, **encrypted health documents**, and effortless sharing without compromising privacy. Since [we launched our platform]({% post_url en/2025-03-07-open-for-business %}){:target="_blank"}, Ippocra has been designed around these principles. Below you'll find every step to safely store and share your health documents, leveraging the features that make a **personal health‑record management platform** truly useful.
 
 ## Choose a Reliable, Encrypted Platform  
 
@@ -33,7 +33,7 @@ Modern **apps for personal health‑record management** accept PDFs, photos, or 
 |------------------------|------------------------------|------|
 | Laboratory results     | PDF (original)               | Upload it directly to the associated person |
 | Paper reports          | High‑resolution JPEG/PNG     | Make sure the text is readable; avoid blurry images |
-| CT scans or X‑rays     | ZIP or archive               | Upload a zip that has no password |
+| CT scans or X‑rays     | ZIP or archive               | [Upload a zip file]({% post_url en/2025-03-27-archive-support %}){:target="_blank"} that has no password |
 
  
 
@@ -41,7 +41,7 @@ During upload, the platform’s **automatic health‑document categorization** w
 
 ## Use Smart Search to Find What You Need  
 
-A good **smart search engine for health documents** indexes the text inside PDFs and images. After you’ve uploaded the files:
+A good **smart search engine for health documents** indexes the text inside PDFs and images—a capability we perfected since [opening our private beta]({% post_url en/2024-10-03-opening-private-beta %}){:target="_blank"}. After you've uploaded the files:
 
 1. Open the search bar.  
 2. Type keywords such as “complete blood count”, “urine”, or the doctor’s name (e.g., “Dr Bianchi”).  
@@ -51,7 +51,7 @@ This feature removes the need to scroll through endless folders: your records ar
 
 ## 5 Share Records Securely with Professionals  
 
-When you need to give a doctor, specialist, or clinic access to your data, avoid email attachments or messaging apps. Instead use a **secure sharing link** (often called an *IppoLink* or similar).
+When you need to give a doctor, specialist, or clinic access to your data, avoid email attachments or messaging apps. Instead use a **[secure sharing link]({% post_url en/2024-12-06-ippolink-launch %}){:target="_blank"}** (such as the *IppoLink* feature we introduced).
 
 ### How to create a secure link  
 

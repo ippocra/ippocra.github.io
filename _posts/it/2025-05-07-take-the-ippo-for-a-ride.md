@@ -19,7 +19,7 @@ header:
 **Ippo** è la nostra mascot. È divertente, è verde (eheh), ma soprattutto, iniziando da oggi, è possibile
 andarci a fare una passeggiata!
 
-Abbiamo riconfigurato i nostri piani, e ora, con il nostro piano gratuito (Ippo), è possibile caricare i propri documenti, 
+Quando [siamo stati aperti al pubblico]({% post_url it/2025-03-07-open-for-business %}){:target="_blank"}, abbiamo introdotto molteplici piani di abbonamento. Ora, abbiamo riconfigurato i nostri piani, e con il nostro piano gratuito (Ippo), è possibile caricare i propri documenti, 
 cosí puoi portare Ippo a fare una passeggiata, e capire come i tuoi documenti medici possono diventare utili e facili da trovare, invece che perderli di continuo e divenire fonte di mal di testa.
 
 Puoi create un profilo Persona per te, e un altro aggiuntivo, cosí puoi anche capire come riuscire a tenere in ordine,
@@ -29,7 +29,7 @@ Tutti i documenti caricati sono automaticamente criptati, e sono conservati su S
 in conformitá con la GDPR.
 
 Una volta che il documento è stato caricato, Ippo automaticamente estrae la data del documento, lo categorizza, e 
-attiva anche la ricerca smart, che dá la capacitá di ricercara anche all'interno del documento per parole chiavi.
+attiva anche la ricerca smart—la stessa ricerca intelligente che abbiamo perfezionato [sin dal lancio della beta privata]({% post_url it/2024-10-03-opening-private-beta %}){:target="_blank"}—che dá la capacitá di ricercara anche all'interno del documento per parole chiavi.
 
 Puoi caricare direttamente una foto fatta con il tuo telefono su Ippocra, e  Ippo riuscirá ad estrarre tutte le 
 informazioni, senza che ti debba preouccupare di scannerizzare. Abbiamo costruito Ippocra per essere utilizzata 
@@ -46,7 +46,7 @@ Qui, ad Ippocra, crediamo che i dati personali devono essere mantenuti sicuri, e
 potrebbe essere utilizzato per sviluppare l'Intelligenza Artificiale? Personalmente, è una cosa a cui io non 
 voglio partecipare.
 
-Ed è per questo che utilizzo Ippocra, visto che, attraverso l'**Ippolink**, posso condividere i miei dati medici
+Ed è per questo che utilizzo Ippocra, visto che, attraverso l'[**Ippolink**]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"} che abbiamo lanciato, posso condividere i miei dati medici
 solo con le persone che voglio, e solo per un periodo di tempo limitato, evitando di disseminare 
 le mie informazioni mediche in giro.
 

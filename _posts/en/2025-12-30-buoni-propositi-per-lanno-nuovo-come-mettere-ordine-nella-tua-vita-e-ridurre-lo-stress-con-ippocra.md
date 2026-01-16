@@ -16,14 +16,14 @@ classes: wide
 
 ## Introduction
 
-The new year is the perfect time to set **good resolutions for the new year**. Many of us want to improve our routines, organize our commitments, and, most importantly, **lower the level of stress** associated with searching for important information. One often‑overlooked area is the management of medical reports: scattered documents, incomprehensible folders, and forgotten deadlines can increase daily anxiety. With **Ippocra**, however, you can **bring order to our lives** and have all your reports just a click away, once and for all.
+The new year is the perfect time to set **good resolutions for the new year**. Many of us want to improve our routines, organize our commitments, and, most importantly, **lower the level of stress** associated with searching for important information. One often‑overlooked area is the management of medical reports: scattered documents, incomprehensible folders, and forgotten deadlines can increase daily anxiety. With [**Ippocra**](https://ippocra.com){:target="_blank"}, however, you can **bring order to our lives** and have all your reports just a click away, once and for all—a goal we've [been working toward since opening our platform]({% post_url en/2025-03-07-open-for-business %}){:target="_blank"}.
 
 ## 1. Define your good resolutions clearly
 
 | Good resolution | How to measure it | Recommended tool |
 |-----------------|-------------------|------------------|
 | **Organize appointments** | Number of events entered into the weekly calendar | Google Calendar or reminder apps |
-| **Reduce “search‑and‑find” stress** | Average time spent looking for documents (minutes/day) | Ippocra – digital archive of reports |
+| **Reduce "search‑and‑find" stress** | Average time spent looking for documents (minutes/day) | [Ippocra – digital archive of reports]({% post_url en/2025-12-28-how-to-safely-store-and-share-your-medical-records-online %}){:target="_blank"} |
 | **Improve mental wellbeing** | Frequency of mindfulness practices (times/week) | Meditation |
 
 Write your resolutions using the **SMART** framework (Specific, Measurable, Achievable, Relevant, Time‑bound) to make them concrete and easier to achieve.
@@ -37,10 +37,10 @@ Write your resolutions using the **SMART** framework (Specific, Measurable, Achi
 
 ### How to start
 1. **Gather all paper documents** (bills, prescriptions, reports).  
-2. **Scan or photograph** the documents with your smartphone.  
+2. **Scan or photograph** the documents with your smartphone—[exactly as we designed the platform to work]({% post_url en/2025-05-07-take-the-ippo-for-a-ride %}){:target="_blank"}.  
 3. **Upload the files to Ippocra** using the secure upload feature.  
 
-> **Tip:** Use descriptive tags (e.g., “Cardiology visit – 2024”) to make searching even faster.
+> **Tip:** Use descriptive tags (e.g., "Cardiology visit – 2024") to make searching even faster. Our [intelligent search capabilities]({% post_url en/2024-10-03-opening-private-beta %}){:target="_blank"} will help you find what you need instantly.
 
 ## 3. Lower our stress level when looking for things
 

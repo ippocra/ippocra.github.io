@@ -19,12 +19,12 @@ classes: wide
 
 Ippocra nasce per connettere Dottori con i propri Pazienti, ed allo stesso tempo
 offrire degli strumenti semplici e veloci, che permettano di raggiungere il 
-miglior risultato nel minimo tempo.
+miglior risultato nel minimo tempo. Dal [primo lancio della piattaforma Business]({% post_url it/2025-03-07-open-for-business %}){:target="_blank"}, abbiamo lavorato per aggiungere funzionalità che rendessero il lavoro dei medici ancora più efficiente.
 
 Con questa idea abbiamo costruito il nostro editor di Documenti, che permette 
 al Dottore di scrivere un referto focalizzandosi nella diagnosi, permette di visualizzare 
 l'Anteprima, ed infine salvarlo e mandarlo direttamente al proprio paziente in maniera 
-digitalmente sicura usando i nostri Ippolinks.
+digitalmente sicura usando i nostri [Ippolinks]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"}.
 
 # Scrivere un referto non è mai stato così semplice
 
@@ -37,7 +37,7 @@ inviarlo al paziente in maniera automatica.
 ![image-center](assets/images/editor_documenti-it.gif)
 
 Tutti i referti vengono conservati secondo GDPR conforme, e con la possibilità di essere visualizzati
-soltanto dalle persone autorizzati. 
+soltanto dalle persone autorizzati. Con le nostre [funzionalità di visualizzazione avanzata dei PDF]({% post_url it/2025-07-10-easier-pdf-viewer %}){:target="_blank"}, potete vedere esattamente come i vostri pazienti consultano i documenti inviati.
 Per saperne di piú, leggi anche [come devono essere gestiti i referti medici da parte dei professionisti](https://ippocra.com/referti-medici-come-i-professionisti-devono-gestirli)
 
 

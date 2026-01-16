@@ -16,15 +16,15 @@ mare blu!*
 ## Ippocra x Medical Campus
 
 [Medical Campus](https://medicalcampus.it/) ha scelto [Ippocra](https://ippocra.com) come soluzione 
-innovativa per inviare i propri referti medici. Da oggi gli specialisti di Medical Campus potranno 
-mandare i referti attravenso gli Ippolink di Ippocra, evitando di stampare il referto, e consegnandolo
+innovativa per inviare i propri referti medici. Dopo il [lancio dell'IppoLink]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"}, i fornitori di servizi sanitari hanno riconosciuto il suo potenziale per la comunicazione sicura con i pazienti. Da oggi gli specialisti di Medical Campus potranno 
+mandare i referti attraverso gli Ippolink di Ippocra, evitando di stampare il referto, e consegnandolo
 in maniera sicura e rapida al paziente. Ricevuto l'ippolink il paziente potrà scaricare il referto, oppure
-importarlo nel proprio profilo personale, dopo aver fatto un account, creando lo storico dei suoi dati medici, 
-a cui potrà aggiungere sempre nuovi documenti.
+importarlo nel proprio profilo personale, dopo aver fatto un account, creando lo storico dei suoi dati medici—proprio come [permette il piano gratuito Ippo]({% post_url it/2025-05-07-take-the-ippo-for-a-ride %}){:target="_blank"}. 
+A cui potrà aggiungere sempre nuovi documenti.
 
 _"Siamo molto contenti di essere stati scelti da Medical Campus, e vediamo in questa collaborazione 
 la conferma che Ippocra propone una soluzione che risolve i problemi dei nostri utenti (business, in questo caso), 
-proponendo un modo innovativo nella gestione dei dati sanitari, priveligiando la sicurezza senza dimenticare 
+proponendo un modo innovativo nella gestione dei dati sanitari—un approccio che stiamo sviluppando [sin dall'apertura al pubblico]({% post_url it/2025-03-07-open-for-business %}){:target="_blank"}—priveligiando la sicurezza senza dimenticare 
 la facilità d'uso, sempre essendo GDPR conformi"_ -- Michele Mattioni, CEO Ippocra.
 
 _"Quando il team di Ippocra ci ha proposto l'utilizzo della piattaforma, abbiamo subito colto l'opportunità di innovare il nostro modo di fornire i referti. È stato evidente fin da subito che si trattava di una soluzione efficace non solo per migliorare la consegna dei referti, ma anche per creare un archivio digitale sempre accessibile, facile da consultare e protetto dalla sicurezza garantita da Ippocra._
