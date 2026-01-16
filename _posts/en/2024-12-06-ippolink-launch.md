@@ -1,9 +1,10 @@
 ---
-
-title:  "IppoLink is now available!"
-date:   2024-12-06 10:00:00 +0100
+title: "IppoLink is now available!"
+date: 2024-12-06 10:00:00 +0100
 categories: news
 lang: en
+description: Meet IppoLink - the secure way to share medical documents with doctors and specialists. Share reports instantly without exposing your data.
+keywords: IppoLink, secure document sharing, medical reports, share with doctors, secure link, health data privacy, telemedicine, medical sharing
 header:
     teaser: /assets/images/sea_and_clouds.jpg
 ---
@@ -14,7 +15,7 @@ We just launched a new functionality and we have a new website!
 
 ## IppoLink is now online!
 
-If you found yourself going to a new doctor, you know that the first question they will 
+Since we [opened our private beta]({% post_url en/2024-10-03-opening-private-beta %}){:target="_blank"}, our users have requested a seamless way to share their medical data securely. If you found yourself going to a new doctor, you know that the first question they will 
 have is if you have old analysis or report that you can share to provide a view of your 
 health situation. Usually the reponse to that was: **PANIC**.
 

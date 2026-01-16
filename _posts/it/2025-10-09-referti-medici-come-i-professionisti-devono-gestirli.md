@@ -3,6 +3,8 @@ title: Referti Medici -- come i professionisti devono gestirli?
 categories: news
 permalink: /referti-medici-come-i-professionisti-devono-gestirli
 lang: it
+description: Scopri i requisiti legali per la conservazione dei referti medici e come i professionisti sanitari possono garantire la conformità GDPR con archivi digitali sicuri.
+keywords: cartella clinica, conservazione legale, conformità GDPR, normative sanitarie, sicurezza documenti, responsabilità professionale, protezione dati, archiviazione medica
 page_id: referti-medici-come-i-professionisti-devono-gestirli
 header:
     teaser: assets/images/porta_a_mare_mole.jpg
@@ -19,7 +21,7 @@ classes: wide
 
 Quando un medico crea un referto, per quanto tempo questo come deve essere conservato ed in che modo?
 
-Secondo la circolare del Ministero della Sanità n. 900 del 19 dicembre 1986, le cartelle cliniche e i relativi referti devono essere conservati **illimitatamente** nel tempo, in quanto atti ufficiali indispensabili a garantire la certezza del diritto e fonte storica sanitaria. La normativa previgente (art. 17 D.P.R. 128/1969) fissava comunque un minimo di **10 anni** dalla dimissione del paziente, termine oggi considerato il minimo obbligatorio. In pratica, la prassi più diffusa è la conservazione **permanente** dei documenti clinici.
+Secondo la circolare del Ministero della Sanità n. 900 del 19 dicembre 1986, le cartelle cliniche e i relativi referti devono essere conservati **illimitatamente** nel tempo, in quanto atti ufficiali indispensabili a garantire la certezza del diritto e fonte storica sanitaria. La normativa previgente (art. 17 D.P.R. 128/1969) fissava comunque un minimo di **10 anni** dalla dimissione del paziente, termine oggi considerato il minimo obbligatorio. In pratica, la prassi più diffusa è la conservazione **permanente** dei documenti clinici. Questo è uno dei motivi per cui [abbiamo creato Ippocra come piattaforma per archiviare e condividere i documenti medici in sicurezza]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"}.
 
 Nel caso sia presente della **documentazione diagnostica complementare**, come esami diagnostici specifici, esistono tempistiche minime di conservazione. Ad esempio, le radiografie vanno conservate per almeno **20 anni**. Altra documentazione (ecografie, referti di laboratorio, esami specialistici) dovrebbe essere conservata per lo stesso periodo se tenuta separata, oppure illimitatamente se confluisce nella cartella clinica.
 
@@ -76,9 +78,9 @@ Terzi estranei (assicurazioni, datori di lavoro, familiari non delegati) non pos
 
 ## Ippocra: la soluzione per una corretta conservazione del referto
 
-Gestire in maniera corretta l’archiviazione, l’accesso e la visualizzazione del referto è molto complesso, per questo Ippocra offre una soluzione intuitiva ed immediata al problema.
+Gestire in maniera corretta l'archiviazione, l'accesso e la visualizzazione del referto è molto complesso. Per questo motivo, [quando abbiamo lanciato le funzionalità per i professionisti Business]({% post_url it/2025-07-10-easier-pdf-viewer %}){:target="_blank"}, abbiamo pensato a come rendere il sistema intuitivo ed immediato. Ippocra offre una soluzione completa al problema della conservazione GDPR-conforme dei referti.
 
-I nostri utenti **amministratori Business** possono da oggi invitare nel proprio piano i Dottori specialisti che possono utilizzare il sistema per archiviare i referti in maniera GDPR conforme.
+I nostri utenti **amministratori Business** possono da oggi invitare nel proprio piano i Dottori specialisti che possono utilizzare il sistema per archiviare i referti in maniera GDPR conforme. Se state valutando di introdurre Ippocra nella vostra struttura, leggete come [Medical Campus ha scelto Ippocra per gestire i referti dei propri pazienti]({% post_url it/2025-05-14-medical-campus-sceglie-ippocra %}){:target="_blank"}.
 
 I Dottori possono essere invitati in due modalitá:
 

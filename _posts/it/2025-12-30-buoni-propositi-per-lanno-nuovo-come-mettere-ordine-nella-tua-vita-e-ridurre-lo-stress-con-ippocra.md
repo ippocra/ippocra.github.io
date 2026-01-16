@@ -16,7 +16,7 @@ classes: wide
 
 ## Introduzione
 
-Il nuovo anno è il momento ideale per fissare **buoni propositi per l’anno nuovo**. Molti di noi vogliono migliorare la propria routine, organizzare gli impegni e, soprattutto, **abbassare il livello di stress** legato alla ricerca di informazioni importanti. Un’area spesso trascurata è la gestione dei referti medici: documenti sparsi, cartelle incomprensibili e scadenze dimenticate possono aumentare l’ansia quotidiana. Con **Ippocra**, però, è possibile **mettere ordine nella nostra vita** e avere tutti i referti a portata di click, una volta per tutte.
+Il nuovo anno è il momento ideale per fissare **buoni propositi per l'anno nuovo**. Molti di noi vogliono migliorare la propria routine, organizzare gli impegni e, soprattutto, **abbassare il livello di stress** legato alla ricerca di informazioni importanti. Un'area spesso trascurata è la gestione dei referti medici: documenti sparsi, cartelle incomprensibili e scadenze dimenticate possono aumentare l'ansia quotidiana. [Con **Ippocra**, che abbiamo lanciato come piattaforma per organizzare i referti medici nel 2025]({% post_url it/2025-03-07-open-for-business %}){:target="_blank"}, è possibile **mettere ordine nella nostra vita** e avere tutti i referti a portata di click, una volta per tutte.
 
 ## 1. Definisci i tuoi buoni propositi con chiarezza
 
@@ -32,7 +32,7 @@ Il nuovo anno è il momento ideale per fissare **buoni propositi per l’anno nu
 1. **Meno tempo perso** – Quando tutto è catalogato, trovi subito quello che ti serve.  
 2. **Migliore concentrazione** – Uno spazio di lavoro pulito riduce le distrazioni.  
 3. **Controllo delle scadenze** – Promemoria automatici evitano ritardi su pagamenti o visite mediche.
-
+[Se desideri approfondire come conservare e condividere i referti medici in sicurezza sul cloud, puoi leggere il nostro articolo recente]({% post_url it/2025-12-28-how-to-safely-store-and-share-your-medical-records-online %}){:target="_blank"}.
 ### Come iniziare
 1. **Raccogli tutti i documenti cartacei** (bollette, ricette, referti).  
 2. **Scansiona o fotografia** i documenti con lo smartphone.  
@@ -47,7 +47,7 @@ Lo stress da “cerca e trova” è spesso causato da:
 - **Mancanza di un sistema di backup**
 - **Documenti non indicizzabili**
 
-Con **Ippocra**, ogni referto medico viene indicizzato automaticamente grazie al riconoscimento ottico dei caratteri (OCR), aumentata dalla nostra tecnologia basata su algoritmi genetici per riconoscimento del testo. Questo significa che puoi digitare parole chiave come *“colesterolo”* o *“ecografia”* e ottenere il documento desiderato in pochi secondi.
+[Con **Ippocra**, gli Ippolink che lanciammo nel 2024 permettono anche di condividere i referti in modo sicuro]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"}, ogni referto medico viene indicizzato automaticamente grazie al riconoscimento ottico dei caratteri (OCR), aumentata dalla nostra tecnologia basata su algoritmi genetici per riconoscimento del testo. Questo significa che puoi digitare parole chiave come *"colesterolo"* o *"ecografia"* e ottenere il documento desiderato in pochi secondi.
 
 ## 4. Ordiniamo i nostri referti medici, una volta per tutte con Ippocra
 

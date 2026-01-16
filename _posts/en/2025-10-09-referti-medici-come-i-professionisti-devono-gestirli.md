@@ -3,6 +3,8 @@ title: Medical Reports -- How they should be archived?
 categories: news
 permalink: /medical-reports-how-professionals-should-store-them
 lang: en
+description: Learn the legal requirements for storing medical reports and how healthcare professionals can ensure GDPR compliance with secure digital archives.
+keywords: medical records, legal retention, GDPR compliance, healthcare regulations, document security, professional responsibility, data protection, medical storage
 page_id: referti-medici-come-i-professionisti-devono-gestirli
 header:
     teaser: assets/images/porta_a_mare_mole.jpg
@@ -18,7 +20,7 @@ classes: wide
 
 ## **Are your reports kept in accordance with the law?**
 
-When a doctor creates a report, how long must it be retained and how?
+When a doctor creates a report, how long must it be retained and how? As healthcare practices increasingly move toward digital solutions—like the [report-sharing features we've introduced]({% post_url en/2024-12-06-ippolink-launch %}){:target="_blank"}—it's crucial to understand the legal obligations around storage and retention.
 
 According to the Ministry of Health circular No. 900 dated 19 December 1986, clinical records and their related reports must be kept **indefinitely**, as official documents essential for guaranteeing legal certainty and serving as a health‑historical source. The previous regulation (art. 17 DPR 128/1969) set a minimum of **10 years** from the patient’s discharge, which today is considered the mandatory minimum. In practice, the most common practice is **permanent** retention of clinical documents.
 
@@ -35,7 +37,7 @@ Health documentation contains **special categories of personal data**, protected
 
 * **Purpose:** data may be processed and retained without specific consent when processing is necessary for health‑care provision or a legal obligation (art. 9 GDPR).
 * **Limitation and minimisation:** the limitation‑of‑storage principle (art. 5 GDPR) allows exceptions when retention is imposed by law or needed for legal defence. The obligations listed above therefore constitute the legal basis for prolonged storage.
-* **Security:** data controllers must adopt appropriate technical and organisational measures to ensure confidentiality, integrity and availability of health data (art. 32 GDPR). These include encryption, backups, access controls, audit trails and digital storage compliant with the Digital Administration Code (Legislative Decree 82/2005).
+* **Security:** data controllers must adopt appropriate technical and organisational measures to ensure confidentiality, integrity and availability of health data (art. 32 GDPR). These include encryption, backups, access controls, audit trails and digital storage compliant with the Digital Administration Code (Legislative Decree 82/2005). This is why platforms like [Ippocra](https://ippocra.com) focus on building [secure storage solutions]({% post_url en/2025-07-10-easier-pdf-viewer %}){:target="_blank"} and why [we've partnered with healthcare providers]({% post_url en/2025-05-14-medical-campus-sceglie-ippocra %}){:target="_blank"} to ensure compliance.
 
 
 #### What happens if these obligations are not respected?

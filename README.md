@@ -94,3 +94,7 @@ For better performance, use only `webp` format for the images. You can convert t
 
     convert image_input.png image_output.webp
 
+To install convert for the first time run
+
+    sudo apt install graphicsmagick-imagemagick-compat
+

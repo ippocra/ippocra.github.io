@@ -33,12 +33,12 @@ Nonostante gli sforzi, il **referto richiesto** non compariva. Il disappunto cre
 
 ## L’intervento di Ippocra
 
-Stanco di questa ricerca, l’utente ha deciso di **provare <a href=" {{site.url }}">Ippocra</a>**. Ecco cosa è successo:
+Stanco di questa ricerca, l'utente ha deciso di **provare Ippocra**. Proprio quello che avevamo creato [quando lanciammo la piattaforma per i professionisti nel 2025]({% post_url it/2025-03-07-open-for-business %}){:target="_blank"}. Ecco cosa è successo:
 
 1. **Caricamento rapido** – Ha iniziato a caricare tutti i documenti disponibili (PDF, foto, scansioni) direttamente sulla piattaforma.  
 2. **Indicizzazione automatica** – Ippocra ha estratto data, tipo di esame e contenuto testuale, classificandoli in categorie (analisi, referti, ricevute).  
-3. **Ricerca intelligente** – Con una semplice parola chiave (“referto ecografia 12/03/2024”) il documento è apparso **in meno di un secondo**.  
-4. **Condivisione con il medico** – Un click ha generato un link sicuro e criptato, pronto per essere inviato al dottore.
+3. **Ricerca intelligente** – Con una semplice parola chiave ("referto ecografia 12/03/2024") il documento è apparso **in meno di un secondo**.  
+4. **Condivisione con il medico** – Un click ha generato un [link sicuro e criptato]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"}, pronto per essere inviato al dottore.
 
 Grazie a questi passaggi, l’utente ha potuto **inviare il referto al medico prima dell’appuntamento**, evitando ulteriori ritardi e stress.
 
@@ -57,7 +57,7 @@ Grazie a questi passaggi, l’utente ha potuto **inviare il referto al medico pr
 | **Indicizzazione automatica** | Documenti ordinati cronologicamente senza sforzo. |
 | **Smart Search** | Trovi il referto digitando poche parole chiave. |
 | **Crittografia** | Privacy totale dei dati sanitari, automaticamente crittografati. |
-| **Condivisione sicura** | Invii il referto al medico con un link temporaneo. |
+| **Condivisione sicura** | Invii il referto al medico con un [link temporaneo che abbiamo sviluppato per semplificare la condivisione tra medico e paziente]({% post_url it/2025-05-07-take-the-ippo-for-a-ride %}){:target="_blank"}. |
 
 ## Conclusioni
 

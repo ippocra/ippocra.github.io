@@ -78,7 +78,7 @@ Ha aperto Ippocra, ha digitato nella barra di ricerca **"Cardiologo 2022"** e 
 
 Spesso i figli (caregiver) devono inviare i referti ai medici o condividerli con fratelli e sorelle. Marco ha smesso di spargere PDF sensibili via email o chat.
 
-Ora genera un **link sicuro e temporaneo**. Il medico clicca, vede i referti in alta definizione senza scaricare nulla, e il link scade dopo un po'. I dati restano al sicuro, la privacy è tutelata (siamo conformi GDPR), e Marco ha il controllo totale.
+Ora genera un **link sicuro e temporaneo**, proprio come quelli che abbiamo sviluppato [quando abbiamo lanciato IppoLink nel 2024]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"}. Il medico clicca, vede i referti in alta definizione senza scaricare nulla, e il link scade dopo un po'. I dati restano al sicuro, la privacy è tutelata (siamo conformi GDPR), e Marco ha il controllo totale.
 
 ## Non aspettare l'emergenza per organizzarti
 
@@ -105,7 +105,7 @@ Mentre il referto è il resoconto tecnico di un singolo esame (es. un’ecografi
 
 ### **Come posso leggere i referti online in modo semplice?**
 
-Oggi molte strutture sanitarie rendono i risultati disponibili sui propri portali. Tuttavia, possono essere disponibili solo per massimo 45 giorno, poi devono essere tolti. La soluzione più pratica è utilizzare 
+Oggi molte strutture sanitarie rendono i risultati disponibili sui propri portali. Tuttavia, possono essere disponibili solo per massimo 45 giorno, poi devono essere tolti. [Con il lancio di Ippocra Business nel 2025]({% post_url it/2025-03-07-open-for-business %}){:target="_blank"}, abbiamo introdotto anche nuovi strumenti di visualizzazione per facilitare la lettura. La soluzione più pratica è utilizzare 
 un’**[app per referti medici]({% post_url it/2025-12-28-how-to-safely-store-and-share-your-medical-records-online %})**{:target="_blank"} come Ippocra, che ti permette di centralizzare, leggere e organizzare tutto in un unico archivio digitale protetto.
 
 ### **Esiste un’app per scaricare i referti medici di tutta la famiglia?**

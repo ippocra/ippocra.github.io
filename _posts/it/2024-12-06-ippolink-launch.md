@@ -1,9 +1,10 @@
 ---
-
-title:  "Lancio dell'IppoLink"
-date:   2024-12-06 10:00:00 +0100
+title: "Lancio dell'IppoLink"
+date: 2024-12-06 10:00:00 +0100
 categories: news
 lang: it
+description: Incontra IppoLink - il modo sicuro per condividere documenti medici con dottori e specialisti. Condividi referti istantaneamente senza esporre i tuoi dati.
+keywords: IppoLink, condivisione sicura documenti, referti medici, condividi con medici, link sicuro, privacy dati sanitari, telemedicina, condivisione medica
 header:
     teaser: /assets/images/sea_and_clouds.jpg
 ---
@@ -14,7 +15,7 @@ Grandi novitá: abbiamo rinnovato il nostro sito ed abbiamo lanciato la nuova fu
 
 ## Nuovo Ippolink
 
-Se siete stati da un nuovo dottore o dottoressa, sapete benissimo che la prima domanda che 
+Dopo il [lancio della beta privata]({% post_url it/2024-10-03-opening-private-beta %}){:target="_blank"}, i nostri utenti hanno richiesto un modo semplice e sicuro per condividere i loro dati medici. Se siete stati da un nuovo dottore o dottoressa, sapete benissimo che la prima domanda che 
 lo specialista vi pone é quali esami medici avete a disposizione che possono visionare.
 Finora la risposta é sempre stata: **PANIC**.
 

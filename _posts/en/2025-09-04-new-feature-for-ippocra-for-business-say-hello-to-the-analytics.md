@@ -3,6 +3,8 @@ title: New feature for Ippocra for business - say hello to the Analytics
 categories: news
 permalink: /new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 lang: en
+description: Ippocra Business now features real-time analytics to track patient engagement, document views, and IppoLink clicks for healthcare providers.
+keywords: business analytics, healthcare metrics, patient engagement, IppoLink tracking, business intelligence, healthcare analytics, performance metrics
 page_id: new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 header:
     teaser: /assets/images/forte-altavilla-luna.jpg
@@ -11,7 +13,7 @@ classes: wide
 
 ![image-center](/assets/images/forte-altavilla-luna.jpg){: .align-center}**Ippocra Business now with Analytics – the telescope to better see the moon!**  
 
-Our business clients asked us to understand how their patients interact with Ippocra. The most common questions were:  
+Our business clients asked us to understand how their patients interact with Ippocra. Since we [introduced IppoLink]({% post_url en/2024-12-06-ippolink-launch %}){:target="_blank"} and [expanded our platform for healthcare providers]({% post_url en/2025-05-14-medical-campus-sceglie-ippocra %}){:target="_blank"}, the most common questions have been:  
 
 - *Do they receive and open the Ippolinks we send?*  
 - *Do they view the reports that are sent?*  
@@ -34,7 +36,7 @@ Thanks to the analytics you can, at a glance:
 - know the number of documents uploaded to Ippocra;  
 - check how many times those documents have been viewed.  
 
-You can also observe the trend of clicks on **Ippolinks** and document views.  
+You can also observe the trend of clicks on **[Ippolinks]({% post_url en/2024-12-06-ippolink-launch %}){:target="_blank"}** and document views. These metrics help healthcare professionals understand patient engagement with the [medical document storage]({% post_url en/2025-07-10-easier-pdf-viewer %}){:target="_blank"} and sharing features.  
 
 Analytics are already available on all the Business plans.  
 

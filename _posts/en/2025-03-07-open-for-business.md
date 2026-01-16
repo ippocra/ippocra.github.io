@@ -1,9 +1,10 @@
 ---
-
-title:  "We are open for business!"
-date:   2025-03-07 11:00:00 +0100
+title: "We are open for business!"
+date: 2025-03-07 11:00:00 +0100
 categories: news
 lang: en
+description: Ippocra is officially open for business! Discover our subscription plans and how secure medical document management can transform your healthcare experience.
+keywords: Ippocra subscription, health records, medical document storage, secure sharing, subscription plans, encrypted storage, healthcare platform
 header:
     teaser: /assets/images/sunrise_with_fishing_boats.jpg
 ---
@@ -18,7 +19,7 @@ After months of test, tries, adjustements and bureaucratic necessary steps, we a
 pleased to announce that Ippocra "<strong>is open for business</strong>"!
 
 First of all, I would like to thank all our Beta users, who have provided lots of suggestions 
-to improve the Platform so far, participating in our [open beta](/private-beta). Without
+to improve the Platform so far, participating in our [open beta]({% post_url en/2024-10-03-opening-private-beta %}){:target="_blank"}. Without
 them we wouldn't be where we are now. That's why they will be *grandfather-in*, because
 we like them a lot.
 
@@ -29,7 +30,7 @@ Ippocra has four new subscription plans for the private user:
 ![image-center](/assets/images/plans_en.png)
 
 Our free plan, **Ippo**, gives the ability to have an account on Ippocra without any
-payment, and has the ability to receive and store the documents via the IppoLink!
+payment, and has the ability to receive and store the documents via the [IppoLink]({% post_url en/2024-12-06-ippolink-launch %}){:target="_blank"}!
 
 You may ask... What is an IppoLink?
 

@@ -14,7 +14,7 @@ classes: wide
 **Pensato per te e per la tua famiglia: Come Conservare e Condividere in Sicurezza i Tuoi Referti Medici sul cloud**
 
 
-Mantenere le proprie informazioni sanitarie private, pur avendole sempre a disposizione, può sembrare una sfida. Con gli strumenti giusti è possibile usufruire di **archiviazione sicura dei referti medici**, **documenti sanitari criptati** e condivisione senza sforzi, senza compromettere la privacy. Di seguito trovi tutti i passaggi per conservare e condividere i tuoi documenti sanitari in modo sicuro, sfruttando le funzionalità che rendono davvero utile una **piattaforma per la gestione dei referti sanitari personali**.
+Mantenere le proprie informazioni sanitarie private, pur avendole sempre a disposizione, può sembrare una sfida. Con gli strumenti giusti è possibile usufruire di **archiviazione sicura dei referti medici**, **documenti sanitari criptati** e condivisione senza sforzi, senza compromettere la privacy. [Quando abbiamo lanciato Ippocra per permettere a tutti di organizzare i propri referti medici]({% post_url it/2025-03-07-open-for-business %}){:target="_blank"}, questo è stato il nostro obiettivo principale. Di seguito trovi tutti i passaggi per conservare e condividere i tuoi documenti sanitari in modo sicuro, sfruttando le funzionalità che rendono davvero utile una **piattaforma per la gestione dei referti sanitari personali**.
 
 ## Scegli una Piattaforma Affidabile e Criptata  
 
@@ -51,7 +51,7 @@ Questa funzione elimina la necessità di scorrere infinite cartelle: i tuoi refe
 
 ## 5 Condividi i Referti in Modo Sicuro con i Professionisti  
 
-Quando devi fornire a un medico, specialista o clinica l’accesso ai tuoi dati, evita allegati email o app di messaggistica. Usa invece un **link di condivisione sicuro** (spesso chiamato *IppoLink* o simile).
+Quando devi fornire a un medico, specialista o clinica l'accesso ai tuoi dati, evita allegati email o app di messaggistica. [Con il lancio degli Ippolink nel 2024]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"}, abbiamo creato un modo sicuro e semplice per condividere i tuoi referti. Usa invece un **link di condivisione sicuro** (spesso chiamato *IppoLink* o simile).
 
 ### Come creare un link sicuro  
 
@@ -85,8 +85,7 @@ Anche la migliore crittografia non protegge una password compromessa. Rafforza l
 R: Con la crittografia end‑to‑end, il provider conserva solo testo cifrato. Senza la tua chiave di decrittazione, i dati rubati rimangono illeggibili.
 
 **D: Posso conservare i referti di più familiari?**  
-R: Molte **app per la gestione dei referti sanitari personali** consentono di creare cassette o cartelle separate, ognuna protetta da password e permessi propri. Per esempio Ippocra 
-permette di farlo già con il Piano _Just Us_
+R: Molte **app per la gestione dei referti sanitari personali** consentono di creare cassette o cartelle separate, ognuna protetta da password e permessi propri. Per esempio, [Ippocra permette di farlo già con il Piano _Just Us_, pensato per mantenere organizzato l'archivio della tua famiglia]({% post_url it/2025-03-27-archive-support %}){:target="_blank"}.
 
 **D: Questa soluzione è conforme alle normative europee sulla privacy?**  
 R: I servizi che rispettano il GDPR — in particolare quelli che offrono **archiviazione cartelle cliniche digitale** e **gestione sicura dati sanitari** — sono progettati per il mercato UE. Verifica sempre la dichiarazione di conformità del provider.
