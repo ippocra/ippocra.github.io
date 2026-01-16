@@ -80,6 +80,71 @@
     max-width: 20rem !important;
 }
 
+/* --------------------------------------------------------------
+   Toggle
+   -------------------------------------------------------------- */
+.toggle-container {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  padding: 5px;
+}
+
+.btn-toggle {
+    min-width: 8rem !important;
+    min-height: 3rem;
+
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    color: #374151;
+    background-color: #ffffff;
+
+    border: 1px solid #dbe0e8;
+
+    position: relative;
+    z-index: 1;
+}
+
+.btn-toggled {
+    outline: none;
+    z-index: 10;
+    background-color: $color-primary;
+    color: #fff !important;
+}
+
+.btn-toggle:focus {
+    outline: none;
+    z-index: 10;
+    background-color: $color-primary;
+    color: #fff !important;
+
+}
+
+.btn-toggle-left {
+    @extend .btn-toggle;
+    border-top-left-radius: 100rem;
+    border-bottom-left-radius: 100rem;
+}
+
+.btn-toggle-right {
+    @extend .btn-toggle;
+    border-top-right-radius: 100rem;
+    border-bottom-right-radius: 100rem;
+}
+
+
 @media (min-width: 640px) {
     .hero-button-container {
         flex-direction: row;

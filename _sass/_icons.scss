@@ -9,6 +9,10 @@
   font-size: 2em;
 }
 
+.smaller-icon-size {
+  font-size: 1.5em;
+}
+
 @media (min-width: 640px) {
   .icon-grid {
     grid-template-columns: repeat(2, 1fr);

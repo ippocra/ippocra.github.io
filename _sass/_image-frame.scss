@@ -4,3 +4,34 @@
     padding: 0.5rem;
     background-color: #fff;
 }
+
+.plan-img--large {
+    display: none;
+    max-height: 250px;
+}
+
+.plan-img--small {
+    display: block;
+    max-height: 120px;
+}
+
+.plan-image-wrapper {
+  container-type: inline-size;
+}
+
+
+@container (min-width: 501px) {
+    .plan-img--large {
+        display: block;
+    }
+
+    .plan-img--small {
+        display: none;
+    }
+}
+
+.plan-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
