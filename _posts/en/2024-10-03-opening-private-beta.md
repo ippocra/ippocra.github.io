@@ -19,13 +19,3 @@ From today is possible to register an account on to try and test it. Register he
 We also received the feedback from our first users, and we have provided the ability to change the document name after the upload, improved our capacity to detect the date in the documents uploaded and many more.
 
 Thank you for your support!
-
----
-
-## Related Posts
-
-Learn more about what's new in Ippocra:
-
-- [IppoLink is now available!]({% post_url en/2024-12-06-ippolink-launch %})
-- [We are open for business!]({% post_url en/2025-03-07-open-for-business %})
-- [A brand new experience to see your documents]({% post_url en/2025-07-10-easier-pdf-viewer %})
