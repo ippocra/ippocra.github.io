@@ -1,0 +1,418 @@
+<head>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <link rel="stylesheet" href="{{ '/assets/css/fontawesome-free/css/all.min.css' | relative_url }}">
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* --- Layout rules requested --- */
+        .pricing-layout {
+            display: grid;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body class="text-slate-700 antialiased">
+    <main id="main-content">
+        <!-- ====================== PRICING SECTION ====================== -->
+        <section id="pricing" class="section-main-soft-gradient scroll-target py-16 bg-gray-50 relative">
+            <div class="section-container max-w-7xl mx-auto px-4">
+
+                <!-- Section heading -->
+                <h2 class="section-title text-center mb-8">
+                    Scegli il piano che soddisfa le tue esigenze
+                </h2>
+
+                <!-- toggle -->
+                <div class="toggle-container">
+                    <div class="inline-flex" role="group" aria-label="Billing period toggle">
+                        <button id="toggle-monthly" class="btn-toggle-left">
+                            Mensile
+                        </button>
+                        <button id="toggle-yearly" class="btn-toggle-right">
+                            Annuale
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Family -->
+                <article class="plan-card">
+                    <div class="ribbon-wrap">
+                        <div class="ribbon">Più sottoscritto</div>
+                    </div>
+                    <header>
+                        <div>
+                            <h3 class="mt-0">Family</h3>
+                        </div>
+                    </header>
+
+                    <div>
+                        <div class="plan-image-wrapper w-full">
+                            <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_family.png"
+                                alt="Piano Family" />
+                            <img class="plan-img plan-img--large" src="assets/images/ippoplans/family.png"
+                                alt="Piano Family" />
+                        </div>
+
+                        <table role="table" aria-label="Plan limits">
+                            <tbody>
+                                <tr>
+                                    <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
+                                    <td><span>2</span></td>
+                                    <td><strong>Amministratori</strong></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fas fa-users smaller-icon-size"></i></td>
+                                    <td><span>5</span></td>
+                                    <td><strong>Profili</strong></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
+                                    <td><span>500</span></td>
+                                    <td><strong>Caricamenti di documenti all'anno</strong></td>
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fas fa-link smaller-icon-size"></i></td>
+                                    <td><span>∞</span></td>
+                                    <td><strong>Ippolink all'anno</strong></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+
+
+                        <div class="mt-5 text-center">
+                            <div class="section-header line-through price-yearly hidden">
+                                <strong class="text-gray-700">96,00 €</strong>
+                                <span class="text-gray-700">annuale</span>
+                            </div>
+
+                            <div class="section-header">
+                                <strong class="price-monthly">8,00 €</strong>
+                                <strong class="price-yearly hidden">80,00 €</strong>
+
+                                <span class="price-monthly">mensile</span>
+                                <span class="price-yearly hidden">annuale</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="mt-5 text-center">
+                        <a class="main-color-button" href="Familyhttps://app.ippocra.com/register">Seleziona Piano</a>
+                    </footer>
+                </article>
+
+
+                <div class="plans-grid">
+
+
+                    <!-- Ippo -->
+                    <article class="mt-5 plan-card">
+                        <div class="ribbon-wrap">
+                            <div class="ribbon">Gratis</div>
+                        </div>
+                        <header>
+                            <div>
+                                <h3 class="mt-0">Ippo</h3>
+                            </div>
+                        </header>
+
+                        <div>
+                            <div class="plan-image-wrapper w-full">
+                                <img class="plan-img plan-img--small" src="assets/images/ippoplans/solo_head.png"
+                                    alt="Piano Ippo" />
+                                <img class="plan-img plan-img--large" src="assets/images/ippoplans/solo_head.png"
+                                    alt="Piano Ippo" />
+                            </div>
+
+                            <table role="table" aria-label="Plan limits">
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
+                                        <td><span>1</span></td>
+                                        <td><strong>Amministratori</strong></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fas fa-users smaller-icon-size"></i></td>
+                                        <td><span>2</span></td>
+                                        <td><strong>Profili</strong></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
+                                        <td><span>5</span></td>
+                                        <td><strong>Caricamenti di documenti all'anno</strong></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fas fa-link smaller-icon-size"></i></td>
+                                        <td><span>∞</span></td>
+                                        <td><strong>Ippolink all'anno</strong></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+                            <div class="mt-5 text-center">
+                                <div class="section-header">
+                                    <strong>Gratis</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="mt-5 text-center">
+                            <a class="main-color-button" href="Familyhttps://app.ippocra.com/register">Seleziona Piano</a>
+                        </footer>
+                    </article>
+
+
+
+
+
+                    <!-- Just Us -->
+                    <article class="mt-5 plan-card">
+                        <header>
+                            <div>
+                                <h3 class="mt-0">Just Us</h3>
+                            </div>
+                        </header>
+
+                        <div>
+                            <div class="plan-image-wrapper w-full">
+                                <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_just_us.png"
+                                    alt="Piano Just Us" />
+                                <img class="plan-img plan-img--large" src="assets/images/ippoplans/just_us.png"
+                                    alt="Piano Just Us" />
+                            </div>
+
+                            <table role="table" aria-label="Plan limits">
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
+                                        <td><span>2</span></td>
+                                        <td><strong>Amministratori</strong></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fas fa-users smaller-icon-size"></i></td>
+                                        <td><span>2</span></td>
+                                        <td><strong>Profili</strong></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
+                                        <td><span>200</span></td>
+                                        <td><strong>Caricamenti di documenti all'anno</strong></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fas fa-link smaller-icon-size"></i></td>
+                                        <td><span>∞</span></td>
+                                        <td><strong>Ippolink all'anno</strong></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+
+                            <div class="mt-5 text-center">
+                                <div class="section-header line-through price-yearly hidden">
+                                    <strong class="text-gray-700">60,00 €</strong>
+                                    <span class="text-gray-700">annuale</span>
+                                </div>
+
+                                <div class="section-header">
+                                    <strong class="price-monthly">5,00 €</strong>
+                                    <strong class="price-yearly hidden">50,00 €</strong>
+
+                                    <span class="price-monthly">mensile</span>
+                                    <span class="price-yearly hidden">annuale</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="mt-5 text-center">
+                            <a class="main-color-button" href="Familyhttps://app.ippocra.com/register">Seleziona Piano</a>
+                        </footer>
+                    </article>
+
+
+
+
+                    <!-- Family Plus -->
+                    <article class="mt-5 plan-card">
+                        <header>
+                            <div>
+                                <h3 class="mt-0">Family Plus</h3>
+                            </div>
+                        </header>
+
+                        <div>
+                            <div class="plan-image-wrapper w-full">
+                                <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_family.png"
+                                    alt="Piano Family" />
+                                <img class="plan-img plan-img--large" src="assets/images/ippoplans/family.png"
+                                    alt="Piano Family" />
+                            </div>
+
+                            <table role="table" aria-label="Plan limits">
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
+                                        <td><span>4</span></td>
+                                        <td><strong>Amministratori</strong></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fas fa-users smaller-icon-size"></i></td>
+                                        <td><span>10</span></td>
+                                        <td><strong>Profili</strong></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
+                                        <td><span>1000</span></td>
+                                        <td><strong>Caricamenti di documenti all'anno</strong></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="fas fa-link smaller-icon-size"></i></td>
+                                        <td><span>∞</span></td>
+                                        <td><strong>Ippolink all'anno</strong></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+
+
+                            <div class="mt-5 text-center">
+                                <div class="section-header line-through price-yearly hidden">
+                                    <strong class="text-gray-700">120,00 €</strong>
+                                    <span class="text-gray-700">annuale</span>
+                                </div>
+
+                                <div class="section-header">
+                                    <strong class="price-monthly">10,00 €</strong>
+                                    <strong class="price-yearly hidden">100,00 €</strong>
+
+                                    <span class="price-monthly">mensile</span>
+                                    <span class="price-yearly hidden">annuale</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="mt-5 text-center">
+                            <a class="main-color-button" href="Familyhttps://app.ippocra.com/register">Seleziona Piano</a>
+                        </footer>
+                    </article>
+
+
+
+                    <!-- End of Cards -->
+                </div>
+
+
+
+                <!-- Small note under the grid -->
+                <p class="mt-8 text-center text-sm text-gray-600">
+                    <strong>Se scegli i piani annuali risparmi 2 mesi!</strong>
+                </p>
+
+                <!-- Business call-to-action -->
+                <div class="mt-12 text-center">
+                    <h3 class="text-xl font-semibold mb-2">Sei un professionista in ambito sanitario?</h3>
+                    <p class="text-gray-700">
+                        <a href="/business" class="text-primary-600 underline hover:text-primary-800">
+                            Leggi di più sulla nostra pagina dedicata ai professionisti sanitari
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const monthlyBtn = document.getElementById('toggle-monthly');
+                    const yearlyBtn = document.getElementById('toggle-yearly');
+
+                    const setMode = (mode) => {
+                        const showMonthly = mode === 'monthly';
+
+                        document.querySelectorAll('.price-monthly').forEach(el =>
+                            el.classList.toggle('hidden', !showMonthly)
+                        );
+                        document.querySelectorAll('.price-yearly').forEach(el =>
+                            el.classList.toggle('hidden', showMonthly)
+                        );
+
+                        monthlyBtn.classList.toggle('btn-toggled', showMonthly);
+                        yearlyBtn.classList.toggle('btn-toggled', !showMonthly);
+                    };
+
+                    setMode('monthly');
+
+                    monthlyBtn.addEventListener('click', () => setMode('monthly'));
+                    yearlyBtn.addEventListener('click', () => setMode('yearly'));
+                });
+            </script>
+        </section>
+
+        <!-- Keep your other scripts below as-is -->
+        <script>
+            // Initial load animations for hero
+            document.addEventListener('DOMContentLoaded', () => {
+                const heroContent = document.querySelector('#hero .animate-fadeInUp');
+                if (heroContent) heroContent.style.opacity = '1';
+
+                const ctaSectionContent = document.querySelector('.cta-bg-gradient .animate-fadeInUp');
+                if (ctaSectionContent) ctaSectionContent.style.opacity = '1';
+            });
+
+            // Fade in elements on initial load
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelectorAll('.animate-fadeInUp').forEach(el => {
+                    el.style.opacity = '1';
+                });
+            });
+
+            function observeAndAnimate(selector, visibleClass = 'is-visible', threshold = 0.1) {
+                const el = document.querySelector(selector);
+                if (!el) return;
+
+                const observer = new IntersectionObserver((entries) => {
+                    const entry = entries[0];
+                    if (entry.isIntersecting) {
+                        el.classList.add(visibleClass);
+                        observer.unobserve(el);
+                    }
+                }, { threshold });
+
+                observer.observe(el);
+            }
+
+            observeAndAnimate('#whyippo');
+            observeAndAnimate('#connector');
+            observeAndAnimate('#join');
+            observeAndAnimate('#faq');
+
+            if (window.lucide) lucide.createIcons();
+        </script>
+    </main>
+</body>

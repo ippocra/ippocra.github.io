@@ -2,6 +2,7 @@
 layout: default
 lang: en
 permalink: /pricing
+page_id: pricing
 title: Pricing
 
 ---
