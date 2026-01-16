@@ -3,6 +3,8 @@ title: "Medical Campus sceglie Ippocra"
 categories: news
 permalink: /medical-campus-sceglie-ippocra
 lang: it
+description: Medical Campus si associa a Ippocra per fornire condivisione sicura di referti medici e archivi sanitari digitali ai propri pazienti.
+keywords: Medical Campus, partnership sanitaria, condivisione sicura referti, cartella paziente, gestione ambulatorio, telemedicina, pratica medica
 header:
     teaser: /assets/images/passetto_onde.jpg
 ---

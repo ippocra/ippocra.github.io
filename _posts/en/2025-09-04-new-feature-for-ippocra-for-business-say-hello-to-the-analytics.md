@@ -3,6 +3,8 @@ title: New feature for Ippocra for business - say hello to the Analytics
 categories: news
 permalink: /new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 lang: en
+description: Ippocra Business now features real-time analytics to track patient engagement, document views, and IppoLink clicks for healthcare providers.
+keywords: business analytics, healthcare metrics, patient engagement, IppoLink tracking, business intelligence, healthcare analytics, performance metrics
 page_id: new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 header:
     teaser: /assets/images/forte-altavilla-luna.jpg

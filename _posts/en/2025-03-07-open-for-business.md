@@ -1,9 +1,10 @@
 ---
-
-title:  "We are open for business!"
-date:   2025-03-07 11:00:00 +0100
+title: "We are open for business!"
+date: 2025-03-07 11:00:00 +0100
 categories: news
 lang: en
+description: Ippocra is officially open for business! Discover our subscription plans and how secure medical document management can transform your healthcare experience.
+keywords: Ippocra subscription, health records, medical document storage, secure sharing, subscription plans, encrypted storage, healthcare platform
 header:
     teaser: /assets/images/sunrise_with_fishing_boats.jpg
 ---

@@ -3,6 +3,8 @@ title: Medical Reports -- How they should be archived?
 categories: news
 permalink: /medical-reports-how-professionals-should-store-them
 lang: en
+description: Learn the legal requirements for storing medical reports and how healthcare professionals can ensure GDPR compliance with secure digital archives.
+keywords: medical records, legal retention, GDPR compliance, healthcare regulations, document security, professional responsibility, data protection, medical storage
 page_id: referti-medici-come-i-professionisti-devono-gestirli
 header:
     teaser: assets/images/porta_a_mare_mole.jpg

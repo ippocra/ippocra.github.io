@@ -3,6 +3,8 @@ title: Un modo nuovo per vedere i tuoi documenti
 categories: news
 permalink: /nuovo-visualizzatore-documenti
 lang: it
+description: Il nuovo visualizzatore PDF mobile-friendly di Ippocra ti consente di zoomare, cercare e visualizzare documenti medici facilmente su qualsiasi dispositivo.
+keywords: visualizzatore PDF, documenti mobile, pinch-to-zoom, lettura documenti, referti medici, interfaccia utente, mobile-friendly, ricerca documenti
 page_id: brand-new-documents-viewer
 header:
     teaser: /assets/images/mezzavalle-trave.jpg

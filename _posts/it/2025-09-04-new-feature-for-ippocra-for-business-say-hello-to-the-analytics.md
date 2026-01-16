@@ -3,6 +3,8 @@ title: Nuova funzionalità per Ippocra Business - vi presentiamo i Business Anal
 categories: news
 permalink: /nuova-funzionalita-per-ippocra-business-vi-presentiamo-gli-analytics
 lang: it
+description: Ippocra Business ora offre analitiche in tempo reale per tracciare l'engagement dei pazienti, le visualizzazioni dei documenti e i clic su IppoLink per i professionisti sanitari.
+keywords: analitiche aziendali, metriche sanitarie, engagement pazienti, tracciamento IppoLink, business intelligence, analitiche healthcare, metriche prestazioni
 page_id: new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 header:
     teaser: /assets/images/forte-altavilla-luna.jpg

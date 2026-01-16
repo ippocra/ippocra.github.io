@@ -3,6 +3,8 @@ title: A brand new experience to see your documents
 categories: news
 permalink: /brand-new-documents-viewer
 lang: en
+description: Ippocra's new mobile-friendly PDF viewer lets you zoom, search, and view medical documents easily on any device.
+keywords: PDF viewer, mobile documents, pinch-to-zoom, document reading, medical reports, user interface, mobile-friendly, document search
 page_id: brand-new-documents-viewer
 header:
     teaser: /assets/images/mezzavalle-trave.jpg

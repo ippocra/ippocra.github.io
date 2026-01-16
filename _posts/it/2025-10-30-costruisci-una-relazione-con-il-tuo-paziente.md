@@ -3,6 +3,8 @@ title: Costruisci una relazione duratura con il tuo paziente
 categories: news
 permalink: /costruisci-una-relazione-duratura-con-il-tuo-paziente
 lang: it
+description: Offri un piano Family sponsorizzato ai tuoi pazienti tramite Ippocra per rafforzare la fedeltà e incoraggiare cure mediche continuative e follow-up.
+keywords: piano sponsorizzato, fedeltà pazienti, fidelizzazione clienti, relazione sanitaria, piano family, crescita pratica, engagement pazienti, visite ricorrenti
 page_id: costruisci-una-relazione-con-il-tuo-paziente
 header:
     teaser: assets/images/ancona-golfo.jpg

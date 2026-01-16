@@ -3,6 +3,8 @@ title: "Take Ippo for a ride"
 categories: news
 permalink: "/take-ippo-for-a-ride"
 lang: en
+description: Discover how to start using Ippocra's free Ippo plan to upload and organize your medical documents with automatic encryption and smart search.
+keywords: Ippocra free plan, medical documents, encryption, smart search, organize health records, document upload, mobile app, health management
 header:
     teaser: /assets/images/scorci_di_conero.jpg
 ---

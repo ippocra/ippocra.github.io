@@ -1,9 +1,10 @@
 ---
-
-title:  "Your .zip on Ippocra"
-date:   2025-03-27 14:00:00 +0100
+title: "Your .zip on Ippocra"
+date: 2025-03-27 14:00:00 +0100
 categories: news
 lang: en
+description: Ippocra now supports ZIP archives! Easily upload and store CT scans, MRI files, and other archived medical data securely in the cloud.
+keywords: ZIP archives, medical storage, CT scans, MRI files, document management, secure upload, cloud storage, health data
 permalink:
 header:
     teaser: /assets/images/sunset_in_prospettiva_shorter.jpg

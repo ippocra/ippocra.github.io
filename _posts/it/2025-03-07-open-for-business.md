@@ -1,9 +1,10 @@
 ---
-
-title:  "Siamo aperti!"
-date:   2025-03-07 11:00:00 +0100
+title: "Siamo aperti!"
+date: 2025-03-07 11:00:00 +0100
 categories: news
 lang: it
+description: Ippocra è ufficialmente aperto per gli affari! Scopri i nostri piani di abbonamento e come la gestione sicura dei documenti medici può trasformare la tua esperienza sanitaria.
+keywords: Ippocra abbonamento, cartella clinica, archiviazione documenti medici, condivisione sicura, piani abbonamento, archiviazione crittografata, piattaforma sanitaria
 header:
     teaser: /assets/images/sunrise_with_fishing_boats.jpg
 ---

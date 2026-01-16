@@ -3,6 +3,8 @@ title: Build a long lasting relationship with your client
 categories: news
 permalink: /build-long-lasting-relationship-with-your-patient
 lang: en
+description: Offer a sponsored Family plan to your patients through Ippocra to strengthen loyalty and encourage ongoing medical care and follow-ups.
+keywords: sponsored plan, patient loyalty, client retention, healthcare relationship, family plan, practice growth, patient engagement, recurring visits
 page_id: costruisci-una-relazione-con-il-tuo-paziente
 header:
     teaser: assets/images/ancona-golfo.jpg

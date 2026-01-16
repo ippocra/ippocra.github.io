@@ -3,6 +3,8 @@ title: Referti Medici -- come i professionisti devono gestirli?
 categories: news
 permalink: /referti-medici-come-i-professionisti-devono-gestirli
 lang: it
+description: Scopri i requisiti legali per la conservazione dei referti medici e come i professionisti sanitari possono garantire la conformità GDPR con archivi digitali sicuri.
+keywords: cartella clinica, conservazione legale, conformità GDPR, normative sanitarie, sicurezza documenti, responsabilità professionale, protezione dati, archiviazione medica
 page_id: referti-medici-come-i-professionisti-devono-gestirli
 header:
     teaser: assets/images/porta_a_mare_mole.jpg

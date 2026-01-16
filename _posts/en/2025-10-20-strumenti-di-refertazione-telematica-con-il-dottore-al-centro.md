@@ -3,6 +3,8 @@ title: The report? Now you can write it directly from inside Ippocra!
 categories: news
 permalink: /write-reports-in-a-breeze
 lang: en
+description: Write, preview, and securely send medical reports directly from Ippocra's built-in document editor for seamless patient communication.
+keywords: report writing, medical documentation, document editor, telemedicine, patient communication, secure sending, healthcare tool, digital reports
 page_id: strumenti-di-refertazione-telematica-con-il-dottore-al-centro
 header:
     teaser: assets/images/scalinata-passetto-sunrise.jpg

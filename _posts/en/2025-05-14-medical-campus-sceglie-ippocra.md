@@ -3,6 +3,8 @@ title: "Medical Campus chooses Ippocra"
 categories: news
 permalink: /medical-campus-sceglie-ippocra
 lang: en
+description: Medical Campus partners with Ippocra to provide secure medical report sharing and digital health archives for their patients.
+keywords: Medical Campus, healthcare partnership, secure report sharing, patient records, clinic management, telemedicine, medical practice
 header:
     teaser: /assets/images/passetto_onde.jpg
 ---
