@@ -1,7 +1,7 @@
 ---
 title: "Electronic Health Record vs Ippocra: Which One to Choose?"
 categories: news
-permalink: /fascicolo-sanitario-elettronico-vs-ippocra-quale-scegliere
+permalink: /fascicolo-sanitario-elettronico-vs-ippocra-which-one-to-choose
 lang: en
 description: Comparison between EHR and Ippocra, discover how to integrate them for complete control of your health documentation.
 keywords:  electronic health record, EHR, digital medical reports, private health document management, personal clinical record, report digitization, health data privacy, medical report app, health interoperability, clinical history, Ippocra, EHR alternatives, report storage, secure sharing of medical documents, health data ownership
