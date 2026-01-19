@@ -26,10 +26,6 @@ La promessa del FSE era chiara: un unico punto di accesso per tutta la tua docum
 
 **— Gugliemo, 42 anni, paziente con malattia cronica**
 
-![image-center](assets/images/ippocra_grafico_vantaggi.webp){: align-center}
-**
-
-
 Il caso di Guglielmo non è isolato. Rappresenta una realtà quotidiana per milioni di italiani che si trovano a gestire la propria salute attraverso sistemi frammentati, burocratici e spesso inaccessibili in momenti di reale necessità.
 
 ## L'Origine del Problema: La Frammentazione Strutturale
@@ -46,8 +42,7 @@ Il Fascicolo Sanitario Elettronico nasce con un intento nobile: centralizzare la
 
 Questi limiti evidenziano la necessità di un approccio complementare al FSE che restituisca al paziente la proprietà effettiva della propria documentazione sanitaria.
 
-<a href="https://app.ippocra.com/register" class="btn btn--primary btn--x-large">Prendi il Controllo dei Tuoi Referti Medici → Prova Ippocra - gestione completa, privacy garantita, accesso immediato<i class="fa-solid fa-arrow-right"></i></a>
-{: .text-center}
+![image-center](assets/images/ippocra_grafico_vantaggi.webp){: align-center}
 
 ## Il Metodo della Centralizzazione Personale
 
