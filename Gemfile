@@ -20,7 +20,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-polyglot", "~> 1.11.0"
   gem "jekyll-seo-tag"
-  #gem "jekyll-paginate-v2"
+  gem "jekyll-paginate-v2"
   gem "jekyll-minifier"
   gem 'jekyll-redirect-from'
   gem "jekyll-tailwindcss"

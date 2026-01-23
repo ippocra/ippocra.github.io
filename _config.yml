@@ -79,7 +79,10 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: https://www.linkedin.com/company/ippocra/
 
-
+############################################################
+# Pagination using jekyll-paginate-v2
+# Override minimal-mistakes theme defaults
+############################################################
 pagination:
   enabled: true
   collection: 'posts'
@@ -97,8 +100,8 @@ pagination:
 plugins:
   - jekyll-feed
   - jekyll-polyglot
+  - jekyll-paginate-v2
   - jekyll-include-cache
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-minifier
   - jekyll-redirect-from
