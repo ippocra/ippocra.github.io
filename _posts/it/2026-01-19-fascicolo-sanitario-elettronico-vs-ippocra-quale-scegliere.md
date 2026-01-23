@@ -26,7 +26,7 @@ La promessa del FSE era chiara: un unico punto di accesso per tutta la tua docum
 
 **— Gugliemo, 42 anni, paziente con malattia cronica**
 
-Il caso di Guglielmo non è isolato. Rappresenta una realtà quotidiana per milioni di italiani che si trovano a gestire la propria salute attraverso sistemi frammentati, burocratici e spesso inaccessibili in momenti di reale necessità.
+Il caso di Guglielmo non è isolato. Rappresenta una realtà quotidiana per milioni di italiani che si trovano a [gestire la propria salute attraverso sistemi frammentati]({% post_url it/2026-01-09-come-organizzare-i-documenti-sanitari-dei-genitori-senza-impazzire-una-guida-pratica %}){:target="_blank"}, burocratici e spesso inaccessibili in momenti di reale necessità.
 
 ## L'Origine del Problema: La Frammentazione Strutturale
 
@@ -38,7 +38,7 @@ Il Fascicolo Sanitario Elettronico nasce con un intento nobile: centralizzare la
 
 * **Difficile ritrovamento dei documenti:** Ogni FSE è diverso per ogni regione. In alcune è più avanzato di altre, ma la ricerca dei documenti è sempre estremamente complicata. 
 
-* **No immagini:** Sul FSE non si possono caricare le immagini. Non conserva le radiografie, i CT-scan, le ecografie.
+* **No immagini:** Sul FSE non si possono caricare le immagini. Non conserva le radiografie, [i CT-scan, le ecografie o file DICOM voluminosi]({% post_url it/2026-01-23-come-condividere-una-tac-o-referti-medici-pesanti-in-sicurezza %}){:target="_blank"}.
 
 Questi limiti evidenziano la necessità di un approccio complementare al FSE che restituisca al paziente la proprietà effettiva della propria documentazione sanitaria.
 
@@ -75,7 +75,7 @@ Il valore di un archivio sanitario non sta solo nella sua completezza, ma nella 
 
 La privacy non è solo protezione dai rischi, ma capacità di decidere attivamente cosa condividere e con chi:
 
-- **Condivisione granulare:** Ippocra offre un modo unico per condividere tutta o una parte della storia clinica con nuovi specialisti attraverso link temporanei. Il paziente può creare dei link di condivisione (Ippolink), mettendo insieme uno o più referti medici da condividere con singoli specialisti, senza esporre l'intera documentazione. Il cardiologo riceve solo gli esami cardiovascolari, l'endocrinologo solo quelli endocrini.
+- **Condivisione granulare:** Ippocra offre un [modo unico per condividere referti medici tra strutture diverse]({% post_url it/2026-01-14-come-condividere-referti-medici-tra-strutture-diverse %}){:target="_blank"} attraverso link temporanei. Il paziente può creare dei link di condivisione (Ippolink), mettendo insieme uno o più referti medici da condividere con singoli specialisti, senza esporre l'intera documentazione. Il cardiologo riceve solo gli esami cardiovascolari, l'endocrinologo solo quelli endocrini.
 
 - **Controllo temporale:** I IppoLink hanno una scdenza automatica, garantendo che l'accesso ai dati sanitari sia limitato al periodo strettamente necessario.
 

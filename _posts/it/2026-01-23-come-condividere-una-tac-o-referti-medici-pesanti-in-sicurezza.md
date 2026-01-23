@@ -17,7 +17,7 @@ classes: wide
 ## Come condividere una TAC?
 Ti è mai capitato di provare a inviare l'esito di una TAC o di una risonanza magnetica via email, solo per ricevere un messaggio di errore che ti avvisa che "il file è troppo grande"?
 
-I moderni esami di diagnostica per immagini producono file ad altissima risoluzione (spesso in formato DICOM) che possono pesare centinaia di megabyte. Di fronte a questo ostacolo, molti pazienti commettono l'errore di utilizzare servizi di trasferimento file generici o, peggio, rinunciano alla velocità spedendo fisicamente CD e chiavette USB via corriere, rallentando drasticamente l'iter diagnostico.
+I moderni esami di diagnostica per immagini producono file ad altissima risoluzione (spesso in formato DICOM) che possono pesare centinaia di megabyte. Di fronte a questo ostacolo, molti pazienti commettono l'errore di utilizzare servizi di trasferimento file generici o, peggio, rinunciano alla velocità spedendo fisicamente CD e chiavette USB via corriere, rallentando drasticamente l'iter diagnostico. La [condivisione dei referti medici tra strutture diverse]({% post_url it/2026-01-14-come-condividere-referti-medici-tra-strutture-diverse %}){:target="_blank"} rimane una sfida per molti pazienti.
 
 È esattamente il problema che ha dovuto affrontare Dante, un nostro utente che aveva l'urgenza di sottoporre un secondo parere a uno specialista distante centinaia di chilometri:
 
@@ -45,7 +45,7 @@ Dante ha utilizzato Ippocra per superare i limiti tecnici dell'invio tradizional
 
 ### 1. Archiviazione cloud ottimizzata per grandi volumi
 
-Ippocra è progettato per ospitare referti medici di grandi dimensioni. Caricando la tua TAC o risonanza magnetica sulla piattaforma, il file viene protetto da sistemi di crittografia avanzata e reso disponibile per una consultazione immediata, indipendentemente dal dispositivo utilizzato.
+Ippocra è progettato per ospitare referti medici di grandi dimensioni. Caricando la tua TAC o risonanza magnetica sulla piattaforma, il file viene [protetto da sistemi di crittografia avanzata]({% post_url it/2025-12-28-how-to-safely-store-and-share-your-medical-records-online %}){:target="_blank"} e reso disponibile per una consultazione immediata, indipendentemente dal dispositivo utilizzato.
 
 ### 2. Accessibilità immediata per lo specialista
 
@@ -53,7 +53,7 @@ Il vantaggio di avere i propri esami voluminosi su Ippocra è la reperibilità. 
 
 ### 3. Link di condivisione criptati e temporanei
 
-Per consentire allo specialista di analizzare la TAC, Dante ha generato un link di condivisione sicuro.
+Per consentire allo specialista di analizzare la TAC, Dante ha generato un [link di condivisione sicuro (IppoLink)]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"}.
 
 * **Sicurezza:** Il medico riceve un accesso protetto senza che il file debba "viaggiare" su canali insicuri.
 * **Controllo:** Dante ha potuto impostare una scadenza per il link, garantendo che i suoi referti medici fossero visibili solo per il tempo necessario alla consulenza.

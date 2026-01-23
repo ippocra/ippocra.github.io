@@ -17,7 +17,7 @@ classes: wide
 ## How to share a CT Scan?
 Have you ever tried to email the results of a CT scan or MRI, only to receive an error message saying "the file is too large"?
 
-Modern diagnostic imaging exams produce very high-resolution files, often in DICOM format, that can exceed 100 MB. Because of this, many patients mistakenly use generic file-transfer services or, worse, hinder progress by physically shipping CDs and USB drives via courier, significantly delaying the diagnostic process.
+Modern diagnostic imaging exams produce very high-resolution files, often in DICOM format, that can exceed 100 MB. Because of this, many patients mistakenly use generic file-transfer services or, worse, hinder progress by physically shipping CDs and USB drives via courier, significantly delaying the diagnostic process. [Sharing medical reports between different facilities]({% post_url en/2026-01-14-come-condividere-referti-medici-tra-strutture-diverse %}){:target="_blank"} remains a challenge for many patients.
 
 This was exactly the problem that Dante, one of our users, faced when he urgently needed to get a second opinion from a specialist hundreds of kilometers away:
 
@@ -45,7 +45,7 @@ Dante used Ippocra to overcome the technical limitations of traditional sending,
 
 ### 1. Cloud Storage Optimized for Large Volumes
 
-Ippocra is designed to host large medical reports. By uploading your CT scan or MRI to the platform, the file is protected by advanced encryption systems and made available for immediate consultation, regardless of the device used.
+Ippocra is designed to host large medical reports. By uploading your CT scan or MRI to the platform, the file is [protected by advanced encryption systems]({% post_url en/2025-12-28-how-to-safely-store-and-share-your-medical-records-online %}){:target="_blank"} and made available for immediate consultation, regardless of the device used.
 
 ### 2. Immediate Accessibility for the Specialist
 
@@ -53,7 +53,7 @@ The advantage of having your heavy exams on Ippocra is availability. You won't n
 
 ### 3. Encrypted and Temporary Sharing Links
 
-To allow the specialist to analyze the CT scan, Dante generated a secure sharing link.
+To allow the specialist to analyze the CT scan, Dante generated a [secure sharing link (IppoLink)]({% post_url en/2024-12-06-ippolink-launch %}){:target="_blank"}.
 
 * **Security:** The doctor receives protected access without the file needing to "travel" through insecure channels.
 * **Control:** Dante was able to set an expiration date for the link, ensuring that his medical reports were visible only for the time necessary for the consultation.
