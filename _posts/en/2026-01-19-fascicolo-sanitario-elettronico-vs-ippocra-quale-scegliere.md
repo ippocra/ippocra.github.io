@@ -26,7 +26,7 @@ The promise of the EHR was clear: a single point of access for all your health d
 
 **— Guglielmo, 42, patient with a chronic disease**
 
-Guglielmo’s case is not isolated. It represents a daily reality for millions of Italians who have to manage their health through fragmented, bureaucratic, and often inaccessible systems at moments of real need.
+Guglielmo's case is not isolated. It represents a daily reality for millions of Italians who have to [manage their health through fragmented, bureaucratic systems]({% post_url en/2026-01-09-come-organizzare-i-documenti-sanitari-dei-genitori-senza-impazzire-una-guida-pratica %}){:target="_blank"}, often inaccessible at moments of real need.
 
 ## The Root of the Problem: Structural Fragmentation
 
@@ -38,7 +38,7 @@ The Electronic Health Record was created with a noble intent: to centralize citi
 
 * **Difficulty finding documents:** Every EHR is different per region. Some are more advanced than others, but searching for documents is always extremely complicated.
 
-* **No images:** Images cannot be uploaded to the EHR. It does not store X‑rays, CT scans, ultrasounds.
+* **No images:** Images cannot be uploaded to the EHR. It does not store X‑rays, [CT scans, ultrasounds or large DICOM files]({% post_url en/2026-01-23-come-condividere-una-tac-o-referti-medici-pesanti-in-sicurezza %}){:target="_blank"}.
 
 These limits highlight the need for a complementary approach to the EHR that gives patients true ownership of their health documentation.
 
@@ -74,7 +74,7 @@ The value of a health archive lies not only in its completeness, but in the abil
 
 Privacy is not just protection from risks, but the ability to actively decide what to share and with whom:
 
-- **Granular sharing:** Ippocra offers a unique way to share all or part of the clinical history with new specialists via temporary links. The patient can create sharing links (IppoLink), bundling one or more medical reports to share with individual specialists, without exposing the entire documentation. The cardiologist receives only cardiovascular exams, the endocrinologist only endocrine ones.
+- **Granular sharing:** Ippocra offers a [unique way to share medical reports between different facilities]({% post_url en/2026-01-14-come-condividere-referti-medici-tra-strutture-diverse %}){:target="_blank"} via temporary links. The patient can create sharing links (IppoLink), bundling one or more medical reports to share with individual specialists, without exposing the entire documentation. The cardiologist receives only cardiovascular exams, the endocrinologist only endocrine ones.
 
 - **Temporal control:** IppoLinks have an automatic expiration, ensuring that access to health data is limited to the strictly necessary period.
 

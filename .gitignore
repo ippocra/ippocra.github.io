@@ -19,3 +19,4 @@ _pages/.DS_Store
 _posts/.DS_Store
 assets/.DS_Store
 node_modules
+.ruby-version
