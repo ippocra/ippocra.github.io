@@ -12,7 +12,7 @@ classes: wide
 ---
 
 ![image-center](assets/images/portonovo-sunset.webp){: .align-center}
-**Devi inviare una TAC o una risonanza magnetica, ma il file è troppo grande? Scopri come Dante ha condiviso i suoi referti medici voluminosi con Ippocra.**
+**Devi inviare una TAC o una risonanza magnetica, ma il file è troppo grande? Scopri come Dante ha condiviso la sua TAC utilizzando Ippocra.**
 
 ## Come condividere una TAC?
 Ti è mai capitato di provare a inviare l'esito di una TAC o di una risonanza magnetica via email, solo per ricevere un messaggio di errore che ti avvisa che "il file è troppo grande"?
