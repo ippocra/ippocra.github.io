@@ -86,7 +86,7 @@ footer:
 pagination:
   enabled: true
   collection: 'posts'
-  per_page: 5
+  per_page: 10
   permalink: '/posts/page/:num/'
   title: ':title - page :num'
   limit: 0
