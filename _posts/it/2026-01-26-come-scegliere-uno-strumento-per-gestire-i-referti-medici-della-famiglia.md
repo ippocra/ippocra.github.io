@@ -25,9 +25,6 @@ Questo scenario non è raro. È la realtà quotidiana di chi gestisce la salute 
 
 **— Laura, 38 anni, madre di due figli e caregiver**
 
-![image-center](assets/images/customer-support_tac.webp){: align-center}
-*Dashboard Ippocra con profili familiari multipli*
-
 Il caso di Laura rappresenta una realtà condivisa da milioni di famiglie italiane: la gestione della salute non è un'attività individuale, ma un coordinamento complesso che richiede strumenti adeguati, non improvvisazioni.
 
 ## L'Origine del Problema: L'Inadeguatezza degli Strumenti Tradizionali
@@ -60,6 +57,10 @@ Uno strumento adeguato deve consentire a un unico amministratore (genitore, care
 - **Dashboard unificata:** Il genitore o caregiver visualizza in un'unica interfaccia lo stato sanitario dell'intero nucleo familiare; questa visione d'insieme trasforma la gestione sanitaria da reattiva (rispondere alle emergenze) a proattiva (anticipare le necessità).
 
 - **Acquisizione universale:** Indipendentemente dal canale di ricezione (email, CD, WhatsApp, cartaceo), i referti medici possono essere acquisiti e archiviati nel profilo corretto con pochi clic o con una sola fotografia. La nostra tecnologia riconosce automaticamente la tipologia, la data e il contenuto clinico.
+
+![image-center](assets/images/ippocra_gestione_multipr
+ofili_it.webp){: align-center}
+*La dashboard di Ippocra con profili familiari multipli*
 
 ### Ricerca Intelligente e Accessibilità Immediata
 
