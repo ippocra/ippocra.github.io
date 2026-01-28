@@ -58,8 +58,7 @@ Uno strumento adeguato deve consentire a un unico amministratore (genitore, care
 
 - **Acquisizione universale:** Indipendentemente dal canale di ricezione (email, CD, WhatsApp, cartaceo), i referti medici possono essere acquisiti e archiviati nel profilo corretto con pochi clic o con una sola fotografia. La nostra tecnologia riconosce automaticamente la tipologia, la data e il contenuto clinico.
 
-![image-center](assets/images/ippocra_gestione_multipr
-ofili_it.webp){: align-center}
+![image-center](assets/images/ippocra_gestione_multiprofili_it.webp){: align-center}
 *La dashboard di Ippocra con profili familiari multipli*
 
 ### Ricerca Intelligente e Accessibilità Immediata

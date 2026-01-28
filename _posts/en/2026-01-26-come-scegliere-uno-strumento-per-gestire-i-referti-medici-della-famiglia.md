@@ -58,9 +58,8 @@ An adequate tool must allow a single administrator (parent, caregiver) to manage
 
 - **Universal acquisition:** Regardless of the reception channel (email, CD, WhatsApp, paper), medical records can be acquired and archived in the correct profile with a few clicks or with a single photograph. Our technology automatically recognises the type, date, and clinical content.
 
-![image-center](assets/images/ippocra_gestione_multipr
-ofili_en.webp){: align-center}
-*Ippocra's dashboard with multiple family profiles*
+![image-center](assets/images/ippocra_gestione_multiprofili_en.webp){: align-center}
+*Ippocra's dashboard with multiple family member profiles*
 
 ### Intelligent Search and Immediate Accessibility
 
