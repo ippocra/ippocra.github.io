@@ -24,7 +24,7 @@ Questa è la realtà quotidiana di chi riceve esami di diagnostica per immagini:
 
 ## Il Caso di Marco: Quando i Tuoi Referti Medici Diventano Illeggibili
 
-![image-center](assets/images/dicom_viewer_knee_it.png){: .align-center}
+![image-center](assets/images/dicom_viewer_knee_it.webp){: .align-center}
 
 > "Ho fatto una risonanza magnetica alla spalla dopo un infortunio sportivo. Mi hanno dato un CD con le immagini e un referto in PDF. Il PDF l'ho letto subito, ma volevo vedere le immagini della risonanza perché lo specialista che devo consultare è a Milano e la visita è tra una settimana. Ho provato ad aprire il CD: il mio MacBook non ha il lettore. Ho chiesto a un amico di copiarmi i file su una chiavetta USB, ma una volta aperti sul computer erano in un formato strano, DICOM, che nessun programma riusciva a leggere. Ho cercato un visualizzatore online, ma quelli gratuiti mi chiedevano di installare software che non capivo e non mi fidavo. Alla fine, ho fotografato il referto cartaceo con il telefono e l'ho mandato al dottore su WhatsApp. Ma le immagini della risonanza? Quelle sono rimaste bloccate nel CD."
 
