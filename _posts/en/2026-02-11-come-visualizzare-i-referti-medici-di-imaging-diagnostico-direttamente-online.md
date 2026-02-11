@@ -24,7 +24,7 @@ This is the everyday reality for anyone who receives diagnostic imaging exams: y
 
 ## Marco's Story: When Your Medical Records Become Unreadable
 
-![image-center](assets/images/dicom_viewer_knee_en.png){: .align-center}
+![image-center](assets/images/dicom_viewer_knee_en.webp){: .align-center}
 
 > "I had a shoulder MRI after a sports injury. They gave me a CD with the images and a PDF report. I read the PDF straight away, but I wanted to see the actual MRI images because the specialist I need to consult is in Milan and the appointment is a week away. I tried opening the CD: my MacBook doesn't have a disc drive. I asked a friend to copy the files onto a USB stick, but once on my computer they were in a strange format — DICOM — that no program could read. I searched for an online viewer, but the free ones asked me to install software I didn't understand and didn't trust. In the end, I photographed the paper report with my phone and sent it to the doctor on WhatsApp. But the MRI images? Those stayed trapped in the CD."
 
