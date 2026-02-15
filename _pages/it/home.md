@@ -2,12 +2,12 @@
 layout: landing_page
 lang: it
 permalink: /
-title: "I tuoi documenti medici a portata di mano"
+title: "Documenti sanitari della famiglia in un posto sicuro - Ippocra"
 redirect_from:
     - /customers
-markdown: false          # <‑‑ disables Markdown for this page
-description: "Ippocra mette referti e documenti sanitari in un unico posto: carica, organizza, cerca e condividi in sicurezza, con crittografia avanzata e privacy garantita."
-keywords: "gestione dati sanitari, documenti medici digitali, archiviazione sicura cartelle cliniche, referti medici online, ricerca intelligente documenti sanitari, trova referti per parole chiave, grafici salute, riepilogo esami medici, analisi visuale dati sanitari, soluzione per professionisti sanitari, strumenti per medici e cliniche, piattaforma per pazienti, terminologia medica multilingua, supporto lingue sanitarie, documenti sanitari internazionali, cifratura dati sanitari, privacy dei dati medici, conservazione sicura dei referti"
+markdown: false
+description: "Ippocra aiuta famiglie e caregiver a organizzare, trovare e condividere i documenti sanitari in modo sicuro. Basta referti sparsi tra email, WhatsApp e fogli. Inizia gratis."
+keywords: "documenti sanitari famiglia, gestione referti medici, archiviazione sicura referti, condivisione referti medico, app referti famiglia, caregiver documenti sanitari, ricerca referti intelligente, crittografia dati sanitari, privacy referti medici, alternativa fascicolo sanitario elettronico, IppoLink condivisione sicura, organizzare referti online"
 ---
 
 {% include_relative _inner_home.html %}

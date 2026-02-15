@@ -29,18 +29,33 @@
   {% endfor %}
 
       <!-- END: Insert for language switching -->
+
+        <li class="masthead__menu-item">
+          <a
+          href="{{ site.data[site.active_lang].strings.navigation.security.url | relative_url }}"
+              >{{ site.data[site.active_lang].strings.navigation.security.title }}</a>
+        </li>
        
         <li class="masthead__menu-item">
           <a 
           href="{{ site.data[site.active_lang].strings.navigation.business.url | relative_url }}"
               >{{ site.data[site.active_lang].strings.navigation.business.title }}</a>
         </li>
+
         <li class="masthead__menu-item">
-          <a 
+          <a
+          href="{{ site.data[site.active_lang].strings.navigation.about.url | relative_url }}"
+              >{{ site.data[site.active_lang].strings.navigation.about.title }}</a>
+        </li>
+
+        {{ site.langsep }}
+        
+        <li class="masthead__menu-item">
+          <a
           href="{{ site.data[site.active_lang].strings.navigation.pricing.url | relative_url }}"
               >{{ site.data[site.active_lang].strings.navigation.pricing.title }}</a>
         </li>
-      
+        
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
               <a

@@ -1,13 +1,16 @@
 navigation:
-  individuals:
-    title: Privati
-    url: /customers
   business:
     title: Professionisti
     url: /business
   pricing:
     title: Prezzi
     url: /pricing
+  about:
+    title: Chi siamo
+    url: /about
+  security:
+    title: Sicurezza
+    url: /security
 cookies:
   message: "Vorremmo utilizzare cookies di terze parti per migliorare la funzionalità di questo sito."
   approve: "Approvo"

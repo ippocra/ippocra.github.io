@@ -1,7 +1,30 @@
 <link rel="shortcut icon" type="image/png" href="/assets/images/android-chrome-512x512-1-150x150.png">
 {% I18n_Headers %}
 <!--
- assigned in seo.html 
-    <meta name="description" content="{{ page.description | default: site.description[site.active_lang] }}"> 
+ assigned in seo.html
+    <meta name="description" content="{{ page.description | default: site.description[site.active_lang] }}">
 -->
 <meta name="keywords" content="{{ page.keywords | default: site.keywords[site.active_lang] }}">
+
+<!-- Organization structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ippocra",
+  "legalName": "Ippocra S.R.L.",
+  "url": "https://ippocra.com",
+  "logo": "https://ippocra.com/assets/images/ippocra-logo-white-ippo-green-background.png",
+  "email": "info@ippocra.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Podgora 47",
+    "addressLocality": "Ancona",
+    "addressCountry": "IT"
+  },
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61564933710120",
+    "https://www.linkedin.com/company/ippocra/"
+  ]
+}
+</script>
