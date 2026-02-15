@@ -1,13 +1,16 @@
 navigation:
-  individuals:
-    title: Individuals
-    url: /customers
   business:
-    title: Business
+    title: Professionals
     url: /business
   pricing:
     title: Pricing
     url: /pricing
+  about:
+    title: About
+    url: /about
+  security:
+    title: Security
+    url: /security
 cookies:
   message: "We would like to use third party cookies and scripts to improve the functionality of this website."
   approve: "Approve"

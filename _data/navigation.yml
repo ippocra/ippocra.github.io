@@ -4,7 +4,7 @@ main:
   #   url: /customers
   # - title: "Business"
   #   url: /business
-  - title: "News"
+  - title: "Blog"
     url: /posts/
   # - title: "Sample Collections"
   #   url: /collection-archive/

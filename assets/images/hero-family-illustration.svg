@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" fill="none">
+  <!-- Background blob -->
+  <path d="M420 180c20 60-10 140-70 190s-140 60-200 30S50 310 40 240s30-130 90-170 100-50 160-30 110 80 130 140z" fill="#3b9ba8" opacity="0.08"/>
+  <path d="M380 220c10 50-20 110-60 150s-110 50-160 25S80 330 70 275s25-100 70-135 80-40 125-25 95 60 115 105z" fill="#3b9ba8" opacity="0.06"/>
+
+  <!-- Phone/device frame -->
+  <rect x="185" y="60" width="140" height="260" rx="18" fill="#fff" stroke="#3b9ba8" stroke-width="3"/>
+  <rect x="195" y="85" width="120" height="215" rx="4" fill="#f0fafa"/>
+  <!-- Phone notch -->
+  <rect x="230" y="68" width="50" height="6" rx="3" fill="#e0e0e0"/>
+
+  <!-- Document cards inside phone -->
+  <rect x="205" y="100" width="100" height="32" rx="6" fill="#fff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="213" y="108" width="8" height="8" rx="2" fill="#3b9ba8" opacity="0.7"/>
+  <rect x="227" y="109" width="40" height="3" rx="1.5" fill="#475569" opacity="0.6"/>
+  <rect x="227" y="116" width="28" height="2.5" rx="1.25" fill="#94a3b8"/>
+  <circle cx="293" cy="116" r="5" fill="#3b9ba8" opacity="0.2"/>
+  <path d="M291 116l2 2 4-4" stroke="#3b9ba8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="205" y="140" width="100" height="32" rx="6" fill="#fff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="213" y="148" width="8" height="8" rx="2" fill="#406EBA" opacity="0.7"/>
+  <rect x="227" y="149" width="45" height="3" rx="1.5" fill="#475569" opacity="0.6"/>
+  <rect x="227" y="156" width="32" height="2.5" rx="1.25" fill="#94a3b8"/>
+  <circle cx="293" cy="156" r="5" fill="#3b9ba8" opacity="0.2"/>
+  <path d="M291 156l2 2 4-4" stroke="#3b9ba8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="205" y="180" width="100" height="32" rx="6" fill="#fff" stroke="#3b9ba8" stroke-width="2" opacity="0.9"/>
+  <rect x="213" y="188" width="8" height="8" rx="2" fill="#3b9ba8"/>
+  <rect x="227" y="189" width="38" height="3" rx="1.5" fill="#475569" opacity="0.6"/>
+  <rect x="227" y="196" width="50" height="2.5" rx="1.25" fill="#94a3b8"/>
+  <circle cx="293" cy="196" r="5" fill="#3b9ba8" opacity="0.2"/>
+  <path d="M291 196l2 2 4-4" stroke="#3b9ba8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Search bar -->
+  <rect x="205" y="225" width="100" height="22" rx="11" fill="#fff" stroke="#3b9ba8" stroke-width="1.5"/>
+  <circle cx="218" cy="236" r="5" stroke="#3b9ba8" stroke-width="1.5" fill="none"/>
+  <line x1="222" y1="240" x2="225" y2="243" stroke="#3b9ba8" stroke-width="1.5" stroke-linecap="round"/>
+  <rect x="230" y="234" width="30" height="3" rx="1.5" fill="#94a3b8" opacity="0.4"/>
+
+  <!-- Share link icon floating -->
+  <rect x="205" y="258" width="100" height="28" rx="8" fill="#3b9ba8" opacity="0.12"/>
+  <circle cx="222" cy="272" r="6" stroke="#3b9ba8" stroke-width="1.5" fill="none"/>
+  <circle cx="248" cy="264" r="6" stroke="#3b9ba8" stroke-width="1.5" fill="none"/>
+  <line x1="227" y1="269" x2="243" y2="267" stroke="#3b9ba8" stroke-width="1.5"/>
+  <rect x="260" y="268" width="35" height="3" rx="1.5" fill="#3b9ba8" opacity="0.5"/>
+  <rect x="260" y="274" width="25" height="2" rx="1" fill="#3b9ba8" opacity="0.3"/>
+
+  <!-- Person 1 - left (parent/caregiver) -->
+  <circle cx="110" cy="195" r="28" fill="#3b9ba8" opacity="0.15"/>
+  <circle cx="110" cy="185" r="16" fill="#3b9ba8" opacity="0.25"/>
+  <ellipse cx="110" cy="218" rx="20" ry="12" fill="#3b9ba8" opacity="0.2"/>
+
+  <!-- Person 2 - right (another family member) -->
+  <circle cx="400" cy="205" r="24" fill="#406EBA" opacity="0.12"/>
+  <circle cx="400" cy="196" r="14" fill="#406EBA" opacity="0.2"/>
+  <ellipse cx="400" cy="225" rx="17" ry="10" fill="#406EBA" opacity="0.15"/>
+
+  <!-- Person 3 - small (child), bottom left -->
+  <circle cx="135" cy="280" r="18" fill="#3b9ba8" opacity="0.12"/>
+  <circle cx="135" cy="273" r="11" fill="#3b9ba8" opacity="0.2"/>
+  <ellipse cx="135" cy="295" rx="13" ry="8" fill="#3b9ba8" opacity="0.15"/>
+
+  <!-- Connection lines (family to phone) -->
+  <path d="M138 195 L185 160" stroke="#3b9ba8" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.3"/>
+  <path d="M376 205 L325 180" stroke="#406EBA" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.3"/>
+  <path d="M153 278 L195 250" stroke="#3b9ba8" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.3"/>
+
+  <!-- Shield icon (security) top right -->
+  <g transform="translate(370, 90)">
+    <path d="M20 4 L36 12 L36 24 C36 36 28 44 20 48 C12 44 4 36 4 24 L4 12 Z" fill="#3b9ba8" opacity="0.15" stroke="#3b9ba8" stroke-width="2"/>
+    <path d="M14 24l4 4 8-8" stroke="#3b9ba8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Lock icon bottom right -->
+  <g transform="translate(370, 310)">
+    <rect x="6" y="16" width="24" height="18" rx="3" fill="#3b9ba8" opacity="0.15" stroke="#3b9ba8" stroke-width="2"/>
+    <path d="M12 16V12a6 6 0 0112 0v4" stroke="#3b9ba8" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="18" cy="27" r="2.5" fill="#3b9ba8"/>
+  </g>
+
+  <!-- Floating document snippet top left -->
+  <g transform="translate(50, 100)">
+    <rect width="50" height="60" rx="6" fill="#fff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#shadow)"/>
+    <rect x="8" y="10" width="34" height="3" rx="1.5" fill="#475569" opacity="0.4"/>
+    <rect x="8" y="18" width="28" height="2.5" rx="1.25" fill="#94a3b8" opacity="0.4"/>
+    <rect x="8" y="24" width="32" height="2.5" rx="1.25" fill="#94a3b8" opacity="0.3"/>
+    <rect x="8" y="34" width="34" height="14" rx="3" fill="#3b9ba8" opacity="0.08"/>
+    <rect x="12" y="38" width="26" height="2" rx="1" fill="#3b9ba8" opacity="0.3"/>
+    <rect x="12" y="43" width="18" height="2" rx="1" fill="#3b9ba8" opacity="0.2"/>
+  </g>
+
+  <!-- Small floating heart -->
+  <path d="M82 310 C82 306 86 302 90 302 C94 302 98 306 98 310 C98 318 90 324 90 324 C90 324 82 318 82 310Z" fill="#3b9ba8" opacity="0.2"/>
+
+  <!-- Drop shadow filter -->
+  <defs>
+    <filter id="shadow" x="-4" y="-2" width="58" height="68">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+</svg>
