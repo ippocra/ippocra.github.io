@@ -1,0 +1,620 @@
+<head>
+    <meta charset="utf-8">
+    <title>I referti dei tuoi pazienti. Sempre con te, in ogni ambulatorio.</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <meta name="description"
+        content="Basta chiavette USB tra un ambulatorio e l'altro. Importa i referti dei tuoi pazienti in un click, trova qualsiasi documento in pochi secondi e visualizza la storia clinica longitudinale.">
+
+    <link rel="stylesheet" href="{{ '/assets/css/fontawesome-free/css/all.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body class="text-slate-700 antialiased">
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="section-blank">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="animate-fadeInUp" style="opacity:0;">
+                    <h1 class="page-title">
+                        I referti dei tuoi pazienti. Sempre con te, in ogni ambulatorio.
+                    </h1>
+                    <div class="mt-6 max-w-2xl mx-auto leading-relaxed">
+                        <p class="paragraph-lg">
+                            Lavori in più poliambulatori. I referti dei tuoi pazienti sono sparsi tra chiavette USB, vecchi portatili e cartelle sul desktop. Con Ippocra, importi tutto in un click e accedi alla storia completa di ogni paziente da qualsiasi dispositivo.
+                        </p>
+                    </div>
+                    <div class="mt-10 hero-button-container">
+                        <a href="#wantIppo" class="secondary-button">
+                            Prenota una dimostrazione
+                        </a>
+                        <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
+                            class="main-color-button">
+                            Provalo gratis
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 ml-2 -rotate-45">
+                                <path fill-rule="evenodd"
+                                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Il problema che ogni libero professionista conosce -->
+        <section id="whyippo" class="section-transparent scroll-target">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center scroll-animated-item">
+                    Ti suona familiare?
+                </h2>
+
+                <div class="mt-20 icon-grid scroll-animated-item scroll-animated-item-3">
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-usb small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Referti sparsi tra dispositivi diversi
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Alcuni sulla chiavetta USB, alcuni sul PC dell'ambulatorio, alcuni sul portatile a casa. Ogni dispositivo ha un pezzo del puzzle.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-search small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Non trovi quello che hai scritto
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Un paziente arriva per un controllo. Ricordi di aver scritto qualcosa 8 mesi fa, ma è da qualche parte sul vecchio portatile o su una chiavetta rimasta in un altro ambulatorio.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-clock small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Nessuna visione longitudinale dei tuoi pazienti
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Segui lo stesso paziente per mesi e anni, ma non hai modo di rivedere rapidamente tutta la sua storia. Ogni visita riparte da zero.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Come Ippocra risolve tutto questo -->
+        <section id="solution" class="section-accent-soft-gradient scroll-target">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center scroll-animated-item">
+                    Come Ippocra risolve tutto questo
+                </h2>
+
+                <div class="mt-20 icon-grid scroll-animated-item scroll-animated-item-3">
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-folder-open small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Importa tutto in un click
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Seleziona la cartella dove conservi i referti dei tuoi pazienti. Ippocra legge i nomi dei file e la struttura delle cartelle per assegnare automaticamente ogni documento al paziente giusto.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-search small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Trova qualsiasi referto in pochi secondi
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Cerca per nome paziente, tipo di esame, data o parola chiave. Basta scorrere cartelle o indovinare su quale chiavetta si trova il file.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-history small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Visualizza la timeline completa di ogni paziente
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Ogni referto che hai scritto per un paziente, organizzato cronologicamente. Vedi cosa avevi annotato l'ultima volta, cosa è cambiato e come il paziente è evoluto nel tempo.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mt-10 flex justify-center scroll-animated-item">
+                    <div class="mb-5 p-5 max-w-md text-center">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-laptop-medical small-icon-size" style="color:#3b9ba8;"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Accedi da qualsiasi dispositivo, in qualsiasi ambulatorio
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Il tuo archivio pazienti vive nel cloud. Niente chiavette da portare in giro, niente file da copiare. Apri Ippocra da qualsiasi browser e sei pronto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo importazione cartelle -->
+        <section id="import-showcase" class="section-transparent scroll-target">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center scroll-animated-item">
+                    Migra il tuo archivio esistente in pochi minuti
+                </h2>
+                <p class="mt-4 paragraph-md text-center max-w-2xl mx-auto scroll-animated-item">
+                    Hai già anni di referti su una chiavetta USB o in una cartella? Importa l'intera cartella in un colpo solo. Ippocra analizza i nomi dei file e la struttura delle cartelle per assegnare ogni documento al paziente giusto automaticamente.
+                </p>
+
+                <!-- YouTube Video -->
+                <div class="mt-10 max-w-3xl mx-auto scroll-animated-item">
+                    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+                        <iframe src="https://www.youtube.com/embed/tpR9PfTSThw"
+                            title="Demo importazione cartelle Ippocra"
+                            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Come funziona -->
+                <div class="mt-16 flex flex-col lg:flex-row items-start gap-10 scroll-animated-item">
+                    <div class="lg:w-1/3 text-center">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-upload small-icon-size" style="color:#3b9ba8;"></i>
+                        </div>
+                        <h3 class="section-header text-center">1. Seleziona la cartella</h3>
+                        <p class="paragraph-md text-center">
+                            Scegli la cartella dove sono salvati i tuoi referti — chiavetta USB, desktop, cloud.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/3 text-center">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-magic small-icon-size" style="color:#3b9ba8;"></i>
+                        </div>
+                        <h3 class="section-header text-center">2. Assegnazione automatica</h3>
+                        <p class="paragraph-md text-center">
+                            Ippocra legge i nomi dei file e i percorsi delle cartelle per abbinare ogni documento al paziente corretto.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/3 text-center">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-check-circle small-icon-size" style="color:#3b9ba8;"></i>
+                        </div>
+                        <h3 class="section-header text-center">3. Rivedi e conferma</h3>
+                        <p class="paragraph-md text-center">
+                            Controlla le assegnazioni suggerite, correggi se necessario e conferma. Il tuo archivio è pronto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flusso di lavoro quotidiano -->
+        <section id="daily-workflow" class="section-main-hard-gradient scroll-target">
+            <div class="flex flex-col items-center section-container">
+                <div class="scroll-animated-item max-w-3xl">
+                    <h2 class="mt-0 section-title text-white text-center">
+                        Dopo l'importazione, il tuo lavoro quotidiano cambia
+                    </h2>
+                    <p class="mt-7 text-white text-center paragraph-md">
+                        Basta cercare tra chiavette USB prima di una visita. Basta ripartire da zero a ogni appuntamento. Il tuo intero archivio pazienti è organizzato, ricercabile e sempre disponibile.
+                    </p>
+                    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-white text-center">
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-bolt text-2xl" style="opacity:0.85;"></i>
+                            <p class="paragraph-md" style="margin:0;"><strong>Ricerca istantanea prima di ogni visita</strong></p>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-history text-2xl" style="opacity:0.85;"></i>
+                            <p class="paragraph-md" style="margin:0;"><strong>Storia completa del paziente a colpo d'occhio</strong></p>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-globe text-2xl" style="opacity:0.85;"></i>
+                            <p class="paragraph-md" style="margin:0;"><strong>Funziona in tutti i tuoi ambulatori</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Registrazione -->
+        <section id="join" class="section-accent-soft-gradient scroll-target">
+            <div class="text-center section-container">
+                <div class="scroll-animated-item">
+                    <h2 class="mt-0 section-title text-center">Inizia a organizzare il tuo archivio pazienti oggi</h2>
+                    <p class="mt-7 mb-0 text-center paragraph-md paragraph-bold">
+                        Importa i referti che hai già, trova qualsiasi cosa in pochi secondi e finalmente visualizza la storia longitudinale di ogni paziente.
+                    </p>
+                    <div class="mt-6 flex flex-wrap justify-center gap-4" style="font-size:0.875rem; color:#475569;">
+                        <span><i class="fas fa-check-circle" style="color:#3b9ba8;"></i> Dati crittografati</span>
+                        <span><i class="fas fa-check-circle" style="color:#3b9ba8;"></i> Conforme al GDPR</span>
+                        <span><i class="fas fa-check-circle" style="color:#3b9ba8;"></i> Piano gratuito disponibile</span>
+                    </div>
+                    <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
+                        class="mt-10 main-color-button">
+                        Provalo gratis
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 ml-2 -rotate-45">
+                            <path fill-rule="evenodd"
+                                d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vuoi una dimostrazione? -->
+        <section id="wantIppo" class="section-main-hard-gradient">
+            <div class="section-container max-w-6xl mx-auto px-4">
+                <div class="flex flex-col lg:flex-row gap-10">
+
+                    <!-- ==================== COLONNA SINISTRA – INFO ==================== -->
+                    <div class="flex flex-col w-full lg:w-2/5 space-y-8">
+
+                        <!-- Titolo & Intro -->
+                        <div class="text-center lg:text-left">
+                            <h2 class="mt-0 section-title">
+                                Vuoi una dimostrazione?
+                            </h2>
+                            <p class="mt-7 text-white paragraph-md">
+                                Raccontaci il tuo flusso di lavoro e ti mostriamo come Ippocra si integra nella tua pratica quotidiana.
+                            </p>
+                        </div>
+
+                        <!-- Contatti -->
+                        <div class="mt-10 grid gap-3 text-white">
+
+                            <!-- Email -->
+                            <div class="flex items-center gap-3 text-white">
+                                <i class="fas fa-envelope fa-lg"></i>
+                                <a href="mailto:info@ippocra.com" class="text-white hover:underline">
+                                    info@ippocra.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==================== COLONNA DESTRA – FORM ==================== -->
+                    <div class="contact-form lg:w-3/5 space-y-8">
+                        <h2 class="mt-0 section-header">Richiedi una dimostrazione gratuita</h2>
+
+                        <form id="ippocraForm" method="POST"
+                            action="https://hook.eu2.make.com/kmko599vdgvoi5xyyttkq4h2g3b9uys9"
+                            class="mt-10 p-0 mb-0 grid gap-4">
+
+                            <!-- Nome -->
+                            <div>
+                                <label for="name" class="sr-only">Nome</label>
+                                <input type="text" id="name" name="name" class="input-field" required
+                                    placeholder="Il tuo nome">
+                            </div>
+
+                            <div>
+                                <label for="lastname" class="sr-only">Cognome</label>
+                                <input type="text" id="lastname" name="lastname" class="input-field" required
+                                    placeholder="Il tuo cognome">
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="sr-only">Indirizzo email</label>
+                                <input type="email" id="email" name="email" class="input-field"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
+                                    placeholder="email@esempio.com">
+                            </div>
+
+                            <!-- Telefono -->
+                            <div>
+                                <label for="phone_prefix" class="sr-only">Prefisso internazionale</label>
+                                <div class="flex gap-2 items-center">
+                                    <!-- prefisso -->
+                                    <select id="phone_prefix" name="phone_prefix" class="input-field flex-2 w-2"
+                                        aria-label="Prefisso internazionale">
+                                        <option value="0039">0039</option>
+                                        <option value="001">001</option>
+                                        <option value="0044">0044</option>
+                                        <option value="0049">0049</option>
+                                        <option value="0033">0033</option>
+                                        <option value="0034">0034</option>
+                                        <option value="007">007</option>
+                                        <option value="0061">0061</option>
+                                        <option value="other">Altro…</option>
+                                    </select>
+
+                                    <!-- numero di telefono -->
+                                    <input type="tel" id="phone" name="phone" class="input-field flex-3 min-w-3"
+                                        inputmode="tel" pattern="[0-9]*" required placeholder="Telefono (solo numeri)">
+                                </div>
+
+                                <!-- campo prefisso personalizzato -->
+                                <div id="phone_prefix_custom_wrap" class="mt-2 hidden">
+                                    <label for="phone_prefix_custom" class="sr-only">Prefisso personalizzato</label>
+                                    <input type="text" id="phone_prefix_custom" name="phone_prefix_custom"
+                                        class="input-field w-20" placeholder="0039" inputmode="tel"
+                                        aria-label="Prefisso personalizzato">
+                                </div>
+                            </div>
+
+                            <!-- Messaggio -->
+                            <div>
+                                <label for="message" class="sr-only">Messaggio</label>
+                                <textarea id="message" name="message" rows="4" class="input-field" required
+                                    placeholder="Raccontaci della tua pratica: quanti ambulatori, che tipo di referti gestisci"></textarea>
+                            </div>
+
+                            <!-- Pulsante invio -->
+                            <div class="text-center">
+                                <button class="submit-button" type="submit">
+                                    Richiedi la dimostrazione
+                                </button>
+                            </div>
+                        </form>
+
+                        <div id="thanksMsg" class="hidden text-center text-green-600 font-medium mt-4">
+                            Grazie! Abbiamo ricevuto la tua richiesta.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section-transparent">
+            <div class="section-container">
+                <div class="flex flex-col">
+                    <div>
+                        <h2 class="mt-0 section-title text-center">
+                            Domande frequenti
+                        </h2>
+                        <p class="mt-7 paragraph-md">
+                            Se hai altre domande, contattaci e saremo felici di aiutarti.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ List -->
+                <div class="mt-10 faq-list">
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Posso importare i referti che ho già su chiavette USB o cartelle?
+                        </summary>
+                        <div class="faq-answer">
+                            Sì. L'importazione cartelle di Ippocra ti permette di selezionare un'intera cartella e caricare tutti i documenti in una volta. Il sistema analizza i nomi dei file e la struttura delle cartelle per assegnare automaticamente ogni referto al paziente giusto. Puoi rivedere e correggere prima di confermare.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            I dati dei miei pazienti sono al sicuro?
+                        </summary>
+                        <div class="faq-answer">
+                            Sì. Tutti i dati sono crittografati sia a riposo che in transito, conservati in infrastruttura europea conforme al GDPR. Non vendiamo dati a terze parti né li utilizziamo per pubblicità. Mantieni il pieno controllo sul tuo archivio.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Posso accedere al mio archivio da ambulatori diversi?
+                        </summary>
+                        <div class="faq-answer">
+                            Sì. Il tuo archivio vive nel cloud ed è accessibile da qualsiasi dispositivo con un browser — il portatile a casa, il PC dell'ambulatorio o anche il telefono. Niente chiavette da portare in giro, niente file da sincronizzare.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            In cosa si differenzia da un gestionale clinico?
+                        </summary>
+                        <div class="faq-answer">
+                            I gestionali clinici sono legati a una singola struttura. Se lavori in più ambulatori, nessuno di essi ti dà il quadro completo. Ippocra è il tuo archivio pazienti personale e portatile che ti segue ovunque — indipendente dal sistema di qualsiasi struttura.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Quanto costa?
+                        </summary>
+                        <div class="faq-answer">
+                            Puoi iniziare con un piano gratuito per provare il servizio. Quando hai bisogno di più spazio o funzionalità, puoi fare l'upgrade in qualsiasi momento. Consulta la nostra <a href="/pricing" style="color:#3b9ba8; text-decoration:underline;">pagina prezzi</a> per i dettagli.
+                        </div>
+                    </details>
+
+                </div>
+                <!-- FAQ List END -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Initial load animations for hero
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroContent = document.querySelector('#hero .animate-fadeInUp');
+            if (heroContent) heroContent.style.opacity = '1';
+
+            const ctaSectionContent = document.querySelector('.cta-bg-gradient .animate-fadeInUp');
+            if (ctaSectionContent) ctaSectionContent.style.opacity = '1';
+        });
+
+        // Fade in elements on initial load
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.animate-fadeInUp').forEach(el => {
+                el.style.opacity = '1';
+            });
+        });
+
+
+        // Generic function to observe and animate sections
+        function observeAndAnimate(selector, visibleClass = 'is-visible', threshold = 0.1) {
+            const el = document.querySelector(selector);
+            if (!el) return;
+
+            const observer = new IntersectionObserver((entries) => {
+                const entry = entries[0];
+                if (entry.isIntersecting) {
+                    el.classList.add(visibleClass);
+                    observer.unobserve(el);
+                }
+            }, { threshold });
+
+            observer.observe(el);
+        }
+
+        observeAndAnimate('#whyippo');
+        observeAndAnimate('#solution');
+        observeAndAnimate('#import-showcase');
+        observeAndAnimate('#daily-workflow');
+        observeAndAnimate('#join');
+        observeAndAnimate('#faq');
+
+        lucide.createIcons();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const form = document.getElementById('ippocraForm');
+            if (!form) return;
+
+            const btn = form.querySelector('button[type="submit"]') || form.querySelector('.submit-button');
+            const thanks = document.getElementById('thanksMsg');
+
+            const phoneEl = document.getElementById('phone');
+            const prefixEl = document.getElementById('phone_prefix');
+            const customWrap = document.getElementById('phone_prefix_custom_wrap');
+            const customEl = document.getElementById('phone_prefix_custom');
+
+            // mostra/nascondi prefisso personalizzato quando si seleziona "Altro"
+            if (prefixEl && customWrap && customEl) {
+                const toggleCustom = () => {
+                    if (prefixEl.value === 'other') {
+                        customWrap.classList.remove('hidden');
+                        customEl.required = true;
+                        customEl.focus();
+                    } else {
+                        customWrap.classList.add('hidden');
+                        customEl.required = false;
+                        customEl.value = '';
+                    }
+                };
+                prefixEl.addEventListener('change', toggleCustom);
+                toggleCustom();
+            }
+
+            // mantieni input telefono numerico
+            if (phoneEl) {
+                phoneEl.addEventListener('input', (e) => {
+                    const cleaned = e.target.value.replace(/\D/g, '');
+                    if (e.target.value !== cleaned) e.target.value = cleaned;
+                });
+            }
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                if (btn) {
+                    btn.disabled = true;
+                    btn.dataset.originalText = btn.innerHTML;
+                    btn.innerHTML = '<svg class="animate-spin h-5 w-5 mr-2 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8z"/></svg> Invio…';
+                }
+
+                try {
+                    const formData = new FormData(form);
+
+                    const messageEl = form.querySelector('#message');
+                    if (messageEl) {
+                        const rawMsg = messageEl.value || '';
+                        const escapedMsg = JSON.stringify(rawMsg).slice(1, -1);
+                        formData.set('message', escapedMsg);
+                    }
+
+                    let prefixValue = '';
+                    if (prefixEl) {
+                        if (prefixEl.value === 'other' && customEl) {
+                            prefixValue = customEl.value || '';
+                        } else {
+                            prefixValue = prefixEl.value || '';
+                        }
+                    }
+
+                    const rawPhone = phoneEl ? phoneEl.value : '';
+                    const digitsOnlyPhone = (rawPhone || '').replace(/\D/g, '');
+
+                    if (digitsOnlyPhone.length !== 7) {
+                        throw new Error('Telefono non valido: il numero locale deve contenere esattamente 7 cifre');
+                    }
+
+                    const combined = (prefixValue + digitsOnlyPhone).replace(/\D/g, '');
+
+                    if (!combined) throw new Error('Telefono non valido');
+
+                    formData.set('phone', combined);
+                    formData.delete('phone_prefix');
+                    formData.delete('phone_prefix_custom');
+
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                    });
+
+                    if (!response.ok) {
+                        let errMsg = `Errore ${response.status}`;
+                        const ct = response.headers.get('content-type') || '';
+                        if (ct.includes('application/json')) {
+                            const data = await response.json();
+                            errMsg += ': ' + (data.message || JSON.stringify(data));
+                        } else {
+                            const txt = await response.text();
+                            errMsg += ': ' + txt;
+                        }
+                        throw new Error(errMsg);
+                    }
+
+                    const ct = response.headers.get('content-type') || '';
+                    if (ct.includes('application/json')) {
+                        await response.json();
+                    }
+
+                    form.reset();
+                    if (thanks) {
+                        thanks.classList.remove('hidden');
+                        setTimeout(() => thanks.classList.add('hidden'), 5000);
+                    }
+                } catch (err) {
+                    console.error('Invio fallito:', err);
+                    alert(err && err.message ? err.message : 'Si è verificato un problema durante l\'invio. Per favore riprova più tardi.');
+                } finally {
+                    if (btn) {
+                        btn.disabled = false;
+                        btn.innerHTML = btn.dataset.originalText || 'Invia';
+                    }
+                }
+            });
+        });
+    </script>
+</body>

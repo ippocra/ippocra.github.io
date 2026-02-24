@@ -1,4 +1,7 @@
 navigation:
+  doctors:
+    title: Doctors
+    url: /doctors
   business:
     title: Professionals
     url: /business
