@@ -112,7 +112,7 @@ jekyll-minifier:
 
 # Polyglot
 
-languages: ["it", "en"]
+languages: ["it", "en", "el"]
 default_lang: "it"
 exclude_from_localization: ["javascript", "images", "css", "public", "README.md", "sitemap", "posts"]
 parallel_localization: false
@@ -121,6 +121,7 @@ langsep: "|"
 keywords:
   en: family health documents, medical report management, secure health records, share reports with doctor, caregiver health app, DICOM viewer online, CT scan sharing, MRI online, IppoLink secure sharing, encrypted medical data, digital health records, organize medical reports
   it: documenti sanitari famiglia, gestione referti medici, archiviazione sicura referti, condivisione referti medico, app referti famiglia, caregiver documenti sanitari, visualizzatore DICOM online, condivisione TAC, risonanza magnetica online, IppoLink condivisione sicura, crittografia dati sanitari, organizzare referti online
+  el: ιατρικά έγγραφα οικογένειας, διαχείριση ιατρικών εξετάσεων, ασφαλής αποθήκευση ιατρικών αρχείων, κοινοποίηση εξετάσεων με γιατρό, εφαρμογή φροντιστή υγείας, online προβολή DICOM, κοινοποίηση αξονικής, κοινοποίηση μαγνητικής, ασφαλής κοινοποίηση IppoLink, κρυπτογραφημένα ιατρικά δεδομένα, οργάνωση ιατρικών εγγράφων
 
 include:
   - _pages

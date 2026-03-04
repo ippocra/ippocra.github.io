@@ -1,0 +1,30 @@
+navigation:
+  doctors:
+    title: Γιατροί
+    url: /doctors
+  business:
+    title: Επαγγελματίες
+    url: /business
+  pricing:
+    title: Τιμές
+    url: /pricing
+  about:
+    title: Σχετικά
+    url: /about
+  security:
+    title: Ασφάλεια
+    url: /security
+actions:
+  register: Εγγραφή
+  login: Σύνδεση
+footer:
+  contact_title: ΕΠΙΚΟΙΝΩΝΙΑ
+  legal_title: ΝΟΜΙΚΑ
+  terms: Όροι
+  policy: Πολιτική Απορρήτου
+  cookies: Πολιτική Cookies
+cookies:
+  message: "Θα θέλαμε να χρησιμοποιήσουμε cookies και scripts τρίτων για να βελτιώσουμε τη λειτουργικότητα αυτού του ιστότοπου."
+  approve: "Αποδοχή"
+  more_info: "Περισσότερες πληροφορίες"
+  decline: "Απόρριψη"

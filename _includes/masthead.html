@@ -13,21 +13,16 @@
         </a>
         <ul class="visible-links">
                 <!-- BEGIN: Insert for language switching -->
-    
-      <!-- jekyll-polyglot will process ferh= into href= through the static_href liquid block tag without relativizing the url; useful for making language navigation switchers  -->
-    {% for tongue in site.languages %}
-    <li class="masthead__menu-item">
-      <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} 
-        href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}
-          {% else %}
-            {{site.baseurl}}/{{ tongue }}{{page.url}}
-          {% endif %}">{{ tongue }}</a>
-        </li>            
-          {%- if forloop.last == false -%}{{" "}}
-            {{ site.langsep }}
-          {%- endif -%}
-  {% endfor %}
-
+        <li class="masthead__menu-item">
+          <label for="lang-select" class="visually-hidden">{{ site.data.ui-text[site.locale].language_label | default: "Language" }}</label>
+          <select id="lang-select" class="lang-select" aria-label="Select language"
+            onchange="window.location.href=this.value">
+            {% for tongue in site.languages %}
+              <option value="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"
+                {% if tongue == site.active_lang %}selected{% endif %}>{{ tongue | upcase }}</option>
+            {% endfor %}
+          </select>
+        </li>
       <!-- END: Insert for language switching -->
 
         <li class="masthead__menu-item">
@@ -63,8 +58,8 @@
               >{{ link.title }}</a>
             </li>
           {%- endfor -%}
-          <a id="btn-register" href="https://app.ippocra.com/register" class="btn btn--primary">Register</a>
-          <a href="https://app.ippocra.com/" class="btn btn--inverse">Login</a>
+          <a id="btn-register" href="https://app.ippocra.com/register" class="btn btn--primary">{{ site.data[site.active_lang].strings.actions.register }}</a>
+          <a href="https://app.ippocra.com/" class="btn btn--inverse">{{ site.data[site.active_lang].strings.actions.login }}</a>
 
         </ul>
         {% if site.search == true %}

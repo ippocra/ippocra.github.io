@@ -14,6 +14,15 @@ navigation:
   security:
     title: Sicurezza
     url: /security
+actions:
+  register: Registrati
+  login: Accedi
+footer:
+  contact_title: CONTATTI
+  legal_title: LEGALE
+  terms: Termini
+  policy: Privacy Policy
+  cookies: Cookies Policy
 cookies:
   message: "Vorremmo utilizzare cookies di terze parti per migliorare la funzionalità di questo sito."
   approve: "Approvo"

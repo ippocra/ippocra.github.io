@@ -20,17 +20,17 @@
     </ul>
   </div>
   <div id="footer__contact">
-    <p><strong>CONTACT US</strong></p>
+    <p><strong>{{ site.data[site.active_lang].strings.footer.contact_title }}</strong></p>
     <p>email: <strong>info@ippocra.com</strong></p>
     <p>pec: <strong>ippocra@pec.it</strong></p>
     <p><a href="{{ site.data[site.active_lang].strings.navigation.about.url | relative_url }}" style="text-decoration:underline;">{{ site.data[site.active_lang].strings.navigation.about.title }}</a></p>
   </div>
   <div class="footer__legal-links">
-    <p><strong>LEGAL</strong></p>
+    <p><strong>{{ site.data[site.active_lang].strings.footer.legal_title }}</strong></p>
     <div class="footer__legal-links-inner">
-      <p><a href="/legal/terms/">Terms</a></p>
-      <p><a href="/legal/policy/">Privacy Policy</a></p>
-      <p><a href="/legal/cookies-policy/">Cookies Policy</a></p>
+      <p><a href="/legal/terms/">{{ site.data[site.active_lang].strings.footer.terms }}</a></p>
+      <p><a href="/legal/policy/">{{ site.data[site.active_lang].strings.footer.policy }}</a></p>
+      <p><a href="/legal/cookies-policy/">{{ site.data[site.active_lang].strings.footer.cookies }}</a></p>
     </div>
   </div>
 </div>

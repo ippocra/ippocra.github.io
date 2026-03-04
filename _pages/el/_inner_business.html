@@ -1,0 +1,722 @@
+<head>
+    <meta charset="utf-8">
+    <title>Αποτελέσματα στους ασθενείς σας. Χωρίς CD, χωρίς USB, χωρίς αναμονή.</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <meta name="description"
+        content="Στείλτε CT, MRI και διαγνωστικά αποτελέσματα απευθείας στους ασθενείς με ασφαλή σύνδεσμο. Ενσωματωμένος προβολέας DICOM, χωρίς CD ή USB. Ippocra για κλινικές και διαγνωστικά κέντρα.">
+
+    <link rel="stylesheet" href="{{ '/assets/css/fontawesome-free/css/all.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body class="text-slate-700 antialiased">
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="section-blank">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="animate-fadeInUp" style="opacity:0;">
+                    <h1 class="page-title">
+                        Αποτελέσματα στους ασθενείς σας. Χωρίς CD, χωρίς USB, χωρίς αναμονή.
+                    </h1>
+                    <div class="mt-6 max-w-2xl mx-auto leading-relaxed">
+                        <p class="paragraph-lg">
+                            Με το Ippocra, η εγκατάστασή σας στέλνει CT, MRI και διαγνωστικά αποτελέσματα απευθείας στους ασθενείς. Ένας ασφαλής σύνδεσμος αντί για CD. Ένας ενσωματωμένος προβολέας DICOM αντί για λογισμικό προς εγκατάσταση.
+                        </p>
+                    </div>
+                    <div class="mt-10 hero-button-container">
+                        <a href="#wantIppo" class="secondary-button">
+                            Κλείστε ένα demo
+                        </a>
+                        <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
+                            class="main-color-button">
+                            Δοκιμάστε το
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 ml-2 -rotate-45">
+                                <path fill-rule="evenodd"
+                                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The problem every facility knows -->
+        <section id="whyippo" class="section-transparent scroll-target">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center scroll-animated-item">
+                    Το πρόβλημα που κάθε εγκατάσταση γνωρίζει
+                </h2>
+
+                <div class="mt-20 icon-grid scroll-animated-item scroll-animated-item-3">
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-compact-disc small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Η εγγραφή CD σπαταλά χρόνο
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Η εγγραφή CD για κάθε CT ή MRI κοστίζει χρόνο προσωπικού: κατά μέσο όρο 15-20 λεπτά ανά ασθενή.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-phone-alt small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Οι ασθενείς επιστρέφουν τηλεφωνικά
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Οι ασθενείς χάνουν CD, δεν μπορούν να ανοίξουν αρχεία DICOM στον υπολογιστή τους, επιστρέφουν ζητώντας αντίγραφα.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-usb small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Τα USB δεν είναι η λύση
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Τα USB χάνονται, δεν είναι ασφαλή και κοστίζουν χρήματα. Για κάθε ασθενή, κάθε φορά.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- How Ippocra solves all of this -->
+        <section id="solution" class="section-accent-soft-gradient scroll-target">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center scroll-animated-item">
+                    Πώς το Ippocra λύνει όλα αυτά
+                </h2>
+
+                <div class="mt-20 icon-grid scroll-animated-item scroll-animated-item-3">
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-x-ray small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Ενσωματωμένος προβολέας DICOM
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Οι ασθενείς βλέπουν CT, MRI και ακτινογραφίες απευθείας στο πρόγραμμα περιήγησης. Επαγγελματικά εργαλεία, χωρίς λογισμικό προς εγκατάσταση.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-link small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            IppoLink: στείλτε βαριά αρχεία με σύνδεσμο
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Τα CT ζυγίζουν εκατοντάδες megabytes. Με το IppoLink, ένας ασφαλής σύνδεσμος αντικαθιστά CD, USB και μεταφορές αρχείων. Ο ασθενής το ανοίγει σε οποιαδήποτε συσκευή.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-clock small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            15 λεπτά εξοικονόμησης ανά ασθενή
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Τέλος η εγγραφή CD, η προετοιμασία USB, οι επιστροφές κλήσεων για χαμένα μέσα.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mt-10 flex justify-center scroll-animated-item">
+                    <div class="mb-5 p-5 max-w-md text-center">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-heart small-icon-size" style="color:#3b9ba8;"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Απρόσκοπτη εμπειρία ασθενούς
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Ο ασθενής λαμβάνει ειδοποίηση, ανοίγει τον σύνδεσμο και βλέπει τις διαγνωστικές εικόνες. Όλα σε δευτερόλεπτα.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DICOM Viewer Showcase -->
+        <section id="dicom-showcase" class="section-transparent scroll-target">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center scroll-animated-item">
+                    Ο προβολέας DICOM σε δράση
+                </h2>
+                <p class="mt-4 paragraph-md text-center max-w-2xl mx-auto scroll-animated-item">
+                    Πλοηγηθείτε σε διαγνωστικές εικόνες απευθείας στο πρόγραμμα περιήγησης — χωρίς λήψεις, χωρίς πρόσθετα, χωρίς ειδικό λογισμικό.
+                </p>
+
+                <!-- YouTube Video -->
+                <div class="mt-10 max-w-3xl mx-auto scroll-animated-item">
+                    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+                        <iframe src="https://www.youtube.com/embed/PVsdDqWt6RE"
+                            title="Ippocra DICOM Viewer Demo"
+                            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- Screenshot + Capabilities -->
+                <div class="mt-16 flex flex-col lg:flex-row items-center gap-10 scroll-animated-item">
+                    <div class="lg:w-1/2">
+                        <img src="assets/images/dicom_viewer_knee_en.webp"
+                             alt="DICOM viewer showing a knee MRI scan in Ippocra"
+                             style="border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1); width:100%; height:auto;">
+                    </div>
+                    <div class="lg:w-1/2">
+                        <h3 class="section-header">Επαγγελματικά εργαλεία για κάθε ασθενή</h3>
+                        <div class="mt-6 space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-layer-group mt-1" style="color:#3b9ba8;"></i>
+                                <div>
+                                    <p class="paragraph-md" style="margin:0;"><strong>Πλοήγηση σε τομές</strong></p>
+                                    <p class="paragraph-md text-gray-600" style="margin:0;">Κυλήστε μέσα από τομές CT και MRI, ακριβώς όπως σε σταθμό εργασίας ακτινολογίας.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-adjust mt-1" style="color:#3b9ba8;"></i>
+                                <div>
+                                    <p class="paragraph-md" style="margin:0;"><strong>Παραθύρωση</strong></p>
+                                    <p class="paragraph-md text-gray-600" style="margin:0;">Ρυθμίστε αντίθεση και φωτεινότητα για να αναδείξετε οστά, μαλακούς ιστούς ή όργανα.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-ruler mt-1" style="color:#3b9ba8;"></i>
+                                <div>
+                                    <p class="paragraph-md" style="margin:0;"><strong>Μετρήσεις και σχολιασμοί</strong></p>
+                                    <p class="paragraph-md text-gray-600" style="margin:0;">Μετρήστε αποστάσεις και επιφάνειες απευθείας στις εικόνες.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-cube mt-1" style="color:#3b9ba8;"></i>
+                                <div>
+                                    <p class="paragraph-md" style="margin:0;"><strong>Πολυεπίπεδη ανακατασκευή</strong></p>
+                                    <p class="paragraph-md text-gray-600" style="margin:0;">Δείτε εξετάσεις από αξονικές, στεφανιαίες και οβελιαίες προοπτικές.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsored Plan Section -->
+        <section id="fse" class="section-main-hard-gradient scroll-target">
+            <div class="flex flex-col items-center section-container">
+                <div class="scroll-animated-item max-w-3xl">
+                    <h2 class="mt-0 section-title text-white text-center">
+                        Το Χορηγούμενο Πρόγραμμα: διατηρήστε ασθενείς με ένα απτό όφελος
+                    </h2>
+                    <p class="mt-7 text-white text-center paragraph-md">
+                        Όταν στέλνετε αποτελέσματα μέσω Ippocra, οι ασθενείς μπορούν να δημιουργήσουν δωρεάν λογαριασμό συνδεδεμένο με την κλινική σας.
+                        Όσο επιστρέφουν για εξέταση τουλάχιστον μία φορά το χρόνο, το πρόγραμμά τους παραμένει ενεργό — και μαζί του,
+                        ολόκληρο το κλινικό τους ιστορικό. Η επωνυμία σας παραμένει ορατή σε κάθε αποτέλεσμα που ανοίγουν.
+                        Διατήρηση ασθενών ενσωματωμένη στη ροή εργασίας: χωρίς επιπλέον προσπάθεια, χωρίς καμπάνιες.
+                    </p>
+                    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-white text-center">
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-tag text-2xl" style="opacity:0.85;"></i>
+                            <p class="paragraph-md" style="margin:0;"><strong>Το λογότυπό σας σε κάθε αποτέλεσμα</strong></p>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-history text-2xl" style="opacity:0.85;"></i>
+                            <p class="paragraph-md" style="margin:0;"><strong>Το ιστορικό ασθενούς παραμένει ενεργό με ετήσιες επισκέψεις</strong></p>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-check-circle text-2xl" style="opacity:0.85;"></i>
+                            <p class="paragraph-md" style="margin:0;"><strong>Μηδέν επιπλέον προσπάθεια — ενσωματωμένο στη ροή εργασίας</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main features -->
+        <section id="features" class="section-main-soft-gradient scroll-target">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center scroll-animated-item">
+                    Κύρια χαρακτηριστικά
+                </h2>
+
+                <div class="mt-20 icon-grid scroll-animated-item scroll-animated-item-3">
+
+                    <!-- DICOM Upload -->
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-upload small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Μεταφόρτωση DICOM, PDF και εικόνων
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Ανεβάστε οποιαδήποτε διαγνωστική μορφή: DICOM, PDF, JPEG. Το σύστημα τα οργανώνει αυτόματα.
+                        </p>
+                    </div>
+
+                    <!-- DICOM Viewer -->
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-x-ray small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Προβολέας DICOM στο πρόγραμμα περιήγησης
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            CT, MRI και ακτινογραφίες εμφανίσιμα απευθείας στο πρόγραμμα περιήγησης, χωρίς εγκατάσταση λογισμικού.
+                        </p>
+                    </div>
+
+                    <!-- Intelligent Search -->
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-search small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Έξυπνη αναζήτηση
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Βρείτε οποιοδήποτε αποτέλεσμα σε δευτερόλεπτα, ακόμα και ανάμεσα σε χιλιάδες έγγραφα.
+                        </p>
+                    </div>
+
+                    <!-- Business Analytics -->
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-chart-bar small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Business analytics
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Συνεχής παρακολούθηση όγκου εγγράφων, αποστολών και απόδοσης.
+                        </p>
+                    </div>
+
+                    <!-- Secure Access -->
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-lock small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Ασφαλής πρόσβαση
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Διαχείριση αδειών για αποφυγή κινδύνων και διασφάλιση ασφάλειας δεδομένων.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Connector -->
+        <section id="connector" class="section-blank scroll-target">
+            <div class="flex flex-row section-container scroll-animated-item">
+                <div class="card-info">
+                    <h2 class="mt-0 section-title">Ενοποιείται με το ERP σας</h2>
+                    <p class="mt-7 paragraph-md paragraph-bold">
+                        Το Ippocra συνδέεται εγγενώς με τα κύρια κλινικά λογισμικά: εισαγωγή και διαχείριση δεδομένων χωρίς αλλαγή συνηθειών ή διακοπή ροών εργασίας. Μηδέν άγχος, μόνο αποτελεσματικότητα.
+                    </p>
+                    <a href="#wantIppo" class="mt-7 secondary-button">
+                        Κλείστε ένα demo
+                    </a>
+                </div>
+
+                <div class="p-16 max-w-sm card-image scroll-animated-item">
+                    <img class="w-full" src="assets/images/ippo-outline-green.webp" alt="ippo">
+                </div>
+            </div>
+        </section>
+
+        <!-- join -->
+        <section id="join" class="section-accent-soft-gradient scroll-target">
+            <div class="text-center section-container">
+                <div class="scroll-animated-item">
+                    <h2 class="mt-0 section-title text-center">Διαχείριση αποτελεσμάτων που απλοποιεί την εργασία</h2>
+                    <p class="mt-7 mb-0 text-center paragraph-md paragraph-bold">
+                        Με το Ippocra αποκτάτε πλήρη έλεγχο της διαχείρισης αποτελεσμάτων: εξοικονομείτε χρόνο, μειώνετε σφάλματα και βελτιώνετε την υπηρεσία, δίνοντας ηρεμία σε ασθενείς και προσωπικό.
+                    </p>
+                    <a href="https://app.ippocra.com/a/en/register" target="_blank" rel="noopener noreferrer"
+                        class="mt-10 main-color-button">
+                        Ξεκινήστε τη δωρεάν δοκιμή σας
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 ml-2 -rotate-45">
+                            <path fill-rule="evenodd"
+                                d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="mt-10 image-frame scroll-animated-item">
+                    <img class="w-full" src="assets/images/business-images/analytics-en.png" alt="Analytics">
+                </div>
+            </div>
+        </section>
+
+        <!-- Want Ippocra? -->
+        <section id="wantIppo" class="section-main-hard-gradient">
+            <div class="section-container max-w-6xl mx-auto px-4">
+                <div class="flex flex-col lg:flex-row gap-10">
+
+                    <!-- ==================== LEFT COLUMN – INFO ==================== -->
+                    <div class="flex flex-col w-full lg:w-2/5 space-y-8">
+
+                        <!-- Title & Intro -->
+                        <div class="text-center lg:text-left">
+                            <h2 class="mt-0 section-title">
+                                Θέλετε να δοκιμάσετε το Ippocra στην κλινική σας;
+                            </h2>
+                            <p class="mt-7 text-white paragraph-md">
+                                Κλείστε ένα εξατομικευμένο demo και ανακαλύψτε πώς να οργανώσετε και να διαχειριστείτε αποτελεσματικά τα αποτελέσματά σας.
+                            </p>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="mt-10 grid gap-3 text-white">
+
+                            <!-- Email -->
+                            <div class="flex items-center gap-3 text-white">
+                                <i class="fas fa-envelope fa-lg"></i>
+                                <a href="mailto:info@ippocra.com" class="text-white hover:underline">
+                                    info@ippocra.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==================== RIGHT COLUMN – FORM ==================== -->
+                    <div class="contact-form lg:w-3/5 space-y-8">
+                        <h2 class="mt-0 section-header">Ζητήστε ένα δωρεάν demo</h2>
+
+                        <form id="ippocraForm" method="POST"
+                            action="https://hook.eu2.make.com/kmko599vdgvoi5xyyttkq4h2g3b9uys9"
+                            class="mt-10 p-0 mb-0 grid gap-4">
+
+                            <!-- Name -->
+                            <div>
+                                <label for="name" class="sr-only">Όνομα</label>
+                                <input type="text" id="name" name="name" class="input-field" required
+                                    placeholder="Το όνομά σας">
+                            </div>
+
+                            <div>
+                                <label for="lastname" class="sr-only">Επώνυμο</label>
+                                <input type="text" id="lastname" name="lastname" class="input-field" required
+                                    placeholder="Το επώνυμό σας">
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="sr-only">Διεύθυνση email</label>
+                                <input type="email" id="email" name="email" class="input-field"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
+                                    placeholder="email@example.com">
+                            </div>
+
+                            <!-- Phone -->
+                            <div>
+                                <label for="phone_prefix" class="sr-only">Διεθνής πρόθεμα</label>
+                                <div class="flex gap-2 items-center">
+                                    <!-- smaller prefix select -->
+                                    <select id="phone_prefix" name="phone_prefix" class="input-field flex-2 w-2"
+                                        aria-label="Διεθνής πρόθεμα">
+                                        <option value="0039">0039</option>
+                                        <option value="001">001</option>
+                                        <option value="0044">0044</option>
+                                        <option value="0049">0049</option>
+                                        <option value="0033">0033</option>
+                                        <option value="0034">0034</option>
+                                        <option value="007">007</option>
+                                        <option value="0061">0061</option>
+                                        <option value="other">Άλλο…</option>
+                                    </select>
+
+                                    <!-- larger phone input (takes remaining space) -->
+                                    <input type="tel" id="phone" name="phone" class="input-field flex-3 min-w-3"
+                                        inputmode="tel" pattern="[0-9]*" required placeholder="Τηλέφωνο (μόνο αριθμοί)">
+                                </div>
+
+                                <!-- custom prefix field shown when "Other" is selected -->
+                                <div id="phone_prefix_custom_wrap" class="mt-2 hidden">
+                                    <label for="phone_prefix_custom" class="sr-only">Προσαρμοσμένο πρόθεμα</label>
+                                    <input type="text" id="phone_prefix_custom" name="phone_prefix_custom"
+                                        class="input-field w-20" placeholder="0039" inputmode="tel"
+                                        aria-label="Προσαρμοσμένο πρόθεμα">
+                                </div>
+                            </div>
+
+                            <!-- Message / Demo request -->
+                            <div>
+                                <label for="message" class="sr-only">Μήνυμα</label>
+                                <textarea id="message" name="message" rows="4" class="input-field" required
+                                    placeholder="Πείτε μας κάτι για την κλινική σας και τι θα θέλατε να δείτε"></textarea>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="text-center">
+                                <button class="submit-button" type="submit">
+                                    Ζητήστε το demo
+                                </button>
+                            </div>
+                        </form>
+
+                        <div id="thanksMsg" class="hidden text-center text-green-600 font-medium mt-4">
+                            Ευχαριστούμε! Λάβαμε το αίτημά σας.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section-transparent">
+            <div class="section-container">
+                <div class="flex flex-col">
+                    <div>
+                        <h2 class="mt-0 section-title text-center">
+                            Συχνές ερωτήσεις
+                        </h2>
+                        <p class="mt-7 paragraph-md">
+                            Αν έχετε άλλες ερωτήσεις, επικοινωνήστε μαζί μας και θα χαρούμε να απαντήσουμε σε οποιοδήποτε αίτημα.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ List -->
+                <div class="mt-10 faq-list">
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Πώς λειτουργεί η παράδοση διαγνωστικών αποτελεσμάτων;
+                        </summary>
+                        <div class="faq-answer">
+                            Μόλις ολοκληρωθεί η διαγνωστική εξέταση, η εγκατάσταση ανεβάζει το αποτέλεσμα και τα αρχεία DICOM στο Ippocra. Ο ασθενής λαμβάνει ασφαλή σύνδεσμο μέσω ειδοποίησης και μπορεί να δει όλες τις εικόνες και τα έγγραφα απευθείας στο πρόγραμμα περιήγησης, από οποιαδήποτε συσκευή, χωρίς να χρειαστεί να εγκαταστήσει λογισμικό ή να παραλάβει CD.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Μπορούν τα αρχεία DICOM να προβληθούν χωρίς λογισμικό;
+                        </summary>
+                        <div class="faq-answer">
+                            Ναι. Το Ippocra περιλαμβάνει έναν ενσωματωμένο προβολέα DICOM που λειτουργεί απευθείας στο πρόγραμμα περιήγησης. Οι ασθενείς μπορούν να δουν CT, MRI και ακτινογραφίες σε οποιαδήποτε συσκευή — υπολογιστή, tablet ή smartphone — χωρίς να κατεβάσουν ή να εγκαταστήσουν επιπλέον λογισμικό.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Πόσος χρόνος εξοικονομείται σε σχέση με τα CD;
+                        </summary>
+                        <div class="faq-answer">
+                            Κατά μέσο όρο, η εγγραφή CD και η παράδοσή του στον ασθενή διαρκεί 15-20 λεπτά ανά εξέταση. Με το Ippocra, το αποτέλεσμα μοιράζεται αμέσως μέσω ασφαλούς συνδέσμου, εξαλείφοντας ολόκληρη τη ροή εργασίας με φυσικά μέσα και ελευθερώνοντας χρόνο προσωπικού για εργασίες υψηλότερης αξίας.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Πώς το Ippocra αυξάνει την αφοσίωση ασθενών;
+                        </summary>
+                        <div class="faq-answer">
+                            Προσαρμόζουμε τους συνδέσμους αποτελεσμάτων με το λογότυπό σας και τα στοιχεία επικοινωνίας. Οι ασθενείς που δημιουργούν λογαριασμούς από τα αποτελέσματά σας έχουν επίσης κίνητρο να επιστρέψουν: οι ασθενείς που επιστρέφουν λαμβάνουν επεκτάσεις των προγραμμάτων Ippocra, διατηρώντας προσβάσιμο το πλήρες κλινικό τους ιστορικό και ενισχύοντας τη σχέση τους με την εγκατάστασή σας.
+                        </div>
+                    </details>
+
+                </div>
+                <!-- FAQ List END -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Initial load animations for hero
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroContent = document.querySelector('#hero .animate-fadeInUp');
+            if (heroContent) heroContent.style.opacity = '1';
+
+            const ctaSectionContent = document.querySelector('.cta-bg-gradient .animate-fadeInUp');
+            if (ctaSectionContent) ctaSectionContent.style.opacity = '1';
+        });
+
+        // Fade in elements on initial load
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.animate-fadeInUp').forEach(el => {
+                el.style.opacity = '1';
+            });
+        });
+
+
+        // Generic function to observe and animate sections
+        function observeAndAnimate(selector, visibleClass = 'is-visible', threshold = 0.1) {
+            const el = document.querySelector(selector);
+            if (!el) return;
+
+            const observer = new IntersectionObserver((entries) => {
+                const entry = entries[0];
+                if (entry.isIntersecting) {
+                    el.classList.add(visibleClass);
+                    observer.unobserve(el);
+                }
+            }, { threshold });
+
+            observer.observe(el);
+        }
+
+        observeAndAnimate('#whyippo');
+        observeAndAnimate('#solution');
+        observeAndAnimate('#dicom-showcase');
+        observeAndAnimate('#fse');
+        observeAndAnimate('#features');
+        observeAndAnimate('#connector');
+        observeAndAnimate('#join');
+        observeAndAnimate('#faq');
+
+        lucide.createIcons();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const form = document.getElementById('ippocraForm');
+            if (!form) return;
+
+            const btn = form.querySelector('button[type="submit"]') || form.querySelector('.submit-button');
+            const thanks = document.getElementById('thanksMsg');
+
+            const phoneEl = document.getElementById('phone');
+            const prefixEl = document.getElementById('phone_prefix');
+            const customWrap = document.getElementById('phone_prefix_custom_wrap');
+            const customEl = document.getElementById('phone_prefix_custom');
+
+            // show/hide custom prefix input when user selects "Other"
+            if (prefixEl && customWrap && customEl) {
+                const toggleCustom = () => {
+                    if (prefixEl.value === 'other') {
+                        customWrap.classList.remove('hidden');
+                        customEl.required = true;
+                        customEl.focus();
+                    } else {
+                        customWrap.classList.add('hidden');
+                        customEl.required = false;
+                        customEl.value = '';
+                    }
+                };
+                prefixEl.addEventListener('change', toggleCustom);
+                toggleCustom();
+            }
+
+            // keep phone input numeric while typing
+            if (phoneEl) {
+                phoneEl.addEventListener('input', (e) => {
+                    const cleaned = e.target.value.replace(/\D/g, '');
+                    if (e.target.value !== cleaned) e.target.value = cleaned;
+                });
+            }
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                if (btn) {
+                    btn.disabled = true;
+                    btn.dataset.originalText = btn.innerHTML;
+                    btn.innerHTML = '<svg class="animate-spin h-5 w-5 mr-2 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8z"/></svg> Αποστολή…';
+                }
+
+                try {
+                    const formData = new FormData(form);
+
+                    const messageEl = form.querySelector('#message');
+                    if (messageEl) {
+                        const rawMsg = messageEl.value || '';
+                        const escapedMsg = JSON.stringify(rawMsg).slice(1, -1);
+                        formData.set('message', escapedMsg);
+                    }
+
+                    let prefixValue = '';
+                    if (prefixEl) {
+                        if (prefixEl.value === 'other' && customEl) {
+                            prefixValue = customEl.value || '';
+                        } else {
+                            prefixValue = prefixEl.value || '';
+                        }
+                    }
+
+                    const rawPhone = phoneEl ? phoneEl.value : '';
+                    const digitsOnlyPhone = (rawPhone || '').replace(/\D/g, '');
+
+                    if (digitsOnlyPhone.length !== 7) {
+                        throw new Error('Μη έγκυρο τηλέφωνο: ο τοπικός αριθμός πρέπει να περιέχει ακριβώς 7 ψηφία');
+                    }
+
+                    const combined = (prefixValue + digitsOnlyPhone).replace(/\D/g, '');
+
+                    if (!combined) throw new Error('Μη έγκυρο τηλέφωνο');
+
+                    formData.set('phone', combined);
+                    formData.delete('phone_prefix');
+                    formData.delete('phone_prefix_custom');
+
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                    });
+
+                    if (!response.ok) {
+                        let errMsg = `Σφάλμα ${response.status}`;
+                        const ct = response.headers.get('content-type') || '';
+                        if (ct.includes('application/json')) {
+                            const data = await response.json();
+                            errMsg += ': ' + (data.message || JSON.stringify(data));
+                        } else {
+                            const txt = await response.text();
+                            errMsg += ': ' + txt;
+                        }
+                        throw new Error(errMsg);
+                    }
+
+                    const ct = response.headers.get('content-type') || '';
+                    if (ct.includes('application/json')) {
+                        await response.json();
+                    }
+
+                    form.reset();
+                    if (thanks) {
+                        thanks.classList.remove('hidden');
+                        setTimeout(() => thanks.classList.add('hidden'), 5000);
+                    }
+                } catch (err) {
+                    console.error('Submit failed:', err);
+                    alert(err && err.message ? err.message : 'Παρουσιάστηκε πρόβλημα. Παρακαλώ δοκιμάστε ξανά αργότερα.');
+                } finally {
+                    if (btn) {
+                        btn.disabled = false;
+                        btn.innerHTML = btn.dataset.originalText || 'Αποστολή';
+                    }
+                }
+            });
+        });
+    </script>
+</body>

@@ -1,0 +1,620 @@
+<head>
+    <meta charset="utf-8">
+    <title>Τα αποτελέσματα των ασθενών σας. Πάντα μαζί σας, σε κάθε κλινική.</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <meta name="description"
+        content="Σταματήστε να μεταφέρετε USB στις κλινικές. Εισαγάγετε τα αποτελέσματα των ασθενών σας με ένα κλικ, βρείτε οποιοδήποτε έγγραφο σε δευτερόλεπτα, και δείτε το πλήρες ιστορικό κάθε ασθενούς.">
+
+    <link rel="stylesheet" href="{{ '/assets/css/fontawesome-free/css/all.min.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body class="text-slate-700 antialiased">
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="section-blank">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="animate-fadeInUp" style="opacity:0;">
+                    <h1 class="page-title">
+                        Τα αποτελέσματα των ασθενών σας. Πάντα μαζί σας, σε κάθε κλινική.
+                    </h1>
+                    <div class="mt-6 max-w-2xl mx-auto leading-relaxed">
+                        <p class="paragraph-lg">
+                            Εργάζεστε σε πολλαπλές κλινικές. Τα αποτελέσματα των ασθενών σας είναι διάσπαρτα σε USB, παλιά laptop και φακέλους. Με το Ippocra, εισάγετε τα πάντα με ένα κλικ και έχετε πρόσβαση στο πλήρες ιστορικό οποιουδήποτε ασθενούς από οπουδήποτε.
+                        </p>
+                    </div>
+                    <div class="mt-10 hero-button-container">
+                        <a href="#wantIppo" class="secondary-button">
+                            Κλείστε ένα demo
+                        </a>
+                        <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
+                            class="main-color-button">
+                            Δοκιμάστε το δωρεάν
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 ml-2 -rotate-45">
+                                <path fill-rule="evenodd"
+                                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The problem every solo practitioner knows -->
+        <section id="whyippo" class="section-transparent scroll-target">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center scroll-animated-item">
+                    Σας ακούγεται γνώριμο;
+                </h2>
+
+                <div class="mt-20 icon-grid scroll-animated-item scroll-animated-item-3">
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-usb small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Αποτελέσματα διάσπαρτα σε συσκευές
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Μερικά σε USB, μερικά στον υπολογιστή της κλινικής, μερικά στο laptop σας στο σπίτι. Κάθε συσκευή κρατά ένα κομμάτι του παζλ.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-search small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Δεν μπορείτε να βρείτε αυτό που γράψατε
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Ένας ασθενής έρχεται για επανεξέταση. Θυμάστε ότι γράψατε κάτι 8 μήνες πριν, αλλά είναι κάπου στο παλιό σας laptop ή σε ένα USB που αφήσατε σε άλλη κλινική.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-clock small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Καμία διαχρονική εικόνα των ασθενών σας
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Βλέπετε τον ίδιο ασθενή επί μήνες και χρόνια, αλλά δεν υπάρχει τρόπος να ανασκοπήσετε γρήγορα ολόκληρο το ιστορικό τους. Κάθε επίσκεψη ξεκινά από την αρχή.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- How Ippocra solves all of this -->
+        <section id="solution" class="section-accent-soft-gradient scroll-target">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center scroll-animated-item">
+                    Πώς το Ippocra λύνει αυτό
+                </h2>
+
+                <div class="mt-20 icon-grid scroll-animated-item scroll-animated-item-3">
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-folder-open small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Εισαγωγή όλων με ένα κλικ
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Επιλέξτε τον φάκελο όπου φυλάτε τα αποτελέσματα των ασθενών σας. Το Ippocra διαβάζει ονόματα αρχείων και δομή φακέλων για να αναθέσει αυτόματα κάθε έγγραφο στον σωστό ασθενή.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-search small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Βρείτε οποιοδήποτε αποτέλεσμα σε δευτερόλεπτα
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Αναζητήστε με το όνομα ασθενούς, τύπο εξέτασης, ημερομηνία ή λέξη-κλειδί. Τέλος το κύλισμα σε φακέλους ή το μάντεμα ποιο USB έχει το αρχείο.
+                        </p>
+                    </div>
+
+                    <div class="mb-5 p-5">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-history small-icon-size"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Δείτε το πλήρες χρονοδιάγραμμα κάθε ασθενούς
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Κάθε αποτέλεσμα που έχετε γράψει ποτέ για έναν ασθενή, οργανωμένο χρονολογικά. Δείτε τι σημειώσατε την προηγούμενη φορά, τι άλλαξε και πώς εξελίχθηκε ο ασθενής με τον χρόνο.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="mt-10 flex justify-center scroll-animated-item">
+                    <div class="mb-5 p-5 max-w-md text-center">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-laptop-medical small-icon-size" style="color:#3b9ba8;"></i>
+                        </div>
+                        <h3 class="section-header text-center">
+                            Πρόσβαση από οποιαδήποτε συσκευή, σε οποιαδήποτε κλινική
+                        </h3>
+                        <p class="paragraph-md text-center">
+                            Το αρχείο ασθενών σας βρίσκεται στο cloud. Χωρίς USB να μεταφέρετε, χωρίς αρχεία να αντιγράψετε. Ανοίξτε το Ippocra από οποιοδήποτε πρόγραμμα περιήγησης και είστε έτοιμοι.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Folder Import Showcase -->
+        <section id="import-showcase" class="section-transparent scroll-target">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center scroll-animated-item">
+                    Μεταφέρετε το υπάρχον αρχείο σας σε λεπτά
+                </h2>
+                <p class="mt-4 paragraph-md text-center max-w-2xl mx-auto scroll-animated-item">
+                    Έχετε ήδη χρόνια αποτελεσμάτων σε USB ή σε φάκελο; Εισαγάγετε ολόκληρο τον φάκελο με μία κίνηση. Το Ippocra αναλύει ονόματα αρχείων και δομή φακέλων για να αναθέσει αυτόματα κάθε έγγραφο στον σωστό ασθενή.
+                </p>
+
+                <!-- YouTube Video -->
+                <div class="mt-10 max-w-3xl mx-auto scroll-animated-item">
+                    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+                        <iframe src="https://www.youtube.com/embed/tpR9PfTSThw"
+                            title="Ippocra Folder Import Demo"
+                            style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <!-- How it works steps -->
+                <div class="mt-16 flex flex-col lg:flex-row items-start gap-10 scroll-animated-item">
+                    <div class="lg:w-1/3 text-center">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-upload small-icon-size" style="color:#3b9ba8;"></i>
+                        </div>
+                        <h3 class="section-header text-center">1. Επιλέξτε τον φάκελό σας</h3>
+                        <p class="paragraph-md text-center">
+                            Επιλέξτε τον φάκελο όπου είναι αποθηκευμένα τα αποτελέσματά σας — USB, επιφάνεια εργασίας, cloud drive.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/3 text-center">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-magic small-icon-size" style="color:#3b9ba8;"></i>
+                        </div>
+                        <h3 class="section-header text-center">2. Αυτόματη ανάθεση</h3>
+                        <p class="paragraph-md text-center">
+                            Το Ippocra διαβάζει ονόματα αρχείων και διαδρομές φακέλων για να αντιστοιχήσει κάθε έγγραφο στον σωστό ασθενή.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/3 text-center">
+                        <div class="justify-center text-center">
+                            <i class="fas fa-check-circle small-icon-size" style="color:#3b9ba8;"></i>
+                        </div>
+                        <h3 class="section-header text-center">3. Έλεγχος και επιβεβαίωση</h3>
+                        <p class="paragraph-md text-center">
+                            Ελέγξτε τις προτεινόμενες αναθέσεις, προσαρμόστε εάν χρειάζεται, και επιβεβαιώστε. Το αρχείο σας είναι έτοιμο.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Workflow -->
+        <section id="daily-workflow" class="section-main-hard-gradient scroll-target">
+            <div class="flex flex-col items-center section-container">
+                <div class="scroll-animated-item max-w-3xl">
+                    <h2 class="mt-0 section-title text-white text-center">
+                        Μετά την εισαγωγή, η καθημερινή σας ροή εργασίας αλλάζει
+                    </h2>
+                    <p class="mt-7 text-white text-center paragraph-md">
+                        Τέλος η αναζήτηση σε USB πριν από μια διαβούλευση. Τέλος η έναρξη κάθε επίσκεψης από το μηδέν. Ολόκληρο το αρχείο ασθενών σας είναι οργανωμένο, αναζητήσιμο και πάντα διαθέσιμο.
+                    </p>
+                    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-white text-center">
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-bolt text-2xl" style="opacity:0.85;"></i>
+                            <p class="paragraph-md" style="margin:0;"><strong>Άμεση αναζήτηση πριν από κάθε διαβούλευση</strong></p>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-history text-2xl" style="opacity:0.85;"></i>
+                            <p class="paragraph-md" style="margin:0;"><strong>Πλήρες ιστορικό ασθενούς με μια ματιά</strong></p>
+                        </div>
+                        <div class="flex flex-col items-center gap-2">
+                            <i class="fas fa-globe text-2xl" style="opacity:0.85;"></i>
+                            <p class="paragraph-md" style="margin:0;"><strong>Λειτουργεί σε όλες τις κλινικές σας</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration CTA -->
+        <section id="join" class="section-accent-soft-gradient scroll-target">
+            <div class="text-center section-container">
+                <div class="scroll-animated-item">
+                    <h2 class="mt-0 section-title text-center">Ξεκινήστε να οργανώνετε το αρχείο ασθενών σας σήμερα</h2>
+                    <p class="mt-7 mb-0 text-center paragraph-md paragraph-bold">
+                        Εισαγάγετε τα υπάρχοντα αποτελέσματά σας, βρείτε οτιδήποτε σε δευτερόλεπτα, και αποκτήστε επιτέλους μια διαχρονική εικόνα κάθε ασθενούς.
+                    </p>
+                    <div class="mt-6 flex flex-wrap justify-center gap-4" style="font-size:0.875rem; color:#475569;">
+                        <span><i class="fas fa-check-circle" style="color:#3b9ba8;"></i> Κρυπτογραφημένα δεδομένα</span>
+                        <span><i class="fas fa-check-circle" style="color:#3b9ba8;"></i> GDPR compliant</span>
+                        <span><i class="fas fa-check-circle" style="color:#3b9ba8;"></i> Διαθέσιμο δωρεάν πρόγραμμα</span>
+                    </div>
+                    <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
+                        class="mt-10 main-color-button">
+                        Δοκιμάστε το δωρεάν
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5 ml-2 -rotate-45">
+                            <path fill-rule="evenodd"
+                                d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Want a walkthrough? -->
+        <section id="wantIppo" class="section-main-hard-gradient">
+            <div class="section-container max-w-6xl mx-auto px-4">
+                <div class="flex flex-col lg:flex-row gap-10">
+
+                    <!-- ==================== LEFT COLUMN – INFO ==================== -->
+                    <div class="flex flex-col w-full lg:w-2/5 space-y-8">
+
+                        <!-- Title & Intro -->
+                        <div class="text-center lg:text-left">
+                            <h2 class="mt-0 section-title">
+                                Θέλετε ένα demo;
+                            </h2>
+                            <p class="mt-7 text-white paragraph-md">
+                                Πείτε μας για τη ροή εργασίας σας και θα σας δείξουμε πώς το Ippocra ταιριάζει στην καθημερινή σας άσκηση.
+                            </p>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="mt-10 grid gap-3 text-white">
+
+                            <!-- Email -->
+                            <div class="flex items-center gap-3 text-white">
+                                <i class="fas fa-envelope fa-lg"></i>
+                                <a href="mailto:info@ippocra.com" class="text-white hover:underline">
+                                    info@ippocra.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==================== RIGHT COLUMN – FORM ==================== -->
+                    <div class="contact-form lg:w-3/5 space-y-8">
+                        <h2 class="mt-0 section-header">Ζητήστε ένα δωρεάν demo</h2>
+
+                        <form id="ippocraForm" method="POST"
+                            action="https://hook.eu2.make.com/kmko599vdgvoi5xyyttkq4h2g3b9uys9"
+                            class="mt-10 p-0 mb-0 grid gap-4">
+
+                            <!-- Name -->
+                            <div>
+                                <label for="name" class="sr-only">Όνομα</label>
+                                <input type="text" id="name" name="name" class="input-field" required
+                                    placeholder="Το όνομά σας">
+                            </div>
+
+                            <div>
+                                <label for="lastname" class="sr-only">Επώνυμο</label>
+                                <input type="text" id="lastname" name="lastname" class="input-field" required
+                                    placeholder="Το επώνυμό σας">
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="sr-only">Διεύθυνση email</label>
+                                <input type="email" id="email" name="email" class="input-field"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
+                                    placeholder="email@example.com">
+                            </div>
+
+                            <!-- Phone -->
+                            <div>
+                                <label for="phone_prefix" class="sr-only">Διεθνής πρόθεμα</label>
+                                <div class="flex gap-2 items-center">
+                                    <!-- smaller prefix select -->
+                                    <select id="phone_prefix" name="phone_prefix" class="input-field flex-2 w-2"
+                                        aria-label="Διεθνής πρόθεμα">
+                                        <option value="0039">0039</option>
+                                        <option value="001">001</option>
+                                        <option value="0044">0044</option>
+                                        <option value="0049">0049</option>
+                                        <option value="0033">0033</option>
+                                        <option value="0034">0034</option>
+                                        <option value="007">007</option>
+                                        <option value="0061">0061</option>
+                                        <option value="other">Άλλο…</option>
+                                    </select>
+
+                                    <!-- larger phone input (takes remaining space) -->
+                                    <input type="tel" id="phone" name="phone" class="input-field flex-3 min-w-3"
+                                        inputmode="tel" pattern="[0-9]*" required placeholder="Τηλέφωνο (μόνο αριθμοί)">
+                                </div>
+
+                                <!-- custom prefix field shown when "Other" is selected -->
+                                <div id="phone_prefix_custom_wrap" class="mt-2 hidden">
+                                    <label for="phone_prefix_custom" class="sr-only">Προσαρμοσμένο πρόθεμα</label>
+                                    <input type="text" id="phone_prefix_custom" name="phone_prefix_custom"
+                                        class="input-field w-20" placeholder="0039" inputmode="tel"
+                                        aria-label="Προσαρμοσμένο πρόθεμα">
+                                </div>
+                            </div>
+
+                            <!-- Message -->
+                            <div>
+                                <label for="message" class="sr-only">Μήνυμα</label>
+                                <textarea id="message" name="message" rows="4" class="input-field" required
+                                    placeholder="Πείτε μας για την άσκησή σας: πόσες κλινικές, τι είδος αποτελεσμάτων διαχειρίζεστε"></textarea>
+                            </div>
+
+                            <!-- Submit button -->
+                            <div class="text-center">
+                                <button class="submit-button" type="submit">
+                                    Ζητήστε το demo
+                                </button>
+                            </div>
+                        </form>
+
+                        <div id="thanksMsg" class="hidden text-center text-green-600 font-medium mt-4">
+                            Ευχαριστούμε! Λάβαμε το αίτημά σας.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section-transparent">
+            <div class="section-container">
+                <div class="flex flex-col">
+                    <div>
+                        <h2 class="mt-0 section-title text-center">
+                            Συχνές ερωτήσεις
+                        </h2>
+                        <p class="mt-7 paragraph-md">
+                            Αν έχετε άλλες ερωτήσεις, επικοινωνήστε μαζί μας και θα χαρούμε να σας βοηθήσουμε.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ List -->
+                <div class="mt-10 faq-list">
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Μπορώ να εισαγάγω αποτελέσματα που έχω ήδη σε USB ή φακέλους;
+                        </summary>
+                        <div class="faq-answer">
+                            Ναι. Η εισαγωγή φακέλου του Ippocra σας επιτρέπει να επιλέξετε έναν ολόκληρο φάκελο και να ανεβάσετε όλα τα έγγραφα με μία κίνηση. Το σύστημα αναλύει ονόματα αρχείων και δομή φακέλων για να αναθέσει αυτόματα κάθε αποτέλεσμα στον σωστό ασθενή. Μπορείτε να ελέγξετε και να προσαρμόσετε πριν επιβεβαιώσετε.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Είναι τα δεδομένα των ασθενών μου ασφαλή;
+                        </summary>
+                        <div class="faq-answer">
+                            Ναι. Όλα τα δεδομένα κρυπτογραφούνται τόσο σε ηρεμία όσο και κατά τη μεταφορά, αποθηκεύονται σε ευρωπαϊκή υποδομή συμβατή με GDPR. Δεν πωλούμε δεδομένα σε τρίτους ούτε τα χρησιμοποιούμε για διαφήμιση. Διατηρείτε πλήρη έλεγχο του αρχείου σας.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Μπορώ να αποκτήσω πρόσβαση στο αρχείο μου από διαφορετικές κλινικές;
+                        </summary>
+                        <div class="faq-answer">
+                            Ναι. Το αρχείο σας βρίσκεται στο cloud και είναι προσβάσιμο από οποιαδήποτε συσκευή με πρόγραμμα περιήγησης — το laptop σας στο σπίτι, τον υπολογιστή της κλινικής ή ακόμα και το τηλέφωνό σας. Χωρίς USB να μεταφέρετε, χωρίς αρχεία να συγχρονίσετε.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Σε τι διαφέρει από ένα ΗΙΑ;
+                        </summary>
+                        <div class="faq-answer">
+                            Τα συστήματα ΗΙΑ συνδέονται με μία μόνο εγκατάσταση. Αν εργάζεστε σε πολλαπλές κλινικές, κανένα από αυτά δεν σας δίνει την πλήρη εικόνα. Το Ippocra είναι το προσωπικό, φορητό αρχείο ασθενών σας που σας ακολουθεί παντού — ανεξάρτητο από το σύστημα οποιασδήποτε κλινικής.
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            Πόσο κοστίζει;
+                        </summary>
+                        <div class="faq-answer">
+                            Μπορείτε να ξεκινήσετε με ένα δωρεάν πρόγραμμα για να δοκιμάσετε την υπηρεσία. Όταν χρειάζεστε περισσότερο χώρο ή λειτουργίες, μπορείτε να αναβαθμιστείτε ανά πάσα στιγμή. Δείτε τη <a href="/el/pricing" style="color:#3b9ba8; text-decoration:underline;">σελίδα τιμολόγησής μας</a> για λεπτομέρειες.
+                        </div>
+                    </details>
+
+                </div>
+                <!-- FAQ List END -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Initial load animations for hero
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroContent = document.querySelector('#hero .animate-fadeInUp');
+            if (heroContent) heroContent.style.opacity = '1';
+
+            const ctaSectionContent = document.querySelector('.cta-bg-gradient .animate-fadeInUp');
+            if (ctaSectionContent) ctaSectionContent.style.opacity = '1';
+        });
+
+        // Fade in elements on initial load
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.animate-fadeInUp').forEach(el => {
+                el.style.opacity = '1';
+            });
+        });
+
+
+        // Generic function to observe and animate sections
+        function observeAndAnimate(selector, visibleClass = 'is-visible', threshold = 0.1) {
+            const el = document.querySelector(selector);
+            if (!el) return;
+
+            const observer = new IntersectionObserver((entries) => {
+                const entry = entries[0];
+                if (entry.isIntersecting) {
+                    el.classList.add(visibleClass);
+                    observer.unobserve(el);
+                }
+            }, { threshold });
+
+            observer.observe(el);
+        }
+
+        observeAndAnimate('#whyippo');
+        observeAndAnimate('#solution');
+        observeAndAnimate('#import-showcase');
+        observeAndAnimate('#daily-workflow');
+        observeAndAnimate('#join');
+        observeAndAnimate('#faq');
+
+        lucide.createIcons();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const form = document.getElementById('ippocraForm');
+            if (!form) return;
+
+            const btn = form.querySelector('button[type="submit"]') || form.querySelector('.submit-button');
+            const thanks = document.getElementById('thanksMsg');
+
+            const phoneEl = document.getElementById('phone');
+            const prefixEl = document.getElementById('phone_prefix');
+            const customWrap = document.getElementById('phone_prefix_custom_wrap');
+            const customEl = document.getElementById('phone_prefix_custom');
+
+            // show/hide custom prefix input when user selects "Other"
+            if (prefixEl && customWrap && customEl) {
+                const toggleCustom = () => {
+                    if (prefixEl.value === 'other') {
+                        customWrap.classList.remove('hidden');
+                        customEl.required = true;
+                        customEl.focus();
+                    } else {
+                        customWrap.classList.add('hidden');
+                        customEl.required = false;
+                        customEl.value = '';
+                    }
+                };
+                prefixEl.addEventListener('change', toggleCustom);
+                toggleCustom();
+            }
+
+            // keep phone input numeric while typing
+            if (phoneEl) {
+                phoneEl.addEventListener('input', (e) => {
+                    const cleaned = e.target.value.replace(/\D/g, '');
+                    if (e.target.value !== cleaned) e.target.value = cleaned;
+                });
+            }
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                if (btn) {
+                    btn.disabled = true;
+                    btn.dataset.originalText = btn.innerHTML;
+                    btn.innerHTML = '<svg class="animate-spin h-5 w-5 mr-2 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8z"/></svg> Αποστολή…';
+                }
+
+                try {
+                    const formData = new FormData(form);
+
+                    const messageEl = form.querySelector('#message');
+                    if (messageEl) {
+                        const rawMsg = messageEl.value || '';
+                        const escapedMsg = JSON.stringify(rawMsg).slice(1, -1);
+                        formData.set('message', escapedMsg);
+                    }
+
+                    let prefixValue = '';
+                    if (prefixEl) {
+                        if (prefixEl.value === 'other' && customEl) {
+                            prefixValue = customEl.value || '';
+                        } else {
+                            prefixValue = prefixEl.value || '';
+                        }
+                    }
+
+                    const rawPhone = phoneEl ? phoneEl.value : '';
+                    const digitsOnlyPhone = (rawPhone || '').replace(/\D/g, '');
+
+                    if (digitsOnlyPhone.length !== 7) {
+                        throw new Error('Μη έγκυρο τηλέφωνο: ο τοπικός αριθμός πρέπει να περιέχει ακριβώς 7 ψηφία');
+                    }
+
+                    const combined = (prefixValue + digitsOnlyPhone).replace(/\D/g, '');
+
+                    if (!combined) throw new Error('Μη έγκυρο τηλέφωνο');
+
+                    formData.set('phone', combined);
+                    formData.delete('phone_prefix');
+                    formData.delete('phone_prefix_custom');
+
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                    });
+
+                    if (!response.ok) {
+                        let errMsg = `Σφάλμα ${response.status}`;
+                        const ct = response.headers.get('content-type') || '';
+                        if (ct.includes('application/json')) {
+                            const data = await response.json();
+                            errMsg += ': ' + (data.message || JSON.stringify(data));
+                        } else {
+                            const txt = await response.text();
+                            errMsg += ': ' + txt;
+                        }
+                        throw new Error(errMsg);
+                    }
+
+                    const ct = response.headers.get('content-type') || '';
+                    if (ct.includes('application/json')) {
+                        await response.json();
+                    }
+
+                    form.reset();
+                    if (thanks) {
+                        thanks.classList.remove('hidden');
+                        setTimeout(() => thanks.classList.add('hidden'), 5000);
+                    }
+                } catch (err) {
+                    console.error('Submit failed:', err);
+                    alert(err && err.message ? err.message : 'Παρουσιάστηκε πρόβλημα. Παρακαλώ δοκιμάστε ξανά αργότερα.');
+                } finally {
+                    if (btn) {
+                        btn.disabled = false;
+                        btn.innerHTML = btn.dataset.originalText || 'Αποστολή';
+                    }
+                }
+            });
+        });
+    </script>
+</body>
