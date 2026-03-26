@@ -1,18 +1,52 @@
 <head>
     <script src="https://unpkg.com/lucide@latest"></script>
 
-
     <link rel="stylesheet" href="{{ '/assets/css/fontawesome-free/css/all.min.css' | relative_url }}">
-
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        /* --- Layout rules requested --- */
         .pricing-layout {
             display: grid;
             gap: 1rem;
+        }
+        .audience-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            flex: 1;
+        }
+        .audience-btn:hover {
+            border-color: #3b9ba8;
+        }
+        .audience-btn.active {
+            border-color: #3b9ba8;
+            background: #f0fafa;
+        }
+        .audience-btn .audience-icon {
+            font-size: 2rem;
+            color: #94a3b8;
+        }
+        .audience-btn.active .audience-icon {
+            color: #3b9ba8;
+        }
+        .audience-btn .audience-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #334155;
+        }
+        .audience-btn .audience-desc {
+            font-size: 0.875rem;
+            color: #64748b;
         }
     </style>
 </head>
@@ -23,395 +57,440 @@
         <section id="pricing" class="section-main-soft-gradient scroll-target py-16 bg-gray-50 relative">
             <div class="section-container max-w-7xl mx-auto px-4">
 
-                <!-- Section heading -->
-                <h2 class="section-title text-center mb-8">
-                    Επιλέξτε το πρόγραμμα που ταιριάζει στις ανάγκες σας
+                <!-- Ποιος είστε; -->
+                <h2 class="section-title text-center mb-4">
+                    Ποιος είστε;
                 </h2>
+                <p class="paragraph-md text-center mb-8" style="color:#64748b;">
+                    Επιλέξτε το πρόγραμμα που ταιριάζει στις ανάγκες σας.
+                </p>
 
-                <!-- toggle -->
-                <div class="toggle-container">
-                    <div class="inline-flex" role="group" aria-label="Billing period toggle">
-                        <button id="toggle-monthly" class="btn-toggle-left">
-                            Μηνιαία
-                        </button>
-                        <button id="toggle-yearly" class="btn-toggle-right">
-                            Ετήσια
-                        </button>
-                    </div>
+                <!-- Audience toggle -->
+                <div class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto mb-12">
+                    <button id="audience-doctor" class="audience-btn active" onclick="setAudience('doctor')">
+                        <i class="fas fa-stethoscope audience-icon"></i>
+                        <span class="audience-label">Είμαι Γιατρός</span>
+                        <span class="audience-desc">Διαχειρίζομαι ιατρείο ή κλινική</span>
+                    </button>
+                    <button id="audience-family" class="audience-btn" onclick="setAudience('family')">
+                        <i class="fas fa-house-medical audience-icon"></i>
+                        <span class="audience-label">Διαχειρίζομαι την υγεία της οικογένειάς μου</span>
+                        <span class="audience-desc">Προσωπική και οικογενειακή χρήση</span>
+                    </button>
                 </div>
 
+                <!-- ===== ΤΜΗΜΑ ΓΙΑΤΡΟΥ ===== -->
+                <div id="section-doctor">
 
+                    <p class="paragraph-md text-center mb-8">
+                        Το <strong>πρόγραμμα Studio</strong> δίνει στους γιατρούς ένα προσωπικό, φορητό αρχείο ασθενών — οργανωμένο, αναζητήσιμο και προσβάσιμο από κάθε κλινική.
+                    </p>
 
-
-                <!-- Family -->
-                <article class="plan-card">
-                    <div class="ribbon-wrap">
-                        <div class="ribbon">Πιο δημοφιλές</div>
-                    </div>
-                    <header>
-                        <div>
-                            <h3 class="mt-0">Family</h3>
-                        </div>
-                    </header>
-
-                    <div>
-                        <div class="plan-image-wrapper w-full">
-                            <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_family.png"
-                                alt="Family plan" />
-                            <img class="plan-img plan-img--large" src="assets/images/ippoplans/family.png"
-                                alt="Family plan" />
-                        </div>
-
-                        <table role="table" aria-label="Plan limits">
-                            <tbody>
-                                <tr>
-                                    <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
-                                    <td><span>2</span></td>
-                                    <td><strong>Διαχειριστές</strong></td>
-                                </tr>
-
-                                <tr>
-                                    <td><i class="fas fa-users smaller-icon-size"></i></td>
-                                    <td><span>5</span></td>
-                                    <td><strong>Προφίλ</strong></td>
-                                </tr>
-
-                                <tr>
-                                    <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
-                                    <td><span>500</span></td>
-                                    <td><strong>Μεταφορτώσεις εγγράφων ανά έτος</strong></td>
-                                </tr>
-
-                                <tr>
-                                    <td><i class="fas fa-link smaller-icon-size"></i></td>
-                                    <td><span>∞</span></td>
-                                    <td><strong>Ippolinks ανά έτος</strong></td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-
-
-
-                        <div class="mt-5 text-center">
-                            <div class="section-header line-through price-yearly hidden">
-                                <strong class="text-gray-700">96,00 €</strong>
-                                <span class="text-gray-700">ετήσια</span>
-                            </div>
-
-                            <div class="section-header">
-                                <strong class="price-monthly">8,00 €</strong>
-                                <strong class="price-yearly hidden">80,00 €</strong>
-
-                                <span class="price-monthly">μηνιαία</span>
-                                <span class="price-yearly hidden">ετήσια</span>
-                            </div>
+                    <!-- Billing toggle -->
+                    <div class="toggle-container mb-8">
+                        <div class="inline-flex" role="group" aria-label="Περίοδος χρέωσης">
+                            <button id="doctor-toggle-monthly" class="btn-toggle-left btn-toggled">Μηνιαίο</button>
+                            <button id="doctor-toggle-yearly" class="btn-toggle-right">Ετήσιο</button>
                         </div>
                     </div>
 
-                    <footer class="mt-5 text-center">
-                        <a class="main-color-button" href="https://app.ippocra.com/register">Επιλογή Προγράμματος</a>
-                    </footer>
-                </article>
-
-
-                <div class="plans-grid">
-
-
-                    <!-- Ippo -->
-                    <article class="mt-5 plan-card">
+                    <!-- Studio plan card -->
+                    <div class="plan-card mx-auto" style="max-width:460px;">
                         <div class="ribbon-wrap">
-                            <div class="ribbon">Δωρεάν</div>
+                            <div class="ribbon">14 ημέρες δωρεάν</div>
                         </div>
                         <header>
                             <div>
-                                <h3 class="mt-0">Ippo</h3>
+                                <h3 class="mt-0 text-center">Studio</h3>
                             </div>
                         </header>
 
                         <div>
-                            <div class="plan-image-wrapper w-full">
-                                <img class="plan-img plan-img--small" src="assets/images/ippoplans/solo_head.png"
-                                    alt="Family plan" />
-                                <img class="plan-img plan-img--large" src="assets/images/ippoplans/solo_head.png"
-                                    alt="Family plan" />
-                            </div>
-
-                            <table role="table" aria-label="Plan limits">
+                            <table role="table" aria-label="Όρια προγράμματος">
                                 <tbody>
                                     <tr>
                                         <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
                                         <td><span>1</span></td>
-                                        <td><strong>Διαχειριστές</strong></td>
+                                        <td><strong>Διαχειριστής</strong></td>
                                     </tr>
-
                                     <tr>
-                                        <td><i class="fas fa-users smaller-icon-size"></i></td>
-                                        <td><span>2</span></td>
-                                        <td><strong>Προφίλ</strong></td>
+                                        <td><i class="fas fa-user-injured smaller-icon-size"></i></td>
+                                        <td><span>1.000</span></td>
+                                        <td><strong>Ασθενείς</strong></td>
                                     </tr>
-
                                     <tr>
                                         <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
-                                        <td><span>5</span></td>
-                                        <td><strong>Μεταφορτώσεις εγγράφων ανά έτος</strong></td>
+                                        <td><span>2.000</span></td>
+                                        <td><strong>Αναρτήσεις εγγράφων ανά έτος</strong></td>
                                     </tr>
-
-                                    <tr>
-                                        <td><i class="fas fa-link smaller-icon-size"></i></td>
-                                        <td><span>∞</span></td>
-                                        <td><strong>Ippolinks ανά έτος</strong></td>
-                                    </tr>
-
                                 </tbody>
                             </table>
+                            <ul class="mt-4 space-y-2" style="list-style:none; padding:0; margin:0;">
+                                <li class="flex items-center gap-2 paragraph-md">
+                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
+                                    Εισαγωγή φακέλου με ένα κλικ
+                                </li>
+                                <li class="flex items-center gap-2 paragraph-md">
+                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
+                                    Διαχρονικό χρονοδιάγραμμα ασθενούς
+                                </li>
+                                <li class="flex items-center gap-2 paragraph-md">
+                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
+                                    Πρόσβαση cloud σε πολλαπλές κλινικές
+                                </li>
+                                <li class="flex items-center gap-2 paragraph-md">
+                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
+                                    Κρυπτογράφηση AES-256 &amp; συμμόρφωση GDPR
+                                </li>
+                            </ul>
 
-
-                            <div class="mt-5 text-center">
-                                <div class="section-header">
-                                    <strong>Δωρεάν</strong>
+                            <div class="mt-6 text-center">
+                                <div id="doctor-price-monthly" class="section-header">
+                                    <strong>€49</strong>
+                                    <span style="font-size:1rem; font-weight:400;">/μήνα</span>
                                 </div>
+                                <div id="doctor-price-yearly" class="hidden">
+                                    <div class="section-header" style="text-decoration:line-through; color:#94a3b8;">
+                                        €588 /έτος
+                                    </div>
+                                    <div class="section-header">
+                                        <strong>€490</strong>
+                                        <span style="font-size:1rem; font-weight:400;">/έτος</span>
+                                        <span class="ml-2 px-2 py-0.5 rounded-full text-sm font-semibold" style="background:#dcfce7; color:#16a34a;">Εξοικονόμηση 20%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-3 text-center">
+                                <span class="text-sm" style="color:#64748b;">
+                                    <i class="fas fa-calendar-check" style="color:#3b9ba8;"></i>
+                                    14 ημέρες δωρεάν δοκιμή — χωρίς πιστωτική κάρτα
+                                </span>
                             </div>
                         </div>
 
-                        <footer class="mt-5 text-center">
-                            <a class="main-color-button" href="https://app.ippocra.com/register">Επιλογή Προγράμματος</a>
+                        <footer class="mt-6 text-center">
+                            <a class="main-color-button" href="https://app.ippocra.com/register">Έναρξη δωρεάν δοκιμής</a>
                         </footer>
-                    </article>
+                    </div>
 
-
-
-
-                    <!-- Just Us -->
-                    <article class="mt-5 plan-card">
-                        <header>
-                            <div>
-                                <h3 class="mt-0">Just Us</h3>
-                            </div>
-                        </header>
-
-                        <div>
-                            <div class="plan-image-wrapper w-full">
-                                <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_just_us.png"
-                                    alt="Family plan" />
-                                <img class="plan-img plan-img--large" src="assets/images/ippoplans/just_us.png"
-                                    alt="Family plan" />
-                            </div>
-
-                            <table role="table" aria-label="Plan limits">
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
-                                        <td><span>2</span></td>
-                                        <td><strong>Διαχειριστές</strong></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><i class="fas fa-users smaller-icon-size"></i></td>
-                                        <td><span>2</span></td>
-                                        <td><strong>Προφίλ</strong></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
-                                        <td><span>200</span></td>
-                                        <td><strong>Μεταφορτώσεις εγγράφων ανά έτος</strong></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><i class="fas fa-link smaller-icon-size"></i></td>
-                                        <td><span>∞</span></td>
-                                        <td><strong>Ippolinks ανά έτος</strong></td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-
-
-
-                            <div class="mt-5 text-center">
-                                <div class="section-header line-through price-yearly hidden">
-                                    <strong class="text-gray-700">60,00 €</strong>
-                                    <span class="text-gray-700">ετήσια</span>
-                                </div>
-
-                                <div class="section-header">
-                                    <strong class="price-monthly">5,00 €</strong>
-                                    <strong class="price-yearly hidden">50,00 €</strong>
-
-                                    <span class="price-monthly">μηνιαία</span>
-                                    <span class="price-yearly hidden">ετήσια</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <footer class="mt-5 text-center">
-                            <a class="main-color-button" href="https://app.ippocra.com/register">Επιλογή Προγράμματος</a>
-                        </footer>
-                    </article>
-
-
-
-
-                    <!-- Family Plus -->
-                    <article class="mt-5 plan-card">
-                        <header>
-                            <div>
-                                <h3 class="mt-0">Family Plus</h3>
-                            </div>
-                        </header>
-
-                        <div>
-                            <div class="plan-image-wrapper w-full">
-                                <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_family.png"
-                                    alt="Family plan" />
-                                <img class="plan-img plan-img--large" src="assets/images/ippoplans/family.png"
-                                    alt="Family plan" />
-                            </div>
-
-                            <table role="table" aria-label="Plan limits">
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
-                                        <td><span>4</span></td>
-                                        <td><strong>Διαχειριστές</strong></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><i class="fas fa-users smaller-icon-size"></i></td>
-                                        <td><span>10</span></td>
-                                        <td><strong>Προφίλ</strong></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
-                                        <td><span>1000</span></td>
-                                        <td><strong>Μεταφορτώσεις εγγράφων ανά έτος</strong></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><i class="fas fa-link smaller-icon-size"></i></td>
-                                        <td><span>∞</span></td>
-                                        <td><strong>Ippolinks ανά έτος</strong></td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-
-
-
-                            <div class="mt-5 text-center">
-                                <div class="section-header line-through price-yearly hidden">
-                                    <strong class="text-gray-700">120,00 €</strong>
-                                    <span class="text-gray-700">ετήσια</span>
-                                </div>
-
-                                <div class="section-header">
-                                    <strong class="price-monthly">10,00 €</strong>
-                                    <strong class="price-yearly hidden">100,00 €</strong>
-
-                                    <span class="price-monthly">μηνιαία</span>
-                                    <span class="price-yearly hidden">ετήσια</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <footer class="mt-5 text-center">
-                            <a class="main-color-button" href="https://app.ippocra.com/register">Επιλογή Προγράμματος</a>
-                        </footer>
-                    </article>
-
-
-
-                    <!-- End of Cards -->
+                    <p class="mt-10 text-center text-sm" style="color:#64748b;">
+                        Διαχειρίζεστε κέντρο imaging;
+                        <a href="/imaging" style="color:#3b9ba8; text-decoration:underline;">Δείτε το πρόγραμμα Imaging →</a>
+                    </p>
                 </div>
 
+                <!-- ===== ΤΜΗΜΑ ΟΙΚΟΓΕΝΕΙΑΣ ===== -->
+                <div id="section-family" class="hidden">
 
+                    <!-- toggle -->
+                    <div class="toggle-container">
+                        <div class="inline-flex" role="group" aria-label="Περίοδος χρέωσης">
+                            <button id="toggle-monthly" class="btn-toggle-left">
+                                Μηνιαίο
+                            </button>
+                            <button id="toggle-yearly" class="btn-toggle-right">
+                                Ετήσιο
+                            </button>
+                        </div>
+                    </div>
 
-                <!-- Small note under the grid -->
-                <p class="mt-8 text-center text-sm text-gray-600">
-                    <strong>Αν επιλέξετε τα ετήσια προγράμματα εξοικονομείτε 2 μήνες!</strong>
-                </p>
+                    <!-- Family -->
+                    <article class="plan-card">
+                        <div class="ribbon-wrap">
+                            <div class="ribbon">Πιο δημοφιλές</div>
+                        </div>
+                        <header>
+                            <div><h3 class="mt-0">Οικογένεια</h3></div>
+                        </header>
+                        <div>
+                            <div class="plan-image-wrapper w-full">
+                                <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_family.png" alt="Πρόγραμμα Οικογένεια" />
+                                <img class="plan-img plan-img--large" src="assets/images/ippoplans/family.png" alt="Πρόγραμμα Οικογένεια" />
+                            </div>
+                            <table role="table" aria-label="Όρια προγράμματος">
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
+                                        <td><span>2</span></td>
+                                        <td><strong>Διαχειριστές</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-users smaller-icon-size"></i></td>
+                                        <td><span>5</span></td>
+                                        <td><strong>Προφίλ</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
+                                        <td><span>500</span></td>
+                                        <td><strong>Αναρτήσεις εγγράφων/έτος</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-link smaller-icon-size"></i></td>
+                                        <td><span>∞</span></td>
+                                        <td><strong>Ippolink/έτος</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="mt-5 text-center">
+                                <div class="section-header line-through price-yearly hidden">
+                                    <strong class="text-gray-700">96,00 €</strong>
+                                    <span class="text-gray-700">ετήσιο</span>
+                                </div>
+                                <div class="section-header">
+                                    <strong class="price-monthly">8,00 €</strong>
+                                    <strong class="price-yearly hidden">80,00 €</strong>
+                                    <span class="price-monthly">μηνιαίο</span>
+                                    <span class="price-yearly hidden">ετήσιο</span>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="mt-5 text-center">
+                            <a class="main-color-button" href="https://app.ippocra.com/register">Επιλογή προγράμματος</a>
+                        </footer>
+                    </article>
 
-                <!-- Business call-to-action -->
-                <div class="mt-12 text-center">
-                    <h3 class="text-xl font-semibold mb-2">Είστε Επιχείρηση;</h3>
-                    <p class="text-gray-700">
-                        <a href="/el/business" class="text-primary-600 underline hover:text-primary-800">
-                            Διαβάστε περισσότερα στη σελίδα μας για επιχειρήσεις
-                        </a>
+                    <div class="plans-grid">
+
+                        <!-- Ippo -->
+                        <article class="mt-5 plan-card">
+                            <div class="ribbon-wrap">
+                                <div class="ribbon">Δωρεάν</div>
+                            </div>
+                            <header>
+                                <div><h3 class="mt-0">Ippo</h3></div>
+                            </header>
+                            <div>
+                                <div class="plan-image-wrapper w-full">
+                                    <img class="plan-img plan-img--small" src="assets/images/ippoplans/solo_head.png" alt="Πρόγραμμα Ippo" />
+                                    <img class="plan-img plan-img--large" src="assets/images/ippoplans/solo_head.png" alt="Πρόγραμμα Ippo" />
+                                </div>
+                                <table role="table" aria-label="Όρια προγράμματος">
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
+                                            <td><span>1</span></td>
+                                            <td><strong>Διαχειριστής</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-users smaller-icon-size"></i></td>
+                                            <td><span>2</span></td>
+                                            <td><strong>Προφίλ</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
+                                            <td><span>5</span></td>
+                                            <td><strong>Αναρτήσεις εγγράφων/έτος</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-link smaller-icon-size"></i></td>
+                                            <td><span>∞</span></td>
+                                            <td><strong>Ippolink/έτος</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="mt-5 text-center">
+                                    <div class="section-header"><strong>Δωρεάν</strong></div>
+                                </div>
+                            </div>
+                            <footer class="mt-5 text-center">
+                                <a class="main-color-button" href="https://app.ippocra.com/register">Επιλογή προγράμματος</a>
+                            </footer>
+                        </article>
+
+                        <!-- Just Us -->
+                        <article class="mt-5 plan-card">
+                            <header>
+                                <div><h3 class="mt-0">Μόνο Εμείς</h3></div>
+                            </header>
+                            <div>
+                                <div class="plan-image-wrapper w-full">
+                                    <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_just_us.png" alt="Πρόγραμμα Μόνο Εμείς" />
+                                    <img class="plan-img plan-img--large" src="assets/images/ippoplans/just_us.png" alt="Πρόγραμμα Μόνο Εμείς" />
+                                </div>
+                                <table role="table" aria-label="Όρια προγράμματος">
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
+                                            <td><span>2</span></td>
+                                            <td><strong>Διαχειριστές</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-users smaller-icon-size"></i></td>
+                                            <td><span>2</span></td>
+                                            <td><strong>Προφίλ</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
+                                            <td><span>200</span></td>
+                                            <td><strong>Αναρτήσεις εγγράφων/έτος</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-link smaller-icon-size"></i></td>
+                                            <td><span>∞</span></td>
+                                            <td><strong>Ippolink/έτος</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="mt-5 text-center">
+                                    <div class="section-header line-through price-yearly hidden">
+                                        <strong class="text-gray-700">60,00 €</strong>
+                                        <span class="text-gray-700">ετήσιο</span>
+                                    </div>
+                                    <div class="section-header">
+                                        <strong class="price-monthly">5,00 €</strong>
+                                        <strong class="price-yearly hidden">50,00 €</strong>
+                                        <span class="price-monthly">μηνιαίο</span>
+                                        <span class="price-yearly hidden">ετήσιο</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer class="mt-5 text-center">
+                                <a class="main-color-button" href="https://app.ippocra.com/register">Επιλογή προγράμματος</a>
+                            </footer>
+                        </article>
+
+                        <!-- Family Plus -->
+                        <article class="mt-5 plan-card">
+                            <header>
+                                <div><h3 class="mt-0">Οικογένεια Plus</h3></div>
+                            </header>
+                            <div>
+                                <div class="plan-image-wrapper w-full">
+                                    <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_family.png" alt="Πρόγραμμα Οικογένεια Plus" />
+                                    <img class="plan-img plan-img--large" src="assets/images/ippoplans/family.png" alt="Πρόγραμμα Οικογένεια Plus" />
+                                </div>
+                                <table role="table" aria-label="Όρια προγράμματος">
+                                    <tbody>
+                                        <tr>
+                                            <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
+                                            <td><span>4</span></td>
+                                            <td><strong>Διαχειριστές</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-users smaller-icon-size"></i></td>
+                                            <td><span>10</span></td>
+                                            <td><strong>Προφίλ</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
+                                            <td><span>1000</span></td>
+                                            <td><strong>Αναρτήσεις εγγράφων/έτος</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fas fa-link smaller-icon-size"></i></td>
+                                            <td><span>∞</span></td>
+                                            <td><strong>Ippolink/έτος</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="mt-5 text-center">
+                                    <div class="section-header line-through price-yearly hidden">
+                                        <strong class="text-gray-700">120,00 €</strong>
+                                        <span class="text-gray-700">ετήσιο</span>
+                                    </div>
+                                    <div class="section-header">
+                                        <strong class="price-monthly">10,00 €</strong>
+                                        <strong class="price-yearly hidden">100,00 €</strong>
+                                        <span class="price-monthly">μηνιαίο</span>
+                                        <span class="price-yearly hidden">ετήσιο</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <footer class="mt-5 text-center">
+                                <a class="main-color-button" href="https://app.ippocra.com/register">Επιλογή προγράμματος</a>
+                            </footer>
+                        </article>
+
+                    </div>
+
+                    <p class="mt-8 text-center text-sm text-gray-600">
+                        <strong>Με τα ετήσια προγράμματα εξοικονομείτε 2 μήνες!</strong>
                     </p>
+
+                    <div class="mt-10 text-center text-sm" style="color:#64748b;">
+                        Είστε γιατρός ή διαχειρίζεστε κέντρο imaging;
+                        <a href="/doctors" style="color:#3b9ba8; text-decoration:underline;">Δείτε το πρόγραμμα Studio</a>
+                        &nbsp;·&nbsp;
+                        <a href="/imaging" style="color:#3b9ba8; text-decoration:underline;">Λύσεις Imaging</a>
+                    </div>
                 </div>
 
             </div>
 
-
             <script>
+                function setAudience(audience) {
+                    const doctorSection = document.getElementById('section-doctor');
+                    const familySection = document.getElementById('section-family');
+                    const doctorBtn = document.getElementById('audience-doctor');
+                    const familyBtn = document.getElementById('audience-family');
+
+                    if (audience === 'doctor') {
+                        doctorSection.classList.remove('hidden');
+                        familySection.classList.add('hidden');
+                        doctorBtn.classList.add('active');
+                        familyBtn.classList.remove('active');
+                    } else {
+                        doctorSection.classList.add('hidden');
+                        familySection.classList.remove('hidden');
+                        doctorBtn.classList.remove('active');
+                        familyBtn.classList.add('active');
+                    }
+                }
+
                 document.addEventListener('DOMContentLoaded', () => {
+                    const doctorMonthlyBtn = document.getElementById('doctor-toggle-monthly');
+                    const doctorYearlyBtn = document.getElementById('doctor-toggle-yearly');
+
+                    if (doctorMonthlyBtn && doctorYearlyBtn) {
+                        const setDoctorMode = (mode) => {
+                            const showMonthly = mode === 'monthly';
+                            document.getElementById('doctor-price-monthly').classList.toggle('hidden', !showMonthly);
+                            document.getElementById('doctor-price-yearly').classList.toggle('hidden', showMonthly);
+                            doctorMonthlyBtn.classList.toggle('btn-toggled', showMonthly);
+                            doctorYearlyBtn.classList.toggle('btn-toggled', !showMonthly);
+                        };
+
+                        setDoctorMode('monthly');
+                        doctorMonthlyBtn.addEventListener('click', () => setDoctorMode('monthly'));
+                        doctorYearlyBtn.addEventListener('click', () => setDoctorMode('yearly'));
+                    }
+
                     const monthlyBtn = document.getElementById('toggle-monthly');
                     const yearlyBtn = document.getElementById('toggle-yearly');
 
-                    const setMode = (mode) => {
-                        const showMonthly = mode === 'monthly';
+                    if (monthlyBtn && yearlyBtn) {
+                        const setMode = (mode) => {
+                            const showMonthly = mode === 'monthly';
+                            document.querySelectorAll('.price-monthly').forEach(el =>
+                                el.classList.toggle('hidden', !showMonthly)
+                            );
+                            document.querySelectorAll('.price-yearly').forEach(el =>
+                                el.classList.toggle('hidden', showMonthly)
+                            );
+                            monthlyBtn.classList.toggle('btn-toggled', showMonthly);
+                            yearlyBtn.classList.toggle('btn-toggled', !showMonthly);
+                        };
 
-                        document.querySelectorAll('.price-monthly').forEach(el =>
-                            el.classList.toggle('hidden', !showMonthly)
-                        );
-                        document.querySelectorAll('.price-yearly').forEach(el =>
-                            el.classList.toggle('hidden', showMonthly)
-                        );
+                        setMode('monthly');
+                        monthlyBtn.addEventListener('click', () => setMode('monthly'));
+                        yearlyBtn.addEventListener('click', () => setMode('yearly'));
+                    }
 
-                        monthlyBtn.classList.toggle('btn-toggled', showMonthly);
-                        yearlyBtn.classList.toggle('btn-toggled', !showMonthly);
-                    };
-
-                    setMode('monthly');
-
-                    monthlyBtn.addEventListener('click', () => setMode('monthly'));
-                    yearlyBtn.addEventListener('click', () => setMode('yearly'));
+                    const params = new URLSearchParams(window.location.search);
+                    if (params.get('for') === 'family') {
+                        setAudience('family');
+                    }
                 });
             </script>
         </section>
 
-        <!-- Keep your other scripts below as-is -->
         <script>
-            // Initial load animations for hero
-            document.addEventListener('DOMContentLoaded', () => {
-                const heroContent = document.querySelector('#hero .animate-fadeInUp');
-                if (heroContent) heroContent.style.opacity = '1';
-
-                const ctaSectionContent = document.querySelector('.cta-bg-gradient .animate-fadeInUp');
-                if (ctaSectionContent) ctaSectionContent.style.opacity = '1';
-            });
-
-            // Fade in elements on initial load
             document.addEventListener('DOMContentLoaded', () => {
                 document.querySelectorAll('.animate-fadeInUp').forEach(el => {
                     el.style.opacity = '1';
                 });
             });
-
-            function observeAndAnimate(selector, visibleClass = 'is-visible', threshold = 0.1) {
-                const el = document.querySelector(selector);
-                if (!el) return;
-
-                const observer = new IntersectionObserver((entries) => {
-                    const entry = entries[0];
-                    if (entry.isIntersecting) {
-                        el.classList.add(visibleClass);
-                        observer.unobserve(el);
-                    }
-                }, { threshold });
-
-                observer.observe(el);
-            }
-
-            observeAndAnimate('#whyippo');
-            observeAndAnimate('#fse');
-            observeAndAnimate('#features');
-            observeAndAnimate('#connector');
-            observeAndAnimate('#join');
-            observeAndAnimate('#faq');
 
             if (window.lucide) lucide.createIcons();
         </script>

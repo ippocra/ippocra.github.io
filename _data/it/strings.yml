@@ -3,8 +3,8 @@ navigation:
     title: Medici
     url: /doctors
   business:
-    title: Professionisti
-    url: /business
+    title: Imaging
+    url: /imaging
   pricing:
     title: Prezzi
     url: /pricing
