@@ -64,6 +64,36 @@
     margin-bottom: 0.25rem;
   }
 
+  .pricing-jump-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.85rem;
+    margin-top: 1.75rem;
+  }
+
+  .pricing-jump-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 220px;
+    padding: 0.95rem 1.2rem;
+    border-radius: 999px;
+    border: 1px solid #bfe5e8;
+    background: #ffffff;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  }
+
+  .pricing-jump-link:hover {
+    border-color: #3b9ba8;
+    color: #0f172a;
+    text-decoration: none;
+  }
+
   .pricing-section {
     margin-top: 4rem;
   }
@@ -105,6 +135,11 @@
 
   .pricing-card-grid--single {
     grid-template-columns: minmax(0, 520px);
+    justify-content: center;
+  }
+
+  .pricing-card-grid--family {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .pricing-plan {
@@ -317,9 +352,19 @@
     font-size: 0.95rem;
   }
 
+  @media (max-width: 1024px) {
+    .pricing-card-grid--family {
+      grid-template-columns: 1fr;
+    }
+  }
+
   @media (max-width: 768px) {
     .pricing-shell {
       padding-top: 3rem;
+    }
+
+    .pricing-jump-link {
+      width: 100%;
     }
 
     .pricing-proof-grid {
@@ -363,6 +408,10 @@
           <strong>Η ασφάλεια περιλαμβάνεται</strong>
           Κρυπτογράφηση AES-256, πρόσβαση μέσω cloud και συμμόρφωση GDPR για ευαίσθητα ιατρικά έγγραφα.
         </div>
+      </div>
+      <div class="pricing-jump-links" aria-label="Μετάβαση απευθείας στην ενότητα τιμών που θέλετε">
+        <a class="pricing-jump-link" href="#doctor-pricing"><i class="fas fa-stethoscope"></i> Μετάβαση στις τιμές για γιατρούς</a>
+        <a class="pricing-jump-link" href="#family-pricing"><i class="fas fa-house-medical"></i> Μετάβαση στις τιμές για οικογένειες</a>
       </div>
     </header>
 
@@ -437,7 +486,7 @@
         </p>
       </div>
 
-      <div class="pricing-card-grid">
+      <div class="pricing-card-grid pricing-card-grid--family">
         <article id="ippo" class="pricing-plan">
           <span class="pricing-badge pricing-badge--light">Δωρεάν</span>
           <div>
