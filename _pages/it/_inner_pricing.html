@@ -1,504 +1,709 @@
-<head>
-    <script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  .pricing-page {
+    background: linear-gradient(180deg, #f8fbfb 0%, #ffffff 24%, #f6f8fb 100%);
+  }
 
-    <link rel="stylesheet" href="{{ '/assets/css/fontawesome-free/css/all.min.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  .pricing-shell {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 4rem 1rem 5rem;
+  }
 
-    <style>
-        .pricing-layout {
-            display: grid;
-            gap: 1rem;
-        }
-        .audience-btn {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            padding: 1.5rem 2rem;
-            border-radius: 12px;
-            border: 2px solid #e2e8f0;
-            background: white;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            flex: 1;
-        }
-        .audience-btn:hover {
-            border-color: #3b9ba8;
-        }
-        .audience-btn.active {
-            border-color: #3b9ba8;
-            background: #f0fafa;
-        }
-        .audience-btn .audience-icon {
-            font-size: 2rem;
-            color: #94a3b8;
-        }
-        .audience-btn.active .audience-icon {
-            color: #3b9ba8;
-        }
-        .audience-btn .audience-label {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #334155;
-        }
-        .audience-btn .audience-desc {
-            font-size: 0.875rem;
-            color: #64748b;
-        }
-    </style>
-</head>
+  .pricing-hero {
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto 3rem;
+  }
 
-<body class="text-slate-700 antialiased">
-    <main id="main-content">
-        <!-- ====================== PRICING SECTION ====================== -->
-        <section id="pricing" class="section-main-soft-gradient scroll-target py-16 bg-gray-50 relative">
-            <div class="section-container max-w-7xl mx-auto px-4">
+  .pricing-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    background: #e8f7f8;
+    color: #23616a;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
 
-                <!-- Chi sei? -->
-                <h2 class="section-title text-center mb-4">
-                    Chi sei?
-                </h2>
-                <p class="paragraph-md text-center mb-8" style="color:#64748b;">
-                    Scegli il piano più adatto alle tue esigenze.
-                </p>
+  .pricing-hero h1 {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    color: #0f172a;
+    margin-bottom: 1rem;
+  }
 
-                <!-- Audience toggle -->
-                <div class="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto mb-12">
-                    <button id="audience-doctor" class="audience-btn active" onclick="setAudience('doctor')">
-                        <i class="fas fa-stethoscope audience-icon"></i>
-                        <span class="audience-label">Sono un Medico</span>
-                        <span class="audience-desc">Gestisco uno studio o un ambulatorio</span>
-                    </button>
-                    <button id="audience-family" class="audience-btn" onclick="setAudience('family')">
-                        <i class="fas fa-house-medical audience-icon"></i>
-                        <span class="audience-label">Gestisco la salute della mia famiglia</span>
-                        <span class="audience-desc">Uso personale e familiare</span>
-                    </button>
-                </div>
+  .pricing-hero p {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: #475569;
+    margin-bottom: 1.5rem;
+  }
 
-                <!-- ===== SEZIONE MEDICO ===== -->
-                <div id="section-doctor">
+  .pricing-pill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.9rem;
+    margin-top: 1.75rem;
+  }
 
-                    <p class="paragraph-md text-center mb-8">
-                        Il <strong>piano Studio</strong> offre ai medici un archivio pazienti personale e portatile — organizzato, ricercabile e accessibile da ogni ambulatorio.
-                    </p>
+  .pricing-pill {
+    background: white;
+    border: 1px solid #dbe7ee;
+    border-radius: 18px;
+    padding: 1rem 1.1rem;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  }
 
-                    <!-- Billing toggle -->
-                    <div class="toggle-container mb-8">
-                        <div class="inline-flex" role="group" aria-label="Periodo di fatturazione">
-                            <button id="doctor-toggle-monthly" class="btn-toggle-left btn-toggled">Mensile</button>
-                            <button id="doctor-toggle-yearly" class="btn-toggle-right">Annuale</button>
-                        </div>
-                    </div>
+  .pricing-pill strong {
+    display: block;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+  }
 
-                    <!-- Studio plan card -->
-                    <div class="plan-card mx-auto" style="max-width:460px;">
-                        <div class="ribbon-wrap">
-                            <div class="ribbon">14 giorni gratuiti</div>
-                        </div>
-                        <header>
-                            <div>
-                                <div class="plan-image-wrapper w-full">
-                                    <img class="plan-img plan-img--small" src="assets/images/ippoplans/ippodoc_head.png" alt="Piano Studio" />
-                                    <img class="plan-img plan-img--large" src="assets/images/ippoplans/ippodoc_head.png" alt="Piano Studio" />
-                                </div>
-                                <h3 class="mt-0 text-center">Studio</h3>
-                            </div>
-                        </header>
+  .pricing-section {
+    margin-top: 4rem;
+  }
 
-                        <div>
-                            <table role="table" aria-label="Limiti del piano">
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
-                                        <td><span>1</span></td>
-                                        <td><strong>Admin</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-user-injured smaller-icon-size"></i></td>
-                                        <td><span>1.000</span></td>
-                                        <td><strong>Pazienti</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
-                                        <td><span>2.000</span></td>
-                                        <td><strong>Documenti caricati per anno</strong></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <ul class="mt-4 space-y-2" style="list-style:none; padding:0; margin:0;">
-                                <li class="flex items-center gap-2 paragraph-md">
-                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
-                                    Importazione cartelle in un click
-                                </li>
-                                <li class="flex items-center gap-2 paragraph-md">
-                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
-                                    Timeline longitudinale del paziente
-                                </li>
-                                <li class="flex items-center gap-2 paragraph-md">
-                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
-                                    Accesso cloud multi-ambulatorio
-                                </li>
-                                <li class="flex items-center gap-2 paragraph-md">
-                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
-                                    Crittografia AES-256 e conformità GDPR
-                                </li>
-                            </ul>
+  .pricing-section-header {
+    max-width: 760px;
+    margin-bottom: 1.75rem;
+  }
 
-                            <div class="mt-6 text-center">
-                                <div id="doctor-price-monthly" class="section-header">
-                                    <strong>€49</strong>
-                                    <span style="font-size:1rem; font-weight:400;">/mese</span>
-                                </div>
-                                <div id="doctor-price-yearly" class="hidden">
-                                    <div class="section-header" style="text-decoration:line-through; color:#94a3b8;">
-                                        €588 /anno
-                                    </div>
-                                    <div class="section-header">
-                                        <strong>€490</strong>
-                                        <span style="font-size:1rem; font-weight:400;">/anno</span>
-                                        <span class="ml-2 px-2 py-0.5 rounded-full text-sm font-semibold" style="background:#dcfce7; color:#16a34a;">Risparmia il 20%</span>
-                                    </div>
-                                </div>
-                            </div>
+  .pricing-kicker {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    color: #3b9ba8;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.9rem;
+  }
 
-                            <div class="mt-3 text-center">
-                                <span class="text-sm" style="color:#64748b;">
-                                    <i class="fas fa-calendar-check" style="color:#3b9ba8;"></i>
-                                    14 giorni di prova gratuita 
-                                </span>
-                            </div>
-                        </div>
+  .pricing-section-header h2 {
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+    line-height: 1.2;
+    color: #0f172a;
+    margin-bottom: 0.75rem;
+  }
 
-                        <footer class="mt-6 text-center">
-                            <a class="main-color-button" href="https://app.ippocra.com/register">Inizia la prova gratuita</a>
-                        </footer>
-                    </div>
+  .pricing-section-header p {
+    color: #475569;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin: 0;
+  }
 
-                    <p class="mt-10 text-center text-sm" style="color:#64748b;">
-                        Gestisci un centro di imaging?
-                        <a href="/imaging" style="color:#3b9ba8; text-decoration:underline;">Scopri il piano Imaging →</a>
-                    </p>
-                </div>
+  .pricing-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.25rem;
+  }
 
-                <!-- ===== SEZIONE FAMIGLIA ===== -->
-                <div id="section-family" class="hidden">
+  .pricing-card-grid--single {
+    grid-template-columns: minmax(0, 520px);
+  }
 
-                    <!-- toggle -->
-                    <div class="toggle-container">
-                        <div class="inline-flex" role="group" aria-label="Periodo di fatturazione">
-                            <button id="toggle-monthly" class="btn-toggle-left">
-                                Mensile
-                            </button>
-                            <button id="toggle-yearly" class="btn-toggle-right">
-                                Annuale
-                            </button>
-                        </div>
-                    </div>
+  .pricing-plan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid #d9e4ea;
+    border-radius: 24px;
+    padding: 1.5rem;
+    box-shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+  }
 
-                    <!-- Family -->
-                    <article class="plan-card">
-                        <div class="ribbon-wrap">
-                            <div class="ribbon">Più sottoscritto</div>
-                        </div>
-                        <header>
-                            <div>
-                                <h3 class="mt-0">Famiglia</h3>
-                            </div>
-                        </header>
-                        <div>
-                            <div class="plan-image-wrapper w-full">
-                                <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_family.png" alt="Piano Famiglia" />
-                                <img class="plan-img plan-img--large" src="assets/images/ippoplans/family.png" alt="Piano Famiglia" />
-                            </div>
-                            <table role="table" aria-label="Limiti del piano">
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
-                                        <td><span>2</span></td>
-                                        <td><strong>Admin</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-users smaller-icon-size"></i></td>
-                                        <td><span>5</span></td>
-                                        <td><strong>Profili</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
-                                        <td><span>500</span></td>
-                                        <td><strong>Caricamenti documenti/anno</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-link smaller-icon-size"></i></td>
-                                        <td><span>∞</span></td>
-                                        <td><strong>Ippolink/anno</strong></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="mt-5 text-center">
-                                <div class="section-header line-through price-yearly hidden">
-                                    <strong class="text-gray-700">96,00 €</strong>
-                                    <span class="text-gray-700">annuale</span>
-                                </div>
-                                <div class="section-header">
-                                    <strong class="price-monthly">8,00 €</strong>
-                                    <strong class="price-yearly hidden">80,00 €</strong>
-                                    <span class="price-monthly">mensile</span>
-                                    <span class="price-yearly hidden">annuale</span>
-                                </div>
-                            </div>
-                        </div>
-                        <footer class="mt-5 text-center">
-                            <a class="main-color-button" href="https://app.ippocra.com/register">Scegli il piano</a>
-                        </footer>
-                    </article>
+  .pricing-plan--featured {
+    border-color: #7fd2d9;
+    box-shadow: 0 18px 50px rgba(59, 155, 168, 0.16);
+  }
 
-                    <div class="plans-grid">
+  .pricing-badge {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    background: #0f766e;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.38rem 0.75rem;
+    border-radius: 999px;
+  }
 
-                        <!-- Ippo -->
-                        <article class="mt-5 plan-card">
-                            <div class="ribbon-wrap">
-                                <div class="ribbon">Gratuito</div>
-                            </div>
-                            <header>
-                                <div><h3 class="mt-0">Ippo</h3></div>
-                            </header>
-                            <div>
-                                <div class="plan-image-wrapper w-full">
-                                    <img class="plan-img plan-img--small" src="assets/images/ippoplans/solo_head.png" alt="Piano Ippo" />
-                                    <img class="plan-img plan-img--large" src="assets/images/ippoplans/solo_head.png" alt="Piano Ippo" />
-                                </div>
-                                <table role="table" aria-label="Limiti del piano">
-                                    <tbody>
-                                        <tr>
-                                            <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
-                                            <td><span>1</span></td>
-                                            <td><strong>Admin</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fas fa-users smaller-icon-size"></i></td>
-                                            <td><span>2</span></td>
-                                            <td><strong>Profili</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
-                                            <td><span>5</span></td>
-                                            <td><strong>Caricamenti documenti/anno</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fas fa-link smaller-icon-size"></i></td>
-                                            <td><span>∞</span></td>
-                                            <td><strong>Ippolink/anno</strong></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="mt-5 text-center">
-                                    <div class="section-header"><strong>Gratuito</strong></div>
-                                </div>
-                            </div>
-                            <footer class="mt-5 text-center">
-                                <a class="main-color-button" href="https://app.ippocra.com/register">Scegli il piano</a>
-                            </footer>
-                        </article>
+  .pricing-badge--light {
+    background: #e8f7f8;
+    color: #23616a;
+  }
 
-                        <!-- Just Us -->
-                        <article class="mt-5 plan-card">
-                            <header>
-                                <div><h3 class="mt-0">Solo Noi</h3></div>
-                            </header>
-                            <div>
-                                <div class="plan-image-wrapper w-full">
-                                    <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_just_us.png" alt="Piano Solo Noi" />
-                                    <img class="plan-img plan-img--large" src="assets/images/ippoplans/just_us.png" alt="Piano Solo Noi" />
-                                </div>
-                                <table role="table" aria-label="Limiti del piano">
-                                    <tbody>
-                                        <tr>
-                                            <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
-                                            <td><span>2</span></td>
-                                            <td><strong>Admin</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fas fa-users smaller-icon-size"></i></td>
-                                            <td><span>2</span></td>
-                                            <td><strong>Profili</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
-                                            <td><span>200</span></td>
-                                            <td><strong>Caricamenti documenti/anno</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fas fa-link smaller-icon-size"></i></td>
-                                            <td><span>∞</span></td>
-                                            <td><strong>Ippolink/anno</strong></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="mt-5 text-center">
-                                    <div class="section-header line-through price-yearly hidden">
-                                        <strong class="text-gray-700">60,00 €</strong>
-                                        <span class="text-gray-700">annuale</span>
-                                    </div>
-                                    <div class="section-header">
-                                        <strong class="price-monthly">5,00 €</strong>
-                                        <strong class="price-yearly hidden">50,00 €</strong>
-                                        <span class="price-monthly">mensile</span>
-                                        <span class="price-yearly hidden">annuale</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <footer class="mt-5 text-center">
-                                <a class="main-color-button" href="https://app.ippocra.com/register">Scegli il piano</a>
-                            </footer>
-                        </article>
+  .pricing-plan h3 {
+    font-size: 1.6rem;
+    color: #0f172a;
+    margin: 0;
+  }
 
-                        <!-- Family Plus -->
-                        <article class="mt-5 plan-card">
-                            <header>
-                                <div><h3 class="mt-0">Famiglia Plus</h3></div>
-                            </header>
-                            <div>
-                                <div class="plan-image-wrapper w-full">
-                                    <img class="plan-img plan-img--small" src="assets/images/ippoplans/heads_family.png" alt="Piano Famiglia Plus" />
-                                    <img class="plan-img plan-img--large" src="assets/images/ippoplans/family.png" alt="Piano Famiglia Plus" />
-                                </div>
-                                <table role="table" aria-label="Limiti del piano">
-                                    <tbody>
-                                        <tr>
-                                            <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
-                                            <td><span>4</span></td>
-                                            <td><strong>Admin</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fas fa-users smaller-icon-size"></i></td>
-                                            <td><span>10</span></td>
-                                            <td><strong>Profili</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
-                                            <td><span>1000</span></td>
-                                            <td><strong>Caricamenti documenti/anno</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fas fa-link smaller-icon-size"></i></td>
-                                            <td><span>∞</span></td>
-                                            <td><strong>Ippolink/anno</strong></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="mt-5 text-center">
-                                    <div class="section-header line-through price-yearly hidden">
-                                        <strong class="text-gray-700">120,00 €</strong>
-                                        <span class="text-gray-700">annuale</span>
-                                    </div>
-                                    <div class="section-header">
-                                        <strong class="price-monthly">10,00 €</strong>
-                                        <strong class="price-yearly hidden">100,00 €</strong>
-                                        <span class="price-monthly">mensile</span>
-                                        <span class="price-yearly hidden">annuale</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <footer class="mt-5 text-center">
-                                <a class="main-color-button" href="https://app.ippocra.com/register">Scegli il piano</a>
-                            </footer>
-                        </article>
+  .pricing-plan p {
+    color: #475569;
+    margin: 0;
+    line-height: 1.65;
+  }
 
-                    </div>
+  .pricing-plan-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 126px;
+    padding: 0.5rem 0;
+  }
 
-                    <p class="mt-8 text-center text-sm text-gray-600">
-                        <strong>Con i piani annuali risparmi 2 mesi!</strong>
-                    </p>
+  .pricing-plan-media img {
+    max-height: 110px;
+    width: auto;
+  }
 
-                    <div class="mt-10 text-center text-sm" style="color:#64748b;">
-                        Sei un medico o gestisci un centro di imaging?
-                        <a href="/doctors" style="color:#3b9ba8; text-decoration:underline;">Vedi il piano Studio</a>
-                        &nbsp;·&nbsp;
-                        <a href="/imaging" style="color:#3b9ba8; text-decoration:underline;">Soluzioni Imaging</a>
-                    </div>
-                </div>
+  .pricing-metric-list,
+  .pricing-feature-list,
+  .pricing-proof-list,
+  .pricing-faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
+  .pricing-metric-list li,
+  .pricing-feature-list li,
+  .pricing-proof-list li {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    color: #334155;
+    line-height: 1.55;
+  }
+
+  .pricing-metric-list li + li,
+  .pricing-feature-list li + li,
+  .pricing-proof-list li + li {
+    margin-top: 0.75rem;
+  }
+
+  .pricing-metric-list strong {
+    color: #0f172a;
+  }
+
+  .pricing-icon {
+    color: #3b9ba8;
+    margin-top: 0.15rem;
+    min-width: 1rem;
+  }
+
+  .pricing-price-wrap {
+    margin-top: auto;
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .pricing-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid #dce7ed;
+    border-radius: 16px;
+    background: #f8fbfd;
+  }
+
+  .pricing-price-row--highlight {
+    border-color: #b5e5ea;
+    background: #effafb;
+  }
+
+  .pricing-price-label {
+    font-size: 0.95rem;
+    color: #475569;
+    font-weight: 600;
+  }
+
+  .pricing-price-value {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #0f172a;
+    text-align: right;
+  }
+
+  .pricing-price-note {
+    color: #0f766e;
+    font-weight: 700;
+    font-size: 0.92rem;
+  }
+
+  .pricing-cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 0.5rem;
+  }
+
+  .pricing-secondary-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cbd5e1;
+    color: #0f172a;
+    background: #ffffff;
+    border-radius: 999px;
+    padding: 0.85rem 1.1rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .pricing-proof-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .pricing-proof-card,
+  .pricing-faq-card {
+    background: #ffffff;
+    border: 1px solid #d9e4ea;
+    border-radius: 22px;
+    padding: 1.35rem;
+  }
+
+  .pricing-proof-card h3,
+  .pricing-faq-card h2 {
+    margin-top: 0;
+    color: #0f172a;
+  }
+
+  .pricing-proof-card p,
+  .pricing-faq-card p {
+    color: #475569;
+    line-height: 1.7;
+  }
+
+  .pricing-faq-card details {
+    border-top: 1px solid #e2e8f0;
+    padding: 1rem 0;
+  }
+
+  .pricing-faq-card details:first-of-type {
+    border-top: 0;
+    padding-top: 0.2rem;
+  }
+
+  .pricing-faq-card summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: #0f172a;
+    list-style: none;
+  }
+
+  .pricing-faq-card summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .pricing-small-note {
+    margin-top: 0.85rem;
+    color: #64748b;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 768px) {
+    .pricing-shell {
+      padding-top: 3rem;
+    }
+
+    .pricing-proof-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing-price-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .pricing-price-value {
+      text-align: left;
+    }
+  }
+</style>
+
+<section class="pricing-page">
+  <div class="pricing-shell">
+    <header class="pricing-hero">
+      <div class="pricing-eyebrow">
+        <i class="fas fa-euro-sign"></i>
+        Prezzi Ippocra
+      </div>
+      <h1>Prezzi Ippocra per medici, famiglie e caregiver</h1>
+      <p>
+        Una sola pagina, due esigenze chiare: <strong>dare tempo indietro ai medici</strong> con un archivio pazienti
+        ricercabile e portatile, e dare a <strong>famiglie e caregiver un posto unico</strong> per referti, esami e documenti
+        sanitari sparsi.
+      </p>
+      <div class="pricing-pill-grid">
+        <div class="pricing-pill">
+          <strong>Per medici e studi</strong>
+          Archivio pazienti personale, timeline longitudinale e accesso cloud da ogni ambulatorio.
+        </div>
+        <div class="pricing-pill">
+          <strong>Per famiglie e caregiver</strong>
+          Referti, visite ed esami organizzati per persona e pronti da condividere quando servono.
+        </div>
+        <div class="pricing-pill">
+          <strong>Sicurezza inclusa</strong>
+          Crittografia AES-256, gestione in cloud e conformità GDPR per documenti sensibili.
+        </div>
+      </div>
+    </header>
+
+    <section id="prezzi-medici" class="pricing-section">
+      <div class="pricing-section-header">
+        <span class="pricing-kicker">Medici</span>
+        <h2>Un prezzo chiaro per recuperare tempo a ogni visita</h2>
+        <p>
+          Il piano <strong>Studio</strong> è pensato per medici che lavorano tra più ambulatori e vogliono smettere di perdere tempo
+          tra chiavette, cartelle locali e referti difficili da ritrovare. Tutto il tuo archivio pazienti resta ordinato,
+          ricercabile e sempre con te.
+        </p>
+      </div>
+
+      <div class="pricing-card-grid pricing-card-grid--single">
+        <article id="studio" class="pricing-plan pricing-plan--featured">
+          <span class="pricing-badge">14 giorni gratuiti</span>
+          <div>
+            <h3>Studio</h3>
+            <p>Per medici che vogliono un archivio pazienti personale, portatile e pronto in ogni ambulatorio.</p>
+          </div>
+
+          <div class="pricing-plan-media">
+            <img src="assets/images/ippoplans/ippodoc_head.png" alt="Piano Studio per medici" loading="lazy" />
+          </div>
+
+          <ul class="pricing-metric-list">
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1 admin</strong> per gestire il tuo archivio personale.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1.000 pazienti</strong> inclusi nel piano.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2.000 documenti caricati/anno</strong> per referti, esami e allegati clinici.</span></li>
+          </ul>
+
+          <ul class="pricing-feature-list">
+            <li><i class="fas fa-folder-open pricing-icon"></i><span>Importazione cartelle in un click per partire dal tuo archivio esistente.</span></li>
+            <li><i class="fas fa-notes-medical pricing-icon"></i><span>Timeline longitudinale del paziente per rileggere la storia clinica in pochi secondi.</span></li>
+            <li><i class="fas fa-laptop-medical pricing-icon"></i><span>Accesso cloud multi-ambulatorio per lavorare ovunque senza spostare file.</span></li>
+            <li><i class="fas fa-shield-halved pricing-icon"></i><span>Crittografia AES-256 e conformità GDPR per proteggere dati sanitari sensibili.</span></li>
+          </ul>
+
+          <div class="pricing-price-wrap">
+            <div class="pricing-price-row">
+              <div>
+                <div class="pricing-price-label">Prezzo mensile</div>
+              </div>
+              <div class="pricing-price-value">€49 / mese</div>
             </div>
+            <div class="pricing-price-row pricing-price-row--highlight">
+              <div>
+                <div class="pricing-price-label">Prezzo annuale</div>
+                <div class="pricing-price-note">€490 / anno · risparmi il 20%</div>
+              </div>
+              <div class="pricing-price-value">equivale a €40,83 / mese</div>
+            </div>
+          </div>
 
-            <script>
-                function setAudience(audience) {
-                    const doctorSection = document.getElementById('section-doctor');
-                    const familySection = document.getElementById('section-family');
-                    const doctorBtn = document.getElementById('audience-doctor');
-                    const familyBtn = document.getElementById('audience-family');
+          <div class="pricing-cta-group">
+            <a class="main-color-button" href="https://app.ippocra.com/register">Inizia la prova gratuita</a>
+            <a class="pricing-secondary-link" href="/doctors">Scopri come funziona per i medici</a>
+          </div>
+          <p class="pricing-small-note">Nessun selettore: il prezzo per medici è sempre visibile anche per chi arriva da Google.</p>
+        </article>
+      </div>
+    </section>
 
-                    if (audience === 'doctor') {
-                        doctorSection.classList.remove('hidden');
-                        familySection.classList.add('hidden');
-                        doctorBtn.classList.add('active');
-                        familyBtn.classList.remove('active');
-                    } else {
-                        doctorSection.classList.add('hidden');
-                        familySection.classList.remove('hidden');
-                        doctorBtn.classList.remove('active');
-                        familyBtn.classList.add('active');
-                    }
-                }
+    <section id="prezzi-famiglie" class="pricing-section">
+      <div class="pricing-section-header">
+        <span class="pricing-kicker">Famiglie e caregiver</span>
+        <h2>Organizza i documenti sanitari della famiglia senza rincorrere referti sparsi</h2>
+        <p>
+          I piani per utenti e caregiver sono pensati per chi deve tenere insieme esami, visite e referti di più persone.
+          Ogni prezzo è mostrato direttamente nella pagina, così le opzioni restano indicizzabili e confrontabili.
+        </p>
+      </div>
 
-                document.addEventListener('DOMContentLoaded', () => {
-                    const doctorMonthlyBtn = document.getElementById('doctor-toggle-monthly');
-                    const doctorYearlyBtn = document.getElementById('doctor-toggle-yearly');
+      <div class="pricing-card-grid">
+        <article id="ippo" class="pricing-plan">
+          <span class="pricing-badge pricing-badge--light">Gratuito</span>
+          <div>
+            <h3>Ippo</h3>
+            <p>Per iniziare a raccogliere i documenti essenziali di una persona o di una piccola famiglia.</p>
+          </div>
+          <div class="pricing-plan-media">
+            <img src="assets/images/ippoplans/solo_head.png" alt="Piano Ippo gratuito" loading="lazy" />
+          </div>
+          <ul class="pricing-metric-list">
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1 admin</strong> e <strong>2 profili</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>5 caricamenti documenti/anno</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>IppoLink illimitati</strong> per condividere documenti quando serve.</span></li>
+          </ul>
+          <div class="pricing-price-wrap">
+            <div class="pricing-price-row pricing-price-row--highlight">
+              <div class="pricing-price-label">Prezzo</div>
+              <div class="pricing-price-value">Gratuito</div>
+            </div>
+          </div>
+          <div class="pricing-cta-group">
+            <a class="main-color-button" href="https://app.ippocra.com/register">Crea il tuo account</a>
+          </div>
+        </article>
 
-                    if (doctorMonthlyBtn && doctorYearlyBtn) {
-                        const setDoctorMode = (mode) => {
-                            const showMonthly = mode === 'monthly';
-                            document.getElementById('doctor-price-monthly').classList.toggle('hidden', !showMonthly);
-                            document.getElementById('doctor-price-yearly').classList.toggle('hidden', showMonthly);
-                            doctorMonthlyBtn.classList.toggle('btn-toggled', showMonthly);
-                            doctorYearlyBtn.classList.toggle('btn-toggled', !showMonthly);
-                        };
+        <article id="solo-noi" class="pricing-plan">
+          <div>
+            <h3>Solo Noi</h3>
+            <p>Per coppie o nuclei piccoli che vogliono uno spazio sicuro e semplice da tenere in ordine.</p>
+          </div>
+          <div class="pricing-plan-media">
+            <img src="assets/images/ippoplans/just_us.png" alt="Piano Solo Noi" loading="lazy" />
+          </div>
+          <ul class="pricing-metric-list">
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 admin</strong> e <strong>2 profili</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>200 caricamenti documenti/anno</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>IppoLink illimitati</strong> per inviare referti a medici o strutture.</span></li>
+          </ul>
+          <div class="pricing-price-wrap">
+            <div class="pricing-price-row">
+              <div class="pricing-price-label">Prezzo mensile</div>
+              <div class="pricing-price-value">€5 / mese</div>
+            </div>
+            <div class="pricing-price-row pricing-price-row--highlight">
+              <div>
+                <div class="pricing-price-label">Prezzo annuale</div>
+                <div class="pricing-price-note">€50 / anno · risparmi 2 mesi</div>
+              </div>
+              <div class="pricing-price-value">equivale a €4,17 / mese</div>
+            </div>
+          </div>
+          <div class="pricing-cta-group">
+            <a class="main-color-button" href="https://app.ippocra.com/register">Scegli Solo Noi</a>
+          </div>
+        </article>
 
-                        setDoctorMode('monthly');
-                        doctorMonthlyBtn.addEventListener('click', () => setDoctorMode('monthly'));
-                        doctorYearlyBtn.addEventListener('click', () => setDoctorMode('yearly'));
-                    }
+        <article id="famiglia" class="pricing-plan pricing-plan--featured">
+          <span class="pricing-badge">Più scelto</span>
+          <div>
+            <h3>Famiglia</h3>
+            <p>Per chi coordina salute, esami e documenti di più persone con un unico spazio condiviso.</p>
+          </div>
+          <div class="pricing-plan-media">
+            <img src="assets/images/ippoplans/family.png" alt="Piano Famiglia" loading="lazy" />
+          </div>
+          <ul class="pricing-metric-list">
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 admin</strong> e <strong>5 profili</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>500 caricamenti documenti/anno</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>IppoLink illimitati</strong> per condividere rapidamente i referti.</span></li>
+          </ul>
+          <div class="pricing-price-wrap">
+            <div class="pricing-price-row">
+              <div class="pricing-price-label">Prezzo mensile</div>
+              <div class="pricing-price-value">€8 / mese</div>
+            </div>
+            <div class="pricing-price-row pricing-price-row--highlight">
+              <div>
+                <div class="pricing-price-label">Prezzo annuale</div>
+                <div class="pricing-price-note">€80 / anno · risparmi 2 mesi</div>
+              </div>
+              <div class="pricing-price-value">equivale a €6,67 / mese</div>
+            </div>
+          </div>
+          <div class="pricing-cta-group">
+            <a class="main-color-button" href="https://app.ippocra.com/register">Scegli Famiglia</a>
+          </div>
+        </article>
 
-                    const monthlyBtn = document.getElementById('toggle-monthly');
-                    const yearlyBtn = document.getElementById('toggle-yearly');
+        <article id="famiglia-plus" class="pricing-plan">
+          <div>
+            <h3>Famiglia Plus</h3>
+            <p>Per famiglie estese o caregiver che gestiscono molti documenti e più persone nel tempo.</p>
+          </div>
+          <div class="pricing-plan-media">
+            <img src="assets/images/ippoplans/family.png" alt="Piano Famiglia Plus" loading="lazy" />
+          </div>
+          <ul class="pricing-metric-list">
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>4 admin</strong> e <strong>10 profili</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1.000 caricamenti documenti/anno</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>IppoLink illimitati</strong> per collaborare con tutta la rete di cura.</span></li>
+          </ul>
+          <div class="pricing-price-wrap">
+            <div class="pricing-price-row">
+              <div class="pricing-price-label">Prezzo mensile</div>
+              <div class="pricing-price-value">€10 / mese</div>
+            </div>
+            <div class="pricing-price-row pricing-price-row--highlight">
+              <div>
+                <div class="pricing-price-label">Prezzo annuale</div>
+                <div class="pricing-price-note">€100 / anno · risparmi 2 mesi</div>
+              </div>
+              <div class="pricing-price-value">equivale a €8,33 / mese</div>
+            </div>
+          </div>
+          <div class="pricing-cta-group">
+            <a class="main-color-button" href="https://app.ippocra.com/register">Scegli Famiglia Plus</a>
+          </div>
+        </article>
+      </div>
+      <p class="pricing-small-note">Con i piani annuali per utenti e caregiver risparmi l'equivalente di 2 mesi.</p>
+    </section>
 
-                    if (monthlyBtn && yearlyBtn) {
-                        const setMode = (mode) => {
-                            const showMonthly = mode === 'monthly';
-                            document.querySelectorAll('.price-monthly').forEach(el =>
-                                el.classList.toggle('hidden', !showMonthly)
-                            );
-                            document.querySelectorAll('.price-yearly').forEach(el =>
-                                el.classList.toggle('hidden', showMonthly)
-                            );
-                            monthlyBtn.classList.toggle('btn-toggled', showMonthly);
-                            yearlyBtn.classList.toggle('btn-toggled', !showMonthly);
-                        };
+    <section class="pricing-section">
+      <div class="pricing-proof-grid">
+        <article class="pricing-proof-card">
+          <h3>Perché conviene ai medici</h3>
+          <ul class="pricing-proof-list">
+            <li><i class="fas fa-arrow-right pricing-icon"></i><span>Riduci il tempo perso a cercare referti prima e durante la visita.</span></li>
+            <li><i class="fas fa-arrow-right pricing-icon"></i><span>Porti con te lo storico del paziente in ogni ambulatorio senza duplicare file.</span></li>
+            <li><i class="fas fa-arrow-right pricing-icon"></i><span>Parti dal tuo archivio attuale grazie all'importazione delle cartelle esistenti.</span></li>
+          </ul>
+        </article>
+        <article class="pricing-proof-card">
+          <h3>Perché conviene a famiglie e caregiver</h3>
+          <ul class="pricing-proof-list">
+            <li><i class="fas fa-arrow-right pricing-icon"></i><span>Raccogli in un solo posto i documenti sanitari dispersi tra email, PDF e portali.</span></li>
+            <li><i class="fas fa-arrow-right pricing-icon"></i><span>Trovi più velocemente i documenti da mostrare al medico o da condividere con chi assiste.</span></li>
+            <li><i class="fas fa-arrow-right pricing-icon"></i><span>Assegni i documenti alle persone giuste e li tieni pronti quando cambia il percorso di cura.</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-                        setMode('monthly');
-                        monthlyBtn.addEventListener('click', () => setMode('monthly'));
-                        yearlyBtn.addEventListener('click', () => setMode('yearly'));
-                    }
+    <section class="pricing-section">
+      <article class="pricing-faq-card">
+        <h2>Domande frequenti sui prezzi Ippocra</h2>
 
-                    const params = new URLSearchParams(window.location.search);
-                    if (params.get('for') === 'family') {
-                        setAudience('family');
-                    }
-                });
-            </script>
-        </section>
+        <details open>
+          <summary>Quanto costa Ippocra per un medico?</summary>
+          <p>
+            Il piano <strong>Studio</strong> costa <strong>€49 al mese</strong> oppure <strong>€490 all'anno</strong>. Include 1 admin,
+            1.000 pazienti, 2.000 documenti caricati all'anno, timeline del paziente, accesso cloud multi-ambulatorio e 14 giorni di prova gratuita.
+          </p>
+        </details>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                document.querySelectorAll('.animate-fadeInUp').forEach(el => {
-                    el.style.opacity = '1';
-                });
-            });
+        <details>
+          <summary>Quanto costa Ippocra per utenti, famiglie e caregiver?</summary>
+          <p>
+            Ippocra offre un piano <strong>gratuito</strong> e tre piani a pagamento per utenti e caregiver: <strong>Solo Noi</strong>
+            a €5/mese o €50/anno, <strong>Famiglia</strong> a €8/mese o €80/anno e <strong>Famiglia Plus</strong> a €10/mese o €100/anno.
+          </p>
+        </details>
 
-            if (window.lucide) lucide.createIcons();
-        </script>
-    </main>
-</body>
+        <details>
+          <summary>I prezzi mensili e annuali sono sempre visibili?</summary>
+          <p>
+            Sì. In questa pagina i prezzi per medici e i prezzi per utenti sono mostrati direttamente nel contenuto, senza switch di audience.
+            Questo rende la pagina più facile da confrontare, leggere e indicizzare.
+          </p>
+        </details>
+
+        <details>
+          <summary>Ippocra è adatto a chi deve ritrovare e condividere referti velocemente?</summary>
+          <p>
+            Sì. Per medici significa ritrovare in fretta lo storico del paziente tra più ambulatori. Per famiglie e caregiver significa avere un archivio ordinato
+            da cui recuperare e condividere esami e referti senza rincorrere file sparsi.
+          </p>
+        </details>
+      </article>
+    </section>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ippocra",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Web",
+  "url": "https://ippocra.com/prezzi",
+  "description": "Prezzi Ippocra per medici, famiglie e caregiver: archivio pazienti ricercabile per medici e archivio documenti sanitari condivisibile per famiglie.",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Studio",
+      "price": "49",
+      "priceCurrency": "EUR",
+      "url": "https://ippocra.com/prezzi#studio",
+      "description": "Piano per medici con archivio pazienti portatile, ricercabile e multi-ambulatorio."
+    },
+    {
+      "@type": "Offer",
+      "name": "Ippo",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "url": "https://ippocra.com/prezzi#ippo",
+      "description": "Piano gratuito per iniziare a organizzare documenti sanitari personali e familiari."
+    },
+    {
+      "@type": "Offer",
+      "name": "Solo Noi",
+      "price": "5",
+      "priceCurrency": "EUR",
+      "url": "https://ippocra.com/prezzi#solo-noi",
+      "description": "Piano per piccoli nuclei familiari e caregiver."
+    },
+    {
+      "@type": "Offer",
+      "name": "Famiglia",
+      "price": "8",
+      "priceCurrency": "EUR",
+      "url": "https://ippocra.com/prezzi#famiglia",
+      "description": "Piano per famiglie che vogliono centralizzare referti ed esami di più persone."
+    },
+    {
+      "@type": "Offer",
+      "name": "Famiglia Plus",
+      "price": "10",
+      "priceCurrency": "EUR",
+      "url": "https://ippocra.com/prezzi#famiglia-plus",
+      "description": "Piano per famiglie estese o caregiver con volumi più alti di documenti."
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto costa Ippocra per un medico?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il piano Studio costa 49 euro al mese oppure 490 euro all'anno e include 1 admin, 1.000 pazienti, 2.000 documenti caricati all'anno, timeline del paziente, accesso cloud multi-ambulatorio e 14 giorni di prova gratuita."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto costa Ippocra per utenti, famiglie e caregiver?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ippocra offre un piano gratuito e tre piani a pagamento per utenti e caregiver: Solo Noi a 5 euro al mese o 50 euro all'anno, Famiglia a 8 euro al mese o 80 euro all'anno e Famiglia Plus a 10 euro al mese o 100 euro all'anno."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I prezzi mensili e annuali sono sempre visibili?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. I prezzi per medici e utenti sono mostrati direttamente nella pagina senza switch di audience, così restano più leggibili, confrontabili e indicizzabili."
+      }
+    }
+  ]
+}
+</script>
