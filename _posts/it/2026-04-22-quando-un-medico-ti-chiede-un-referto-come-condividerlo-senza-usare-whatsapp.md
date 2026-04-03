@@ -64,7 +64,7 @@ Questo significa che la qualita della condivisione conta quasi quanto la velocit
 
 ## Cosa si rompe davvero quando usi la chat per i referti
 
-Quasi mai succede un disastro evidente. Più spesso succedono piccoli problemi ripetuti, e sono proprio quelli a consumare tempo e fiducia.
+Quasi mai succede un disastro evidente. Piu spesso succedono piccoli problemi ripetuti, e sono proprio quelli a consumare tempo e fiducia.
 
 ### 1. Il file perde subito contesto
 
