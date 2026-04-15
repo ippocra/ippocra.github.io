@@ -240,6 +240,157 @@
             </div>
         </section>
 
+        <!-- Studio Editor showcase -->
+<style>
+#editor .section-container {
+  max-width: 1120px;
+}
+.editor-tabs {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.editor-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid #bfe5e8;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.editor-tab-btn.is-active {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: #ffffff;
+}
+.editor-tab-panel {
+  display: none;
+}
+.editor-tab-panel.is-active {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.editor-tab-panel .tab-content {
+  max-width: 680px;
+}
+.editor-tab-panel .tab-image {
+  width: 100%;
+}
+.tab-screenshot {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 0 #e2e8f0, 0 24px 64px rgba(15, 23, 42, 0.22);
+  background: #f1f5f9;
+}
+.tab-screenshot-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+}
+.tab-screenshot-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.tab-screenshot-dot:nth-child(1) { background: #fc5c55; }
+.tab-screenshot-dot:nth-child(2) { background: #fdbc2c; }
+.tab-screenshot-dot:nth-child(3) { background: #28c941; }
+.tab-screenshot img { display: block; width: 100%; height: auto; }
+</style>
+
+<section id="editor" class="section-accent-soft-gradient scroll-target">
+    <div class="section-container">
+        <p class="mt-0 paragraph-md paragraph-bold scroll-animated-item" style="color:#3b9ba8;">Studio Editor</p>
+        <h2 class="mt-2 section-title scroll-animated-item">Scrivi, visualizza in anteprima e firma ogni referto</h2>
+        <p class="mt-4 paragraph-md scroll-animated-item" style="max-width:640px;">Un editor professionale pensato per i medici — formattazione rich-text, anteprima PDF in tempo reale, intestazioni personalizzate, modelli per specialità e visualizzazione DICOM opzionale, tutto in un unico posto.</p>
+
+        <div class="editor-tabs scroll-animated-item" role="tablist">
+            <button class="editor-tab-btn" data-editor-tab="editor" role="tab"><i class="fas fa-edit"></i> Editor &amp; Anteprima</button>
+            <button class="editor-tab-btn" data-editor-tab="themes" role="tab"><i class="fas fa-palette"></i> Temi &amp; Intestazioni</button>
+            <button class="editor-tab-btn" data-editor-tab="templates" role="tab"><i class="fas fa-copy"></i> Modelli</button>
+        </div>
+
+        <div class="editor-tab-panel" data-editor-panel="editor">
+            <div class="tab-content">
+                <h3 class="section-header">Una superficie di scrittura pulita, con output PDF in tempo reale</h3>
+                <ul class="mt-6 space-y-3" style="list-style:none; padding:0; margin:0;">
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Barra degli strumenti: titoli, grassetto, corsivo, elenchi puntati e numerati, annulla/ripristina.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Attiva l'anteprima a schermo diviso per vedere esattamente come sarà il PDF prima di salvarlo.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Recupero automatico delle bozze: il lavoro non salvato viene ripristinato se il browser si chiude inaspettatamente.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Allega studi DICOM e condividi il referto finito con il paziente tramite IppoLink.</span></li>
+                </ul>
+            </div>
+            <div class="tab-image">
+                <div class="tab-screenshot">
+                    <div class="tab-screenshot-bar"><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span></div>
+                    <img src="/assets/images/screenshots/04b_editor_with_preview.png" alt="Editor Ippocra a schermo diviso con anteprima PDF A4 dal vivo con intestazione personalizzata" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="editor-tab-panel" data-editor-panel="themes">
+            <div class="tab-content">
+                <h3 class="section-header">Personalizza ogni documento con l'intestazione del tuo studio</h3>
+                <ul class="mt-6 space-y-3" style="list-style:none; padding:0; margin:0;">
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Carica il logo della clinica — appare in cima a ogni pagina.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Imposta colore accent, font, testo di intestazione e piè di pagina in linea con l'identità dello studio.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Salva più temi e passa da uno all'altro — l'anteprima A4 si aggiorna in tempo reale.</span></li>
+                </ul>
+            </div>
+            <div class="tab-image">
+                <div class="tab-screenshot">
+                    <div class="tab-screenshot-bar"><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span></div>
+                    <img src="/assets/images/screenshots/06_letterhead_dialog.png" alt="Finestra di creazione dell'intestazione Ippocra con anteprima A4 dal vivo" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="editor-tab-panel" data-editor-panel="templates">
+            <div class="tab-content">
+                <h3 class="section-header">Inizia ogni referto da un modello per specialità</h3>
+                <ul class="mt-6 space-y-3" style="list-style:none; padding:0; margin:0;">
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Sfoglia i modelli raggruppati per specialità e inseriscili con un clic.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Salva qualsiasi referto come modello riutilizzabile per il tuo flusso di lavoro.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Crea, modifica e organizza i modelli dal pannello laterale dentro l'editor.</span></li>
+                </ul>
+            </div>
+            <div class="tab-image">
+                <div class="tab-screenshot">
+                    <div class="tab-screenshot-bar"><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span></div>
+                    <img src="/assets/images/screenshots/07_templates_panel.png" alt="Pannello modelli Ippocra con modelli di specialità Cardiologia" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabBtns = document.querySelectorAll('[data-editor-tab]');
+        const panels  = document.querySelectorAll('[data-editor-panel]');
+        if (!tabBtns.length) return;
+        const setTab = (target) => {
+            tabBtns.forEach(b => b.classList.toggle('is-active', b.dataset.editorTab === target));
+            panels.forEach(p => p.classList.toggle('is-active', p.dataset.editorPanel === target));
+        };
+        tabBtns.forEach(btn => btn.addEventListener('click', () => setTab(btn.dataset.editorTab)));
+        setTab('editor');
+    });
+</script>
+
         <!-- Studio Trial CTA -->
 <section id="studio-plan" class="section-transparent scroll-target">
     <div class="section-container max-w-6xl mx-auto">

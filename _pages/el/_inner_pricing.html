@@ -425,6 +425,60 @@
       text-align: left;
     }
   }
+
+  .pricing-audience-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .pricing-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.4rem;
+    border-radius: 999px;
+    border: 1px solid #bfe5e8;
+    background: #ffffff;
+    color: #0f172a;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+
+  .pricing-tab-btn.is-active {
+    background: #0f766e;
+    border-color: #0f766e;
+    color: #ffffff;
+  }
+
+  .pricing-trial-banner {
+    margin-bottom: 2rem;
+    padding: 1.25rem 1.5rem;
+    border: 2px solid #7fd2d9;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #effafb 0%, #ffffff 100%);
+    box-shadow: 0 10px 30px rgba(59, 155, 168, 0.1);
+  }
+
+  .pricing-trial-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .pricing-trial-banner-text {
+    margin: 0;
+    color: #334155;
+    line-height: 1.55;
+    font-size: 0.97rem;
+  }
 </style>
 
 <section class="pricing-page">
@@ -454,12 +508,13 @@
           Κρυπτογράφηση AES-256, πρόσβαση μέσω cloud και συμμόρφωση GDPR για ευαίσθητα ιατρικά έγγραφα.
         </div>
       </div>
-      <div class="pricing-jump-links" aria-label="Μετάβαση απευθείας στην ενότητα τιμών που θέλετε">
-        <a class="pricing-jump-link" href="#doctor-pricing"><i class="fas fa-stethoscope"></i> Μετάβαση στις τιμές για γιατρούς</a>
-        <a class="pricing-jump-link" href="#family-pricing"><i class="fas fa-house-medical"></i> Μετάβαση στις τιμές για οικογένειες</a>
+      <div class="pricing-audience-tabs" role="tablist">
+        <button class="pricing-tab-btn is-active" data-audience="doctors" role="tab"><i class="fas fa-stethoscope"></i> Για γιατρούς</button>
+        <button class="pricing-tab-btn" data-audience="families" role="tab"><i class="fas fa-house-medical"></i> Για οικογένειες</button>
       </div>
     </header>
 
+    <div data-audience-panel="doctors">
     <section id="doctor-pricing" class="pricing-section">
   <div class="pricing-section-header">
     <span class="pricing-kicker">Γιατροί</span>
@@ -469,50 +524,41 @@
     </p>
   </div>
 
-  <div class="pricing-billing-toggle" role="group" aria-label="Billing period">
-    <button type="button" class="billing-toggle-btn is-active" data-billing-mode="yearly">Ετήσιο</button>
-    <button type="button" class="billing-toggle-btn" data-billing-mode="monthly">Μηνιαίο</button>
+  <div class="pricing-trial-banner">
+    <div class="pricing-trial-banner-content">
+      <div>
+        <span class="pricing-badge pricing-badge--light" style="margin-bottom:0.5rem;">Δωρεάν δοκιμή</span>
+        <p class="pricing-trial-banner-text"><strong>Δοκιμάστε δωρεάν ολόκληρη τη σουίτα Studio Editor + DICOM για 30 ημέρες.</strong> Χωρίς πιστωτική κάρτα. Ένας οδηγός Quick Start σας καθοδηγεί στα βήματα-κλειδιά μέσα στην εφαρμογή.</p>
+      </div>
+      <a class="main-color-button" href="https://app.ippocra.com/register" style="flex-shrink:0;">Ξεκινήστε δωρεάν</a>
+    </div>
   </div>
 
   <div class="pricing-card-grid pricing-card-grid--doctor">
-    <article class="pricing-plan pricing-plan--featured pricing-plan--trial">
-      <span class="pricing-badge">Ξεκινήστε δωρεάν</span>
-      <div>
-        <h3>Δοκιμή Studio</h3>
-        <p>Ξεκλειδώστε για 30 ημέρες το κορυφαίο επίπεδο Studio, χωρίς κόστος, και δείτε αν η ροή εργασίας ταιριάζει στην πρακτική σας.</p>
-      </div>
-      <div class="pricing-plan-media">
-        <img src="/assets/images/sponsored_plan-en.png" alt="Κάρτα επιλογής πακέτου Studio με τη δοκιμή επισημασμένη" loading="lazy" />
-      </div>
-      <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>Studio Editor + DICOM Viewer περιλαμβάνονται</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>30 ημέρες, χωρίς πιστωτική κάρτα</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Οδηγός Quick Start μέσα στην εφαρμογή</span></li>
-      </ul>
-      <div class="pricing-price-wrap">
-        <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-label">Δωρεάν για 30 ημέρες</div>
-          <div class="pricing-price-value">€0</div>
-        </div>
-      </div>
-      <div class="pricing-cta-group">
-        <a class="main-color-button" href="https://app.ippocra.com/register">Ξεκινήστε τη δωρεάν δοκιμή</a>
-      </div>
-    </article>
-
     <article class="pricing-plan">
       <div>
         <h3>Studio</h3>
         <p>Για γιατρούς που θέλουν αναζητήσιμο αρχείο και πρόσβαση cloud σε πολλαπλές κλινικές.</p>
       </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head.png" alt="Πλάνο Studio" loading="lazy" />
+      </div>
       <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>1 λογαριασμός γιατρού/διαχειριστή</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>2.000 έγγραφα/έτος</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Πλήρης διαχείριση ασθενών</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>1 λογαριασμός γιατρού/διαχειριστή</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>2.000 έγγραφα/έτος</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Πλήρης διαχείριση ασθενών</span></li>
       </ul>
       <div class="pricing-price-wrap">
         <div class="pricing-price-row">
-          <div class="pricing-price-label">Μηνιαίο</div>
-          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€19 / μήνα" data-yearly="€190 / έτος">€190 / έτος</div>
+          <div class="pricing-price-label">Μηνιαία τιμή</div>
+          <div class="pricing-price-value">€19 / μήνα</div>
         </div>
         <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-note">Εξοικονομείτε 2 μήνες με το ετήσιο</div>
+          <div>
+            <div class="pricing-price-label">Ετήσια τιμή</div>
+            <div class="pricing-price-note">€190 / έτος · εξοικονομείτε 2 μήνες</div>
+          </div>
+          <div class="pricing-price-value">€15,83 / μήνα</div>
         </div>
       </div>
       <div class="pricing-cta-group">
@@ -525,16 +571,25 @@
         <h3>Studio Editor</h3>
         <p>Για γιατρούς που χρειάζονται τον editor, ζωντανή προεπισκόπηση και branded letterheads.</p>
       </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head_editor.png" alt="Πλάνο Studio Editor" loading="lazy" />
+      </div>
       <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>Editor εγγράφων rich-text</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Themes και letterheads</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Επαναχρησιμοποιήσιμα πρότυπα ειδικότητας</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Editor εγγράφων rich-text</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Themes και letterheads</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Επαναχρησιμοποιήσιμα πρότυπα ειδικότητας</span></li>
       </ul>
       <div class="pricing-price-wrap">
         <div class="pricing-price-row">
-          <div class="pricing-price-label">Μηνιαίο</div>
-          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€29 / μήνα" data-yearly="€290 / έτος">€290 / έτος</div>
+          <div class="pricing-price-label">Μηνιαία τιμή</div>
+          <div class="pricing-price-value">€29 / μήνα</div>
         </div>
         <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-note">Εξοικονομείτε 2 μήνες με το ετήσιο</div>
+          <div>
+            <div class="pricing-price-label">Ετήσια τιμή</div>
+            <div class="pricing-price-note">€290 / έτος · εξοικονομείτε 2 μήνες</div>
+          </div>
+          <div class="pricing-price-value">€24,17 / μήνα</div>
         </div>
       </div>
       <div class="pricing-cta-group">
@@ -548,16 +603,25 @@
         <h3>Studio Editor + DICOM</h3>
         <p>Για γιατρούς που χρειάζονται τον editor μαζί με ενσωματωμένο DICOM viewer.</p>
       </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head_editor_dicom.png" alt="Πλάνο Studio Editor + DICOM" loading="lazy" />
+      </div>
       <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>Ό,τι περιλαμβάνει το Studio Editor</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Ενσωματωμένο DICOM viewer</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Προσθήκη εικόνων στα reports</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Ό,τι περιλαμβάνει το Studio Editor</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Ενσωματωμένο DICOM viewer</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Προσθήκη εικόνων στα reports</span></li>
       </ul>
       <div class="pricing-price-wrap">
         <div class="pricing-price-row">
-          <div class="pricing-price-label">Μηνιαίο</div>
-          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€39 / μήνα" data-yearly="€390 / έτος">€390 / έτος</div>
+          <div class="pricing-price-label">Μηνιαία τιμή</div>
+          <div class="pricing-price-value">€39 / μήνα</div>
         </div>
         <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-note">Εξοικονομείτε 2 μήνες με το ετήσιο</div>
+          <div>
+            <div class="pricing-price-label">Ετήσια τιμή</div>
+            <div class="pricing-price-note">€390 / έτος · εξοικονομείτε 2 μήνες</div>
+          </div>
+          <div class="pricing-price-value">€32,50 / μήνα</div>
         </div>
       </div>
       <div class="pricing-cta-group">
@@ -568,7 +632,9 @@
 
   <p class="pricing-small-note">Όλα τα Studio πλάνα περιλαμβάνουν 1 λογαριασμό γιατρού/διαχειριστή, 2.000 έγγραφα/έτος και πλήρη διαχείριση ασθενών.</p>
 </section>
+    </div><!-- /data-audience-panel="doctors" -->
 
+    <div data-audience-panel="families" style="display:none">
     <section id="family-pricing" class="pricing-section">
       <div class="pricing-section-header">
         <span class="pricing-kicker">Οικογένειες και φροντιστές</span>
@@ -701,6 +767,7 @@
       </div>
       <p class="pricing-small-note">Με τα ετήσια πλάνα για οικογένειες και φροντιστές εξοικονομείτε το ισοδύναμο 2 μηνών.</p>
     </section>
+    </div><!-- /data-audience-panel="families" -->
 
     <section class="pricing-section">
       <div class="pricing-proof-grid">
@@ -751,28 +818,19 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const buttons = document.querySelectorAll('[data-billing-mode]');
-        const priceNodes = document.querySelectorAll('[data-billing-price]');
+        const audienceBtns   = document.querySelectorAll('[data-audience]');
+        const audiencePanels = document.querySelectorAll('[data-audience-panel]');
 
-        if (!buttons.length || !priceNodes.length) return;
-
-        const setMode = (mode) => {
-            buttons.forEach((button) => {
-                button.classList.toggle('is-active', button.dataset.billingMode === mode);
-            });
-
-            priceNodes.forEach((node) => {
-                const value = node.dataset[mode];
-                if (value) node.textContent = value;
-            });
-        };
-
-        buttons.forEach((button) => {
-            button.addEventListener('click', () => setMode(button.dataset.billingMode || 'yearly'));
-        });
-
-        setMode('yearly');
+        if (audienceBtns.length) {
+            const setAudience = (t) => {
+                audienceBtns.forEach(b => b.classList.toggle('is-active', b.dataset.audience === t));
+                audiencePanels.forEach(p => { p.style.display = p.dataset.audiencePanel === t ? '' : 'none'; });
+            };
+            audienceBtns.forEach(btn => btn.addEventListener('click', () => setAudience(btn.dataset.audience)));
+            setAudience('doctors');
+        }
     });
+
 </script>
 
 <script type="application/ld+json">

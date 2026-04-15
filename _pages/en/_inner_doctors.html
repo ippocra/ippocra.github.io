@@ -241,26 +241,155 @@
         </section>
 
         <!-- Studio Editor showcase -->
+<style>
+#editor .section-container {
+  max-width: 1120px;
+}
+.editor-tabs {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.editor-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid #bfe5e8;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.editor-tab-btn.is-active {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: #ffffff;
+}
+.editor-tab-panel {
+  display: none;
+}
+.editor-tab-panel.is-active {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.editor-tab-panel .tab-content {
+  max-width: 680px;
+}
+.editor-tab-panel .tab-image {
+  width: 100%;
+}
+.tab-screenshot {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 0 #e2e8f0, 0 24px 64px rgba(15, 23, 42, 0.22);
+  background: #f1f5f9;
+}
+.tab-screenshot-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+}
+.tab-screenshot-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.tab-screenshot-dot:nth-child(1) { background: #fc5c55; }
+.tab-screenshot-dot:nth-child(2) { background: #fdbc2c; }
+.tab-screenshot-dot:nth-child(3) { background: #28c941; }
+.tab-screenshot img { display: block; width: 100%; height: auto; }
+</style>
+
 <section id="editor" class="section-accent-soft-gradient scroll-target">
     <div class="section-container">
-        <div class="flex flex-col lg:flex-row items-center gap-10">
-            <div class="lg:w-1/2">
-                <p class="mt-0 paragraph-md paragraph-bold" style="color:#3b9ba8;">New in Studio</p>
-                <h2 class="mt-0 section-title">Write, preview and brand every report before you save it</h2>
-                <p class="mt-7 paragraph-md">The Studio Editor gives you rich-text writing, live PDF preview, draft recovery and reusable templates. Switch to the DICOM viewer when imaging matters.</p>
+        <p class="mt-0 paragraph-md paragraph-bold scroll-animated-item" style="color:#3b9ba8;">Studio Editor</p>
+        <h2 class="mt-2 section-title scroll-animated-item">Write, preview and brand every report</h2>
+        <p class="mt-4 paragraph-md scroll-animated-item" style="max-width:640px;">A professional document editor built for doctors — rich-text formatting, live PDF preview, branded letterheads, specialty templates and optional DICOM viewing, all in one place.</p>
 
-                <ul class="mt-8 space-y-3" style="list-style:none; padding:0; margin:0;">
-                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Format reports with headings, bold, lists, undo/redo and more.</span></li><li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Build letterheads with logos, headers, footers, brand colour and fonts.</span></li><li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Keep templates ready for specialty workflows and reuse them instantly.</span></li><li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Attach DICOM studies and share the finished report through IppoLink.</span></li>
+        <div class="editor-tabs scroll-animated-item" role="tablist">
+            <button class="editor-tab-btn" data-editor-tab="editor" role="tab"><i class="fas fa-edit"></i> Editor &amp; Preview</button>
+            <button class="editor-tab-btn" data-editor-tab="themes" role="tab"><i class="fas fa-palette"></i> Themes &amp; Letterheads</button>
+            <button class="editor-tab-btn" data-editor-tab="templates" role="tab"><i class="fas fa-copy"></i> Templates</button>
+        </div>
+
+        <div class="editor-tab-panel" data-editor-panel="editor">
+            <div class="tab-content">
+                <h3 class="section-header">A clean writing surface, with live PDF output</h3>
+                <ul class="mt-6 space-y-3" style="list-style:none; padding:0; margin:0;">
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Formatting toolbar: headings, bold, italic, bullet and numbered lists, undo/redo.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Toggle a split-screen preview to see exactly how the finished PDF will look before saving.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Automatic draft recovery: unsaved work is restored if the browser closes unexpectedly.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Attach DICOM studies and share the finished report with the patient via IppoLink.</span></li>
                 </ul>
             </div>
-            <div class="lg:w-1/2">
-                <div style="border:1px solid #bfe5e8; border-radius:1.5rem; overflow:hidden; box-shadow:0 18px 50px rgba(15,23,42,0.16); background:#ffffff;">
-                    <img src="/assets/images/editor_documenti-en.gif" alt="Studio Editor live preview with rich-text tools" loading="lazy" style="display:block; width:100%; height:auto;">
+            <div class="tab-image">
+                <div class="tab-screenshot">
+                    <div class="tab-screenshot-bar"><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span></div>
+                    <img src="/assets/images/screenshots/04b_editor_with_preview.png" alt="Ippocra split-screen editor with live A4 PDF preview showing a branded letterhead" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="editor-tab-panel" data-editor-panel="themes">
+            <div class="tab-content">
+                <h3 class="section-header">Brand every document with your practice letterhead</h3>
+                <ul class="mt-6 space-y-3" style="list-style:none; padding:0; margin:0;">
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Upload your clinic logo — it appears at the top of every page.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Set accent colour, font, header and footer text to match your practice identity.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Save multiple themes; the live A4 preview updates in real time as you edit.</span></li>
+                </ul>
+            </div>
+            <div class="tab-image">
+                <div class="tab-screenshot">
+                    <div class="tab-screenshot-bar"><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span></div>
+                    <img src="/assets/images/screenshots/06_letterhead_dialog.png" alt="Ippocra letterhead creation dialog with live A4 preview" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="editor-tab-panel" data-editor-panel="templates">
+            <div class="tab-content">
+                <h3 class="section-header">Start every report from a specialty template</h3>
+                <ul class="mt-6 space-y-3" style="list-style:none; padding:0; margin:0;">
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Browse templates grouped by specialty and insert with one click.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Save any report as a reusable template for your own workflow.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Create, edit and organise templates from the slide-out panel inside the editor.</span></li>
+                </ul>
+            </div>
+            <div class="tab-image">
+                <div class="tab-screenshot">
+                    <div class="tab-screenshot-bar"><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span></div>
+                    <img src="/assets/images/screenshots/07_templates_panel.png" alt="Ippocra templates panel showing Cardiology specialty templates" loading="lazy">
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabBtns = document.querySelectorAll('[data-editor-tab]');
+        const panels  = document.querySelectorAll('[data-editor-panel]');
+        if (!tabBtns.length) return;
+        const setTab = (target) => {
+            tabBtns.forEach(b => b.classList.toggle('is-active', b.dataset.editorTab === target));
+            panels.forEach(p => p.classList.toggle('is-active', p.dataset.editorPanel === target));
+        };
+        tabBtns.forEach(btn => btn.addEventListener('click', () => setTab(btn.dataset.editorTab)));
+        setTab('editor');
+    });
+</script>
 
         <!-- Studio Trial CTA -->
 <section id="studio-plan" class="section-transparent scroll-target">
@@ -288,7 +417,7 @@
 
             <div class="lg:w-1/2">
                 <div style="border:1px solid #d9e4ea; border-radius:1.75rem; overflow:hidden; box-shadow:0 18px 50px rgba(15,23,42,0.14); background:#ffffff;">
-                    <img src="/assets/images/sponsored_plan-en.png" alt="Studio plan choice card with the trial highlighted" loading="lazy" style="display:block; width:100%; height:auto;">
+                    <img src="/assets/images/screenshots/01_plan_choice_doctor.png" alt="Ippocra plan selection screen showing the Studio Trial card and paid Studio plans" loading="lazy" style="display:block; width:100%; height:auto;">
                 </div>
             </div>
         </div>

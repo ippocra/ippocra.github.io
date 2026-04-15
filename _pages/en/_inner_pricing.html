@@ -425,6 +425,60 @@
       text-align: left;
     }
   }
+
+  .pricing-audience-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .pricing-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.4rem;
+    border-radius: 999px;
+    border: 1px solid #bfe5e8;
+    background: #ffffff;
+    color: #0f172a;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+
+  .pricing-tab-btn.is-active {
+    background: #0f766e;
+    border-color: #0f766e;
+    color: #ffffff;
+  }
+
+  .pricing-trial-banner {
+    margin-bottom: 2rem;
+    padding: 1.25rem 1.5rem;
+    border: 2px solid #7fd2d9;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #effafb 0%, #ffffff 100%);
+    box-shadow: 0 10px 30px rgba(59, 155, 168, 0.1);
+  }
+
+  .pricing-trial-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .pricing-trial-banner-text {
+    margin: 0;
+    color: #334155;
+    line-height: 1.55;
+    font-size: 0.97rem;
+  }
 </style>
 
 <section class="pricing-page">
@@ -453,12 +507,13 @@
           AES-256 encryption, cloud access and GDPR compliance for sensitive health documents.
         </div>
       </div>
-      <div class="pricing-jump-links" aria-label="Jump directly to a pricing section">
-        <a class="pricing-jump-link" href="#doctor-pricing"><i class="fas fa-stethoscope"></i> Jump to doctor pricing</a>
-        <a class="pricing-jump-link" href="#family-pricing"><i class="fas fa-house-medical"></i> Jump to family pricing</a>
+      <div class="pricing-audience-tabs" role="tablist">
+        <button class="pricing-tab-btn is-active" data-audience="doctors" role="tab"><i class="fas fa-stethoscope"></i> For doctors</button>
+        <button class="pricing-tab-btn" data-audience="families" role="tab"><i class="fas fa-house-medical"></i> For families</button>
       </div>
     </header>
 
+    <div data-audience-panel="doctors">
     <section id="doctor-pricing" class="pricing-section">
   <div class="pricing-section-header">
     <span class="pricing-kicker">Doctors</span>
@@ -468,50 +523,41 @@
     </p>
   </div>
 
-  <div class="pricing-billing-toggle" role="group" aria-label="Billing period">
-    <button type="button" class="billing-toggle-btn is-active" data-billing-mode="yearly">Yearly</button>
-    <button type="button" class="billing-toggle-btn" data-billing-mode="monthly">Monthly</button>
+  <div class="pricing-trial-banner">
+    <div class="pricing-trial-banner-content">
+      <div>
+        <span class="pricing-badge pricing-badge--light" style="margin-bottom:0.5rem;">Free trial</span>
+        <p class="pricing-trial-banner-text"><strong>Try the full Studio Editor + DICOM suite free for 30 days.</strong> No credit card required. A guided Quick Start checklist walks you through the key steps inside the app.</p>
+      </div>
+      <a class="main-color-button" href="https://app.ippocra.com/register" style="flex-shrink:0;">Start free trial</a>
+    </div>
   </div>
 
   <div class="pricing-card-grid pricing-card-grid--doctor">
-    <article class="pricing-plan pricing-plan--featured pricing-plan--trial">
-      <span class="pricing-badge">Start free</span>
-      <div>
-        <h3>Studio Trial</h3>
-        <p>Unlock the highest Studio tier for 30 days at no cost and see whether the workflow fits your practice.</p>
-      </div>
-      <div class="pricing-plan-media">
-        <img src="/assets/images/sponsored_plan-en.png" alt="Studio plan choice card with the trial highlighted" loading="lazy" />
-      </div>
-      <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>Studio Editor + DICOM Viewer included</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>30 days, no credit card required</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Guided Quick Start checklist inside the app</span></li>
-      </ul>
-      <div class="pricing-price-wrap">
-        <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-label">Free for 30 days</div>
-          <div class="pricing-price-value">€0</div>
-        </div>
-      </div>
-      <div class="pricing-cta-group">
-        <a class="main-color-button" href="https://app.ippocra.com/register">Start free trial</a>
-      </div>
-    </article>
-
     <article class="pricing-plan">
       <div>
         <h3>Studio</h3>
         <p>For doctors who want a searchable archive and multi-clinic cloud access.</p>
       </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head.png" alt="Studio plan" loading="lazy" />
+      </div>
       <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>1 doctor/admin account</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>2,000 documents/year</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Full patient management</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>1 doctor/admin account</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>2,000 documents/year</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Full patient management</span></li>
       </ul>
       <div class="pricing-price-wrap">
         <div class="pricing-price-row">
-          <div class="pricing-price-label">Monthly</div>
-          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€19 / month" data-yearly="€190 / year">€190 / year</div>
+          <div class="pricing-price-label">Monthly price</div>
+          <div class="pricing-price-value">€19 / month</div>
         </div>
         <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-note">Save 2 months with yearly</div>
+          <div>
+            <div class="pricing-price-label">Yearly price</div>
+            <div class="pricing-price-note">€190 / year · save 2 months</div>
+          </div>
+          <div class="pricing-price-value">€15.83 / month</div>
         </div>
       </div>
       <div class="pricing-cta-group">
@@ -524,16 +570,25 @@
         <h3>Studio Editor</h3>
         <p>For doctors who need the editor, live preview and branded letterheads.</p>
       </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head_editor.png" alt="Studio Editor plan" loading="lazy" />
+      </div>
       <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>Rich-text document editor</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Themes and letterheads</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Reusable specialty templates</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Rich-text document editor</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Themes and letterheads</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Reusable specialty templates</span></li>
       </ul>
       <div class="pricing-price-wrap">
         <div class="pricing-price-row">
-          <div class="pricing-price-label">Monthly</div>
-          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€29 / month" data-yearly="€290 / year">€290 / year</div>
+          <div class="pricing-price-label">Monthly price</div>
+          <div class="pricing-price-value">€29 / month</div>
         </div>
         <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-note">Save 2 months with yearly</div>
+          <div>
+            <div class="pricing-price-label">Yearly price</div>
+            <div class="pricing-price-note">€290 / year · save 2 months</div>
+          </div>
+          <div class="pricing-price-value">€24.17 / month</div>
         </div>
       </div>
       <div class="pricing-cta-group">
@@ -547,16 +602,25 @@
         <h3>Studio Editor + DICOM</h3>
         <p>For doctors who need the editor plus integrated DICOM viewing.</p>
       </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head_editor_dicom.png" alt="Studio Editor + DICOM plan" loading="lazy" />
+      </div>
       <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>Everything in Studio Editor</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Integrated DICOM viewer</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Attach images to reports</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Everything in Studio Editor</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Integrated DICOM viewer</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Attach images to reports</span></li>
       </ul>
       <div class="pricing-price-wrap">
         <div class="pricing-price-row">
-          <div class="pricing-price-label">Monthly</div>
-          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€39 / month" data-yearly="€390 / year">€390 / year</div>
+          <div class="pricing-price-label">Monthly price</div>
+          <div class="pricing-price-value">€39 / month</div>
         </div>
         <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-note">Save 2 months with yearly</div>
+          <div>
+            <div class="pricing-price-label">Yearly price</div>
+            <div class="pricing-price-note">€390 / year · save 2 months</div>
+          </div>
+          <div class="pricing-price-value">€32.50 / month</div>
         </div>
       </div>
       <div class="pricing-cta-group">
@@ -567,7 +631,9 @@
 
   <p class="pricing-small-note">All Studio plans include 1 doctor/admin account, 2,000 documents/year and full patient management.</p>
 </section>
+    </div><!-- /data-audience-panel="doctors" -->
 
+    <div data-audience-panel="families" style="display:none">
     <section id="family-pricing" class="pricing-section">
       <div class="pricing-section-header">
         <span class="pricing-kicker">Families and caregivers</span>
@@ -700,6 +766,7 @@
       </div>
       <p class="pricing-small-note">With yearly family and caregiver plans, you save the equivalent of 2 months.</p>
     </section>
+    </div><!-- /data-audience-panel="families" -->
 
     <section class="pricing-section">
       <div class="pricing-proof-grid">
@@ -750,28 +817,19 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const buttons = document.querySelectorAll('[data-billing-mode]');
-        const priceNodes = document.querySelectorAll('[data-billing-price]');
+        const audienceBtns   = document.querySelectorAll('[data-audience]');
+        const audiencePanels = document.querySelectorAll('[data-audience-panel]');
 
-        if (!buttons.length || !priceNodes.length) return;
-
-        const setMode = (mode) => {
-            buttons.forEach((button) => {
-                button.classList.toggle('is-active', button.dataset.billingMode === mode);
-            });
-
-            priceNodes.forEach((node) => {
-                const value = node.dataset[mode];
-                if (value) node.textContent = value;
-            });
-        };
-
-        buttons.forEach((button) => {
-            button.addEventListener('click', () => setMode(button.dataset.billingMode || 'yearly'));
-        });
-
-        setMode('yearly');
+        if (audienceBtns.length) {
+            const setAudience = (t) => {
+                audienceBtns.forEach(b => b.classList.toggle('is-active', b.dataset.audience === t));
+                audiencePanels.forEach(p => { p.style.display = p.dataset.audiencePanel === t ? '' : 'none'; });
+            };
+            audienceBtns.forEach(btn => btn.addEventListener('click', () => setAudience(btn.dataset.audience)));
+            setAudience('doctors');
+        }
     });
+
 </script>
 
 <script type="application/ld+json">

@@ -425,6 +425,60 @@
       text-align: left;
     }
   }
+
+  .pricing-audience-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .pricing-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.4rem;
+    border-radius: 999px;
+    border: 1px solid #bfe5e8;
+    background: #ffffff;
+    color: #0f172a;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+
+  .pricing-tab-btn.is-active {
+    background: #0f766e;
+    border-color: #0f766e;
+    color: #ffffff;
+  }
+
+  .pricing-trial-banner {
+    margin-bottom: 2rem;
+    padding: 1.25rem 1.5rem;
+    border: 2px solid #7fd2d9;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #effafb 0%, #ffffff 100%);
+    box-shadow: 0 10px 30px rgba(59, 155, 168, 0.1);
+  }
+
+  .pricing-trial-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .pricing-trial-banner-text {
+    margin: 0;
+    color: #334155;
+    line-height: 1.55;
+    font-size: 0.97rem;
+  }
 </style>
 
 <section class="pricing-page">
@@ -454,12 +508,13 @@
           Crittografia AES-256, accesso cloud e conformità GDPR per documenti sanitari sensibili.
         </div>
       </div>
-      <div class="pricing-jump-links" aria-label="Vai direttamente alla sezione desiderata">
-        <a class="pricing-jump-link" href="#prezzi-medici"><i class="fas fa-stethoscope"></i> Vai ai prezzi per medici</a>
-        <a class="pricing-jump-link" href="#prezzi-famiglie"><i class="fas fa-house-medical"></i> Vai ai prezzi per famiglie</a>
+      <div class="pricing-audience-tabs" role="tablist">
+        <button class="pricing-tab-btn is-active" data-audience="doctors" role="tab"><i class="fas fa-stethoscope"></i> Per i medici</button>
+        <button class="pricing-tab-btn" data-audience="families" role="tab"><i class="fas fa-house-medical"></i> Per le famiglie</button>
       </div>
     </header>
 
+    <div data-audience-panel="doctors">
     <section id="prezzi-medici" class="pricing-section">
   <div class="pricing-section-header">
     <span class="pricing-kicker">Medici</span>
@@ -469,50 +524,41 @@
     </p>
   </div>
 
-  <div class="pricing-billing-toggle" role="group" aria-label="Periodo di fatturazione">
-    <button type="button" class="billing-toggle-btn is-active" data-billing-mode="yearly">Annuale</button>
-    <button type="button" class="billing-toggle-btn" data-billing-mode="monthly">Mensile</button>
+  <div class="pricing-trial-banner">
+    <div class="pricing-trial-banner-content">
+      <div>
+        <span class="pricing-badge pricing-badge--light" style="margin-bottom:0.5rem;">Prova gratuita</span>
+        <p class="pricing-trial-banner-text"><strong>Prova l’intera suite Studio Editor + DICOM gratis per 30 giorni.</strong> Nessuna carta di credito richiesta. Una checklist Quick Start guidata ti accompagna nei passi chiave dentro l’app.</p>
+      </div>
+      <a class="main-color-button" href="https://app.ippocra.com/register" style="flex-shrink:0;">Inizia la prova</a>
+    </div>
   </div>
 
   <div class="pricing-card-grid pricing-card-grid--doctor">
-    <article class="pricing-plan pricing-plan--featured pricing-plan--trial">
-      <span class="pricing-badge">Inizia gratis</span>
-      <div>
-        <h3>Prova Studio</h3>
-        <p>Sblocca per 30 giorni il livello Studio più avanzato, senza alcun costo, e verifica se il flusso di lavoro si adatta al tuo studio.</p>
-      </div>
-      <div class="pricing-plan-media">
-        <img src="/assets/images/sponsored_plan-it.png" alt="Scheda del piano Studio con la prova evidenziata" loading="lazy" />
-      </div>
-      <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>Studio Editor + DICOM Viewer inclusi</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>30 giorni, nessuna carta di credito richiesta</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Checklist Quick Start guidata dentro l’app</span></li>
-      </ul>
-      <div class="pricing-price-wrap">
-        <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-label">Gratis per 30 giorni</div>
-          <div class="pricing-price-value">€0</div>
-        </div>
-      </div>
-      <div class="pricing-cta-group">
-        <a class="main-color-button" href="https://app.ippocra.com/register">Inizia la prova gratuita</a>
-      </div>
-    </article>
-
     <article class="pricing-plan">
       <div>
         <h3>Studio</h3>
         <p>Per medici che vogliono un archivio ricercabile e accesso cloud multi-ambulatorio.</p>
       </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head.png" alt="Piano Studio" loading="lazy" />
+      </div>
       <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>1 account medico/amministratore</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>2.000 documenti/anno</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Gestione completa dei pazienti</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>1 account medico/amministratore</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>2.000 documenti/anno</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Gestione completa dei pazienti</span></li>
       </ul>
       <div class="pricing-price-wrap">
         <div class="pricing-price-row">
-          <div class="pricing-price-label">Mensile</div>
-          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€19 / mese" data-yearly="€190 / anno">€190 / anno</div>
+          <div class="pricing-price-label">Prezzo mensile</div>
+          <div class="pricing-price-value">€19 / mese</div>
         </div>
         <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-note">Risparmi 2 mesi con l’annuale</div>
+          <div>
+            <div class="pricing-price-label">Prezzo annuale</div>
+            <div class="pricing-price-note">€190 / anno · risparmi 2 mesi</div>
+          </div>
+          <div class="pricing-price-value">€15,83 / mese</div>
         </div>
       </div>
       <div class="pricing-cta-group">
@@ -525,16 +571,25 @@
         <h3>Studio Editor</h3>
         <p>Per medici che hanno bisogno dell’editor, dell’anteprima live e dei letterhead brandizzati.</p>
       </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head_editor.png" alt="Piano Studio Editor" loading="lazy" />
+      </div>
       <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>Editor documenti rich-text</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Theme e letterhead</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Template riutilizzabili per specialità</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Editor documenti rich-text</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Temi e letterhead</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Template riutilizzabili per specialità</span></li>
       </ul>
       <div class="pricing-price-wrap">
         <div class="pricing-price-row">
-          <div class="pricing-price-label">Mensile</div>
-          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€29 / mese" data-yearly="€290 / anno">€290 / anno</div>
+          <div class="pricing-price-label">Prezzo mensile</div>
+          <div class="pricing-price-value">€29 / mese</div>
         </div>
         <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-note">Risparmi 2 mesi con l’annuale</div>
+          <div>
+            <div class="pricing-price-label">Prezzo annuale</div>
+            <div class="pricing-price-note">€290 / anno · risparmi 2 mesi</div>
+          </div>
+          <div class="pricing-price-value">€24,17 / mese</div>
         </div>
       </div>
       <div class="pricing-cta-group">
@@ -548,16 +603,25 @@
         <h3>Studio Editor + DICOM</h3>
         <p>Per medici che hanno bisogno dell’editor più la visualizzazione DICOM integrata.</p>
       </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head_editor_dicom.png" alt="Piano Studio Editor + DICOM" loading="lazy" />
+      </div>
       <ul class="pricing-metric-list">
-        <li><i class="fas fa-check-circle pricing-icon"></i><span>Tutto incluso in Studio Editor</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Visualizzatore DICOM integrato</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Allega immagini ai referti</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Tutto incluso in Studio Editor</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Visualizzatore DICOM integrato</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Allega immagini ai referti</span></li>
       </ul>
       <div class="pricing-price-wrap">
         <div class="pricing-price-row">
-          <div class="pricing-price-label">Mensile</div>
-          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€39 / mese" data-yearly="€390 / anno">€390 / anno</div>
+          <div class="pricing-price-label">Prezzo mensile</div>
+          <div class="pricing-price-value">€39 / mese</div>
         </div>
         <div class="pricing-price-row pricing-price-row--highlight">
-          <div class="pricing-price-note">Risparmi 2 mesi con l’annuale</div>
+          <div>
+            <div class="pricing-price-label">Prezzo annuale</div>
+            <div class="pricing-price-note">€390 / anno · risparmi 2 mesi</div>
+          </div>
+          <div class="pricing-price-value">€32,50 / mese</div>
         </div>
       </div>
       <div class="pricing-cta-group">
@@ -568,7 +632,9 @@
 
   <p class="pricing-small-note">Tutti i piani Studio includono 1 account medico/amministratore, 2.000 documenti/anno e gestione completa dei pazienti.</p>
 </section>
+    </div><!-- /data-audience-panel="doctors" -->
 
+    <div data-audience-panel="families" style="display:none">
     <section id="prezzi-famiglie" class="pricing-section">
       <div class="pricing-section-header">
         <span class="pricing-kicker">Famiglie e caregiver</span>
@@ -701,6 +767,7 @@
       </div>
       <p class="pricing-small-note">Con i piani annuali per utenti e caregiver risparmi l'equivalente di 2 mesi.</p>
     </section>
+    </div><!-- /data-audience-panel="families" -->
 
     <section class="pricing-section">
       <div class="pricing-proof-grid">
@@ -751,28 +818,19 @@
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const buttons = document.querySelectorAll('[data-billing-mode]');
-        const priceNodes = document.querySelectorAll('[data-billing-price]');
+        const audienceBtns   = document.querySelectorAll('[data-audience]');
+        const audiencePanels = document.querySelectorAll('[data-audience-panel]');
 
-        if (!buttons.length || !priceNodes.length) return;
-
-        const setMode = (mode) => {
-            buttons.forEach((button) => {
-                button.classList.toggle('is-active', button.dataset.billingMode === mode);
-            });
-
-            priceNodes.forEach((node) => {
-                const value = node.dataset[mode];
-                if (value) node.textContent = value;
-            });
-        };
-
-        buttons.forEach((button) => {
-            button.addEventListener('click', () => setMode(button.dataset.billingMode || 'yearly'));
-        });
-
-        setMode('yearly');
+        if (audienceBtns.length) {
+            const setAudience = (t) => {
+                audienceBtns.forEach(b => b.classList.toggle('is-active', b.dataset.audience === t));
+                audiencePanels.forEach(p => { p.style.display = p.dataset.audiencePanel === t ? '' : 'none'; });
+            };
+            audienceBtns.forEach(btn => btn.addEventListener('click', () => setAudience(btn.dataset.audience)));
+            setAudience('doctors');
+        }
     });
+
 </script>
 
 <script type="application/ld+json">

@@ -241,26 +241,152 @@
         </section>
 
         <!-- Studio Editor showcase -->
+<style>
+#editor .section-container {
+  max-width: 1120px;
+}
+.editor-tabs {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.editor-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid #bfe5e8;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.editor-tab-btn.is-active {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: #ffffff;
+}
+.editor-tab-panel { display: none; }
+.editor-tab-panel.is-active {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.editor-tab-panel .tab-content {
+  max-width: 680px;
+}
+.editor-tab-panel .tab-image {
+  width: 100%;
+}
+.tab-screenshot {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 0 #e2e8f0, 0 24px 64px rgba(15, 23, 42, 0.22);
+  background: #f1f5f9;
+}
+.tab-screenshot-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
+}
+.tab-screenshot-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.tab-screenshot-dot:nth-child(1) { background: #fc5c55; }
+.tab-screenshot-dot:nth-child(2) { background: #fdbc2c; }
+.tab-screenshot-dot:nth-child(3) { background: #28c941; }
+.tab-screenshot img { display: block; width: 100%; height: auto; }
+</style>
 <section id="editor" class="section-accent-soft-gradient scroll-target">
     <div class="section-container">
-        <div class="flex flex-col lg:flex-row items-center gap-10">
-            <div class="lg:w-1/2">
-                <p class="mt-0 paragraph-md paragraph-bold" style="color:#3b9ba8;">Νέο στο Studio</p>
-                <h2 class="mt-0 section-title">Γράψτε, κάντε προεπισκόπηση και προσαρμόστε κάθε αναφορά πριν τη σώσετε</h2>
-                <p class="mt-7 paragraph-md">Το Studio Editor προσφέρει rich-text γραφή, ζωντανή προεπισκόπηση PDF, επαναφορά πρόχειρων και επαναχρησιμοποιήσιμα πρότυπα. Περάστε στο DICOM viewer όταν χρειάζεστε απεικόνιση.</p>
+        <p class="mt-0 paragraph-md paragraph-bold scroll-animated-item" style="color:#3b9ba8;">Studio Editor</p>
+        <h2 class="mt-2 section-title scroll-animated-item">Γράψτε, προεπισκοπήστε και προσαρμόστε κάθε αναφορά</h2>
+        <p class="mt-4 paragraph-md scroll-animated-item" style="max-width:640px;">Ένας επαγγελματικός επεξεργαστής εγγράφων για γιατρούς — μορφοποίηση rich-text, ζωντανή προεπισκόπηση PDF, προσαρμοσμένες επικεφαλίδες, πρότυπα ειδικότητας και προαιρετική προβολή DICOM, όλα σε ένα μέρος.</p>
 
-                <ul class="mt-8 space-y-3" style="list-style:none; padding:0; margin:0;">
-                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Μορφοποιήστε αναφορές με επικεφαλίδες, έντονα, λίστες, αναίρεση/επανάληψη και άλλα.</span></li><li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Φτιάξτε letterheads με λογότυπο, κεφαλίδα, υποσέλιδο, χρώμα brand και γραμματοσειρές.</span></li><li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Κρατήστε έτοιμα πρότυπα για ειδικές ροές εργασίας και επαναχρησιμοποιήστε τα άμεσα.</span></li><li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Συνδέστε DICOM εξετάσεις και μοιραστείτε το τελικό report μέσω IppoLink.</span></li>
+        <div class="editor-tabs scroll-animated-item" role="tablist">
+            <button class="editor-tab-btn" data-editor-tab="editor" role="tab"><i class="fas fa-edit"></i> Editor &amp; Προεπισκόπηση</button>
+            <button class="editor-tab-btn" data-editor-tab="themes" role="tab"><i class="fas fa-palette"></i> Θέματα &amp; Επικεφαλίδες</button>
+            <button class="editor-tab-btn" data-editor-tab="templates" role="tab"><i class="fas fa-copy"></i> Πρότυπα</button>
+        </div>
+
+        <div class="editor-tab-panel" data-editor-panel="editor">
+            <div class="tab-content">
+                <h3 class="section-header">Καθαρή επιφάνεια γραφής, με ζωντανή εξαγωγή PDF</h3>
+                <ul class="mt-6 space-y-3" style="list-style:none; padding:0; margin:0;">
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Εργαλειοθήκη μορφοποίησης: επικεφαλίδες, έντονα, πλάγια, λίστες, αναίρεση/επανάληψη.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Εναλλαγή σε split-screen προεπισκόπηση για να δείτε ακριβώς πώς θα φαίνεται το PDF πριν αποθηκεύσετε.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Αυτόματη επαναφορά πρόχειρων: η μη αποθηκευμένη εργασία ανακτάται αν το πρόγραμμα περιήγησης κλείσει απροσδόκητα.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Επισύναψη DICOM εξετάσεων και κοινοποίηση της τελικής αναφοράς στον ασθενή μέσω IppoLink.</span></li>
                 </ul>
             </div>
-            <div class="lg:w-1/2">
-                <div style="border:1px solid #bfe5e8; border-radius:1.5rem; overflow:hidden; box-shadow:0 18px 50px rgba(15,23,42,0.16); background:#ffffff;">
-                    <img src="/assets/images/editor_documenti-en.gif" alt="Ζωντανή προεπισκόπηση του Studio Editor με εργαλεία rich-text" loading="lazy" style="display:block; width:100%; height:auto;">
+            <div class="tab-image">
+                <div class="tab-screenshot">
+                    <div class="tab-screenshot-bar"><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span></div>
+                    <img src="/assets/images/screenshots/04b_editor_with_preview.png" alt="Ippocra split-screen editor with live A4 PDF preview showing a branded letterhead" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="editor-tab-panel" data-editor-panel="themes">
+            <div class="tab-content">
+                <h3 class="section-header">Προσαρμόστε κάθε έγγραφο με την επικεφαλίδα του ιατρείου σας</h3>
+                <ul class="mt-6 space-y-3" style="list-style:none; padding:0; margin:0;">
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Ανεβάστε το λογότυπο της κλινικής — εμφανίζεται στην κορυφή κάθε σελίδας.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Ορίστε χρώμα accent, γραμματοσειρά, κεφαλίδα και υποσέλιδο για να ταιριάζει με την ταυτότητα του ιατρείου σας.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Αποθηκεύστε πολλά θέματα και εναλλαχθείτε μεταξύ τους — η προεπισκόπηση A4 ενημερώνεται σε πραγματικό χρόνο.</span></li>
+                </ul>
+            </div>
+            <div class="tab-image">
+                <div class="tab-screenshot">
+                    <div class="tab-screenshot-bar"><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span></div>
+                    <img src="/assets/images/screenshots/06_letterhead_dialog.png" alt="Ippocra letterhead creation dialog with live A4 preview" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="editor-tab-panel" data-editor-panel="templates">
+            <div class="tab-content">
+                <h3 class="section-header">Ξεκινήστε κάθε αναφορά από ένα πρότυπο ειδικότητας</h3>
+                <ul class="mt-6 space-y-3" style="list-style:none; padding:0; margin:0;">
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Περιηγηθείτε σε πρότυπα ομαδοποιημένα ανά ειδικότητα και εισαγάγετε με ένα κλικ.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Αποθηκεύστε οποιαδήποτε αναφορά ως επαναχρησιμοποιήσιμο πρότυπο για τη δική σας ροή εργασίας.</span></li>
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Δημιουργήστε, επεξεργαστείτε και οργανώστε πρότυπα από τον slide-out πίνακα μέσα στον editor.</span></li>
+                </ul>
+            </div>
+            <div class="tab-image">
+                <div class="tab-screenshot">
+                    <div class="tab-screenshot-bar"><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span><span class="tab-screenshot-dot"></span></div>
+                    <img src="/assets/images/screenshots/07_templates_panel.png" alt="Ippocra templates panel showing Cardiology specialty templates" loading="lazy">
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabBtns = document.querySelectorAll('[data-editor-tab]');
+        const panels  = document.querySelectorAll('[data-editor-panel]');
+        if (!tabBtns.length) return;
+        const setTab = (target) => {
+            tabBtns.forEach(b => b.classList.toggle('is-active', b.dataset.editorTab === target));
+            panels.forEach(p => p.classList.toggle('is-active', p.dataset.editorPanel === target));
+        };
+        tabBtns.forEach(btn => btn.addEventListener('click', () => setTab(btn.dataset.editorTab)));
+        setTab('editor');
+    });
+</script>
 
         <!-- Studio Trial CTA -->
 <section id="studio-plan" class="section-transparent scroll-target">
@@ -288,7 +414,7 @@
 
             <div class="lg:w-1/2">
                 <div style="border:1px solid #d9e4ea; border-radius:1.75rem; overflow:hidden; box-shadow:0 18px 50px rgba(15,23,42,0.14); background:#ffffff;">
-                    <img src="/assets/images/sponsored_plan-en.png" alt="Κάρτα επιλογής πακέτου Studio με τη δοκιμή επισημασμένη" loading="lazy" style="display:block; width:100%; height:auto;">
+                    <img src="/assets/images/screenshots/01_plan_choice_doctor.png" alt="Οθόνη επιλογής πακέτου Ippocra με την κάρτα Studio Trial και τα επί πληρωμή πακέτα" loading="lazy" style="display:block; width:100%; height:auto;">
                 </div>
             </div>
         </div>
