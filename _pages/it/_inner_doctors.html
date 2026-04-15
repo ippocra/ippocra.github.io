@@ -30,7 +30,7 @@
                     <div class="mt-10 hero-button-container">
                         <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
                             class="main-color-button">
-                            Inizia la prova gratuita di 14 giorni
+                            Inizia la prova gratuita di 30 giorni
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                 class="w-5 h-5 ml-2 -rotate-45">
                                 <path fill-rule="evenodd"
@@ -240,126 +240,51 @@
             </div>
         </section>
 
-        <!-- Piano Studio CTA -->
-        <section id="studio-plan" class="section-accent-soft-gradient scroll-target">
-            <div class="section-container max-w-2xl mx-auto text-center">
-                <div class="scroll-animated-item">
-                    <h2 class="mt-0 section-title text-center">Inizia oggi — gratis per 14 giorni</h2>
-                    <p class="mt-4 paragraph-md text-center">
-                        Il <strong>piano Studio</strong> è pensato per i medici liberi professionisti e per chi lavora in più ambulatori.
-                    </p>
+        <!-- Studio Trial CTA -->
+<section id="studio-plan" class="section-transparent scroll-target">
+    <div class="section-container max-w-6xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center gap-10">
+            <div class="lg:w-1/2">
+                <p class="mt-0 paragraph-md paragraph-bold" style="color:#3b9ba8;">Prova di 30 giorni</p>
+                <h2 class="mt-0 section-title">Prova gratis l’esperienza completa Studio Editor + DICOM</h2>
+                <p class="mt-7 paragraph-md">La prova include il livello Studio più avanzato, con 1 account medico/amministratore, 2.000 documenti/anno e gestione completa dei pazienti. Nessuna carta di credito richiesta.</p>
 
-                    <!-- Plan card -->
-                    <div class="mt-10 plan-card mx-auto" style="max-width:420px; text-align:left;">
-                        <header>
-                            <div>
-                                <div class="plan-image-wrapper w-full">
-                                    <img class="plan-img plan-img--small" src="/assets/images/ippoplans/ippodoc_head.png" alt="Piano Studio" />
-                                    <img class="plan-img plan-img--large" src="/assets/images/ippoplans/ippodoc_head.png" alt="Piano Studio" />
-                                </div>
-                                <h3 class="mt-0 text-center">Studio</h3>
-                            </div>
-                        </header>
+                <ul class="mt-8 space-y-3" style="list-style:none; padding:0; margin:0;">
+                    <li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Studio Editor + DICOM Viewer inclusi</span></li><li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>1 account medico/amministratore e 2.000 documenti/anno</span></li><li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Dopo la prova scegli Studio, Studio Editor o Studio Editor + DICOM</span></li><li class="flex items-start gap-3 paragraph-md"><i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:0.15rem;"></i><span>Checklist Quick Start guidata dentro l’app</span></li>
+                </ul>
 
-                        <div class="mt-4">
-                            <table role="table" aria-label="Limiti del piano">
-                                <tbody>
-                                    <tr>
-                                        <td><i class="fas fa-user-gear smaller-icon-size"></i></td>
-                                        <td><span>1</span></td>
-                                        <td><strong>Admin</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-user-injured smaller-icon-size"></i></td>
-                                        <td><span>1.000</span></td>
-                                        <td><strong>Pazienti</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fas fa-file-medical smaller-icon-size"></i></td>
-                                        <td><span>2.000</span></td>
-                                        <td><strong>Documenti caricati per anno</strong></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <ul class="mt-4 space-y-2" style="list-style:none; padding:0; margin:0;">
-                                <li class="flex items-center gap-2 paragraph-md">
-                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
-                                    Importazione cartelle in un click
-                                </li>
-                                <li class="flex items-center gap-2 paragraph-md">
-                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
-                                    Timeline longitudinale del paziente
-                                </li>
-                                <li class="flex items-center gap-2 paragraph-md">
-                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
-                                    Accesso cloud multi-ambulatorio
-                                </li>
-                                <li class="flex items-center gap-2 paragraph-md">
-                                    <i class="fas fa-check-circle" style="color:#3b9ba8;"></i>
-                                    Crittografia AES-256 e conformità GDPR
-                                </li>
-                            </ul>
-
-                            <!-- Billing toggle -->
-                            <div class="mt-8 text-center">
-                                <div class="toggle-container" style="margin-bottom:1rem;">
-                                    <div class="inline-flex" role="group" aria-label="Periodo di fatturazione">
-                                        <button id="studio-toggle-monthly" class="btn-toggle-left btn-toggled">Mensile</button>
-                                        <button id="studio-toggle-yearly" class="btn-toggle-right">Annuale</button>
-                                    </div>
-                                </div>
-
-                                <div id="studio-price-monthly" class="section-header">
-                                    <strong>€49</strong> <span style="font-size:1rem; font-weight:400;">/mese</span>
-                                </div>
-                                <div id="studio-price-yearly" class="hidden">
-                                    <div class="section-header" style="text-decoration:line-through; color:#94a3b8;">
-                                        €588 /anno
-                                    </div>
-                                    <div class="section-header">
-                                        <strong>€490</strong> <span style="font-size:1rem; font-weight:400;">/anno</span>
-                                        <span class="ml-2 px-2 py-0.5 rounded-full text-sm font-semibold" style="background:#dcfce7; color:#16a34a;">Risparmi il 20%</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-4 text-center">
-                                <span class="text-sm" style="color:#64748b;">
-                                    <i class="fas fa-calendar-check" style="color:#3b9ba8;"></i>
-                                    14 giorni di prova gratuita
-                                </span>
-                            </div>
-                        </div>
-
-                        <footer class="mt-6 text-center">
-                            <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
-                                class="main-color-button">
-                                Inizia la prova gratuita
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    class="w-5 h-5 ml-2 -rotate-45">
-                                    <path fill-rule="evenodd"
-                                        d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </a>
-                        </footer>
-                    </div>
+                <div class="mt-8 flex flex-wrap items-center gap-4">
+                    <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer" class="main-color-button">
+                        Inizia la prova gratuita
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2 -rotate-45">
+                            <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="/pricing" class="secondary-button">Vedi i prezzi</a>
                 </div>
             </div>
-        </section>
+
+            <div class="lg:w-1/2">
+                <div style="border:1px solid #d9e4ea; border-radius:1.75rem; overflow:hidden; box-shadow:0 18px 50px rgba(15,23,42,0.14); background:#ffffff;">
+                    <img src="/assets/images/sponsored_plan-it.png" alt="Scheda del piano Studio con la prova evidenziata" loading="lazy" style="display:block; width:100%; height:auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- CTA Registrazione -->
         <section id="join" class="section-main-hard-gradient scroll-target">
             <div class="text-center section-container">
                 <div class="scroll-animated-item">
-                    <h2 class="mt-0 section-title text-white text-center">Riprendi il tempo che meriti</h2>
+                    <h2 class="mt-0 section-title text-white text-center">Hai bisogno di una demo?</h2>
                     <p class="mt-7 mb-0 text-white text-center paragraph-md paragraph-bold">
-                        Inizia oggi la prova gratuita del piano Studio. Importa i referti che hai già, trova qualsiasi cosa in pochi secondi e visualizza la storia longitudinale di ogni paziente.
+                        Raccontaci il tuo flusso di lavoro e ti mostreremo come il nuovo Studio Editor e la prova si adattano al tuo studio.
                     </p>
                     <div class="mt-6 flex flex-wrap justify-center gap-4" style="font-size:0.875rem; color:rgba(255,255,255,0.85);">
-                        <span><i class="fas fa-check-circle" style="color:rgba(255,255,255,0.9);"></i> 14 giorni di prova gratuita</span>
-                        <span><i class="fas fa-check-circle" style="color:rgba(255,255,255,0.9);"></i> €49/mese dopo la prova</span>
-                        <span><i class="fas fa-check-circle" style="color:rgba(255,255,255,0.9);"></i> Risparmia il 20% con il piano annuale</span>
+                        <span><i class="fas fa-check-circle" style="color:rgba(255,255,255,0.9);"></i> Prova gratuita di 30 giorni</span>
+                        <span><i class="fas fa-check-circle" style="color:rgba(255,255,255,0.9);"></i> Nessuna carta di credito richiesta</span>
+                        <span><i class="fas fa-check-circle" style="color:rgba(255,255,255,0.9);"></i> Scegli il piano dopo</span>
                     </div>
                     <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
                         class="mt-10 main-color-button">
@@ -550,7 +475,7 @@
                             Quanto costa?
                         </summary>
                         <div class="faq-answer">
-                            Il <strong>piano Studio</strong> è pensato per i medici: €49/mese, oppure €490/anno (risparmio del 20%). I primi 14 giorni sono completamente gratuiti — Dopo la prova, scegli l'opzione di fatturazione più adatta a te. <a href="/pricing" style="color:#3b9ba8; text-decoration:underline;">Vedi tutti i dettagli sui prezzi.</a>
+                            La prova Studio ti dà l’esperienza completa Studio Editor + DICOM per 30 giorni, senza carta di credito. Al termine scegli Studio, Studio Editor o Studio Editor + DICOM dalla pagina prezzi.
                         </div>
                     </details>
 
@@ -595,6 +520,7 @@
         }
 
         observeAndAnimate('#whyippo');
+        observeAndAnimate('#editor');
         observeAndAnimate('#solution');
         observeAndAnimate('#import-showcase');
         observeAndAnimate('#daily-workflow');
@@ -603,30 +529,6 @@
         observeAndAnimate('#faq');
 
         lucide.createIcons();
-    </script>
-
-    <!-- Studio plan billing toggle -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const monthlyBtn = document.getElementById('studio-toggle-monthly');
-            const yearlyBtn = document.getElementById('studio-toggle-yearly');
-            const priceMonthly = document.getElementById('studio-price-monthly');
-            const priceYearly = document.getElementById('studio-price-yearly');
-
-            if (!monthlyBtn || !yearlyBtn) return;
-
-            const setStudioMode = (mode) => {
-                const showMonthly = mode === 'monthly';
-                priceMonthly.classList.toggle('hidden', !showMonthly);
-                priceYearly.classList.toggle('hidden', showMonthly);
-                monthlyBtn.classList.toggle('btn-toggled', showMonthly);
-                yearlyBtn.classList.toggle('btn-toggled', !showMonthly);
-            };
-
-            setStudioMode('monthly');
-            monthlyBtn.addEventListener('click', () => setStudioMode('monthly'));
-            yearlyBtn.addEventListener('click', () => setStudioMode('yearly'));
-        });
     </script>
 
     <script>

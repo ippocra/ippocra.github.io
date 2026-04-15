@@ -94,6 +94,51 @@
     text-decoration: none;
   }
 
+.pricing-billing-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 2rem;
+}
+
+.billing-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.82rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid #bfe5e8;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  cursor: pointer;
+}
+
+.billing-toggle-btn.is-active {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: #ffffff;
+}
+
+.pricing-plan--trial {
+  border-color: #7fd2d9;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fcfc 100%);
+}
+
+.pricing-plan-price {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.pricing-plan-price small {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #475569;
+}
+
   .pricing-section {
     margin-top: 4rem;
   }
@@ -415,64 +460,113 @@
     </header>
 
     <section id="doctor-pricing" class="pricing-section">
-      <div class="pricing-section-header">
-        <span class="pricing-kicker">Doctors</span>
-        <h2>Clear pricing to win back time at every appointment</h2>
-        <p>
-          The <strong>Studio</strong> plan is built for doctors who want patient reports and documents always available and easy to find,
-          without wasting time searching for them. Your archive stays organised, searchable and ready whenever you need it.
-        </p>
+  <div class="pricing-section-header">
+    <span class="pricing-kicker">Doctors</span>
+    <h2>Try the full Studio suite free for 30 days</h2>
+    <p>
+      Start with the Studio Trial — no credit card required — and then choose the tier that fits your practice. All Studio plans include one doctor/admin account, 2,000 documents/year and full patient management.
+    </p>
+  </div>
+
+  <div class="pricing-billing-toggle" role="group" aria-label="Billing period">
+    <button type="button" class="billing-toggle-btn is-active" data-billing-mode="yearly">Yearly</button>
+    <button type="button" class="billing-toggle-btn" data-billing-mode="monthly">Monthly</button>
+  </div>
+
+  <div class="pricing-card-grid pricing-card-grid--doctor">
+    <article class="pricing-plan pricing-plan--featured pricing-plan--trial">
+      <span class="pricing-badge">Start free</span>
+      <div>
+        <h3>Studio Trial</h3>
+        <p>Unlock the highest Studio tier for 30 days at no cost and see whether the workflow fits your practice.</p>
       </div>
-
-      <div class="pricing-card-grid pricing-card-grid--single">
-        <article id="studio" class="pricing-plan pricing-plan--featured">
-          <span class="pricing-badge">14 days free</span>
-          <div>
-            <h3>Studio</h3>
-            <p>For doctors who want a personal, portable patient archive that is ready in every clinic.</p>
-          </div>
-
-          <div class="pricing-plan-media">
-            <img src="assets/images/ippoplans/ippodoc_head.png" alt="Studio plan for doctors" loading="lazy" />
-          </div>
-
-          <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1 admin</strong> to manage your personal archive.</span></li>
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1,000 patients</strong> included in the plan.</span></li>
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2,000 document uploads/year</strong> for reports, tests and clinical attachments.</span></li>
-          </ul>
-
-          <ul class="pricing-feature-list">
-            <li><i class="fas fa-folder-open pricing-icon"></i><span>One-click folder import so you can start from your existing archive.</span></li>
-            <li><i class="fas fa-notes-medical pricing-icon"></i><span>Longitudinal patient timeline to review clinical history in seconds.</span></li>
-            <li><i class="fas fa-laptop-medical pricing-icon"></i><span>Multi-clinic cloud access so you can work anywhere without moving files around.</span></li>
-            <li><i class="fas fa-shield-halved pricing-icon"></i><span>AES-256 encryption and GDPR compliance to protect sensitive health data.</span></li>
-          </ul>
-
-          <div class="pricing-price-wrap">
-            <div class="pricing-price-row">
-              <div>
-                <div class="pricing-price-label">Monthly price</div>
-              </div>
-              <div class="pricing-price-value">€49 / month</div>
-            </div>
-            <div class="pricing-price-row pricing-price-row--highlight">
-              <div>
-                <div class="pricing-price-label">Yearly price</div>
-                <div class="pricing-price-note">€490 / year · save 20%</div>
-              </div>
-              <div class="pricing-price-value">equivalent to €40.83 / month</div>
-            </div>
-          </div>
-
-          <div class="pricing-cta-group">
-            <a class="main-color-button" href="https://app.ippocra.com/register">Start free trial</a>
-            <a class="pricing-secondary-link" href="/doctors">See how it works for doctors</a>
-          </div>
-          <p class="pricing-small-note">A good fit for doctors who move between clinics and need patient history ready at every appointment.</p>
-        </article>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/sponsored_plan-en.png" alt="Studio plan choice card with the trial highlighted" loading="lazy" />
       </div>
-    </section>
+      <ul class="pricing-metric-list">
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Studio Editor + DICOM Viewer included</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>30 days, no credit card required</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Guided Quick Start checklist inside the app</span></li>
+      </ul>
+      <div class="pricing-price-wrap">
+        <div class="pricing-price-row pricing-price-row--highlight">
+          <div class="pricing-price-label">Free for 30 days</div>
+          <div class="pricing-price-value">€0</div>
+        </div>
+      </div>
+      <div class="pricing-cta-group">
+        <a class="main-color-button" href="https://app.ippocra.com/register">Start free trial</a>
+      </div>
+    </article>
+
+    <article class="pricing-plan">
+      <div>
+        <h3>Studio</h3>
+        <p>For doctors who want a searchable archive and multi-clinic cloud access.</p>
+      </div>
+      <ul class="pricing-metric-list">
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>1 doctor/admin account</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>2,000 documents/year</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Full patient management</span></li>
+      </ul>
+      <div class="pricing-price-wrap">
+        <div class="pricing-price-row">
+          <div class="pricing-price-label">Monthly</div>
+          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€19 / month" data-yearly="€190 / year">€190 / year</div>
+        </div>
+        <div class="pricing-price-row pricing-price-row--highlight">
+          <div class="pricing-price-note">Save 2 months with yearly</div>
+        </div>
+      </div>
+      <div class="pricing-cta-group">
+        <a class="main-color-button" href="https://app.ippocra.com/register">Choose Studio</a>
+      </div>
+    </article>
+
+    <article class="pricing-plan">
+      <div>
+        <h3>Studio Editor</h3>
+        <p>For doctors who need the editor, live preview and branded letterheads.</p>
+      </div>
+      <ul class="pricing-metric-list">
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Rich-text document editor</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Themes and letterheads</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Reusable specialty templates</span></li>
+      </ul>
+      <div class="pricing-price-wrap">
+        <div class="pricing-price-row">
+          <div class="pricing-price-label">Monthly</div>
+          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€29 / month" data-yearly="€290 / year">€290 / year</div>
+        </div>
+        <div class="pricing-price-row pricing-price-row--highlight">
+          <div class="pricing-price-note">Save 2 months with yearly</div>
+        </div>
+      </div>
+      <div class="pricing-cta-group">
+        <a class="main-color-button" href="https://app.ippocra.com/register">Choose Studio Editor</a>
+      </div>
+    </article>
+
+    <article class="pricing-plan pricing-plan--featured">
+      <span class="pricing-badge">DICOM</span>
+      <div>
+        <h3>Studio Editor + DICOM</h3>
+        <p>For doctors who need the editor plus integrated DICOM viewing.</p>
+      </div>
+      <ul class="pricing-metric-list">
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Everything in Studio Editor</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Integrated DICOM viewer</span></li><li><i class="fas fa-check-circle pricing-icon"></i><span>Attach images to reports</span></li>
+      </ul>
+      <div class="pricing-price-wrap">
+        <div class="pricing-price-row">
+          <div class="pricing-price-label">Monthly</div>
+          <div class="pricing-plan-price pricing-price-value" data-billing-price data-monthly="€39 / month" data-yearly="€390 / year">€390 / year</div>
+        </div>
+        <div class="pricing-price-row pricing-price-row--highlight">
+          <div class="pricing-price-note">Save 2 months with yearly</div>
+        </div>
+      </div>
+      <div class="pricing-cta-group">
+        <a class="main-color-button" href="https://app.ippocra.com/register">Choose Studio + DICOM</a>
+      </div>
+    </article>
+  </div>
+
+  <p class="pricing-small-note">All Studio plans include 1 doctor/admin account, 2,000 documents/year and full patient management.</p>
+</section>
 
     <section id="family-pricing" class="pricing-section">
       <div class="pricing-section-header">
@@ -480,7 +574,7 @@
         <h2>Organise your family health documents without chasing scattered reports</h2>
         <p>
           These plans are for people who need to keep tests, visits and reports organised for more than one person.
-          Compare the options based on how many profiles you manage and how many documents you expect to upload over time.
+          Compare the options based on how many persons you manage and how many documents you expect to upload over time.
         </p>
       </div>
 
@@ -495,7 +589,7 @@
             <img src="assets/images/ippoplans/solo_head.png" alt="Free Ippo plan" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1 admin</strong> and <strong>2 profiles</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1 admin</strong> and <strong>2 persons</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>5 document uploads/year</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>Unlimited IppoLinks</strong> to share documents when needed.</span></li>
           </ul>
@@ -519,7 +613,7 @@
             <img src="assets/images/ippoplans/just_us.png" alt="Just Us plan" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 admins</strong> and <strong>2 profiles</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 admins</strong> and <strong>2 persons</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>200 document uploads/year</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>Unlimited IppoLinks</strong> to send reports to doctors or facilities.</span></li>
           </ul>
@@ -551,7 +645,7 @@
             <img src="assets/images/ippoplans/family.png" alt="Family plan" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 admins</strong> and <strong>5 profiles</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 admins</strong> and <strong>5 persons</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>500 document uploads/year</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>Unlimited IppoLinks</strong> to share reports quickly.</span></li>
           </ul>
@@ -582,7 +676,7 @@
             <img src="assets/images/ippoplans/family.png" alt="Family Plus plan" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>4 admins</strong> and <strong>10 profiles</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>4 admins</strong> and <strong>10 persons</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1,000 document uploads/year</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>Unlimited IppoLinks</strong> to collaborate across the full care network.</span></li>
           </ul>
@@ -629,99 +723,134 @@
     </section>
 
     <section class="pricing-section">
-      <article class="pricing-faq-card">
-        <h2>Frequently asked questions about Ippocra pricing</h2>
+  <article class="pricing-faq-card">
+    <h2>Frequently asked questions about Studio pricing</h2>
 
-        <details open>
-          <summary>How much does Ippocra cost for a doctor?</summary>
-          <p>
-            The <strong>Studio</strong> plan costs <strong>€49 per month</strong> or <strong>€490 per year</strong>. It includes 1 admin,
-            1,000 patients, 2,000 document uploads per year, a patient timeline, multi-clinic cloud access and a 14-day free trial.
-          </p>
-        </details>
+<details open>
+  <summary>What happens when my trial ends?</summary>
+  <p>Choose any paid Studio plan to keep your data and continue working; nothing is deleted immediately.</p>
+</details>
 
-        <details>
-          <summary>How much does Ippocra cost for users, families and caregivers?</summary>
-          <p>
-            Ippocra offers one <strong>free</strong> plan and three paid plans for users and caregivers: <strong>Just Us</strong>
-            at €5/month or €50/year, <strong>Family</strong> at €8/month or €80/year, and <strong>Family Plus</strong> at €10/month or €100/year.
-          </p>
-        </details>
+<details open>
+  <summary>Can I change my plan later?</summary>
+  <p>Yes. You can upgrade or downgrade at any time from the subscription settings.</p>
+</details>
 
-        <details>
-          <summary>How do I choose the right plan?</summary>
-          <p>
-            If you are a doctor working across one or more clinics, <strong>Studio</strong> is the plan built for you. If you need to organise
-            reports and tests for yourself, your family or someone you care for, choose between <strong>Ippo</strong>, <strong>Just Us</strong>,
-            <strong>Family</strong> and <strong>Family Plus</strong> based on how many profiles and documents you need to manage.
-          </p>
-        </details>
+<details open>
+  <summary>How is billing handled?</summary>
+  <p>Billing is handled securely via Stripe, and invoices plus payment methods are available from the customer portal.</p>
+</details>
 
-        <details>
-          <summary>Can I find and share reports quickly with Ippocra?</summary>
-          <p>
-            Yes. For doctors, that means pulling up patient history quickly, even across multiple clinics. For families and caregivers,
-            it means keeping an organised archive from which you can retrieve and share tests and reports without chasing scattered files.
-          </p>
-        </details>
-      </article>
-    </section>
-  </div>
+<details open>
+  <summary>Is there an Enterprise plan?</summary>
+  <p>Yes. Contact us for teams of 10+ doctors or custom integrations.</p>
+</details>
+  </article>
 </section>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Ippocra",
-  "applicationCategory": "HealthApplication",
-  "operatingSystem": "Web",
-  "url": "https://ippocra.com/pricing",
-  "description": "Ippocra pricing for doctors, families and caregivers: a searchable patient archive for doctors and a secure health-document archive for families.",
-  "offers": [
-    {
-      "@type": "Offer",
-      "name": "Studio",
-      "price": "49",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/pricing#studio",
-      "description": "Plan for doctors with a portable, searchable archive and multi-clinic access."
-    },
-    {
-      "@type": "Offer",
-      "name": "Ippo",
-      "price": "0",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/pricing#ippo",
-      "description": "Free plan to start organising personal and family health documents."
-    },
-    {
-      "@type": "Offer",
-      "name": "Just Us",
-      "price": "5",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/pricing#just-us",
-      "description": "Plan for small households and caregivers."
-    },
-    {
-      "@type": "Offer",
-      "name": "Family",
-      "price": "8",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/pricing#family",
-      "description": "Plan for families that want to centralise reports and tests for multiple people."
-    },
-    {
-      "@type": "Offer",
-      "name": "Family Plus",
-      "price": "10",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/pricing#family-plus",
-      "description": "Plan for larger families or caregivers with higher document volume."
-    }
-  ]
-}
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const buttons = document.querySelectorAll('[data-billing-mode]');
+        const priceNodes = document.querySelectorAll('[data-billing-price]');
+
+        if (!buttons.length || !priceNodes.length) return;
+
+        const setMode = (mode) => {
+            buttons.forEach((button) => {
+                button.classList.toggle('is-active', button.dataset.billingMode === mode);
+            });
+
+            priceNodes.forEach((node) => {
+                const value = node.dataset[mode];
+                if (value) node.textContent = value;
+            });
+        };
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => setMode(button.dataset.billingMode || 'yearly'));
+        });
+
+        setMode('yearly');
+    });
 </script>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Ippocra",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web",
+      "url": "https://ippocra.com/pricing",
+      "description": "Ippocra pricing for doctors, families and caregivers: a searchable patient archive for doctors and a secure health-document archive for families.",
+      "offers": [
+    {
+  "@type": "Offer",
+  "name": "Studio Trial",
+  "price": "0",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#studio-trial",
+  "description": "30-day Studio Trial with the full Studio Editor + DICOM experience."
+},
+{
+  "@type": "Offer",
+  "name": "Studio",
+  "price": "19",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#studio",
+  "description": "Plan for doctors who need a searchable archive and multi-clinic access."
+},
+{
+  "@type": "Offer",
+  "name": "Studio Editor",
+  "price": "29",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#studio-editor",
+  "description": "Plan for doctors who need the editor, live preview and branded letterheads."
+},
+{
+  "@type": "Offer",
+  "name": "Studio Editor + DICOM",
+  "price": "39",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#studio-editor-dicom",
+  "description": "Plan for doctors who need the editor plus integrated DICOM viewing."
+},
+{
+  "@type": "Offer",
+  "name": "Ippo",
+  "price": "0",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#ippo",
+  "description": "Free plan to start organising personal and family health documents."
+},
+{
+  "@type": "Offer",
+  "name": "Just Us",
+  "price": "5",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#just-us",
+  "description": "Plan for small households and caregivers."
+},
+{
+  "@type": "Offer",
+  "name": "Family",
+  "price": "8",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#family",
+  "description": "Plan for families that want to centralise reports and tests for multiple people."
+},
+{
+  "@type": "Offer",
+  "name": "Family Plus",
+  "price": "10",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#family-plus",
+  "description": "Plan for larger families or caregivers with higher document volume."
+}
+      ]
+    }
+    </script>
 
 <script type="application/ld+json">
 {
@@ -730,34 +859,34 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How much does Ippocra cost for a doctor?",
+      "name": "What happens when my trial ends?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Studio plan costs 49 euro per month or 490 euro per year and includes 1 admin, 1,000 patients, 2,000 document uploads per year, a patient timeline, multi-clinic cloud access and a 14-day free trial."
+        "text": "Choose any paid Studio plan to keep your data and continue working; nothing is deleted immediately."
       }
     },
     {
       "@type": "Question",
-      "name": "How much does Ippocra cost for users, families and caregivers?",
+      "name": "Can I change my plan later?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ippocra offers one free plan and three paid plans for users and caregivers: Just Us at 5 euro per month or 50 euro per year, Family at 8 euro per month or 80 euro per year, and Family Plus at 10 euro per month or 100 euro per year."
+        "text": "Yes. You can upgrade or downgrade at any time from the subscription settings."
       }
     },
     {
       "@type": "Question",
-      "name": "How do I choose the right plan?",
+      "name": "How is billing handled?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you are a doctor working across one or more clinics, Studio is the plan built for you. If you need to organise reports and tests for yourself, your family or someone you care for, choose between Ippo, Just Us, Family and Family Plus based on how many profiles and documents you need to manage."
+        "text": "Billing is handled securely via Stripe, and invoices plus payment methods are available from the customer portal."
       }
     },
     {
       "@type": "Question",
-      "name": "Can I find and share reports quickly with Ippocra?",
+      "name": "Is there an Enterprise plan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. For doctors, that means pulling up patient history quickly, even across multiple clinics. For families and caregivers, it means keeping an organised archive from which you can retrieve and share tests and reports without chasing scattered files."
+        "text": "Yes. Contact us for teams of 10+ doctors or custom integrations."
       }
     }
   ]
