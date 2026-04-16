@@ -94,6 +94,51 @@
     text-decoration: none;
   }
 
+.pricing-billing-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 2rem;
+}
+
+.billing-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.82rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid #bfe5e8;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  cursor: pointer;
+}
+
+.billing-toggle-btn.is-active {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: #ffffff;
+}
+
+.pricing-plan--trial {
+  border-color: #7fd2d9;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fcfc 100%);
+}
+
+.pricing-plan-price {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.pricing-plan-price small {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #475569;
+}
+
   .pricing-section {
     margin-top: 4rem;
   }
@@ -380,6 +425,60 @@
       text-align: left;
     }
   }
+
+  .pricing-audience-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .pricing-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.4rem;
+    border-radius: 999px;
+    border: 1px solid #bfe5e8;
+    background: #ffffff;
+    color: #0f172a;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+
+  .pricing-tab-btn.is-active {
+    background: #0f766e;
+    border-color: #0f766e;
+    color: #ffffff;
+  }
+
+  .pricing-trial-banner {
+    margin-bottom: 2rem;
+    padding: 1.25rem 1.5rem;
+    border: 2px solid #7fd2d9;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #effafb 0%, #ffffff 100%);
+    box-shadow: 0 10px 30px rgba(59, 155, 168, 0.1);
+  }
+
+  .pricing-trial-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .pricing-trial-banner-text {
+    margin: 0;
+    color: #334155;
+    line-height: 1.55;
+    font-size: 0.97rem;
+  }
 </style>
 
 <section class="pricing-page">
@@ -409,72 +508,133 @@
           Κρυπτογράφηση AES-256, πρόσβαση μέσω cloud και συμμόρφωση GDPR για ευαίσθητα ιατρικά έγγραφα.
         </div>
       </div>
-      <div class="pricing-jump-links" aria-label="Μετάβαση απευθείας στην ενότητα τιμών που θέλετε">
-        <a class="pricing-jump-link" href="#doctor-pricing"><i class="fas fa-stethoscope"></i> Μετάβαση στις τιμές για γιατρούς</a>
-        <a class="pricing-jump-link" href="#family-pricing"><i class="fas fa-house-medical"></i> Μετάβαση στις τιμές για οικογένειες</a>
+      <div class="pricing-audience-tabs" role="tablist">
+        <button class="pricing-tab-btn is-active" data-audience="doctors" role="tab"><i class="fas fa-stethoscope"></i> Για γιατρούς</button>
+        <button class="pricing-tab-btn" data-audience="families" role="tab"><i class="fas fa-house-medical"></i> Για οικογένειες</button>
       </div>
     </header>
 
+    <div data-audience-panel="doctors">
     <section id="doctor-pricing" class="pricing-section">
-      <div class="pricing-section-header">
-        <span class="pricing-kicker">Γιατροί</span>
-        <h2>Καθαρή τιμολόγηση για να κερδίζετε χρόνο σε κάθε επίσκεψη</h2>
-        <p>
-          Το πλάνο <strong>Studio</strong> είναι σχεδιασμένο για γιατρούς που θέλουν οι γνωματεύσεις και τα έγγραφα των ασθενών να είναι πάντα διαθέσιμα
-          και εύκολα στην αναζήτηση, χωρίς να χάνουν χρόνο ψάχνοντάς τα. Το αρχείο σας παραμένει οργανωμένο, αναζητήσιμο και έτοιμο όταν το χρειάζεστε.
-        </p>
-      </div>
+  <div class="pricing-section-header">
+    <span class="pricing-kicker">Γιατροί</span>
+    <h2>Δοκιμάστε δωρεάν για 30 ημέρες ολόκληρη τη σουίτα Studio</h2>
+    <p>
+      Ξεκινήστε με τη Δοκιμή Studio — χωρίς πιστωτική κάρτα — και στη συνέχεια επιλέξτε το επίπεδο που ταιριάζει στην πρακτική σας. Όλα τα Studio πλάνα περιλαμβάνουν 1 λογαριασμό γιατρού/διαχειριστή, 2.000 έγγραφα/έτος και πλήρη διαχείριση ασθενών.
+    </p>
+  </div>
 
-      <div class="pricing-card-grid pricing-card-grid--single">
-        <article id="studio" class="pricing-plan pricing-plan--featured">
-          <span class="pricing-badge">14 ημέρες δωρεάν</span>
+  <div class="pricing-trial-banner">
+    <div class="pricing-trial-banner-content">
+      <div>
+        <span class="pricing-badge pricing-badge--light" style="margin-bottom:0.5rem;">Δωρεάν δοκιμή</span>
+        <p class="pricing-trial-banner-text"><strong>Δοκιμάστε δωρεάν ολόκληρη τη σουίτα Studio Editor + DICOM για 30 ημέρες.</strong> Χωρίς πιστωτική κάρτα. Ένας οδηγός Quick Start σας καθοδηγεί στα βήματα-κλειδιά μέσα στην εφαρμογή.</p>
+      </div>
+      <a class="main-color-button" href="https://app.ippocra.com/register" style="flex-shrink:0;">Ξεκινήστε δωρεάν</a>
+    </div>
+  </div>
+
+  <div class="pricing-card-grid pricing-card-grid--doctor">
+    <article class="pricing-plan">
+      <div>
+        <h3>Studio</h3>
+        <p>Για γιατρούς που θέλουν αναζητήσιμο αρχείο και πρόσβαση cloud σε πολλαπλές κλινικές.</p>
+      </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head.png" alt="Πλάνο Studio" loading="lazy" />
+      </div>
+      <ul class="pricing-metric-list">
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>1 λογαριασμός γιατρού/διαχειριστή</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>2.000 έγγραφα/έτος</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Πλήρης διαχείριση ασθενών</span></li>
+      </ul>
+      <div class="pricing-price-wrap">
+        <div class="pricing-price-row">
+          <div class="pricing-price-label">Μηνιαία τιμή</div>
+          <div class="pricing-price-value">€19 / μήνα</div>
+        </div>
+        <div class="pricing-price-row pricing-price-row--highlight">
           <div>
-            <h3>Studio</h3>
-            <p>Για γιατρούς που θέλουν ένα προσωπικό, φορητό αρχείο ασθενών έτοιμο σε κάθε ιατρείο.</p>
+            <div class="pricing-price-label">Ετήσια τιμή</div>
+            <div class="pricing-price-note">€190 / έτος · εξοικονομείτε 2 μήνες</div>
           </div>
-
-          <div class="pricing-plan-media">
-            <img src="assets/images/ippoplans/ippodoc_head.png" alt="Πλάνο Studio για γιατρούς" loading="lazy" />
-          </div>
-
-          <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1 διαχειριστής</strong> για το προσωπικό σας αρχείο.</span></li>
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1.000 ασθενείς</strong> περιλαμβάνονται στο πλάνο.</span></li>
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2.000 μεταφορτώσεις εγγράφων/έτος</strong> για γνωματεύσεις, εξετάσεις και κλινικά συνημμένα.</span></li>
-          </ul>
-
-          <ul class="pricing-feature-list">
-            <li><i class="fas fa-folder-open pricing-icon"></i><span>Εισαγωγή φακέλων με ένα κλικ, ώστε να ξεκινήσετε από το υπάρχον αρχείο σας.</span></li>
-            <li><i class="fas fa-notes-medical pricing-icon"></i><span>Διαχρονικό ιστορικό ασθενούς για να ξαναβλέπετε τη διαδρομή φροντίδας μέσα σε δευτερόλεπτα.</span></li>
-            <li><i class="fas fa-laptop-medical pricing-icon"></i><span>Πρόσβαση από το cloud σε πολλαπλά ιατρεία, ώστε να εργάζεστε παντού χωρίς να μεταφέρετε αρχεία.</span></li>
-            <li><i class="fas fa-shield-halved pricing-icon"></i><span>Κρυπτογράφηση AES-256 και συμμόρφωση GDPR για την προστασία ευαίσθητων ιατρικών δεδομένων.</span></li>
-          </ul>
-
-          <div class="pricing-price-wrap">
-            <div class="pricing-price-row">
-              <div>
-                <div class="pricing-price-label">Μηνιαία τιμή</div>
-              </div>
-              <div class="pricing-price-value">€49 / μήνα</div>
-            </div>
-            <div class="pricing-price-row pricing-price-row--highlight">
-              <div>
-                <div class="pricing-price-label">Ετήσια τιμή</div>
-                <div class="pricing-price-note">€490 / έτος · εξοικονομείτε 20%</div>
-              </div>
-              <div class="pricing-price-value">ισοδυναμεί με €40,83 / μήνα</div>
-            </div>
-          </div>
-
-          <div class="pricing-cta-group">
-            <a class="main-color-button" href="https://app.ippocra.com/register">Ξεκινήστε δωρεάν δοκιμή</a>
-            <a class="pricing-secondary-link" href="/doctors">Δείτε πώς λειτουργεί για γιατρούς</a>
-          </div>
-          <p class="pricing-small-note">Ταιριάζει σε γιατρούς που κινούνται ανάμεσα σε περισσότερα ιατρεία και θέλουν το ιστορικό του ασθενούς πάντα διαθέσιμο.</p>
-        </article>
+          <div class="pricing-price-value">€15,83 / μήνα</div>
+        </div>
       </div>
-    </section>
+      <div class="pricing-cta-group">
+        <a class="main-color-button" href="https://app.ippocra.com/register">Επιλέξτε Studio</a>
+      </div>
+    </article>
 
+    <article class="pricing-plan">
+      <div>
+        <h3>Studio Editor</h3>
+        <p>Για γιατρούς που χρειάζονται τον editor, ζωντανή προεπισκόπηση και branded letterheads.</p>
+      </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head_editor.png" alt="Πλάνο Studio Editor" loading="lazy" />
+      </div>
+      <ul class="pricing-metric-list">
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Editor εγγράφων rich-text</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Themes και letterheads</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Επαναχρησιμοποιήσιμα πρότυπα ειδικότητας</span></li>
+      </ul>
+      <div class="pricing-price-wrap">
+        <div class="pricing-price-row">
+          <div class="pricing-price-label">Μηνιαία τιμή</div>
+          <div class="pricing-price-value">€29 / μήνα</div>
+        </div>
+        <div class="pricing-price-row pricing-price-row--highlight">
+          <div>
+            <div class="pricing-price-label">Ετήσια τιμή</div>
+            <div class="pricing-price-note">€290 / έτος · εξοικονομείτε 2 μήνες</div>
+          </div>
+          <div class="pricing-price-value">€24,17 / μήνα</div>
+        </div>
+      </div>
+      <div class="pricing-cta-group">
+        <a class="main-color-button" href="https://app.ippocra.com/register">Επιλέξτε Studio Editor</a>
+      </div>
+    </article>
+
+    <article class="pricing-plan pricing-plan--featured">
+      <span class="pricing-badge">DICOM</span>
+      <div>
+        <h3>Studio Editor + DICOM</h3>
+        <p>Για γιατρούς που χρειάζονται τον editor μαζί με ενσωματωμένο DICOM viewer.</p>
+      </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head_editor_dicom.png" alt="Πλάνο Studio Editor + DICOM" loading="lazy" />
+      </div>
+      <ul class="pricing-metric-list">
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Ό,τι περιλαμβάνει το Studio Editor</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Ενσωματωμένο DICOM viewer</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Προσθήκη εικόνων στα reports</span></li>
+      </ul>
+      <div class="pricing-price-wrap">
+        <div class="pricing-price-row">
+          <div class="pricing-price-label">Μηνιαία τιμή</div>
+          <div class="pricing-price-value">€39 / μήνα</div>
+        </div>
+        <div class="pricing-price-row pricing-price-row--highlight">
+          <div>
+            <div class="pricing-price-label">Ετήσια τιμή</div>
+            <div class="pricing-price-note">€390 / έτος · εξοικονομείτε 2 μήνες</div>
+          </div>
+          <div class="pricing-price-value">€32,50 / μήνα</div>
+        </div>
+      </div>
+      <div class="pricing-cta-group">
+        <a class="main-color-button" href="https://app.ippocra.com/register">Επιλέξτε Studio + DICOM</a>
+      </div>
+    </article>
+  </div>
+
+  <p class="pricing-small-note">Όλα τα Studio πλάνα περιλαμβάνουν 1 λογαριασμό γιατρού/διαχειριστή, 2.000 έγγραφα/έτος και πλήρη διαχείριση ασθενών.</p>
+</section>
+    </div><!-- /data-audience-panel="doctors" -->
+
+    <div data-audience-panel="families" style="display:none">
     <section id="family-pricing" class="pricing-section">
       <div class="pricing-section-header">
         <span class="pricing-kicker">Οικογένειες και φροντιστές</span>
@@ -496,7 +656,7 @@
             <img src="assets/images/ippoplans/solo_head.png" alt="Δωρεάν πλάνο Ippo" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1 διαχειριστής</strong> και <strong>2 προφίλ</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1 διαχειριστής</strong> και <strong>2 άτομα</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>5 μεταφορτώσεις εγγράφων/έτος</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>Απεριόριστα IppoLinks</strong> για κοινοποίηση εγγράφων όταν χρειαστεί.</span></li>
           </ul>
@@ -520,7 +680,7 @@
             <img src="assets/images/ippoplans/just_us.png" alt="Πλάνο Just Us" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 διαχειριστές</strong> και <strong>2 προφίλ</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 διαχειριστές</strong> και <strong>2 άτομα</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>200 μεταφορτώσεις εγγράφων/έτος</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>Απεριόριστα IppoLinks</strong> για αποστολή γνωματεύσεων σε γιατρούς ή δομές.</span></li>
           </ul>
@@ -552,7 +712,7 @@
             <img src="assets/images/ippoplans/family.png" alt="Πλάνο Family" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 διαχειριστές</strong> και <strong>5 προφίλ</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 διαχειριστές</strong> και <strong>5 άτομα</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>500 μεταφορτώσεις εγγράφων/έτος</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>Απεριόριστα IppoLinks</strong> για γρήγορη κοινοποίηση γνωματεύσεων.</span></li>
           </ul>
@@ -583,7 +743,7 @@
             <img src="assets/images/ippoplans/family.png" alt="Πλάνο Family Plus" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>4 διαχειριστές</strong> και <strong>10 προφίλ</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>4 διαχειριστές</strong> και <strong>10 άτομα</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1.000 μεταφορτώσεις εγγράφων/έτος</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>Απεριόριστα IppoLinks</strong> για συνεργασία σε όλο το δίκτυο φροντίδας.</span></li>
           </ul>
@@ -607,6 +767,7 @@
       </div>
       <p class="pricing-small-note">Με τα ετήσια πλάνα για οικογένειες και φροντιστές εξοικονομείτε το ισοδύναμο 2 μηνών.</p>
     </section>
+    </div><!-- /data-audience-panel="families" -->
 
     <section class="pricing-section">
       <div class="pricing-proof-grid">
@@ -630,99 +791,125 @@
     </section>
 
     <section class="pricing-section">
-      <article class="pricing-faq-card">
-        <h2>Συχνές ερωτήσεις για τις τιμές του Ippocra</h2>
+  <article class="pricing-faq-card">
+    <h2>Συχνές ερωτήσεις για τις τιμές του Studio</h2>
 
-        <details open>
-          <summary>Πόσο κοστίζει το Ippocra για έναν γιατρό;</summary>
-          <p>
-            Το πλάνο <strong>Studio</strong> κοστίζει <strong>€49 τον μήνα</strong> ή <strong>€490 τον χρόνο</strong>. Περιλαμβάνει 1 διαχειριστή,
-            1.000 ασθενείς, 2.000 μεταφορτώσεις εγγράφων ανά έτος, ιστορικό ασθενούς, πρόσβαση από το cloud σε πολλαπλά ιατρεία και δωρεάν δοκιμή 14 ημερών.
-          </p>
-        </details>
+<details open>
+  <summary>Τι συμβαίνει όταν τελειώσει η δοκιμή;</summary>
+  <p>Επιλέγετε οποιοδήποτε επί πληρωμή Studio πλάνο για να κρατήσετε τα δεδομένα σας και να συνεχίσετε να εργάζεστε· τίποτα δεν διαγράφεται αμέσως.</p>
+</details>
 
-        <details>
-          <summary>Πόσο κοστίζει το Ippocra για χρήστες, οικογένειες και φροντιστές;</summary>
-          <p>
-            Το Ippocra προσφέρει ένα <strong>δωρεάν</strong> πλάνο και τρία επί πληρωμή πλάνα για χρήστες και φροντιστές: <strong>Just Us</strong>
-            με €5/μήνα ή €50/έτος, <strong>Family</strong> με €8/μήνα ή €80/έτος και <strong>Family Plus</strong> με €10/μήνα ή €100/έτος.
-          </p>
-        </details>
+<details open>
+  <summary>Μπορώ να αλλάξω πλάνο αργότερα;</summary>
+  <p>Ναι. Μπορείτε να κάνετε upgrade ή downgrade ανά πάσα στιγμή από τις ρυθμίσεις συνδρομής.</p>
+</details>
 
-        <details>
-          <summary>Πώς διαλέγω το σωστό πλάνο;</summary>
-          <p>
-            Αν είστε γιατρός και εργάζεστε σε ένα ή περισσότερα ιατρεία, το <strong>Studio</strong> είναι το πλάνο που έχει σχεδιαστεί για εσάς.
-            Αν θέλετε να οργανώσετε γνωματεύσεις και εξετάσεις για εσάς, την οικογένειά σας ή κάποιο άτομο που φροντίζετε, επιλέξτε ανάμεσα στα
-            <strong>Ippo</strong>, <strong>Just Us</strong>, <strong>Family</strong> και <strong>Family Plus</strong> με βάση πόσα προφίλ και έγγραφα πρέπει να διαχειρίζεστε.
-          </p>
-        </details>
+<details open>
+  <summary>Πώς γίνεται η χρέωση;</summary>
+  <p>Η χρέωση γίνεται με ασφάλεια μέσω Stripe και τα τιμολόγια/μέθοδοι πληρωμής είναι διαθέσιμα από το customer portal.</p>
+</details>
 
-        <details>
-          <summary>Μπορώ να βρίσκω και να μοιράζομαι γρήγορα γνωματεύσεις με το Ippocra;</summary>
-          <p>
-            Ναι. Για τους γιατρούς αυτό σημαίνει ότι μπορούν να ανακτούν γρήγορα το ιστορικό του ασθενούς, ακόμη και όταν εργάζονται σε περισσότερα ιατρεία.
-            Για οικογένειες και φροντιστές σημαίνει ότι έχουν ένα οργανωμένο αρχείο από το οποίο μπορούν να ανακτούν και να μοιράζονται εξετάσεις και γνωματεύσεις χωρίς να κυνηγούν διάσπαρτα αρχεία.
-          </p>
-        </details>
-      </article>
-    </section>
-  </div>
+<details open>
+  <summary>Υπάρχει Enterprise πλάνο;</summary>
+  <p>Ναι. Επικοινωνήστε μαζί μας για ομάδες 10+ γιατρών ή για προσαρμοσμένες διασυνδέσεις.</p>
+</details>
+  </article>
 </section>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Ippocra",
-  "applicationCategory": "HealthApplication",
-  "operatingSystem": "Web",
-  "url": "https://ippocra.com/pricing",
-  "description": "Τιμές Ippocra για γιατρούς, οικογένειες και φροντιστές: αναζητήσιμο αρχείο ασθενών για γιατρούς και ασφαλές αρχείο ιατρικών εγγράφων για οικογένειες.",
-  "offers": [
-    {
-      "@type": "Offer",
-      "name": "Studio",
-      "price": "49",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/pricing#studio",
-      "description": "Πλάνο για γιατρούς με φορητό, αναζητήσιμο αρχείο και πρόσβαση από πολλά ιατρεία."
-    },
-    {
-      "@type": "Offer",
-      "name": "Ippo",
-      "price": "0",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/pricing#ippo",
-      "description": "Δωρεάν πλάνο για να αρχίσετε να οργανώνετε προσωπικά και οικογενειακά ιατρικά έγγραφα."
-    },
-    {
-      "@type": "Offer",
-      "name": "Just Us",
-      "price": "5",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/pricing#just-us",
-      "description": "Πλάνο για μικρά νοικοκυριά και φροντιστές."
-    },
-    {
-      "@type": "Offer",
-      "name": "Family",
-      "price": "8",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/pricing#family",
-      "description": "Πλάνο για οικογένειες που θέλουν να συγκεντρώνουν γνωματεύσεις και εξετάσεις για πολλά άτομα."
-    },
-    {
-      "@type": "Offer",
-      "name": "Family Plus",
-      "price": "10",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/pricing#family-plus",
-      "description": "Πλάνο για μεγαλύτερες οικογένειες ή φροντιστές με μεγαλύτερο όγκο εγγράφων."
-    }
-  ]
-}
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const audienceBtns   = document.querySelectorAll('[data-audience]');
+        const audiencePanels = document.querySelectorAll('[data-audience-panel]');
+
+        if (audienceBtns.length) {
+            const setAudience = (t) => {
+                audienceBtns.forEach(b => b.classList.toggle('is-active', b.dataset.audience === t));
+                audiencePanels.forEach(p => { p.style.display = p.dataset.audiencePanel === t ? '' : 'none'; });
+            };
+            audienceBtns.forEach(btn => btn.addEventListener('click', () => setAudience(btn.dataset.audience)));
+            setAudience('doctors');
+        }
+    });
+
 </script>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Ippocra",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web",
+      "url": "https://ippocra.com/pricing",
+      "description": "Ippocra pricing for doctors, families and caregivers: a searchable patient archive for doctors and a secure health-document archive for families.",
+      "offers": [
+    {
+  "@type": "Offer",
+  "name": "Δοκιμή Studio",
+  "price": "0",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#studio-trial",
+  "description": "Δοκιμή Studio 30 ημερών με την πλήρη εμπειρία Studio Editor + DICOM."
+},
+{
+  "@type": "Offer",
+  "name": "Studio",
+  "price": "19",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#studio",
+  "description": "Πλάνο για γιατρούς που θέλουν αναζητήσιμο αρχείο και πρόσβαση σε πολλαπλές κλινικές."
+},
+{
+  "@type": "Offer",
+  "name": "Studio Editor",
+  "price": "29",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#studio-editor",
+  "description": "Πλάνο για γιατρούς που χρειάζονται τον editor, ζωντανή προεπισκόπηση και branded letterheads."
+},
+{
+  "@type": "Offer",
+  "name": "Studio Editor + DICOM",
+  "price": "39",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#studio-editor-dicom",
+  "description": "Πλάνο για γιατρούς που χρειάζονται τον editor μαζί με ενσωματωμένο DICOM viewer."
+},
+{
+  "@type": "Offer",
+  "name": "Ippo",
+  "price": "0",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#ippo",
+  "description": "Δωρεάν πλάνο για να ξεκινήσετε να οργανώνετε προσωπικά και οικογενειακά ιατρικά έγγραφα."
+},
+{
+  "@type": "Offer",
+  "name": "Just Us",
+  "price": "5",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#just-us",
+  "description": "Πλάνο για μικρά νοικοκυριά και φροντιστές."
+},
+{
+  "@type": "Offer",
+  "name": "Family",
+  "price": "8",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#family",
+  "description": "Πλάνο για οικογένειες που θέλουν να συγκεντρώνουν αναφορές και εξετάσεις για πολλά άτομα."
+},
+{
+  "@type": "Offer",
+  "name": "Family Plus",
+  "price": "10",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/pricing#family-plus",
+  "description": "Πλάνο για μεγαλύτερες οικογένειες ή φροντιστές με μεγαλύτερο όγκο εγγράφων."
+}
+      ]
+    }
+    </script>
 
 <script type="application/ld+json">
 {
@@ -731,34 +918,34 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Πόσο κοστίζει το Ippocra για έναν γιατρό;",
+      "name": "Τι συμβαίνει όταν τελειώσει η δοκιμή;",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Το πλάνο Studio κοστίζει 49 ευρώ τον μήνα ή 490 ευρώ τον χρόνο και περιλαμβάνει 1 διαχειριστή, 1.000 ασθενείς, 2.000 μεταφορτώσεις εγγράφων ανά έτος, ιστορικό ασθενούς, πρόσβαση από το cloud σε πολλά ιατρεία και δωρεάν δοκιμή 14 ημερών."
+        "text": "Επιλέγετε οποιοδήποτε επί πληρωμή Studio πλάνο για να κρατήσετε τα δεδομένα σας και να συνεχίσετε να εργάζεστε· τίποτα δεν διαγράφεται αμέσως."
       }
     },
     {
       "@type": "Question",
-      "name": "Πόσο κοστίζει το Ippocra για χρήστες, οικογένειες και φροντιστές;",
+      "name": "Μπορώ να αλλάξω πλάνο αργότερα;",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Το Ippocra προσφέρει ένα δωρεάν πλάνο και τρία επί πληρωμή πλάνα για χρήστες και φροντιστές: Just Us με 5 ευρώ τον μήνα ή 50 ευρώ τον χρόνο, Family με 8 ευρώ τον μήνα ή 80 ευρώ τον χρόνο και Family Plus με 10 ευρώ τον μήνα ή 100 ευρώ τον χρόνο."
+        "text": "Ναι. Μπορείτε να κάνετε upgrade ή downgrade ανά πάσα στιγμή από τις ρυθμίσεις συνδρομής."
       }
     },
     {
       "@type": "Question",
-      "name": "Πώς διαλέγω το σωστό πλάνο;",
+      "name": "Πώς γίνεται η χρέωση;",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Αν είστε γιατρός και εργάζεστε σε ένα ή περισσότερα ιατρεία, το Studio είναι το πλάνο που έχει σχεδιαστεί για εσάς. Αν θέλετε να οργανώσετε γνωματεύσεις και εξετάσεις για εσάς, την οικογένειά σας ή κάποιο άτομο που φροντίζετε, επιλέξτε ανάμεσα στα Ippo, Just Us, Family και Family Plus με βάση πόσα προφίλ και έγγραφα πρέπει να διαχειρίζεστε."
+        "text": "Η χρέωση γίνεται με ασφάλεια μέσω Stripe και τα τιμολόγια/μέθοδοι πληρωμής είναι διαθέσιμα από το customer portal."
       }
     },
     {
       "@type": "Question",
-      "name": "Μπορώ να βρίσκω και να μοιράζομαι γρήγορα γνωματεύσεις με το Ippocra;",
+      "name": "Υπάρχει Enterprise πλάνο;",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ναι. Για τους γιατρούς αυτό σημαίνει ότι μπορούν να ανακτούν γρήγορα το ιστορικό του ασθενούς, ακόμη και όταν εργάζονται σε περισσότερα ιατρεία. Για οικογένειες και φροντιστές σημαίνει ότι έχουν ένα οργανωμένο αρχείο από το οποίο μπορούν να ανακτούν και να μοιράζονται εξετάσεις και γνωματεύσεις χωρίς να κυνηγούν διάσπαρτα αρχεία."
+        "text": "Ναι. Επικοινωνήστε μαζί μας για ομάδες 10+ γιατρών ή για προσαρμοσμένες διασυνδέσεις."
       }
     }
   ]

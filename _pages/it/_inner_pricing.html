@@ -94,6 +94,51 @@
     text-decoration: none;
   }
 
+.pricing-billing-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 2rem;
+}
+
+.billing-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.82rem 1.15rem;
+  border-radius: 999px;
+  border: 1px solid #bfe5e8;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  cursor: pointer;
+}
+
+.billing-toggle-btn.is-active {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: #ffffff;
+}
+
+.pricing-plan--trial {
+  border-color: #7fd2d9;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fcfc 100%);
+}
+
+.pricing-plan-price {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.pricing-plan-price small {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #475569;
+}
+
   .pricing-section {
     margin-top: 4rem;
   }
@@ -380,6 +425,60 @@
       text-align: left;
     }
   }
+
+  .pricing-audience-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 0.5rem;
+  }
+
+  .pricing-tab-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.4rem;
+    border-radius: 999px;
+    border: 1px solid #bfe5e8;
+    background: #ffffff;
+    color: #0f172a;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+
+  .pricing-tab-btn.is-active {
+    background: #0f766e;
+    border-color: #0f766e;
+    color: #ffffff;
+  }
+
+  .pricing-trial-banner {
+    margin-bottom: 2rem;
+    padding: 1.25rem 1.5rem;
+    border: 2px solid #7fd2d9;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #effafb 0%, #ffffff 100%);
+    box-shadow: 0 10px 30px rgba(59, 155, 168, 0.1);
+  }
+
+  .pricing-trial-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .pricing-trial-banner-text {
+    margin: 0;
+    color: #334155;
+    line-height: 1.55;
+    font-size: 0.97rem;
+  }
 </style>
 
 <section class="pricing-page">
@@ -409,79 +508,140 @@
           Crittografia AES-256, accesso cloud e conformità GDPR per documenti sanitari sensibili.
         </div>
       </div>
-      <div class="pricing-jump-links" aria-label="Vai direttamente alla sezione desiderata">
-        <a class="pricing-jump-link" href="#prezzi-medici"><i class="fas fa-stethoscope"></i> Vai ai prezzi per medici</a>
-        <a class="pricing-jump-link" href="#prezzi-famiglie"><i class="fas fa-house-medical"></i> Vai ai prezzi per famiglie</a>
+      <div class="pricing-audience-tabs" role="tablist">
+        <button class="pricing-tab-btn is-active" data-audience="doctors" role="tab"><i class="fas fa-stethoscope"></i> Per i medici</button>
+        <button class="pricing-tab-btn" data-audience="families" role="tab"><i class="fas fa-house-medical"></i> Per le famiglie</button>
       </div>
     </header>
 
+    <div data-audience-panel="doctors">
     <section id="prezzi-medici" class="pricing-section">
-      <div class="pricing-section-header">
-        <span class="pricing-kicker">Medici</span>
-        <h2>Un prezzo chiaro per recuperare tempo a ogni visita</h2>
-        <p>
-          Il piano <strong>Studio</strong> è pensato per medici che vogliono avere sempre a disposizione referti e documenti dei pazienti,
-          senza perdere tempo a cercarli. Tutto il tuo archivio resta ordinato, ricercabile e pronto quando ti serve.
-        </p>
-      </div>
+  <div class="pricing-section-header">
+    <span class="pricing-kicker">Medici</span>
+    <h2>Prova gratis per 30 giorni l’intera suite Studio</h2>
+    <p>
+      Inizia con la Prova Studio — senza carta di credito — e poi scegli il livello più adatto al tuo studio. Tutti i piani Studio includono 1 account medico/amministratore, 2.000 documenti/anno e gestione completa dei pazienti.
+    </p>
+  </div>
 
-      <div class="pricing-card-grid pricing-card-grid--single">
-        <article id="studio" class="pricing-plan pricing-plan--featured">
-          <span class="pricing-badge">14 giorni gratuiti</span>
+  <div class="pricing-trial-banner">
+    <div class="pricing-trial-banner-content">
+      <div>
+        <span class="pricing-badge pricing-badge--light" style="margin-bottom:0.5rem;">Prova gratuita</span>
+        <p class="pricing-trial-banner-text"><strong>Prova l’intera suite Studio Editor + DICOM gratis per 30 giorni.</strong> Nessuna carta di credito richiesta. Una checklist Quick Start guidata ti accompagna nei passi chiave dentro l’app.</p>
+      </div>
+      <a class="main-color-button" href="https://app.ippocra.com/register" style="flex-shrink:0;">Inizia la prova</a>
+    </div>
+  </div>
+
+  <div class="pricing-card-grid pricing-card-grid--doctor">
+    <article class="pricing-plan">
+      <div>
+        <h3>Studio</h3>
+        <p>Per medici che vogliono un archivio ricercabile e accesso cloud multi-ambulatorio.</p>
+      </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head.png" alt="Piano Studio" loading="lazy" />
+      </div>
+      <ul class="pricing-metric-list">
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>1 account medico/amministratore</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>2.000 documenti/anno</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Gestione completa dei pazienti</span></li>
+      </ul>
+      <div class="pricing-price-wrap">
+        <div class="pricing-price-row">
+          <div class="pricing-price-label">Prezzo mensile</div>
+          <div class="pricing-price-value">€19 / mese</div>
+        </div>
+        <div class="pricing-price-row pricing-price-row--highlight">
           <div>
-            <h3>Studio</h3>
-            <p>Per medici che vogliono un archivio pazienti personale, portatile e pronto in ogni ambulatorio.</p>
+            <div class="pricing-price-label">Prezzo annuale</div>
+            <div class="pricing-price-note">€190 / anno · risparmi 2 mesi</div>
           </div>
-
-          <div class="pricing-plan-media">
-            <img src="assets/images/ippoplans/ippodoc_head.png" alt="Piano Studio per medici" loading="lazy" />
-          </div>
-
-          <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1 admin</strong> per gestire il tuo archivio personale.</span></li>
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1.000 pazienti</strong> inclusi nel piano.</span></li>
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2.000 documenti caricati/anno</strong> per referti, esami e allegati clinici.</span></li>
-          </ul>
-
-          <ul class="pricing-feature-list">
-            <li><i class="fas fa-folder-open pricing-icon"></i><span>Importazione cartelle in un click per partire dal tuo archivio esistente.</span></li>
-            <li><i class="fas fa-notes-medical pricing-icon"></i><span>Timeline longitudinale del paziente per rileggere la storia clinica in pochi secondi.</span></li>
-            <li><i class="fas fa-laptop-medical pricing-icon"></i><span>Accesso cloud multi-ambulatorio per lavorare ovunque senza spostare file.</span></li>
-            <li><i class="fas fa-shield-halved pricing-icon"></i><span>Crittografia AES-256 e conformità GDPR per proteggere dati sanitari sensibili.</span></li>
-          </ul>
-
-          <div class="pricing-price-wrap">
-            <div class="pricing-price-row">
-              <div>
-                <div class="pricing-price-label">Prezzo mensile</div>
-              </div>
-              <div class="pricing-price-value">€49 / mese</div>
-            </div>
-            <div class="pricing-price-row pricing-price-row--highlight">
-              <div>
-                <div class="pricing-price-label">Prezzo annuale</div>
-                <div class="pricing-price-note">€490 / anno · risparmi il 20%</div>
-              </div>
-              <div class="pricing-price-value">equivale a €40,83 / mese</div>
-            </div>
-          </div>
-
-          <div class="pricing-cta-group">
-            <a class="main-color-button" href="https://app.ippocra.com/register">Inizia la prova gratuita</a>
-            <a class="pricing-secondary-link" href="/doctors">Scopri come funziona per i medici</a>
-          </div>
-          <p class="pricing-small-note">Ideale per chi lavora tra più ambulatori e vuole avere sempre con sé lo storico del paziente.</p>
-        </article>
+          <div class="pricing-price-value">€15,83 / mese</div>
+        </div>
       </div>
-    </section>
+      <div class="pricing-cta-group">
+        <a class="main-color-button" href="https://app.ippocra.com/register">Scegli Studio</a>
+      </div>
+    </article>
 
+    <article class="pricing-plan">
+      <div>
+        <h3>Studio Editor</h3>
+        <p>Per medici che hanno bisogno dell’editor, dell’anteprima live e dei letterhead brandizzati.</p>
+      </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head_editor.png" alt="Piano Studio Editor" loading="lazy" />
+      </div>
+      <ul class="pricing-metric-list">
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Editor documenti rich-text</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Temi e letterhead</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Template riutilizzabili per specialità</span></li>
+      </ul>
+      <div class="pricing-price-wrap">
+        <div class="pricing-price-row">
+          <div class="pricing-price-label">Prezzo mensile</div>
+          <div class="pricing-price-value">€29 / mese</div>
+        </div>
+        <div class="pricing-price-row pricing-price-row--highlight">
+          <div>
+            <div class="pricing-price-label">Prezzo annuale</div>
+            <div class="pricing-price-note">€290 / anno · risparmi 2 mesi</div>
+          </div>
+          <div class="pricing-price-value">€24,17 / mese</div>
+        </div>
+      </div>
+      <div class="pricing-cta-group">
+        <a class="main-color-button" href="https://app.ippocra.com/register">Scegli Studio Editor</a>
+      </div>
+    </article>
+
+    <article class="pricing-plan pricing-plan--featured">
+      <span class="pricing-badge">DICOM</span>
+      <div>
+        <h3>Studio Editor + DICOM</h3>
+        <p>Per medici che hanno bisogno dell’editor più la visualizzazione DICOM integrata.</p>
+      </div>
+      <div class="pricing-plan-media">
+        <img src="/assets/images/ippoplans/ippodoc_head_editor_dicom.png" alt="Piano Studio Editor + DICOM" loading="lazy" />
+      </div>
+      <ul class="pricing-metric-list">
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Tutto incluso in Studio Editor</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Visualizzatore DICOM integrato</span></li>
+        <li><i class="fas fa-check-circle pricing-icon"></i><span>Allega immagini ai referti</span></li>
+      </ul>
+      <div class="pricing-price-wrap">
+        <div class="pricing-price-row">
+          <div class="pricing-price-label">Prezzo mensile</div>
+          <div class="pricing-price-value">€39 / mese</div>
+        </div>
+        <div class="pricing-price-row pricing-price-row--highlight">
+          <div>
+            <div class="pricing-price-label">Prezzo annuale</div>
+            <div class="pricing-price-note">€390 / anno · risparmi 2 mesi</div>
+          </div>
+          <div class="pricing-price-value">€32,50 / mese</div>
+        </div>
+      </div>
+      <div class="pricing-cta-group">
+        <a class="main-color-button" href="https://app.ippocra.com/register">Scegli Studio + DICOM</a>
+      </div>
+    </article>
+  </div>
+
+  <p class="pricing-small-note">Tutti i piani Studio includono 1 account medico/amministratore, 2.000 documenti/anno e gestione completa dei pazienti.</p>
+</section>
+    </div><!-- /data-audience-panel="doctors" -->
+
+    <div data-audience-panel="families" style="display:none">
     <section id="prezzi-famiglie" class="pricing-section">
       <div class="pricing-section-header">
         <span class="pricing-kicker">Famiglie e caregiver</span>
         <h2>Organizza i documenti sanitari della famiglia senza rincorrere referti sparsi</h2>
         <p>
           I piani per utenti e caregiver sono pensati per chi deve tenere in ordine esami, visite e referti di più persone.
-          Confronta le opzioni in base a quanti profili devi gestire e a quanti documenti carichi nel tempo.
+          Confronta le opzioni in base a quanti persone devi gestire e a quanti documenti carichi nel tempo.
         </p>
       </div>
 
@@ -496,7 +656,7 @@
             <img src="assets/images/ippoplans/solo_head.png" alt="Piano Ippo gratuito" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1 admin</strong> e <strong>2 profili</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1 admin</strong> e <strong>2 persone</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>5 caricamenti documenti/anno</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>IppoLink illimitati</strong> per condividere documenti quando serve.</span></li>
           </ul>
@@ -520,7 +680,7 @@
             <img src="assets/images/ippoplans/just_us.png" alt="Piano Solo Noi" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 admin</strong> e <strong>2 profili</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 admin</strong> e <strong>2 persone</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>200 caricamenti documenti/anno</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>IppoLink illimitati</strong> per inviare referti a medici o strutture.</span></li>
           </ul>
@@ -552,7 +712,7 @@
             <img src="assets/images/ippoplans/family.png" alt="Piano Famiglia" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 admin</strong> e <strong>5 profili</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>2 admin</strong> e <strong>5 persone</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>500 caricamenti documenti/anno</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>IppoLink illimitati</strong> per condividere rapidamente i referti.</span></li>
           </ul>
@@ -583,7 +743,7 @@
             <img src="assets/images/ippoplans/family.png" alt="Piano Famiglia Plus" loading="lazy" />
           </div>
           <ul class="pricing-metric-list">
-            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>4 admin</strong> e <strong>10 profili</strong>.</span></li>
+            <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>4 admin</strong> e <strong>10 persone</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>1.000 caricamenti documenti/anno</strong>.</span></li>
             <li><i class="fas fa-check-circle pricing-icon"></i><span><strong>IppoLink illimitati</strong> per collaborare con tutta la rete di cura.</span></li>
           </ul>
@@ -607,6 +767,7 @@
       </div>
       <p class="pricing-small-note">Con i piani annuali per utenti e caregiver risparmi l'equivalente di 2 mesi.</p>
     </section>
+    </div><!-- /data-audience-panel="families" -->
 
     <section class="pricing-section">
       <div class="pricing-proof-grid">
@@ -630,99 +791,125 @@
     </section>
 
     <section class="pricing-section">
-      <article class="pricing-faq-card">
-        <h2>Domande frequenti sui prezzi Ippocra</h2>
+  <article class="pricing-faq-card">
+    <h2>Domande frequenti sui prezzi Studio</h2>
 
-        <details open>
-          <summary>Quanto costa Ippocra per un medico?</summary>
-          <p>
-            Il piano <strong>Studio</strong> costa <strong>€49 al mese</strong> oppure <strong>€490 all'anno</strong>. Include 1 admin,
-            1.000 pazienti, 2.000 documenti caricati all'anno, timeline del paziente, accesso cloud multi-ambulatorio e 14 giorni di prova gratuita.
-          </p>
-        </details>
+<details open>
+  <summary>Cosa succede quando finisce la prova?</summary>
+  <p>Scegli un piano Studio a pagamento per mantenere i tuoi dati e continuare a lavorare; nulla viene cancellato subito.</p>
+</details>
 
-        <details>
-          <summary>Quanto costa Ippocra per utenti, famiglie e caregiver?</summary>
-          <p>
-            Ippocra offre un piano <strong>gratuito</strong> e tre piani a pagamento per utenti e caregiver: <strong>Solo Noi</strong>
-            a €5/mese o €50/anno, <strong>Famiglia</strong> a €8/mese o €80/anno e <strong>Famiglia Plus</strong> a €10/mese o €100/anno.
-          </p>
-        </details>
+<details open>
+  <summary>Posso cambiare piano in seguito?</summary>
+  <p>Sì. Puoi fare upgrade o downgrade in qualsiasi momento dalle impostazioni dell’abbonamento.</p>
+</details>
 
-        <details>
-          <summary>Come faccio a scegliere il piano giusto?</summary>
-          <p>
-            Se sei un medico e lavori tra uno o più ambulatori, il piano <strong>Studio</strong> è pensato per te. Se invece vuoi organizzare
-            referti ed esami per te, per la tua famiglia o per una persona che assisti, scegli tra <strong>Ippo</strong>, <strong>Solo Noi</strong>,
-            <strong>Famiglia</strong> e <strong>Famiglia Plus</strong> in base al numero di profili e di documenti che devi gestire.
-          </p>
-        </details>
+<details open>
+  <summary>Come viene gestita la fatturazione?</summary>
+  <p>La fatturazione è gestita in modo sicuro tramite Stripe e fatture/metodi di pagamento sono disponibili dal customer portal.</p>
+</details>
 
-        <details>
-          <summary>Posso ritrovare e condividere i referti rapidamente?</summary>
-          <p>
-            Sì. Per i medici significa recuperare rapidamente lo storico del paziente, anche lavorando tra più ambulatori. Per famiglie e caregiver
-            significa avere un archivio ordinato da cui recuperare e condividere esami e referti senza rincorrere file sparsi.
-          </p>
-        </details>
-      </article>
-    </section>
-  </div>
+<details open>
+  <summary>Esiste un piano Enterprise?</summary>
+  <p>Sì. Contattaci per team da 10+ medici o per integrazioni personalizzate.</p>
+</details>
+  </article>
 </section>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Ippocra",
-  "applicationCategory": "HealthApplication",
-  "operatingSystem": "Web",
-  "url": "https://ippocra.com/prezzi",
-  "description": "Prezzi Ippocra per medici, famiglie e caregiver: archivio pazienti ricercabile per medici e archivio documenti sanitari condivisibile per famiglie.",
-  "offers": [
-    {
-      "@type": "Offer",
-      "name": "Studio",
-      "price": "49",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/prezzi#studio",
-      "description": "Piano per medici con archivio pazienti portatile, ricercabile e multi-ambulatorio."
-    },
-    {
-      "@type": "Offer",
-      "name": "Ippo",
-      "price": "0",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/prezzi#ippo",
-      "description": "Piano gratuito per iniziare a organizzare documenti sanitari personali e familiari."
-    },
-    {
-      "@type": "Offer",
-      "name": "Solo Noi",
-      "price": "5",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/prezzi#solo-noi",
-      "description": "Piano per piccoli nuclei familiari e caregiver."
-    },
-    {
-      "@type": "Offer",
-      "name": "Famiglia",
-      "price": "8",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/prezzi#famiglia",
-      "description": "Piano per famiglie che vogliono centralizzare referti ed esami di più persone."
-    },
-    {
-      "@type": "Offer",
-      "name": "Famiglia Plus",
-      "price": "10",
-      "priceCurrency": "EUR",
-      "url": "https://ippocra.com/prezzi#famiglia-plus",
-      "description": "Piano per famiglie estese o caregiver con volumi più alti di documenti."
-    }
-  ]
-}
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const audienceBtns   = document.querySelectorAll('[data-audience]');
+        const audiencePanels = document.querySelectorAll('[data-audience-panel]');
+
+        if (audienceBtns.length) {
+            const setAudience = (t) => {
+                audienceBtns.forEach(b => b.classList.toggle('is-active', b.dataset.audience === t));
+                audiencePanels.forEach(p => { p.style.display = p.dataset.audiencePanel === t ? '' : 'none'; });
+            };
+            audienceBtns.forEach(btn => btn.addEventListener('click', () => setAudience(btn.dataset.audience)));
+            setAudience('doctors');
+        }
+    });
+
 </script>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Ippocra",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web",
+      "url": "https://ippocra.com/pricing",
+      "description": "Ippocra pricing for doctors, families and caregivers: a searchable patient archive for doctors and a secure health-document archive for families.",
+      "offers": [
+    {
+  "@type": "Offer",
+  "name": "Prova Studio",
+  "price": "0",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/prezzi#studio-trial",
+  "description": "Prova Studio di 30 giorni con l’esperienza completa Studio Editor + DICOM."
+},
+{
+  "@type": "Offer",
+  "name": "Studio",
+  "price": "19",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/prezzi#studio",
+  "description": "Piano per medici che vogliono un archivio ricercabile e accesso multi-ambulatorio."
+},
+{
+  "@type": "Offer",
+  "name": "Studio Editor",
+  "price": "29",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/prezzi#studio-editor",
+  "description": "Piano per medici che hanno bisogno dell’editor, dell’anteprima live e dei letterhead brandizzati."
+},
+{
+  "@type": "Offer",
+  "name": "Studio Editor + DICOM",
+  "price": "39",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/prezzi#studio-editor-dicom",
+  "description": "Piano per medici che hanno bisogno dell’editor più la visualizzazione DICOM integrata."
+},
+{
+  "@type": "Offer",
+  "name": "Ippo",
+  "price": "0",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/prezzi#ippo",
+  "description": "Piano gratuito per iniziare a organizzare documenti sanitari personali e familiari."
+},
+{
+  "@type": "Offer",
+  "name": "Solo Noi",
+  "price": "5",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/prezzi#solo-noi",
+  "description": "Piano per piccoli nuclei familiari e caregiver."
+},
+{
+  "@type": "Offer",
+  "name": "Famiglia",
+  "price": "8",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/prezzi#famiglia",
+  "description": "Piano per famiglie che vogliono centralizzare referti ed esami di più persone."
+},
+{
+  "@type": "Offer",
+  "name": "Famiglia Plus",
+  "price": "10",
+  "priceCurrency": "EUR",
+  "url": "https://ippocra.com/prezzi#famiglia-plus",
+  "description": "Piano per famiglie estese o caregiver con volumi più alti di documenti."
+}
+      ]
+    }
+    </script>
 
 <script type="application/ld+json">
 {
@@ -731,34 +918,34 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Quanto costa Ippocra per un medico?",
+      "name": "Cosa succede quando finisce la prova?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Il piano Studio costa 49 euro al mese oppure 490 euro all'anno e include 1 admin, 1.000 pazienti, 2.000 documenti caricati all'anno, timeline del paziente, accesso cloud multi-ambulatorio e 14 giorni di prova gratuita."
+        "text": "Scegli un piano Studio a pagamento per mantenere i tuoi dati e continuare a lavorare; nulla viene cancellato subito."
       }
     },
     {
       "@type": "Question",
-      "name": "Quanto costa Ippocra per utenti, famiglie e caregiver?",
+      "name": "Posso cambiare piano in seguito?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ippocra offre un piano gratuito e tre piani a pagamento per utenti e caregiver: Solo Noi a 5 euro al mese o 50 euro all'anno, Famiglia a 8 euro al mese o 80 euro all'anno e Famiglia Plus a 10 euro al mese o 100 euro all'anno."
+        "text": "Sì. Puoi fare upgrade o downgrade in qualsiasi momento dalle impostazioni dell’abbonamento."
       }
     },
     {
       "@type": "Question",
-      "name": "Come faccio a scegliere il piano giusto?",
+      "name": "Come viene gestita la fatturazione?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Se sei un medico e lavori tra uno o più ambulatori, il piano Studio è pensato per te. Se invece vuoi organizzare referti ed esami per te, per la tua famiglia o per una persona che assisti, puoi scegliere tra Ippo, Solo Noi, Famiglia e Famiglia Plus in base al numero di profili e di documenti che devi gestire."
+        "text": "La fatturazione è gestita in modo sicuro tramite Stripe e fatture/metodi di pagamento sono disponibili dal customer portal."
       }
     },
     {
       "@type": "Question",
-      "name": "Posso ritrovare e condividere i referti rapidamente?",
+      "name": "Esiste un piano Enterprise?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sì. Per i medici significa recuperare rapidamente lo storico del paziente, anche lavorando tra più ambulatori. Per famiglie e caregiver significa avere un archivio ordinato da cui recuperare e condividere esami e referti senza rincorrere file sparsi."
+        "text": "Sì. Contattaci per team da 10+ medici o per integrazioni personalizzate."
       }
     }
   ]
