@@ -7,7 +7,7 @@ description: "La nuova home page di Ippocra mostra in un'unica schermata tutti i
 keywords: panoramica documenti sanitari, dashboard salute famiglia, gestione referti online, home page ippocra, timeline esami medici, caricare documenti sanitari, archivio sanitario digitale, referti medici online, app documenti salute, caregiver dashboard
 page_id: ippocra-new-home-page-all-your-medical-records-at-a-glance
 header:
-    teaser: /assets/images/dashboard-home-teaser.svg
+    teaser: /assets/images/dashboard_timeline_esami.png
 classes: wide
 ---
 
