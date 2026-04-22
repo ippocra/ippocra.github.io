@@ -2,8 +2,9 @@
 
 <body>
     <main class="main-content">
+
         <!-- Hero Section -->
-        <section id="hero" class="section-blank">
+        <section id="hero" class="section-blank hero-bg-pattern">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col lg:flex-row items-center gap-10">
                     <div class="lg:w-3/5">
@@ -33,12 +34,13 @@
                                 Scopri come funziona
                             </a>
                         </div>
-
                     </div>
+
                     <div class="hero-illustration-wrap" style="display:none; width:40%; justify-content:center; align-items:center;">
-                        <img src="assets/images/hero-family-illustration.svg"
-                             alt="Famiglia che gestisce i documenti sanitari con Ippocra"
-                             width="500" height="450"
+                        <img src="assets/images/website/12b_home_dashboard_personal.png"
+                             alt="Dashboard Ippocra — tutti i documenti sanitari della famiglia organizzati"
+                             width="600" height="420"
+                             class="hero-screenshot-frame"
                              style="max-width:100%; height:auto;">
                     </div>
                     <style>
@@ -47,6 +49,7 @@
                         }
                     </style>
                 </div>
+
                 <div class="mt-8 flex flex-wrap justify-center gap-6">
                     <div class="flex items-center gap-2 px-4 py-2 rounded-full border" style="border-color:#3b9ba8; color:#3b9ba8;">
                         <i class="fas fa-shield-alt"></i>
@@ -78,6 +81,7 @@
                 <div class="mt-10 space-y-4">
                     <div class="faq-base bg-white p-6">
                         <span class="paragraph-md">
+                            <i class="fas fa-search" style="color:#3b9ba8; margin-right:0.5rem;"></i>
                             <strong>Il medico ti chiede l'ultimo esame del sangue.</strong>
                             Tu lo cerchi tra 200 foto, 50 email e 3 chat WhatsApp.
                         </span>
@@ -85,6 +89,7 @@
 
                     <div class="faq-base bg-white p-6">
                         <span class="paragraph-md">
+                            <i class="fas fa-calendar-alt" style="color:#3b9ba8; margin-right:0.5rem;"></i>
                             <strong>Tua madre ha una visita.</strong>
                             Servono i referti degli ultimi 2 anni. Nessuno sa dove sono.
                         </span>
@@ -92,6 +97,7 @@
 
                     <div class="faq-base bg-white p-6">
                         <span class="paragraph-md">
+                            <i class="fas fa-exclamation-triangle" style="color:#3b9ba8; margin-right:0.5rem;"></i>
                             <strong>Devi condividere un referto con un nuovo specialista.</strong>
                             Lo carichi e lo mandi su WhatsApp, violando il GDPR.
                         </span>
@@ -117,113 +123,123 @@
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="section-accent-soft-gradient">
-            <div class="section-container">
-
+        <section id="features">
+            <div class="section-container" style="padding-top:4rem;">
                 <h2 class="mt-0 section-title text-center">
                     Come Ippocra ti semplifica la vita
                 </h2>
                 <p class="mt-7 text-center paragraph-md paragraph-bold">
                     Meno caos, meno stress. Tutto organizzato, trovato e condiviso in modo sicuro.
                 </p>
+            </div>
 
-                <div class="mt-10 space-y-4">
-                    <!-- Start of the cards -->
-
-                    <div class="flex flex-col p-4 text-center">
-                        <h3 class="mt-0 section-title">Trova il referto giusto in 3 secondi
-                        </h3>
-                        <p class="mt-7 paragraph-md">
-                            Cerca per nome esame, data o parola chiave.
-                            <strong>Ippocra trova il documento giusto,</strong>
-                            anche se il referto è in un'altra lingua.
-                            Non serve più sfogliare cartelle o scorrere lunghe chat.<br>
-                            <strong>La tua storia clinica è a portata di clic.</strong>
-                        </p>
-
-                        <div class="flex justify-center">
-                            <video muted playsinline autoplay controls class="max-w-2xl w-full
-                        rounded-lg shadow-xl
-                        aspect-[16/9]
-                        transform transition-transform duration-300 hover:scale-105" style="outline:4px solid #3b9ba8; outline-offset:-1px;"
-                        src="assets/images/search_uri_it.mp4"
-                            alt="Ricerca intelligente" preload="metadata"></video>
+            <!-- Feature 1: Dashboard -->
+            <div class="section-blank" style="margin-top:2rem;">
+                <div class="section-container">
+                    <div class="feature-row scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <img src="assets/images/website/12b_home_dashboard_personal.png"
+                                 alt="Dashboard Ippocra — tutti i documenti sanitari in un unico posto"
+                                 loading="lazy">
                         </div>
-                    </div>
-
-                    <div class="flex flex-row text-right p-4">
-                        <div class="p-16 max-w-sm card-image">
-                            <img src="assets/images/autocategorization_it.png"
-                            alt="Categorizzazione automatica dei referti medici">
-                        </div>
-
-                        <div class="flex flex-col items-start h-full card-info">
-                            <h3 class="mt-0 section-title">Carica una foto. Ippocra fa il resto.
-                            </h3>
-                            <p class="mt-7 paragraph-md">
-                                Ti basta caricare il PDF o anche una foto del referto dal tuo telefono. Ippocra
-                                <strong>legge automaticamente</strong>
-                                la data, il tipo di esame e lo mette al posto giusto, pronto da
-                                ritrovare con la nostra ricerca intelligente.
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">Tutto organizzato in un unico posto</h3>
+                            <p class="mt-5 paragraph-md">
+                                Tutti i documenti sanitari della tua famiglia — analisi, lettere di dimissione, referti specialistici —
+                                <strong>in un unico spazio sicuro</strong>.
+                                Per te e per ogni familiare che gestisci.<br><br>
+                                Niente più file sparsi tra app, email e cronologie di chat.
                             </p>
                         </div>
-                    </div>
-
-                    <div class="flex flex-row text-left p-4">
-                        <div class="flex flex-col items-start h-full card-info">
-                            <h3 class="mt-0 section-title">I tuoi dati sono tuoi. Punto.
-                            </h3>
-                            <p class="mt-7 paragraph-md">
-                                Usiamo la crittografia avanzata e un modello in abbonamento: paghi per il servizio,
-                                <strong>i tuoi dati non vengono rivenduti per pubblicità o altro</strong>.<br>
-                                <strong>Sono tuoi</strong>.
-                            </p>
-                        </div>
-                        <div class="p-16 max-w-sm card-image">
-                            <img src="assets/images/ippocra-logo-white-ippo-green-background.png" alt="Ippocra privacy e sicurezza dati sanitari">
-                        </div>
-                    </div>
-
-
-                    <div class="flex flex-col p-4 text-center">
-
-                        <h3 class="mt-0 section-title">Condividi con il medico, non con tutto il mondo
-                        </h3>
-                        <p class="mt-7 paragraph-md">
-                            Crea un link temporaneo alla tua storia clinica per un nuovo specialista, <strong>invece
-                                di
-                                mandare referti in mille allegati</strong>.
-                            <br>Evita metodi non sicuri come i messaggi istantanei - <strong>mantieni i tuoi dati al
-                                sicuro e condividili solo quando vuoi tu.</strong>
-                        </p>
-
-                        <div class="flex justify-center">
-                            <video muted playsinline autoplay controls class="max-w-2xl w-full
-                        rounded-lg shadow-xl
-                        aspect-[16/9]
-                        transform transition-transform duration-300 hover:scale-105" style="outline:4px solid #3b9ba8; outline-offset:-1px;"
-                            src="assets/images/ippolink_italian.mp4" alt="IppoLink condivisione sicura referti" preload="metadata"></video>
-                        </div>
-                    </div>
-                    <!-- End of the cards -->
-                    <div class="mt-7 text-center">
-                        <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
-                            class="main-color-button wide-button">
-                            Carica il tuo primo referto ora
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 ml-2 -rotate-45">
-                                <path fill-rule="evenodd"
-                                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
                     </div>
                 </div>
+            </div>
+
+            <!-- Feature 2: Smart Search -->
+            <div class="section-accent-soft-gradient">
+                <div class="section-container">
+                    <div class="feature-row reverse scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <img src="assets/images/website/13_contextual_search.png"
+                                 alt="Ricerca contestuale Ippocra — trova qualsiasi referto medico all'istante"
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">Trova il referto giusto in 3 secondi</h3>
+                            <p class="mt-5 paragraph-md">
+                                Cerca per nome esame, data o parola chiave.
+                                <strong>Ippocra trova il documento giusto</strong>,
+                                anche se il referto è in un'altra lingua.
+                                Non serve più sfogliare cartelle o scorrere lunghe chat.<br><br>
+                                <strong>La tua storia clinica è a portata di clic.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Timeline -->
+            <div class="section-blank">
+                <div class="section-container">
+                    <div class="feature-row scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <img src="assets/images/website/14_timeline_chart.png"
+                                 alt="Timeline sanitaria Ippocra — visualizza la tua storia medica completa"
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">La tua storia sanitaria, visualizzata</h3>
+                            <p class="mt-5 paragraph-md">
+                                Vedi tutti gli eventi sanitari disposti su una linea temporale — esami, visite, analisi —
+                                <strong>ordinati per data e facili da consultare</strong>.
+                                Individua tendenze, preparati per le visite e sappi sempre cosa è successo e quando.<br><br>
+                                Tutto in contesto, a colpo d'occhio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4: IppoLink Sharing -->
+            <div class="section-accent-soft-gradient">
+                <div class="section-container">
+                    <div class="feature-row reverse scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <video muted playsinline autoplay controls
+                                preload="metadata"
+                                src="assets/images/website/ippolink_italian.mp4"
+                                alt="IppoLink — condividi i referti medici in modo sicuro con un link temporaneo">
+                            </video>
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">Condividi con il medico, non con tutto il mondo</h3>
+                            <p class="mt-5 paragraph-md">
+                                Crea un link temporaneo alla tua storia clinica per un nuovo specialista,
+                                <strong>invece di mandare referti in mille allegati</strong>.<br><br>
+                                Evita metodi non sicuri come i messaggi istantanei —
+                                <strong>mantieni i tuoi dati al sicuro e condividili solo quando vuoi tu</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-7 text-center" style="padding: 2rem 1rem;">
+                <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
+                    class="main-color-button wide-button">
+                    Carica il tuo primo referto ora
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-5 ml-2 -rotate-45">
+                        <path fill-rule="evenodd"
+                            d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
             </div>
         </section>
 
 
-        <!-- Social Proof (recensioni e partner) -->
+        <!-- Social Proof -->
         <section class="relative py-16 bg-white">
             <div class="container mx-auto px-6 text-center">
 
@@ -236,50 +252,45 @@
                     sono al sicuro e sempre disponibili.
                 </p>
 
-
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
                     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-left">
-                        <div class="w-10 h-10 rounded-full mb-4">
-                            <img src="assets/images/ippo-outline-green.webp" alt="Ippocra logo">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="avatar-initials" style="background-color:#3b9ba8;">ML</div>
+                            <p class="text-sm font-semibold text-gray-500 mb-0">Maria L. — Mamma di 2 figli</p>
                         </div>
-                        <p class="text-lg text-gray-700 mb-4">
+                        <p class="text-lg text-gray-700 mb-0">
                             "Avendo due figli piccoli, era sempre complicato tenere in ordine i documenti senza
-                            cercarli
-                            tra email e chat. Con Ippocra ho trovato una soluzione semplice e sicura."
+                            cercarli tra email e chat. Con Ippocra ho trovato una soluzione semplice e sicura."
                         </p>
-                        <p class="text-sm font-semibold text-gray-500">Maria L. - Mamma di 2 figli</p>
                     </div>
 
                     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-left">
-                        <div class="w-10 h-10 rounded-full mb-4">
-                            <img src="assets/images/ippo-outline-green.webp" alt="Ippocra logo">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="avatar-initials" style="background-color:#406EBA;">AD</div>
+                            <p class="text-sm font-semibold text-gray-500 mb-0">Alfredo D. — Paziente cronico</p>
                         </div>
-                        <p class="text-lg text-gray-700 mb-4">
-                            "Ogni volta che dovevo inviare un referto ai medici tramite WhatsApp ero in ansia.. chissà
-                            che
-                            fine faranno i miei dati.. Ora sono più tranquillo, potendo inviare i referti grazie ai link
-                            sicuri."
+                        <p class="text-lg text-gray-700 mb-0">
+                            "Ogni volta che dovevo inviare un referto ai medici tramite WhatsApp ero in ansia.. chissà che
+                            fine faranno i miei dati.. Ora sono più tranquillo, potendo inviare i referti grazie ai link sicuri."
                         </p>
-                        <p class="text-sm font-semibold text-gray-500">Alfredo D. - Paziente cronico</p>
                     </div>
 
                     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-left">
-                        <div class="w-10 h-10 rounded-full mb-4">
-                            <img src="assets/images/ippo-outline-green.webp" alt="Ippocra logo">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="avatar-initials" style="background-color:#5a8a6e;">GT</div>
+                            <p class="text-sm font-semibold text-gray-500 mb-0">Gabriele T. — Caregiver</p>
                         </div>
-                        <p class="text-lg text-gray-700 mb-4">
+                        <p class="text-lg text-gray-700 mb-0">
                             "Gestisco anche i referti dei miei genitori: averli tutti in un unico posto mi evita di
-                            uscire
-                            matto e mi fa risparmiare tempo."
+                            uscire matto e mi fa risparmiare tempo."
                         </p>
-                        <p class="text-sm font-semibold text-gray-500">Gabriele T. - Caregiver</p>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- As featured in -->
+        <!-- Apparso su -->
         <section id="featured" class="py-8 bg-gray-50">
             <div class="container mx-auto px-6 text-center">
                 <h3 class="mt-0 section-title text-center">Apparso su</h3>
@@ -293,13 +304,11 @@
                         .featured-logos a:hover img { opacity:1; transform:scale(1.02); }
                         @keyframes scroll-logos { 0% { transform:translateX(0);} 100% { transform:translateX(-50%);} }
 
-                        /* Mobile layout: keep aspect ratio, enlarge logos and enable auto-scroll */
                         @media (max-width: 640px) {
                             .featured-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; padding: 1rem 0; animation: scroll-logos 24s linear infinite; }
                             .featured-logos { gap: 1rem; }
                             .featured-logos a { padding: 0 .85rem; }
                             .featured-logos a img { height:auto; max-height:96px; max-width:320px; }
-                            /* Show the duplicated logos row on mobile to keep seamless infinite scroll */
                             .featured-scroll .featured-logos[aria-hidden="true"] { display: flex; }
                         }
 
@@ -366,10 +375,8 @@
                             I miei dati sanitari sono davvero al sicuro?
                         </summary>
                         <div class="faq-answer">
-                            Sì. I tuoi dati sono protetti con crittografia avanzata sia durante l'archiviazione sia
-                            durante
-                            la trasmissione
-                            e sono trattati nel rispetto delle normative europee sulla protezione dei dati personali.
+                            Sì. I tuoi dati sono protetti con crittografia avanzata sia durante l'archiviazione sia durante
+                            la trasmissione e sono trattati nel rispetto delle normative europee sulla protezione dei dati personali.
                             Non vendiamo i tuoi dati a terzi e non li usiamo per pubblicità.
                         </div>
                     </details>
@@ -380,8 +387,7 @@
                         </summary>
                         <div class="faq-answer">
                             Puoi iniziare con un piano gratuito, ideale per provare il servizio e mettere in ordine i
-                            primi
-                            documenti.
+                            primi documenti.
                             Quando avrai bisogno di più spazio o funzionalità aggiuntive, potrai passare al piano Pro in
                             qualsiasi momento.
                         </div>
@@ -394,8 +400,7 @@
                         <div class="faq-answer">
                             Sì, è pensato proprio per questo. Molti utenti usano Ippocra per gestire anche i documenti
                             sanitari di figli, genitori o partner,
-                            così tutte le informazioni importanti della famiglia sono raccolte e organizzate in un unico
-                            posto.
+                            così tutte le informazioni importanti della famiglia sono raccolte e organizzate in un unico posto.
                         </div>
                     </details>
 
@@ -404,8 +409,7 @@
                             In cosa è diverso dal Fascicolo Sanitario Elettronico o dall'app dell'ospedale?
                         </summary>
                         <div class="faq-answer">
-                            Il Fascicolo Sanitario Elettronico raccoglie alcuni dei documenti presenti nei
-                            sistemi delle strutture pubbliche.
+                            Il Fascicolo Sanitario Elettronico raccoglie alcuni dei documenti presenti nei sistemi delle strutture pubbliche.
                             Ippocra ti permette di avere in mano tutta la tua documentazione: puoi aggiungere referti di
                             strutture diverse, documenti di visite private, foto di referti cartacei e
                             organizzarli come vuoi tu. Puoi farlo per te stesso e per i tuoi familiari.
@@ -418,8 +422,7 @@
                         </summary>
                         <div class="faq-answer">
                             Puoi creare un link temporaneo che dà al medico accesso solo ai documenti che decidi tu,
-                            per il tempo che scegli tu. È un'alternativa più sicura all'invio di referti via email o
-                            chat.
+                            per il tempo che scegli tu. È un'alternativa più sicura all'invio di referti via email o chat.
                             Al termine puoi revocare l'accesso in qualsiasi momento.
                         </div>
                     </details>
@@ -439,9 +442,8 @@
         </section>
 
 
-
         <!-- Call to Action Section -->
-        <section id="call"  class="section-main-hard-gradient">
+        <section id="call" class="section-main-hard-gradient">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="mt-0 page-title animate-fadeIn delay-100">
                     La salute della tua famiglia merita ordine.

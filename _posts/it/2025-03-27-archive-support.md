@@ -27,7 +27,7 @@ i nostri [Ippolinks]({% post_url it/2024-12-06-ippolink-launch %}){:target="_bla
 
 Oggi presentiamo questa nuova capacità:
 
-![image-center](/assets/images/archive_it.png){: .align-center}
+![image-center](/assets/images/website/archive_it.png){: .align-center}
 *Abbiamo fatto spazio per lo zippone*
 
 Quindi, oltre a PDFs o alle foto fatte per esempio da telefono, da oggi anche gli zip possono essere caricati.

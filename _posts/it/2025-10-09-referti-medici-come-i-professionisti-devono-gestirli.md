@@ -110,12 +110,12 @@ Tali caratteristiche permettono a Ippocra di fornire un canale digitale conforme
 Per invitare un collaboratore al piano, l’amministratore del piano deve Andare su *Piano* e su *Gestisci Dottori*
 
  
-![image-center](assets/images/gestisci-dottori-it.png){: .align-center}
+![image-center](assets/images/website/gestisci-dottori-it.png){: .align-center}
 
 
 Qui si può invitare un nuovo Dottore come collaboratore o dipendente. Basta inserire una email e cliccare invia invito.
 
-![image-center](assets/images/invito_dottore_collaboratore-it.png){: .align-center} 
+![image-center](assets/images/website/invito_dottore_collaboratore-it.png){: .align-center} 
 
 Il Dottore riceverà una email di invito, con la possibilità di creare un utente ed unirsi a questo piano.
 

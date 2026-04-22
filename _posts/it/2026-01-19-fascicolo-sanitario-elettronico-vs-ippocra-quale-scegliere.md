@@ -42,7 +42,7 @@ Il Fascicolo Sanitario Elettronico nasce con un intento nobile: centralizzare la
 
 Questi limiti evidenziano la necessità di un approccio complementare al FSE che restituisca al paziente la proprietà effettiva della propria documentazione sanitaria.
 
-![image-center](assets/images/ippocra_grafico_vantaggi.webp){: align-center}
+![image-center](assets/images/website/ippocra_grafico_vantaggi.webp){: align-center}
 
 ## Il Metodo della Centralizzazione Personale
 

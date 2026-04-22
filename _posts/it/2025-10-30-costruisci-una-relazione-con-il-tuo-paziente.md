@@ -29,7 +29,7 @@ gli viene proposto di registrarsi con un piano _Family_ gratuito. Il piano ha un
 e garantisce l’accesso a tutte le funzionalità riservate ai piani a pagamento.
 
 
-![image-center](assets/images/sponsored_plan-it.png){: .align-center}
+![image-center](assets/images/website/sponsored_plan-it.png){: .align-center}
 
 # Fidelizzazione del cliente
 

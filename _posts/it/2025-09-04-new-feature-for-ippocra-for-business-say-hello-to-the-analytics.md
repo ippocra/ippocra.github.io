@@ -30,7 +30,7 @@ Internamente disponiamo di una **data‑room** dove monitoriamo questi comportam
 
 Siamo lieti di presentarvi i nuovi strumenti di analisi.  
 
-[![image-center](/assets/images/analytics-ita-top.png)](/assets/images/analytics-ita-top.png){: .align-center}  
+[![image-center](/assets/images/website/analytics-ita-top.png)](/assets/images/website/analytics-ita-top.png){: .align-center}  
 
 Grazie agli analytics potete, a colpo d’occhio:  
 

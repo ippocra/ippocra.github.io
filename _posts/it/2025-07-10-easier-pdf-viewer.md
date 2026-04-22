@@ -30,7 +30,7 @@ Aggiungo tre puntini per creare l'effetto suspense!
 
 `...` <-- **Effetto suspense**
 
-![image-center](/assets/images/new-pdfviewer-it.png){: .align-center}
+![image-center](/assets/images/website/new-pdfviewer-it.png){: .align-center}
 *PDF disponibile direttamente dalla Piattaforma.*
 
 Inoltre, c'è anche il *bottone per tornare indietro*  all tua lista 

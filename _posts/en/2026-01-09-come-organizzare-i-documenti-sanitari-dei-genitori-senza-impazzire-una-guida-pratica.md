@@ -71,7 +71,7 @@ The real test for Marco came at the next visit. The specialist needed to compare
 He opened Ippocra, typed **“Cardiologist 2022”** in the search bar, and the report appeared instantly. Having a **medical report archive** always in your pocket, indexed and ordered, turns a medical visit from a stressful moment into a productive conversation.
 
 <video muted playsinline autoplay controls width="100%" 
-    src="assets/images/search_uri_it.mp4" 
+    src="assets/images/website/search_uri_it.mp4" 
         alt="Smart search" preload="metadata">
 </video>
 

@@ -70,7 +70,7 @@ Il vero test per Marco è arrivato alla visita successiva. Lo specialista aveva 
 Ha aperto Ippocra, ha digitato nella barra di ricerca **"Cardiologo 2022"** e il referto è apparso in un istante. Avere un **archivio referti medici** sempre in tasca, indicizzato e ordinato, trasforma la visita medica da momento di stress a conversazione produttiva.
 
 <video muted playsinline autoplay controls width="100%" 
-    src="assets/images/search_uri_it.mp4" 
+    src="assets/images/website/search_uri_it.mp4" 
         alt="Ricerca intelligente" preload="metadata">
 </video>
 

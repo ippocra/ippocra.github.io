@@ -88,7 +88,7 @@ Use this type of markdown, so you get an automatic link to the bigger image.
 
 for example, with a real image, will look like this:
 
-    [![image-center](/assets/images/analytics-ita-top.png)](/assets/images/analytics-ita-top.png){: .align-center}
+    [![image-center](/assets/images/website/analytics-ita-top.png)](/assets/images/website/analytics-ita-top.png){: .align-center}
 
 For better performance, use only `webp` format for the images. You can convert them via
 

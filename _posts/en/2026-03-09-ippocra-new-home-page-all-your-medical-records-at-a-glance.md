@@ -11,7 +11,7 @@ header:
 classes: wide
 ---
 
-![image-center](/assets/images/dashboard_timeline_esami.png){: .align-center}
+![image-center](/assets/images/website/dashboard_timeline_esami.png){: .align-center}
 **Managing health records for yourself and your whole family has never been this simple.** Ippocra's new home page brings every uploaded document together in a single view — blood tests, X-rays, prescriptions, specialist reports — sorted by date and filterable by person. No more frantic searches through folders, emails, or photos taken on the fly: everything is always at your fingertips.
 
 ---
@@ -21,7 +21,7 @@ classes: wide
 The updated home page is built around two fundamental questions: **who** and **when**. At the top of the screen you see every member of your family — or everyone included in your plan — each with an indicator showing how many documents they have and when the last upload happened. One tap is all it takes to switch to that person's timeline.
 
 <p style="text-align:center;">
-  <img src="/assets/images/dahsboard-people-it.png" alt="Ippocra home page — people and family overview" style="max-width:720px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
+  <img src="/assets/images/website/dahsboard-people-it.png" alt="Ippocra home page — people and family overview" style="max-width:720px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
 The people row shows:
@@ -39,7 +39,7 @@ Whether you manage records for an elderly parent, a child, or a partner, the ove
 Below the people row, a **chronological timeline** lists every document uploaded within your family group. The most recent items appear first. Each entry shows the document type, the person it belongs to, and the upload date — finding the right file takes seconds rather than minutes.
 
 <p style="text-align:center;">
-  <img src="/assets/images/dashboard_timeline_esami.png" alt="Ippocra document timeline — exams and health records sorted by date" style="max-width:720px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
+  <img src="/assets/images/website/dashboard_timeline_esami.png" alt="Ippocra document timeline — exams and health records sorted by date" style="max-width:720px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
 The timeline supports multiple document categories:
@@ -86,7 +86,7 @@ Privacy is built in from the start. Every document is encrypted at rest and in t
 
 **How many IppoLinks have been created so far?** Having your documents is useful, but being able to share them securely via IppoLinks is even more valuable. You can now see them directly from the home page.
 
-![image-center](/assets/images/ippolink_creati.png){: .align-center}
+![image-center](/assets/images/website/ippolink_creati.png){: .align-center}
 
 <p style="text-align:center; margin: 2.5rem 0;">
   <a href="https://app.ippocra.com" style="background:#1A7A5E;color:#fff;padding:16px 40px;border-radius:50px;font-size:1.1rem;font-weight:700;text-decoration:none;display:inline-block;">

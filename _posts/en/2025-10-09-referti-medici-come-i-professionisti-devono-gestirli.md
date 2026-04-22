@@ -113,11 +113,11 @@ These features allow Ippocra to provide a compliant, reliable digital channel fo
 
 To invite a collaborator, the plan administrator must go to *Plan* → *Manage Doctors*
 
-![image-center](assets/images/gestisci-dottori-en.png){: .align-center}
+![image-center](assets/images/website/gestisci-dottori-en.png){: .align-center}
 
 Here you can invite a new Doctor as a collaborator or employee. Just enter an email address and click **Send invitation**.
 
-![image-center](assets/images/invito_dottore_collaboratore-en.png){: .align-center}
+![image-center](assets/images/website/invito_dottore_collaboratore-en.png){: .align-center}
 
 The Doctor will receive an invitation email, with the option to create a user account and join the plan.
 

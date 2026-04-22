@@ -2,8 +2,9 @@
 
 <body>
     <main class="main-content">
+
         <!-- Hero Section -->
-        <section id="hero" class="section-blank">
+        <section id="hero" class="section-blank hero-bg-pattern">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col lg:flex-row items-center gap-10">
                     <div class="lg:w-3/5">
@@ -33,12 +34,13 @@
                                 Learn how it works
                             </a>
                         </div>
-
                     </div>
+
                     <div class="hero-illustration-wrap" style="display:none; width:40%; justify-content:center; align-items:center;">
-                        <img src="assets/images/hero-family-illustration.svg"
-                             alt="Family managing health documents with Ippocra"
-                             width="500" height="450"
+                        <img src="assets/images/website/12b_home_dashboard_personal.png"
+                             alt="Ippocra dashboard — all your family's health documents organized"
+                             width="600" height="420"
+                             class="hero-screenshot-frame"
                              style="max-width:100%; height:auto;">
                     </div>
                     <style>
@@ -47,6 +49,7 @@
                         }
                     </style>
                 </div>
+
                 <div class="mt-8 flex flex-wrap justify-center gap-6">
                     <div class="flex items-center gap-2 px-4 py-2 rounded-full border" style="border-color:#3b9ba8; color:#3b9ba8;">
                         <i class="fas fa-shield-alt"></i>
@@ -78,6 +81,7 @@
                 <div class="mt-10 space-y-4">
                     <div class="faq-base bg-white p-6">
                         <span class="paragraph-md">
+                            <i class="fas fa-search" style="color:#3b9ba8; margin-right:0.5rem;"></i>
                             <strong>The doctor asks for your last blood test.</strong>
                             You search through 200 photos, 50 emails and 3 WhatsApp chats.
                         </span>
@@ -85,6 +89,7 @@
 
                     <div class="faq-base bg-white p-6">
                         <span class="paragraph-md">
+                            <i class="fas fa-calendar-alt" style="color:#3b9ba8; margin-right:0.5rem;"></i>
                             <strong>Your mother has an appointment.</strong>
                             They need her reports from the last 2 years. Nobody knows where they are.
                         </span>
@@ -92,6 +97,7 @@
 
                     <div class="faq-base bg-white p-6">
                         <span class="paragraph-md">
+                            <i class="fas fa-exclamation-triangle" style="color:#3b9ba8; margin-right:0.5rem;"></i>
                             <strong>You need to share a report with a new specialist.</strong>
                             You upload it and send it via WhatsApp, violating the GDPR.
                         </span>
@@ -117,101 +123,118 @@
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="section-accent-soft-gradient">
-            <div class="section-container">
-
+        <section id="features">
+            <div class="section-container" style="padding-top:4rem;">
                 <h2 class="mt-0 section-title text-center">
                     How Ippocra simplifies your life
                 </h2>
                 <p class="mt-7 text-center paragraph-md paragraph-bold">
                     Less chaos, less stress. Everything organized, found and shared securely.
                 </p>
+            </div>
 
-                <div class="mt-10 space-y-4">
-                    <!-- Start of the cards -->
-
-                    <div class="flex flex-col p-4 text-center">
-                        <h3 class="mt-0 section-title">Find the right report in 3 seconds
-                        </h3>
-                        <p class="mt-7 paragraph-md">
-                            Search by exam name, date or keyword.
-                            <strong>Ippocra finds the right document,</strong>
-                            even if the report is in another language.
-                            No more scrolling through folders or long chats.<br>
-                            <strong>Your clinical history is just a click away.</strong>
-                        </p>
-
-                        <div class="flex justify-center scroll-animated-item">
-                            <video muted playsinline autoplay controls class="max-w-2xl w-full
-                        rounded-lg shadow-xl
-                        aspect-[16/9]
-                        transform transition-transform duration-300 hover:scale-105" style="outline:4px solid #3b9ba8; outline-offset:-1px;" src="assets/images/search_uri_en.mp4" alt="Smart search for medical reports" preload="metadata"></video>
+            <!-- Feature 1: Dashboard -->
+            <div class="section-blank" style="margin-top:2rem;">
+                <div class="section-container">
+                    <div class="feature-row scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <img src="assets/images/website/12b_home_dashboard_personal.png"
+                                 alt="Ippocra dashboard — all health documents in one place"
+                                 loading="lazy">
                         </div>
-                    </div>
-
-                    <div class="flex flex-row text-right p-4">
-                        <div class="p-16 max-w-sm card-image">
-                            <img src="assets/images/autocategorization_en.png" alt="Automatic medical report categorization">
-                        </div>
-
-                        <div class="flex flex-col items-start h-full card-info">
-                            <h3 class="mt-0 section-title">Upload a photo. Ippocra does the rest.
-                            </h3>
-                            <p class="mt-7 paragraph-md">
-                                Just upload the PDF or even a photo of the report from your phone. Ippocra
-                                <strong>automatically reads</strong>
-                                the date, exam type and places it in the right spot, ready to be found with our smart search.
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">Everything organized in one place</h3>
+                            <p class="mt-5 paragraph-md">
+                                All your family's health documents — analyses, discharge letters, specialist reports —
+                                <strong>in a single, secure space</strong>.
+                                For yourself and for every family member you manage.<br><br>
+                                No more scattered files across apps, emails and chat histories.
                             </p>
                         </div>
-                    </div>
-
-                    <div class="flex flex-row text-left p-4">
-                        <div class="flex flex-col items-start h-full card-info">
-                            <h3 class="mt-0 section-title">Your data is yours. Period.
-                            </h3>
-                            <p class="mt-7 paragraph-md">
-                                We use advanced encryption and a subscription model: you pay for the service,
-                                <strong>your data is never sold for advertising or anything else</strong>.<br>
-                                <strong>It's yours</strong>.
-                            </p>
-                        </div>
-                        <div class="p-16 max-w-sm card-image">
-                            <img src="assets/images/ippocra-logo-white-ippo-green-background.png" alt="Ippocra privacy and health data security">
-                        </div>
-                    </div>
-
-
-                    <div class="flex flex-col p-4 text-center">
-
-                        <h3 class="mt-0 section-title">Share with your doctor, not with the world
-                        </h3>
-                        <p class="mt-7 paragraph-md">
-                            Create a temporary link to your clinical history for a new specialist, <strong>instead
-                                of sending reports as countless attachments</strong>.
-                            <br>Avoid unsafe methods like instant messages - <strong>keep your data safe and share it only when you choose</strong>.
-                        </p>
-
-                        <div class="flex justify-center">
-                            <video muted playsinline autoplay controls class="max-w-2xl w-full
-                        rounded-lg shadow-xl
-                        aspect-[16/9]
-                        transform transition-transform duration-300 hover:scale-105" style="outline:4px solid #3b9ba8; outline-offset:-1px;" src="assets/images/ippolink_english.mp4" alt="IppoLink secure report sharing" preload="metadata"></video>
-                        </div>
-                    </div>
-                    <!-- End of the cards -->
-                    <div class="mt-7 text-center">
-                        <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
-                            class="main-color-button wide-button">
-                            Upload your first report now
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 ml-2 -rotate-45">
-                                <path fill-rule="evenodd"
-                                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
                     </div>
                 </div>
+            </div>
+
+            <!-- Feature 2: Smart Search -->
+            <div class="section-accent-soft-gradient">
+                <div class="section-container">
+                    <div class="feature-row reverse scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <img src="assets/images/website/13_contextual_search.png"
+                                 alt="Ippocra contextual search — find any medical report instantly"
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">Find the right report in 3 seconds</h3>
+                            <p class="mt-5 paragraph-md">
+                                Search by exam name, date or keyword.
+                                <strong>Ippocra finds the right document</strong>,
+                                even if the report is in another language.
+                                No more scrolling through folders or long chats.<br><br>
+                                <strong>Your clinical history is just a click away.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Timeline -->
+            <div class="section-blank">
+                <div class="section-container">
+                    <div class="feature-row scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <img src="assets/images/website/14_timeline_chart.png"
+                                 alt="Ippocra health timeline — visualize your complete medical history"
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">Your complete health history, visualized</h3>
+                            <p class="mt-5 paragraph-md">
+                                See all your health events laid out on a timeline — exams, visits, analyses —
+                                <strong>sorted by date and easy to browse</strong>.
+                                Spot trends, prepare for appointments, and always know what happened when.<br><br>
+                                Everything in context, at a glance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4: IppoLink Sharing -->
+            <div class="section-accent-soft-gradient">
+                <div class="section-container">
+                    <div class="feature-row reverse scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <video muted playsinline autoplay controls
+                                preload="metadata"
+                                src="assets/images/website/ippolink_english.mp4"
+                                alt="IppoLink — share medical reports securely with a temporary link">
+                            </video>
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">Share with your doctor, not with the world</h3>
+                            <p class="mt-5 paragraph-md">
+                                Create a temporary link to your clinical history for a new specialist,
+                                <strong>instead of sending reports as countless attachments</strong>.<br><br>
+                                Avoid unsafe methods like instant messages —
+                                <strong>keep your data safe and share it only when you choose</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-7 text-center" style="padding: 2rem 1rem;">
+                <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
+                    class="main-color-button wide-button">
+                    Upload your first report now
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-5 ml-2 -rotate-45">
+                        <path fill-rule="evenodd"
+                            d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
             </div>
         </section>
 
@@ -231,36 +254,35 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
                     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-left">
-                        <div class="w-10 h-10 rounded-full mb-4">
-                            <img src="assets/images/ippo-outline-green.webp" alt="Ippocra logo">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="avatar-initials" style="background-color:#3b9ba8;">ML</div>
+                            <p class="text-sm font-semibold text-gray-500 mb-0">Maria L. — Mother of 2</p>
                         </div>
-                        <p class="text-lg text-gray-700 mb-4">
+                        <p class="text-lg text-gray-700 mb-0">
                             "Having two small kids, it was always complicated to keep the documents organized without
-                            searching them
-                            among emails and chats. With Ippocra I found a simple and secure solution."
+                            searching them among emails and chats. With Ippocra I found a simple and secure solution."
                         </p>
-                        <p class="text-sm font-semibold text-gray-500">Maria L. - Mother of 2</p>
                     </div>
 
                     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-left">
-                        <div class="w-10 h-10 rounded-full mb-4">
-                            <img src="assets/images/ippo-outline-green.webp" alt="Ippocra logo">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="avatar-initials" style="background-color:#406EBA;">AD</div>
+                            <p class="text-sm font-semibold text-gray-500 mb-0">Alfredo D. — Chronic patient</p>
                         </div>
-                        <p class="text-lg text-gray-700 mb-4">
+                        <p class="text-lg text-gray-700 mb-0">
                             "Every time I had to send a report to doctors via WhatsApp I was anxious... who knows
                             what will happen to my data... Now I'm calmer, being able to send reports through secure links."
                         </p>
-                        <p class="text-sm font-semibold text-gray-500">Alfredo D. - Chronic patient</p>
                     </div>
 
                     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-left">
-                        <div class="w-10 h-10 rounded-full mb-4">
-                            <img src="assets/images/ippo-outline-green.webp" alt="Ippocra logo">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="avatar-initials" style="background-color:#5a8a6e;">GT</div>
+                            <p class="text-sm font-semibold text-gray-500 mb-0">Gabriele T. — Caregiver</p>
                         </div>
-                        <p class="text-lg text-gray-700 mb-4">
+                        <p class="text-lg text-gray-700 mb-0">
                             "I also manage my parents' reports: having everything in one place saves me from going crazy and saves time."
                         </p>
-                        <p class="text-sm font-semibold text-gray-500">Gabriele T. - Caregiver</p>
                     </div>
                 </div>
 
@@ -415,9 +437,8 @@
         </section>
 
 
-
         <!-- Call to Action Section -->
-        <section id="call"  class="section-main-hard-gradient">
+        <section id="call" class="section-main-hard-gradient">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="mt-0 page-title animate-fadeIn delay-100">
                     Your family's health deserves order.

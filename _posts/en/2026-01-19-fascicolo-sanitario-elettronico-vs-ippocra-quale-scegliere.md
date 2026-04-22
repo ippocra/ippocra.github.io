@@ -42,7 +42,7 @@ The Electronic Health Record was created with a noble intent: to centralize citi
 
 These limits highlight the need for a complementary approach to the EHR that gives patients true ownership of their health documentation.
 
-![image-center](assets/images/ippocra_grafico_vantaggi-en.webp){: align-center}
+![image-center](assets/images/website/ippocra_grafico_vantaggi-en.webp){: align-center}
 
 ## The Personal Centralization Method
 
