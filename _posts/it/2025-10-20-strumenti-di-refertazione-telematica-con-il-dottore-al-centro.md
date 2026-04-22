@@ -34,7 +34,7 @@ e scrivi semplicemente la diagnosi con il nostro editor.
 Puoi visualizzare l'anteprima del documento, o salvarlo direttamente e contestualmente 
 inviarlo al paziente in maniera automatica.
 
-![image-center](assets/images/editor_documenti-it.gif)
+![image-center](assets/images/website/editor_documenti-it.gif)
 
 Tutti i referti vengono conservati secondo GDPR conforme, e con la possibilità di essere visualizzati
 soltanto dalle persone autorizzati. Con le nostre [funzionalità di visualizzazione avanzata dei PDF]({% post_url it/2025-07-10-easier-pdf-viewer %}){:target="_blank"}, potete vedere esattamente come i vostri pazienti consultano i documenti inviati.

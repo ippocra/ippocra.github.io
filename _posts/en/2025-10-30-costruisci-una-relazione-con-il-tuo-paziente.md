@@ -28,7 +28,7 @@ When a new user receives an Ippolink from a business user who has an active Spon
 offered a free _Family_ plan. This plan lasts for **12 months** and grants access to all the features 
 reserved for paid plans.
 
-![image-center](assets/images/sponsored_plan-en.png){: .align-center}
+![image-center](assets/images/website/sponsored_plan-en.png){: .align-center}
 
 # Customer Retention
 

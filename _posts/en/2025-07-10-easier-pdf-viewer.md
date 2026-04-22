@@ -30,7 +30,7 @@ Let me add three dots for the suspense!
 
 `...` <-- **Creating the suspense**
 
-![image-center](/assets/images/new-pdfviewer-en.png){: .align-center}
+![image-center](/assets/images/website/new-pdfviewer-en.png){: .align-center}
 *PDF displayed within the Ippocra platform*
 
 More over, the *back button* brings you back to your documents list, 

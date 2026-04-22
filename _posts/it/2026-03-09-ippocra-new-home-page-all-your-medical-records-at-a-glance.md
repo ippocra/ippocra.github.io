@@ -11,7 +11,7 @@ header:
 classes: wide
 ---
 
-![image-center](/assets/images/dashboard_timeline_esami.png){: .align-center}
+![image-center](/assets/images/website/dashboard_timeline_esami.png){: .align-center}
 **Gestire i documenti sanitari propri e di tutta la famiglia non è mai stato così semplice.** La nuova home page di Ippocra raccoglie in un'unica vista tutti i documenti caricati — analisi del sangue, radiografie, ricette, referti specialistici — ordinati per data e filtrabili per persona. Niente più ricerche disperate tra cartelle, e-mail o foto scattate al volo: tutto è sempre a portata di mano.
 
 ---
@@ -21,7 +21,7 @@ classes: wide
 La home page aggiornata è costruita attorno a due domande fondamentali: **chi** e **quando**. In cima alla schermata compaiono tutti i componenti della famiglia, o le persone incluse nel piano, ciascuno con l'indicazione del numero di documenti presenti e della data dell'ultimo caricamento. Un tocco è sufficiente per passare alla timeline di quella persona.
 
 <p style="text-align:center;">
-  <img src="/assets/images/dahsboard-people-it.png" alt="Home page Ippocra — panoramica persone e familiari" style="max-width:720px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
+  <img src="/assets/images/website/dahsboard-people-it.png" alt="Home page Ippocra — panoramica persone e familiari" style="max-width:720px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
 La riga delle persone mostra:
@@ -39,7 +39,7 @@ Che tu gestisca i referti di un genitore anziano, di un figlio o di un partner, 
 Sotto la riga delle persone, una **timeline cronologica** elenca tutti i documenti caricati nel tuo nucleo familiare. Gli elementi più recenti appaiono per primi. Ogni riga mostra il tipo di documento, la persona a cui appartiene e la data di caricamento — trovare il file giusto richiede secondi, non minuti.
 
 <p style="text-align:center;">
-  <img src="/assets/images/dashboard_timeline_esami.png" alt="Ippocra document timeline — exams and health records sorted by date" style="max-width:720px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
+  <img src="/assets/images/website/dashboard_timeline_esami.png" alt="Ippocra document timeline — exams and health records sorted by date" style="max-width:720px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
 La timeline supporta più categorie di documenti:
@@ -88,7 +88,7 @@ i referti dei nostri pazienti, avendo possibilità di ricercare i documenti dei 
 **Quanti Ippolink sono stati fatti finora?** Avere i propri documenti è utile, ma è anche piú utile poterli 
 condividere in maniera sicura attraverso gli ippolinks. Oggi è possibile vederle direttamente dalla homepage.
 
-![image-center](/assets/images/ippolink_creati.png){: .align-center}
+![image-center](/assets/images/website/ippolink_creati.png){: .align-center}
 
 <p style="text-align:center; margin: 2.5rem 0;">
   <a href="https://app.ippocra.com" style="background:#1A7A5E;color:#fff;padding:16px 40px;border-radius:50px;font-size:1.1rem;font-weight:700;text-decoration:none;display:inline-block;">

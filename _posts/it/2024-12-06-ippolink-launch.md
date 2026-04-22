@@ -22,7 +22,7 @@ Finora la risposta é sempre stata: **PANIC**.
 Da oggi non piú! Grazie alla nuova funzione del Secret-Link e' facilissimo condividere i 
 vostri documenti che avete su Ippocra con lo specialista. 
 
-![image-center](/assets/images/secret-link-creation.gif){: .align-center}
+![image-center](/assets/images/website/secret-link-creation.gif){: .align-center}
 
 Andando sul ippolink lo specialista potrá vedere tutte le analisi ed i referti, ed
 ottenere tutte le informazioni di cui ha bisogno! Prova tu stesso: [Ippolink](https://app.ippocra.com/ippolinks/fe5eece2-8717-4e65-abea-97fa295c869a).

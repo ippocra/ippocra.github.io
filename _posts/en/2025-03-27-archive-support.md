@@ -29,7 +29,7 @@ via our [IppoLinks]({% post_url en/2024-12-06-ippolink-launch %}){:target="_blan
 Today we are presenting this new feature:
 
 
-![image-center](/assets/images/archive_en.png){: .align-center}
+![image-center](/assets/images/website/archive_en.png){: .align-center}
 *We made space for the zip-file*
 
 So, on top of PDFs and pictures maybe taken from the mobile, today also `.zip` files can be uploaded.

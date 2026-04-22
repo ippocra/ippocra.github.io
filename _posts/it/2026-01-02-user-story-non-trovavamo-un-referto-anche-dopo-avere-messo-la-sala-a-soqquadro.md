@@ -42,7 +42,7 @@ Stanco di questa ricerca, l'utente ha deciso di **provare Ippocra**. Proprio que
 
 Grazie a questi passaggi, l’utente ha potuto **inviare il referto al medico prima dell’appuntamento**, evitando ulteriori ritardi e stress.
 
-![image-center](assets/images/document_list_it.webp){: .align-center}
+![image-center](assets/images/website/document_list_it.webp){: .align-center}
 
 *Tutti i documenti medici, sempre disponibili, su Ippocra.*
 {: .text-center}

@@ -28,6 +28,6 @@ Select the patient for whom you want to write the report, click **Write Report**
 
 You can view a preview of the document, or save it instantly and automatically send it to the patient.
 
-![image-center](assets/images/editor_documenti-en.gif)
+![image-center](assets/images/website/editor_documenti-en.gif)
 
 All reports are stored in GDPR‑compliant fashion, with access limited to authorized individuals only. This secure approach reflects the [legal requirements we've outlined for medical report storage]({% post_url en/2025-10-09-referti-medici-come-i-professionisti-devono-gestirli %}){:target="_blank"}. To learn more, read how medical reports should be handled by professionals, or discover how [healthcare practices like Medical Campus]({% post_url en/2025-05-14-medical-campus-sceglie-ippocra %}){:target="_blank"} are leveraging Ippocra for secure patient communication.

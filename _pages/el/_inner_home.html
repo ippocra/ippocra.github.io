@@ -2,8 +2,9 @@
 
 <body>
     <main class="main-content">
+
         <!-- Hero Section -->
-        <section id="hero" class="section-blank">
+        <section id="hero" class="section-blank hero-bg-pattern">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col lg:flex-row items-center gap-10">
                     <div class="lg:w-3/5">
@@ -33,12 +34,13 @@
                                 Μάθετε πώς λειτουργεί
                             </a>
                         </div>
-
                     </div>
+
                     <div class="hero-illustration-wrap" style="display:none; width:40%; justify-content:center; align-items:center;">
-                        <img src="assets/images/hero-family-illustration.svg"
-                             alt="Family managing health documents with Ippocra"
-                             width="500" height="450"
+                        <img src="assets/images/website/12b_home_dashboard_personal.png"
+                             alt="Πίνακας ελέγχου Ippocra — όλα τα ιατρικά έγγραφα της οικογένειάς σας οργανωμένα"
+                             width="600" height="420"
+                             class="hero-screenshot-frame"
                              style="max-width:100%; height:auto;">
                     </div>
                     <style>
@@ -47,6 +49,7 @@
                         }
                     </style>
                 </div>
+
                 <div class="mt-8 flex flex-wrap justify-center gap-6">
                     <div class="flex items-center gap-2 px-4 py-2 rounded-full border" style="border-color:#3b9ba8; color:#3b9ba8;">
                         <i class="fas fa-shield-alt"></i>
@@ -78,6 +81,7 @@
                 <div class="mt-10 space-y-4">
                     <div class="faq-base bg-white p-6">
                         <span class="paragraph-md">
+                            <i class="fas fa-search" style="color:#3b9ba8; margin-right:0.5rem;"></i>
                             <strong>Ο γιατρός ζητάει την τελευταία σας εξέταση αίματος.</strong>
                             Ψάχνετε σε 200 φωτογραφίες, 50 email και 3 συνομιλίες WhatsApp.
                         </span>
@@ -85,6 +89,7 @@
 
                     <div class="faq-base bg-white p-6">
                         <span class="paragraph-md">
+                            <i class="fas fa-calendar-alt" style="color:#3b9ba8; margin-right:0.5rem;"></i>
                             <strong>Η μητέρα σας έχει ραντεβού.</strong>
                             Χρειάζονται τα αποτελέσματά της από τα τελευταία 2 χρόνια. Κανείς δεν ξέρει πού βρίσκονται.
                         </span>
@@ -92,6 +97,7 @@
 
                     <div class="faq-base bg-white p-6">
                         <span class="paragraph-md">
+                            <i class="fas fa-exclamation-triangle" style="color:#3b9ba8; margin-right:0.5rem;"></i>
                             <strong>Πρέπει να μοιραστείτε μια εξέταση με έναν νέο ειδικό.</strong>
                             Την ανεβάζετε και την στέλνετε μέσω WhatsApp, παραβιάζοντας τον GDPR.
                         </span>
@@ -117,101 +123,118 @@
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="section-accent-soft-gradient">
-            <div class="section-container">
-
+        <section id="features">
+            <div class="section-container" style="padding-top:4rem;">
                 <h2 class="mt-0 section-title text-center">
                     Πώς το Ippocra απλοποιεί τη ζωή σας
                 </h2>
                 <p class="mt-7 text-center paragraph-md paragraph-bold">
                     Λιγότερο χάος, λιγότερο άγχος. Τα πάντα οργανωμένα, εντοπισμένα και κοινοποιημένα με ασφάλεια.
                 </p>
+            </div>
 
-                <div class="mt-10 space-y-4">
-                    <!-- Start of the cards -->
-
-                    <div class="flex flex-col p-4 text-center">
-                        <h3 class="mt-0 section-title">Βρείτε τη σωστή εξέταση σε 3 δευτερόλεπτα
-                        </h3>
-                        <p class="mt-7 paragraph-md">
-                            Αναζητήστε με το όνομα εξέτασης, ημερομηνία ή λέξη-κλειδί.
-                            <strong>Το Ippocra βρίσκει το σωστό έγγραφο,</strong>
-                            ακόμα και αν η αναφορά είναι σε άλλη γλώσσα.
-                            Τέλος το κύλισμα σε φακέλους ή μεγάλες συνομιλίες.<br>
-                            <strong>Το ιατρικό σας ιστορικό είναι ένα κλικ μακριά.</strong>
-                        </p>
-
-                        <div class="flex justify-center scroll-animated-item">
-                            <video muted playsinline autoplay controls class="max-w-2xl w-full
-                        rounded-lg shadow-xl
-                        aspect-[16/9]
-                        transform transition-transform duration-300 hover:scale-105" style="outline:4px solid #3b9ba8; outline-offset:-1px;" src="assets/images/search_uri_en.mp4" alt="Smart search for medical reports" preload="metadata"></video>
+            <!-- Feature 1: Dashboard -->
+            <div class="section-blank" style="margin-top:2rem;">
+                <div class="section-container">
+                    <div class="feature-row scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <img src="assets/images/website/12b_home_dashboard_personal.png"
+                                 alt="Πίνακας ελέγχου Ippocra — όλα τα ιατρικά έγγραφα σε ένα μέρος"
+                                 loading="lazy">
                         </div>
-                    </div>
-
-                    <div class="flex flex-row text-right p-4">
-                        <div class="p-16 max-w-sm card-image">
-                            <img src="assets/images/autocategorization_en.png" alt="Automatic medical report categorization">
-                        </div>
-
-                        <div class="flex flex-col items-start h-full card-info">
-                            <h3 class="mt-0 section-title">Ανεβάστε μια φωτογραφία. Το Ippocra κάνει τα υπόλοιπα.
-                            </h3>
-                            <p class="mt-7 paragraph-md">
-                                Απλά ανεβάστε το PDF ή ακόμα και μια φωτογραφία της εξέτασης από το τηλέφωνό σας. Το Ippocra
-                                <strong>διαβάζει αυτόματα</strong>
-                                την ημερομηνία, τον τύπο εξέτασης και το τοποθετεί στη σωστή θέση, έτοιμο να βρεθεί με την έξυπνη αναζήτησή μας.
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">Τα πάντα οργανωμένα σε ένα μέρος</h3>
+                            <p class="mt-5 paragraph-md">
+                                Όλα τα ιατρικά έγγραφα της οικογένειάς σας — αναλύσεις, εξιτήρια, αναφορές ειδικών —
+                                <strong>σε έναν ενιαίο, ασφαλή χώρο</strong>.
+                                Για εσάς και για κάθε μέλος της οικογένειας που διαχειρίζεστε.<br><br>
+                                Τέλος τα διάσπαρτα αρχεία σε εφαρμογές, email και ιστορικά συνομιλιών.
                             </p>
                         </div>
-                    </div>
-
-                    <div class="flex flex-row text-left p-4">
-                        <div class="flex flex-col items-start h-full card-info">
-                            <h3 class="mt-0 section-title">Τα δεδομένα σας είναι δικά σας. Τελεία.
-                            </h3>
-                            <p class="mt-7 paragraph-md">
-                                Χρησιμοποιούμε προηγμένη κρυπτογράφηση και μοντέλο συνδρομής: πληρώνετε για την υπηρεσία,
-                                <strong>τα δεδομένα σας δεν πωλούνται ποτέ για διαφήμιση ή οτιδήποτε άλλο</strong>.<br>
-                                <strong>Είναι δικά σας</strong>.
-                            </p>
-                        </div>
-                        <div class="p-16 max-w-sm card-image">
-                            <img src="assets/images/ippocra-logo-white-ippo-green-background.png" alt="Ippocra privacy and health data security">
-                        </div>
-                    </div>
-
-
-                    <div class="flex flex-col p-4 text-center">
-
-                        <h3 class="mt-0 section-title">Μοιραστείτε με τον γιατρό σας, όχι με όλο τον κόσμο
-                        </h3>
-                        <p class="mt-7 paragraph-md">
-                            Δημιουργήστε έναν προσωρινό σύνδεσμο για το ιατρικό σας ιστορικό για έναν νέο ειδικό, <strong>αντί
-                                να στέλνετε εξετάσεις ως αμέτρητα συνημμένα</strong>.
-                            <br>Αποφύγετε ανασφαλείς μεθόδους όπως τα άμεσα μηνύματα - <strong>διατηρήστε τα δεδομένα σας ασφαλή και μοιραστείτε τα μόνο όταν επιλέξετε</strong>.
-                        </p>
-
-                        <div class="flex justify-center">
-                            <video muted playsinline autoplay controls class="max-w-2xl w-full
-                        rounded-lg shadow-xl
-                        aspect-[16/9]
-                        transform transition-transform duration-300 hover:scale-105" style="outline:4px solid #3b9ba8; outline-offset:-1px;" src="assets/images/ippolink_english.mp4" alt="IppoLink secure report sharing" preload="metadata"></video>
-                        </div>
-                    </div>
-                    <!-- End of the cards -->
-                    <div class="mt-7 text-center">
-                        <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
-                            class="main-color-button wide-button">
-                            Ανεβάστε την πρώτη σας εξέταση τώρα
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                class="w-5 h-5 ml-2 -rotate-45">
-                                <path fill-rule="evenodd"
-                                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
                     </div>
                 </div>
+            </div>
+
+            <!-- Feature 2: Smart Search -->
+            <div class="section-accent-soft-gradient">
+                <div class="section-container">
+                    <div class="feature-row reverse scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <img src="assets/images/website/13_contextual_search.png"
+                                 alt="Έξυπνη αναζήτηση Ippocra — βρείτε οποιαδήποτε ιατρική εξέταση άμεσα"
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">Βρείτε τη σωστή εξέταση σε 3 δευτερόλεπτα</h3>
+                            <p class="mt-5 paragraph-md">
+                                Αναζητήστε με το όνομα εξέτασης, ημερομηνία ή λέξη-κλειδί.
+                                <strong>Το Ippocra βρίσκει το σωστό έγγραφο</strong>,
+                                ακόμα και αν η αναφορά είναι σε άλλη γλώσσα.
+                                Τέλος το κύλισμα σε φακέλους ή μεγάλες συνομιλίες.<br><br>
+                                <strong>Το ιατρικό σας ιστορικό είναι ένα κλικ μακριά.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Timeline -->
+            <div class="section-blank">
+                <div class="section-container">
+                    <div class="feature-row scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <img src="assets/images/website/14_timeline_chart.png"
+                                 alt="Χρονολόγιο υγείας Ippocra — οπτικοποιήστε το πλήρες ιατρικό σας ιστορικό"
+                                 loading="lazy">
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">Το πλήρες ιατρικό σας ιστορικό, οπτικοποιημένο</h3>
+                            <p class="mt-5 paragraph-md">
+                                Δείτε όλα τα ιατρικά γεγονότα σε ένα χρονολόγιο — εξετάσεις, επισκέψεις, αναλύσεις —
+                                <strong>ταξινομημένα κατά ημερομηνία και εύκολα στην περιήγηση</strong>.
+                                Εντοπίστε τάσεις, προετοιμαστείτε για ραντεβού και μάθετε πάντα τι συνέβη και πότε.<br><br>
+                                Τα πάντα σε πλαίσιο, με μια ματιά.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4: IppoLink Sharing -->
+            <div class="section-accent-soft-gradient">
+                <div class="section-container">
+                    <div class="feature-row reverse scroll-animated-item">
+                        <div class="feature-screenshot-wrap">
+                            <video muted playsinline autoplay controls
+                                preload="metadata"
+                                src="assets/images/website/ippolink_english.mp4"
+                                alt="IppoLink — κοινοποιήστε ιατρικές αναφορές με ασφάλεια μέσω προσωρινού συνδέσμου">
+                            </video>
+                        </div>
+                        <div class="feature-text">
+                            <h3 class="mt-0 section-title">Μοιραστείτε με τον γιατρό σας, όχι με όλο τον κόσμο</h3>
+                            <p class="mt-5 paragraph-md">
+                                Δημιουργήστε έναν προσωρινό σύνδεσμο για το ιατρικό σας ιστορικό για έναν νέο ειδικό,
+                                <strong>αντί να στέλνετε εξετάσεις ως αμέτρητα συνημμένα</strong>.<br><br>
+                                Αποφύγετε ανασφαλείς μεθόδους όπως τα άμεσα μηνύματα —
+                                <strong>διατηρήστε τα δεδομένα σας ασφαλή και μοιραστείτε τα μόνο όταν επιλέξετε</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-7 text-center" style="padding: 2rem 1rem;">
+                <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
+                    class="main-color-button wide-button">
+                    Ανεβάστε την πρώτη σας εξέταση τώρα
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-5 ml-2 -rotate-45">
+                        <path fill-rule="evenodd"
+                            d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
             </div>
         </section>
 
@@ -231,42 +254,42 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
                     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-left">
-                        <div class="w-10 h-10 rounded-full mb-4">
-                            <img src="assets/images/ippo-outline-green.webp" alt="Ippocra logo">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="avatar-initials" style="background-color:#3b9ba8;">ΜΛ</div>
+                            <p class="text-sm font-semibold text-gray-500 mb-0">Μαρία Λ. — Μητέρα 2 παιδιών</p>
                         </div>
-                        <p class="text-lg text-gray-700 mb-4">
+                        <p class="text-lg text-gray-700 mb-0">
                             "Έχοντας δύο μικρά παιδιά, ήταν πάντα περίπλοκο να κρατάω τα έγγραφα οργανωμένα χωρίς
                             να τα ψάχνω σε email και συνομιλίες. Με το Ippocra βρήκα μια απλή και ασφαλή λύση."
                         </p>
-                        <p class="text-sm font-semibold text-gray-500">Μαρία Λ. - Μητέρα 2 παιδιών</p>
                     </div>
 
                     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-left">
-                        <div class="w-10 h-10 rounded-full mb-4">
-                            <img src="assets/images/ippo-outline-green.webp" alt="Ippocra logo">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="avatar-initials" style="background-color:#406EBA;">ΑΔ</div>
+                            <p class="text-sm font-semibold text-gray-500 mb-0">Αλφρέντο Δ. — Χρόνιος ασθενής</p>
                         </div>
-                        <p class="text-lg text-gray-700 mb-4">
+                        <p class="text-lg text-gray-700 mb-0">
                             "Κάθε φορά που έπρεπε να στείλω αποτελέσματα σε γιατρούς μέσω WhatsApp ήμουν ανήσυχος... ποιος ξέρει
                             τι θα συμβεί στα δεδομένα μου... Τώρα είμαι πιο ήρεμος, μπορώ να στείλω αποτελέσματα μέσω ασφαλών συνδέσμων."
                         </p>
-                        <p class="text-sm font-semibold text-gray-500">Αλφρέντο Δ. - Χρόνιος ασθενής</p>
                     </div>
 
                     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-left">
-                        <div class="w-10 h-10 rounded-full mb-4">
-                            <img src="assets/images/ippo-outline-green.webp" alt="Ippocra logo">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="avatar-initials" style="background-color:#5a8a6e;">ΓΤ</div>
+                            <p class="text-sm font-semibold text-gray-500 mb-0">Γκαμπριέλε Τ. — Φροντιστής</p>
                         </div>
-                        <p class="text-lg text-gray-700 mb-4">
+                        <p class="text-lg text-gray-700 mb-0">
                             "Διαχειρίζομαι επίσης τα αποτελέσματα των γονιών μου: το να τα έχω όλα σε ένα μέρος με σώζει από τον πανικό και εξοικονομεί χρόνο."
                         </p>
-                        <p class="text-sm font-semibold text-gray-500">Γκαμπριέλε Τ. - Φροντιστής</p>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- As featured in -->
+        <!-- Όπως παρουσιάστηκε σε -->
         <section id="featured" class="py-8 bg-gray-50">
             <div class="container mx-auto px-6 text-center">
                 <h3 class="mt-0 section-title text-center">Όπως παρουσιάστηκε σε</h3>
@@ -414,9 +437,8 @@
         </section>
 
 
-
         <!-- Call to Action Section -->
-        <section id="call"  class="section-main-hard-gradient">
+        <section id="call" class="section-main-hard-gradient">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="mt-0 page-title animate-fadeIn delay-100">
                     Η υγεία της οικογένειάς σας αξίζει τάξη.
