@@ -6,6 +6,8 @@ main:
   #   url: /business
   - title: "Blog"
     url: /posts/
+  - title: "Chi Siamo"
+    url: /about
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
