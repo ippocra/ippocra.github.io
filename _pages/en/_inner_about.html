@@ -27,6 +27,38 @@
             </div>
         </section>
 
+        <!-- Two Pillars Section -->
+        <section id="pillars" class="section-transparent">
+            <div class="section-container">
+                <h2 class="mt-0 section-title text-center">
+                    Our activities
+                </h2>
+                <p class="mt-7 text-center paragraph-md paragraph-bold">
+                    Ippocra operates in two complementary directions: digital health for families and AI consultancy for businesses.
+                </p>
+
+                <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Ippo Card -->
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3" style="color:#3b9ba8;">Ippo</h3>
+                        <p class="paragraph-md text-gray-700 mb-6">
+                            Our health platform for families. Organize, find, and securely share medical records.
+                        </p>
+                        <a href="{{ '/' | relative_url }}" class="secondary-button">Discover Ippo</a>
+                    </div>
+
+                    <!-- Ideallab Card -->
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3" style="color:#3b9ba8;">Ideallab</h3>
+                        <p class="paragraph-md text-gray-700 mb-6">
+                            Our software and AI consultancy for SMEs. We build solutions that adapt to your business.
+                        </p>
+                        <a href="https://ideallab.org" target="_blank" rel="noopener noreferrer" class="secondary-button">Visit Ideallab →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Team Section -->
         <section id="team" class="section-transparent">
             <div class="section-container">
@@ -41,55 +73,31 @@
                     <!-- Card 1 -->
                     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-5 lg:px-6 py-10 text-center overflow-hidden">
                         <div class="w-36 h-36 lg:w-40 lg:h-40 rounded-full bg-gray-200 mx-auto mb-6">
-                            <img src="{{ 'assets/images/people/PM.webp' | relative_url }}" alt="Pavle Marinkovich" class="w-full h-full object-cover rounded-full">
+                            <img src="{{ 'assets/images/people/MM.webp' | relative_url }}" alt="Michele Mattioni" class="w-full h-full object-cover rounded-full">
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Pavle Marinkovich</h3>
-                        <p class="text-sm font-semibold mb-4" style="color:#3b9ba8;">CPO &amp; Co-Founder</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-1">Michele Mattioni</h3>
+                        <p class="text-sm font-semibold mb-4" style="color:#3b9ba8;">Founder</p>
                         <p class="paragraph-md text-gray-700">
-                            Defines the product vision and translates the real needs of patients and healthcare facilities
-                            into concrete features. Ensures every design decision puts simplicity, clarity
-                            and value at the center for those who use Ippocra every day.
+                            Founder of Ippocra, which operates on two complementary fronts:
+                            the Ippo health platform for families and Ideallab,
+                            software and AI consultancy for businesses.
+                            Leads the Ippo product starting from real use cases,
+                            with a focus on clarity, privacy and usefulness,
+                            while the technical vision is also shaped by the Ideallab world.
                         </p>
                     </div>
 
                     <!-- Card 2 -->
                     <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-5 lg:px-6 py-10 text-center overflow-hidden">
                         <div class="w-36 h-36 lg:w-40 lg:h-40 rounded-full bg-gray-200 mx-auto mb-6">
-                            <img src="{{ 'assets/images/people/MM.webp' | relative_url }}" alt="Michele Mattioni" class="w-full h-full object-cover rounded-full">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Michele Mattioni</h3>
-                        <p class="text-sm font-semibold mb-4" style="color:#3b9ba8;">CEO &amp; Founder</p>
-                        <p class="paragraph-md text-gray-700">
-                            Ippocra was born from a personal problem: scattered documents, hard to find and share.
-                            Leads the product starting from real use cases,
-                            with a focus on clarity, privacy and usefulness.
-                        </p>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-5 lg:px-6 py-10 text-center overflow-hidden">
-                        <div class="w-36 h-36 lg:w-40 lg:h-40 rounded-full bg-gray-200 mx-auto mb-6">
-                            <img src="{{ 'assets/images/people/DJ.webp' | relative_url }}" alt="Danilo Jovanovic" class="w-full h-full object-cover rounded-full">  
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Danilo Jovanovic</h3>
-                        <p class="text-sm font-semibold mb-4" style="color:#3b9ba8;">CTO &amp; Co-Founder</p>
-                        <p class="paragraph-md text-gray-700">
-                            Designs and builds Ippocra's technical infrastructure: from the DICOM viewer
-                            to data encryption, from cloud architecture to platform security.
-                            Focused on making the technology reliable, scalable and invisible to the end user.
-                        </p>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-5 lg:px-6 py-10 text-center overflow-hidden">
-                        <div class="w-36 h-36 lg:w-40 lg:h-40 rounded-full bg-gray-200 mx-auto mb-6">
                             <img src="{{ 'assets/images/people/MK.webp' | relative_url }}" alt="Myrto Kostadima" class="w-full h-full object-cover rounded-full">
                         </div>
                         <h3 class="text-xl font-bold text-gray-900 mb-1">Myrto Kostadima</h3>
-                        <p class="text-sm font-semibold mb-4" style="color:#3b9ba8;">COO &amp; Co-Founder</p>
+                        <p class="text-sm font-semibold mb-4" style="color:#3b9ba8;">Co-founder</p>
                         <p class="paragraph-md text-gray-700">
-                            Coordinates Ippocra's daily operations and business processes.
-                            Ensures every organizational aspect runs efficiently,
+                            Co-founder: keeps the two faces of Ippocra, Ippo and Ideallab, in sync.
+                            Coordinates operations and business processes across both activities,
+                            ensuring they grow in a structured way,
                             enabling the team to focus on product and innovation.
                         </p>
                     </div>
