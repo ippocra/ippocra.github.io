@@ -15,7 +15,7 @@ Last updated: 2026/05/16
 
 **1. COOKIES AND OTHER SIMILAR TECHNOLOGIES**
 
-The Site uses **only strictly necessary technical cookies** for its proper functioning. For traffic analytics we use **Umami**, a **self-hosted** analytics tool that does not use third-party cookies, does not send data outside the EU, and does not create user profiles.
+The Site **does not use tracking or profiling cookies**. For traffic analytics we use **Umami**, a **self-hosted** analytics tool that does not use cookies, does not send data outside the EU, does not create user profiles, and anonymizes IP addresses.
 
 **1.1. What are Cookies**
 
@@ -31,11 +31,7 @@ Persistent cookies are not automatically deleted when the browser is closed.
 
 The Site uses the following cookies:
 
-**a. Strictly necessary technical cookies:**
-
-* ***Consent banner cookie.*** A technical cookie used to store the user's choice regarding acceptance of the cookies policy. This cookie does not collect personal data and is necessary to comply with privacy regulations. It does not require user consent.
-
-**b. Performance cookies (analytics):**
+**a. Analytics:**
 
 * ***Umami.*** The Site uses [Umami](https://umami.is), an open-source, self-hosted analytics tool. Umami **does not use cookies**, **does not collect personal data**, **does not send data to external servers** (data is stored on servers owned by Ippocra S.R.L.), **does not create user profiles**, and **anonymizes IP addresses**. Umami is based on the Controller's legitimate interest (Art. 6(1)(f) GDPR) to analyze anonymous site traffic and improve user experience.
 
@@ -45,24 +41,13 @@ The Site uses the following cookies:
 - Social media cookies
 - Session recording or heat mapping
 - Advertising trackers
+- Cookie consent banner (not needed since Umami does not use cookies)
 
-**1.3. How to consent to cookies**
+**1.3. Managing Cookies via the Browser**
 
-When accessing the Site, an informational banner informs the user about the use of Umami for traffic analytics.
+Since no tracking or profiling cookies are used, there is no need to manage cookie preferences. The user can still manage browser settings and prevent any cookie installation.
 
-Through the banner, the user can:
-- Accept the use of Umami for traffic analytics;
-- Decline the use of Umami (in this case, analytics will not be loaded).
-
-The user's preferences are stored via a technical cookie so that consent is not requested again on subsequent visits. The user may revoke consent at any time by modifying browser settings or deleting cookies.
-
-**1.4. Managing Cookies via the Browser**
-
-The user can manage cookie preferences directly within their browser and prevent their installation. Through browser preferences, it is also possible to delete installed cookies.
-
-**1.5. Cookie Retention**
-
-The technical consent banner cookie remains valid for the period of the user's expressed consent and is deleted upon the user's request or when the browser is closed.
+**1.4. Cookie Retention**
 
 Data collected by Umami is treated in aggregated and anonymous form and is retained according to the self-hosted Umami server's retention policies.
 

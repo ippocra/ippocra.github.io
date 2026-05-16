@@ -23,8 +23,3 @@ footer:
   terms: Terms
   policy: Privacy Policy
   cookies: Cookies Policy
-cookies:
-  message: "We use self-hosted analytics (Umami) to track anonymous site traffic."
-  approve: "Accept"
-  more_info: "More Info"
-  decline: "Decline"

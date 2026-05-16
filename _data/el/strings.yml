@@ -23,8 +23,3 @@ footer:
   terms: Όροι
   policy: Πολιτική Απορρήτου
   cookies: Πολιτική Cookies
-cookies:
-  message: "Χρησιμοποιούμε analytics self-hosted (Umami) για ανώνυμες στατιστικές του site."
-  approve: "Αποδοχή"
-  more_info: "Περισσότερες πληροφορίες"
-  decline: "Απόρριψη"
