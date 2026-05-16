@@ -24,7 +24,7 @@ footer:
   policy: Πολιτική Απορρήτου
   cookies: Πολιτική Cookies
 cookies:
-  message: "Θα θέλαμε να χρησιμοποιήσουμε cookies και scripts τρίτων για να βελτιώσουμε τη λειτουργικότητα αυτού του ιστότοπου."
+  message: "Χρησιμοποιούμε analytics self-hosted (Umami) για ανώνυμες στατιστικές του site."
   approve: "Αποδοχή"
   more_info: "Περισσότερες πληροφορίες"
   decline: "Απόρριψη"

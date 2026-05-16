@@ -24,7 +24,7 @@ footer:
   policy: Privacy Policy
   cookies: Cookies Policy
 cookies:
-  message: "Vorremmo utilizzare cookies di terze parti per migliorare la funzionalità di questo sito."
+  message: "Utilizziamo un analytics self-hosted (Umami) per statistiche anonime sul traffico del sito."
   approve: "Approvo"
   more_info: "Piú Informazioni"
   decline: "Declino"

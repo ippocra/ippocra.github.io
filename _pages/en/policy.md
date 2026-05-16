@@ -207,10 +207,10 @@ You are not required to provide your personal data to the company. However, if y
 
 The Company bases the conditions of consent on the following points:  
 a. If the processing is based on consent, the data controller must be able to demonstrate that the data subject has consented to the processing of their personal data.  
-The registration of an account will always be considered as valid and free consent for the processing of personal data and the use of cookies.  
+The registration of an account will always be considered as valid and free consent for the processing of personal data and the use of cookies.
+
 ***NOTE:*** In the case where the end user uploads data of family members or other individuals belonging to the end user's household, the same data mentioned above will be processed for those individuals. The processing of health and biometric data is based on your consent. If data from family members or other individuals in the end user's household are uploaded, the consent is also considered extended and granted for the processing of the data of these individuals, whom the end user declares to have informed about the contents of this privacy notice and to have received all necessary consent for the processing of their data under their responsibility.
 
-Continuing to browse the site will always be considered free consent to the use of cookies.  
 b. If the data subject's consent is given in the context of a written declaration that also covers other matters, the request for consent must be presented in a way that is clearly distinguishable from the other issues, in a comprehensible and easily accessible form, using simple and clear language. No part of such a declaration that constitutes a violation of this regulation is binding.  
 c. The data subject has the right to withdraw their consent at any time. The withdrawal of consent does not affect the lawfulness of processing based on consent before its withdrawal. The data subject is informed of this before giving consent. Consent can be withdrawn as easily as it was given.  
 d. When evaluating whether consent has been freely given, consideration must be given to, among other things, the possibility that the performance of a contract, including the provision of a service, may be conditional on consent to the processing of personal data not necessary for the execution of that contract. Specific details on consent for various processing activities are provided in the Record of Processing Activities.  
