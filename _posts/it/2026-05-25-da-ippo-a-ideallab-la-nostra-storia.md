@@ -27,25 +27,25 @@ La missione era chiara: rendere la salute più gestibile per le famiglie italian
 
 ## Il mercato ci ha parlato
 
-Mentre lavoravamo su Ippo, abbiamo iniziato a ricevere richieste da un'altra direzione. Imprese, piccole e medie, che ci chiedevano: *"Potete costruirci un tool che faccia così?"*
+Mentre lavoravamo su Ippo, le richieste da un'altra direzione si sono fatte più frequenti. Imprese, piccole e medie, ci chiedevano: *"Potete costruirci un tool che faccia così?"*
 
-All'inizio le vedevamo come distrazioni. Poi abbiamo capito che non lo erano.
+Le abbiamo trattate come distrazioni. Fino a quando non ci siamo resi conto che non lo erano.
 
 Uno di questi progetti è diventato **Rendiconto** — nato dall'esperienza diretta con la BRAL BRUSAFERRI SRL, un'azienda che incrociava manualmente fatture e bolli di trasporto provenienti da fornitori diversi con sconti differenti. Un processo lunghissimo, completamente manuale, senza alcun software in grado di risolverlo. L'abbiamo costruito su misura per quel caso specifico, e ha funzionato.
 
-Ma è stato l'feedback che è arrivato da altri a cambiare tutto: *"Quello che avete fatto per BRAL, potete farlo anche per noi?"*
+Ma è stato l'feedback degli altri a cambiare tutto: *"Quello che avete fatto per BRAL, potete farlo anche per noi?"*
 
-Eravamo di fronte a qualcosa di più grande di un singolo progetto. Eravamo di fronte a un bisogno reale, diffuso, e soprattutto — un bisogno per cui le persone erano disposte a pagare.
+Abbiamo capito di avere di fronte un bisogno reale, diffuso, e — cosa più importante — un bisogno per cui le persone erano disposte a pagare.
 
 ---
 
 ## La decisione: aprire Ideallab
 
-Abbiamo preso una decisione che non avevamo previsto: abbiamo aperto **Ideallab**, la divisione dedicata al software personalizzato e alla consulenza AI per le PMI.
+Abbiamo aperto **Ideallab**, la divisione dedicata al software personalizzato e alla consulenza AI per le PMI.
 
-Non era nel piano iniziale. Non era la direzione che avevamo pensato quando abbiamo fondato Ippocra. Ma era quella che il mercato ci diceva che serviva.
+Non era nel piano iniziale. Ma era la direzione che il mercato ci stava indicando a forza.
 
-Ideallab nasce da un'osservazione semplice ma potente: **la maggior parte delle PMI non ha problemi di referti medici — ha problemi di dati, processi manuali, e strumenti che non si adattano al loro modo di lavorare**. E quelle sono le stesse competenze che abbiamo usato per costruire Ippo: privacy-first, pragmatico, costruito intorno ai flussi di lavoro reali delle persone.
+Ideallab nasce da un'osservazione chiara: **la maggior parte delle PMI non ha bisogno di tool prefabbricati — ha problemi di dati, processi manuali, e strumenti che non si adattano al loro modo di lavorare**. E quelle sono le stesse competenze che abbiamo usato per costruire Ippo: privacy-first, pragmatico, costruito intorno ai flussi di lavoro reali delle persone.
 
 Oggi Ideallab fa due cose:
 
@@ -78,7 +78,7 @@ Due sezioni, una compagnia. Due missioni complementari, un approccio comune: cos
 
 Siamo onesti: oggi puntiamo tutto su Ideallab.
 
-Non perché Ippo sia un fallimento — è un prodotto che funziona, che stiamo migliorando giorno per giorno, e che continueremo a servire. Ma la realtà è che il mercato ci sta parlando forte, e Ideallab è dove stiamo concentrando le nostre energie.
+Ippo non è in pausa. È un prodotto che funziona, che stiamo migliorando giorno per giorno, e che continueremo a servire. Ma la realtà è che il mercato ci sta parlando forte, e Ideallab è dove stiamo concentrando le nostre energie.
 
 Ippo **non va via**. Rimarrà attivo, continuerà a ricevere manutenzione e nuovi miglioramenti, e continuerà a servire chi già lo usa e chi vorrà usarlo in futuro. Ma la crescita e lo sviluppo principale sono su Ideallab.
 
@@ -88,9 +88,9 @@ Questa è la vita di una startup: scopri dove il mercato ha più bisogno di te, 
 
 ## Cosa ci aspetta
 
-Con Ideallab, stiamo costruendo qualcosa che pensiamo possa davvero fare la differenza per le PMI italiane. Abbiamo già progetti in corso, nuove partnership in arrivo, e un interesse che supera ogni aspettativa.
+Con Ideallab stiamo costruendo qualcosa che può davvero fare la differenza per le PMI italiane. Abbiamo già progetti in corso, nuove partnership in arrivo, e un interesse che supera ogni aspettativa.
 
-E stiamo anche esplorando una direzione che ci sta particolarmente a cuore: **l'AI locale**. Eseguire modelli di intelligenza artificiale sulla tua infrastruttura, non su server di terze parti. I tuoi dati restano tuoi. Sempre.
+Stiamo anche esplorando una direzione che ci sta particolarmente a cuore: **l'AI locale**. Eseguire modelli di intelligenza artificiale sulla tua infrastruttura, non su server di terze parti. I tuoi dati restano tuoi. Sempre.
 
 ---
 
@@ -112,7 +112,7 @@ No. Ideallab non è una spin-off né un'azienda separata. È una divisione di Ip
 
 **Ippo continuerà a essere sviluppato?**
 
-Sì. Ippo continuerà a ricevere manutenzione, nuovi miglioramenti e supporto per tutti gli utenti attuali e futuri. Non è un progetto in pausa — è semplicemente la divisione che non stiamo amplificando attivamente in questo momento.
+Sì. Ippo continuerà a ricevere manutenzione, nuovi miglioramenti e supporto per tutti gli utenti attuali e futuri. Non è un progetto sospeso — è semplicemente la divisione che non stiamo portando avanti attivamente in questo momento.
 
 **Che cos'è l'AI locale?**
 
