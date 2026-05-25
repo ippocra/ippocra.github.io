@@ -1,7 +1,6 @@
 ---
 title: "Da Ippo a Ideallab: la storia di come abbiamo trovato la nostra direzione"
 categories: news
-permalink: /da-ippo-a-ideallab-la-nostra-storia
 lang: it
 description: "Come Ippocra è nata con un solo progetto — la piattaforma sanitaria Ippo — e ha scoperto Ideallab, la divisione per software personalizzato e AI per le PMI."
 keywords: ideallab, software personalizzato PMI, AI locale, consulenza software, Ippocra, startup pivot, software su misura, Rendiconto, privacy dati
@@ -15,7 +14,7 @@ classes: wide
   <img src="/assets/images/screenshots/ideallab-intro.webp" alt="Ideallab — Software Personalizzato & AI per PMI" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
-Ippocra oggi ha due sezioni: [**Ippo**](https://app.ideallab.org), la piattaforma sanitaria per le famiglie, e [**Ideallab**](https://ideallab.org), la consulenza software e AI per le imprese.
+Ippocra oggi ha due sezioni: [**Ippo**](https://app.ippocra.com), la piattaforma sanitaria per le famiglie, e [**Ideallab**](https://ideallab.org), la consulenza software e AI per le imprese.
 
 Ma non è sempre stato così.
 
