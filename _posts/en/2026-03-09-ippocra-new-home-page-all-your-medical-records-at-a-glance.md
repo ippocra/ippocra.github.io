@@ -7,7 +7,7 @@ description: "Ippocra's new home page gives you an instant overview of all healt
 keywords: medical records overview, health dashboard, document management healthcare, family health records, Ippocra home page, health timeline, upload medical documents, centralize health records, patient records app, caregiver dashboard
 page_id: ippocra-new-home-page-all-your-medical-records-at-a-glance
 header:
-    teaser: /assets/images/dashboard_timeline_esami.png
+    teaser: assets/images/website/en/14_timeline_chart.png
 classes: wide
 ---
 

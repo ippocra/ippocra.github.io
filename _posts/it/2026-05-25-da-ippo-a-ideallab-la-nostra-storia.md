@@ -31,9 +31,9 @@ Mentre lavoravamo su Ippo, le richieste da un'altra direzione si sono fatte più
 
 All'inizio le vedevamo come distrazioni. Poi abbiamo capito che non lo erano.
 
-Uno di questi progetti è diventato **Rendiconto** — nato dall'esperienza diretta con la BRAL BRUSAFERRI SRL, un'azienda che incrociava manualmente fatture e bolli di trasporto provenienti da fornitori diversi con sconti differenti. Un processo lunghissimo, completamente manuale, senza alcun software in grado di risolverlo. L'abbiamo costruito su misura per quel caso specifico, e ha funzionato.
+Uno di questi progetti è diventato [**Rendiconto**](https://rendiconto.ideallab.org/) — nato dall'esperienza diretta con la BRAL BRUSAFERRI SRL, un'azienda che incrociava manualmente fatture e bolli di trasporto provenienti da fornitori diversi con sconti differenti. Un processo lunghissimo, completamente manuale, senza alcun software in grado di risolverlo. L'abbiamo costruito su misura per quel caso specifico, e ha funzionato.
 
-Ma è stato l'feedback degli altri a cambiare tutto: *"Quello che avete fatto per BRAL, potete farlo anche per noi?"*
+Ma è stato il feedback degli altri a cambiare tutto: *"Quello che avete fatto per BRAL, potete farlo anche per noi?"*
 
 Abbiamo capito di avere di fronte un bisogno reale, diffuso, e — cosa più importante — un bisogno per cui le persone erano disposte a pagare.
 
@@ -41,7 +41,7 @@ Abbiamo capito di avere di fronte un bisogno reale, diffuso, e — cosa più imp
 
 ## La decisione: aprire Ideallab
 
-Abbiamo aperto **Ideallab**, la divisione dedicata al software personalizzato e alla consulenza AI per le PMI.
+Abbiamo aperto [**Ideallab**](https://ideallab.org), la divisione dedicata al software personalizzato e alla consulenza AI per le PMI.
 
 Non era nel piano iniziale. Ma era la direzione che il mercato ci stava indicando a forza.
 
