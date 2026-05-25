@@ -7,7 +7,7 @@ description: "How Ippocra started with one project — the Ippo health platform 
 keywords: ideallab, custom software SMEs, local AI, software consulting, Ippocra, startup pivot, tailored software, Rendiconto, data privacy
 page_id: from-ippo-to-ideallab
 header:
-    teaser: /assets/images/screenshots/ideallab-intro.webp
+    teaser: /assets/images/screenshots/ideallab-intro-en.webp
 classes: wide
 ---
 
