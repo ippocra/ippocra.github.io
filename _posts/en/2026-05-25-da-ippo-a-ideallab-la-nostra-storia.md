@@ -1,7 +1,7 @@
 ---
 title: "From Ippo to Ideallab: How We Found Our Direction"
 categories: news
-permalink: /da-ippo-a-ideallab-la-nostra-storia
+permalink: /from-ippo-to-ideallab
 lang: en
 description: "How Ippocra started with one project — the Ippo health platform — and discovered Ideallab, the division for custom software and AI for SMEs."
 keywords: ideallab, custom software SMEs, local AI, software consulting, Ippocra, startup pivot, tailored software, Rendiconto, data privacy
