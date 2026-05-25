@@ -5,7 +5,7 @@ permalink: /from-ippo-to-ideallab
 lang: en
 description: "How Ippocra started with one project — the Ippo health platform — and discovered Ideallab, the division for custom software and AI for SMEs."
 keywords: ideallab, custom software SMEs, local AI, software consulting, Ippocra, startup pivot, tailored software, Rendiconto, data privacy
-page_id: from-ippo-to-ideallab
+page_id: da-ippo-a-ideallab-la-nostra-storia
 header:
     teaser: /assets/images/screenshots/ideallab-intro-en.webp
 classes: wide
