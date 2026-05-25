@@ -15,7 +15,7 @@ classes: wide
   <img src="/assets/images/screenshots/ideallab-intro.webp" alt="Ideallab — Software Personalizzato & AI per PMI" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
-Ippocra oggi ha due sezioni: **Ippo**, la piattaforma sanitaria per le famiglie, e **Ideallab**, la consulenza software e AI per le imprese.
+Ippocra oggi ha due sezioni: [**Ippo**](https://app.ideallab.org), la piattaforma sanitaria per le famiglie, e [**Ideallab**](https://ideallab.org), la consulenza software e AI per le imprese.
 
 Ma non è sempre stato così.
 
@@ -23,7 +23,7 @@ Ma non è sempre stato così.
 
 ## Ippocra è nata con un'idea sola
 
-Tutto è iniziato con **Ippo** — la piattaforma sanitaria che organizza, trova e condivide i referti medici in modo sicuro. L'abbiamo costruita partendo da un problema concreto che avevamo visto da vicino: documenti sparsi, difficili da ritrovare, impossibili da condividere con chi te ne intendi meno di te.
+Tutto è iniziato con [**Ippo**](https://app.ippocra.com) — la piattaforma sanitaria che organizza, trova e condivide i referti medici in modo sicuro. L'abbiamo costruita partendo da un problema concreto che avevamo visto da vicino: documenti sparsi, difficili da ritrovare, impossibili da condividere con chi te ne intendi meno di te.
 
 La missione era chiara: rendere la salute più gestibile per le famiglie italiane. E per un po', è stato tutto qui.
 
@@ -71,8 +71,8 @@ Dopo questa scoperta, abbiamo ridefinito quello che Ippocra è.
 
 **Ippocra è la compagnia madre** — una compagnia tecnologica che costruisce strumenti per il futuro della sanità e del business. Ha due sezioni:
 
-- **Ippo** — la piattaforma sanitaria per famiglie e pazienti
-- **Ideallab** — software personalizzato e AI per le PMI
+- [**Ippo**](https://app.ippocra.com) — la piattaforma sanitaria per famiglie e pazienti
+- [**Ideallab**](https://ideallab.org) — software personalizzato e AI per le PMI
 
 Due sezioni, una compagnia. Due missioni complementari, un approccio comune: costruire software che si adatta alle persone, non il contrario.
 
@@ -94,7 +94,20 @@ Questa è la vita di una startup: scopri dove il mercato ha più bisogno di te, 
 
 Con Ideallab stiamo costruendo qualcosa che può davvero fare la differenza per le PMI italiane. Abbiamo già progetti in corso, nuove partnership in arrivo, e un interesse che supera ogni aspettativa.
 
-Stiamo anche esplorando una direzione che ci sta particolarmente a cuore: **l'AI locale**. Eseguire modelli di intelligenza artificiale sulla tua infrastruttura, non su server di terze parti. I tuoi dati restano tuoi. Sempre.
+Stiamo anche esplorando una direzione che ci sta particolarmente a cuore: **l'AI locale**. Eseguire modelli di intelligenza artificiale sulla propria infrastruttura, non su server di terze parti. 
+Perché?
+
+Per tre motivi:
+- i tuoi dati restano tuoi. Chi tratta dati coperti da GDPR sà benissimo che deve stare molto attento
+su questo aspetto, specialmente con l'arrivo dell'EU AI Cloud Act.
+- i tuoi costi sono noti. Puoi sapere quanto spendi, visto che non sei obbligato alle durata sempre
+opaca delle sessione di Claude o di ChatGPT, che diventano sempre piu'brevi per un cost sempre maggiore.
+- puoi creare un collaboratore o collega completamente tuoi, che lavora con te in maniera agentica.
+La capacità di non essere limitati dai tokens e dalle sessione, apre tantissimi scenari per un 
+approccio agentico, in cui il Large Language Model non e' la fine, ma bensi' fa parte di un sistema 
+piu' grande che lo guida.
+Questo permette di avere la possibilità di delegare l'esecuzione di compiti all'AI, e di praticamente
+farla crescere su misura.
 
 ---
 
