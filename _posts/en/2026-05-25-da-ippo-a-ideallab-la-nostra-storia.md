@@ -11,6 +11,10 @@ header:
 classes: wide
 ---
 
+<p style="text-align:center;">
+  <img src="/assets/images/screenshots/ideallab-intro-en.webp" alt="Ideallab — Custom Software & AI for SMEs" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
+</p>
+
 Ippocra today has two sections: **Ippo**, the health platform for families, and **[Ideallab](https://ideallab.org)**, software and AI consulting for businesses.
 
 But it hasn't always been this way.

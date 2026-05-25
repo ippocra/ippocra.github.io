@@ -11,6 +11,10 @@ header:
 classes: wide
 ---
 
+<p style="text-align:center;">
+  <img src="/assets/images/screenshots/ideallab-intro.webp" alt="Ideallab — Software Personalizzato & AI per PMI" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
+</p>
+
 Ippocra oggi ha due sezioni: **Ippo**, la piattaforma sanitaria per le famiglie, e **Ideallab**, la consulenza software e AI per le imprese.
 
 Ma non è sempre stato così.
