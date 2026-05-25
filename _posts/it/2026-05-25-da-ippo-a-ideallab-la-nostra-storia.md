@@ -29,7 +29,7 @@ La missione era chiara: rendere la salute più gestibile per le famiglie italian
 
 Mentre lavoravamo su Ippo, le richieste da un'altra direzione si sono fatte più frequenti. Imprese, piccole e medie, ci chiedevano: *"Potete costruirci un tool che faccia così?"*
 
-Le abbiamo trattate come distrazioni. Fino a quando non ci siamo resi conto che non lo erano.
+All'inizio le vedevamo come distrazioni. Poi abbiamo capito che non lo erano.
 
 Uno di questi progetti è diventato **Rendiconto** — nato dall'esperienza diretta con la BRAL BRUSAFERRI SRL, un'azienda che incrociava manualmente fatture e bolli di trasporto provenienti da fornitori diversi con sconti differenti. Un processo lunghissimo, completamente manuale, senza alcun software in grado di risolverlo. L'abbiamo costruito su misura per quel caso specifico, e ha funzionato.
 
