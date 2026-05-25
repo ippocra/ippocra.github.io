@@ -15,7 +15,7 @@ classes: wide
   <img src="/assets/images/screenshots/ideallab-intro-en.webp" alt="Ideallab — Custom Software & AI for SMEs" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
-Ippocra today has two sections: **Ippo**, the health platform for families, and **[Ideallab](https://ideallab.org)**, software and AI consulting for businesses.
+Ippocra today has two sections: [**Ippo**](https://app.ippocra.com), the health platform for families, and [**Ideallab**](https://ideallab.org), software and AI consulting for businesses.
 
 But it hasn't always been this way.
 
@@ -23,7 +23,7 @@ But it hasn't always been this way.
 
 ## Ippocra was born with a single idea
 
-It all started with **Ippo** — the health platform that organizes, finds, and securely shares medical records. We built it starting from a concrete problem we had seen up close: scattered documents, hard to find, impossible to share with anyone who isn't an expert.
+It all started with [**Ippo**](https://app.ippocra.com) — the health platform that organizes, finds, and securely shares medical records. We built it starting from a concrete problem we had seen up close: scattered documents, hard to find, impossible to share with anyone who isn't an expert.
 
 The mission was clear: make health more manageable for Italian families. And for a while, that was all there was.
 
@@ -71,8 +71,8 @@ After this discovery, we redefined what Ippocra is.
 
 **Ippocra is the parent company** — a technology company building tools for the future of healthcare and business. It has two sections:
 
-- **Ippo** — the health platform for families and patients
-- **[Ideallab](https://ideallab.org)** — custom software and AI for SMEs
+- [**Ippo**](https://app.ippocra.com) — the health platform for families and patients
+- [**Ideallab**](https://ideallab.org) — custom software and AI for SMEs
 
 Two sections, one company. Two complementary missions, one common approach: building software that adapts to people, not the other way around.
 
@@ -80,11 +80,11 @@ Two sections, one company. Two complementary missions, one common approach: buil
 
 ## Where we're putting our energy
 
-Let's be honest: today we're putting everything into Ideallab.
+Let's be honest: today we're putting everything into **[Ideallab](https://ideallab.org)**.
 
-Ippo isn't on pause. It's a working product, we're improving it day by day, and we'll continue to serve it. But the reality is the market is speaking loudly, and Ideallab is where we're concentrating our energy.
+Ippo isn't on pause. It's a working product, we're improving it day by day, and we'll continue to serve it. But the reality is the market is speaking loudly, and **[Ideallab](https://ideallab.org)** is where we're concentrating our energy.
 
-Ippo **isn't going anywhere**. It will remain active, continue to receive maintenance and new improvements, and will continue to serve those who already use it and those who will in the future. But the main growth and development are on Ideallab.
+Ippo **isn't going anywhere**. It will remain active, continue to receive maintenance and new improvements, and will continue to serve those who already use it and those who will in the future. But the main growth and development are on **[Ideallab](https://ideallab.org)**.
 
 This is the life of a startup: discover where the market needs you most, and go there. It's not a rethink — it's an evolution.
 
@@ -92,9 +92,16 @@ This is the life of a startup: discover where the market needs you most, and go 
 
 ## What's next
 
-With Ideallab, we're building something that can truly make a difference for Italian SMEs. We already have projects in progress, new partnerships incoming, and interest that exceeds every expectation.
+With Ideallab, we're building something that can truly make a difference for SMEs. We already have projects in progress, new partnerships incoming, and interest that exceeds every expectation.
 
-We're also exploring a direction close to our hearts: **local AI**. Running artificial intelligence models on your infrastructure, not on third-party servers. Your data stays yours. Always.
+We're also exploring a direction close to our hearts: **local AI**. Running artificial intelligence models on your own infrastructure, not on third-party servers.
+
+Why?
+
+For three reasons:
+- **Your data stays yours.** Anyone handling GDPR-covered data knows they must be extremely careful about this, especially with the arrival of the EU AI Act.
+- **Your costs are predictable.** You know exactly what you're spending, instead of being subject to the opaque pricing of Claude or ChatGPT sessions, which keep getting shorter and more expensive.
+- **You can build your own AI collaborator.** The ability to work without token or session limits opens up many scenarios for an agentive approach, where the Large Language Model isn't the end goal but part of a larger system that guides it. This means you can delegate task execution to AI and essentially grow it to fit your needs.
 
 ---
 
