@@ -1,6 +1,7 @@
 ---
 title: "Da Ippo a Ideallab: la storia di come abbiamo trovato la nostra direzione"
 categories: news
+excerpt: "Ippocra ha due sezioni: Ippo, la piattaforma sanitaria per le famiglie, e Ideallab, la consulenza software e AI per le PMI. Scopri come è nata questa evoluzione."
 permalink: /da-ippo-a-ideallab-la-nostra-storia
 lang: it
 description: "Come Ippocra è nata con un solo progetto — la piattaforma sanitaria Ippo — e ha scoperto Ideallab, la divisione per software personalizzato e AI per le PMI."

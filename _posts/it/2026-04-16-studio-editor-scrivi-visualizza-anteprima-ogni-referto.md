@@ -1,6 +1,7 @@
 ---
 title: "Ippocra Studio Editor: Scrivi, Visualizza in Anteprima e Condividi Ogni Referto"
 categories: news
+excerpt: "Scopri il nuovo Studio Editor di Ippocra: un ambiente professionale per scrivere referti medici con anteprima PDF live, intestazioni personalizzate e modelli per specialità."
 permalink: /studio-editor-scrivi-visualizza-anteprima-ogni-referto
 lang: it
 description: "Scopri il nuovo Studio Editor di Ippocra: editor professionale per medici con anteprima PDF in tempo reale, intestazioni personalizzate, modelli per specialità e supporto DICOM."
