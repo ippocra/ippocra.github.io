@@ -1,6 +1,7 @@
 ---
 title: "From Ippo to Ideallab: How We Found Our Direction"
 categories: news
+excerpt: "Ippocra has two sections: Ippo, the health platform for families, and Ideallab, software and AI consulting for SMEs. Discover how this evolution happened."
 permalink: /from-ippo-to-ideallab
 lang: en
 description: "How Ippocra started with one project — the Ippo health platform — and discovered Ideallab, the division for custom software and AI for SMEs."

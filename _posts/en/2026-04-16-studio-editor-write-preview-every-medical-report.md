@@ -1,6 +1,7 @@
 ---
 title: "Ippocra Studio Editor: Write, Preview and Brand Every Medical Report"
 categories: news
+excerpt: "Discover the Ippocra Studio Editor — a professional environment for writing medical reports with live PDF preview, branded letterheads and specialty templates."
 permalink: /studio-editor-write-preview-every-medical-report
 lang: en
 description: "Discover the Ippocra Studio Editor — a professional document editor for doctors with live PDF preview, branded letterheads, specialty templates and DICOM support."
