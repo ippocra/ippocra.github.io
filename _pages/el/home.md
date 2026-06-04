@@ -2,7 +2,7 @@
 layout: landing_page
 lang: el
 permalink: /
-title: "Ippocra — δύο εταιρείες, μία οπτική"
+title: "Ippocra — δύο τομείς, μία προσέγγιση"
 redirect_from:
     - /customers
 markdown: false

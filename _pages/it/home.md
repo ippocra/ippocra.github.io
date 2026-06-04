@@ -2,7 +2,7 @@
 layout: landing_page
 lang: it
 permalink: /
-title: "Ippocra — due società, una visione"
+title: "Ippocra — due ambiti, un approccio"
 redirect_from:
     - /customers
 markdown: false
