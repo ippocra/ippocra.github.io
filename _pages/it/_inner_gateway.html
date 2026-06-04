@@ -17,45 +17,61 @@
             <!-- Two Cards -->
             <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
 
-                <!-- Card IDEALLAB (primary) -->
-                <div class="gateway-card gateway-card-primary">
-                    <span class="gateway-card-badge gateway-card-badge-primary">Ideallab Local AI</span>
-                    <h2 class="mt-0" style="font-size:1.75rem;">
-                        <span style="color:#2e7d88;">Ideallab</span>
+                <!-- Card IDEALLAB -->
+                <div class="gateway-card gateway-card-ideallab">
+                    <div class="gateway-brand gateway-brand-ideallab">
+                        <div class="gateway-brand-mark gateway-brand-mark-ideallab" aria-hidden="true">
+                            <span>ILAI</span>
+                        </div>
+                        <div class="gateway-brand-copy">
+                            <p class="gateway-brand-kicker">Ideallab</p>
+                            <p class="gateway-brand-subtitle">Local AI</p>
+                        </div>
+                    </div>
+                    <h2 class="mt-0" style="font-size:1.75rem; color:#1f6f78;">
+                        Ideallab
                     </h2>
-                    <p class="mt-3 paragraph-md" style="color:#555;">
-                        Software personalizzato e <strong>Ideallab Local AI</strong> per le PMI.
+                    <p class="mt-3 paragraph-md" style="color:#4f5b62;">
+                        Software personalizzato e <strong>ILAI</strong>: Ideallab Local AI per le PMI.
                         I tuoi dati non escono mai dal tuo controllo.
                     </p>
                     <ul class="mt-4 space-y-2" style="text-align:left;">
                         <li style="display:flex; align-items:flex-start; gap:0.5rem;">
-                            <i class="fas fa-check-circle" style="color:#2e7d88; margin-top:4px;"></i>
-                            <span>Ideallab Local AI: AI locale, zero lock-in, zero cloud</span>
+                            <i class="fas fa-check-circle" style="color:#1f6f78; margin-top:4px;"></i>
+                            <span>ILAI: AI locale, zero lock-in, zero cloud</span>
                         </li>
                         <li style="display:flex; align-items:flex-start; gap:0.5rem;">
-                            <i class="fas fa-check-circle" style="color:#2e7d88; margin-top:4px;"></i>
+                            <i class="fas fa-check-circle" style="color:#1f6f78; margin-top:4px;"></i>
                             <span>Software su misura per il tuo business</span>
                         </li>
                         <li style="display:flex; align-items:flex-start; gap:0.5rem;">
-                            <i class="fas fa-check-circle" style="color:#2e7d88; margin-top:4px;"></i>
+                            <i class="fas fa-check-circle" style="color:#1f6f78; margin-top:4px;"></i>
                             <span>Consulenza AI pratica e concreta</span>
                         </li>
                     </ul>
                     <a href="https://ideallab.org/it/" target="_blank" rel="noopener noreferrer"
-                        class="gateway-card-cta gateway-card-cta-primary">
+                        class="gateway-card-cta gateway-card-cta-ideallab">
                         Visita Ideallab
                         <i class="fas fa-arrow-right ml-2"></i>
                     </a>
                     <p class="mt-2 text-xs" style="color:#888;">ideallab.org</p>
                 </div>
 
-                <!-- Card IPPO (secondary) -->
-                <div class="gateway-card">
-                    <span class="gateway-card-badge gateway-card-badge-secondary">Piattaforma Ippo</span>
-                    <h2 style="font-size:1.75rem;">
-                        <span style="color:#3b9ba8;">Ippo</span>
+                <!-- Card IPPO -->
+                <div class="gateway-card gateway-card-ippo">
+                    <div class="gateway-brand gateway-brand-ippo">
+                        <div class="gateway-brand-mark gateway-brand-mark-ippo" aria-hidden="true">
+                            <i class="fas fa-hippo"></i>
+                        </div>
+                        <div class="gateway-brand-copy">
+                            <p class="gateway-brand-kicker">Ippo</p>
+                            <p class="gateway-brand-subtitle">Mascotte</p>
+                        </div>
+                    </div>
+                    <h2 style="font-size:1.75rem; color:#3b9ba8;">
+                        Ippo
                     </h2>
-                    <p class="mt-3 paragraph-md" style="color:#555;">
+                    <p class="mt-3 paragraph-md" style="color:#4f5b62;">
                         La piattaforma per la salute digitale delle famiglie. Organizza, trova e condividi i referti in modo sicuro.
                     </p>
                     <ul class="mt-4 space-y-2" style="text-align:left;">
@@ -72,7 +88,7 @@
                             <span>Condivisione sicura con i medici</span>
                         </li>
                     </ul>
-                    <a href="/ippo" class="gateway-card-cta">
+                    <a href="/ippo" class="gateway-card-cta gateway-card-cta-ippo">
                         Scopri Ippo
                         <i class="fas fa-arrow-right ml-2"></i>
                     </a>
@@ -132,28 +148,60 @@
         transform: translateY(-2px);
         box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     }
-    .gateway-card-primary {
-        border: 2px solid #2e7d88;
-        background: linear-gradient(135deg, #f0fffe 0%, #e8f5f7 100%);
-        position: relative;
+    .gateway-card-ideallab {
+        border: 2px solid #1f6f78;
+        background: linear-gradient(135deg, #f7fcfd 0%, #e9f4f6 100%);
     }
-    .gateway-card-badge {
-        display: inline-block;
-        font-size: 0.75rem;
-        font-weight: 600;
-        padding: 4px 12px;
-        border-radius: 999px;
-        background: #2e7d88;
-        color: white;
-        text-transform: uppercase;
+    .gateway-card-ippo {
+        border: 2px solid #5d8f55;
+        background: linear-gradient(135deg, #fbfff8 0%, #edf8eb 100%);
+    }
+    .gateway-brand {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    .gateway-brand-mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 3.25rem;
+        height: 3.25rem;
+        border-radius: 1rem;
+        font-weight: 800;
         letter-spacing: 0.05em;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     }
-    .gateway-card-badge-primary {
-        margin-bottom: 0.75rem;
+    .gateway-brand-mark-ideallab {
+        background: linear-gradient(135deg, #1f6f78 0%, #2e7d88 100%);
+        color: white;
+        font-size: 0.95rem;
     }
-    .gateway-card-badge-secondary {
-        margin-bottom: 0.75rem;
-        background: #3b9ba8;
+    .gateway-brand-mark-ippo {
+        background: linear-gradient(135deg, #5d8f55 0%, #79a86f 100%);
+        color: white;
+        font-size: 1.2rem;
+    }
+    .gateway-brand-copy {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.05;
+    }
+    .gateway-brand-kicker {
+        margin: 0;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #6b7280;
+    }
+    .gateway-brand-subtitle {
+        margin: 0.15rem 0 0;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #374151;
     }
     .gateway-card-cta {
         display: inline-flex;
@@ -165,21 +213,21 @@
         text-decoration: none;
         transition: all 0.2s;
     }
-    .gateway-card-cta-primary {
-        background: #2e7d88;
+    .gateway-card-cta-ideallab {
+        background: #1f6f78;
         color: white;
     }
-    .gateway-card-cta-primary:hover {
-        background: #256b75;
+    .gateway-card-cta-ideallab:hover {
+        background: #18565d;
         transform: translateX(2px);
         color: white;
     }
-    .gateway-card-cta:not(.gateway-card-cta-primary) {
-        background: #3b9ba8;
+    .gateway-card-cta-ippo {
+        background: #5d8f55;
         color: white;
     }
-    .gateway-card-cta:not(.gateway-card-cta-primary):hover {
-        background: #30809a;
+    .gateway-card-cta-ippo:hover {
+        background: #4d7948;
         transform: translateX(2px);
         color: white;
     }
