@@ -1,0 +1,69 @@
+{% capture logo_path %}{{ site.logo }}{% endcapture %}
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        {% unless logo_path == empty %}
+          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+        {% endunless %}
+        <a class="site-title" href="{{ '/' | relative_url }}">
+          {{ site.masthead_title | default: site.title }}
+          {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
+        </a>
+        <ul class="visible-links">
+          <!-- BEGIN: Insert for language switching -->
+        <li class="masthead__menu-item">
+          <label for="lang-select" class="visually-hidden">{{ site.data.ui-text[site.locale].language_label | default: "Language" }}</label>
+          <select id="lang-select" class="lang-select" aria-label="Select language"
+            onchange="window.location.href=this.value">
+            {% for tongue in site.languages %}
+              <option value="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"
+                {% if tongue == site.active_lang %}selected{% endif %}>{{ tongue | upcase }}</option>
+            {% endfor %}
+          </select>
+        </li>
+      <!-- END: Insert for language switching -->
+
+        <!-- Gateway nav: Ideallab + Ippo -->
+        <li class="masthead__menu-item">
+          <a href="https://ideallab.org{% if site.active_lang != 'it' %}/{% if site.active_lang %}{{ site.active_lang }}{% endif %}{% endif %}" target="_blank" rel="noopener">
+            Ideallab <i class="fas fa-external-link-alt" style="font-size:0.7em; margin-left:2px;"></i>
+          </a>
+        </li>
+
+        <li class="masthead__menu-item">
+          <a href="{% if site.active_lang == 'en' %}/en/{% elsif site.active_lang == 'el' %}/el/{% else %}/{% endif %}ippo">
+            Ippo <i class="fas fa-arrow-right" style="font-size:0.7em; margin-left:2px;"></i>
+          </a>
+        </li>
+
+        <li class="masthead__menu-item">
+          <a href="{{ '/posts/' | relative_url }}">Blog</a>
+        </li>
+
+        <li class="masthead__menu-item">
+          <a href="{{ site.data[site.active_lang].strings.navigation.about.url | relative_url }}">
+            {{ site.data[site.active_lang].strings.navigation.about.title }}
+          </a>
+        </li>
+
+          <a id="btn-register" href="https://app.ippocra.com/register" class="btn btn--primary">{{ site.data[site.active_lang].strings.actions.register }}</a>
+          <a href="https://app.ippocra.com/" class="btn btn--inverse">{{ site.data[site.active_lang].strings.actions.login }}</a>
+
+        </ul>
+        {% if site.search == true %}
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+          <i class="fas fa-search"></i>
+        </button>
+        {% endif %}
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>

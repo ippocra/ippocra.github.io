@@ -2,11 +2,12 @@
 layout: landing_page
 lang: en
 permalink: /
-title: "Family health documents in one safe place - Ippocra"
+title: "Ippocra — two companies, one vision"
 redirect_from:
     - /customers
-description: "Ippocra helps families and caregivers organize, find and share health documents securely. No more reports scattered across email, WhatsApp and paper. Get started free."
-keywords: "family health documents, medical report management, secure health record storage, share reports with doctor, family health app, caregiver health documents, smart medical search, encrypted health data, medical report privacy, electronic health record alternative, IppoLink secure sharing, organize medical reports online"
+markdown: false
+description: "Ippocra: two complementary businesses, one team. Ideallab — custom software and local AI for businesses. Ippo — digital health platform for families."
+keywords: "Ippocra, Ideallab, ILAI, local AI, custom software, Ippo, digital health, family health documents"
 ---
 
-{% include_relative _inner_home.html %}
+{% include_relative _inner_gateway.html %}
