@@ -19,17 +19,18 @@
 
                 <!-- Card IDEALLAB (primary) -->
                 <div class="gateway-card gateway-card-primary">
+                    <span class="gateway-card-badge gateway-card-badge-primary">Ideallab Local AI</span>
                     <h2 class="mt-0" style="font-size:1.75rem;">
                         <span style="color:#2e7d88;">Ideallab</span>
                     </h2>
                     <p class="mt-3 paragraph-md" style="color:#555;">
-                        Προσαρμοσμένο λογισμικό και <strong>ILAI</strong> — Τεχνητή Νοημοσύνη τοπικής εκτέλεσης για ΜΜΕ.
-                        Τα δεδομένα σας δεν покидают ποτέ τον έλεγχό σας.
+                        Προσαρμοσμένο λογισμικό και <strong>Ideallab Local AI</strong> για ΜΜΕ.
+                        Τα δεδομένα σας δεν φεύγουν ποτέ από τον έλεγχό σας.
                     </p>
                     <ul class="mt-4 space-y-2" style="text-align:left;">
                         <li style="display:flex; align-items:flex-start; gap:0.5rem;">
                             <i class="fas fa-check-circle" style="color:#2e7d88; margin-top:4px;"></i>
-                            <span>ILAI: Τοπική ΤΝ, μηδενικό lock-in, μηδενική cloud</span>
+                            <span>Ideallab Local AI: τοπική ΤΝ, μηδενικό lock-in, μηδενικό cloud</span>
                         </li>
                         <li style="display:flex; align-items:flex-start; gap:0.5rem;">
                             <i class="fas fa-check-circle" style="color:#2e7d88; margin-top:4px;"></i>
@@ -50,6 +51,7 @@
 
                 <!-- Card IPPO (secondary) -->
                 <div class="gateway-card">
+                    <span class="gateway-card-badge gateway-card-badge-secondary">Πλατφόρμα Ippo</span>
                     <h2 style="font-size:1.75rem;">
                         <span style="color:#3b9ba8;">Ippo</span>
                     </h2>
@@ -63,7 +65,7 @@
                         </li>
                         <li style="display:flex; align-items:flex-start; gap:0.5rem;">
                             <i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:4px;"></i>
-                            <span>Έξυπνη αναζήτηση και ιατρικός χάρτης</span>
+                            <span>Έξυπνη αναζήτηση και ιατρικό timeline</span>
                         </li>
                         <li style="display:flex; align-items:flex-start; gap:0.5rem;">
                             <i class="fas fa-check-circle" style="color:#3b9ba8; margin-top:4px;"></i>
@@ -87,7 +89,7 @@
                 </div>
                 <div class="flex items-center gap-2 px-4 py-2 rounded-full border" style="border-color:#2e7d88; color:#2e7d88;">
                     <i class="fas fa-lock"></i>
-                    <span class="font-semibold text-sm">Απόλυτη Απορρητό</span>
+                    <span class="font-semibold text-sm">Απόλυτο απόρρητο</span>
                 </div>
                 <div class="flex items-center gap-2 px-4 py-2 rounded-full border" style="border-color:#5a8a6e; color:#5a8a6e;">
                     <i class="fas fa-building"></i>
@@ -146,6 +148,13 @@
         text-transform: uppercase;
         letter-spacing: 0.05em;
     }
+    .gateway-card-badge-primary {
+        margin-bottom: 0.75rem;
+    }
+    .gateway-card-badge-secondary {
+        margin-bottom: 0.75rem;
+        background: #3b9ba8;
+    }
     .gateway-card-cta {
         display: inline-flex;
         align-items: center;
@@ -163,6 +172,7 @@
     .gateway-card-cta-primary:hover {
         background: #256b75;
         transform: translateX(2px);
+        color: white;
     }
     .gateway-card-cta:not(.gateway-card-cta-primary) {
         background: #3b9ba8;
@@ -171,6 +181,7 @@
     .gateway-card-cta:not(.gateway-card-cta-primary):hover {
         background: #30809a;
         transform: translateX(2px);
+        color: white;
     }
     @media (max-width: 768px) {
         .gateway-hero-bg { padding: 0 0 2rem; }
