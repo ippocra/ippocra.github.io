@@ -61,73 +61,70 @@
                 </div>
             </div>
 
-            <!-- Ideallab one-liner -->
-            <p class="text-center mb-12" style="color:#666; font-size:1.05rem;">
-                Ideallab — software personalizzato per imprese che vogliono crescere.
-                <a href="https://ideallab.org/it/" target="_blank" rel="noopener noreferrer" style="color:#2e7d88; text-decoration:underline;">Scopri di più →</a>
+            <!-- Three-card row: ILAI · Ippo · Ideallab -->
+            <p class="text-center mb-6" style="color:#888; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:600;">
+                I nostri prodotti
             </p>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
 
-            <!-- Ippo Card — LIGHT CARD -->
-            <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+                <!-- Compact ILAI card -->
+                <div class="gateway-card gateway-card-ilai-compact">
+                    <div class="gateway-brand gateway-brand-ilai-compact">
+                        <div class="gateway-brand-mark gateway-brand-mark-ilai" aria-hidden="true" style="width:2.75rem; height:2.75rem; border-radius:0.75rem;">
+                            <img src="{{ '/assets/images/il-logo.svg' | relative_url }}" alt="ILAI" style="width:2.25rem; height:2.25rem; object-fit:contain;">
+                        </div>
+                        <div class="gateway-brand-copy">
+                            <p class="gateway-brand-kicker" style="color:#8aa8a2;">ILAI</p>
+                        </div>
+                    </div>
+                    <p class="paragraph-sm" style="color:#c8d9d5; margin:0 0 1rem;">
+                        AI locale per le imprese. Dati riservati, zero lock-in, zero cloud.
+                    </p>
+                    <a href="https://ilai.ippocra.com/it/" target="_blank" rel="noopener noreferrer"
+                        class="gateway-card-cta gateway-card-cta-ilai gateway-card-cta-sm">
+                        Vai a ILAI <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+
+                <!-- Ippo card -->
                 <div class="gateway-card gateway-card-ippo">
                     <div class="gateway-brand gateway-brand-ippo">
-                        <div class="gateway-brand-mark gateway-brand-mark-ippo" aria-hidden="true">
-                            <img src="{{ '/assets/images/ippo-mascot.png' | relative_url }}" alt="Ippo" style="width:3.5rem; height:auto; border-radius:0.75rem;">
+                        <div class="gateway-brand-mark gateway-brand-mark-ippo" aria-hidden="true" style="width:2.75rem; height:2.75rem; border-radius:0.75rem;">
+                            <img src="{{ '/assets/images/ippo-mascot.png' | relative_url }}" alt="Ippo" style="width:2.75rem; height:2.75rem; object-fit:contain;">
                         </div>
                         <div class="gateway-brand-copy">
                             <p class="gateway-brand-kicker">Ippo</p>
-                            <p class="gateway-brand-subtitle">Health platform</p>
+                            <p class="gateway-brand-subtitle">Salute digitale</p>
                         </div>
                     </div>
-                    <h2 style="font-size:1.75rem; color:#2e7d88;">
-                        Ippo
-                    </h2>
-                    <p class="mt-3 paragraph-md" style="color:#4f5b62;">
+                    <p class="paragraph-sm" style="color:#4f5b62; margin:0 0 1rem;">
                         La piattaforma per la salute digitale delle famiglie. Organizza, trova e condividi i referti in modo sicuro.
                     </p>
-                    <ul class="mt-4 space-y-2" style="text-align:left;">
-                        <li style="display:flex; align-items:flex-start; gap:0.5rem;">
-                            <i class="fas fa-check-circle" style="color:#2e7d88; margin-top:4px;"></i>
-                            <span>Tutti i documenti sanitari in un unico posto</span>
-                        </li>
-                        <li style="display:flex; align-items:flex-start; gap:0.5rem;">
-                            <i class="fas fa-check-circle" style="color:#2e7d88; margin-top:4px;"></i>
-                            <span>Ricerca intelligente e timeline sanitaria</span>
-                        </li>
-                        <li style="display:flex; align-items:flex-start; gap:0.5rem;">
-                            <i class="fas fa-check-circle" style="color:#2e7d88; margin-top:4px;"></i>
-                            <span>Condivisione sicura con i medici</span>
-                        </li>
-                    </ul>
-                    <a href="/ippo" class="gateway-card-cta gateway-card-cta-ippo">
-                        Scopri Ippo
-                        <i class="fas fa-arrow-right ml-2"></i>
+                    <a href="/ippo" class="gateway-card-cta gateway-card-cta-ippo gateway-card-cta-sm">
+                        Vai a Ippo <i class="fas fa-arrow-right ml-1"></i>
                     </a>
-                    <p class="mt-2 text-xs" style="color:#888;">ippocra.com/ippo</p>
                 </div>
 
-                <!-- Trust badges — moved into their own card -->
-                <div class="gateway-card gateway-card-trust">
-                    <h3 style="font-size:1.1rem; color:#555; margin-bottom:1rem;">Perché Ippocra</h3>
-                    <div class="flex flex-col gap-3">
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-shield-alt" style="color:#2e7d88;"></i>
-                            <span class="font-semibold text-sm" style="color:#333;">GDPR Compliant</span>
+                <!-- Ideallab card -->
+                <div class="gateway-card gateway-card-ideallab">
+                    <div class="gateway-brand gateway-brand-ideallab">
+                        <div class="gateway-brand-mark gateway-brand-mark-ideallab" aria-hidden="true" style="width:2.75rem; height:2.75rem; border-radius:0.75rem;">
+                            <img src="{{ '/assets/images/il-logo.svg' | relative_url }}" alt="Ideallab" style="width:2.25rem; height:2.25rem; object-fit:contain;">
                         </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-lock" style="color:#2e7d88;"></i>
-                            <span class="font-semibold text-sm" style="color:#333;">Privacy First</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-building" style="color:#2e7d88;"></i>
-                            <span class="font-semibold text-sm" style="color:#333;">Startup Innovativa</span>
+                        <div class="gateway-brand-copy">
+                            <p class="gateway-brand-kicker" style="color:#8aa8a2;">Ideallab</p>
+                            <p class="gateway-brand-subtitle" style="color:#c8d9d5;">Consulenza software</p>
                         </div>
                     </div>
-                    <div style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid #e0e7e6;">
-                        <p style="font-size:0.85rem; color:#888; margin:0;">Contattaci</p>
-                        <a href="mailto:info@ippocra.com" style="color:#2e7d88; text-decoration:none; font-weight:600;">info@ippocra.com</a>
-                    </div>
+                    <p class="paragraph-sm" style="color:#c8d9d5; margin:0 0 1rem;">
+                        Software personalizzato per le PMI. Consulenza, sviluppo e soluzioni su misura.
+                    </p>
+                    <a href="https://ideallab.org/it/" target="_blank" rel="noopener noreferrer"
+                        class="gateway-card-cta gateway-card-cta-ideallab gateway-card-cta-sm">
+                        Vai a Ideallab <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -199,6 +196,19 @@
         transform: translateX(3px);
     }
 
+    /* ---- Compact ILAI (bottom row) ---- */
+    .gateway-card-ilai-compact {
+        background: #0e0e10;
+        border: 2px solid #2e7d88;
+        color: #e0e8e6;
+    }
+    .gateway-card-ilai-compact:hover {
+        box-shadow: 0 8px 32px rgba(46, 125, 136, 0.3);
+    }
+    .gateway-card-ilai-compact .gateway-brand-kicker {
+        color: #8aa8a2;
+    }
+
     /* ---- IPPO: LIGHT CARD ---- */
     .gateway-card-ippo {
         background: #ffffff;
@@ -223,15 +233,33 @@
         transform: translateX(3px);
     }
 
-    /* ---- Trust card ---- */
-    .gateway-card-trust {
-        background: #ffffff;
-        border: 2px solid #e0e7e6;
-        box-shadow: 0 2px 8px rgba(46, 125, 136, 0.06);
+    /* ---- IDEALLAB: DARK CARD (bottom row) ---- */
+    .gateway-card-ideallab {
+        background: #0e0e10;
+        border: 2px solid #2e7d88;
+        color: #e0e8e6;
     }
-    .gateway-card-trust:hover {
-        box-shadow: 0 8px 24px rgba(46, 125, 136, 0.12);
-        border-color: #2e7d88;
+    .gateway-card-ideallab:hover {
+        box-shadow: 0 8px 32px rgba(46, 125, 136, 0.3);
+    }
+    .gateway-card-ideallab .gateway-brand-kicker {
+        color: #8aa8a2;
+    }
+    .gateway-card-ideallab .gateway-brand-subtitle {
+        color: #c8d9d5;
+    }
+    .gateway-card-ideallab .gateway-brand-mark-ideallab {
+        background: transparent;
+        box-shadow: none;
+    }
+    .gateway-card-ideallab .gateway-card-cta-ideallab {
+        background: #2e7d88;
+        color: #ffffff;
+    }
+    .gateway-card-ideallab .gateway-card-cta-ideallab:hover {
+        background: #4dd0c4;
+        color: #0e0e10;
+        transform: translateX(3px);
     }
 
     /* ---- Shared: brand mark ---- */
@@ -280,6 +308,10 @@
         font-weight: 600;
         text-decoration: none;
         transition: all 0.2s;
+    }
+    .gateway-card-cta-sm {
+        padding: 0.6rem 1.25rem;
+        font-size: 0.9rem;
     }
     .gateway-card-cta:hover {
         text-decoration: none;
