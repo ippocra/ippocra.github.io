@@ -2,12 +2,12 @@
 layout: landing_page
 lang: en
 permalink: /
-title: "Ippocra — two areas, one approach"
+title: "Ippocra — own your company data, your own AI"
 redirect_from:
     - /customers
 markdown: false
-description: "Ippocra: two complementary businesses, one team. Ideallab — custom software and local AI for businesses. Ippo — digital health platform for families."
-keywords: "Ippocra, Ideallab, ILAI, local AI, custom software, Ippo, digital health, family health documents"
+description: "Ippocra: we build local AI for businesses (ILAI) that stays on your machine, and Ippo — digital health platform for families."
+keywords: "Ippocra, ILAI, local AI, Ippo, digital health, family health documents, company data, local artificial intelligence"
 ---
 
 {% include_relative _inner_gateway.html %}
