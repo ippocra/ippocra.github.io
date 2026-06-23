@@ -2,104 +2,32 @@
 
 <body>
     <main class="main-content">
-        <!-- Hero / Mission Section -->
+        <!-- Hero Section -->
         <section id="hero" class="section-blank">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="animate-fadeInUp" style="opacity:0;">
                     <h1 class="page-title">
-                        Dietro Ippocra ci sono persone.<br class="hidden sm:inline">
-                        Prima ancora che tecnologia.
+                        La tecnologia più affidabile è quella che non ti chiede nulla.<br class="hidden sm:inline">
+                        Restituire alle persone il controllo dei propri dati.
                     </h1>
-                    <p class="mt-4 paragraph-lg" style="color:#3b9ba8;">
-                        Un team con un obiettivo semplice: rendere la salute più gestibile per le persone.
-                    </p>
-                    <div class="mt-6 max-w-3xl mx-auto leading-relaxed">
+                    <div class="mt-6 max-w-2xl mx-auto leading-relaxed">
                         <p class="paragraph-md">
-                            Ippocra è la fusione di due visioni:
-                            <strong>Ippo</strong>, la piattaforma sanitaria per le famiglie,
-                            e <strong>Ideallab</strong>, la consulenza software e AI per le imprese.
-                            Siamo nati da un problema personale — documenti sparsi e difficili da condividere —
-                            e abbiamo costruito due attività complementari per risolverlo.
+                            Ippocra crede che le informazioni che ci definiscono — che siano documenti sanitari,
+                            processi aziendali o momenti della vita — appartengano a chi li ha generati.
+                            Non le trattiamo come merce. Le proteggiamo come responsabilità.
+                        </p>
+                    </div>
+                    <div class="mt-6 max-w-2xl mx-auto leading-relaxed">
+                        <p class="paragraph-md">
+                            Costruiamo software e intelligenza artificiale che lavorano per chi li usa,
+                            non per chi li possiede. Scelte tecnologiche trasparenti, costi prevedibili,
+                            nessuna dipendenza da piattaforme esterne. Perché quando i dati restano tuoi,
+                            la tecnologia smette di essere un rischio e diventa un vantaggio.
                         </p>
                     </div>
                     <p class="mt-8 paragraph-lg paragraph-bold" style="color:#3b9ba8;">
-                        "Meno complessità. Più controllo. Più fiducia."
+                        "Innovation with Agency"
                     </p>
-                </div>
-            </div>
-       </section>
-
-        <!-- Two Pillars Section -->
-        <section id="pillars" class="section-transparent">
-            <div class="section-container">
-                <h2 class="mt-0 section-title text-center">
-                    Le nostre attività
-                </h2>
-                <p class="mt-7 text-center paragraph-md paragraph-bold">
-                    Ippocra opera in due direzioni complementari: la salute digitale per le famiglie e la consulenza AI per le imprese.
-                </p>
-
-                <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Ippo Card -->
-                    <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-center">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3" style="color:#3b9ba8;">Ippo</h3>
-                        <p class="paragraph-md text-gray-700 mb-6">
-                            La nostra piattaforma sanitaria per famiglie e pazienti. Organizza, trova e condividi i referti in modo sicuro.
-                        </p>
-                        <a href="{{ '/ippo' | relative_url }}" class="secondary-button">Scopri Ippo</a>
-                    </div>
-
-                    <!-- Ideallab Card -->
-                    <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-8 py-10 text-center">
-                        <h3 class="text-xl font-bold text-gray-900 mb-3" style="color:#3b9ba8;">Ideallab</h3>
-                        <p class="paragraph-md text-gray-700 mb-6">
-                            La nostra divisione software e consulenza AI per le imprese. Costruiamo soluzioni che si adattano al tuo business.
-                        </p>
-                        <a href="https://ideallab.org" target="_blank" rel="noopener noreferrer" class="secondary-button">Visita Ideallab →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team Section -->
-        <section id="team" class="section-transparent">
-            <div class="section-container">
-                <h2 class="mt-0 section-title text-center">
-                    Il team
-                </h2>
-                <p class="mt-7 text-center paragraph-md paragraph-bold">
-                    Un team con competenze sanitarie e digitali, focalizzato su fiducia, semplicità e sicurezza.
-                </p>
-
-                <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                    <!-- Card 1 -->
-                    <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-5 lg:px-6 py-10 text-center overflow-hidden">
-                        <div class="w-36 h-36 lg:w-40 lg:h-40 rounded-full bg-gray-200 mx-auto mb-6">
-                            <img src="{{ 'assets/images/people/MM.webp' | relative_url }}" alt="Michele Mattioni" class="w-full h-full object-cover rounded-full">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Michele Mattioni</h3>
-                        <p class="text-sm font-semibold mb-4" style="color:#3b9ba8;">Founder</p>
-                        <p class="paragraph-md text-gray-700">
-                            Fondatore di Ippocra. Guida lo sviluppo di Ippo, la piattaforma per la salute digitale delle famiglie,
-                            e al tempo stesso alimenta la visione tecnica di Ideallab, la consulenza software e AI.
-                            Il suo approccio parte sempre dai casi d'uso reali,
-                            con un focus su chiarezza, privacy e utilità.
-                        </p>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="bg-white border border-gray-200 rounded-2xl shadow-sm px-5 lg:px-6 py-10 text-center overflow-hidden">
-                        <div class="w-36 h-36 lg:w-40 lg:h-40 rounded-full bg-gray-200 mx-auto mb-6">
-                            <img src="{{ 'assets/images/people/MK.webp' | relative_url }}" alt="Myrto Kostadima" class="w-full h-full object-cover rounded-full">
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Myrto Kostadima</h3>
-                        <p class="text-sm font-semibold mb-4" style="color:#3b9ba8;">Co-founder</p>
-                        <p class="paragraph-md text-gray-700">
-                            Co-fondatrice di Ippocra: coordina Ippo e Ideallab come un unico ecosistema.
-                            Trasforma due attività apparentemente distinte in processi fluidi e strutturati,
-                            permettendo al team di concentrarsi su prodotto e innovazione.
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -111,7 +39,7 @@
                     Vuoi saperne di più?
                 </h2>
                 <p class="paragraph-lg animate-fadeIn delay-300">
-                    Contattaci a info@ippocra.com o seguici sui social per restare aggiornato.
+                    Contattaci a info@ippocra.com
                 </p>
                 <a href="https://app.ippocra.com/register" target="_blank" rel="noopener noreferrer"
                     class="main-color-button hero-button">
