@@ -13,7 +13,7 @@
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
     {% include_cached skip-links.html %}
     {% assign page_url = page.url %}
-    {% if page.categories and page.layout != "landing_page" %}
+   {% if page.categories or page.url contains "/posts/" or page.url == "/posts" %}
       {% include_cached masthead-gateway.html page_url=page_url %}
     {% elsif page.nav_type == "ippo" or page.permalink contains "/ippo" or page.permalink contains "/en/ippo" or page.permalink contains "/el/ippo" %}
       {% include_cached masthead-ippo.html page_url=page_url %}
