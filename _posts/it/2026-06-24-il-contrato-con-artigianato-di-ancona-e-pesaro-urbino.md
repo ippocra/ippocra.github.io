@@ -13,6 +13,10 @@ classes: wide
 ---
 
 <p style="text-align:center;">
+  <img src="/assets/images/screenshots/ilai-contract-teaser.png" alt="ILAI — Ippocra Local Artificial Intelligence" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
+</p>
+
+<p style="text-align:center;">
   <iframe width="100%" style="max-width:800px;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;" src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Il tuo nuovo collega" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 </p>
 
