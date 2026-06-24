@@ -12,9 +12,8 @@ header:
 classes: wide
 ---
 
-<p style="text-align:center;max-width:800px;margin:1.5rem auto;">
-  <img src="/assets/images/screenshots/ilai-contract-teaser.png" alt="ILAI — Il tuo nuovo collega" style="width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin-bottom:1.5rem;"/>
-  <iframe width="100%" height="450" src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Il tuo nuovo collega" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<p style="text-align:center;">
+  <img src="/assets/images/screenshots/ilai-contract-teaser.png" alt="ILAI — Il tuo nuovo collega" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
 Ippocra ha firmato un nuovo passo importante verso la diffusione dell'intelligenza artificiale locale: un **contratto quadro con Confartigianato Ancona Pesaro Urbino** per la commercializzazione di [**ILAI**](https://ilai.ippocra.com/it/) — l'intelligenza artificiale locale che vive sulla tua infrastruttura.
@@ -58,6 +57,10 @@ Il contratto quadro prevede un percorso di accompagnamento che include:
 - **Assistenza continua** per garantire che il tool evolva insieme alle esigenze del territorio
 
 Il primo passo è guardare il video qui sotto per capire cosa significa avere un'intelligenza artificiale come collega:
+
+<div style="position:relative;width:100%;max-width:640px;margin:1.5rem auto;padding-bottom:56.25%;height:0;">
+  <iframe src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Il tuo nuovo collega" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+</div>
 
 ---
 

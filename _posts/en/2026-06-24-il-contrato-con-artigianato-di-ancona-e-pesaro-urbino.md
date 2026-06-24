@@ -12,9 +12,8 @@ header:
 classes: wide
 ---
 
-<p style="text-align:center;max-width:800px;margin:1.5rem auto;">
-  <img src="/assets/images/screenshots/ilai-contract-teaser.png" alt="ILAI — Your New Colleague" style="width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin-bottom:1.5rem;"/>
-  <iframe width="100%" height="450" src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Your New Colleague" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+<p style="text-align:center;">
+  <img src="/assets/images/screenshots/ilai-contract-teaser.png" alt="ILAI — Your New Colleague" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
 Ippocra has taken another important step toward making local artificial intelligence accessible: a **framework agreement with Confartigianato Ancona Pesaro Urbino** for the distribution of [**ILAI**](https://ilai.ippocra.com/en/) — the local artificial intelligence that runs on your own infrastructure.
@@ -58,6 +57,10 @@ The framework agreement includes a structured onboarding process:
 - **Ongoing support** to ensure the tool evolves alongside the needs of the territory
 
 Take a look at the video below to understand what it means to have artificial intelligence as a colleague:
+
+<div style="position:relative;width:100%;max-width:640px;margin:1.5rem auto;padding-bottom:56.25%;height:0;">
+  <iframe src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Your New Colleague" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+</div>
 
 ---
 
