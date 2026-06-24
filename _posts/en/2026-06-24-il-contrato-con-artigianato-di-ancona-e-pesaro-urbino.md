@@ -56,13 +56,11 @@ The framework agreement includes a structured onboarding process:
 - **Training and onboarding** for teams that will use ILAI
 - **Ongoing support** to ensure the tool evolves alongside the needs of the territory
 
-Take a look at the video below to understand what it means to have artificial intelligence as a colleague:
+Watch the video to see ILAI in action and understand how artificial intelligence that lives inside your company works:
 
 <div style="position:relative;width:100%;max-width:640px;margin:1.5rem auto;padding-bottom:56.25%;height:0;">
   <iframe src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Your New Colleague" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 </div>
-
----
 
 ## A recognition that goes beyond technology
 

@@ -56,13 +56,11 @@ Il contratto quadro prevede un percorso di accompagnamento che include:
 - **Formazione e onboarding** per i team che utilizzeranno ILAI
 - **Assistenza continua** per garantire che il tool evolva insieme alle esigenze del territorio
 
-Il primo passo è guardare il video qui sotto per capire cosa significa avere un'intelligenza artificiale come collega:
+Guarda il video per vedere ILAI all'opera e capire come funziona un'intelligenza artificiale che vive dentro la tua azienda:
 
 <div style="position:relative;width:100%;max-width:640px;margin:1.5rem auto;padding-bottom:56.25%;height:0;">
   <iframe src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Il tuo nuovo collega" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 </div>
-
----
 
 ## Un riconoscimento che va oltre la tecnologia
 
