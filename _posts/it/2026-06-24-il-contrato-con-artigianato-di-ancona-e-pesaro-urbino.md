@@ -8,15 +8,15 @@ description: "Ippocra ha firmato un contratto quadro con Confartigianato Ancona 
 keywords: ilai, intelligenza artificiale locale, confartigianato ancona, pesaro urbino, contratto quadro, privacy dati, ai locale, ideallab, ippocra, small business ai, dati privati
 page_id: contratto-confartigianato-ancona-pesaro-urbino
 header:
-    teaser: /assets/images/screenshots/ilai-contract-artigianato.webp
+    teaser: /assets/images/screenshots/ilai-contract-teaser.webp
 classes: wide
 ---
 
 <p style="text-align:center;">
-  <iframe width="100%" style="max-width:800px;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="ILAI — Il tuo nuovo collega" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  <iframe width="100%" style="max-width:800px;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;" src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Il tuo nuovo collega" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 </p>
 
-Ippocra ha firmato un nuovo passo importante verso la diffusione dell'intelligenza artificiale locale: un **contratto quadro con Confartigianato Ancona Pesaro Urbino** per la commercializzazione di [**ILAI**](https://ideallab.org/it/) — l'intelligenza artificiale locale che vive sulla tua infrastruttura.
+Ippocra ha firmato un nuovo passo importante verso la diffusione dell'intelligenza artificiale locale: un **contratto quadro con Confartigianato Ancona Pesaro Urbino** per la commercializzazione di [**ILAI**](https://ilai.ippocra.com/it/) — l'intelligenza artificiale locale che vive sulla tua infrastruttura.
 
 Questa partnership apre la porta a centinaia di imprese artigiane del territorio alla scoperta di un tool che non è un servizio cloud, ma un **collega digitale** che lavora dentro la tua azienda, con i tuoi dati, sotto il tuo controllo.
 
@@ -74,7 +74,7 @@ Ippocra continua a investire nella missione di rendere l'AI accessibile, sicura 
 
 ## Parliamone
 
-Se sei un'impresa artigiana o un'associazione che vuole capire come ILAI può funzionare nel tuo contesto, scrivici a [info@ippocra.com](mailto:info@ippocra.com) o visita [ideallab.org](https://ideallab.org/it/) per scoprire di più.
+Se sei un'impresa artigiana o un'associazione che vuole capire come ILAI può funzionare nel tuo contesto, scrivici a [info@ippocra.com](mailto:info@ippocra.com) o visita [ilai.ippocra.com](https://ilai.ippocra.com/it/) per scoprire di più.
 
 ---
 
