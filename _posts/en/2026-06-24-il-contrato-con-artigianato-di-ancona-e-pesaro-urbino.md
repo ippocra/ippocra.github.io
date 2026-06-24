@@ -12,14 +12,6 @@ header:
 classes: wide
 ---
 
-<p style="text-align:center;">
-  <img src="/assets/images/screenshots/ilai-contract-teaser.png" alt="ILAI — Ippocra Local Artificial Intelligence" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
-</p>
-
-<p style="text-align:center;">
-  <iframe width="100%" style="max-width:800px;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;" src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Your New Colleague" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-</p>
-
 Ippocra has taken another important step toward making local artificial intelligence accessible: a **framework agreement with Confartigianato Ancona Pesaro Urbino** for the distribution of [**ILAI**](https://ilai.ippocra.com/en/) — the local artificial intelligence that runs on your own infrastructure.
 
 This partnership opens the door for hundreds of local craft businesses to discover a tool that isn't a cloud service, but a **digital colleague** working inside your company, with your data, under your control.
@@ -60,7 +52,12 @@ The framework agreement includes a structured onboarding process:
 - **Training and onboarding** for teams that will use ILAI
 - **Ongoing support** to ensure the tool evolves alongside the needs of the territory
 
-Take a look at the video above to understand what it means to have artificial intelligence as a colleague:
+Take a look at the video below to understand what it means to have artificial intelligence as a colleague:
+
+<p style="text-align:center;max-width:800px;margin:1.5rem auto;">
+  <img src="/assets/images/screenshots/ilai-contract-teaser.png" alt="ILAI — Your New Colleague" style="width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin-bottom:1.5rem;"/>
+  <iframe width="100%" height="450" src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Your New Colleague" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+</p>
 
 ---
 
