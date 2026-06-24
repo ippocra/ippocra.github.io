@@ -26,7 +26,7 @@ This partnership opens the door for hundreds of local craft businesses to discov
 
 A framework agreement is not a routine commercial arrangement. It is an **official recognition** of three fundamental things:
 
-1. **The strength of the ILAI proposition.** The associations have evaluated our solution and recognized that it addresses a real need — an artificial intelligence that helps businesses without putting their data at risk.
+1. **The strength of the ILAI proposition.** The association has evaluated our solution and recognized that it addresses a real need — an artificial intelligence that helps businesses without putting their data at risk.
 
 2. **The awareness of the privacy need.** Local artisans and small businesses know that their data is their most valuable asset. This framework agreement confirms that local AI is no longer an option for a few tech-savvy users, but a **business necessity** for any company handling sensitive information.
 
@@ -65,7 +65,7 @@ The framework agreement includes a structured onboarding process:
 This framework agreement is also an important signal for the AI market in Italy. It demonstrates that:
 
 - **Local AI** is ready for commercial deployment, not just an experiment for tech enthusiasts
-- **Trade associations** recognize privacy-first AI as the standard for businesses
+- **The trade association** recognizes privacy-first AI as the standard for businesses
 - **Craft SMEs** can finally access artificial intelligence tools that respect their data and their processes
 
 Ippocra continues to invest in the mission of making AI accessible, secure, and controllable for all Italian businesses. With this step toward Confartigianato Ancona Pesaro Urbino, we bring a new group of businesses closer to a future where AI isn't a service you consume, but an asset you build.
@@ -86,7 +86,7 @@ ILAI is artificial intelligence that runs locally on your own infrastructure. It
 
 **What is a framework agreement?**
 
-A framework agreement is a contract that establishes the general conditions for future commercial operations. In this case, it defines the scope, terms, and methods by which ILAI will be offered and implemented for businesses associated with the two territorial associations.
+A framework agreement is a contract that establishes the general conditions for future commercial operations. In this case, it defines the scope, terms, and methods by which ILAI will be offered and implemented for businesses associated with the territorial association.
 
 **Why is local AI important for craft businesses?**
 

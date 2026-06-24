@@ -26,7 +26,7 @@ Questa partnership apre la porta a centinaia di imprese artigiane del territorio
 
 Un contratto quadro non è un banale accordo commerciale. È un **riconoscimento ufficiale** di tre cose fondamentali:
 
-1. **La solidità della proposta ILAI.** Le associazioni hanno valutato la nostra soluzione e hanno riconosciuto che risponde a un bisogno reale — un'intelligenza artificiale che aiuta le imprese senza mettere a rischio i loro dati.
+1. **La solidità della proposta ILAI.** L'associazione ha valutato la nostra soluzione e ha riconosciuto che risponde a un bisogno reale — un'intelligenza artificiale che aiuta le imprese senza mettere a rischio i loro dati.
 
 2. **La consapevolezza del bisogno di privacy.** Gli artigiani e le piccole imprese del territorio sanno che i loro dati sono il loro patrimonio. Il contratto quadro conferma che l'AI locale non è più un'opzione per pochi esperti, ma una **necessità di business** per qualsiasi azienda che tratti informazioni sensibili.
 
@@ -65,7 +65,7 @@ Il contratto quadro prevede un percorso di accompagnamento che include:
 Questo contratto quadro è anche un segnale importante per il mercato dell'AI in Italia. Dimostra che:
 
 - L'**AI locale** è pronta per la diffusione commerciale, non è più solo un esperimento per addetti ai lavori
-- Le **associazioni di categoria** riconoscono il valore della privacy-first AI come standard per le imprese
+- **L'associazione di categoria** riconosce il valore della privacy-first AI come standard per le imprese
 - Le **PMI artigiane** possono finalmente accedere a strumenti di intelligenza artificiale che rispettano i loro dati e i loro processi
 
 Ippocra continua a investire nella missione di rendere l'AI accessibile, sicura e controllabile per tutte le imprese italiane. Con questo passo verso Confartigianato Ancona Pesaro Urbino, avviciniamo un nuovo gruppo di imprese a un futuro in cui l'intelligenza artificiale non è un servizio che si consuma, ma un asset che si costruisce.
@@ -86,7 +86,7 @@ ILAI è un'intelligenza artificiale che gira localmente sulla tua infrastruttura
 
 **Che cos'è un contratto quadro?**
 
-Un contratto quadro è un accordo che stabilisce le condizioni generali per future operazioni commerciali. In questo caso, definisce il perimetro, le modalità e i termini con cui ILAI verrà offerto e implementato per le imprese associate alle due associazioni territoriali.
+Un contratto quadro è un accordo che stabilisce le condizioni generali per future operazioni commerciali. In questo caso, definisce il perimetro, le modalità e i termini con cui ILAI verrà offerto e implementato per le imprese associate all'associazione territoriale.
 
 **Perché l'AI locale è importante per le imprese artigiane?**
 
