@@ -70,7 +70,7 @@ This framework agreement is also an important signal for the AI market in Italy.
 
 Ippocra continues to invest in the mission of making AI accessible, secure, and controllable for all Italian businesses. With this step toward Confartigianato Ancona Pesaro Urbino, we bring a new group of businesses closer to a future where AI isn't a service you consume, ---
 
-> "With a local model, you have total control over your data. You don't need anyone's permission to experiment, iterate, or pivot — you can try, learn, and adapt at your own pace. Your costs are fixed and predictable, not subject to the whims of a remote provider. That is real freedom for anyone who wants to innovate without being dependent on third parties."
+> "Having the freedom to decide when and how much to use AI, knowing that all data stays private because it stays local — that's why ILAI is the right tool for every business owner. Keeping information and know-how inside your own company, without depending on third parties, is the best way to limit risk and preserve your competitive edge, without giving up on a revolutionary technology."
 >
 > **Michele Mattioni, CEO & Founder of Ippocra**
 

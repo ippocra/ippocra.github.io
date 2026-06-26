@@ -70,7 +70,7 @@ Questo contratto quadro è anche un segnale importante per il mercato dell'AI in
 
 Ippocra continua a investire nella missione di rendere l'AI accessibile, sicura e controllabile per tutte le imprese italiane. Con questo passo verso Confartigianato Ancona Pesaro Urbino, avviciniamo un nuovo gruppo di imprese a un futuro in cui l'intelligenza artificiale non è un servizio che si consuma, ma un ---
 
-> "Con un modello locale, il controllo sulle informazioni è totale. Non devi chiedere il permesso a nessuno: puoi provare, sperimentare, cambiare strada in qualsiasi momento. I costi sono fissi, prevedibili, non dipendono dai capricci di un provider remoto. Questa è libertà reale per chi vuole fare innovazione senza dipendere da terzi."
+> "Avere la libertà di decidere quando e quanto usare l'AI, sapendo che tutti i dati restano privati perché restano in locale — è il motivo per cui ILAI è lo strumento giusto per ogni imprenditore. Mantenere informazioni e know-how dentro la propria azienda, senza dipendere da terzi, è il modo migliore per limitare i rischi e preservare il proprio vantaggio competitivo, senza privarsi di una tecnologia rivoluzionaria."
 >
 > **Michele Mattioni, CEO & Founder di Ippocra**
 
