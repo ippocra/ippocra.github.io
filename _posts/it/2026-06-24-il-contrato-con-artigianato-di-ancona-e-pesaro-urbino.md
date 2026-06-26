@@ -70,6 +70,11 @@ Questo contratto quadro è anche un segnale importante per il mercato dell'AI in
 
 Ippocra continua a investire nella missione di rendere l'AI accessibile, sicura e controllabile per tutte le imprese italiane. Con questo passo verso Confartigianato Ancona Pesaro Urbino, avviciniamo un nuovo gruppo di imprese a un futuro in cui l'intelligenza artificiale non è un servizio che si consuma, ma un asset che si costruisce.
 
+<div style="background:#fafafa;border-left:4px solid #2e7d88;padding:1.5rem 1.5rem 1.5rem 1.5rem;margin:2rem 0;border-radius:0 8px 8px 0;font-style:italic;font-size:1.05rem;line-height:1.7;">
+"Con un modello locale, il controllo sulle informazioni è totale. Non devi chiedere il permesso a nessuno: puoi provare, sperimentare, cambiare strada in qualsiasi momento. I costi sono fissi, prevedibili, non dipendono dai capricci di un provider remoto. Questa è libertà reale per chi vuole fare innovazione senza dipendere da terzi."
+<br><br><strong style="font-style:normal;">— Michele Mattioni, CEO & Founder di Ippocra</strong>
+</div>
+
 ---
 
 ## Parliamone
