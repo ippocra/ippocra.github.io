@@ -70,15 +70,13 @@ This framework agreement is also an important signal for the AI market in Italy.
 
 Ippocra continues to invest in the mission of making AI accessible, secure, and controllable for all Italian businesses. With this step toward Confartigianato Ancona Pesaro Urbino, we bring a new group of businesses closer to a future where AI isn't a service you consume, but an asset you build.
 
-<div style="background:#fafafa;border-left:4px solid #2e7d88;padding:1.5rem 1.5rem 1.5rem 1.5rem;margin:2rem 0;border-radius:0 8px 8px 0;font-style:italic;font-size:1.05rem;line-height:1.7;">
-"With a local model, you have total control over your data. You don't need anyone's permission to experiment, iterate, or pivot — you can try, learn, and adapt at your own pace. Your costs are fixed and predictable, not subject to the whims of a remote provider. That is real freedom for anyone who wants to innovate without being dependent on third parties."
-<br/><br/><strong style="font-style:normal;">— Michele Mattioni, CEO & Founder of Ippocra</strong>
-</div>
+> "With a local model, you have total control over your data. You don't need anyone's permission to experiment, iterate, or pivot — you can try, learn, and adapt at your own pace. Your costs are fixed and predictable, not subject to the whims of a remote provider. That is real freedom for anyone who wants to innovate without being dependent on third parties."
+>
+> **Michele Mattioni, CEO & Founder of Ippocra**
 
-<div style="background:#fafafa;border-left:4px solid #2e7d88;padding:1.5rem 1.5rem 1.5rem 1.5rem;margin:2rem 0;border-radius:0 8px 8px 0;font-style:italic;font-size:1.05rem;line-height:1.7;">
-"[Placeholder for Andrea Dini's quote — Digital Hub Innovation Confartigianato Ancona Pesaro Urbino]"
-<br/><br/><strong style="font-style:normal;">— Andrea Dini, Digital Hub Innovation Confartigianato Ancona Pesaro Urbino</strong>
-</div>
+> "Placeholder for Andrea Dini's quote — Digital Hub Innovation Confartigianato Ancona Pesaro Urbino"
+>
+> **Andrea Dini, Digital Hub Innovation Confartigianato Ancona Pesaro Urbino**
 
 ---
 
