@@ -75,6 +75,11 @@ Ippocra continues to invest in the mission of making AI accessible, secure, and 
 <br/><br/><strong style="font-style:normal;">— Michele Mattioni, CEO & Founder of Ippocra</strong>
 </div>
 
+<div style="background:#fafafa;border-left:4px solid #2e7d88;padding:1.5rem 1.5rem 1.5rem 1.5rem;margin:2rem 0;border-radius:0 8px 8px 0;font-style:italic;font-size:1.05rem;line-height:1.7;">
+"[Placeholder for Andrea Dini's quote — Digital Hub Innovation Confartigianato Ancona Pesaro Urbino]"
+<br/><br/><strong style="font-style:normal;">— Andrea Dini, Digital Hub Innovation Confartigianato Ancona Pesaro Urbino</strong>
+</div>
+
 ---
 
 ## Let's talk
