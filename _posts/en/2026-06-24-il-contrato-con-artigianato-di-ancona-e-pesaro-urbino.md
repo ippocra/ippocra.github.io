@@ -68,9 +68,17 @@ This framework agreement is also an important signal for the AI market in Italy.
 - **The trade association** recognizes privacy-first AI as the standard for businesses
 - **Craft SMEs** can finally access artificial intelligence tools that respect their data and their processes
 
-Ippocra continues to invest in the mission of making AI accessible, secure, and controllable for all Italian businesses. With this step toward Confartigianato Ancona Pesaro Urbino, we bring a new group of businesses closer to a future where AI isn't a service you consume, but an asset you build.
+Ippocra continues to invest in the mission of making AI accessible, secure, and controllable for all Italian businesses. With this step toward Confartigianato Ancona Pesaro Urbino, we bring a new group of businesses closer to a future where AI isn't a service you consume, ---
 
----
+> "With a local model, you have total control over your data. You don't need anyone's permission to experiment, iterate, or pivot — you can try, learn, and adapt at your own pace. Your costs are fixed and predictable, not subject to the whims of a remote provider. That is real freedom for anyone who wants to innovate without being dependent on third parties."
+>
+> **Michele Mattioni, CEO & Founder of Ippocra**
+
+> "Placeholder for Andrea Dini's quote — Digital Hub Innovation Confartigianato Ancona Pesaro Urbino"
+>
+> **Andrea Dini, Digital Hub Innovation Confartigianato Ancona Pesaro Urbino**
+
+------
 
 ## Let's talk
 
