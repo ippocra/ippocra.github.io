@@ -59,7 +59,7 @@ ILAI è un'intelligenza artificiale che gira localmente sulla tua infrastruttura
 - **I tuoi dati non lasciano mai la tua azienda.** Nessun server cloud, nessuna API esterna.
 - **Costi prevedibili.** Sai quanto spendi, quando lo spendi. Niente sorprese.
 - **Un collega che cresce con te.** ILAI si adatta ai tuoi processi e diventa un asset che si accumula nel tempo.
-- **Funziona offline.** Le elaborazioni principali non richiedono connessione internet.
+- **Riservatezza garantita.** Le elaborazioni principali avvengono localmente, i tuoi dati restano tuoi.
 
 ---
 
