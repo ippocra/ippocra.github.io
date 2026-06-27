@@ -59,7 +59,7 @@ ILAI is an artificial intelligence that runs locally on your infrastructure. Thi
 - **Your data never leaves your business.** No cloud servers, no external APIs.
 - **Predictable costs.** You know what you're spending and when. No surprises.
 - **A colleague that grows with you.** ILAI adapts to your processes and becomes an asset that accumulates over time.
-- **Privacy guaranteed.** Main processing happens locally — your data stays yours.
+- **Privacy guaranteed.** Your data is processed only locally.
 
 ---
 
