@@ -7,14 +7,8 @@ lang: en
 description: "The story of ILAI — Ippocra Local Artificial Intelligence — born from an idea in April, hardened through May, and first deployed in June. Discover how it works and how you can get your own ILAI."
 keywords: ilai, local artificial intelligence, ippocra, ideallab, local ai, data privacy, artificial intelligence, digital collaboration, first deployment
 page_id: benvenuto-ilai
-header:
-    teaser: /assets/images/screenshots/ilai-contract-teaser-en.webp
 classes: wide
 ---
-
-<p style="text-align:center;">
-  <img src="/assets/images/screenshots/ilai-contract-teaser-en.webp" alt="ILAI — Ippocra Local Artificial Intelligence" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
-</p>
 
 **Welcome ILAI.** — the name says it all. **I**ppocra **L**ocal **A**rtificial **I**ntelligence. An artificial intelligence that doesn't run on remote servers, but lives on your own infrastructure — yours, your data, under your control.
 
