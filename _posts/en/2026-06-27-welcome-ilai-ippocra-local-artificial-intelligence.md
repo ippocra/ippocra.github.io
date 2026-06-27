@@ -18,7 +18,7 @@ classes: wide
 
 **Welcome ILAI.** — the name says it all. **I**ppocra **L**ocal **A**rtificial **I**ntelligence. An artificial intelligence that doesn't run on remote servers, but lives on your own infrastructure — yours, your data, under your control.
 
-The story of how we got here is short, intense and, I'd say, very typical of how we build things: it starts with an observation, transforms into a product and then — surprisingly — into a sale.
+The story of how we got here is short, intense and, I'd say, very typical of how we build things: it starts with an observation, transforms into a product and then into a sale.
 
 ---
 
@@ -26,27 +26,27 @@ The story of how we got here is short, intense and, I'd say, very typical of how
 
 It all began in April 2026. We decided to invest seriously in the world of local artificial intelligence — running AI models directly on the user's infrastructure, without depending on external clouds.
 
-The market had been asking for this for a long time. SMEs had realized that their data was too valuable to be sent to cloud platforms that would turn it into a commodity. We already had experience in privacy-first technology with [Ippo](https://app.ippocra.com), but local AI was something completely different: a product from scratch, to be built, tested, and perfected.
+We had seen that pay-per-token models were becoming the main approach, with the possible cost increases that come with using artificial intelligence. Furthermore, the data we wanted to process was too valuable to be sent to cloud platforms that would turn it into a commodity. We already had experience in privacy-first technology with [Ippo](https://ippocra.com/ippo), but local AI was something completely different: a product from scratch, to be built, tested and perfected.
 
 ---
 
-## May: we realized we had something special
+## May: we realised we had something special
 
 By mid-May, after weeks of development, testing and iteration, we realised we had something interesting on our hands. It was no longer just an experiment — it was a product with real value.
 
 We had built an agentic collaboration system where AI isn't a chatbot limited by sessions and tokens, but a **digital colleague** that works alongside you, learns from your context and becomes more useful every day. A system that respects data privacy by definition — because everything runs locally.
 
-Time to harden the product. To turn the experiment into something solid, stable, ready for a real user.
+Time to prepare the product. To turn the experiment into something solid, stable, ready for a real user.
 
 ---
 
 ## June: the product is ready and we've sold our first ILAI
 
-By mid-June, the work was done. ILAI was hardened, tested, and market-ready. We packaged it all up: the product, the documentation, the site at [ilai.ippocra.com](https://ilai.ippocra.com/), everything ready.
+By mid-June, the work was done. ILAI was tested and market-ready. We packaged it all up: the product, the documentation, the site at [ilai.ippocra.com](https://ilai.ippocra.com/), everything ready.
 
-And guess what? **We've already sold our first ILAI.**
+The product is so interesting and revolutionary that **we've already sold our first ILAI.**
 
-Maybe more than one. The market responded with an interest we hadn't anticipated. Businesses that finally understood there was an AI that respects their data, doesn't send it to the cloud, and adapts to the way they work.
+The market responded with a surprising speed. Businesses that finally understood there was an AI that respects their data, doesn't send it to the cloud and adapts to the way they work.
 
 And this is just the beginning.
 
