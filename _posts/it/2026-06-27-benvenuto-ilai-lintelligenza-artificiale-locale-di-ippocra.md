@@ -8,17 +8,17 @@ description: "La storia di ILAI — Ippocra Local Artificial Intelligence — na
 keywords: ilai, intelligenza artificiale locale, ippocra, ideallab, ai locale, privacy dati, intelligenza artificiale, collaborazione digitale, first deployment
 page_id: benvenuto-ilai
 header:
-    teaser: /assets/images/screenshots/ilai-contract-teaser.webp
+    teaser: /assets/images/screenshots/ilai-contract-teaser.png
 classes: wide
 ---
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/ilai-contract-teaser.webp" alt="ILAI — Ippocra Local Artificial Intelligence" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/ilai-contract-teaser.png" alt="ILAI — Ippocra Local Artificial Intelligence" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
 **Benvenuto ILAI.** — il nome è tutto un programma. **I**ppocra **L**ocal **A**rtificial **I**ntelligence. Un'intelligenza artificiale che non gira su server remoti, ma che vive sulla tua infrastruttura — la tua, i tuoi dati, sotto il tuo controllo.
 
-La storia di come siamo arrivati qui è breve, intensa e, direi, molto tipica di come si costruiscono le cose da noi: parte da un'osservazione, si trasforma in un prodotto e poi — sorprendentemente — in una vendita.
+La storia di come siamo arrivati qui è breve, intensa e, direi, molto tipica di come si costruiscono le cose da noi: parte da un'osservazione, si trasforma in un prodotto e poi in una vendita.
 
 ---
 
@@ -26,7 +26,7 @@ La storia di come siamo arrivati qui è breve, intensa e, direi, molto tipica di
 
 Tutto è iniziato ad aprile 2026. Abbiamo deciso di investire seriamente nel mondo dell'intelligenza artificiale locale — eseguire modelli di AI direttamente sull'infrastruttura dell'utente, senza dipendere da cloud esterni.
 
-Il mercato ce lo chiedeva da tempo. Le PMI avevano capito che i loro dati erano troppo preziosi per essere inviati a piattaforme cloud che li trasformavano in commodity. Avevamo già esperienza nella privacy-first technology con [Ippo](https://app.ippocra.com), ma l'AI locale era qualcosa di completamente diverso: un prodotto da zero, da costruire, da testare, da perfezionare.
+Avevamo visto che i token a consumo stavano diventato il modello principale, con il possibile aumento dei costi per utilizzare l'intelligenza artificiale. Inoltre i dati che volevamo trattare erano troppo preziosi per essere inviati a piattaforme cloud che li trasformavano in commodity. Avevamo già esperienza nella privacy-first technology con [Ippo](https://ippocra.com/ippo), ma l'AI locale era qualcosa di completamente diverso: un prodotto da zero, da costruire, da testare, da perfezionare.
 
 ---
 
@@ -36,17 +36,17 @@ Verso metà maggio, dopo settimane di sviluppo, testing e iterazione, abbiamo ca
 
 Avevamo costruito un sistema di collaborazione agentica dove l'AI non è un chatbot limitato da sessioni e token, ma un **collega digitale** che lavora con te, impara dal tuo contesto e diventa più utile ogni giorno. Un sistema che rispetta la privacy dei dati per definizione — perché gira tutto in locale.
 
-Era tempo di hardenedare il prodotto. Di trasformare l'esperimento in qualcosa di solido, stabile, pronto per un utente reale.
+Era tempo di preparare il prodotto. Di trasformare l'esperimento in qualcosa di solido, stabile, pronto per un utente reale.
 
 ---
 
 ## Giugno: il prodotto è pronto e abbiamo venduto il primo ILAI
 
-A metà giugno, il lavoro era fatto. ILAI era hardendato, testato, preparato per il mercato. L'abbiamo impacchettato tutto insieme: il prodotto, la documentazione, il sito [ilai.ippocra.com](https://ilai.ippocra.com/it/), tutto pronto.
+A metà giugno, il lavoro era fatto. ILAI era testato e preparato per il mercato. L'abbiamo impacchettato tutto insieme: il prodotto, la documentazione, il sito [ilai.ippocra.com](https://ilai.ippocra.com/it/), tutto pronto.
 
-E sai cosa? **Abbiamo già venduto il nostro primo ILAI.**
+Il prodotto è cosí interessante e rivoluzionario che **abbiamo già venduto il nostro primo ILAI.**
 
-Più di uno, probabilmente. Il mercato ha risposto con un interesse che non ci aspettavamo. Aziende che hanno capito che finalmente esisteva un'AI che rispetta i loro dati, che non li manda in cloud e che si adatta al loro modo di lavorare.
+Il mercato ha risposto con un interesse con una velocitá sorprendente. Aziende che hanno capito che finalmente esisteva un'AI che rispetta i loro dati, che non li manda in cloud e che si adatta al loro modo di lavorare.
 
 E questo è solo l'inizio.
 
