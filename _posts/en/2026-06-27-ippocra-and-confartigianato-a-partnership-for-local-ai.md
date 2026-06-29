@@ -13,7 +13,7 @@ classes: wide
 ---
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/ippocra-confartigianato-partnership-en.png" alt="Ippocra × Confartigianato — Partnership for Local AI" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/ippocra-confartigianato-partnership-en.png" alt="Ippocra × Confartigianato — Partnership for Local AI" style="border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
 Trade associations are a bridge between technology and the territory they serve. When an organization like Confartigianato Ancona Pesaro Urbino chooses to act as a conduit for introducing new digital tools among its member businesses, it's not just offering a service — it's building a model of shared innovation.

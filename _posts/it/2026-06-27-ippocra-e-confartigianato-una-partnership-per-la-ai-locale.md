@@ -13,8 +13,11 @@ classes: wide
 ---
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/ippocra-confartigianato-partnership.png" alt="Ippocra × Confartigianato — Partnership per la AI locale" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/ippocra-confartigianato-partnership.webp" alt="Ippocra × Confartigianato — Partnership per la AI locale" style="border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
+  <br/>
+  Ippocra stringe una partnership con Confartigianato di Ancona, Pesaro ed Urbino, proponendo un'AI che funziona in locale, mantenendo al sicuro il know-how ed i dati delle imprese associate.
 </p>
+
 
 Le associazioni di categoria sono un ponte tra tecnologia e territorio. Quando un'organizzazione come Confartigianato Ancona Pesaro Urbino sceglie di fare da tramite per introdurre nuovi strumenti digitali tra le proprie imprese associate, non sta solo offrendo un servizio — sta costruendo un modello di innovazione condivisa.
 
@@ -86,7 +89,7 @@ L'innovazione non deve essere un lusso accessibile solo a chi ha budget illimita
 
 ## Contatti
 
-Se rappresenti un'associazione, un consorzio o una rete di imprese e vuoi esplorare una collaborazione simile, scrivici a [info@ippocra.com](mailto:info@ippocra.com) o visita [ilai.ippocra.com](https://ilai.ippocra.com/it/) per saperne di più.
+Se sei interessato ad ILAI, visita [ilai.ippocra.com](https://ilai.ippocra.com/it/) o scrivici a [info@ippocra.com](mailto:info@ippocra.com).
 
 ---
 
