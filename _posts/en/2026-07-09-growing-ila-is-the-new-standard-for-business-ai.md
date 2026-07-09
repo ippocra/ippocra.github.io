@@ -24,7 +24,7 @@ In June, we unveiled our first ILAI — *Ippocra Local Artificial Intelligence* 
 
 ## What is an ILAI?
 
-An ILAI is not a SaaS tool you subscribe to. It's a complete artificial intelligence system that runs entirely on the company's own infrastructure — on-premise, behind their firewall, under their control. No cloud dependencies, no data leaving the building, no variable costs based on usage.
+An ILAI is not a SaaS tool you subscribe to. It's a complete artificial intelligence system that runs entirely on the company's own infrastructure — on-premise, behind the corporate firewall, under their control. No cloud dependencies, no data leaving the building, and no variable costs based on usage.
 
 Each ILAI is customised for the specific business it serves. It learns the company's processes, documents, workflows, and culture. It becomes a digital colleague — not a chatbot, but an actual collaborator that grows more useful every day.
 
@@ -40,7 +40,7 @@ We're currently running several ILAI deployments, each tailored to a different c
 
 Each tower is a dedicated machine — a physical ILAI — sitting on the client's premises, running locally, processing real business data in real time. The hardware may look like ordinary servers, but what runs inside them is something entirely different: AI that knows the company, understands its context, and works alongside the team.
 
-The stickers on each machine are more than branding — they're a declaration of principle. **ILAI** means *Ippocra Local Artificial Intelligence*, and the "LA" also stands for *Local Assistant* — the role each one plays for the businesses we serve.
+The stickers on each machine are more than branding — they're a declaration of principle. **ILAI** means *Ippocra Local Artificial Intelligence*, the virtual colleague, private by design.
 
 ---
 
@@ -59,7 +59,7 @@ Local AI flips that equation:
 
 ## From one to many
 
-The first ILAI was a solo effort — an experiment, a prototype, a proof that it could work. It did. Now we're scaling.
+The first ILAI was a research effort — an experiment, a prototype, a demonstration created for internal use, because data matters and must always be preserved. And at Ippocra, we care about privacy. But ILAI could be useful to many people and companies, so we launched it as a product. And now we're scaling it.
 
 Building multiple ILAIs simultaneously has taught us a lot:
 
