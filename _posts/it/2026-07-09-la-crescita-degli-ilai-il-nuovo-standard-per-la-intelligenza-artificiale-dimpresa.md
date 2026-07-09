@@ -24,7 +24,7 @@ A giugno abbiamo presentato il nostro primo ILAI — *Ippocra Local Artificial I
 
 ## Cos'è un ILAI?
 
-Un ILAI non è un tool SaaS a cui ti abboni. È un sistema completo di intelligenza artificiale che gira interamente sull'infrastruttura dell'azienda — on-premise, dietro il loro firewall, sotto il loro controllo. Nessuna dipendenza dal cloud, nessun dato che lascia l'azienda, costi variabili basati sull'utilizzo.
+Un ILAI non è un tool SaaS a cui ti abboni. È un sistema completo di intelligenza artificiale che gira interamente sull'infrastruttura dell'azienda — on-premise, dietro il firewall aziendale, sotto il loro controllo. Nessuna dipendenza dal cloud, nessun dato che lascia l'azienda, e nessun costo variabile basato sull'utilizzo.
 
 Ogni ILAI è personalizzato per l'azienda specifica che serve. Impara i processi, i documenti, i workflow e la cultura aziendale. Diventa un collega digitale — non un chatbot, ma un vero collaboratore che diventa più utile ogni giorno.
 
@@ -40,13 +40,14 @@ Al momento stiamo gestendo diversi deployment di ILAI, ognuno personalizzato per
 
 Ogni torre è una macchina dedicata — un ILAI fisico — posizionata nei locali del cliente, che gira in locale, elabora dati aziendali reali in tempo reale. L'hardware può sembrare un server ordinario, ma ciò che gira al loro interno è qualcosa di completamente diverso: un'AI che conosce l'azienda, ne comprende il contesto e lavora insieme al team.
 
-Gli adesivi su ogni macchina sono più di un semplice branding — sono una dichiarazione di principio. **ILAI** significa *Ippocra Local Artificial Intelligence*, e le "LA" stanno anche per *Local Assistant* — il ruolo che ognuno svolge per le aziende a cui serviamo.
+Gli adesivi su ogni macchina sono più di un semplice branding — sono una dichiarazione di principio. **ILAI** significa *Ippocra Local Artificial Intelligence*, il collega virtuale, 
+privato per design.
 
 ---
 
 ## Perché l'AI locale conta
 
-Il modello di AI cloud ha un problema fondamentale: **i tuoi dati lasciano il tuo edificio**. Ogni query, ogni documento elaborato, ogni pezzo di contesto viene inviato a una terza parte. Per le aziende che gestiscono informazioni sensibili — dati finanziari, record dei clienti, piani strategici — questo non è solo scomodo. È inaccettabile.
+Il modello di AI in cloud ha un problema fondamentale: **i tuoi dati lasciano il tuo edificio**. Ogni query, ogni documento elaborato, ogni pezzo di contesto viene inviato a una terza parte. Per le aziende che gestiscono informazioni sensibili — dati finanziari, record dei clienti, piani strategici — questo non è solo scomodo. È inaccettabile.
 
 L'AI locale capovolge questa equazione:
 
@@ -59,7 +60,8 @@ L'AI locale capovolge questa equazione:
 
 ## Da uno a molti
 
-Il primo ILAI è stato un lavoro da soli — un esperimento, un prototipo, una dimostrazione che si poteva fare. Ha funzionato. Ora stiamo scalando.
+Il primo ILAI è stato un lavoro di ricerca — un esperimento, un prototipo, una dimostrazione creato per utilizzo interno, perchè i dati sono importanti e vanno sempre preservati. E noi, 
+ad Ippocra ci teniamo alla privacy. Ma ILAI poteva essere utile a tante persone e Compagnie, e quindi siamo usciti con un prodotto. Ed ora lo stiamo scalando.
 
 Costruire più ILAI simultaneamente ci ha insegnato molto:
 
