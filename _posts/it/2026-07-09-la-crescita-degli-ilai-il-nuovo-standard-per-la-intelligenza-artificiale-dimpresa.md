@@ -24,7 +24,7 @@ A giugno abbiamo presentato il nostro primo ILAI — *Ippocra Local Artificial I
 
 ## Cos'è un ILAI?
 
-Un ILAI non è un tool SaaS a cui ti abboni. È un sistema completo di intelligenza artificiale che gira interamente sull'infrastruttura della azienda — on-premise, dietro il loro firewall, sotto il loro controllo. Nessuna dipendenza dal cloud, nessun dato che lascia l'azienda, costi variabili basati sull'utilizzo.
+Un ILAI non è un tool SaaS a cui ti abboni. È un sistema completo di intelligenza artificiale che gira interamente sull'infrastruttura dell'azienda — on-premise, dietro il loro firewall, sotto il loro controllo. Nessuna dipendenza dal cloud, nessun dato che lascia l'azienda, costi variabili basati sull'utilizzo.
 
 Ogni ILAI è personalizzato per l'azienda specifica che serve. Impara i processi, i documenti, i workflow e la cultura aziendale. Diventa un collega digitale — non un chatbot, ma un vero collaboratore che diventa più utile ogni giorno.
 
@@ -38,7 +38,7 @@ Al momento stiamo gestendo diversi deployment di ILAI, ognuno personalizzato per
   <img src="/assets/images/screenshots/ilai-farm-photo.webp" alt="L'infrastruttura fisica degli ILAI — hardware dedicato che esegue AI locale per i clienti Ippocra" style="max-width:800px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.12);margin:1.5rem 0;"/>
 </p>
 
-Ogni torre è una macchina dedicata — un ILAI fisico — posizionata nei locali del cliente, che gira in locale, elabora dati aziendali reali in tempo reale. L'hardware può sembrare come server ordinari, ma ciò che gira al loro interno è qualcosa di completamente diverso: un'AI che conosce l'azienda, ne comprende il contesto e lavora insieme al team.
+Ogni torre è una macchina dedicata — un ILAI fisico — posizionata nei locali del cliente, che gira in locale, elabora dati aziendali reali in tempo reale. L'hardware può sembrare un server ordinario, ma ciò che gira al loro interno è qualcosa di completamente diverso: un'AI che conosce l'azienda, ne comprende il contesto e lavora insieme al team.
 
 Gli adesivi su ogni macchina sono più di un semplice branding — sono una dichiarazione di principio. **ILAI** significa *Ippocra Local Artificial Intelligence*, e le "LA" stanno anche per *Local Assistant* — il ruolo che ognuno svolge per le aziende a cui serviamo.
 
@@ -52,21 +52,21 @@ L'AI locale capovolge questa equazione:
 
 - **I tuoi dati restano dove appartengono.** Dentro la tua azienda. Dietro il tuo firewall. Mai trasmessi.
 - **I costi sono fissi, non variabili.** Sai esattamente quanto stai pagando. Nessuna sorpresa nei consumi.
-- **L'AI diventa più intelligente nel tempo.** Ogni interazione con il tuo team aggiunge alla sua base di conoscenza. Non si resetta ad ogni sessione.
+- **L'AI diventa più intelligente nel tempo.** Ogni interazione con il tuo team arricchisce la sua base di conoscenza. Non si resetta ad ogni sessione.
 - **Conformità totale.** GDPR, regolamenti di settore, policy interne — tutto è rispettato per design.
 
 ---
 
 ## Da uno a molti
 
-Il primo ILAI è stato un lavoro da soli — un esperimento, un prototipo, una dimostrazione che si poteva fare. Ci è riuscito. Ora stiamo scalando.
+Il primo ILAI è stato un lavoro da soli — un esperimento, un prototipo, una dimostrazione che si poteva fare. Ha funzionato. Ora stiamo scalando.
 
 Costruire più ILAI simultaneamente ci ha insegnato molto:
 
 - **La personalizzazione è reale, non teorica.** Ogni ILAI deve comprendere un dominio diverso, terminologia diversa, workflow diversi. Abbiamo costruito il framework per gestire questo in modo efficiente.
 - **Le prestazioni contano.** L'AI locale deve essere abbastanza veloce da sembrare istantanea, non un ritardo che uccide l'esperienza utente.
 - **La selezione dell'hardware è critica.** Il giusto bilanciamento tra potenza di calcolo, memoria e costo per deployment. Abbiamo ottimizzato questo aspetto.
-- **Il supporto è una relazione continua.** Ogni ILAI è un partnership a lungo termine, non una vendita una tantum.
+- **Il supporto è una relazione continua.** Ogni ILAI è una partnership a lungo termine, non una vendita una tantum.
 
 ---
 
@@ -102,4 +102,4 @@ No. ILAI è progettato per essere un collaboratore, non un sostituto. Lavora ins
 
 **Posso avere il mio ILAI?**
 
-Assolutamente sì. Ogni ILAI è personalizzato per la specifica azienda. Se vuoi vedere cosa potrebbe fare un ILAI per la tua azienda, scrivici a [info@ippocra.com](mailto:info@ippocra.com).
+Assolutamente sì. Ogni ILAI è personalizzato per l'azienda specifica. Se vuoi vedere cosa potrebbe fare un ILAI per la tua azienda, scrivici a [info@ippocra.com](mailto:info@ippocra.com).
