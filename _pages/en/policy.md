@@ -240,7 +240,7 @@ The DPO must carry out the following tasks:
 * Inform and raise awareness among the data controller or processor, as well as employees, about the obligations of the Regulation;  
 * Cooperate with supervisory authorities and act as a point of contact.
 
-The Company has appointed **DPO Avv. Tommaso Rossi**, with an office in Ancona, Via Baccarani 4, tel. 3403947151, email [t.rossi@rpcstudiolegale.it](mailto:t.rossi@rpcstudiolegale.it).
+For any such requests, contact the company at [info@ippocra.com](mailto:info@ippocra.com).
 
 **4.14. Links to other websites**
 

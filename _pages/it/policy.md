@@ -252,7 +252,7 @@ Il DPO deve eseguire i seguenti compiti:
 * Informare e sensibilizzare il Titolare o il Responsabile nonché i dipendenti riguardo agli obblighi del Regolamento;  
 * Cooperare con le autorità di controllo e fungere da punto di contatto.
 
-La Società ha provveduto alla nomina del **DPO nella persona dell’Avv. Tommaso Rossi**, con studio in Ancona Via Baccarani 4 tel. 3403947151, email [t.rossi@rpcstudiolegale.it](mailto:t.rossi@rpcstudiolegale.it)
+Per ogni richiesta di questo tipo, contattare la società all’email [info@ippocra.com](mailto:info@ippocra.com).
 
 **4.14. Link ad altri siti web**
 
