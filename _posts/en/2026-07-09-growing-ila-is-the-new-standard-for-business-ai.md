@@ -1,11 +1,11 @@
 ---
-title: "Growing ILAIs: the new standard for business artificial intelligence"
+title: "Growing ILAIs: the new standard for local artificial intelligence"
 categories: news
 excerpt: "We started with one ILAI in June. Now we're building multiple for our clients — and each one is becoming an indispensable digital colleague."
-permalink: /growing-ila-is-the-new-standard-for-business-ai
+permalink: /growing-ila-is-the-new-standard-for-local-artificial-intelligence
 lang: en
 description: "How Ippocra is scaling ILAI — local artificial intelligence for businesses — from a single deployment to multiple client ILAIs. Each one is a unique digital colleague built on the company's own infrastructure."
-keywords: ilai, local artificial intelligence, business AI, data privacy, digital colleague, ippocra, ideallab, local ai deployment, ai infrastructure, ai per imprese
+keywords: ilai, local artificial intelligence, local ai, business AI, data privacy, digital colleague, ippocra, ideallab, local ai deployment, ai infrastructure
 page_id: growing-ilai
 header:
     teaser: /assets/images/screenshots/ilai-farm-teaser.webp

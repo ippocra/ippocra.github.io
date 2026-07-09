@@ -1,11 +1,11 @@
 ---
-title: "La crescita degli ILAI: il nuovo standard per l'intelligenza artificiale d'impresa"
+title: "La crescita degli ILAI: il nuovo standard per l'intelligenza artificiale in locale"
 categories: news
 excerpt: "Abbiamo iniziato con un solo ILAI a giugno. Ora ne stiamo costruendo diversi per i nostri clienti — e ognuno di loro sta diventando un collega digitale indispensabile."
-permalink: /la-crescita-degli-ilai-il-nuovo-standard-per-la-ai-dimpresa
+permalink: /la-crescita-degli-ilai-il-nuovo-standard-per-la-intelligenza-artificiale-in-locale
 lang: it
-description: "Come Ippocra sta scalando ILAI — intelligenza artificiale locale per le imprese — da un singolo deployment a multiple ILAI per i clienti. Ognuno è un collega digitale unico, costruito sull'infrastruttura propria dell'azienda."
-keywords: ilai, intelligenza artificiale locale, ai per imprese, privacy dati, collega digitale, ippocra, ideallab, deployment ai locale, infrastrutture ai, intelligenza artificiale
+description: "Come Ippocra sta scalando ILAI — intelligenza artificiale in locale per le imprese — da un singolo deployment a multiple ILAI per i clienti. Ognuno è un collega digitale unico, costruito sull'infrastruttura propria dell'azienda."
+keywords: ilai, intelligenza artificiale in locale, intelligenza artificiale locale, ai per imprese, privacy dati, collega digitale, ippocra, ideallab, deployment ai locale, infrastrutture ai
 page_id: crescita-ilai
 header:
     teaser: /assets/images/screenshots/ilai-farm-teaser.webp
