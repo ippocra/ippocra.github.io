@@ -52,11 +52,18 @@
                             <span><strong>Asset that grows</strong> — the more you use it, the more competitive advantage you gain</span>
                         </li>
                     </ul>
-                    <a href="https://ilai.ippocra.com/en/" target="_blank" rel="noopener noreferrer"
-                        class="gateway-card-cta gateway-card-cta-ilai">
-                        Discover ILAI
-                        <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
+                    <div class="gateway-card-cta-row">
+                        <a href="https://ilai.ippocra.com/en/" target="_blank" rel="noopener noreferrer"
+                            class="gateway-card-cta gateway-card-cta-ilai">
+                            Discover ILAI
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="https://ilai.ippocra.com/en/use-cases/" target="_blank" rel="noopener noreferrer"
+                            class="gateway-card-cta gateway-card-cta-ilai gateway-card-cta-secondary">
+                            See use cases
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
                     <p class="mt-2 text-xs" style="color:#7a9a95;">ilai.ippocra.com</p>
                 </div>
             </div>
@@ -80,9 +87,9 @@
                     <p class="paragraph-sm" style="color:#c8d9d5; margin:0 0 1rem;">
                         Local AI for businesses. Confidential data, zero lock-in, zero cloud.
                     </p>
-                    <a href="https://ilai.ippocra.com/en/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://ilai.ippocra.com/en/use-cases/" target="_blank" rel="noopener noreferrer"
                         class="gateway-card-cta gateway-card-cta-ilai gateway-card-cta-sm">
-                        Go to ILAI <i class="fas fa-arrow-right ml-1"></i>
+                        ILAI use cases <i class="fas fa-arrow-right ml-1"></i>
                     </a>
                 </div>
 
@@ -302,6 +309,25 @@
     }
 
     /* ---- Shared CTA ---- */
+    .gateway-card-cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+    .gateway-card-cta-row .gateway-card-cta {
+        margin-top: 0;
+    }
+    .gateway-card-cta-secondary {
+        background: transparent !important;
+        border: 1px solid #4dd0c4;
+        color: #4dd0c4 !important;
+    }
+    .gateway-card-cta-secondary:hover {
+        background: rgba(77, 208, 196, 0.12) !important;
+    }
+
     .gateway-card-cta {
         display: inline-flex;
         align-items: center;
