@@ -106,6 +106,10 @@ plugins:
   - jekyll-minifier
   - jekyll-redirect-from
 
+# Custom scripts
+head_scripts:
+  - /assets/js/ippocra-tracking.js
+
 jekyll-minifier:
   uglifier_args:
     harmony: true
