@@ -77,8 +77,6 @@ GEM
       json-minify (~> 0.0.3)
       uglifier (~> 4.1)
     jekyll-paginate (1.1.0)
-    jekyll-paginate-v2 (3.0.0)
-      jekyll (>= 3.0, < 5.0)
     jekyll-polyglot (1.11.0)
       jekyll (>= 4.0, >= 3.0)
     jekyll-redirect-from (0.16.0)
@@ -156,7 +154,7 @@ DEPENDENCIES
   jekyll (~> 4.4.1)
   jekyll-feed (~> 0.12)
   jekyll-minifier
-  jekyll-paginate-v2
+  jekyll-paginate (~> 1.1)
   jekyll-polyglot (~> 1.11.0)
   jekyll-redirect-from
   jekyll-seo-tag
