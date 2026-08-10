@@ -2,6 +2,7 @@
 title: "Opening Private Beta"
 date: 2024-10-03 13:50:17 +0100
 categories: news
+page_id: opening-private-beta
 permalink: "/private-beta"
 lang: en
 description: Ippocra is now open for private beta testing. Register to try our secure medical document management platform and help shape its future.

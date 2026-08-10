@@ -1,6 +1,7 @@
 ---
 title: "Lancio della Beta Privata"
 date: 2024-10-03 13:50:17 +0100
+page_id: opening-private-beta
 categories: news
 permalink: "/private-beta"
 lang: it

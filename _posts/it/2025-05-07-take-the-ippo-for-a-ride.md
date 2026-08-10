@@ -1,5 +1,6 @@
 ---
 title: "Porta Ippo a fare una passeggiata"
+page_id: take-the-ippo-for-a-ride
 categories: news
 permalink: "/take-ippo-for-a-ride"
 lang: it

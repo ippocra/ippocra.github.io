@@ -5,7 +5,8 @@ categories: news
 lang: it
 description: Ippocra ora supporta gli archivi ZIP! Carica e conserva facilmente TAC, risonanze magnetiche e altri dati medici archiviati in modo sicuro nel cloud.
 keywords: archivi ZIP, archiviazione medica, TAC, risonanza magnetica, gestione documenti, caricamento sicuro, cloud storage, dati sanitari
-permalink:
+page_id: archive-support
+permalink: /archive-support
 header:
     teaser: /assets/images/sunset_in_prospettiva_shorter.jpg
 ---

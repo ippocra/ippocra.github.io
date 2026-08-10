@@ -5,6 +5,7 @@ categories: news
 lang: it
 description: Incontra IppoLink - il modo sicuro per condividere documenti medici con dottori e specialisti. Condividi referti istantaneamente senza esporre i tuoi dati.
 keywords: IppoLink, condivisione sicura documenti, referti medici, condividi con medici, link sicuro, privacy dati sanitari, telemedicina, condivisione medica
+page_id: ippolink-launch
 header:
     teaser: /assets/images/sea_and_clouds.jpg
 ---

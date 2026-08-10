@@ -5,6 +5,7 @@ categories: news
 lang: en
 description: Meet IppoLink - the secure way to share medical documents with doctors and specialists. Share reports instantly without exposing your data.
 keywords: IppoLink, secure document sharing, medical reports, share with doctors, secure link, health data privacy, telemedicine, medical sharing
+page_id: ippolink-launch
 header:
     teaser: /assets/images/sea_and_clouds.jpg
 ---

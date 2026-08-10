@@ -1,5 +1,6 @@
 ---
 title: "Medical Campus chooses Ippocra"
+page_id: medical-campus-sceglie-ippocra
 categories: news
 permalink: /medical-campus-sceglie-ippocra
 lang: en

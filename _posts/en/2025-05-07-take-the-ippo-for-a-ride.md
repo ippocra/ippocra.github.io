@@ -1,5 +1,6 @@
 ---
 title: "Take Ippo for a ride"
+page_id: take-the-ippo-for-a-ride
 categories: news
 permalink: "/take-ippo-for-a-ride"
 lang: en
