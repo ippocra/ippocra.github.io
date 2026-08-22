@@ -54,12 +54,7 @@ The same video is available as a reel on [Instagram](https://www.instagram.com/r
 
 ### 2. The turtles on the beach — proof that it can be repeated
 
-The second video shows it was not a one-off: different scenes, different characters, same method, same quality.
-
-<!-- TODO: replace with the final YouTube ID once "The turtles on the beach" is uploaded to @ippocra -->
-<div style="position:relative;width:100%;max-width:640px;margin:1.5rem auto;padding-bottom:56.25%;height:0;">
-  <iframe src="https://www.youtube.com/embed/fTGNubnFeRo" title="The turtles on the beach — Local AI generated" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-</div>
+The second video shows it was not a one-off: different scenes, different characters, same method, same quality. We published this one as a reel on [Instagram](https://www.instagram.com/reel/DcREUBKjRBA/), directly from our local renders — and for this video Instagram is the only channel, in line with how we choose to publish it.
 
 ### 3. "ILAI — Your Artificial Colleague" — the full video
 
@@ -71,7 +66,7 @@ The longest and most complete one: a piece of content produced end-to-end with I
 
 You can also find it as a reel on [Instagram](https://www.instagram.com/reel/DcVgXRejCQy/).
 
-## The advantage that changes the rules: you can fail
+## The advantage that changes the rules: you can experiment
 
 Here is the point nobody tells you when they talk about cloud AI.
 
@@ -84,7 +79,7 @@ With local AI, **the cost of a render is zero** — it is your GPU working, and 
 - **Change your mind mid-production** and redo the scenes from scratch
 - **Experiment with styles, tones, rhythms** until the result is exactly what you had in mind
 
-You can fail more. You can produce more. You can refine more. And not a single extra cent hits your bank account. It is not just about saving money: it is about **final quality**, because quality is reached by trying, not by hoping.
+You can experiment more. You can produce more. You can refine more. And not a single extra cent hits your bank account. It is not just about saving money: it is about **final quality**, because quality is reached by trying, not by hoping.
 
 ## How much hardware do you need?
 

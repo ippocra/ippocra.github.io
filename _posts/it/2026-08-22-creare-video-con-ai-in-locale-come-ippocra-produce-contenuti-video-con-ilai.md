@@ -1,7 +1,7 @@
 ---
 title: "Creare video con AI in locale: come Ippocra produce contenuti video con ILAI"
 categories: ai, business, marketing
-excerpt: "Oggi è possibile produrre video di alta qualità con l'AI che gira sul tuo hardware, in modo organizzato e semi-automatico. Scopri come Ippocra crea i suoi contenuti video in locale, senza costi token: puoi sperimentare, fallire e rifare finché il risultato non è quello che vuoi."
+excerpt: "Oggi è possibile produrre video di alta qualità con l'AI che gira sul tuo hardware, in modo organizzato e semi-automatico. Scopri come Ippocra crea i suoi contenuti video in locale, senza costi token: puoi sperimentare, rifinire e rifare finché il risultato non è quello che vuoi."
 permalink: /creare-video-ai-in-locale
 lang: it
 description: "Produrre video di alta qualità con AI locale non è più fantascienza: Ippocra crea i propri contenuti con ILAI su hardware proprio, in modo semi-automatico. Nessuna bolletta di token, la possibilità di riprovare quante volte vuoi."
@@ -54,12 +54,7 @@ Lo stesso video è disponibile come reel su [Instagram](https://www.instagram.co
 
 ### 2. Le tartarughe in spiaggia — la prova che si può ripetere
 
-Il secondo video mostra che non è stato un caso isolato: scene diverse, personaggi diversi, stesso metodo, stessa qualità.
-
-<!-- TODO: sostituire con l'ID YouTube definitivo quando "Le tartarughe in spiaggia" sarà caricato su @ippocra -->
-<div style="position:relative;width:100%;max-width:640px;margin:1.5rem auto;padding-bottom:56.25%;height:0;">
-  <iframe src="https://www.youtube.com/embed/fTGNubnFeRo" title="Le tartarughe in spiaggia — Local AI generated" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-</div>
+Il secondo video mostra che non è stato un caso isolato: scene diverse, personaggi diversi, stesso metodo, stessa qualità. Questo contenuto lo abbiamo pubblicato come reel su [Instagram](https://www.instagram.com/reel/DcREUBKjRBA/), direttamente dai nostri render locali — e per questo video è anche l'unico canale, in linea con la nostra politica di pubblicazione.
 
 ### 3. "ILAI - Il Tuo Collega Artificiale" — il video completo
 
@@ -71,7 +66,7 @@ Il video più lungo e completo: un contenuto prodotto per intero con ILAI, dall'
 
 Lo trovi anche come reel su [Instagram](https://www.instagram.com/reel/DcVgXRejCQy/).
 
-## Il vantaggio che cambia le regole: puoi fallire
+## Il vantaggio che cambia le regole: puoi sperimentare
 
 Qui sta il punto che nessuno ti dice quando parli di AI cloud.
 
@@ -84,7 +79,7 @@ Con l'AI locale, **il costo del render è zero** — è la tua GPU che lavora, e
 - **Cambiare idea a metà produzione** e rifare le scene da capo
 - **Esperire con stili, toni, ritmi** finché il risultato non è esattamente quello che avevi in mente
 
-Puoi fallire di più. Puoi produrre di più. Puoi rifinire di più. E nessun centesimo in più arriva sulla carta. Non è solo una questione di risparmio: è una questione di **qualità finale**, perché la qualità si raggiunge provando, non sperando.
+Puoi sperimentare di più. Puoi produrre di più. Puoi rifinire di più. E nessun centesimo in più arriva sulla carta. Non è solo una questione di risparmio: è una questione di **qualità finale**, perché la qualità si raggiunge provando, non sperando.
 
 ## Quanto serve di hardware?
 
