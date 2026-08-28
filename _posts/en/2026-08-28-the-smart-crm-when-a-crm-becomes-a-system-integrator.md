@@ -47,7 +47,7 @@ The "smart" part is that the four areas feed each other. Research updates the co
 
 ## A real example: from a WhatsApp message to a proposal
 
-Let's make it concrete. A few months ago, a contact from GEL S.p.A. wrote to us on WhatsApp asking for a proposal for a base ILAI installation.
+Let's make it concrete. A few months ago, a contact from a mid-size manufacturing company wrote to us on WhatsApp asking for a proposal for a base ILAI installation.
 
 Here is what happened in the CRM, step by step:
 

@@ -47,7 +47,7 @@ La parte "intelligente" è che le quattro aree si alimentano a vicenda. La ricer
 
 ## Un esempio reale: da un messaggio WhatsApp a una proposta
 
-Facciamo un esempio concreto. Qualche mese fa, un referente di GEL S.p.A. ci ha scritto su WhatsApp chiedendo una proposta per un'installazione base di ILAI.
+Facciamo un esempio concreto. Qualche mese fa, un referente di una società manifatturiera di medie dimensioni ci ha scritto su WhatsApp chiedendo una proposta per un'installazione base di ILAI.
 
 Ecco cosa è successo nel CRM, passo per passo:
 
