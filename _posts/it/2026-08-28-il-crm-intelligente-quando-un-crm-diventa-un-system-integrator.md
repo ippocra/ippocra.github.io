@@ -14,6 +14,10 @@ classes: wide
 
 **Un CRM è stato costruito per archiviare dati. Un CRM intelligente è costruito per lavorare.**
 
+<p style="text-align:center;">
+  <img src="/assets/images/screenshots/smart-crm-teaser.webp" alt="Il CRM intelligente: un system integrator, non un database" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+</p>
+
 Questa è una storia che volevamo raccontare. Cos'è un CRM intelligente? Prima di tutto, cos'è un CRM?
 
 Un CRM è un Customer Relationship Manager — un software che aiuta a tenere traccia dei propri prospect e dei propri clienti. I CRM sono sempre stati piuttosto statici. Si inseriscono tutte le informazioni a mano, si possono configurare delle automazioni che ricordano di fare qualcosa per un cliente, ma alla fine è estremamente tempo-intensivo e macchinoso. E nella maggior parte dei casi, i CRM tendono a invecchiare e a non essere più usati.
@@ -44,6 +48,10 @@ Questa è l'idea dietro il CRM Ippocra. È un **system integrator**: connette qu
 4. **Gli artefatti.** Le cose che fanno davvero avanzare la trattativa — una proposta dedicata, una presentazione su misura, immagini, un video — generati per quel cliente specifico, conservati accanto al cliente.
 
 La parte "intelligente" è che le quattro aree si alimentano a vicenda. La ricerca aggiorna la scheda del contatto. La scheda informa la strategia. La strategia produce l'artefatto. Il risultato dell'artefatto torna nella cronologia. In un CRM classico esiste solo la prima casella, e tutto il resto lo copi a mano dalla tua email, dalle tue note e dalla tua testa.
+
+<p style="text-align:center;">
+  <img src="/assets/images/screenshots/smart-crm-social.png" alt="Il CRM Ippocra come hub: registro, ricerca, strategia e artefatti tutti connessi da un LLM locale" style="max-width:760px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+</p>
 
 ## Un esempio reale: da un messaggio WhatsApp a una proposta
 
@@ -117,12 +125,3 @@ ILAI è il prodotto: un'intelligenza artificiale locale che gira sulla tua infra
 ---
 
 <em>Correlato: [Creare video con IA in locale: come Ippocra produce contenuti video con ILAI](/creare-video-ai-in-locale) — un altro esempio di un processo adiacente alle vendite (produzione di contenuti) che gestiamo interamente con IA locale.</em>
-
----
-
-<div style="position:relative;width:100%;max-width:640px;margin:1.5rem auto;padding-bottom:56.25%;height:0;">
-  <iframe src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Ippocra Local Artificial Intelligence"
-    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
-  </iframe>
-</div>

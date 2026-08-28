@@ -14,6 +14,10 @@ classes: wide
 
 **A CRM was built to store data. A smart CRM is built to work.**
 
+<p style="text-align:center;">
+  <img src="/assets/images/screenshots/smart-crm-teaser.webp" alt="The smart CRM: a system integrator, not a database" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+</p>
+
 This is a story we wanted to tell. What is a smart CRM? First, what is a CRM?
 
 A CRM is a Customer Relationship Manager — software that helps you track your prospects and your clients. CRMs have always been pretty static. You enter all the information by hand, you can set up some kind of automation that reminds you to take action on a client, but at the end of the day it is extremely time-consuming and cumbersome. And most of the time, CRMs tend to rot and stop being used.
@@ -44,6 +48,10 @@ That is the idea behind the Ippocra CRM. It is a **system integrator**: it conne
 4. **The artifacts.** The things that actually move the deal forward — a dedicated proposal, a custom presentation, images, a video — generated for that specific client, stored next to the client.
 
 The "smart" part is that the four areas feed each other. Research updates the contact card. The contact card informs the strategy. The strategy produces the artifact. The artifact's result goes back into the timeline. In a classic CRM only the first box exists, and you copy everything else by hand from your email, your notes, and your head.
+
+<p style="text-align:center;">
+  <img src="/assets/images/screenshots/smart-crm-social.png" alt="The Ippocra CRM as a hub: record, research, strategy, and artifacts all connected by a local LLM" style="max-width:760px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+</p>
 
 ## A real example: from a WhatsApp message to a proposal
 
@@ -117,12 +125,3 @@ ILAI is the product: a local artificial intelligence that runs on your infrastru
 ---
 
 <em>Related: [Creating videos with local AI: how Ippocra produces video content with ILAI](/creare-video-ai-in-locale) — another example of a sales-adjacent process (content production) that we run entirely on local AI.</em>
-
----
-
-<div style="position:relative;width:100%;max-width:640px;margin:1.5rem auto;padding-bottom:56.25%;height:0;">
-  <iframe src="https://www.youtube.com/embed/eCrFgt9Lbl0" title="ILAI — Ippocra Local Artificial Intelligence"
-    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:12px;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy">
-  </iframe>
-</div>
