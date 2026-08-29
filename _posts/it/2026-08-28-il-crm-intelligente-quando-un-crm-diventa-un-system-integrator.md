@@ -6,7 +6,7 @@ permalink: /il-crm-intelligente
 lang: it
 description: "Cos'è un CRM intelligente? Il Smart CRM di Ippocra non è un database da alimentare: è il centro di un intero sistema di vendita, guidato da un LLM locale che fa ricerca, propone la strategia e genera proposte e presentazioni. Un esempio reale."
 keywords: CRM intelligente, CRM con IA locale, system integrator AI, LLM locale, automazione CRM, IA per il processo di vendita, Smart CRM di Ippocra, ILAI, IA locale per le vendite, proposte generate con IA, intelligenza artificiale locale per imprese
-page_id: il-crm-intelligente
+page_id: the-smart-crm
 header:
     teaser: /assets/images/screenshots/smart-crm-teaser.webp
 classes: wide
