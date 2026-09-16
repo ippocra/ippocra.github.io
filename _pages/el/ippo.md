@@ -1,7 +1,7 @@
 ---
 layout: landing_page
 lang: el
-permalink: /el/ippo
+permalink: /ippo
 nav_type: ippo
 title: "Ippo — ψηφιακή πλατφόρμα υγείας για οικογένειες"
 description: "Ippo, η ψηφιακή πλατφόρμα υγείας για οικογένειες. Οργανώστε, βρείτε και μοιραστείτε ιατρικά έγγραφα με ασφάλεια, συμμορφωμένο στο GDPR."
