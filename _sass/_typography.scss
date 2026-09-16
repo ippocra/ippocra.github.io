@@ -3,33 +3,33 @@
    -------------------------------------------------------------- */
 
 .page-title {
-  font-size: xxx-large;
+  font-size: 2.75rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: $dark-text;
 }
 
 .section-title {
-  font-size: xx-large;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   color: $dark-text;
 }
 
 .section-header {
-  font-size: larger;
+  font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: -0.02em;
   color: $dark-text;
 }
 
 .paragraph-lg {
-  font-size: larger;
+  font-size: 1.125rem;
   color: $gray-text;
 }
 
 .paragraph-md {
-  font-size: medium;
+  font-size: 1rem;
   color: $gray-text;
 }
 
@@ -43,9 +43,9 @@
 
 @media (min-width: 1024px) {
   .section-title {
-    font-size: xxx-large;
+    font-size: 2.75rem;
   }
   .paragraph-md {
-    font-size: large
+    font-size: 1.125rem
   }
 }
