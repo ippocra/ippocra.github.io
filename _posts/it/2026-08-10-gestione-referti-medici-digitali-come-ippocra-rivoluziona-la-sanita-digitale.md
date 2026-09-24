@@ -8,7 +8,7 @@ description: "Come Ippo, la piattaforma sanitaria digitale di Ippocra, risolve i
 keywords: gestione referti medici digitali, piattaforma salute digitale, archiviazione referti medici, condivisione referti online, sanità digitale Italia, documento sanitario elettronico, Ippo, Ippocra salute, cartella clinica digitale, refertazione telematica, DICOM viewer online
 page_id: gestione-referti-digitali
 header:
-    teaser: /assets/images/screenshots/ippo-health-platform-teaser.png
+    teaser: /assets/images/screenshots/ippo-health-platform-teaser.webp
 classes: wide
 ---
 

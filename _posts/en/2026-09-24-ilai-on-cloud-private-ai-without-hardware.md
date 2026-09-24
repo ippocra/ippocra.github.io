@@ -8,7 +8,7 @@ description: "Discover ILAI on Cloud: a private AI colleague on Italian infrastr
 keywords: ILAI on Cloud, private AI in the cloud, private artificial intelligence, AI for businesses, AI for SMEs, Italian infrastructure, private cloud AI, AI without hardware, cloud to on-premise, Ippocra
 page_id: ilai-on-cloud
 header:
-    teaser: /assets/images/screenshots/ilai-on-cloud-deployment-en.webp
+    teaser: /assets/images/screenshots/ilai-on-cloud-teaser.webp
 classes: wide
 ---
 
@@ -17,10 +17,10 @@ classes: wide
 [ILAI on Cloud](https://ilai.ippocra.com/en/cloud/) is designed for this situation: it lets a company start with ILAI without giving up a private architecture and without turning the beginning of the project into a hardware investment that must be planned before its value can be tested.
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/ilai-on-cloud-deployment-en.webp" alt="ILAI on Cloud and on-premise ILAI: two ways to use the same AI colleague" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/ilai-on-cloud-teaser.webp" alt="ILAI on Cloud and on-premise ILAI: two ways to use the same AI colleague" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
 
-ILAI remains one product, with two ways to deploy it: on the company’s own machine or in the cloud, on a unit dedicated to that customer. The right choice depends on where the business is today, its constraints, and how it wants to begin.
+ILAI remains one product, with two ways to deploy it: on the company’s own machine or in the cloud, on a unit dedicated to that customer. The right choice depends on where the business is today, its constraints, and how it wants to begin. We previously told [the story of how ILAI began](/en/welcome-ilai); today, that same idea can start without waiting for dedicated hardware.
 
 ## The question is not whether to use AI
 
@@ -28,7 +28,7 @@ Many businesses already know where an AI colleague could help: documents to anal
 
 The transition from curiosity to daily use can still be slowed by a practical question: **where should the AI run?**
 
-On-premise deployment remains the clearest choice for a company that wants processing inside its own network. But it requires a dedicated machine, suitable space, and an initial investment. For some businesses, that is the ideal solution. For others, it is a step that comes after the value of the project has been demonstrated.
+On-premise deployment remains the clearest choice for a company that wants processing inside its own network. But it requires a dedicated machine, suitable space, and an initial investment. For some businesses, that is the ideal solution. For others, it is a step that comes after the value of the project has been demonstrated. We explored this in [Local AI for SMEs](/en/local-ai-for-sme): the question is not only which model to use, but where the company’s data should remain.
 
 ILAI on Cloud removes that initial obstacle.
 
@@ -86,7 +86,7 @@ The goal is not to buy technology for its own sake. The goal is to understand wh
 
 The cloud does not have to become a permanent dependency. For many businesses, it can be the simplest way to start, learn, and measure the value of ILAI.
 
-Once the role of the AI colleague is clear, the company can decide to move to a dedicated machine at its own premises. The cloud-to-on-premise path is therefore part of the project from the beginning, not an unexpected migration to deal with later.
+Once the role of the AI colleague is clear, the company can decide to move to a dedicated machine at its own premises. The cloud-to-on-premise path is therefore part of the project from the beginning, not an unexpected migration to deal with later. It is the same logic behind [our move from one first ILAI to a farm of dedicated systems](/en/growing-ila-is-the-new-standard-for-local-artificial-intelligence): scale without losing control of each installation’s context.
 
 This approach separates two decisions that are often confused:
 
@@ -134,5 +134,3 @@ The service uses a monthly subscription. Pricing depends on the context and conf
 **How can I get started?**
 
 You can [visit the ILAI on Cloud page](https://ilai.ippocra.com/en/cloud/) and join the waitlist, or contact us at [info@ippocra.com](mailto:info@ippocra.com).
-
-<em>Related: [Local AI for SMEs: Why the cloud doesn’t work for businesses](/en/local-ai-for-sme) — a starting point for understanding when local AI is the right choice.</em>

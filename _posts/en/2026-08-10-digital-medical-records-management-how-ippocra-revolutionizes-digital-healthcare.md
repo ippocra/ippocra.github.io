@@ -8,7 +8,7 @@ description: "How Ippo, Ippocra's digital health platform, solves digital medica
 keywords: digital medical records management, digital health platform, medical records archiving, online records sharing, digital healthcare Italy, electronic health record, Ippo, Ippocra health, digital medical file, telemedicine reporting, online DICOM viewer
 page_id: digital-medical-records
 header:
-    teaser: /assets/images/screenshots/ippo-health-platform-teaser.png
+    teaser: /assets/images/screenshots/ippo-health-platform-teaser.webp
 classes: wide
 ---
 

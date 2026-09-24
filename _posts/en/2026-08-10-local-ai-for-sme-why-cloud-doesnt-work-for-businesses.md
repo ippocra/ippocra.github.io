@@ -8,7 +8,7 @@ description: "SMEs face a critical choice: continue with expensive, risky cloud 
 keywords: local artificial intelligence, local AI for SMEs, Italian AI, AI for small business, enterprise data privacy, cloud vs local AI, Ippocra, ILAI, business data management, intelligent automation, AI without cloud
 page_id: local-ai-for-sme
 header:
-    teaser: /assets/images/screenshots/ai-locale-pmi-teaser.png
+    teaser: /assets/images/screenshots/ai-locale-pmi-teaser.webp
 classes: wide
 ---
 

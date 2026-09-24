@@ -8,7 +8,7 @@ description: "Scopri ILAI on Cloud: un collega artificiale privato su infrastrut
 keywords: ILAI on Cloud, AI privata nel cloud, intelligenza artificiale privata, AI per aziende, AI per PMI, infrastruttura italiana, cloud AI privato, AI senza hardware, cloud to on-premise, Ippocra
 page_id: ilai-on-cloud
 header:
-    teaser: /assets/images/screenshots/ilai-on-cloud-deployment-it.webp
+    teaser: /assets/images/screenshots/ilai-on-cloud-teaser.webp
 classes: wide
 ---
 
@@ -17,10 +17,10 @@ classes: wide
 [ILAI on Cloud](https://ilai.ippocra.com/it/cloud/) nasce per questo: permette di iniziare con ILAI senza rinunciare a un’architettura privata e senza trasformare l’avvio del progetto in un investimento hardware da pianificare prima ancora di poterlo provare.
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/ilai-on-cloud-deployment-it.webp" alt="ILAI on Cloud e ILAI on-premise: due modalità per avere lo stesso collega artificiale" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/ilai-on-cloud-teaser.webp" alt="ILAI on Cloud e ILAI on-premise: due modalità per avere lo stesso collega artificiale" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
 
-ILAI resta un unico prodotto, con due modi di essere utilizzato: sulla macchina dell’azienda oppure nel cloud, su un’unità dedicata al singolo cliente. La scelta dipende dal momento in cui si trova l’azienda, dai suoi vincoli e dal modo in cui vuole iniziare.
+ILAI resta un unico prodotto, con due modi di essere utilizzato: sulla macchina dell’azienda oppure nel cloud, su un’unità dedicata al singolo cliente. La scelta dipende dal momento in cui si trova l’azienda, dai suoi vincoli e dal modo in cui vuole iniziare. Avevamo raccontato [come è nato ILAI](/welcome-ilai); oggi quella stessa idea può partire anche senza aspettare l’hardware dedicato.
 
 ## Il problema non è scegliere tra AI e niente AI
 
@@ -28,7 +28,7 @@ Molte aziende hanno già individuato i processi in cui un collega artificiale po
 
 Il passaggio dalla curiosità all’uso quotidiano, però, può essere rallentato da una domanda molto concreta: **dove deve funzionare l’AI?**
 
-L’installazione on-premise rimane la scelta più diretta per chi vuole tenere l’elaborazione dentro la propria rete. Ma richiede una macchina dedicata, uno spazio adeguato e un investimento iniziale. Per alcune aziende è la soluzione ideale; per altre è un passaggio che arriva dopo aver verificato il valore del progetto.
+L’installazione on-premise rimane la scelta più diretta per chi vuole tenere l’elaborazione dentro la propria rete. Ma richiede una macchina dedicata, uno spazio adeguato e un investimento iniziale. Per alcune aziende è la soluzione ideale; per altre è un passaggio che arriva dopo aver verificato il valore del progetto. È il tema che avevamo già affrontato parlando di [intelligenza artificiale locale per le PMI](/intelligenza-artificiale-locale-per-pmi): la questione non è solo quale modello usare, ma dove devono restare i dati dell’azienda.
 
 ILAI on Cloud elimina questo ostacolo iniziale.
 
@@ -86,7 +86,7 @@ Il punto non è acquistare tecnologia per il gusto di averla. Il punto è capire
 
 Il cloud non deve diventare una dipendenza permanente. Per molte aziende può essere il modo più semplice per iniziare, imparare e misurare il valore di ILAI.
 
-Quando il ruolo del collega artificiale è chiaro, l’azienda può decidere di passare a una macchina dedicata nella propria sede. Il percorso cloud → on-premise è quindi parte del progetto fin dall’inizio, non una migrazione imprevista da affrontare più avanti.
+Quando il ruolo del collega artificiale è chiaro, l’azienda può decidere di passare a una macchina dedicata nella propria sede. Il percorso cloud → on-premise è quindi parte del progetto fin dall’inizio, non una migrazione imprevista da affrontare più avanti. È la logica che ci ha permesso di passare [da un primo ILAI a una vera farm di sistemi dedicati](/la-crescita-degli-ilai-il-nuovo-standard-per-la-intelligenza-artificiale-in-locale): crescere senza perdere il controllo sul contesto di ciascuna installazione.
 
 Questo approccio permette di separare due decisioni che spesso vengono confuse:
 
@@ -134,5 +134,3 @@ Il servizio prevede un abbonamento mensile. Il prezzo dipende dal contesto e dal
 **Come posso iniziare?**
 
 Puoi [visitare la pagina ILAI on Cloud](https://ilai.ippocra.com/it/cloud/) e unirti alla lista d’attesa, oppure scrivere a [info@ippocra.com](mailto:info@ippocra.com).
-
-<em>Correlato: [Intelligenza artificiale locale per PMI: perché il cloud non funziona per le imprese](/intelligenza-artificiale-locale-per-pmi) — il punto di partenza per capire quando l’AI locale è la scelta giusta.</em>
