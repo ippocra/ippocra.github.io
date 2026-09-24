@@ -44,7 +44,7 @@ ILAI on Cloud è un’istanza privata di ILAI ospitata su una **unità dedicata 
 - infrastruttura ospitata in Italia;
 - la possibilità di iniziare senza acquistare subito hardware dedicato.
 
-Il prezzo non è pubblicato: le aziende interessate possono [scoprire il percorso ILAI on Cloud e unirsi alla lista d’attesa](https://ilai.ippocra.com/it/cloud/).
+Le aziende interessate possono [scoprire il percorso ILAI on Cloud e unirsi alla lista d’attesa](https://ilai.ippocra.com/it/cloud/).
 
 ## Seeweb e Regolo: cosa significa “privato” nel cloud
 

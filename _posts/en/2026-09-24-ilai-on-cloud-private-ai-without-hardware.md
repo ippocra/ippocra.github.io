@@ -44,7 +44,7 @@ It follows the same ILAI approach, with a different infrastructure model:
 - infrastructure hosted in Italy;
 - the ability to start without buying dedicated hardware immediately.
 
-Pricing is not published: interested businesses can [learn about ILAI on Cloud and join the waitlist](https://ilai.ippocra.com/en/cloud/).
+Interested businesses can [learn about ILAI on Cloud and join the waitlist](https://ilai.ippocra.com/en/cloud/).
 
 ## Seeweb and Regolo: what “private” means in the cloud
 
