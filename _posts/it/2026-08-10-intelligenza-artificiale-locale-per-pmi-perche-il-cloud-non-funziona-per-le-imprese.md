@@ -8,7 +8,7 @@ description: "Le PMI italiane affrontano un bivio: continuare con AI cloud costo
 keywords: intelligenza artificiale locale, AI locale per PMI, intelligenza artificiale italiana, AI per piccole imprese, privacy dati aziendali, cloud vs AI locale, Ippocra, ILAI, gestione dati aziendali, automazione intelligente, AI senza cloud
 page_id: ai-locale-per-pmi
 header:
-    teaser: /assets/images/screenshots/ai-locale-pmi-teaser.png
+    teaser: /assets/images/screenshots/ai-locale-pmi-teaser.webp
 classes: wide
 ---
 
