@@ -8,7 +8,7 @@ description: "Scopri ILAI on Cloud: un collega artificiale privato su infrastrut
 keywords: ILAI on Cloud, AI privata nel cloud, intelligenza artificiale privata, AI per aziende, AI per PMI, infrastruttura italiana, cloud AI privato, AI senza hardware, cloud to on-premise, Ippocra
 page_id: ilai-on-cloud
 header:
-    teaser: /assets/images/screenshots/ilai-on-cloud-deployment.webp
+    teaser: /assets/images/screenshots/ilai-on-cloud-deployment-it.webp
 classes: wide
 ---
 
@@ -17,7 +17,7 @@ classes: wide
 [ILAI on Cloud](https://ilai.ippocra.com/it/cloud/) nasce per questo: permette di iniziare con ILAI senza rinunciare a un’architettura privata e senza trasformare l’avvio del progetto in un investimento hardware da pianificare prima ancora di poterlo provare.
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/ilai-on-cloud-deployment.webp" alt="ILAI on Cloud e ILAI on-premise: due modalità per avere lo stesso collega artificiale" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/ilai-on-cloud-deployment-it.webp" alt="ILAI on Cloud e ILAI on-premise: due modalità per avere lo stesso collega artificiale" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
 
 ILAI resta un unico prodotto, con due modi di essere utilizzato: sulla macchina dell’azienda oppure nel cloud, su un’unità dedicata al singolo cliente. La scelta dipende dal momento in cui si trova l’azienda, dai suoi vincoli e dal modo in cui vuole iniziare.

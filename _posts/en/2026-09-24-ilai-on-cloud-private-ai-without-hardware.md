@@ -8,7 +8,7 @@ description: "Discover ILAI on Cloud: a private AI colleague on Italian infrastr
 keywords: ILAI on Cloud, private AI in the cloud, private artificial intelligence, AI for businesses, AI for SMEs, Italian infrastructure, private cloud AI, AI without hardware, cloud to on-premise, Ippocra
 page_id: ilai-on-cloud
 header:
-    teaser: /assets/images/screenshots/ilai-on-cloud-deployment.webp
+    teaser: /assets/images/screenshots/ilai-on-cloud-deployment-en.webp
 classes: wide
 ---
 
@@ -17,7 +17,7 @@ classes: wide
 [ILAI on Cloud](https://ilai.ippocra.com/en/cloud/) is designed for this situation: it lets a company start with ILAI without giving up a private architecture and without turning the beginning of the project into a hardware investment that must be planned before its value can be tested.
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/ilai-on-cloud-deployment.webp" alt="ILAI on Cloud and on-premise ILAI: two ways to use the same AI colleague" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/ilai-on-cloud-deployment-en.webp" alt="ILAI on Cloud and on-premise ILAI: two ways to use the same AI colleague" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
 
 ILAI remains one product, with two ways to deploy it: on the company’s own machine or in the cloud, on a unit dedicated to that customer. The right choice depends on where the business is today, its constraints, and how it wants to begin.
