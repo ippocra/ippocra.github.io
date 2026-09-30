@@ -417,7 +417,7 @@
                         <h2 class="mt-0 section-header">Richiedi una demo gratuita</h2>
 
                         <form id="ippocraForm" method="POST"
-                            action="https://hook.eu2.make.com/kmko599vdgvoi5xyyttkq4h2g3b9uys9"
+                            action="https://ilai.ippocra.com/api/ippocra-submit"
                             class="mt-10 p-0 mb-0 grid gap-4">
 
                             <!-- Name -->
@@ -479,6 +479,13 @@
                                 <textarea id="message" name="message" rows="4" class="input-field" required
                                     placeholder="Raccontaci qualcosa sulla tua clinica e cosa vorresti vedere"></textarea>
                             </div>
+                            <!-- Honeypot + time-trap (anti-spam, hidden from users) -->
+                            <div class="hidden" aria-hidden="true">
+                                <label>Leave this field empty</label>
+                                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                                <input type="hidden" id="form-start-ts" name="form_start_ts">
+                            </div>
+
 
                             <!-- Submit button -->
                             <div class="text-center">
@@ -621,6 +628,10 @@
             const customWrap = document.getElementById('phone_prefix_custom_wrap');
             const customEl = document.getElementById('phone_prefix_custom');
 
+            // Timestamp for time-trap anti-spam
+            const tsField = document.getElementById('form-start-ts');
+            if (tsField) tsField.value = Date.now();
+
             // show/hide custom prefix input when user selects "Altro"
             if (prefixEl && customWrap && customEl) {
                 const toggleCustom = () => {
@@ -655,20 +666,7 @@
                     btn.innerHTML = '<svg class="animate-spin h-5 w-5 mr-2 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8z"/></svg> Invio…';
                 }
 
-                try {
-                    // costruisci FormData e concatena prefisso+numero (solo cifre, senza spazi)
-                    const formData = new FormData(form);
-
-                    // escape della descrizione/messaggio per essere valido come stringa JSON
-                    const messageEl = form.querySelector('#message');
-                    if (messageEl) {
-                        const rawMsg = messageEl.value || '';
-                        // JSON.stringify produce una stringa quotata e correttamente escape-ata;
-                        // rimuoviamo le virgolette esterne per ottenere il contenuto escape-ato.
-                        const escapedMsg = JSON.stringify(rawMsg).slice(1, -1);
-                        formData.set('message', escapedMsg);
-                    }
-
+                                try {
                     // determina prefisso (select o custom)
                     let prefixValue = '';
                     if (prefixEl) {
@@ -693,15 +691,23 @@
 
                     if (!combined) throw new Error('Telefono non valido');
 
-                    // sovrascrivi il campo phone con il valore combinato (solo cifre)
-                    formData.set('phone', combined);
-                    // rimuovi i singoli campi legati al prefisso per evitare duplicati
-                    formData.delete('phone_prefix');
-                    formData.delete('phone_prefix_custom');
+                    const messageEl = form.querySelector('#message');
 
-                    const response = await fetch(form.action, {
+                    const payload = {
+                        name: (form.querySelector('#name') ? form.querySelector('#name').value : '').trim(),
+                        lastname: (form.querySelector('#lastname') ? form.querySelector('#lastname').value : '').trim(),
+                        email: (form.querySelector('#email') ? form.querySelector('#email').value : '').trim(),
+                        phone: combined,
+                        message: messageEl ? messageEl.value : '',
+                        page: window.location.pathname,
+                        website: document.getElementById('website') ? document.getElementById('website').value : '',
+                        form_start_ts: document.getElementById('form-start-ts') ? document.getElementById('form-start-ts').value : '',
+                    };
+
+                    const response = await fetch('https://ilai.ippocra.com/api/ippocra-submit', {
                         method: 'POST',
-                        body: formData,
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload),
                     });
 
                     if (!response.ok) {
