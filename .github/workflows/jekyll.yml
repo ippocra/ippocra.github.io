@@ -47,6 +47,8 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Fix sitemap (add ILAI + Ippo standalone pages)
+        run: ruby scripts/fix-sitemap.rb
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3

@@ -1927,7 +1927,7 @@ body {
   transform: translateY(6px);
   transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
   box-shadow: 0 12px 32px rgba(0,0,0,0.45);
-  z-index: 60;
+  z-index: 200;
 }
 .nav-dropdown:hover .dropdown-panel,
 .nav-dropdown:focus-within .dropdown-panel {
