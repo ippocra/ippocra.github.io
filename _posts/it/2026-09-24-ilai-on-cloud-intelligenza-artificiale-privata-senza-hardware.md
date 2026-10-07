@@ -14,7 +14,7 @@ classes: wide
 
 **Vuoi usare un collega artificiale nella tua azienda, ma non vuoi aspettare l’acquisto e l’installazione di una macchina dedicata?**
 
-[ILAI on Cloud](https://ilai.ippocra.com/it/cloud/) nasce per questo: permette di iniziare con ILAI senza rinunciare a un’architettura privata e senza trasformare l’avvio del progetto in un investimento hardware da pianificare prima ancora di poterlo provare.
+[ILAI on Cloud](/ilai/cloud/) nasce per questo: permette di iniziare con ILAI senza rinunciare a un’architettura privata e senza trasformare l’avvio del progetto in un investimento hardware da pianificare prima ancora di poterlo provare.
 
 <p style="text-align:center;">
   <img src="/assets/images/screenshots/ilai-on-cloud-teaser.webp" alt="ILAI on Cloud e ILAI on-premise: due modalità per avere lo stesso collega artificiale" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
@@ -44,7 +44,7 @@ ILAI on Cloud è un’istanza privata di ILAI ospitata su una **unità dedicata 
 - infrastruttura ospitata in Italia;
 - la possibilità di iniziare senza acquistare subito hardware dedicato.
 
-Le aziende interessate possono [scoprire il percorso ILAI on Cloud e unirsi alla lista d’attesa](https://ilai.ippocra.com/it/cloud/).
+Le aziende interessate possono [scoprire il percorso ILAI on Cloud e unirsi alla lista d’attesa](/ilai/cloud/).
 
 ## Seeweb e Regolo: cosa significa “privato” nel cloud
 
@@ -105,7 +105,7 @@ Il percorso è semplice:
 4. si configura l’unità dedicata e si inizia a lavorare sul caso d’uso;
 5. in seguito, si decide se restare nel cloud o passare all’installazione on-premise.
 
-Se vuoi capire quale delle due modalità è più adatta alla tua azienda, [scopri ILAI on Cloud](https://ilai.ippocra.com/it/cloud/) oppure scrivici a [info@ippocra.com](mailto:info@ippocra.com).
+Se vuoi capire quale delle due modalità è più adatta alla tua azienda, [scopri ILAI on Cloud](/ilai/cloud/) oppure scrivici a [info@ippocra.com](mailto:info@ippocra.com).
 
 ---
 
@@ -133,4 +133,4 @@ Il servizio prevede un abbonamento mensile. Il prezzo dipende dal contesto e dal
 
 **Come posso iniziare?**
 
-Puoi [visitare la pagina ILAI on Cloud](https://ilai.ippocra.com/it/cloud/) e unirti alla lista d’attesa, oppure scrivere a [info@ippocra.com](mailto:info@ippocra.com).
+Puoi [visitare la pagina ILAI on Cloud](/ilai/cloud/) e unirti alla lista d’attesa, oppure scrivere a [info@ippocra.com](mailto:info@ippocra.com).

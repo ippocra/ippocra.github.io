@@ -22,7 +22,7 @@ Partiamo da quello che conta davvero.
 
 In ogni contenuto video che Ippocra pubblica, le parti più importanti restano quelle che solo una persona può dare: **l'idea, la strategia, lo script**. Perché il video deve dire qualcosa di vero sulla tua azienda, al momento giusto, alle persone giuste.
 
-Il resto — la generazione delle scene, la voce, la musica, le sottotitoli, l'assemblaggio finale — è un lavoro che l'AI, con le "skills" giuste, sa eseguire. Ed è esattamente questo il modello di [ILAI](https://ilai.ippocra.com/it/): non un generatore di video magicamente autonomo, ma un collega artificiale che prende una direzione chiara e la trasforma in contenuto, in modo ripetibile.
+Il resto — la generazione delle scene, la voce, la musica, le sottotitoli, l'assemblaggio finale — è un lavoro che l'AI, con le "skills" giuste, sa eseguire. Ed è esattamente questo il modello di [ILAI](/ilai/): non un generatore di video magicamente autonomo, ma un collega artificiale che prende una direzione chiara e la trasforma in contenuto, in modo ripetibile.
 
 ## Come funziona davvero: il flusso semi-automatico
 
@@ -106,7 +106,7 @@ Il video è il contenuto che funziona meglio su ogni canale: YouTube, Instagram,
 
 Ora esiste la terza opzione: **produrlo dentro casa**, con un'AI che gira sulla tua infrastruttura, con i tuoi dati che non escono da nessuna parte, e con un costo che sai esattamente quanto è.
 
-Se vuoi capire come la produzione di contenuti video in locale può funzionare nella tua azienda, scrivici a [info@ippocra.com](mailto:info@ippocra.com) o visita [ilai.ippocra.com](https://ilai.ippocra.com/it/).
+Se vuoi capire come la produzione di contenuti video in locale può funzionare nella tua azienda, scrivici a [info@ippocra.com](mailto:info@ippocra.com) o visita [ippocra.com/ilai](/ilai/).
 
 ---
 

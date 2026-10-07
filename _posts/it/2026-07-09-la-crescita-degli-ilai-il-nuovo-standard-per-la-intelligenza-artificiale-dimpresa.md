@@ -80,7 +80,7 @@ Se sei un'azienda che gestisce informazioni sensibili e sei stanco di chiederti 
 
 Ogni ILAI è unico perché ogni azienda è unica. Ci piacerebbe costruirne uno per te.
 
-Scrivici a [info@ippocra.com](mailto:info@ippocra.com) o visita [ilai.ippocra.com](https://ilai.ippocra.com/it/) per saperne di più.
+Scrivici a [info@ippocra.com](mailto:info@ippocra.com) o visita [ippocra.com/ilai](/ilai/) per saperne di più.
 
 ---
 

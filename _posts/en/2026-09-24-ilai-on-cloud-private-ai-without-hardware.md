@@ -14,7 +14,7 @@ classes: wide
 
 **Would you like to use an AI colleague in your business, but do not want to wait for dedicated hardware to be purchased and installed?**
 
-[ILAI on Cloud](https://ilai.ippocra.com/en/cloud/) is designed for this situation: it lets a company start with ILAI without giving up a private architecture and without turning the beginning of the project into a hardware investment that must be planned before its value can be tested.
+[ILAI on Cloud](/en/ilai/cloud/) is designed for this situation: it lets a company start with ILAI without giving up a private architecture and without turning the beginning of the project into a hardware investment that must be planned before its value can be tested.
 
 <p style="text-align:center;">
   <img src="/assets/images/screenshots/ilai-on-cloud-teaser.webp" alt="ILAI on Cloud and on-premise ILAI: two ways to use the same AI colleague" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
@@ -44,7 +44,7 @@ It follows the same ILAI approach, with a different infrastructure model:
 - infrastructure hosted in Italy;
 - the ability to start without buying dedicated hardware immediately.
 
-Interested businesses can [learn about ILAI on Cloud and join the waitlist](https://ilai.ippocra.com/en/cloud/).
+Interested businesses can [learn about ILAI on Cloud and join the waitlist](/en/ilai/cloud/).
 
 ## Seeweb and Regolo: what “private” means in the cloud
 
@@ -105,7 +105,7 @@ The process is straightforward:
 4. configure the dedicated unit and begin working on the use case;
 5. later, decide whether to remain in the cloud or move to on-premise deployment.
 
-If you want to understand which deployment model is right for your business, [discover ILAI on Cloud](https://ilai.ippocra.com/en/cloud/) or contact us at [info@ippocra.com](mailto:info@ippocra.com).
+If you want to understand which deployment model is right for your business, [discover ILAI on Cloud](/en/ilai/cloud/) or contact us at [info@ippocra.com](mailto:info@ippocra.com).
 
 ---
 
@@ -133,4 +133,4 @@ The service uses a monthly subscription. Pricing depends on the context and conf
 
 **How can I get started?**
 
-You can [visit the ILAI on Cloud page](https://ilai.ippocra.com/en/cloud/) and join the waitlist, or contact us at [info@ippocra.com](mailto:info@ippocra.com).
+You can [visit the ILAI on Cloud page](/en/ilai/cloud/) and join the waitlist, or contact us at [info@ippocra.com](mailto:info@ippocra.com).

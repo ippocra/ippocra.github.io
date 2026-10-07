@@ -42,7 +42,7 @@ Time to prepare the product. To turn the experiment into something solid, stable
 
 ## June: the product is ready and we've sold our first ILAI
 
-By mid-June, the work was done. ILAI was tested and market-ready. We packaged it all up: the product, the documentation, the site at [ilai.ippocra.com](https://ilai.ippocra.com/), everything ready.
+By mid-June, the work was done. ILAI was tested and market-ready. We packaged it all up: the product, the documentation, the site at [ippocra.com/ilai](/ilai/), everything ready.
 
 The product is so interesting and revolutionary that **we've already sold our first ILAI.**
 
@@ -73,7 +73,7 @@ ILAI is an artificial intelligence that runs locally on your infrastructure. Thi
 
 If you're an entrepreneur, a professional or a business that wants to understand how local artificial intelligence can work in your context, let's talk.
 
-Every business has different needs and every ILAI is customised. Write to us at [info@ippocra.com](mailto:info@ippocra.com) or visit [ilai.ippocra.com](https://ilai.ippocra.com/) to learn more.
+Every business has different needs and every ILAI is customised. Write to us at [info@ippocra.com](mailto:info@ippocra.com) or visit [ippocra.com/ilai](/ilai/) to learn more.
 
 ILAI is ready. Are you?
 
