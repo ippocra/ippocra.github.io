@@ -68,13 +68,13 @@
                 </div>
             </div>
 
-            <!-- Three-card row: ILAI · Ippo · Ideallab -->
+            <!-- Two-product row: ILAI · Ippo (Ideallab moved to footer) -->
             <p class="text-center mb-6" style="color:#888; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:600;">
                 I nostri prodotti
             </p>
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div class="gateway-grid">
 
-                <!-- Compact ILAI card -->
+                <!-- ILAI card -->
                 <div class="gateway-card gateway-card-ilai-compact">
                     <div class="gateway-brand gateway-brand-ilai-compact">
                         <div class="gateway-brand-mark gateway-brand-mark-ilai" aria-hidden="true" style="width:2.75rem; height:2.75rem; border-radius:0.75rem;">
@@ -82,14 +82,15 @@
                         </div>
                         <div class="gateway-brand-copy">
                             <p class="gateway-brand-kicker" style="color:#8aa8a2;">ILAI</p>
+                            <p class="gateway-brand-subtitle">AI locale per le imprese</p>
                         </div>
                     </div>
                     <p class="paragraph-sm" style="color:#c8d9d5; margin:0 0 1rem;">
                         AI locale per le imprese. Dati riservati, zero lock-in, zero cloud.
                     </p>
-                    <a href="/ilai/casi-d-uso/"
+                    <a href="/ilai/"
                         class="gateway-card-cta gateway-card-cta-ilai gateway-card-cta-sm">
-                        Casi d'uso ILAI <i class="fas fa-arrow-right ml-1"></i>
+                        Scopri ILAI <i class="fas fa-arrow-right ml-1"></i>
                     </a>
                 </div>
 
@@ -112,26 +113,6 @@
                     </a>
                 </div>
 
-                <!-- Ideallab card -->
-                <div class="gateway-card gateway-card-ideallab">
-                    <div class="gateway-brand gateway-brand-ideallab">
-                        <div class="gateway-brand-mark gateway-brand-mark-ideallab" aria-hidden="true" style="width:2.75rem; height:2.75rem; border-radius:0.75rem;">
-                            <img src="{{ '/assets/ideallab-favicon.svg' | relative_url }}" alt="Ideallab" style="width:2.25rem; height:2.25rem; object-fit:contain;">
-                        </div>
-                        <div class="gateway-brand-copy">
-                            <p class="gateway-brand-kicker" style="color:#c4944a;">Ideallab</p>
-                            <p class="gateway-brand-subtitle" style="color:#d4c4a8;">Consulenza software</p>
-                        </div>
-                    </div>
-                    <p class="paragraph-sm" style="color:#d4c4a8; margin:0 0 1rem;">
-                        Software personalizzato per le PMI. Consulenza, sviluppo e soluzioni su misura.
-                    </p>
-                    <a href="https://ideallab.org/it/" target="_blank" rel="noopener noreferrer"
-                        class="gateway-card-cta gateway-card-cta-ideallab gateway-card-cta-sm">
-                        Vai a Ideallab <i class="fas fa-arrow-right ml-1"></i>
-                    </a>
-                </div>
-
             </div>
         </div>
     </section>
@@ -150,6 +131,19 @@
         display: flex;
         flex-direction: column;
         position: relative;
+    }
+    /* ---- Two-product grid (ILAI + Ippo) — self-contained, no Tailwind dep ---- */
+    .gateway-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 56rem;
+        margin: 0 auto 4rem;
+    }
+    @media (min-width: 768px) {
+        .gateway-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
     }
     .gateway-card:hover {
         transform: translateY(-2px);
