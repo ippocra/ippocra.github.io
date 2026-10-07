@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Load shared footer (language-aware)
-  const isItalian = location.pathname.includes('/it/') || (!location.pathname.includes('/en/') && (location.pathname === '/' || location.pathname === ''));
+  const isItalian = !location.pathname.includes('/en/');
   fetch(isItalian ? '/footer-it.html' : '/footer-en.html')
     .then(r => r.text())
     .then(html => {
