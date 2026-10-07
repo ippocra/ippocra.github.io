@@ -27,7 +27,7 @@
 
         <!-- Gateway nav: ILAI, Ippo -->
         <li class="masthead__menu-item">
-          <a href="{{ site.active_lang == 'en' ? '/en/ilai/' : '/ilai/' }}">
+          <a href="{% if site.active_lang == 'en' %}/en/ilai/{% else %}/ilai/{% endif %}">
             ILAI <i class="fas fa-arrow-right" style="font-size:0.7em; margin-left:2px;"></i>
           </a>
         </li>

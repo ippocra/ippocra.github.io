@@ -27,7 +27,7 @@
 
         <li class="masthead__menu-item">
           <a
-            href="{{ site.active_lang == 'en' ? '/en/ilai/' : '/ilai/' }}"
+            href="{% if site.active_lang == 'en' %}/en/ilai/{% else %}/ilai/{% endif %}"
           >ILAI</a>
         </li>
 
