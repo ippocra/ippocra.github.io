@@ -27,8 +27,13 @@
   }
 
   function getSection(el) {
-    const section = el.closest('section');
-    return section ? section.querySelector('h2')?.textContent?.trim() || 'unknown-section' : 'unknown-section';
+    var section = el.closest('section');
+    if (!section) return 'unknown-section';
+    var heading = section.querySelector('h2');
+    if (heading && heading.textContent) {
+      return heading.textContent.trim() || 'unknown-section';
+    }
+    return 'unknown-section';
   }
 
   function getLang() {
