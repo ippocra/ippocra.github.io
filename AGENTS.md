@@ -30,7 +30,7 @@ This is a **Jekyll 4.4** marketing website for Ippocra, using the **Minimal Mist
 ### Brand structure
 
 - **Ippocra** — the parent company. Main site at ippocra.com.
-- **ILAI** (Ippocra Local Artificial Intelligence) — flagship product. Hosted at `ilai.ippocra.com` (separate repo).
+- **ILAI** (Ippocra Local Artificial Intelligence) — flagship product. Content served at `ippocra.com/ilai/` (this repo, under `ilai/` and `en/ilai/`). Form backend at `ilai.ippocra.com/api/` (separate Dokku app, `ilai-site` repo).
 - **Ippo** — digital health platform for families. Sub-page on ippocra.com (`/ippo`).
 - **Ideallab** — custom software & AI consultancy for SMEs. Separate site at `ideallab.org`.
 

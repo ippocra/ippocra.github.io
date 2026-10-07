@@ -56,7 +56,7 @@ L'Italia ha oltre 4 milioni di PMI. Molte di queste hanno dati sensibili — con
 
 ## ILAI: l'AI locale pensata per le imprese
 
-Abbiamo costruito [ILAI](https://ilai.ippocra.com/it/) proprio per rispondere a queste esigenze. Non è un chatbot — è un **collega digitale** che:
+Abbiamo costruito [ILAI](/ilai/) proprio per rispondere a queste esigenze. Non è un chatbot — è un **collega digitale** che:
 
 - Lavora con i tuoi documenti, procedure e risorse interne
 - Si adatta ai tuoi processi aziendali
@@ -85,7 +85,7 @@ Non serve cambiare tutta la tua infrastruttura per iniziare. Con l'AI locale puo
 2. **Imparare e crescere.** ILAI si adatta alla tua azienda
 3. **Espandere gradualmente.** Man mano che vedi i risultati, aggiungi nuovi workflow
 
-Se vuoi capire come l'intelligenza artificiale locale può funzionare nella tua azienda, scrivici a [info@ippocra.com](mailto:info@ippocra.com) o visita [ilai.ippocra.com](https://ilai.ippocra.com/it/).
+Se vuoi capire come l'intelligenza artificiale locale può funzionare nella tua azienda, scrivici a [info@ippocra.com](mailto:info@ippocra.com) o visita [ippocra.com/ilai](/ilai/).
 
 ---
 

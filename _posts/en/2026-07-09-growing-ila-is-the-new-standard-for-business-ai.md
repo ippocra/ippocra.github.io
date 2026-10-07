@@ -78,7 +78,7 @@ If you're a business that handles sensitive information and you're tired of wond
 
 Every ILAI is unique because every business is unique. We'd love to build one for you.
 
-Write to us at [info@ippocra.com](mailto:info@ippocra.com) or visit [ilai.ippocra.com](https://ilai.ippocra.com/) to learn more.
+Write to us at [info@ippocra.com](mailto:info@ippocra.com) or visit [ippocra.com/ilai](/ilai/) to learn more.
 
 ---
 

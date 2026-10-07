@@ -42,7 +42,7 @@ Era tempo di preparare il prodotto. Di trasformare l'esperimento in qualcosa di 
 
 ## Giugno: il prodotto è pronto e abbiamo venduto il primo ILAI
 
-A metà giugno, il lavoro era fatto. ILAI era testato e preparato per il mercato. L'abbiamo impacchettato tutto insieme: il prodotto, la documentazione, il sito [ilai.ippocra.com](https://ilai.ippocra.com/it/), tutto pronto.
+A metà giugno, il lavoro era fatto. ILAI era testato e preparato per il mercato. L'abbiamo impacchettato tutto insieme: il prodotto, la documentazione, il sito [ippocra.com/ilai](/ilai/), tutto pronto.
 
 Il prodotto è cosí interessante e rivoluzionario che **abbiamo già venduto il nostro primo ILAI.**
 
@@ -73,7 +73,7 @@ ILAI è un'intelligenza artificiale che gira localmente sulla tua infrastruttura
 
 Se sei un imprenditore, un professionista o un'azienda che vuole capire come l'intelligenza artificiale locale può funzionare nel tuo contesto, parliamone.
 
-Ogni impresa ha bisogni diversi e ogni ILAI è personalizzato. Scrivici a [info@ippocra.com](mailto:info@ippocra.com) o visita [ilai.ippocra.com](https://ilai.ippocra.com/it/) per scoprire di più.
+Ogni impresa ha bisogni diversi e ogni ILAI è personalizzato. Scrivici a [info@ippocra.com](mailto:info@ippocra.com) o visita [ippocra.com/ilai](/ilai/) per scoprire di più.
 
 ILAI è pronto. Sei pronto tu?
 

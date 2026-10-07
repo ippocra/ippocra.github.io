@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="/ilai/assets/favicon.ico" sizes="any">
+  <link rel="icon" href="/ilai/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/ilai/assets/favicon-180x180.png">
+  <link rel="manifest" href="/ilai/assets/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e0e10" />
+  <title>Mini Valutazione AI — Quanto è pronta la tua azienda? | ILAI</title>
+  <meta name="description" content="Completa la mini-valutazione AI di Ippocra in 3 minuti. Scopri dove la tua azienda può guadagnare tempo con un collega AI locale. Risultato via email entro 24 ore." />
+  <meta name="keywords" content="mini valutazione AI, readiness AI, AI locale, Ippocra, ILAI, valutazione aziendale" />
+  <meta name="author" content="Ippocra" />
+  <link rel="canonical" href="https://ippocra.com/ilai/valutazione-ai/" />
+  <link rel="alternate" hreflang="it" href="https://ippocra.com/ilai/valutazione-ai/" />
+  <link rel="alternate" hreflang="en" href="https://ippocra.com/en/ilai/mini-ai-assessment/" />
+  <link rel="alternate" hreflang="x-default" href="https://ippocra.com/ilai/valutazione-ai/" />
+  <meta property="og:title" content="Mini Valutazione AI — Quanto è pronta la tua azienda? | ILAI" />
+  <meta property="og:description" content="Completa la mini-valutazione AI di Ippocra in 3 minuti. Scopri dove la tua azienda può guadagnare tempo con un collega AI locale." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ippocra.com/ilai/valutazione-ai/" />
+  <meta property="og:image" content="https://ippocra.com/ilai/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ILAI — Ippocra Local AI" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:site_name" content="ILAI" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mini Valutazione AI | ILAI" />
+  <meta name="twitter:description" content="Scopri in 3 minuti dove la tua azienda può guadagnare tempo con un collega AI locale." />
+  <meta name="twitter:image" content="https://ippocra.com/ilai/assets/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ilai/style.css" />
+  <style>
+    .assessment-hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      padding: 100px 0 60px;
+    }
+    .sneak-peak {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      max-width: 640px;
+      margin: 40px auto 0;
+      text-align: left;
+    }
+    .sneak-peak h3 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .sneak-peak ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .sneak-peak li {
+      font-size: 15px;
+      color: var(--text-muted);
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.6;
+    }
+    .sneak-peak li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+    .privacy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-muted);
+      background: var(--accent-dim);
+      border: 1px solid rgba(46, 125, 136, 0.25);
+      border-radius: 100px;
+      padding: 8px 18px;
+      margin-top: 24px;
+    }
+    .privacy-badge::before {
+      content: "🔒";
+      font-size: 14px;
+    }
+    .assessment-form {
+      max-width: 640px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .assessment-form .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .assessment-form label {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+    .assessment-form input[type="text"],
+    .assessment-form input[type="email"],
+    .assessment-form select,
+    .assessment-form textarea {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      color: var(--text);
+      transition: border-color 0.2s ease;
+      outline: none;
+      width: 100%;
+    }
+    .assessment-form input:focus,
+    .assessment-form select:focus,
+    .assessment-form textarea:focus {
+      border-color: var(--accent);
+    }
+    .assessment-form input::placeholder,
+    .assessment-form textarea::placeholder {
+      color: var(--text-muted);
+      opacity: 0.6;
+    }
+    .assessment-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .assessment-form select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239898a0' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      color: var(--text);
+      cursor: pointer;
+    }
+    .checkbox-group input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+    .form-submit {
+      margin-top: 16px;
+    }
+    .form-submit .btn {
+      width: 100%;
+      justify-content: center;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 48px 24px;
+      background: var(--surface);
+      border: 1px solid var(--accent);
+      border-radius: 16px;
+    }
+    .form-success h2 {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .form-success p {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+    .form-success .spam-note {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+    /* Honeypot — visually hidden but present for bots */
+    .hp-field {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/ilai/" class="logo">
+        <span>ILAI</span>
+        <span class="logo-sub">Ippocra</span>
+      </a>
+      <div class="nav-right">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+                        <div class="nav-links">
+          <a href="/ilai/" class="nav-link">Home</a>
+          <a href="/ilai/cosa-fa/" class="nav-link">Cosa fa</a>
+          <div class="nav-dropdown">
+            <a href="/ilai/casi-d-uso/" class="nav-link">Casi d'uso</a>
+            <span class="caret">▾</span>
+            <div class="dropdown-panel">
+              <span class="dropdown-group">Generale</span>
+              <a href="/ilai/casi-d-uso/" class="dropdown-link">Casi d'uso</a>
+              <span class="dropdown-note">I workflow generici: documenti, procedure, email, report e supporto al team.</span>
+              <hr class="dropdown-sep">
+              <span class="dropdown-group">Specializzata</span>
+              <a href="/ilai/contratti/" class="dropdown-link">ILAI Contracts</a>
+              <span class="dropdown-note">Contratti letti in 20 minuti</span>
+              <a href="/ilai/preventivi/" class="dropdown-link">ILAI Preventivi</a>
+              <span class="dropdown-note">Da 4-5 ore a 5 minuti — preventivi su misura dei tuoi dati →</span>
+            </div>
+          </div>
+          <a href="/ilai/cloud/" class="nav-link">Cloud</a>
+          <a href="/ilai/faq/" class="nav-link">FAQ</a>
+          <a href="/it/#contact" class="nav-link">Contatti</a>
+        </div>
+        <a href="/ilai/valutazione-ai/" class="btn btn-nav">Valutazione →</a>
+        <a href="/en/ilai/assessment/" class="lang-switcher" title="Switch to English" aria-label="Switch to English" lang="en">EN</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/ilai/">Home</a>
+    <a href="/ilai/cosa-fa/">Cosa fa</a>
+    <a href="/ilai/casi-d-uso/">Casi d'uso</a>
+    <a href="/ilai/contratti/">ILAI Contracts</a>
+    <a href="/ilai/preventivi/">ILAI Preventivi</a>
+    <a href="/ilai/cloud/">Cloud</a>
+    <a href="/ilai/faq/">FAQ</a>
+    <a href="/it/#contact">Contatti</a>
+    <div class="mobile-cta"><a href="/it/#contact">Parliamone →</a></div>
+    <div class="mobile-lang"><a href="/en/ilai/assessment/">EN</a></div>
+  </div>
+
+  <section class="hero assessment-hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="eyebrow">Gratuito · 3 minuti</div>
+      <h1 class="hero-headline">Quanto è pronta la tua<br>azienda per l'AI locale?</h1>
+      <p class="hero-sub">Rispondi a 8 domande sulla tua azienda e ricevi una mini-valutazione personalizzata: un'analisi del tuo contesto, un collo di bottiglia identificato e una prima raccomandazione pratica.</p>
+
+      <div class="sneak-peak fade-in">
+        <h3>Cosa riceverai</h3>
+        <ul>
+          <li>Un'analisi del tuo contesto aziendale in base alle tue risposte</li>
+          <li>Un collo di bottiglia specifico identificato nel tuo workflow</li>
+          <li>Una prima raccomandazione pratica che puoi applicare subito</li>
+          <li>Un'anteprima di dove la valutazione completa porterebbe la tua azienda</li>
+        </ul>
+      </div>
+
+      <div class="privacy-badge">I dati vengono elaborati localmente sulla nostra infrastruttura. Nessun dato lascia la rete Ippocra.</div>
+    </div>
+  </section>
+
+  <section class="section" id="assessment">
+    <div class="container">
+      <div class="section-label">Mini Valutazione</div>
+      <h2 class="section-title" style="text-align:center; margin-bottom: 48px;">Raccontaci della tua azienda</h2>
+
+      <div id="assessment-form-wrapper">
+        <form id="assessment-form" class="assessment-form" novalidate>
+          <!-- Hidden fields: timestamp for time-trap -->
+          <input type="hidden" name="form_start_ts" id="form-start-ts" />
+
+          <!-- Honeypot — bots fill this, humans don't see it -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="website">Lascia vuoto</label>
+            <input type="text" name="website" id="website" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="form-group">
+            <label for="company">Nome della tua azienda *</label>
+            <input type="text" name="company" id="company" placeholder="Es. Rossi & Figli S.r.l." required />
+          </div>
+
+          <div class="form-group">
+            <label for="name">Il tuo nome *</label>
+            <input type="text" name="name" id="name" placeholder="Nome e cognome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email di lavoro *</label>
+            <input type="email" name="email" id="email" placeholder="nome@azienda.it" required />
+          </div>
+
+          <div class="form-group">
+            <label>Quali documenti gestisce la tua azienda? <span style="opacity:0.5">(seleziona tutte quelle che applicano)</span></label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="documents" value="contracts" /> Contratti e proposte</label>
+              <label><input type="checkbox" name="documents" value="client-data" /> Dati di clienti</label>
+              <label><input type="checkbox" name="documents" value="internal-notes" /> Note e report interni</label>
+              <label><input type="checkbox" name="documents" value="financial" /> Documenti finanziari</label>
+              <label><input type="checkbox" name="documents" value="medical" /> Dati medici / sanitari</label>
+              <label><input type="checkbox" name="documents" value="none" /> Nessuno di questi</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="hours_lost">Quante ore a settimana perde il tuo team in lavoro manuale ripetitivo?</label>
+            <select name="hours_lost" id="hours_lost">
+              <option value="">Seleziona…</option>
+              <option value="under-2">Meno di 2 ore</option>
+              <option value="2-5">2 – 5 ore</option>
+              <option value="5-10">5 – 10 ore</option>
+              <option value="10-20">10 – 20 ore</option>
+              <option value="20-plus">Più di 20 ore</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="gpu">Hai già una workstation con GPU dedicata?</label>
+            <select name="gpu" id="gpu">
+              <option value="">Seleziona…</option>
+              <option value="yes">Sì</option>
+              <option value="no">No</option>
+              <option value="dont-know">Non lo so</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="data_on_prem">I dati devono restare in azienda per motivi di compliance o privacy?</label>
+            <select name="data_on_prem" id="data_on_prem">
+              <option value="">Seleziona…</option>
+              <option value="yes">Sì, è un requisito</option>
+              <option value="maybe">Sarebbe preferibile</option>
+              <option value="no">No, non è un problema</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Budget indicativo per un progetto AI?</label>
+            <select name="budget" id="budget">
+              <option value="">Seleziona…</option>
+              <option value="under-3k">Meno di €3.000</option>
+              <option value="3-7k">€3.000 – €7.000</option>
+              <option value="7-15k">€7.000 – €15.000</option>
+              <option value="15k-plus">Più di €15.000</option>
+              <option value="not-sure">Non sono sicuro/a</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="channel">Quale canale useresti per parlare con un collega AI?</label>
+            <select name="channel" id="channel">
+              <option value="">Seleziona…</option>
+              <option value="slack">Slack</option>
+              <option value="whatsapp">WhatsApp</option>
+              <option value="teams">Microsoft Teams</option>
+              <option value="email">Email</option>
+              <option value="other">Altro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Raccontaci il workflow che vorresti migliorare <span style="opacity:0.5">(facoltativo)</span></label>
+            <textarea name="notes" id="notes" placeholder="Es. ogni mattina passo 40 minuti a compilare report dai dati che arrivano via email…"></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary btn-hero" id="submit-btn">Ricevi la tua mini-valutazione →</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-success" id="form-success">
+        <h2>✓ Richiesta inviata</h2>
+        <p>Grazie! La tua mini-valutazione sarà pronta entro <strong>24 ore</strong> e ti arriverà via email da <strong>sara@ippocra.com</strong>.</p>
+        <p class="spam-note">Controlla anche la cartella Spam / Post indesiderati.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="/ilai/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Timestamp for time-trap anti-spam
+      const tsField = document.getElementById('form-start-ts');
+      if (tsField) tsField.value = Date.now();
+
+      const form = document.getElementById('assessment-form');
+      if (!form) return;
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Basic validation
+        const company = form.company.value.trim();
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+
+        if (!company || !name || !email) {
+          alert('Per favore compila i campi obbligatori (con *).');
+          return;
+        }
+        if (!/^\w[\w\.\-+]*@[\w\.\-]+\.\w{2,}$/.test(email)) {
+          alert('Per favore inserisci un indirizzo email valido.');
+          return;
+        }
+
+        const btn = document.getElementById('submit-btn');
+        btn.disabled = true;
+        btn.textContent = 'Invio in corso…';
+
+        // Collect checkbox values
+        const documents = Array.from(form.querySelectorAll('input[name="documents"]:checked')).map(cb => cb.value).join(', ');
+
+        const payload = {
+          company,
+          name,
+          email,
+          documents,
+          hours_lost: form.hours_lost.value,
+          gpu: form.gpu.value,
+          data_on_prem: form.data_on_prem.value,
+          budget: form.budget.value,
+          channel: form.channel.value,
+          notes: form.notes.value.trim(),
+          website: form.website.value,
+          form_start_ts: form.form_start_ts.value,
+        };
+
+        try {
+          const res = await fetch('/api/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          });
+          const data = await res.json();
+
+          if (data.ok) {
+            document.getElementById('assessment-form-wrapper').style.display = 'none';
+            const success = document.getElementById('form-success');
+            success.style.display = 'block';
+            success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            alert('Si è verificato un errore. Per favore riprova o scrivi a info@ippocra.com.');
+            btn.disabled = false;
+            btn.textContent = 'Ricevi la tua mini-valutazione →';
+          }
+        } catch (err) {
+          alert('Errore di connessione. Per favore riprova o scrivi a info@ippocra.com.');
+          btn.disabled = false;
+          btn.textContent = 'Ricevi la tua mini-valutazione →';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

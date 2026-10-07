@@ -56,7 +56,7 @@ Italy has over 4 million SMEs. Many of these handle sensitive data — contractu
 
 ## ILAI: Local AI built for businesses
 
-We built [ILAI](https://ilai.ippocra.com/en/) specifically to address these needs. It's not a chatbot — it's a **digital colleague** that:
+We built [ILAI](/en/ilai/) specifically to address these needs. It's not a chatbot — it's a **digital colleague** that:
 
 - Works with your documents, procedures, and internal resources
 - Adapts to your business processes
@@ -85,7 +85,7 @@ You don't need to change your entire infrastructure to begin. With local AI you 
 2. **Learn and grow.** ILAI adapts to your company
 3. **Expand gradually.** As you see results, add more workflows
 
-If you want to understand how local artificial intelligence can work in your company, email us at [info@ippocra.com](mailto:info@ippocra.com) or visit [ilai.ippocra.com](https://ilai.ippocra.com/en/).
+If you want to understand how local artificial intelligence can work in your company, email us at [info@ippocra.com](mailto:info@ippocra.com) or visit [ippocra.com/ilai](/en/ilai/).
 
 ---
 

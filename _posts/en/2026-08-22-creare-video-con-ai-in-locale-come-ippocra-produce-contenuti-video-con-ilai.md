@@ -106,7 +106,7 @@ Video is the content that works best on every channel: YouTube, Instagram, your 
 
 Now there is a third option: **produce it in-house**, with an AI running on your infrastructure, with your data never leaving anywhere, and with a cost you know exactly what it is.
 
-If you want to understand how local video production can work in your company, email us at [info@ippocra.com](mailto:info@ippocra.com) or visit [ilai.ippocra.com](https://ilai.ippocra.com/en/).
+If you want to understand how local video production can work in your company, email us at [info@ippocra.com](mailto:info@ippocra.com) or visit [ippocra.com/ilai](/en/ilai/).
 
 ---
 
