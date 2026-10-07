@@ -68,6 +68,36 @@
                 </div>
             </div>
 
+            <!-- Ippo band — equal narrative beat (light/health, counterpoint to ILAI dark) -->
+            <div class="max-w-4xl mx-auto mb-16">
+                <div class="ippo-band">
+                    <div class="ippo-band__badge">Προϊόν Ippocra</div>
+                    <div class="ippo-band__head">
+                        <img src="{{ '/assets/images/ippo-mascot.png' | relative_url }}" alt="Ippo" class="ippo-band__logo">
+                        <div class="ippo-band__title">
+                            <h2 class="ippo-band__name">Ippo</h2>
+                            <p class="ippo-band__tag">Η ψηφιακή πλατφόρμα υγείας για οικογένειες</p>
+                        </div>
+                    </div>
+                    <p class="ippo-band__desc">
+                        Όλα τα έγγραφα υγείας της οικογένειάς σου — εξετάσεις, αναλυτικά, επιστολές αποχώρησης —
+                        σε ένα ιδιωτικό και ασφαλές σημείο. Οργάνωσέ τα, βρες κάθε έγγραφο σε 3 δευτερόλεπτα
+                        και μοιράσου το με τον γιατρό σου μόνο όταν το επιλέγεις εσύ.
+                    </p>
+                    <div class="ippo-band__chips">
+                        <span class="ippo-chip"><i class="fas fa-shield-alt"></i> GDPR Compliant</span>
+                        <span class="ippo-chip"><i class="fas fa-lock"></i> Κρυπτογράφηση AES-256</span>
+                        <span class="ippo-chip"><i class="fas fa-user-shield"></i> Πλήρης έλεγχος των δεδομένων σου</span>
+                    </div>
+                    <div class="ippo-band__cta">
+                        <a href="/ippo" class="gateway-card-cta gateway-card-cta-ippo">
+                            Ξεκίνα δωρεάν
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Two-product row: ILAI · Ippo (Ideallab moved to footer) -->
             <p class="text-center mb-6" style="color:#888; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:600;">
                 Τα προϊόντα μας
@@ -264,6 +294,84 @@
     }
     .gateway-card-ideallab .paragraph-sm {
         color: #d4c4a8;
+    }
+
+    /* ---- IPPO BAND (homepage, equal beat to ILAI featured card) ---- */
+    .ippo-band {
+        background: #ffffff;
+        border: 2px solid #3b9ba8;
+        border-radius: 16px;
+        padding: 2rem;
+        position: relative;
+        box-shadow: 0 4px 20px rgba(59, 155, 168, 0.12);
+        transition: box-shadow 0.2s;
+    }
+    .ippo-band:hover {
+        box-shadow: 0 8px 40px rgba(59, 155, 168, 0.25);
+    }
+    .ippo-band__badge {
+        display: inline-block;
+        background: #3b9ba8;
+        color: #ffffff;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 4px 14px;
+        border-radius: 999px;
+        margin-bottom: 1rem;
+    }
+    .ippo-band__head {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    .ippo-band__logo {
+        width: 3.25rem;
+        height: 3.25rem;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+    .ippo-band__name {
+        margin: 0;
+        font-size: 2rem;
+        color: #2e7d88;
+        font-weight: 800;
+    }
+    .ippo-band__tag {
+        margin: 0.2rem 0 0;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #4f5b62;
+    }
+    .ippo-band__desc {
+        margin: 0 0 1.25rem;
+        color: #37474f;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .ippo-band__chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .ippo-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        border: 1px solid #3b9ba8;
+        color: #2e7d88;
+        border-radius: 999px;
+        padding: 0.35rem 0.85rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background: rgba(59, 155, 168, 0.06);
+    }
+    .ippo-band__cta {
+        display: flex;
+        justify-content: flex-start;
     }
 
     /* ---- Shared: brand mark ---- */
