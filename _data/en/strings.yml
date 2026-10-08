@@ -1,19 +1,22 @@
 navigation:
+  ippo:
+    title: Ippo
+    url: /ippo
   doctors:
     title: Doctors
-    url: /doctors
+    url: /en/ippo/medici
   business:
     title: Imaging
-    url: /imaging
+    url: /en/ippo/imaging
   pricing:
     title: Pricing
-    url: /pricing
+    url: /en/ippo/prezzi
   about:
     title: About
     url: /about
   security:
     title: Security
-    url: /security
+    url: /en/ippo/security
 actions:
   register: Register
   login: Login

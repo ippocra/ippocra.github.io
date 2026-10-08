@@ -27,12 +27,6 @@
 
         <li class="masthead__menu-item">
           <a
-            href="{% if site.active_lang == 'en' %}/en/ilai/{% else %}/ilai/{% endif %}"
-          >ILAI</a>
-        </li>
-
-        <li class="masthead__menu-item">
-          <a
           href="{{ site.data[site.active_lang].strings.navigation.security.url | relative_url }}"
               >{{ site.data[site.active_lang].strings.navigation.security.title }}</a>
         </li>
@@ -55,15 +49,6 @@
               >{{ site.data[site.active_lang].strings.navigation.pricing.title }}</a>
         </li>
         
-          {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a
-                href="{{ link.url | relative_url }}"
-                {% if link.description %} title="{{ link.description }}"{% endif %}
-                {% if link.target %} target="{{ link.target }}"{% endif %}
-              >{{ link.title }}</a>
-            </li>
-          {%- endfor -%}
           <a id="btn-register" href="https://app.ippocra.com/register" class="btn btn--primary">{{ site.data[site.active_lang].strings.actions.register }}</a>
           <a href="https://app.ippocra.com/" class="btn btn--inverse">{{ site.data[site.active_lang].strings.actions.login }}</a>
 

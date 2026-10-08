@@ -5,7 +5,7 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         {% unless logo_path == empty %}
-          <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
+          <a class="site-logo" href="{{ '/ippo' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
         {% endunless %}
         <a class="site-title" href="{{ '/' | relative_url }}">
           {{ site.masthead_title | default: site.title }}
@@ -49,13 +49,11 @@
           </a>
         </li>
         
-          {%- for link in site.data.navigation.main -%}
-            <li class="masthead__menu-item">
-              <a href="{{ link.url | relative_url }}">
-                {{ link.title }}
-              </a>
-            </li>
-          {%- endfor -%}
+        <li class="masthead__menu-item">
+          <a href="{{ site.data[site.active_lang].strings.navigation.ippo.url | relative_url }}">
+            {{ site.data[site.active_lang].strings.navigation.ippo.title }}
+          </a>
+        </li>
 
           <a id="btn-register" href="https://app.ippocra.com/register" class="btn btn--primary">{{ site.data[site.active_lang].strings.actions.register }}</a>
           <a href="https://app.ippocra.com/" class="btn btn--inverse">{{ site.data[site.active_lang].strings.actions.login }}</a>

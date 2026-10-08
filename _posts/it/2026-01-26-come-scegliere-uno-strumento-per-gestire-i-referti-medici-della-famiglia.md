@@ -120,7 +120,7 @@ La domanda non è se digitalizzare la gestione familiare, ma come farlo in modo 
 
 **Quanti profili familiari posso gestire con Ippocra?**
 
-Ippocra consente di creare profili distinti per ogni membro della famiglia che si desidera gestire: figli, partner, genitori anziani. Ogni piano ha un numero di profili predefinito, consultabile nella nostra [pagina dedicata](/prezzi){:target="_blank"}. Ogni profilo mantiene la propria separazione logica e la propria privacy, ma può essere gestito centralmente da un unico account del genitore o del caregiver. Questo permette sia la gestione familiare sia il rispetto dell'autonomia: un figlio maggiorenne può avere accesso diretto al proprio profilo, mentre il genitore mantiene la visibilità per il coordinamento.
+Ippocra consente di creare profili distinti per ogni membro della famiglia che si desidera gestire: figli, partner, genitori anziani. Ogni piano ha un numero di profili predefinito, consultabile nella nostra [pagina dedicata](/ippo/prezzi){:target="_blank"}. Ogni profilo mantiene la propria separazione logica e la propria privacy, ma può essere gestito centralmente da un unico account del genitore o del caregiver. Questo permette sia la gestione familiare sia il rispetto dell'autonomia: un figlio maggiorenne può avere accesso diretto al proprio profilo, mentre il genitore mantiene la visibilità per il coordinamento.
 
 **Come funziona la privacy tra i diversi profili familiari?**
 

@@ -244,7 +244,7 @@ The User is aware and understands that the confirmations above are absolutely ne
 
 **\- Subscription Plans**.
 
-Several subscription plans are available to the User. More information is available on the site [https://ippocra.com](https://ippocra.com/). See the pricing page for all related information.
+Several subscription plans are available to the User. More information is available on the site [https://ippocra.com](https://ippocra.com/). See the [Ippo pricing page](/en/ippo/prezzi) for all related information.
 
 2. **Services and Conditions Applicable to Professionals and/or Healthcare Structures**
 
@@ -258,5 +258,5 @@ The Professional and/or Healthcare Structure agrees to indemnify and hold harmle
 
 **\- Subscription Plans**.
 
-The Professional and/or Healthcare Structure has a subscription plan available. More information is available on the site [https://ippocra.com](https://ippocra.com/). See the pricing page for all related information.
+The Professional and/or Healthcare Structure has a subscription plan available. More information is available on the site [https://ippocra.com](https://ippocra.com/). See the [Ippo pricing page](/en/ippo/prezzi) for all related information.
 

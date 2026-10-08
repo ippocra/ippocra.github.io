@@ -39,5 +39,5 @@ lo screening annuale e assicurando che la clinica mantenga il proprio cliente.
 
 Vuoi provare una demo gratuita oggi per scoprire come Ippocra può semplificare la gestione 
 dei tuoi referti? Contattaci all’indirizzo **info@ippocra.com** oppure compila il 
-**[form](https://ippocra.com/business)**.
+**[form](https://ippocra.com/ippo/imaging)**.
 

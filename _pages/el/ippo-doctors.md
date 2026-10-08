@@ -1,8 +1,9 @@
 ---
 layout: default
 lang: el
-permalink: /doctors
+permalink: /ippo/medici
 redirect_from:
+    - /doctors
     - /business
 title: "Οι εξετάσεις των ασθενών σου, πάντα μαζί σου - Ippocra για Γιατρούς"
 description: "Τέλος στα USB από ιατρείο σε ιατρείο. Εισήγαγε τις εξετάσεις των ασθενών με ένα κλικ, βρες οποιοδήποτε έγγραφο σε δευτερόλεπτα και δες όλο το ιστορικό."

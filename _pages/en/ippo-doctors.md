@@ -1,8 +1,9 @@
 ---
 layout: default
 lang: en
-permalink: /doctors
+permalink: /ippo/medici
 redirect_from:
+    - /doctors
     - /business
 title: "Your patient reports, always with you - Ippocra for Doctors"
 description: "Stop carrying USB keys between clinics. Import your patient reports in one click, find any document in seconds, and see each patient's full history over time."

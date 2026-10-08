@@ -240,7 +240,7 @@ L’Utente è consapevole e comprende che le conferme di cui sopra sono assoluta
 
 **\- Piani di abbonamento**. 
 
-Sono a disposizione per l’Utente diversi piani di abbonamento. Maggiori informazioni sono disponibili sul sito [https://ippocra.com](https://ippocra.com/). Si rimanda alla pagina prezzi/pricing per tutte le informazioni relative
+Sono a disposizione per l’Utente diversi piani di abbonamento. Maggiori informazioni sono disponibili sul sito [https://ippocra.com](https://ippocra.com/). Si rimanda alla [pagina Prezzi Ippo](/ippo/prezzi) per tutte le informazioni relative
 
 2. **Servizi e condizioni applicabili ai Professionisti e/o Strutture sanitarie**
 
@@ -254,4 +254,4 @@ Il Professionista e/o la Struttura Sanitaria accetta di manlevare e tenere inden
 
 **\- Piani di abbonamento**. 
 
-Il Professionista e/o la Struttura Sanitaria ha a disposizione un piano di abbonamento.  Maggiori informazioni sono disponibili sul sito [https://ippocra.com](https://ippocra.com/). Si rimanda alla pagina prezzi/pricing per tutte le informazioni relative.
+Il Professionista e/o la Struttura Sanitaria ha a disposizione un piano di abbonamento.  Maggiori informazioni sono disponibili sul sito [https://ippocra.com](https://ippocra.com/). Si rimanda alla [pagina Prezzi Ippo](/ippo/prezzi) per tutte le informazioni relative.
