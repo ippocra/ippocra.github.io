@@ -2,147 +2,191 @@
 
 <main class="main-content">
 
-    <!-- Gateway Hero -->
-    <section id="gateway-hero" class="section-blank gateway-hero-bg">
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="corp-hero">
+        <div class="corp-hero__grid" aria-hidden="true"></div>
+        <div class="corp-hero__glow" aria-hidden="true"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center pt-24 pb-20 md:pt-32 md:pb-28">
+                <p class="corp-kicker reveal">Ippocra</p>
+                <h1 class="corp-title reveal" style="--d:.1s">
+                    Innovation<br class="hidden sm:inline"> with <span class="corp-accent">Agency</span>.
+                </h1>
+                <p class="corp-lede reveal" style="--d:.2s">
+                    We build intelligent systems that put people back in control.
+                    Private by design, local by default, and engineered to evolve
+                    long after they ship.
+                </p>
+                <div class="corp-hero__cta reveal" style="--d:.3s">
+                    <a href="#belief" class="corp-btn corp-btn--solid">Our belief
+                        <i class="fas fa-arrow-down ml-2" style="font-size:0.8em;"></i>
+                    </a>
+                    <a href="mailto:info@ippocra.com" class="corp-btn corp-btn--ghost">Talk to us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ THE BELIEF ============ -->
+    <section id="belief" class="corp-section">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mt-16 mb-12">
-                <h1 class="page-title" style="font-size:2.5rem;">
-                     <span style="color:#2e7d88;">Ippocra</span>: own your company data, your own AI
-                 </h1>
-                <p class="paragraph-lg mt-4" style="color:#555; max-width:600px; margin-left:auto; margin-right:auto;">
-                    We build software that adapts to your business — a local AI that handles your documents, learns your workflow, and lives on your machine.
+            <div class="corp-section__inner max-w-3xl mx-auto text-center">
+                <p class="corp-kicker reveal">The belief</p>
+                <h2 class="corp-h2 reveal" style="--d:.1s">
+                    The most reliable technology is the kind that asks nothing of you.
+                </h2>
+                <p class="corp-p reveal" style="--d:.15s">
+                    The information that defines us — the documents we produce, the data we generate,
+                    the decisions we make — belongs to the people who create it.
+                    Not to platforms. Not to vendors. Not to whoever holds the API key.
+                </p>
+                <p class="corp-p reveal" style="--d:.2s">
+                    So we build the other way around. Systems that run where your data lives,
+                    that you own outright, that stay transparent about what they do.
+                    When control stays with you, technology stops being a risk and becomes an asset.
                 </p>
             </div>
+        </div>
+    </section>
 
-            <!-- ILAI Card — FEATURED DARK CARD -->
-            <div class="max-w-3xl mx-auto mb-16">
-                <div class="gateway-card gateway-card-ilai featured-glow">
-                    <div class="featured-badge">Ippocra Product</div>
-                    <div class="gateway-brand gateway-brand-ilai">
-                        <div class="gateway-brand-mark gateway-brand-mark-ilai" aria-hidden="true">
-                            <img src="{{ '/assets/images/il-logo.svg' | relative_url }}" alt="ILAI" style="width:3.25rem; height:3.25rem; object-fit:contain;">
-                        </div>
-                        <div class="gateway-brand-copy">
-                            <p class="gateway-brand-kicker">ILAI</p>
-                            <p class="gateway-brand-subtitle">Ippocra Local Artificial Intelligence</p>
-                        </div>
-                    </div>
-                    <h2 class="mt-0" style="font-size:2rem; color:#4dd0c4;">
-                        ILAI
-                    </h2>
-                    <p class="mt-3 paragraph-md" style="color:#c8d9d5;">
-                        Your local AI colleague. Handles confidential documents, learns your workflow, and grows with your company.
-                        <strong>Zero cloud, zero lock-in, zero hidden costs.</strong>
+    <!-- ============ PILLARS ============ -->
+    <section id="pillars" class="corp-section corp-section--dark">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <p class="corp-kicker reveal">How we build</p>
+                <h2 class="corp-h2 reveal" style="--d:.1s">Three commitments, every product</h2>
+            </div>
+            <div class="corp-pillars">
+                <div class="corp-pillar reveal" style="--d:.1s">
+                    <div class="corp-pillar__icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Private by design</h3>
+                    <p>Sensitive data never has to leave your network. No third-party inference,
+                    no hidden dependencies, no trust assumptions. If your data is private,
+                    it stays that way — by architecture, not by promise.</p>
+                </div>
+                <div class="corp-pillar reveal" style="--d:.2s">
+                    <div class="corp-pillar__icon"><i class="fas fa-unlock-alt"></i></div>
+                    <h3>Local by default</h3>
+                    <p>Software that runs where it's needed, on hardware you control. Predictable costs,
+                    zero lock-in, full sovereignty. You can migrate, fork, or switch without
+                    a single hostage taken.</p>
+                </div>
+                <div class="corp-pillar reveal" style="--d:.3s">
+                    <div class="corp-pillar__icon"><i class="fas fa-compass"></i></div>
+                    <h3>Agency, always</h3>
+                    <p>We build for the people who use the software — not for the platforms that
+                    resell it. Every system we ship is legible, auditable, and under your command.
+                    That's what we mean by agency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ALWAYS MOVING ============ -->
+    <section id="research" class="corp-section">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="corp-research">
+                <div class="corp-research__copy">
+                    <p class="corp-kicker reveal">The lab</p>
+                    <h2 class="corp-h2 reveal" style="--d:.1s">We don't ship and stop.</h2>
+                    <p class="corp-p reveal" style="--d:.15s">
+                        Ippocra runs like a research lab, not a product factory. We prototype in public,
+                        benchmark relentlessly, and publish what we learn — because the fastest way
+                        to build the next decade's tools is to keep asking what the current ones get wrong.
                     </p>
-                    <ul class="mt-4 space-y-2" style="text-align:left;">
-                        <li style="display:flex; align-items:flex-start; gap:0.5rem;">
-                            <i class="fas fa-check-circle" style="color:#4dd0c4; margin-top:4px;"></i>
-                            <span><strong>Confidential documents</strong> stay inside your network — never in the cloud</span>
+                    <p class="corp-p reveal" style="--d:.2s">
+                        Every product is a step along a longer line of experiments. When one matures
+                        enough to carry real work, it ships. The rest stays in the lab, pushing
+                        the limits of what local, private intelligence can do.
+                    </p>
+                </div>
+                <div class="corp-research__log reveal" style="--d:.25s">
+                    <div class="corp-log__head">
+                        <span class="corp-log__dot" aria-hidden="true"></span>
+                        Research log
+                    </div>
+                    <ul class="corp-log__list">
+                        <li>
+                            <span class="corp-log__tag">Inference</span>
+                            <p>Local model orchestration — routing sensitive work to the smallest capable engine, on-prem.</p>
                         </li>
-                        <li style="display:flex; align-items:flex-start; gap:0.5rem;">
-                            <i class="fas fa-check-circle" style="color:#4dd0c4; margin-top:4px;"></i>
-                            <span><strong>Workflow</strong> that gets better over time — you teach it, it doesn't replace it</span>
+                        <li>
+                            <span class="corp-log__tag">Documents</span>
+                            <p>Extraction pipelines that turn messy real-world paperwork into structured, queryable context.</p>
                         </li>
-                        <li style="display:flex; align-items:flex-start; gap:0.5rem;">
-                            <i class="fas fa-check-circle" style="color:#4dd0c4; margin-top:4px;"></i>
-                            <span><strong>Predictable costs</strong> — clear investment, no surprise bills</span>
+                        <li>
+                            <span class="corp-log__tag">Health data</span>
+                            <p>Encrypted, family-owned health records — designed for sharing on your terms, not the platform's.</p>
                         </li>
-                        <li style="display:flex; align-items:flex-start; gap:0.5rem;">
-                            <i class="fas fa-check-circle" style="color:#4dd0c4; margin-top:4px;"></i>
-                            <span><strong>Asset that grows</strong> — the more you use it, the more competitive advantage you gain</span>
+                        <li>
+                            <span class="corp-log__tag">Sovereignty</span>
+                            <p>Zero-cloud architectures for regulated industries: no egress, no telemetry, no escape hatch.</p>
                         </li>
                     </ul>
-                    <div class="gateway-card-cta-row">
-                        <a href="/en/ilai/"
-                            class="gateway-card-cta gateway-card-cta-ilai">
-                            Discover ILAI
-                            <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                        <a href="/en/ilai/use-cases/"
-                            class="gateway-card-cta gateway-card-cta-ilai gateway-card-cta-secondary">
-                            See use cases
-                            <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                    <p class="mt-2 text-xs" style="color:#7a9a95;">ippocra.com/ilai</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Ippo band — equal narrative beat (light/health, counterpoint to ILAI dark) -->
-            <div class="max-w-4xl mx-auto mb-16">
-                <div class="ippo-band">
-                    <div class="ippo-band__badge">Ippocra Product</div>
-                    <div class="ippo-band__head">
-                        <img src="{{ '/assets/images/ippo-mascot.png' | relative_url }}" alt="Ippo" class="ippo-band__logo">
-                        <div class="ippo-band__title">
-                            <h2 class="ippo-band__name">Ippo</h2>
-                            <p class="ippo-band__tag">The digital health platform for families</p>
-                        </div>
-                    </div>
-                    <p class="ippo-band__desc">
-                        All your family's health documents — reports, lab results, discharge letters —
-                        in one private, secure place. Organize them, find any report in 3 seconds,
-                        and share it with your doctor only when you choose.
-                    </p>
-                    <div class="ippo-band__chips">
-                        <span class="ippo-chip"><i class="fas fa-shield-alt"></i> GDPR Compliant</span>
-                        <span class="ippo-chip"><i class="fas fa-lock"></i> AES-256 Encryption</span>
-                        <span class="ippo-chip"><i class="fas fa-user-shield"></i> Full control of your data</span>
-                    </div>
-                    <div class="ippo-band__cta">
-                        <a href="/ippo" class="gateway-card-cta gateway-card-cta-ippo">
-                            Get started free
-                            <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Two-product row: ILAI · Ippo (Ideallab moved to footer) -->
-            <p class="text-center mb-6" style="color:#888; font-size:0.9rem; text-transform:uppercase; letter-spacing:0.08em; font-weight:600;">
-                Our Products
+    <!-- ============ SIGNATURE ============ -->
+    <section id="signature" class="corp-signature">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="corp-kicker reveal">Our motto</p>
+            <p class="corp-signature__quote reveal" style="--d:.1s">
+                &ldquo;Innovation with Agency&rdquo;
             </p>
-            <div class="gateway-grid">
+            <p class="corp-signature__sub reveal" style="--d:.2s">
+                Innovation without agency is just cleverness.
+                Agency without innovation is just caution.
+                We do both, in that order.
+            </p>
+        </div>
+    </section>
 
-                <!-- ILAI card -->
-                <div class="gateway-card gateway-card-ilai-compact">
-                    <div class="gateway-brand gateway-brand-ilai-compact">
-                        <div class="gateway-brand-mark gateway-brand-mark-ilai" aria-hidden="true" style="width:2.75rem; height:2.75rem; border-radius:0.75rem;">
-                            <img src="{{ '/assets/images/il-logo.svg' | relative_url }}" alt="ILAI" style="width:2.25rem; height:2.25rem; object-fit:contain;">
-                        </div>
-                        <div class="gateway-brand-copy">
-                            <p class="gateway-brand-kicker" style="color:#8aa8a2;">ILAI</p>
-                            <p class="gateway-brand-subtitle">Local AI for businesses</p>
-                        </div>
+    <!-- ============ WHERE IT LIVES ============ -->
+    <section id="solutions" class="corp-section">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <p class="corp-kicker reveal">Where it lives</p>
+                <h2 class="corp-h2 reveal" style="--d:.1s">Two products, one conviction</h2>
+            </div>
+            <div class="corp-solutions">
+                <a href="/en/ilai/" class="corp-solution reveal" style="--d:.15s">
+                    <div class="corp-solution__brand">
+                        <img src="{{ '/assets/images/il-logo.svg' | relative_url }}" alt="ILAI">
                     </div>
-                    <p class="paragraph-sm" style="color:#c8d9d5; margin:0 0 1rem;">
-                        Local AI for businesses. Confidential data, zero lock-in, zero cloud.
-                    </p>
-                    <a href="/en/ilai/"
-                        class="gateway-card-cta gateway-card-cta-ilai gateway-card-cta-sm">
-                        Discover ILAI <i class="fas fa-arrow-right ml-1"></i>
-                    </a>
-                </div>
-
-                <!-- Ippo card -->
-                <div class="gateway-card gateway-card-ippo">
-                    <div class="gateway-brand gateway-brand-ippo">
-                        <div class="gateway-brand-mark gateway-brand-mark-ippo" aria-hidden="true" style="width:2.75rem; height:2.75rem; border-radius:0.75rem;">
-                            <img src="{{ '/assets/images/ippo-mascot.png' | relative_url }}" alt="Ippo" style="width:2.75rem; height:2.75rem; object-fit:contain;">
-                        </div>
-                        <div class="gateway-brand-copy">
-                            <p class="gateway-brand-kicker">Ippo</p>
-                            <p class="gateway-brand-subtitle">Health platform</p>
-                        </div>
+                    <div>
+                        <h3>ILAI</h3>
+                        <p>Local AI for business — private, on-prem intelligence that grows with you.</p>
                     </div>
-                    <p class="paragraph-sm" style="color:#4f5b62; margin:0 0 1rem;">
-                        The digital health platform for families. Organize, find and share medical reports securely.
-                    </p>
-                    <a href="/en/ippo" class="gateway-card-cta gateway-card-cta-ippo gateway-card-cta-sm">
-                        Go to Ippo <i class="fas fa-arrow-right ml-1"></i>
-                    </a>
-                </div>
+                    <i class="fas fa-arrow-right corp-solution__arrow"></i>
+                </a>
+                <a href="/en/ippo" class="corp-solution reveal" style="--d:.25s">
+                    <div class="corp-solution__brand">
+                        <img src="{{ '/assets/images/ippo-mascot.png' | relative_url }}" alt="Ippo">
+                    </div>
+                    <div>
+                        <h3>Ippo</h3>
+                        <p>Digital health for families — every record, private and under your control.</p>
+                    </div>
+                    <i class="fas fa-arrow-right corp-solution__arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <!-- ============ CTA ============ -->
+    <section id="contact" class="corp-cta">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="corp-h2 reveal">Build with a partner, not a vendor.</h2>
+            <p class="corp-p corp-cta__p reveal" style="--d:.1s">
+                Whether you're evaluating local AI for your organization or rethinking how
+                your family's health data works — we'd like to hear from you.
+            </p>
+            <div class="reveal" style="--d:.2s">
+                <a href="mailto:info@ippocra.com" class="corp-btn corp-btn--solid">
+                    <i class="fas fa-envelope mr-2"></i> info@ippocra.com
+                </a>
             </div>
         </div>
     </section>
@@ -150,307 +194,394 @@
 </main>
 
 <style>
-    .gateway-hero-bg {
-        background: linear-gradient(135deg, #fafafa 0%, #f5f0e8 50%, #fafafa 100%);
-        padding: 0 0 4rem;
-    }
-    .gateway-card {
-        border-radius: 16px;
-        padding: 2rem;
-        transition: transform 0.2s, box-shadow 0.2s;
-        display: flex;
-        flex-direction: column;
+    /* ---------- Hero ---------- */
+    .corp-hero {
         position: relative;
+        background: #0b0f14;
+        color: #e8edf1;
+        overflow: hidden;
     }
-    /* ---- Two-product grid (ILAI + Ippo) — self-contained, no Tailwind dep ---- */
-    .gateway-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        max-width: 56rem;
-        margin: 0 auto 4rem;
+    .corp-hero__grid {
+        position: absolute;
+        inset: 0;
+        background-image:
+            linear-gradient(rgba(64, 191, 180, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(64, 191, 180, 0.05) 1px, transparent 1px);
+        background-size: 56px 56px;
+        mask-image: radial-gradient(ellipse 90% 70% at 50% 40%, black 30%, transparent 75%);
+        -webkit-mask-image: radial-gradient(ellipse 90% 70% at 50% 40%, black 30%, transparent 75%);
     }
-    @media (min-width: 768px) {
-        .gateway-grid {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
+    .corp-hero__glow {
+        position: absolute;
+        top: -20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60rem;
+        height: 40rem;
+        background: radial-gradient(ellipse at center, rgba(46, 125, 136, 0.28), transparent 65%);
+        pointer-events: none;
     }
-    .gateway-card:hover {
+    .corp-kicker {
+        margin: 0;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #40bfb4;
+    }
+    .corp-title {
+        margin: 1.25rem 0 0;
+        font-size: clamp(2.75rem, 7vw, 5.25rem);
+        font-weight: 800;
+        line-height: 1.04;
+        letter-spacing: -0.02em;
+        color: #f2f6f8;
+    }
+    .corp-accent {
+        color: #40bfb4;
+    }
+    .corp-lede {
+        margin: 1.5rem auto 0;
+        max-width: 42rem;
+        font-size: 1.2rem;
+        line-height: 1.65;
+        color: #9fb2bd;
+    }
+    .corp-hero__cta {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        margin-top: 2.25rem;
+    }
+    .corp-btn {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.85rem 1.75rem;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: transform 0.2s, background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .corp-btn--solid {
+        background: #2e7d88;
+        color: #fff;
+    }
+    .corp-btn--solid:hover {
+        background: #40bfb4;
+        color: #0b0f14;
+        transform: translateY(-2px);
+    }
+    .corp-btn--ghost {
+        border: 1px solid rgba(232, 237, 241, 0.25);
+        color: #e8edf1;
+    }
+    .corp-btn--ghost:hover {
+        border-color: #40bfb4;
+        color: #40bfb4;
         transform: translateY(-2px);
     }
 
-    /* ---- Featured badge for ILAI ---- */
-    .featured-badge {
-        display: inline-block;
-        background: #2e7d88;
-        color: #ffffff;
-        font-size: 0.7rem;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        padding: 4px 14px;
-        border-radius: 999px;
-        margin-bottom: 1rem;
+    /* ---------- Sections ---------- */
+    .corp-section {
+        padding: 5.5rem 0;
+        background: #f7f8f8;
     }
-
-    /* ---- Featured glow effect ---- */
-    .featured-glow {
-        box-shadow: 0 4px 20px rgba(46, 125, 136, 0.12);
+    .corp-section--dark {
+        background: #0b0f14;
     }
-    .featured-glow:hover {
-        box-shadow: 0 8px 40px rgba(46, 125, 136, 0.35);
+    .corp-section--dark .corp-h2 {
+        color: #f2f6f8;
     }
-
-    /* ---- ILAI: FEATURED DARK CARD ---- */
-    .gateway-card-ilai {
-        background: #0e0e10;
-        border: 2px solid #2e7d88;
-        color: #e0e8e6;
+    .corp-section__inner {
+        padding: 0 1rem;
     }
-    .gateway-card-ilai .gateway-brand-kicker {
-        color: #8aa8a2;
-    }
-    .gateway-card-ilai .gateway-brand-subtitle {
-        color: #c8d9d5;
-    }
-    .gateway-card-ilai .gateway-brand-mark-ilai {
-        background: transparent;
-        box-shadow: none;
-    }
-    .gateway-card-ilai .gateway-card-cta-ilai {
-        background: #2e7d88;
-        color: #ffffff;
-    }
-    .gateway-card-ilai .gateway-card-cta-ilai:hover {
-        background: #4dd0c4;
-        color: #0e0e10;
-        transform: translateX(3px);
-    }
-
-    /* ---- Compact ILAI (bottom row) ---- */
-    .gateway-card-ilai-compact {
-        background: #0e0e10;
-        border: 2px solid #2e7d88;
-        color: #e0e8e6;
-    }
-    .gateway-card-ilai-compact:hover {
-        box-shadow: 0 8px 32px rgba(46, 125, 136, 0.3);
-    }
-    .gateway-card-ilai-compact .gateway-brand-kicker {
-        color: #8aa8a2;
-    }
-
-    /* ---- IPPO: LIGHT CARD ---- */
-    .gateway-card-ippo {
-        background: #ffffff;
-        border: 2px solid #e0e7e6;
-        box-shadow: 0 2px 8px rgba(46, 125, 136, 0.06);
-    }
-    .gateway-card-ippo:hover {
-        box-shadow: 0 8px 24px rgba(46, 125, 136, 0.12);
-        border-color: #2e7d88;
-    }
-    .gateway-card-ippo .gateway-brand-mark-ippo {
-        background: transparent;
-        box-shadow: none;
-    }
-    .gateway-card-ippo .gateway-card-cta-ippo {
-        background: #2e7d88;
-        color: #ffffff;
-    }
-    .gateway-card-ippo .gateway-card-cta-ippo:hover {
-        background: #256b74;
-        color: #ffffff;
-        transform: translateX(3px);
-    }
-
-    /* ---- IDEALLAB: WARM SEPIA CARD (bottom row) ---- */
-    .gateway-card-ideallab {
-        background: #3b2e20;
-        border: 2px solid #c4944a;
-        color: #e8ddd0;
-    }
-    .gateway-card-ideallab:hover {
-        box-shadow: 0 8px 32px rgba(196, 148, 74, 0.2);
-    }
-    .gateway-card-ideallab .gateway-brand-kicker {
-        color: #c4944a;
-    }
-    .gateway-card-ideallab .gateway-brand-subtitle {
-        color: #d4c4a8;
-    }
-    .gateway-card-ideallab .gateway-brand-mark-ideallab {
-        background: transparent;
-        box-shadow: none;
-    }
-    .gateway-card-ideallab .gateway-card-cta-ideallab {
-        background: #c4944a;
-        color: #0e0e10;
-    }
-    .gateway-card-ideallab .gateway-card-cta-ideallab:hover {
-        background: #d4a85a;
-        color: #0e0e10;
-        transform: translateX(3px);
-    }
-    .gateway-card-ideallab .paragraph-sm {
-        color: #d4c4a8;
-    }
-
-    /* ---- IPPO BAND (homepage, equal beat to ILAI featured card) ---- */
-    .ippo-band {
-        background: #ffffff;
-        border: 2px solid #3b9ba8;
-        border-radius: 16px;
-        padding: 2rem;
-        position: relative;
-        box-shadow: 0 4px 20px rgba(59, 155, 168, 0.12);
-        transition: box-shadow 0.2s;
-    }
-    .ippo-band:hover {
-        box-shadow: 0 8px 40px rgba(59, 155, 168, 0.25);
-    }
-    .ippo-band__badge {
-        display: inline-block;
-        background: #3b9ba8;
-        color: #ffffff;
-        font-size: 0.7rem;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        padding: 4px 14px;
-        border-radius: 999px;
-        margin-bottom: 1rem;
-    }
-    .ippo-band__head {
-        display: flex;
-        align-items: center;
-        gap: 0.9rem;
-        margin-bottom: 1rem;
-    }
-    .ippo-band__logo {
-        width: 3.25rem;
-        height: 3.25rem;
-        object-fit: contain;
-        flex-shrink: 0;
-    }
-    .ippo-band__name {
-        margin: 0;
-        font-size: 2rem;
-        color: #2e7d88;
+    .corp-h2 {
+        margin: 1.1rem 0 0;
+        font-size: clamp(1.75rem, 4vw, 2.6rem);
         font-weight: 800;
+        line-height: 1.15;
+        letter-spacing: -0.015em;
+        color: #10151b;
     }
-    .ippo-band__tag {
-        margin: 0.2rem 0 0;
-        font-size: 0.95rem;
-        font-weight: 600;
-        color: #4f5b62;
+    .corp-p {
+        margin: 1.4rem auto 0;
+        max-width: 42rem;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: #475569;
     }
-    .ippo-band__desc {
-        margin: 0 0 1.25rem;
-        color: #37474f;
-        font-size: 1rem;
-        line-height: 1.6;
-    }
-    .ippo-band__chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-bottom: 1.5rem;
-    }
-    .ippo-chip {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        border: 1px solid #3b9ba8;
-        color: #2e7d88;
-        border-radius: 999px;
-        padding: 0.35rem 0.85rem;
-        font-size: 0.8rem;
-        font-weight: 600;
-        background: rgba(59, 155, 168, 0.06);
-    }
-    .ippo-band__cta {
-        display: flex;
-        justify-content: flex-start;
+    .corp-section--dark .corp-p {
+        color: #9fb2bd;
     }
 
-    /* ---- Shared: brand mark ---- */
-    .gateway-brand {
-        display: flex;
-        align-items: center;
-        gap: 0.9rem;
-        margin-bottom: 1rem;
+    /* ---------- Pillars ---------- */
+    .corp-pillars {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 62rem;
+        margin: 0 auto;
     }
-    .gateway-brand-mark {
+    @media (min-width: 768px) {
+        .corp-pillars {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+    .corp-pillar {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(64, 191, 180, 0.18);
+        border-radius: 16px;
+        padding: 2rem 1.75rem;
+        transition: transform 0.2s, border-color 0.2s;
+    }
+    .corp-pillar:hover {
+        transform: translateY(-3px);
+        border-color: rgba(64, 191, 180, 0.45);
+    }
+    .corp-pillar__icon {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        flex-shrink: 0;
-        width: 3.25rem;
-        height: 3.25rem;
-        border-radius: 1rem;
-        font-weight: 800;
-        letter-spacing: 0.05em;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 12px;
+        background: rgba(64, 191, 180, 0.12);
+        color: #40bfb4;
+        font-size: 1.25rem;
+        margin-bottom: 1.25rem;
     }
-    .gateway-brand-copy {
+    .corp-pillar h3 {
+        margin: 0 0 0.6rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #f2f6f8;
+    }
+    .corp-pillar p {
+        margin: 0;
+        font-size: 0.98rem;
+        line-height: 1.65;
+        color: #9fb2bd;
+    }
+
+    /* ---------- Research ---------- */
+    .corp-research {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        align-items: start;
+        max-width: 62rem;
+        margin: 0 auto;
+    }
+    @media (min-width: 900px) {
+        .corp-research {
+            grid-template-columns: 1.1fr 1fr;
+        }
+        .corp-research__copy .corp-p,
+        .corp-research__copy .corp-h2 {
+            margin-left: 0;
+            text-align: left;
+        }
+    }
+    .corp-research__log {
+        background: #0b0f14;
+        border: 1px solid rgba(64, 191, 180, 0.2);
+        border-radius: 16px;
+        padding: 1.75rem;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    }
+    .corp-log__head {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #9fb2bd;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(64, 191, 180, 0.15);
+        margin-bottom: 1.1rem;
+    }
+    .corp-log__dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #40bfb4;
+        box-shadow: 0 0 10px rgba(64, 191, 180, 0.8);
+        animation: corp-pulse 2.4s ease-in-out infinite;
+    }
+    @keyframes corp-pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.35; }
+    }
+    .corp-log__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
-        line-height: 1.05;
+        gap: 1.1rem;
     }
-    .gateway-brand-kicker {
-        margin: 0;
-        font-size: 0.75rem;
+    .corp-log__list p {
+        margin: 0.35rem 0 0;
+        font-family: inherit;
+        font-size: 0.92rem;
+        line-height: 1.55;
+        color: #c3d2da;
+    }
+    .corp-log__tag {
+        display: inline-block;
+        font-size: 0.68rem;
         font-weight: 700;
         letter-spacing: 0.12em;
         text-transform: uppercase;
-    }
-    .gateway-brand-subtitle {
-        margin: 0.15rem 0 0;
-        font-size: 0.95rem;
-        font-weight: 600;
-    }
-
-    /* ---- Shared CTA ---- */
-    .gateway-card-cta-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        align-items: center;
-        margin-top: 1.5rem;
-    }
-    .gateway-card-cta-row .gateway-card-cta {
-        margin-top: 0;
-    }
-    .gateway-card-cta-secondary {
-        background: transparent !important;
-        border: 1px solid #4dd0c4;
-        color: #4dd0c4 !important;
-    }
-    .gateway-card-cta-secondary:hover {
-        background: rgba(77, 208, 196, 0.12) !important;
-    }
-
-    .gateway-card-cta {
-        display: inline-flex;
-        align-items: center;
-        margin-top: auto;
-        padding: 0.75rem 1.5rem;
+        color: #40bfb4;
+        background: rgba(64, 191, 180, 0.1);
+        border: 1px solid rgba(64, 191, 180, 0.3);
         border-radius: 999px;
-        font-weight: 600;
-        text-decoration: none;
-        transition: all 0.2s;
-    }
-    .gateway-card-cta-sm {
-        padding: 0.6rem 1.25rem;
-        font-size: 0.9rem;
-    }
-    .gateway-card-cta:hover {
-        text-decoration: none;
+        padding: 2px 10px;
     }
 
-    @media (max-width: 768px) {
-        .gateway-hero-bg { padding: 0 0 2rem; }
-        .gateway-card { padding: 1.5rem; }
-        h1.page-title { font-size: 1.75rem !important; }
+    /* ---------- Signature ---------- */
+    .corp-signature {
+        background: linear-gradient(160deg, #0b0f14 0%, #10222b 100%);
+        padding: 5rem 0;
+        text-align: center;
+    }
+    .corp-signature__quote {
+        margin: 1.25rem 0 0;
+        font-size: clamp(2rem, 5vw, 3.4rem);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: #40bfb4;
+        font-style: italic;
+    }
+    .corp-signature__sub {
+        margin: 1.25rem auto 0;
+        max-width: 34rem;
+        font-size: 1.05rem;
+        line-height: 1.65;
+        color: #9fb2bd;
+    }
+
+    /* ---------- Solutions ---------- */
+    .corp-solutions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        max-width: 46rem;
+        margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+        .corp-solutions {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .corp-solution {
+        display: flex;
+        align-items: center;
+        gap: 1.1rem;
+        background: #fff;
+        border: 1px solid #e3e8e9;
+        border-radius: 14px;
+        padding: 1.4rem 1.6rem;
+        text-decoration: none;
+        transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .corp-solution:hover {
+        transform: translateY(-3px);
+        border-color: #2e7d88;
+        box-shadow: 0 10px 30px rgba(46, 125, 136, 0.12);
+    }
+    .corp-solution__brand {
+        flex-shrink: 0;
+        width: 3.25rem;
+        height: 3.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f0f4f4;
+        border-radius: 12px;
+    }
+    .corp-solution__brand img {
+        width: 2.5rem;
+        height: 2.5rem;
+        object-fit: contain;
+    }
+    .corp-solution h3 {
+        margin: 0;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #10151b;
+    }
+    .corp-solution p {
+        margin: 0.25rem 0 0;
+        font-size: 0.92rem;
+        line-height: 1.5;
+        color: #5b6b74;
+    }
+    .corp-solution__arrow {
+        margin-left: auto;
+        color: #2e7d88;
+        transition: transform 0.2s;
+    }
+    .corp-solution:hover .corp-solution__arrow {
+        transform: translateX(4px);
+    }
+
+    /* ---------- CTA ---------- */
+    .corp-cta {
+        background: #0b0f14;
+        padding: 5.5rem 0;
+        text-align: center;
+    }
+    .corp-cta .corp-h2 {
+        color: #f2f6f8;
+    }
+    .corp-cta__p {
+        color: #9fb2bd;
+    }
+    .corp-cta .corp-btn {
+        margin-top: 1.75rem;
+    }
+
+    /* ---------- Reveal animation ---------- */
+    .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+        transition-delay: var(--d, 0s);
+    }
+    .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .reveal {
+            opacity: 1;
+            transform: none;
+            transition: none;
+        }
     }
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const els = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('is-visible');
+                        io.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+            els.forEach(el => io.observe(el));
+        } else {
+            els.forEach(el => el.classList.add('is-visible'));
+        }
+    });
+</script>
