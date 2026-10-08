@@ -105,7 +105,7 @@ already active, which you can find it in there.
 ## Super, I'm in. How can I subscribe?
 
 Go to **[Ippocra](https://app.ippocra.com)** and register, after that pick the plan that suits you best and then
-you are ready to use Ippocra. You can explore our plans and their prices **[here](/pricing)**.
+you are ready to use Ippocra. You can explore our plans and their prices **[here](/en/ippo/prezzi)**.
 
 Ciao for now, <br/>
 Michele.

@@ -104,4 +104,4 @@ No. When you share your medical imaging records via IppoLink, the receiving doct
 
 **DICOM files are very large — is there a storage limit?**
 
-Ippocra is designed to handle large medical records, including imaging exams that can weigh hundreds of megabytes. Each plan offers storage space tailored to individual or family needs; for details, see our [dedicated page](/prezzi){:target="_blank"}. Ippocra's cloud infrastructure is optimised to ensure fast upload times and smooth viewing even for the most voluminous exams.
+Ippocra is designed to handle large medical records, including imaging exams that can weigh hundreds of megabytes. Each plan offers storage space tailored to individual or family needs; for details, see our [dedicated page](/en/ippo/prezzi){:target="_blank"}. Ippocra's cloud infrastructure is optimised to ensure fast upload times and smooth viewing even for the most voluminous exams.

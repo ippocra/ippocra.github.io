@@ -1,19 +1,22 @@
 navigation:
+  ippo:
+    title: Ippo
+    url: /ippo
   doctors:
     title: Γιατροί
-    url: /doctors
+    url: /el/ippo/medici
   business:
     title: Imaging
-    url: /imaging
+    url: /el/ippo/imaging
   pricing:
     title: Τιμές
-    url: /pricing
+    url: /el/ippo/prezzi
   about:
     title: Σχετικά
-    url: /about
+    url: /el/about
   security:
     title: Ασφάλεια
-    url: /security
+    url: /el/ippo/security
 actions:
   register: Εγγραφή
   login: Σύνδεση

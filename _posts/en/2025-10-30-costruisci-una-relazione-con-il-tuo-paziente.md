@@ -37,4 +37,4 @@ appointment). Each visit automatically renews the plan, encouraging annual scree
 clinic retains its client.
 
 Want a free demo today to see how Ippocra can streamline the organized management of your reports? Contact 
-us at **info@ippocra.com** or fill out the **[form](https://ippocra.com/business)**.
+us at **info@ippocra.com** or fill out the **[form](https://ippocra.com/en/ippo/imaging)**.

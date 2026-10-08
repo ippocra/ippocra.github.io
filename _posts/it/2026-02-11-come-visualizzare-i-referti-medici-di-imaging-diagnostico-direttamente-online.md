@@ -104,5 +104,5 @@ No. Quando condividi i tuoi referti medici di imaging tramite IppoLink, il medic
 
 **I file DICOM occupano molto spazio: c'è un limite di archiviazione?**
 
-Ippocra è progettato per gestire referti medici di grandi dimensioni, inclusi esami di imaging che possono pesare centinaia di megabyte. Ogni piano offre uno spazio di archiviazione adeguato alle esigenze del singolo utente o della famiglia; per i dettagli, consulta la nostra [pagina dedicata](/prezzi){:target="_blank"}. L'infrastruttura cloud di Ippocra è ottimizzata per garantire tempi di caricamento rapidi e una visualizzazione fluida anche per gli esami più voluminosi.
+Ippocra è progettato per gestire referti medici di grandi dimensioni, inclusi esami di imaging che possono pesare centinaia di megabyte. Ogni piano offre uno spazio di archiviazione adeguato alle esigenze del singolo utente o della famiglia; per i dettagli, consulta la nostra [pagina dedicata](/ippo/prezzi){:target="_blank"}. L'infrastruttura cloud di Ippocra è ottimizzata per garantire tempi di caricamento rapidi e una visualizzazione fluida anche per gli esami più voluminosi.
 

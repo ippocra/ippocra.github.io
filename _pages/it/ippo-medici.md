@@ -1,8 +1,9 @@
 ---
 layout: default
 lang: it
-permalink: /doctors
+permalink: /ippo/medici
 redirect_from:
+    - /doctors
     - /business
 title: "I referti dei tuoi pazienti, sempre con te - Ippocra per Medici"
 description: "Basta chiavette USB tra un ambulatorio e l'altro. Importa i referti dei tuoi pazienti in un click, trova qualsiasi documento in pochi secondi e visualizza la storia clinica longitudinale."
