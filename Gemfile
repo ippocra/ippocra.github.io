@@ -18,7 +18,7 @@ gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mis
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-polyglot", "~> 1.11.0"
+  gem "jekyll-polyglot", "~> 1.14.0"
   gem "jekyll-seo-tag"
   gem "jekyll-paginate", "~> 1.1"
   gem "jekyll-minifier"
