@@ -48,8 +48,11 @@
           </a>
         </li>
 
+        {% if page_url contains "/ippo" %}
+          <!-- Ippo-specific nav CTAs (kept off the corporate homepage) -->
           <a id="btn-register" href="https://app.ippocra.com/register" class="btn btn--primary">{{ site.data[site.active_lang].strings.actions.register }}</a>
           <a href="https://app.ippocra.com/" class="btn btn--inverse">{{ site.data[site.active_lang].strings.actions.login }}</a>
+        {% endif %}
 
         </ul>
         {% if site.search == true %}

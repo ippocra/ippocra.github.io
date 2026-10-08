@@ -48,6 +48,19 @@ Pages are thin Markdown files (in `_pages/`) that include large HTML partials fr
 - `/about` pages (`/_pages/it/chi-siamo.md` for IT, `_pages/it/about.md` for EN/EL) → includes `_inner_about.html`
 - Blog: `_posts/it/` and `_posts/en/` for Italian and English posts (Greek has no blog)
 
+### Sitemap
+
+Two product subpaths, each with its own section and subpages:
+
+- **`/ilai`** — ILAI (Ippocra Local Artificial Intelligence). Served from this
+  repo under `ilai/` (IT) and `en/ilai/` (EN). Subpages include use cases
+  (casi d'uso). Form backend at `ilai.ippocra.com/api/` (separate Dokku app).
+- **`/ippo`** — Ippo (digital health platform for families). Served from this
+  repo under `_pages/{it,en,el}/ippo*`, subpage navbar `masthead-ippo.html`.
+
+Both are Ippocra products. Ideallab is a separate company with its own site
+(`ideallab.org`) — it is **not** part of this repo's product sitemap.
+
 ### Layouts
 
 - `default.html` — base layout with nav/footer
@@ -58,30 +71,6 @@ Pages are thin Markdown files (in `_pages/`) that include large HTML partials fr
 - `_includes/masthead.html` — default navbar (used for blog, about, etc.)
 - `_includes/masthead-gateway.html` — gateway/homepage navbar (no "Chi Siamo" link, simpler)
 - `_includes/masthead-ippo.html` — ippo subpage navbar (highlighted Ippo link)
-
-### Homepage (Gateway)
-
-The homepage (`_inner_gateway.html`) follows a strict product hierarchy:
-
-1. **ILAI** — flagship product. Featured as a full-width dark card with "Prodotto Ippocra" badge, glow hover effect, and 4 bullet points from ILAI messaging.
-2. **Three-card row** — below the featured ILAI: compact ILAI card (dark) | Ippo card (light/white) | Ideallab card (dark sepia/warm). Each card has logo, one-line description, and CTA button.
-3. **Background** — warm neutral gradient (`#fafafa → #f5f0e8 → #fafafa`) for consistent contrast across all card colors.
-
-**CSS class conventions:**
-- Featured ILAI: `.gateway-card-ilai` (full-width, dark, glow)
-- Compact ILAI (bottom row): `.gateway-card-ilai-compact` (dark, same colors)
-- Ippo: `.gateway-card-ippo` (light/white background)
-- Ideallab: `.gateway-card-ideallab` (dark sepia `#3b2e20`, amber accents)
-- All share: `.gateway-card`, `.gateway-brand`, `.gateway-brand-mark`, `.gateway-card-cta`
-- Small CTA variant: `.gateway-card-cta-sm` for compact cards
-- Featured badge: `.featured-badge` (pill, teal bg)
-- Glow effect: `.featured-glow` (hover shadow)
-
-**Hero headline rules:**
-- IT: "Ippocra: il tuo controllo sui dati aziendali"
-- EN: "Ippocra: own your company data, your own AI"
-- EL: "Ippocra: il tuo controllo sui dati aziendali, la tua AI"
-- **Must NEVER mention health.** Focus on company data ownership, local AI, cost control.
 
 ### About page
 
@@ -107,7 +96,6 @@ Custom styles live in `_sass/` (SCSS modules: `_palette.scss`, `_typography.scss
 
 - `assets/images/il-logo.svg` — ILAI logo (SVG)
 - `assets/images/ippo-mascot.png` — Ippo mascot (PNG, ~87KB)
-- `assets/ideallab-favicon.svg` — Ideallab favicon/logo (SVG)
 
 ### Navigation
 
@@ -121,6 +109,5 @@ GitHub Actions workflow pushes to `ippocra.github.io` repo for GitHub Pages depl
 
 - **Footer carries stale branding** — Always update footers after adapting pages. They often contain old logos, names, and links not present in page content.
 - **Broken relative paths after page moves** — When pages move, CSS/JS references break. Fix all `../` paths after copy.
-- **Three card backgrounds must be distinct** — ILAI dark (`#0e0e10`), Ippo light (`#ffffff`), Ideallab sepia (`#3b2e20`). Never use variations of black for the third card.
 - **Gateway background** — Use warm neutral gradient (`#fafafa → #f5f0e8 → #fafafa`), NOT a brand-colored gradient. A teal gradient competes with both dark and light cards.
 - **ILAI headline must never mention health** — Focus on company data ownership, local AI, cost control.
