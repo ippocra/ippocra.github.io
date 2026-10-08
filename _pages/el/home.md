@@ -2,12 +2,12 @@
 layout: landing_page
 lang: el
 permalink: /
-title: "Ippocra — το έλεγχο των δεδομένων σου"
+title: "Ippocra — Innovation with Agency"
 redirect_from:
     - /customers
 markdown: false
-description: "Ippocra: φτιάχνουμε τοπική τεχνητή νοημοσύνη για επιχειρήσεις (ILAI) που παραμένει στον υπολογιστή σας, και Ippo — ψηφιακή πλατφόρμα υγείας για οικογένειες."
-keywords: "Ippocra, ILAI, τοπική τεχνητή νοημοσύνη, Ippo, ψηφιακή υγεία, οικογενειακά ιατρικά αρχεία, εταιρικά δεδομένα, τοπική τεχνητή νοημοσύνη"
+description: "Ippocra: έξυπνα συστήματα που είναι ιδιωτικά κατά σχεδιασμό και τοπικά από προεπιλογή. Φτιάχνουμε ΤΝ και ψηφιακές πλατφόρμες που επιστρέφουν τον έλεγχο στους ανθρώπους."
+keywords: "Ippocra, Innovation with Agency, τοπική ΤΝ, ιδιωτικότητα, κυριαρχία δεδομένων, ILAI, Ippo, ψηφιακή υγεία, τοπική τεχνητή νοημοσύνη"
 ---
 
 {% include_relative _inner_gateway.html %}
