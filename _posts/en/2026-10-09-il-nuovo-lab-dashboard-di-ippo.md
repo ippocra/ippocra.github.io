@@ -4,8 +4,8 @@ categories: news
 tags: ippo
 permalink: /lab-dashboard
 lang: en
-desc: "Ippo's new Lab Dashboard: upload a lab result and Ippo extracts the values, flags the ones out of range, and shows everything in a single view. Available on paid plans."
-keywords: "Ippo Lab Dashboard, online blood tests, lab results, out-of-range values, test results dashboard, Ippocra"
+desc: "Ippo's new Lab Dashboard: upload a lab result and Ippo extracts the values, flags the ones out of range, and shows everything in a single view. Extraction powered by ILAI on Cloud. Available on paid plans."
+keywords: "Ippo Lab Dashboard, online blood tests, lab results, out-of-range values, test results dashboard, ILAI on Cloud, Ippocra"
 page_id: lab-dashboard
 header:
     teaser: /assets/images/screenshots/lab-dashboard-teaser.webp
@@ -28,6 +28,14 @@ The part that makes the difference: **out-of-range values are highlighted with a
 
 ![Lab Dashboard: values with Normal and Attention badges](/assets/images/website/lab-dashboard.png)
 
+## Under the hood: extraction is powered by ILAI on Cloud
+
+What makes all of this possible is the engine Ippo uses to "read" the report: **ILAI on Cloud**, our AI colleague that runs in the cloud and **without you installing or managing any hardware**. It's the same engine that already helps [create videos with local AI](/creare-video-ai-in-locale) and that we covered in [ILAI on Cloud: your AI colleague, without cloud subscriptions](/ilai-on-cloud).
+
+Here it does a different, very concrete job: it **understands a clinical document** — not generic text — and extracts the numeric values with their reference ranges, neatly organized and ready for the dashboard. No blind OCR, no manual entry: the report lands in Ippo and the values are already organized.
+
+Want to see how it works? [Read how ILAI on Cloud works](/en/ilai/cloud/) on the ILAI site.
+
 ## On desktop and on your phone
 
 The Lab Dashboard works where you already use Ippo: on your computer, and on the go when you want to check your values away from the desk. The same view, on both.
@@ -36,56 +44,18 @@ The Lab Dashboard works where you already use Ippo: on your computer, and on the
 
 ## It's the difference between having your results and understanding them
 
-Anyone can archive a PDF. The Lab Dashboard helps you **understand** what your tests say. It's available on [Ippo's paid plans](/ippo/prezzi) — from the Studio plan up.
+Anyone can archive a PDF. The Lab Dashboard helps you **understand** what your tests say. It's available on [Ippo's paid plans](/ippo/prezzi) — from the Just Us plan up.
 
 <blockquote>
   <p><strong>Q: Is it available on the free plan?</strong></p>
-  <p>The Lab Dashboard is a feature of the paid plans. On the free plan it's listed as "available in paid plans".</p>
+  <p>The Lab Dashboard is a feature of the paid plans.</p>
 
   <p><strong>Q: Which tests does it handle?</strong></p>
   <p>Lab results that include parameters with reference ranges (hematology, glucose, cholesterol and so on). Values are organized by category.</p>
 
   <p><strong>Q: Is it an automatic read, or do I enter the values by hand?</strong></p>
-  <p>It's automatic extraction: upload the document and Ippo organizes the values. You don't retype anything.</p>
+  <p>It's automatic extraction, powered by ILAI on Cloud: upload the document and Ippo organizes the values. You don't retype anything.</p>
 
   <p><strong>Q: Is it tied to the Ippo archive?</strong></p>
   <p>Yes. It's an extension of Ippo, which keeps being your single archive for records. We told you <a href="/digital-medical-records">how Ippocra revolutionizes digital medical record management</a>: the Lab Dashboard is the next step, from "storing" to "understanding".</p>
-</blockquote>
-
----
-
-### Versione in italiano
-
-Finora Ippo ti aiutava a **trovare, conservare e condividere** i tuoi referti. Con il **Lab Dashboard** va un passo oltre: non si limita a custodire il PDF, ma **legge le tue analisi** e ti mostra i valori in un'unica vista, con quelli fuori range già segnalati.
-
-## Carichi il referto, Ippo fa il resto
-
-Non devi ricopiare nulla. Carichi il risultato di laboratorio come faresti con qualsiasi altro documento su Ippo, e Ippo **estrae automaticamente i valori**: emoglobina, piastrine, glicemia, colesterolo e ogni altra parametro, **organizzati in un dashboard** che comprendi con un'occhiata.
-
-Niente più fogli sparsi da confrontare. Niente più «questo valore è alto o basso?» ogni volta che apri un referto.
-
-## I valori fuori range, già segnati
-
-Il punto che fa la differenza: i valori **fuori range sono evidenziati con un badge**, così sai subito **cosa chiedere al medico** alla prossima visita. In un colpo d'occhio vedi quanti parametri sono nella norma e quanti meritano attenzione.
-
-## Su desktop e su telefono
-
-Il Lab Dashboard funziona dove già usi Ippo: dal computer, e in mobilità, quando vuoi controllare i tuoi valori mentre sei fuori. La stessa vista, su entrambi.
-
-## È la differenza tra avere i risultati e capirli
-
-Tutti possono archiviare un PDF. Il Lab Dashboard ti aiuta a **capire** cosa dicono i tuoi esami. È disponibile nei [piani a pagamento di Ippo](/ippo/prezzi) — dal piano Studio in su.
-
-<blockquote>
-  <p><strong>D: È disponibile nel piano gratuito?</strong></p>
-  <p>Il Lab Dashboard è una funzione dei piani a pagamento. Nel piano gratuito la vedi indicata come «disponibile nei piani a pagamento».</p>
-
-  <p><strong>D: Che esami gestisce?</strong></p>
-  <p>I risultati di laboratorio che contengono parametri con range di riferimento (ematologia, glicemia, colesterolo e via dicendo). I valori vengono organizzati per categoria.</p>
-
-  <p><strong>D: È una lettura automatica o devo immettere i valori a mano?</strong></p>
-  <p>È estrazione automatica: carichi il documento e Ippo organizza i valori. Non devi ricopiare nulla.</p>
-
-  <p><strong>D: È legato all'archivio Ippo?</strong></p>
-  <p>Sì. È un'estensione di Ippo, che continua a fare da archivio unico dei tuoi referti. Qui ti avevamo raccontato <a href="/gestione-referti-medici-digitali">come Ippocra rivoluziona la gestione dei referti medici digitali</a>: il Lab Dashboard è il passo successivo, da «conservare» a «comprendere».</p>
 </blockquote>
