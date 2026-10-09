@@ -7,7 +7,7 @@ description: "Received a CT scan or MRI in DICOM format but can't open it? Disco
 keywords: view DICOM medical records online, how to open DICOM files without software, CT scan MRI viewer online, view DICOM on smartphone, medical imaging online, DICOM format, medical viewer, diagnostic imaging, digital medical records, open CT scan online, MRI viewer, medical imaging records, DICOM viewer online
 page_id: come-visualizzare-i-referti-medici-di-imaging-diagnostico-direttamente-online
 header:
-    teaser: assets/images/ancona_view_belvedere_nord.webp
+    teaser: /assets/images/ancona_view_belvedere_nord.webp
 classes: wide
 tags: ippo
 ---

@@ -7,7 +7,7 @@ description: Offer a sponsored Family plan to your patients through Ippocra to s
 keywords: sponsored plan, patient loyalty, client retention, healthcare relationship, family plan, practice growth, patient engagement, recurring visits
 page_id: costruisci-una-relazione-con-il-tuo-paziente
 header:
-    teaser: assets/images/ancona-golfo.jpg
+    teaser: /assets/images/ancona-golfo.jpg
 classes: wide
 tags: ippo
 ---

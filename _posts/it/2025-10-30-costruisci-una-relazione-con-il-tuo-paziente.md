@@ -7,7 +7,7 @@ description: Offri un piano Family sponsorizzato ai tuoi pazienti tramite Ippocr
 keywords: piano sponsorizzato, fedeltà pazienti, fidelizzazione clienti, relazione sanitaria, piano family, crescita pratica, engagement pazienti, visite ricorrenti
 page_id: costruisci-una-relazione-con-il-tuo-paziente
 header:
-    teaser: assets/images/ancona-golfo.jpg
+    teaser: /assets/images/ancona-golfo.jpg
 classes: wide
 tags: ippo
 ---

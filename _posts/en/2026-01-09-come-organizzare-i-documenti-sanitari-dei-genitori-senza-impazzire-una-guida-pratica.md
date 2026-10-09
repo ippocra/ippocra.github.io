@@ -7,7 +7,7 @@ description: I have all my mother's documents and I'm losing my mind. Find out h
 keywords: Ippocra, medical report, health document management, chaotic home, smart search, save medical appointment, store medical reports in the cloud
 page_id: come-organizzare-i-documenti-sanitari-dei-genitori-senza-impazzire-una-guida-pratica
 header:
-    teaser: assets/images/porto_antico_arco_traiano.webp
+    teaser: /assets/images/porto_antico_arco_traiano.webp
 classes: wide
 tags: ippo
 ---

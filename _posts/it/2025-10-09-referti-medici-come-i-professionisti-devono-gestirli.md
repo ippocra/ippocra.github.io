@@ -7,7 +7,7 @@ description: Scopri i requisiti legali per la conservazione dei referti medici e
 keywords: cartella clinica, conservazione legale, conformità GDPR, normative sanitarie, sicurezza documenti, responsabilità professionale, protezione dati, archiviazione medica
 page_id: referti-medici-come-i-professionisti-devono-gestirli
 header:
-    teaser: assets/images/porta_a_mare_mole.jpg
+    teaser: /assets/images/porta_a_mare_mole.jpg
 classes: wide
 tags: ippo
 ---

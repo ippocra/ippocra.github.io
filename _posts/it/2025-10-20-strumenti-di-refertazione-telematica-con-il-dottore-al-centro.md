@@ -7,7 +7,7 @@ description: Scrivi, visualizza in anteprima e invia in modo sicuro referti medi
 keywords: stesura referti, documentazione medica, editor documenti, telemedicina, comunicazione pazienti, invio sicuro, strumento healthcare, referti digitali
 page_id: strumenti-di-refertazione-telematica-con-il-dottore-al-centro
 header:
-    teaser: assets/images/scalinata-passetto-sunrise.jpg
+    teaser: /assets/images/scalinata-passetto-sunrise.jpg
 classes: wide
 tags: ippo
 ---

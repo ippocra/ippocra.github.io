@@ -7,7 +7,7 @@ description: Learn the legal requirements for storing medical reports and how he
 keywords: medical records, legal retention, GDPR compliance, healthcare regulations, document security, professional responsibility, data protection, medical storage
 page_id: referti-medici-come-i-professionisti-devono-gestirli
 header:
-    teaser: assets/images/porta_a_mare_mole.jpg
+    teaser: /assets/images/porta_a_mare_mole.jpg
 classes: wide
 tags: ippo
 ---

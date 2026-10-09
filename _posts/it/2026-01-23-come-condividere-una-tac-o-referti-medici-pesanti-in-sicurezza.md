@@ -7,7 +7,7 @@ description: Devi inviare una TAC o una risonanza magnetica, ma il file è tropp
 keywords: condividere TAC online, come inviare una TAC, inviare referti medici voluminosi, file DICOM, risonanza magnetica online, condivisione sicura dati sanitari, link protetto medico, imaging radiologico, cartella clinica digitale.
 page_id: come-condividere-una-tac-o-referti-medici-pesanti-in-sicurezza
 header:
-    teaser: assets/images/portonovo-sunset.webp
+    teaser: /assets/images/portonovo-sunset.webp
 classes: wide
 tags: ippo, privacy
 ---

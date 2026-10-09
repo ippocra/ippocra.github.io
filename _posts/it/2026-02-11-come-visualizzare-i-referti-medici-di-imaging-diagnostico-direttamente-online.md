@@ -7,7 +7,7 @@ description: "Hai ricevuto una TAC o una risonanza magnetica in formato DICOM e 
 keywords: visualizzare referti medici DICOM online, come aprire file DICOM senza software, visualizzatore TAC risonanza online, vedere DICOM da smartphone, imaging diagnostico online, formato DICOM, visualizzatore medicale, diagnostica per immagini, cartella clinica digitale, aprire TAC online, risonanza magnetica visualizzatore, referti medici imaging, DICOM viewer online
 page_id: come-visualizzare-i-referti-medici-di-imaging-diagnostico-direttamente-online
 header:
-    teaser: assets/images/ancona_view_belvedere_nord.webp
+    teaser: /assets/images/ancona_view_belvedere_nord.webp
 classes: wide
 tags: ippo
 ---

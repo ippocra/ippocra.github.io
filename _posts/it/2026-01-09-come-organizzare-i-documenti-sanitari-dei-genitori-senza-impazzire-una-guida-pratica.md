@@ -7,7 +7,7 @@ description: Ho tutti i documenti di mia madre e sto impazzendo. Scopri come met
 keywords: Ippocra, referto medico, gestione documenti sanitari, casa caotica, ricerca intelligente, salvare appuntamento medico, salvare referti medici sul cloud
 page_id: come-organizzare-i-documenti-sanitari-dei-genitori-senza-impazzire-una-guida-pratica
 header:
-    teaser: assets/images/porto_antico_arco_traiano.webp
+    teaser: /assets/images/porto_antico_arco_traiano.webp
 classes: wide
 tags: ippo
 ---

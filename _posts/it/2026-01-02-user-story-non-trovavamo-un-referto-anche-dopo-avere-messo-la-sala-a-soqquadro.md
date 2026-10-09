@@ -7,7 +7,7 @@ page_id: user-story-non-trovavamo-un-referto-anche-dopo-avere-messo-la-sala-a-so
 description: "Scopri come un genitore ha trasformato la disperata ricerca di un referto medico in pochi secondi grazie a Ippocra. Tratto da una storia vera"
 keywords: "Ippocra, referto medico, gestione documenti sanitari, casa caotica, ricerca intelligente, salvare appuntamento medico, salvare referti medici sul cloud"
 header:
-    teaser: assets/images/ancona_golfo.wepb
+    teaser: /assets/images/ancona_golfo.wepb
 classes: wide
 tags: ippo
 ---

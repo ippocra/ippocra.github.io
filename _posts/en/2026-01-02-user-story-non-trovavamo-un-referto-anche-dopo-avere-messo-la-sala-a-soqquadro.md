@@ -7,7 +7,7 @@ page_id: user-story-non-trovavamo-un-referto-anche-dopo-avere-messo-la-sala-a-so
 description: "Discover how a parent turned a frantic search for a medical report into a matter of seconds thanks to Ippocra. Based on a true story"
 keywords: "Ippocra, medical report, health document management, chaotic house, smart search, saving medical appointments, saving medical reports to the cloud"
 header:
-    teaser: assets/images/ancona_golfo.wepb
+    teaser: /assets/images/ancona_golfo.wepb
 classes: wide
 tags: ippo
 ---

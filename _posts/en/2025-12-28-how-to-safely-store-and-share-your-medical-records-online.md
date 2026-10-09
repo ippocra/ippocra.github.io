@@ -5,7 +5,7 @@ permalink: /how-to-safely-store-and-share-your-medical-records-online
 lang: en
 page_id: how-to-safely-store-and-share-your-medical-records-online
 header:
-    teaser: assets/images/ancona_by_sea.jpg
+    teaser: /assets/images/ancona_by_sea.jpg
 classes: wide
 tags: ippo, privacy
 ---

@@ -7,7 +7,7 @@ description: "Guide to choosing the right tool to organise medical records for t
 keywords: family medical records management, family health app, organise family health documents, family medical folder, elderly parents health management, children medical records, digital caregiver, family medical archive, family medical appointments coordination, paediatric records sharing, family health data privacy, health management platform, Ippocra family, medical documents digitalisation, health documentation control
 page_id: come-scegliere-uno-strumento-per-gestire-i-referti-medici-della-famiglia
 header:
-    teaser: assets/images/vista-pincio_ancona.webp
+    teaser: /assets/images/vista-pincio_ancona.webp
 classes: wide
 tags: ippo
 ---

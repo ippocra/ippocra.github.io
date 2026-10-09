@@ -7,7 +7,7 @@ description: "Guida alla scelta dello strumento per organizzare referti medici d
 keywords: gestione referti medici famiglia, app salute famiglia, organizzare documenti sanitari familiari, cartella clinica famiglia, gestione salute genitori anziani, referti medici bambini, caregiver digitale, archivio medico familiare, coordinamento visite mediche famiglia, condivisione referti pediatrici, privacy dati sanitari famiglia, piattaforma gestione salute, Ippocra famiglia, digitalizzazione documenti medici, controllo documentazione sanitaria
 page_id: come-scegliere-uno-strumento-per-gestire-i-referti-medici-della-famiglia
 header:
-    teaser: assets/images/vista-pincio_ancona.webp
+    teaser: /assets/images/vista-pincio_ancona.webp
 classes: wide
 tags: ippo
 ---

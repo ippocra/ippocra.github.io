@@ -7,7 +7,7 @@ description: Write, preview, and securely send medical reports directly from Ipp
 keywords: report writing, medical documentation, document editor, telemedicine, patient communication, secure sending, healthcare tool, digital reports
 page_id: strumenti-di-refertazione-telematica-con-il-dottore-al-centro
 header:
-    teaser: assets/images/scalinata-passetto-sunrise.jpg
+    teaser: /assets/images/scalinata-passetto-sunrise.jpg
 classes: wide
 tags: ippo
 ---

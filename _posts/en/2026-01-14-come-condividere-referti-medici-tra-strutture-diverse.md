@@ -7,7 +7,7 @@ description: Do you have many medical reports scattered across various clinics? 
 keywords: sharing medical reports, health document management, healthcare interoperability, personal clinical archive, medical data privacy, sending clinical analyses, digital health record.
 page_id: come-condividere-referti-medici-tra-strutture-diverse
 header:
-    teaser: assets/images/poggio-san-romualdo-nevicato.webp
+    teaser: /assets/images/poggio-san-romualdo-nevicato.webp
 classes: wide
 tags: ippo, privacy
 ---

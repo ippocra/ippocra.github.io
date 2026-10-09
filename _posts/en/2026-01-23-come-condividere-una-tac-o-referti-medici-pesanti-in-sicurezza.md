@@ -7,7 +7,7 @@ description: Do you need to send a CT scan or an MRI but the file is too large? 
 keywords: share CT scan online, send large medical reports, DICOM files, MRI online, secure health data sharing, protected medical link, radiological imaging, digital medical records.
 page_id: come-condividere-una-tac-o-referti-medici-pesanti-in-sicurezza
 header:
-    teaser: assets/images/portonovo-sunset.webp
+    teaser: /assets/images/portonovo-sunset.webp
 classes: wide
 tags: ippo, privacy
 ---
