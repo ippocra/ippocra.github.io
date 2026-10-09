@@ -4,20 +4,40 @@ layout: archive
 
 {{ content }}
 
-{% assign page_tags = page.tags | default: '' | split: ',' %}
 {% assign current_tag = page.url | split: '/tag/' | last | replace: '/', '' %}
 {% assign tag_base = '/' | append: site.active_lang | append: '/tag/' %}
 {% if site.active_lang == site.default_lang %}{% assign tag_base = '/tag/' %}{% endif %}
+
+{% assign all_posts = site.posts %}
+{% if site.active_lang %}
+  {% assign all_posts = all_posts | where_exp: "post", "post.lang == site.active_lang" %}
+{% else %}
+  {% assign all_posts = all_posts | where_exp: "post", "post.lang == site.default_lang or post.lang == nil" %}
+{% endif %}
+{% if current_tag != '' %}
+  {% assign all_posts = all_posts | where_exp: "post", "post.tags != nil and post.tags != '' and post.tags contains current_tag" %}
+{% endif %}
+{% assign all_posts = all_posts | sort: 'date' | reverse %}
+
 <style>
+.post-card{display:block;text-decoration:none;color:inherit;border:1px solid #e2e8f0;border-radius:12px;padding:1.1rem 1.25rem;margin-bottom:1rem;background:#fff;transition:border-color .15s ease,box-shadow .15s ease;}
+.post-card:hover{border-color:#0f766e;box-shadow:0 4px 14px rgba(15,118,110,.08);}
+.post-card__title{font-size:1.15rem;font-weight:600;margin:0 0 .4rem;line-height:1.3;color:#0f172a;}
+.post-card:hover .post-card__title{color:#0f766e;}
+.post-card__excerpt{margin:0 0 .4rem;color:#475569;font-size:.95rem;line-height:1.5;}
+.post-card__meta{font-size:.8rem;color:#94a3b8;}
+.post-card__img{width:100%;max-width:220px;height:auto;border-radius:8px;float:right;margin:0 0 .5rem 1rem;}
 .tag-bar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 1.25rem;padding:0;list-style:none;}
-.tag-bar__item{display:inline-block;padding:4px 12px;border-radius:999px;font-size:0.82rem;letter-spacing:0.02em;text-transform:lowercase;color:#334155;text-decoration:none;border:1px solid #cbd5e1;background:#f8fafc;transition:all .15s ease;}
+.tag-bar__item{display:inline-block;padding:4px 12px;border-radius:999px;font-size:.82rem;letter-spacing:.02em;text-transform:lowercase;color:#334155;text-decoration:none;border:1px solid #cbd5e1;background:#f8fafc;transition:all .15s ease;}
 .tag-bar__item:hover{background:#eef2f7;border-color:#94a3b8;}
 .tag-bar__item.is-active{background:#0f766e;border-color:#0f766e;color:#fff;font-weight:600;}
 </style>
+
+{% assign tag_order = site.data.tag_order | default: 'ippo ilai ai privacy' %}
+{% assign tag_list = tag_order | split: ' ' %}
 <nav class="tag-bar" aria-label="Blog tags">
-  {% for t in site.tags %}
-    {% assign tname = t.first %}
-    {% if tname == 'ippo' or tname == 'ilai' or tname == 'ai' or tname == 'privacy' %}
+  {% for tname in tag_list %}
+    {% if site.tags[tname] %}
       <a class="tag-bar__item{% if current_tag == tname %} is-active{% endif %}" href="{{ tag_base | append: tname | append: '/' }}">{{ tname }}</a>
     {% endif %}
   {% endfor %}
@@ -25,13 +45,20 @@ layout: archive
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-{% assign lang_posts = site.posts | where_exp: "post", "post.lang == site.active_lang" %}
-{% if current_tag != '' %}
-  {% assign lang_posts = lang_posts | where_exp: "post", "post.tags != nil and post.tags != '' and post.tags contains current_tag" %}
-{% endif %}
-{% assign lang_posts = lang_posts | sort: 'date' | reverse %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=lang_posts type=entries_layout %}
+<div class="entries-list">
+  {% for post in all_posts %}
+    <div class="list__item">
+      <a class="post-card" href="{{ post.url }}" itemscope itemtype="https://schema.org/CreativeWork">
+        {% if post.header and post.header.teaser %}
+          <img class="post-card__img" src="{{ post.header.teaser }}" alt="" itemprop="image" loading="lazy">
+        {% endif %}
+        <h2 class="post-card__title" itemprop="headline">{{ post.title }}</h2>
+        <p class="post-card__excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncatewords: 22 }}</p>
+        <p class="post-card__meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+          {% if post.read_time %} · {{ post.read_time }}{% endif %}
+        </p>
+      </a>
+    </div>
+  {% endfor %}
 </div>
