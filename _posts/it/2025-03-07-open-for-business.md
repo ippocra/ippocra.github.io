@@ -9,6 +9,7 @@ page_id: open-for-business
 header:
     teaser: /assets/images/sunrise_with_fishing_boats.jpg
 tags: ippo
+excerpt: "Dopo mesi di test, prove e incombenze burocratiche, siamo estremamente lieti di annunciare che Ippocra è aperto! I nostri utenti beta saranno grandfathered, e tutti possono registrarsi per provare la piattaforma di gestione documenti medici."
 ---
 
 ![image-center](/assets/images/sunrise_with_fishing_boats.jpg){: .align-center}

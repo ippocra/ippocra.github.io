@@ -9,6 +9,7 @@ keywords: Ippocra free plan, medical documents, encryption, smart search, organi
 header:
     teaser: /assets/images/scorci_di_conero.jpg
 tags: ippo
+excerpt: "Ippo is our mascot, and now you can take it for a walk. With the free Ippo plan you can upload your documents, keep a loved one's records organized, and find everything easily instead of losing it constantly."
 ---
 
 
