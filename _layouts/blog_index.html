@@ -4,20 +4,19 @@ layout: archive
 
 {{ content }}
 
-{% assign current_tag = page.url | split: '/tag/' | last | replace: '/', '' %}
-{% assign tag_base = '/' | append: site.active_lang | append: '/tag/' %}
-{% if site.active_lang == site.default_lang %}{% assign tag_base = '/tag/' %}{% endif %}
-
-{% assign all_posts = site.posts %}
-{% if site.active_lang %}
-  {% assign all_posts = all_posts | where_exp: "post", "post.lang == site.active_lang" %}
-{% else %}
-  {% assign all_posts = all_posts | where_exp: "post", "post.lang == site.default_lang or post.lang == nil" %}
+{% assign current_tag = '' %}
+{% if page.url contains '/tag/' %}
+  {% assign current_tag = page.url | split: '/tag/' | last | replace: '/', '' %}
 {% endif %}
-{% if current_tag != '' %}
-  {% assign all_posts = all_posts | where_exp: "post", "post.tags != nil and post.tags != '' and post.tags contains current_tag" %}
+{% assign lang = page.lang | default: site.config.active_lang | default: site.default_lang %}
+{% if lang == site.default_lang %}{% assign tag_base = '/tag/' %}{% else %}{% assign tag_base = '/' | append: lang | append: '/tag/' %}{% endif %}
+{% assign tag_index = site.tag_index[lang] %}
+{% if tag_index == nil %}{% assign tag_index = site.tag_index[site.default_lang] %}{% endif %}
+{% if current_tag != '' and tag_index %}
+  {% assign all_posts = tag_index[current_tag] %}
+{% elsif tag_index %}
+  {% assign all_posts = tag_index['all'] %}
 {% endif %}
-{% assign all_posts = all_posts | sort: 'date' | reverse %}
 
 <style>
 .post-card{display:block;text-decoration:none;color:inherit;border:1px solid #e2e8f0;border-radius:12px;padding:1.1rem 1.25rem;margin-bottom:1rem;background:#fff;transition:border-color .15s ease,box-shadow .15s ease;}
@@ -37,7 +36,7 @@ layout: archive
 {% assign tag_list = tag_order | split: ' ' %}
 <nav class="tag-bar" aria-label="Blog tags">
   {% for tname in tag_list %}
-    {% if site.tags[tname] %}
+    {% if tag_index[tname] %}
       <a class="tag-bar__item{% if current_tag == tname %} is-active{% endif %}" href="{{ tag_base | append: tname | append: '/' }}">{{ tname }}</a>
     {% endif %}
   {% endfor %}
@@ -56,7 +55,6 @@ layout: archive
         <p class="post-card__excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncatewords: 22 }}</p>
         <p class="post-card__meta">
           <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-          {% if post.read_time %} · {{ post.read_time }}{% endif %}
         </p>
       </a>
     </div>

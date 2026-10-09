@@ -114,8 +114,14 @@ include:
 exclude:
   - README.md
 
-whitelist:
+plugins:
+  - jekyll-feed
+  - jekyll-polyglot
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-minifier
   - jekyll-redirect-from
+  - jekyll-tailwindcss
 
 
 # The following items will not be processed, by default.

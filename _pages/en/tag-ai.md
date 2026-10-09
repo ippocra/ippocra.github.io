@@ -1,8 +1,7 @@
 ---
-layout: tag
+layout: blog_index
 lang: en
-permalink: /en/tag/ai/
-taxonomy: ai
+permalink: /tag/ai/
 title: "Artificial intelligence"
 description: "Posts about artificial intelligence"
 entries_layout: grid

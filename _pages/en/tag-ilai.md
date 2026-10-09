@@ -1,8 +1,7 @@
 ---
-layout: tag
+layout: blog_index
 lang: en
-permalink: /en/tag/ilai/
-taxonomy: ilai
+permalink: /tag/ilai/
 title: "ILAI"
 description: "All about ILAI"
 entries_layout: grid
