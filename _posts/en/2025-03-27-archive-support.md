@@ -10,6 +10,7 @@ permalink: /archive-support
 header:
     teaser: /assets/images/sunset_in_prospettiva_shorter.jpg
 tags: ippo
+excerpt: "Ippocra now supports ZIP archives! Easily upload and store CT scans, MRI files, and other archived medical data securely in the cloud."
 ---
 
 ![image-center](/assets/images/sunset_in_prospettiva_shorter.jpg){: .align-center}
