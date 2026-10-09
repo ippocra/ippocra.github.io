@@ -5,12 +5,13 @@ permalink: /how-to-safely-store-and-share-your-medical-records-online
 lang: en
 page_id: how-to-safely-store-and-share-your-medical-records-online
 header:
-    teaser: assets/images/ancona_by_sea.jpg
+    teaser: /assets/images/ancona_by_sea.jpg
 classes: wide
+tags: ippo, privacy
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/ancona_by_sea.jpg){: .align-center}
+![image-center](/assets/images/ancona_by_sea.jpg){: .align-center}
 **Built for you and your family: How to safely store and share your medical records on the cloud**
 
 

@@ -7,11 +7,12 @@ description: Confronto tra FSE e Ippocra, scopri come integrarli per un controll
 keywords:  fascicolo sanitario elettronico, FSE, referti medici digitali, gestione privata documenti sanitari, cartella clinica personale, digitalizzazione referti, privacy dati sanitari, app referti medici, interoperabilità sanitaria, cronologia clinica, Ippocra, alternative FSE, archiviazione referti, condivisione sicura documenti medici, proprietà dati sanitari
 page_id: fascicolo-sanitario-elettronico-vs-ippocra-quale-scegliere
 header:
-    teaser: assets/images/vigne.webp
+    teaser: /assets/images/vigne.webp
 classes: wide
+tags: ippo
 ---
 
-![image-center](assets/images/vigne.webp){: .align-center}
+![image-center](/assets/images/vigne.webp){: .align-center}
 **Ippocra vs Fascicolo Sanitario Elettronico (FSE): Quale Scegliere per i Tuoi Referti Medici**
 
 ## Confronto tra Ippocra e FSE, scopri come integrarli per un controllo completo della tua documentazione sanitaria.
@@ -42,7 +43,7 @@ Il Fascicolo Sanitario Elettronico nasce con un intento nobile: centralizzare la
 
 Questi limiti evidenziano la necessità di un approccio complementare al FSE che restituisca al paziente la proprietà effettiva della propria documentazione sanitaria.
 
-![image-center](assets/images/website/ippocra_grafico_vantaggi.webp){: align-center}
+![image-center](/assets/images/website/ippocra_grafico_vantaggi.webp){: .align-center}
 
 ## Il Metodo della Centralizzazione Personale
 

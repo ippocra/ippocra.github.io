@@ -8,6 +8,8 @@ description: Discover how to start using Ippocra's free Ippo plan to upload and 
 keywords: Ippocra free plan, medical documents, encryption, smart search, organize health records, document upload, mobile app, health management
 header:
     teaser: /assets/images/scorci_di_conero.jpg
+tags: ippo
+excerpt: "Ippo is our mascot, and now you can take it for a walk. With the free Ippo plan you can upload your documents, keep a loved one's records organized, and find everything easily instead of losing it constantly."
 ---
 
 

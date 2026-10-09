@@ -8,6 +8,7 @@ description: Medical Campus partners with Ippocra to provide secure medical repo
 keywords: Medical Campus, healthcare partnership, secure report sharing, patient records, clinic management, telemedicine, medical practice
 header:
     teaser: /assets/images/passetto_onde.jpg
+tags: ippo
 ---
 
 ![image-center](/assets/images/passetto_onde.jpg){: .align-center}

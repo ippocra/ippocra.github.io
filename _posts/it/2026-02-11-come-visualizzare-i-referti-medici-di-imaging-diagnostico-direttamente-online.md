@@ -7,11 +7,12 @@ description: "Hai ricevuto una TAC o una risonanza magnetica in formato DICOM e 
 keywords: visualizzare referti medici DICOM online, come aprire file DICOM senza software, visualizzatore TAC risonanza online, vedere DICOM da smartphone, imaging diagnostico online, formato DICOM, visualizzatore medicale, diagnostica per immagini, cartella clinica digitale, aprire TAC online, risonanza magnetica visualizzatore, referti medici imaging, DICOM viewer online
 page_id: come-visualizzare-i-referti-medici-di-imaging-diagnostico-direttamente-online
 header:
-    teaser: assets/images/ancona_view_belvedere_nord.webp
+    teaser: /assets/images/ancona_view_belvedere_nord.webp
 classes: wide
+tags: ippo
 ---
 
-![image-center](assets/images/ancona_view_belvedere_nord.webp){: .align-center}
+![image-center](/assets/images/ancona_view_belvedere_nord.webp){: .align-center}
 **Hai ricevuto una TAC o una risonanza magnetica in formato DICOM ma non riesci a visualizzarla? Scopri come aprire, analizzare e condividere i tuoi referti medici di imaging diagnostico direttamente dal browser, senza installare alcun software.**
 
 ## Il Problema Invisibile: Referti Medici che Non Puoi Vedere
@@ -24,7 +25,7 @@ Questa è la realtà quotidiana di chi riceve esami di diagnostica per immagini:
 
 ## Il Caso di Marco: Quando i Tuoi Referti Medici Diventano Illeggibili
 
-![image-center](assets/images/website/dicom_viewer_knee_it.webp){: .align-center}
+![image-center](/assets/images/website/dicom_viewer_knee_it.webp){: .align-center}
 
 > "Ho fatto una risonanza magnetica alla spalla dopo un infortunio sportivo. Mi hanno dato un CD con le immagini e un referto in PDF. Il PDF l'ho letto subito, ma volevo vedere le immagini della risonanza perché lo specialista che devo consultare è a Milano e la visita è tra una settimana. Ho provato ad aprire il CD: il mio MacBook non ha il lettore. Ho chiesto a un amico di copiarmi i file su una chiavetta USB, ma una volta aperti sul computer erano in un formato strano, DICOM, che nessun programma riusciva a leggere. Ho cercato un visualizzatore online, ma quelli gratuiti mi chiedevano di installare software che non capivo e non mi fidavo. Alla fine, ho fotografato il referto cartaceo con il telefono e l'ho mandato al dottore su WhatsApp. Ma le immagini della risonanza? Quelle sono rimaste bloccate nel CD."
 

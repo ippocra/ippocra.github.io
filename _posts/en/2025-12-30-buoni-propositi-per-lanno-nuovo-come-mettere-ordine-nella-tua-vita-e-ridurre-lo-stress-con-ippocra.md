@@ -5,12 +5,13 @@ permalink: /good-resolutions-for-the-new-year-how-to-bring-order-to-your-life-an
 lang: en
 page_id: buoni-propositi-per-lanno-nuovo-come-mettere-ordine-nella-tua-vita-e-ridurre-lo-stress-con-ippocra
 header:
-    teaser: assets/images/tree_panorama.webp
+    teaser: /assets/images/tree_panorama.webp
 classes: wide
+tags: ippo
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/tree_panorama.webp){: .align-center}
+![image-center](/assets/images/tree_panorama.webp){: .align-center}
 **Less stress next year: Organize your medical documents with Ippocra**
 
 

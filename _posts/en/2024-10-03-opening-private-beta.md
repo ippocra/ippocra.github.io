@@ -9,6 +9,8 @@ description: Ippocra is now open for private beta testing. Register to try our s
 keywords: Ippocra, private beta, medical documents, health records, secure storage, document management, digital health
 header:
     teaser: /assets/images/opening-beta-flower.png
+tags: ippo
+excerpt: "Ippocra is now open for private beta testing! Register and try our secure medical document management platform."
 ---
 
 ![image-center](/assets/images/opening-beta-flower.png){: .align-center}

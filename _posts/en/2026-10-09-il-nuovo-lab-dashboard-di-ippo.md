@@ -1,15 +1,16 @@
 ---
 title: "Ippo's new Lab Dashboard: beyond the archive, Ippo reads your lab results"
 categories: news
-tags: ippo
 permalink: /lab-dashboard
 lang: en
 desc: "Ippo's new Lab Dashboard: upload a lab result and Ippo extracts the values, flags the ones out of range, and shows everything in a single view. Extraction powered by ILAI on Cloud. Available on paid plans."
+excerpt: "Ippo's new Lab Dashboard: upload a lab result and Ippo extracts the values, flags the ones out of range, and shows everything in a single view. Extraction powered by ILAI on Cloud. Available on paid plans."
 keywords: "Ippo Lab Dashboard, online blood tests, lab results, out-of-range values, test results dashboard, ILAI on Cloud, Ippocra"
 page_id: lab-dashboard
 header:
     teaser: /assets/images/screenshots/lab-dashboard-teaser.webp
 classes: wide
+tags: ippo
 ---
 
 ![Ippo Lab Dashboard](/assets/images/screenshots/lab-dashboard-teaser.webp)

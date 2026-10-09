@@ -7,11 +7,12 @@ description: Do you need to send a CT scan or an MRI but the file is too large? 
 keywords: share CT scan online, send large medical reports, DICOM files, MRI online, secure health data sharing, protected medical link, radiological imaging, digital medical records.
 page_id: come-condividere-una-tac-o-referti-medici-pesanti-in-sicurezza
 header:
-    teaser: assets/images/portonovo-sunset.webp
+    teaser: /assets/images/portonovo-sunset.webp
 classes: wide
+tags: ippo, privacy
 ---
 
-![image-center](assets/images/portonovo-sunset.webp){: .align-center}
+![image-center](/assets/images/portonovo-sunset.webp){: .align-center}
 **Do you need to send a CT scan or MRI, but the file is too large? Discover how Dante shared his large medical reports securely with Ippocra.**
 
 ## How to share a CT Scan?
@@ -21,7 +22,7 @@ Modern diagnostic imaging exams produce very high-resolution files, often in DIC
 
 This was exactly the problem that Dante, one of our users, faced when he urgently needed to get a second opinion from a specialist hundreds of kilometers away:
 
-![image-center](assets/images/customer-support_tac.webp){: align-center}
+![image-center](/assets/images/customer-support_tac.webp){: .align-center}
 *Dante's question received via WhatsApp and translated from German:*
 > Good evening, I am an Ippocra customer with an urgent issue. My neurologist requested that the CT scan I took last week be sent to him before my appointment tomorrow. Can I use Ippocra to send it, as I do with PDF medical reports?
 >

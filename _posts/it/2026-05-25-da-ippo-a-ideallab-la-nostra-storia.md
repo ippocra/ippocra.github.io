@@ -10,6 +10,7 @@ page_id: da-ippo-a-ideallab-la-nostra-storia
 header:
     teaser: /assets/images/screenshots/ideallab-intro.webp
 classes: wide
+tags: ippo
 ---
 
 <p style="text-align:center;">

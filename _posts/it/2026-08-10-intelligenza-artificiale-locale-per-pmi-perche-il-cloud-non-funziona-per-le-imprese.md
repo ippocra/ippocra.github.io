@@ -10,6 +10,7 @@ page_id: ai-locale-per-pmi
 header:
     teaser: /assets/images/screenshots/ai-locale-pmi-teaser.webp
 classes: wide
+tags: ilai, ai
 ---
 
 **L'intelligenza artificiale sta cambiando il modo in cui le aziende lavorano.** Ma c'è un problema enorme che pochi discutono: quando usi un'AI nel cloud, stai essenzialmente affittando la tua intelligenza a qualcun altro.

@@ -8,6 +8,8 @@ description: Scopri come iniziare a utilizzare il piano gratuito Ippo di Ippocra
 keywords: piano gratuito Ippocra, documenti medici, crittografia, ricerca intelligente, organizzare cartella clinica, caricamento documenti, app mobile, gestione salute
 header:
     teaser: /assets/images/scorci_di_conero.jpg
+tags: ippo
+excerpt: "Ippo è la nostra mascot, e da oggi puoi portarla a fare una passeggiata. Con il piano gratuito Ippo è possibile caricare i propri documenti, tenere in ordine quelli di una persona cara, e trovare tutto facilmente invece che perderlo di continuo."
 ---
 
 

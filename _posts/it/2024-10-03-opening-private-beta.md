@@ -9,6 +9,8 @@ description: Ippocra è ora aperto per i test della beta privata. Registrati per
 keywords: Ippocra, beta privata, documenti medici, cartella clinica, archiviazione sicura, gestione documenti, salute digitale
 header:
     teaser: /assets/images/opening-beta-flower.png
+tags: ippo
+excerpt: "Ippocra è ora aperto per la beta privata! Registrati e prova la nostra piattaforma di gestione documenti medici sicura."
 ---
 
 ![image-center](/assets/images/opening-beta-flower.png){: .align-center}

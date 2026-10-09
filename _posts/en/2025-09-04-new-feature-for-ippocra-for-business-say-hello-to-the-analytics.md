@@ -9,6 +9,7 @@ page_id: new-feature-for-ippocra-for-business-say-hello-to-the-analytics
 header:
     teaser: /assets/images/forte-altavilla-luna.jpg
 classes: wide
+tags: ippo
 ---
 
 ![image-center](/assets/images/forte-altavilla-luna.jpg){: .align-center}**Ippocra Business now with Analytics – the telescope to better see the moon!**  

@@ -9,6 +9,8 @@ page_id: archive-support
 permalink: /archive-support
 header:
     teaser: /assets/images/sunset_in_prospettiva_shorter.jpg
+tags: ippo
+excerpt: "Ippocra ora supporta gli archivi ZIP! Carica e conserva facilmente TAC, risonanze magnetiche e altri dati medici archiviati in modo sicuro nel cloud."
 ---
 
 ![image-center](/assets/images/sunset_in_prospettiva_shorter.jpg){: .align-center}

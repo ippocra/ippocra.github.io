@@ -5,12 +5,13 @@ permalink: /come-conservare-e-condividere-in-sicurezza-i-tuoi-referti-medici-onl
 lang: it
 page_id: how-to-safely-store-and-share-your-medical-records-online
 header:
-    teaser: assets/images/ancona_by_sea.jpg
+    teaser: /assets/images/ancona_by_sea.jpg
 classes: wide
+tags: ippo, privacy
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/ancona_by_sea.jpg){: .align-center}
+![image-center](/assets/images/ancona_by_sea.jpg){: .align-center}
 **Pensato per te e per la tua famiglia: Come Conservare e Condividere in Sicurezza i Tuoi Referti Medici sul cloud**
 
 

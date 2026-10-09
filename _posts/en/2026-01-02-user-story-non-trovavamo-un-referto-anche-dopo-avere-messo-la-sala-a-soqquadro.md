@@ -7,11 +7,12 @@ page_id: user-story-non-trovavamo-un-referto-anche-dopo-avere-messo-la-sala-a-so
 description: "Discover how a parent turned a frantic search for a medical report into a matter of seconds thanks to Ippocra. Based on a true story"
 keywords: "Ippocra, medical report, health document management, chaotic house, smart search, saving medical appointments, saving medical reports to the cloud"
 header:
-    teaser: assets/images/ancona_golfo.wepb
+    teaser: /assets/images/ancona_golfo.wepb
 classes: wide
+tags: ippo
 ---
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/ancona_golfo.wepb){: .align-center}
+![image-center](/assets/images/ancona_golfo.wepb){: .align-center}
 **No need to overturn the living room to find a report when you use Ippocra**
 
 > *“We tore the whole house apart late into the night, still couldn’t find the report. Then, with Ippocra, I found it in a second.”*
@@ -41,7 +42,7 @@ Tired of this search, the user decided to **try <a href="{{site.url}}">Ippocra</
 
 Thanks to these steps, the user was able to **send the report to the doctor before the appointment**, avoiding further delays and stress.
 
-![image-center](assets/images/website/document_list_en.webp){: .align-center}
+![image-center](/assets/images/website/document_list_en.webp){: .align-center}
 
 *All medical documents, always available, on Ippocra.*  
 {: .text-center}

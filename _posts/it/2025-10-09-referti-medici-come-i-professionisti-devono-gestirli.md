@@ -7,13 +7,14 @@ description: Scopri i requisiti legali per la conservazione dei referti medici e
 keywords: cartella clinica, conservazione legale, conformità GDPR, normative sanitarie, sicurezza documenti, responsabilità professionale, protezione dati, archiviazione medica
 page_id: referti-medici-come-i-professionisti-devono-gestirli
 header:
-    teaser: assets/images/porta_a_mare_mole.jpg
+    teaser: /assets/images/porta_a_mare_mole.jpg
 classes: wide
+tags: ippo
 ---
 
 
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/porta_a_mare_mole.jpg){: .align-center}
+![image-center](/assets/images/porta_a_mare_mole.jpg){: .align-center}
 **Ippocra: La via per archiviare e gestire i referti in maniera semplice.**
 
 
@@ -110,12 +111,12 @@ Tali caratteristiche permettono a Ippocra di fornire un canale digitale conforme
 Per invitare un collaboratore al piano, l’amministratore del piano deve Andare su *Piano* e su *Gestisci Dottori*
 
  
-![image-center](assets/images/website/gestisci-dottori-it.png){: .align-center}
+![image-center](/assets/images/website/gestisci-dottori-it.png){: .align-center}
 
 
 Qui si può invitare un nuovo Dottore come collaboratore o dipendente. Basta inserire una email e cliccare invia invito.
 
-![image-center](assets/images/website/invito_dottore_collaboratore-it.png){: .align-center} 
+![image-center](/assets/images/website/invito_dottore_collaboratore-it.png){: .align-center} 
 
 Il Dottore riceverà una email di invito, con la possibilità di creare un utente ed unirsi a questo piano.
 

@@ -10,6 +10,7 @@ page_id: studio-editor-write-preview-every-medical-report
 header:
     teaser: /assets/images/screenshots/04b_editor_with_preview.png
 classes: wide
+tags: ippo, ai
 ---
 
 <p style="text-align:center;">

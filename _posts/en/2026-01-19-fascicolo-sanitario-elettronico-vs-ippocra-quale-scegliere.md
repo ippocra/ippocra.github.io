@@ -7,11 +7,12 @@ description: Comparison between EHR and Ippocra, discover how to integrate them 
 keywords:  electronic health record, EHR, digital medical reports, private health document management, personal clinical record, report digitization, health data privacy, medical report app, health interoperability, clinical history, Ippocra, EHR alternatives, report storage, secure sharing of medical documents, health data ownership
 page_id: fascicolo-sanitario-elettronico-vs-ippocra-quale-scegliere
 header:
-    teaser: assets/images/vigne.webp
+    teaser: /assets/images/vigne.webp
 classes: wide
+tags: ippo
 ---
 
-![image-center](assets/images/vigne.webp){: .align-center}
+![image-center](/assets/images/vigne.webp){: .align-center}
 **Ippocra vs Electronic Health Record (EHR): Which One to Choose for Your Medical Reports**
 
 ## Comparison between Ippocra and EHR, discover how to integrate them for complete control of your health documentation.
@@ -42,7 +43,7 @@ The Electronic Health Record was created with a noble intent: to centralize citi
 
 These limits highlight the need for a complementary approach to the EHR that gives patients true ownership of their health documentation.
 
-![image-center](assets/images/website/ippocra_grafico_vantaggi-en.webp){: align-center}
+![image-center](/assets/images/website/ippocra_grafico_vantaggi-en.webp){: .align-center}
 
 ## The Personal Centralization Method
 

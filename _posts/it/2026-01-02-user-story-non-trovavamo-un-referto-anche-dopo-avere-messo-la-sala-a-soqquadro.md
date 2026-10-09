@@ -7,12 +7,13 @@ page_id: user-story-non-trovavamo-un-referto-anche-dopo-avere-messo-la-sala-a-so
 description: "Scopri come un genitore ha trasformato la disperata ricerca di un referto medico in pochi secondi grazie a Ippocra. Tratto da una storia vera"
 keywords: "Ippocra, referto medico, gestione documenti sanitari, casa caotica, ricerca intelligente, salvare appuntamento medico, salvare referti medici sul cloud"
 header:
-    teaser: assets/images/ancona_golfo.wepb
+    teaser: /assets/images/ancona_golfo.wepb
 classes: wide
+tags: ippo
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/ancona_golfo.wepb){: .align-center}
+![image-center](/assets/images/ancona_golfo.wepb){: .align-center}
 **Non c'è bisogno di ribaltare la sala, per trovare un referto, se usi Ippocra**
 
 > *“Abbiamo rovistato tutta la casa fino a tardi, senza trovare il referto. Poi, con Ippocra, l’ho trovato in un secondo.”*
@@ -42,7 +43,7 @@ Stanco di questa ricerca, l'utente ha deciso di **provare Ippocra**. Proprio que
 
 Grazie a questi passaggi, l’utente ha potuto **inviare il referto al medico prima dell’appuntamento**, evitando ulteriori ritardi e stress.
 
-![image-center](assets/images/website/document_list_it.webp){: .align-center}
+![image-center](/assets/images/website/document_list_it.webp){: .align-center}
 
 *Tutti i documenti medici, sempre disponibili, su Ippocra.*
 {: .text-center}

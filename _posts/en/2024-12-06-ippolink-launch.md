@@ -8,6 +8,8 @@ keywords: IppoLink, secure document sharing, medical reports, share with doctors
 page_id: ippolink-launch
 header:
     teaser: /assets/images/sea_and_clouds.jpg
+tags: ippo
+excerpt: "We just launched a new functionality and we have a new website! IppoLink is the secure way to share medical documents with doctors and specialists."
 ---
 
 ![image-center](/assets/images/sea_and_clouds.jpg){: .align-center}

@@ -8,6 +8,7 @@ keywords: PDF viewer, mobile documents, pinch-to-zoom, document reading, medical
 page_id: brand-new-documents-viewer
 header:
     teaser: /assets/images/mezzavalle-trave.jpg
+tags: ippo
 ---
 
 ![image-center](/assets/images/mezzavalle-trave.jpg){: .align-center}

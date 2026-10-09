@@ -7,11 +7,12 @@ description: Do you have many medical reports scattered across various clinics? 
 keywords: sharing medical reports, health document management, healthcare interoperability, personal clinical archive, medical data privacy, sending clinical analyses, digital health record.
 page_id: come-condividere-referti-medici-tra-strutture-diverse
 header:
-    teaser: assets/images/poggio-san-romualdo-nevicato.webp
+    teaser: /assets/images/poggio-san-romualdo-nevicato.webp
 classes: wide
+tags: ippo, privacy
 ---
 
-![image-center](assets/images/poggio-san-romualdo-nevicato.webp){: .align-center}
+![image-center](/assets/images/poggio-san-romualdo-nevicato.webp){: .align-center}
 **How to Share Medical Reports Across Various Medical Facilities Without Losing Valuable Data or Time**
 
 ## Do you have many medical reports scattered across various clinics? Discover how Katerina centralized and shared her medical history securely using Ippocra.
@@ -22,7 +23,7 @@ That was exactly Katerina’s situation when she reached out to us with a precis
 
 > "I have tons of health documents to share among different facilities and specialists. Getting them all around without losing anything has become a full‑time job."
 
-![image-center](assets/images/Viber-feedback-user-story-3.webp){: align-center}
+![image-center](/assets/images/Viber-feedback-user-story-3.webp){: .align-center}
 *Translated from Greek, the feedback from Katerina that we received via Viber:*
 > Good evening. We would like to know what your experience with Ippocra has been so far. What convinced you to purchase an annual subscription?
 >

@@ -10,6 +10,7 @@ page_id: creare-video-ai-in-locale
 header:
     teaser: /assets/images/video-ai-locale-teaser.webp
 classes: wide
+tags: ilai, ai
 ---
 
 **Oggi puoi produrre video di alta qualità con un'AI che gira sulla tua macchina, in modo organizzato e semi-automatico.** Non serve più scegliere tra video "fatti a mano" e video generati con AI cloud costosi: esiste una terza strada, e Ippocra la sta usando ogni giorno per i propri contenuti.

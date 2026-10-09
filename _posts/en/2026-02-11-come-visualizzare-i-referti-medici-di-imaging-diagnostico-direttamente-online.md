@@ -7,11 +7,12 @@ description: "Received a CT scan or MRI in DICOM format but can't open it? Disco
 keywords: view DICOM medical records online, how to open DICOM files without software, CT scan MRI viewer online, view DICOM on smartphone, medical imaging online, DICOM format, medical viewer, diagnostic imaging, digital medical records, open CT scan online, MRI viewer, medical imaging records, DICOM viewer online
 page_id: come-visualizzare-i-referti-medici-di-imaging-diagnostico-direttamente-online
 header:
-    teaser: assets/images/ancona_view_belvedere_nord.webp
+    teaser: /assets/images/ancona_view_belvedere_nord.webp
 classes: wide
+tags: ippo
 ---
 
-![image-center](assets/images/ancona_view_belvedere_nord.webp){: .align-center}
+![image-center](/assets/images/ancona_view_belvedere_nord.webp){: .align-center}
 **Received a CT scan or MRI in DICOM format but can't view it? Learn how to open, analyse and share your medical imaging records directly from your browser — no software to install.**
 
 ## The Invisible Problem: Medical Records You Cannot See
@@ -24,7 +25,7 @@ This is the everyday reality for anyone who receives diagnostic imaging exams: y
 
 ## Marco's Story: When Your Medical Records Become Unreadable
 
-![image-center](assets/images/website/dicom_viewer_knee_en.webp){: .align-center}
+![image-center](/assets/images/website/dicom_viewer_knee_en.webp){: .align-center}
 
 > "I had a shoulder MRI after a sports injury. They gave me a CD with the images and a PDF report. I read the PDF straight away, but I wanted to see the actual MRI images because the specialist I need to consult is in Milan and the appointment is a week away. I tried opening the CD: my MacBook doesn't have a disc drive. I asked a friend to copy the files onto a USB stick, but once on my computer they were in a strange format — DICOM — that no program could read. I searched for an online viewer, but the free ones asked me to install software I didn't understand and didn't trust. In the end, I photographed the paper report with my phone and sent it to the doctor on WhatsApp. But the MRI images? Those stayed trapped in the CD."
 

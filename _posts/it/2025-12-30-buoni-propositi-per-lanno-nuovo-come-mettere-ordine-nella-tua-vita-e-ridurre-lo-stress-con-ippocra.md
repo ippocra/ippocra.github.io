@@ -5,12 +5,13 @@ permalink: /buoni-propositi-per-lanno-nuovo-come-mettere-ordine-nella-tua-vita-e
 lang: it
 page_id: buoni-propositi-per-lanno-nuovo-come-mettere-ordine-nella-tua-vita-e-ridurre-lo-stress-con-ippocra
 header:
-    teaser: assets/images/tree_panorama.webp
+    teaser: /assets/images/tree_panorama.webp
 classes: wide
+tags: ippo
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/tree_panorama.webp){: .align-center}
+![image-center](/assets/images/tree_panorama.webp){: .align-center}
 **Meno stress l'anno prossimo: Metti in ordine i tuoi documenti medici con Ippocra**
 
 

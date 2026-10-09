@@ -9,6 +9,7 @@ page_id: import-a-whole-folder-and-auto-assign-documents-to-the-right-person
 header:
     teaser: /assets/images/sails_in_the_horizon.webp
 classes: wide
+tags: ippo
 ---
 
 ![image-center](/assets/images/sails_in_the_horizon.webp){: .align-center}

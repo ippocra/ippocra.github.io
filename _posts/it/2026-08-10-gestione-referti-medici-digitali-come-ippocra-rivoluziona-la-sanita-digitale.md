@@ -10,6 +10,7 @@ page_id: gestione-referti-digitali
 header:
     teaser: /assets/images/screenshots/ippo-health-platform-teaser.webp
 classes: wide
+tags: ippo
 ---
 
 **Hai mai provato a trovare un referto medico tra un mucchio di carta, una cassetta di sicurezza e chissà dove?**

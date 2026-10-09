@@ -7,12 +7,13 @@ description: Scrivi, visualizza in anteprima e invia in modo sicuro referti medi
 keywords: stesura referti, documentazione medica, editor documenti, telemedicina, comunicazione pazienti, invio sicuro, strumento healthcare, referti digitali
 page_id: strumenti-di-refertazione-telematica-con-il-dottore-al-centro
 header:
-    teaser: assets/images/scalinata-passetto-sunrise.jpg
+    teaser: /assets/images/scalinata-passetto-sunrise.jpg
 classes: wide
+tags: ippo
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/scalinata-passetto-sunrise.jpg){: .align-center}
+![image-center](/assets/images/scalinata-passetto-sunrise.jpg){: .align-center}
 **La tranquillità di scrivere i referti, sapendo di utilizzare uno strumento sicuro**
 
 # Semplifica il tuo lavoro: da oggi è disponibile l'editor dei documenti!
@@ -34,7 +35,7 @@ e scrivi semplicemente la diagnosi con il nostro editor.
 Puoi visualizzare l'anteprima del documento, o salvarlo direttamente e contestualmente 
 inviarlo al paziente in maniera automatica.
 
-![image-center](assets/images/website/editor_documenti-it.gif)
+![image-center](/assets/images/website/editor_documenti-it.gif){: .align-center}
 
 Tutti i referti vengono conservati secondo GDPR conforme, e con la possibilità di essere visualizzati
 soltanto dalle persone autorizzati. Con le nostre [funzionalità di visualizzazione avanzata dei PDF]({% post_url it/2025-07-10-easier-pdf-viewer %}){:target="_blank"}, potete vedere esattamente come i vostri pazienti consultano i documenti inviati.

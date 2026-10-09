@@ -8,6 +8,8 @@ keywords: IppoLink, condivisione sicura documenti, referti medici, condividi con
 page_id: ippolink-launch
 header:
     teaser: /assets/images/sea_and_clouds.jpg
+tags: ippo
+excerpt: "Grandi novità: abbiamo rinnovato il nostro sito ed abbiamo lanciato la nuova funzionalità IppoLink — il modo sicuro per condividere documenti medici con dottori e specialisti."
 ---
 
 ![image-center](/assets/images/sea_and_clouds.jpg){: .align-center}
