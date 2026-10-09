@@ -7,6 +7,7 @@ page_id: buoni-propositi-per-lanno-nuovo-come-mettere-ordine-nella-tua-vita-e-ri
 header:
     teaser: assets/images/tree_panorama.webp
 classes: wide
+tags: ippo
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->

@@ -10,6 +10,7 @@ page_id: the-smart-crm
 header:
     teaser: /assets/images/screenshots/smart-crm-teaser.webp
 classes: wide
+tags: ilai, ai
 ---
 
 **Un CRM è stato costruito per archiviare dati. Un CRM intelligente è costruito per lavorare.**

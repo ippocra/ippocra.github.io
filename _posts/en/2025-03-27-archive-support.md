@@ -9,6 +9,7 @@ page_id: archive-support
 permalink: /archive-support
 header:
     teaser: /assets/images/sunset_in_prospettiva_shorter.jpg
+tags: ippo
 ---
 
 ![image-center](/assets/images/sunset_in_prospettiva_shorter.jpg){: .align-center}

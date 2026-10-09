@@ -9,6 +9,7 @@ page_id: come-condividere-una-tac-o-referti-medici-pesanti-in-sicurezza
 header:
     teaser: assets/images/portonovo-sunset.webp
 classes: wide
+tags: ippo, privacy
 ---
 
 ![image-center](assets/images/portonovo-sunset.webp){: .align-center}

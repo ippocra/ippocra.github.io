@@ -8,6 +8,7 @@ description: Medical Campus si associa a Ippocra per fornire condivisione sicura
 keywords: Medical Campus, partnership sanitaria, condivisione sicura referti, cartella paziente, gestione ambulatorio, telemedicina, pratica medica
 header:
     teaser: /assets/images/passetto_onde.jpg
+tags: ippo
 ---
 
 ![image-center](/assets/images/passetto_onde.jpg){: .align-center}

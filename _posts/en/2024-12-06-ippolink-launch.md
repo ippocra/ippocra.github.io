@@ -8,6 +8,7 @@ keywords: IppoLink, secure document sharing, medical reports, share with doctors
 page_id: ippolink-launch
 header:
     teaser: /assets/images/sea_and_clouds.jpg
+tags: ippo
 ---
 
 ![image-center](/assets/images/sea_and_clouds.jpg){: .align-center}

@@ -9,6 +9,7 @@ page_id: come-scegliere-uno-strumento-per-gestire-i-referti-medici-della-famigli
 header:
     teaser: assets/images/vista-pincio_ancona.webp
 classes: wide
+tags: ippo
 ---
 
 ![image-center](assets/images/vista-pincio_ancona.webp

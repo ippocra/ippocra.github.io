@@ -10,6 +10,7 @@ page_id: benvenuto-ilai
 header:
     teaser: /assets/images/screenshots/ilai-contract-teaser.png
 classes: wide
+tags: ilai, ai
 ---
 
 <p style="text-align:center;">

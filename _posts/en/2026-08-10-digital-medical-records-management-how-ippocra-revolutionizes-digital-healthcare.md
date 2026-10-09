@@ -10,6 +10,7 @@ page_id: digital-medical-records
 header:
     teaser: /assets/images/screenshots/ippo-health-platform-teaser.webp
 classes: wide
+tags: ippo
 ---
 
 **Have you ever tried to find a medical report among a pile of paper, a safety deposit box, and who knows where else?**

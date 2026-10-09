@@ -10,6 +10,7 @@ page_id: ilai-on-cloud
 header:
     teaser: /assets/images/screenshots/ilai-on-cloud-teaser.webp
 classes: wide
+tags: ilai, ai, privacy
 ---
 
 **Would you like to use an AI colleague in your business, but do not want to wait for dedicated hardware to be purchased and installed?**

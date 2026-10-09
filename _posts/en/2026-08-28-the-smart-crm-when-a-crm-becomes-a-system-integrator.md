@@ -10,6 +10,7 @@ page_id: the-smart-crm
 header:
     teaser: /assets/images/screenshots/smart-crm-teaser.webp
 classes: wide
+tags: ilai, ai
 ---
 
 **A CRM was built to store data. A smart CRM is built to work.**

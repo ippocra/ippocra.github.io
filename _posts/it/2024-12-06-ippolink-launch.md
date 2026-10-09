@@ -8,6 +8,7 @@ keywords: IppoLink, condivisione sicura documenti, referti medici, condividi con
 page_id: ippolink-launch
 header:
     teaser: /assets/images/sea_and_clouds.jpg
+tags: ippo
 ---
 
 ![image-center](/assets/images/sea_and_clouds.jpg){: .align-center}

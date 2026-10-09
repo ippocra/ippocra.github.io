@@ -9,6 +9,7 @@ page_id: ippocra-new-home-page-all-your-medical-records-at-a-glance
 header:
     teaser: assets/images/website/it/14_timeline_chart.png
 classes: wide
+tags: ippo
 ---
 
 ![image-center](/assets/images/website/dashboard_timeline_esami.png){: .align-center}

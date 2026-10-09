@@ -9,6 +9,7 @@ page_id: strumenti-di-refertazione-telematica-con-il-dottore-al-centro
 header:
     teaser: assets/images/scalinata-passetto-sunrise.jpg
 classes: wide
+tags: ippo
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->

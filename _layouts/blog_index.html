@@ -4,11 +4,30 @@ layout: archive
 
 {{ content }}
 
+{% assign page_tags = page.tags | default: '' | split: ',' %}
+{% assign current_tag = page.url | split: '/tag/' | last | replace: '/', '' %}
+{% assign tag_base = '/' | append: site.active_lang | append: '/tag/' %}
+{% if site.active_lang == site.default_lang %}{% assign tag_base = '/tag/' %}{% endif %}
+<style>
+.tag-bar{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 1.25rem;padding:0;list-style:none;}
+.tag-bar__item{display:inline-block;padding:4px 12px;border-radius:999px;font-size:0.82rem;letter-spacing:0.02em;text-transform:lowercase;color:#334155;text-decoration:none;border:1px solid #cbd5e1;background:#f8fafc;transition:all .15s ease;}
+.tag-bar__item:hover{background:#eef2f7;border-color:#94a3b8;}
+.tag-bar__item.is-active{background:#0f766e;border-color:#0f766e;color:#fff;font-weight:600;}
+</style>
+<nav class="tag-bar" aria-label="Blog tags">
+  {% for t in site.tags %}
+    {% assign tname = t.first %}
+    {% if tname == 'ippo' or tname == 'ilai' or tname == 'ai' or tname == 'privacy' %}
+      <a class="tag-bar__item{% if current_tag == tname %} is-active{% endif %}" href="{{ tag_base | append: tname | append: '/' }}">{{ tname }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>
+
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% assign lang_posts = site.posts | where_exp: "post", "post.lang == site.active_lang" %}
-{% if page.tags %}
-  {% assign lang_posts = lang_posts | where_exp: "post", "post.tags != nil and post.tags != empty" %}
+{% if current_tag != '' %}
+  {% assign lang_posts = lang_posts | where_exp: "post", "post.tags != nil and post.tags != '' and post.tags contains current_tag" %}
 {% endif %}
 {% assign lang_posts = lang_posts | sort: 'date' | reverse %}
 

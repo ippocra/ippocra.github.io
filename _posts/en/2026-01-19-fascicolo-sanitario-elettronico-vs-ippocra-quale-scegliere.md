@@ -9,6 +9,7 @@ page_id: fascicolo-sanitario-elettronico-vs-ippocra-quale-scegliere
 header:
     teaser: assets/images/vigne.webp
 classes: wide
+tags: ippo
 ---
 
 ![image-center](assets/images/vigne.webp){: .align-center}

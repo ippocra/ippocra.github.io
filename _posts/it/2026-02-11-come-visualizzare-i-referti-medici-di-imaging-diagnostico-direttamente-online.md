@@ -9,6 +9,7 @@ page_id: come-visualizzare-i-referti-medici-di-imaging-diagnostico-direttamente-
 header:
     teaser: assets/images/ancona_view_belvedere_nord.webp
 classes: wide
+tags: ippo
 ---
 
 ![image-center](assets/images/ancona_view_belvedere_nord.webp){: .align-center}

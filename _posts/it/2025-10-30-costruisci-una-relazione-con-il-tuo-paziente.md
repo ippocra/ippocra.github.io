@@ -9,6 +9,7 @@ page_id: costruisci-una-relazione-con-il-tuo-paziente
 header:
     teaser: assets/images/ancona-golfo.jpg
 classes: wide
+tags: ippo
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->

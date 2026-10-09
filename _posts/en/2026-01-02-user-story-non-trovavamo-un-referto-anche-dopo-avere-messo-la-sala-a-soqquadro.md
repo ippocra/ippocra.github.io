@@ -9,6 +9,7 @@ keywords: "Ippocra, medical report, health document management, chaotic house, s
 header:
     teaser: assets/images/ancona_golfo.wepb
 classes: wide
+tags: ippo
 ---
 <!-- [![](img.jpg)](img.jpg) -->
 ![image-center](assets/images/ancona_golfo.wepb){: .align-center}

@@ -9,6 +9,7 @@ page_id: come-condividere-referti-medici-tra-strutture-diverse
 header:
     teaser: assets/images/poggio-san-romualdo-nevicato.webp
 classes: wide
+tags: ippo, privacy
 ---
 
 ![image-center](assets/images/poggio-san-romualdo-nevicato.webp){: .align-center}

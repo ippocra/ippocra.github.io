@@ -10,6 +10,7 @@ page_id: creare-video-ai-in-locale
 header:
     teaser: /assets/images/video-ai-locale-teaser-en.webp
 classes: wide
+tags: ilai, ai
 ---
 
 **Today you can produce high-quality video with an AI running on your own machine, in an organized and semi-automatic way.** You no longer have to choose between hand-made video and expensive cloud-generated video: there is a third road, and Ippocra walks it every day for its own content.

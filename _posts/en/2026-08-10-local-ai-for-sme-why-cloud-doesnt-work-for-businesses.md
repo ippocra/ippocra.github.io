@@ -10,6 +10,7 @@ page_id: local-ai-for-sme
 header:
     teaser: /assets/images/screenshots/ai-locale-pmi-teaser.webp
 classes: wide
+tags: ilai, ai
 ---
 
 **Artificial intelligence is changing the way companies work.** But there's a massive problem that few discuss: when you use cloud AI, you're essentially renting your intelligence to someone else.

@@ -1,15 +1,16 @@
 ---
 title: "Il nuovo Lab Dashboard di Ippo: oltre l'archivio, Ippo legge le tue analisi"
 categories: news
-tags: ippo
 permalink: /lab-dashboard
 lang: it
 desc: "Il nuovo Lab Dashboard di Ippo: carica un risultato di laboratorio e Ippo estrae i valori, mette in evidenza quelli fuori range e ti mostra tutto in un'unica vista. Estrazione guidata da ILAI on Cloud. Nei piani a pagamento."
+excerpt: "Il nuovo Lab Dashboard di Ippo: carica un risultato di laboratorio e Ippo estrae i valori, mette in evidenza quelli fuori range e ti mostra tutto in un'unica vista. Estrazione guidata da ILAI on Cloud. Nei piani a pagamento."
 keywords: "lab dashboard Ippo, analisi del sangue online, referti analisi, valori fuori range, dashboard esami, ILAI on Cloud, Ippocra"
 page_id: lab-dashboard
 header:
     teaser: /assets/images/screenshots/lab-dashboard-teaser.webp
 classes: wide
+tags: ippo
 ---
 
 ![Lab Dashboard di Ippo](/assets/images/screenshots/lab-dashboard-teaser.webp)

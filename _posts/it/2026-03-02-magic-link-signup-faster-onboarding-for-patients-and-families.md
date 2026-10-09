@@ -9,6 +9,7 @@ page_id: magic-link-signup-faster-onboarding-for-patients-and-families
 header:
     teaser: /assets/images/magic-link-teaser.svg
 classes: wide
+tags: ippo
 ---
 
 ![image-center](/assets/images/magic-link-teaser.svg){: .align-center}

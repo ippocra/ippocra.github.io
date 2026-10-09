@@ -10,6 +10,7 @@ page_id: growing-ilai
 header:
     teaser: /assets/images/screenshots/ilai-farm-teaser.webp
 classes: wide
+tags: ilai, ai
 ---
 
 <p style="text-align:center;">

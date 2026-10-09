@@ -9,6 +9,7 @@ page_id: referti-medici-come-i-professionisti-devono-gestirli
 header:
     teaser: assets/images/porta_a_mare_mole.jpg
 classes: wide
+tags: ippo
 ---
 
 

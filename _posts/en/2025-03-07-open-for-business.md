@@ -8,6 +8,7 @@ keywords: Ippocra subscription, health records, medical document storage, secure
 page_id: open-for-business
 header:
     teaser: /assets/images/sunrise_with_fishing_boats.jpg
+tags: ippo
 ---
 
 ![image-center](/assets/images/sunrise_with_fishing_boats.jpg){: .align-center}

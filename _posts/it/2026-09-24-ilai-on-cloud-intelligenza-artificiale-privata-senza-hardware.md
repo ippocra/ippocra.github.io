@@ -10,6 +10,7 @@ page_id: ilai-on-cloud
 header:
     teaser: /assets/images/screenshots/ilai-on-cloud-teaser.webp
 classes: wide
+tags: ilai, ai, privacy
 ---
 
 **Vuoi usare un collega artificiale nella tua azienda, ma non vuoi aspettare l’acquisto e l’installazione di una macchina dedicata?**

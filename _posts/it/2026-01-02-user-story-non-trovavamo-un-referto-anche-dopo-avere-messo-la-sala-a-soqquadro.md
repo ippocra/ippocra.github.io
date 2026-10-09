@@ -9,6 +9,7 @@ keywords: "Ippocra, referto medico, gestione documenti sanitari, casa caotica, r
 header:
     teaser: assets/images/ancona_golfo.wepb
 classes: wide
+tags: ippo
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->
