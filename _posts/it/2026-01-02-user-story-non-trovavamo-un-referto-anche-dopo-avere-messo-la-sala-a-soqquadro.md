@@ -13,7 +13,7 @@ tags: ippo
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/ancona_golfo.wepb){: .align-center}
+![image-center](/assets/images/ancona_golfo.wepb){: .align-center}
 **Non c'è bisogno di ribaltare la sala, per trovare un referto, se usi Ippocra**
 
 > *“Abbiamo rovistato tutta la casa fino a tardi, senza trovare il referto. Poi, con Ippocra, l’ho trovato in un secondo.”*
@@ -43,7 +43,7 @@ Stanco di questa ricerca, l'utente ha deciso di **provare Ippocra**. Proprio que
 
 Grazie a questi passaggi, l’utente ha potuto **inviare il referto al medico prima dell’appuntamento**, evitando ulteriori ritardi e stress.
 
-![image-center](assets/images/website/document_list_it.webp){: .align-center}
+![image-center](/assets/images/website/document_list_it.webp){: .align-center}
 
 *Tutti i documenti medici, sempre disponibili, su Ippocra.*
 {: .text-center}

@@ -12,7 +12,7 @@ classes: wide
 tags: ippo
 ---
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/ancona_golfo.wepb){: .align-center}
+![image-center](/assets/images/ancona_golfo.wepb){: .align-center}
 **No need to overturn the living room to find a report when you use Ippocra**
 
 > *“We tore the whole house apart late into the night, still couldn’t find the report. Then, with Ippocra, I found it in a second.”*
@@ -42,7 +42,7 @@ Tired of this search, the user decided to **try <a href="{{site.url}}">Ippocra</
 
 Thanks to these steps, the user was able to **send the report to the doctor before the appointment**, avoiding further delays and stress.
 
-![image-center](assets/images/website/document_list_en.webp){: .align-center}
+![image-center](/assets/images/website/document_list_en.webp){: .align-center}
 
 *All medical documents, always available, on Ippocra.*  
 {: .text-center}

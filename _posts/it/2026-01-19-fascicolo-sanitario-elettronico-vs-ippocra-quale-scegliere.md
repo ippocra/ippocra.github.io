@@ -12,7 +12,7 @@ classes: wide
 tags: ippo
 ---
 
-![image-center](assets/images/vigne.webp){: .align-center}
+![image-center](/assets/images/vigne.webp){: .align-center}
 **Ippocra vs Fascicolo Sanitario Elettronico (FSE): Quale Scegliere per i Tuoi Referti Medici**
 
 ## Confronto tra Ippocra e FSE, scopri come integrarli per un controllo completo della tua documentazione sanitaria.
@@ -43,7 +43,7 @@ Il Fascicolo Sanitario Elettronico nasce con un intento nobile: centralizzare la
 
 Questi limiti evidenziano la necessità di un approccio complementare al FSE che restituisca al paziente la proprietà effettiva della propria documentazione sanitaria.
 
-![image-center](assets/images/website/ippocra_grafico_vantaggi.webp){: align-center}
+![image-center](/assets/images/website/ippocra_grafico_vantaggi.webp){: .align-center}
 
 ## Il Metodo della Centralizzazione Personale
 

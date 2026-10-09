@@ -12,7 +12,7 @@ classes: wide
 tags: ippo, privacy
 ---
 
-![image-center](assets/images/portonovo-sunset.webp){: .align-center}
+![image-center](/assets/images/portonovo-sunset.webp){: .align-center}
 **Devi inviare una TAC o una risonanza magnetica, ma il file è troppo grande? Scopri come Dante ha condiviso la sua TAC utilizzando Ippocra.**
 
 ## Come condividere una TAC?
@@ -22,7 +22,7 @@ I moderni esami di diagnostica per immagini producono file ad altissima risoluzi
 
 È esattamente il problema che ha dovuto affrontare Dante, un nostro utente che aveva l'urgenza di sottoporre un secondo parere a uno specialista distante centinaia di chilometri:
 
-![image-center](assets/images/customer-support_tac.webp){: align-center}
+![image-center](/assets/images/customer-support_tac.webp){: .align-center}
 *Tradotto dal tedesco la domanda di Dante che abbiamo ricevuto tramite WhatsApp:*
 > Buonasera, sono un cliente di Ippocra e ho un problema urgente. Il mio neurologo mi ha chiesto di inviargli la TAC che ho fatto la settimana scorsa, prima della visita di domani. Potrei usare Ippocra  per inviarla, come faccio con i referti medici in formato pdf?
 >

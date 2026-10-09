@@ -11,7 +11,7 @@ tags: ippo
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/tree_panorama.webp){: .align-center}
+![image-center](/assets/images/tree_panorama.webp){: .align-center}
 **Meno stress l'anno prossimo: Metti in ordine i tuoi documenti medici con Ippocra**
 
 

@@ -29,7 +29,7 @@ Oggi chiudiamo la beta e ci **apriamo Ippocra al mondo**.
 
 Ippocra si propone con quattro nuovi piani di abbonamento per l'utente privato:
 
-![image-center](/assets/images/website/plans_it.png)
+![image-center](/assets/images/website/plans_it.png){: .align-center}
 
 Il nostro Piano gratuito, <strong>Ippo</strong>, permette di avere un account su Ippocra 
 in maniera gratuita, ed avere la possibilitá di ricevere i documenti tramite l'[IppoLink]({% post_url it/2024-12-06-ippolink-launch %}){:target="_blank"}!
@@ -47,7 +47,7 @@ Whatsapp, email o qualsiasi altro mezzo, non condividiamo i dati sanitari, bens�
 link, facendo sì che questi non vengano fagocitati e dati in pasto come dati di training
 alle Intelligenze Artificiali.
 
-![image-center](/assets/images/website/ippolink_creation_it.gif)
+![image-center](/assets/images/website/ippolink_creation_it.gif){: .align-center}
 
 Con Il nostro piano Ippo, puoi importare i tuoi dati sanitari, se la tua clinica o struttura sanitaria
 a cui ti rivolgi utilizza Ippocra.
@@ -78,7 +78,7 @@ ha chiesto se avessero degli esami di urine, Michele si è loggato su [Ippocra](
 il medico ha visionato. Ovviamente non sono servite a nulla, ma le avevano a disposizione ;). Come si vede 
 dalla gif, adesso si trova anche il referto del nefrologo, perché contiene la parola urine. (Questa è quella che chiamiamo la Ricerca Smart).
 
-![image-center](/assets/images/website/search_uri_it.gif)
+![image-center](/assets/images/website/search_uri_it.gif){: .align-center}
 
 
 ## I nostri piani a pagamento

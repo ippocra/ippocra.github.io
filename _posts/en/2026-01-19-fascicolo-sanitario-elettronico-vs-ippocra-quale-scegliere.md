@@ -12,7 +12,7 @@ classes: wide
 tags: ippo
 ---
 
-![image-center](assets/images/vigne.webp){: .align-center}
+![image-center](/assets/images/vigne.webp){: .align-center}
 **Ippocra vs Electronic Health Record (EHR): Which One to Choose for Your Medical Reports**
 
 ## Comparison between Ippocra and EHR, discover how to integrate them for complete control of your health documentation.
@@ -43,7 +43,7 @@ The Electronic Health Record was created with a noble intent: to centralize citi
 
 These limits highlight the need for a complementary approach to the EHR that gives patients true ownership of their health documentation.
 
-![image-center](assets/images/website/ippocra_grafico_vantaggi-en.webp){: align-center}
+![image-center](/assets/images/website/ippocra_grafico_vantaggi-en.webp){: .align-center}
 
 ## The Personal Centralization Method
 

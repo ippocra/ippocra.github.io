@@ -12,7 +12,7 @@ classes: wide
 tags: ippo, privacy
 ---
 
-![image-center](assets/images/poggio-san-romualdo-nevicato.webp){: .align-center}
+![image-center](/assets/images/poggio-san-romualdo-nevicato.webp){: .align-center}
 **Come condividere referti medici tra varie strutture mediche senza perdere dati preziosi o tempo**
 
 ## Hai molti referti medici sparsi tra varie cliniche? Scopri come Katerina ha centralizzato e condiviso la sua storia clinica in totale sicurezza tramite Ippocra.
@@ -23,7 +23,7 @@ Proprio questa era la situazione di Katerina, che ci ha contattato con una neces
 
 > "Ho tantissimi documenti sanitari da condividere tra diverse strutture e specialisti. Farli girare tutti, senza perdere nulla, è diventato un lavoro."
 
-![image-center](assets/images/Viber-feedback-user-story-3.webp){: align-center}
+![image-center](/assets/images/Viber-feedback-user-story-3.webp){: .align-center}
 *Tradotto dal greco il feedback di Katerina che abbiamo ricevuto tramite Viber:*
 > Buonasera. Vorremmo sapere qual è stata la Sua esperienza con Ippocra finora. Cosa Le ha convinto ad acquistare un abbonamento annuale?
 >

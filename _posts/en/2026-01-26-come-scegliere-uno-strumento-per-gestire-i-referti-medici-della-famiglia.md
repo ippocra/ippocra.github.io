@@ -12,7 +12,7 @@ classes: wide
 tags: ippo
 ---
 
-![image-center](assets/images/vista-pincio_ancona.webp
+![image-center](/assets/images/vista-pincio_ancona.webp
 ){: .align-center}
 **Guide to choosing the right tool to organise medical records for the whole family: essential criteria, privacy and centralised management.**
 
@@ -59,7 +59,7 @@ An adequate tool must allow a single administrator (parent, caregiver) to manage
 
 - **Universal acquisition:** Regardless of the reception channel (email, CD, WhatsApp, paper), medical records can be acquired and archived in the correct profile with a few clicks or with a single photograph. Our technology automatically recognises the type, date, and clinical content.
 
-![image-center](assets/images/website/ippocra_gestione_multiprofili_en.webp){: align-center}
+![image-center](/assets/images/website/ippocra_gestione_multiprofili_en.webp){: .align-center}
 *Ippocra's dashboard with multiple family member profiles*
 
 ### Intelligent Search and Immediate Accessibility

@@ -11,7 +11,7 @@ tags: ippo
 ---
 
 <!-- [![](img.jpg)](img.jpg) -->
-![image-center](assets/images/tree_panorama.webp){: .align-center}
+![image-center](/assets/images/tree_panorama.webp){: .align-center}
 **Less stress next year: Organize your medical documents with Ippocra**
 
 
