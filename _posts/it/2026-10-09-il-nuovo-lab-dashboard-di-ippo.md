@@ -17,6 +17,16 @@ tags: ippo
 
 Finora Ippo ti aiutava a **trovare, conservare e condividere** i tuoi referti. Con il **Lab Dashboard** va un passo oltre: non si limita a custodire il PDF, ma **legge le tue analisi** e ti mostra i valori in un'unica vista, con quelli fuori range già segnalati.
 
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1); margin: 1.5rem 0;">
+  <iframe src="https://www.youtube.com/embed/JRERvEO4qDw"
+      title="Ippo Lab Dashboard — Il tuo referto, finalmente letto"
+      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen loading="lazy"></iframe>
+</div>
+
+<p><em>Vedi in 20 secondi come Ippo legge il tuo referto e organizza i valori sul Lab Dashboard.</em></p>
+
 ## Carichi il referto, Ippo fa il resto
 
 Non devi ricopiare nulla. Carichi il risultato di laboratorio come faresti con qualsiasi altro documento su Ippo, e Ippo **estrae automaticamente i valori**: emoglobina, piastrine, glicemia, colesterolo e ogni altra parametro, **organizzati in un dashboard** che comprendi con un'occhiata.
