@@ -8,7 +8,9 @@
         {% comment %}<!-- very lazy check to see if page is in the exclude list - this means excluded pages are not gonna be in the sitemap at all, write exceptions as necessary -->{% endcomment %}
         {% unless site.exclude_from_localization contains node.path %}
             {% comment %}<!-- assuming if there's not layout assigned, then not include the page in the sitemap, you may want to change this -->{% endcomment %}
-            {% if node.layout %}
+            {% if node.layout and node.url != nil and node.url != '' %}
+                {% if node.url contains '.js' or node.url contains '/assets/' %}{% continue %}{% endif %}
+                {% if node.url contains '404' %}{% continue %}{% endif %}
                 <url>
                     <loc>{% if lang == site.default_lang %}{{ node.url | absolute_url }}{% else %}{{ node.url | prepend: lang | prepend: '/' | absolute_url }}{% endif %}</loc>
                     {% if node.last_modified_at and node.last_modified_at != node.date %}<lastmod>{{ node.last_modified_at | date: '%Y-%m-%dT%H:%M:%S%:z' }}</lastmod>{% elsif node.date %}<lastmod>{{ node.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}</lastmod>{% endif %}
@@ -20,6 +22,8 @@
     {% comment %}<!-- This loops through all site collections including posts -->{% endcomment %}
     {% for collection in site.collections %}
         {% for node in site[collection.label] %}
+            {% if node.url contains '.js' or node.url contains '/assets/' %}{% continue %}{% endif %}
+            {% if node.url contains '404' %}{% continue %}{% endif %}
             <url>
                 <loc>{% if lang == site.default_lang %}{{ node.url | absolute_url }}{% else %}{{ node.url | prepend: lang | prepend: '/' | absolute_url }}{% endif %}</loc>
                 {% if node.last_modified_at and node.last_modified_at != node.date %}<lastmod>{{ node.last_modified_at | date: '%Y-%m-%dT%H:%M:%S%:z' }}</lastmod>{% elsif node.date %}<lastmod>{{ node.date | date: '%Y-%m-%dT%H:%M:%S%:z' }}</lastmod>{% endif %}
@@ -28,26 +32,4 @@
     {% endfor %}
 
 {% endfor %}
-
-    <url>
-        <loc>https://ippocra.com/ippo/checklist-emergenza</loc>
-        <lastmod>2026-10-10</lastmod>
-        <xhtml:link rel="alternate" hreflang="it" href="https://ippocra.com/ippo/checklist-emergenza"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ippocra.com/ippo/emergency-checklist"/>
-        <xhtml:link rel="alternate" hreflang="el" href="https://ippocra.com/el/ippo/checklist-emergency"/>
-    </url>
-    <url>
-        <loc>https://ippocra.com/ippo/emergency-checklist</loc>
-        <lastmod>2026-10-10</lastmod>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ippocra.com/ippo/emergency-checklist"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://ippocra.com/ippo/checklist-emergenza"/>
-        <xhtml:link rel="alternate" hreflang="el" href="https://ippocra.com/el/ippo/checklist-emergency"/>
-    </url>
-    <url>
-        <loc>https://ippocra.com/ippo/checklist-emergency</loc>
-        <lastmod>2026-10-10</lastmod>
-        <xhtml:link rel="alternate" hreflang="el" href="https://ippocra.com/el/ippo/checklist-emergency"/>
-        <xhtml:link rel="alternate" hreflang="it" href="https://ippocra.com/ippo/checklist-emergenza"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ippocra.com/ippo/emergency-checklist"/>
-    </url>
 </urlset>
