@@ -1,0 +1,100 @@
+/* Emergency checklist page — form + preview styles */
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.form-row label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #d0d5d8;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: #1a8a6a;
+  box-shadow: 0 0 0 3px rgba(26, 138, 106, 0.15);
+}
+
+.preview-content {
+  background: #fff;
+  border: 1px solid #e0e4e7;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+details {
+  border: 1px solid #e0e4e7;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  background: #fff;
+}
+
+details summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: #222;
+}
+
+details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn--primary {
+  background: #1a8a6a;
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #14735a;
+}
+
+.btn--inverse {
+  background: #fff;
+  color: #1a8a6a;
+  border: 2px solid #1a8a6a;
+}
+
+.btn--inverse:hover {
+  background: #f0f7f4;
+}
+
+.cta-box {
+  scroll-margin-top: 1rem;
+}

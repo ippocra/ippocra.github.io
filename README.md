@@ -6,95 +6,130 @@ This website and its contents, hosted at [https://ippocra.github.io](https://ipp
 
 For inquiries regarding permissions, licensing, or other information, please contact [info@ippocra.com].
 
+# Ippocra Marketing Site
 
+This repository is the **single source of truth for all Ippocra marketing content** — both the Ippo (health) and ILAI (local AI) product lines. It is deployed to `ippocra.com` via GitHub Pages.
 
-# Marketing site for Ippocra
+## Architecture
 
-## Development set up
+| Repo | Purpose |
+|------|---------|
+| **`ippocra.github.io`** (this repo) | All marketing pages, tools, blog posts, landing pages |
+| **`ilai-site`** | Backend only — Nginx redirects + Flask API for form intake |
+
+**All static marketing content lives here.** The `ilai-site` repo does not serve any marketing pages; it only handles API endpoints and 301 redirects.
+
+## Free Tools (Lead Magnets)
+
+These are interactive, no-signup tools designed for SEO and lead capture. They live in this repo and are tracked with dedicated Umami events.
+
+### Ippo — Emergency Medical Documents Checklist
+
+- **URL:** `/ippo/checklist-emergenza/`
+- **Files:** `_pages/it/ippo-checklist-emergenza.md`, `assets/js/checklist-emergenza.js`, `assets/css/checklist-emergenza.css`
+- **Umami events:** `checklist-page-10s`, `checklist-pdf-generated`, `checklist-pdf-downloaded`
+
+### ILAI — Trade Markup Calculator
+
+- **URL:** `/ilai/calcolo-ricarico-artigiano/` (IT) · `/en/ilai/calcolo-ricarico-artigiano/` (EN)
+- **Files:** `_pages/it/ilai-calcolo-ricarico.md`, `_pages/en/ilai-calcolo-ricarico.md`, `assets/js/calcolo-ricarico.js`
+- **Umami events:** `calculation-completed`, `email-capture-success`, `email-capture-failed`, `calc-page-10s`
+- **Email capture:** POSTs to `https://ilai.ippocra.com/api/submit` (served by ilai-site backend)
+
+## Development Set Up
 
 ### Ruby install
 
 We want to use at least ruby 3.3.9, which is very fast on building the website.
 
-To do that:
+1. Install RVM
+   - Ubuntu: https://github.com/rvm/ubuntu_rvm
+   - General: https://rvm.io/rvm/install
 
-1) install RVM
+2. Set the shell
 
-- follow this for Ubuntu: https://github.com/rvm/ubuntu_rvm
-- general installation: https://rvm.io/rvm/install
+   ```bash
+   bin/bash --login
+   ```
 
-2) make sure the shell is set
+3. Install or select ruby 3.3.9
 
-    bin/bash --login
-
-3) Install ruby 3.3.9
-
-    rvm install 3.3.9 
-
-
-or select it if already installed:
-
-    rvm use 3.3.9
+   ```bash
+   rvm install 3.3.9
+   # or
+   rvm use 3.3.9
+   ```
 
 ### Jekyll install
 
-We use bundle to set up the enviroment: https://jekyllrb.com/tutorials/using-jekyll-with-bundler/#configure-bundler-install-path
+We use bundler: https://jekyllrb.com/tutorials/using-jekyll-with-bundler/
 
-Set up the path for the bundle:
-
-    bundle config set --local path 'vendor/bundle'
-
-Install all the gems:
-
-    bundle install
+```bash
+bundle config set --local path 'vendor/bundle'
+bundle install
+```
 
 To build the site:
 
-    bundle exec jekyll serve
+```bash
+bundle exec jekyll serve
+```
 
 Or the shortcut script:
 
-    bin/build_website.sh
+```bash
+bin/build_website.sh
+```
 
-We use [polyglot](https://github.com/untra/polyglot) as multilingual plugin and 
-[minimal-mistakes](https://mmistakes.github.io/) as theme with modification.
+We use [polyglot](https://github.com/untra/polyglot) as the multilingual plugin and [minimal-mistakes](https://mmistakes.github.io/) as the theme (with modifications).
 
-# Deployment
+## Deployment
 
-Automatically deployed on each push on `main` via `github-action`.
+Automatically deployed on each push to `main` via GitHub Actions.
 
-## Writing a post
+## Writing a Post
 
-The post must be written in `_posts/it` and in `_post/en` with the filename following the format `YYYY-MM-DD-title-of-the-post.md` 
+Posts must be written in `_posts/it/` and `_posts/en/` with the filename format `YYYY-MM-DD-title-of-the-post.md`.
 
-Remember to set `lang: it` in the `_posts/it` and `lang:en` in `_post/en`.
+Set `lang: it` in `_posts/it/` and `lang: en` in `_posts/en/`.
 
-Check the `_posts/it/2024-10-03-opening-private-beta.md` and `_posts/en/2024-10-03-opening-private-beta.md` 
-as a guide.
+Check `_posts/it/2024-10-03-opening-private-beta.md` and `_posts/en/2024-10-03-opening-private-beta.md` as a guide.
 
-To create a new post automatically run
+To create a new post automatically:
 
-    bin/new_post.py Title of my new post
+```bash
+bin/new_post.py "Title of my new post"
+```
 
-You need slugify installed as requirements:
+Requires: `pip install python-slugify`
 
-    pip install python-slugify
+### Zoomable Images
 
-### Zoomable images
+Use this markdown for auto-linked zoomable images:
 
-Use this type of markdown, so you get an automatic link to the bigger image.
+```markdown
+[![image-center](/assets/images/website/analytics-ita-top.png)](/assets/images/website/analytics-ita-top.png){: .align-center}
+```
 
-    [![](img.png)](img.png)
+For performance, use `webp` format. Convert with:
 
-for example, with a real image, will look like this:
+```bash
+convert image_input.png image_output.webp
+```
 
-    [![image-center](/assets/images/website/analytics-ita-top.png)](/assets/images/website/analytics-ita-top.png){: .align-center}
+Install if needed: `sudo apt install graphicsmagick-imagemagick-compat`
 
-For better performance, use only `webp` format for the images. You can convert them via
+## Analytics
 
-    convert image_input.png image_output.webp
+Umami (self-hosted, GDPR-compliant, no cookies) is configured in `_includes/head.html`.
 
-To install convert for the first time run
+| Website ID | Scope |
+|------------|-------|
+| `30e5d6cf-a32c-40b5-a9b0-141e78374655` | Ippocra website (ippocra.com) |
+| `07e6f4cb-81cb-43e0-b51c-0922e45f02f7` | ILAI website (gateway pages) |
 
-    sudo apt install graphicsmagick-imagemagick-compat
+Custom events are tracked in `assets/js/ippocra-tracking.js` (loaded globally via `head_scripts` in `_config.yml`) and in individual tool JS files.
 
+## Sitemap
+
+The sitemap is maintained at `sitemap.xml`. When adding new pages or tools, add the corresponding `<url>` entries for all locales (IT, EN, EL).

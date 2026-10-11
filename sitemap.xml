@@ -28,4 +28,26 @@
     {% endfor %}
 
 {% endfor %}
+
+    <url>
+        <loc>https://ippocra.com/ippo/checklist-emergenza</loc>
+        <lastmod>2026-10-10</lastmod>
+        <xhtml:link rel="alternate" hreflang="it" href="https://ippocra.com/ippo/checklist-emergenza"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ippocra.com/ippo/emergency-checklist"/>
+        <xhtml:link rel="alternate" hreflang="el" href="https://ippocra.com/el/ippo/checklist-emergency"/>
+    </url>
+    <url>
+        <loc>https://ippocra.com/ippo/emergency-checklist</loc>
+        <lastmod>2026-10-10</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ippocra.com/ippo/emergency-checklist"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://ippocra.com/ippo/checklist-emergenza"/>
+        <xhtml:link rel="alternate" hreflang="el" href="https://ippocra.com/el/ippo/checklist-emergency"/>
+    </url>
+    <url>
+        <loc>https://ippocra.com/ippo/checklist-emergency</loc>
+        <lastmod>2026-10-10</lastmod>
+        <xhtml:link rel="alternate" hreflang="el" href="https://ippocra.com/el/ippo/checklist-emergency"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://ippocra.com/ippo/checklist-emergenza"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://ippocra.com/ippo/emergency-checklist"/>
+    </url>
 </urlset>
