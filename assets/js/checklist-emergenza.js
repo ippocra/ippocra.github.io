@@ -1,4 +1,4 @@
-/* Emergency checklist — client-side PDF generator */
+/* Emergency checklist — client-side PDF generator with Umami tracking */
 (function () {
   'use strict';
 
@@ -9,6 +9,32 @@
   var btnDownload = document.getElementById('btn-download');
   var preview = document.getElementById('preview');
   var previewContent = document.getElementById('preview-content');
+
+  // --- Umami event tracking ---
+  function track(name, data) {
+    if (typeof window.umami === 'undefined') {
+      window.umami = window.umami || [];
+      window.umami.push(['track', name, data]);
+      return;
+    }
+    try {
+      window.umami.track(name, data || {});
+    } catch (e) {
+      console.warn('[Checklist Tracking] Failed to track:', name, e);
+    }
+  }
+
+  function getLang() {
+    var html = document.documentElement.lang || '';
+    if (html === 'it') return 'it';
+    if (html === 'en') return 'en';
+    return 'it';
+  }
+
+  // Track page engagement
+  setTimeout(function () {
+    track('checklist-page-10s', { language: getLang(), path: window.location.pathname });
+  }, 10000);
 
   var fields = [
     ['nome', 'nome', 'Nome e cognome'],
@@ -149,7 +175,24 @@
     btnDownload.style.display = 'inline-block';
 
     preview.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Track PDF generation
+    track('checklist-pdf-generated', {
+      language: getLang(),
+      path: window.location.pathname,
+      fields_filled: fields.filter(function(f) { return val(f[0]); }).length
+    });
   });
+
+  // Track PDF download click
+  if (btnDownload) {
+    btnDownload.addEventListener('click', function () {
+      track('checklist-pdf-downloaded', {
+        language: getLang(),
+        path: window.location.pathname
+      });
+    });
+  }
 
   // Print-only CSS injection
   var styleEl = document.createElement('style');
