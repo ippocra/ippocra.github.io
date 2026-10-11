@@ -187,7 +187,7 @@
       submitBtn.textContent = getLang() === 'it' ? 'Invio...' : 'Sending...';
 
       // POST to the lead intake API on ilai.ippocra.com
-      fetch('https://ilai.ippocra.com/api/submit', {
+      fetch('https://ilai.ippocra.com/api/calc-submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
