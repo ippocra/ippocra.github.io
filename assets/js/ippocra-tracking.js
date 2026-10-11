@@ -38,12 +38,7 @@
 
   // --- Product CTA Tracking ---
   function trackProductCTAs() {
-    var ilaiCtas = document.querySelectorAll(
-      'a[href*="ilai"], a[href*="ILAI"], a:contains("Discover ILAI"), ' +
-      'a:contains("ILAI use cases"), .gateway-card-ilai a'
-    );
-
-    // More reliable: find all CTA buttons in gateway cards
+    // Find all CTA buttons in gateway cards
     var gatewayCards = document.querySelectorAll('.gateway-card');
     gatewayCards.forEach(function(card) {
       var brand = card.querySelector('.gateway-brand-mark') || card.querySelector('.gateway-brand');
