@@ -17,6 +17,16 @@ tags: ippo
 
 So far Ippo helped you **find, store and share** your medical records. The **Lab Dashboard** goes a step further: instead of just keeping the PDF, it **reads your lab results** and shows the values in a single view, with out-of-range ones already flagged.
 
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; box-shadow:0 4px 20px rgba(0,0,0,0.1); margin: 1.5rem 0;">
+  <iframe src="https://www.youtube.com/embed/0Z3hm9tkYgA"
+      title="Ippo Lab Dashboard — Your Lab Report, Finally Decoded"
+      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen loading="lazy"></iframe>
+</div>
+
+<p><em>See in 20 seconds how Ippo reads your lab report and organises the values on the Lab Dashboard.</em></p>
+
 ## Upload the report, Ippo does the rest
 
 You don't retype anything. Upload a lab result the same way you'd upload any other document on Ippo, and Ippo **automatically extracts the values**: hemoglobin, platelets, glucose, cholesterol and every other parameter, **organized in a dashboard** you understand at a glance.
