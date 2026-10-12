@@ -7,6 +7,10 @@
   font-weight: 800;
   letter-spacing: -0.02em;
   color: $dark-text;
+  overflow-wrap: break-word;
+  overflow-x: auto;
+  max-width: 100%;
+  word-break: break-word;
 }
 
 .section-title {
