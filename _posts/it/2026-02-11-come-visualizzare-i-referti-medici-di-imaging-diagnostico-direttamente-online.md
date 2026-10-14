@@ -10,6 +10,18 @@ header:
     teaser: /assets/images/ancona_view_belvedere_nord.webp
 classes: wide
 tags: ippo
+# SEO consolidation (2026-10-14): Google indexed several typo / near-duplicate URLs
+# for this flagship Ippo page (GSC: 3633 impressions / 28 clicks = 0.77% CTR, pos 7.3 —
+# 99% of impressions wasted). These 301s fold that fragmented equity into the canonical
+# URL so the page ranks on the consolidated signal.
+redirect_from:
+  - /come-visualizzare-i-referti-medici-di-imaging-diagnostici-direttamente-online
+  - /come-visualizzare-i-referti-medici-di-imaging-diagnostico-directamente-online
+  - /come-visualizzare-i-referti-medici-di-imaging-direttamente-online
+  - /come-visualizzare-i-referti-medici-diagnostici-direttamente-online
+  - /come-visualizzare-i-referti-medici-imaging-diagnostico-direttamente-online
+  - /come-visualizzare-e-referti-medici-di-imaging-diagnostico-direttamente-online
+  - /come-visualizzare
 ---
 
 ![image-center](/assets/images/ancona_view_belvedere_nord.webp){: .align-center}
