@@ -13,8 +13,13 @@
 
 {%- assign lang = page.lang | default: site.active_lang | default: site.default_lang | default: site.locale | replace: "_", "-" | default: "en" -%}
 {%- assign base_url = page.canonical_url | default: page.url | replace: "/index.html", "/" -%}
-{%- if lang != site.default_lang -%}
-  {%- assign canonical_url = base_url | prepend: "/" | prepend: lang | absolute_url -%}
+{%- if lang != site.default_lang and lang != empty -%}
+  {%- assign lang_path = "/" | append: lang | append: "/" -%}
+  {%- if base_url contains lang_path -%}
+    {%- assign canonical_url = base_url | absolute_url -%}
+  {%- else -%}
+    {%- assign canonical_url = base_url | prepend: lang_path | absolute_url -%}
+  {%- endif -%}
 {%- else -%}
   {%- assign canonical_url = base_url | absolute_url -%}
 {%- endif -%}
@@ -116,8 +121,6 @@
     <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
   {% endif %}
 {% endif %}
-
-<link rel="canonical" href="{{ canonical_url }}">
 
 {% if paginator.previous_page %}
   <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
