@@ -1,11 +1,11 @@
 ---
-title: "Agent or chat? Why it's not the same thing — and where the difference is"
+title: "Cloud AI vs local AI: what it really costs your company (and why the agent, not the chat, is the point)"
 categories: ai, privacy, business
-excerpt: "ChatGPT has an agent, Dot. But a subscription chat box and an agent that does the work inside your company's systems are not the same category. Here's where the difference is — and why price is the last of the numbers."
+excerpt: "Cloud AI and local AI look like two prices for the same thing. They're not — a subscription chat box and an agent that does the work inside your systems, on a machine where the data stays, are different categories. Here's the real cost, and where the difference is."
 permalink: /agent-or-chat
 lang: en
-description: "Dot is ChatGPT Pro's always-on agent. But a subscription chat box and an agent that does the work inside your company's systems, with data on-site, are not the same thing. The difference, and the real cost."
-keywords: AI agent, chatbot vs agent, ILAI, private AI, Dot ChatGPT, on-premise AI, data sovereignty, AI for SMEs, AI cost, local artificial intelligence
+description: "Cloud AI vs local AI: the real cost for your company. A subscription chat box (like ChatGPT Pro's Dot) and an agent that does the work inside your systems, on a machine where the data stays, are not the same category. Here's the difference and the honest numbers."
+keywords: cloud AI vs local AI, cloud AI vs on-premise AI cost, local AI for SME cost, AI locale per PMI, intelligenza artificiale locale aziende, AI agent vs chat, ILAI, private AI, Dot ChatGPT, on-premise AI cost, data sovereignty, AI cost for business
 page_id: agente-o-chat
 header:
     teaser: /assets/images/screenshots/agent-vs-chat-teaser.webp
