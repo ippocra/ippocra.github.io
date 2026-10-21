@@ -45,7 +45,7 @@ ILAI on Cloud è un’istanza privata di ILAI ospitata su una **unità dedicata 
 - infrastruttura ospitata in Italia;
 - la possibilità di iniziare senza acquistare subito hardware dedicato.
 
-Le aziende interessate possono [scoprire il percorso ILAI on Cloud e unirsi alla lista d’attesa](/ilai/cloud/).
+Le aziende interessate possono [scoprire il percorso ILAI on Cloud e parlarne con noi](/ilai/cloud/).
 
 ## Seeweb e Regolo: cosa significa “privato” nel cloud
 
@@ -102,7 +102,7 @@ Il percorso è semplice:
 
 1. si individua un processo concreto in cui ILAI può essere utile;
 2. si valuta il contesto dell’azienda e il tipo di dati coinvolti;
-3. si entra nella lista d’attesa per ILAI on Cloud;
+3. si parla con noi del caso e della configurazione;
 4. si configura l’unità dedicata e si inizia a lavorare sul caso d’uso;
 5. in seguito, si decide se restare nel cloud o passare all’installazione on-premise.
 
@@ -130,8 +130,8 @@ Sì. Il passaggio dal cloud alla macchina dell’azienda è previsto come percor
 
 **Quanto costa ILAI on Cloud?**
 
-Il servizio prevede un abbonamento mensile. Il prezzo dipende dal contesto e dal percorso di configurazione e viene discusso con le aziende interessate attraverso la lista d’attesa.
+Il servizio prevede un abbonamento mensile. Il prezzo dipende dal contesto e dal percorso di configurazione e viene definito insieme alle aziende interessate.
 
 **Come posso iniziare?**
 
-Puoi [visitare la pagina ILAI on Cloud](/ilai/cloud/) e unirti alla lista d’attesa, oppure scrivere a [info@ippocra.com](mailto:info@ippocra.com).
+Puoi [visitare la pagina ILAI on Cloud](/ilai/cloud/) e parlarne con noi, oppure scrivere a [info@ippocra.com](mailto:info@ippocra.com).

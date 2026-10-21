@@ -45,7 +45,7 @@ It follows the same ILAI approach, with a different infrastructure model:
 - infrastructure hosted in Italy;
 - the ability to start without buying dedicated hardware immediately.
 
-Interested businesses can [learn about ILAI on Cloud and join the waitlist](/en/ilai/cloud/).
+Interested businesses can [learn about ILAI on Cloud and talk to us](/en/ilai/cloud/).
 
 ## Seeweb and Regolo: what “private” means in the cloud
 
@@ -102,7 +102,7 @@ The process is straightforward:
 
 1. identify a concrete process where ILAI could help;
 2. assess the company’s context and the type of data involved;
-3. join the ILAI on Cloud waitlist;
+3. talk to us about the case and the configuration;
 4. configure the dedicated unit and begin working on the use case;
 5. later, decide whether to remain in the cloud or move to on-premise deployment.
 
@@ -130,8 +130,8 @@ Yes. Moving from the cloud to the company’s own machine is an intended path fo
 
 **How much does ILAI on Cloud cost?**
 
-The service uses a monthly subscription. Pricing depends on the context and configuration path and is discussed with interested businesses through the waitlist.
+The service uses a monthly subscription. Pricing depends on the context and configuration path and is agreed with interested businesses.
 
 **How can I get started?**
 
-You can [visit the ILAI on Cloud page](/en/ilai/cloud/) and join the waitlist, or contact us at [info@ippocra.com](mailto:info@ippocra.com).
+You can [visit the ILAI on Cloud page](/en/ilai/cloud/) and talk to us, or contact us at [info@ippocra.com](mailto:info@ippocra.com).
