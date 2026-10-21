@@ -20,6 +20,9 @@ tags: ilai, ai, privacy
 <p style="text-align:center;">
   <img src="/assets/images/screenshots/agent-vs-chat-teaser.webp" alt="Un faro che taglia la tempesta — i tuoi dati riportati a casa, in casa" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
+<p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.9rem;">
+  Nella tempesta di un mondo connesso, i tuoi dati si disperdono in mare. Il faro è la macchina locale che li riporta a casa — in casa, dove devono stare.
+</p>
 
 La risposta breve è: **Dot è un agente, ma non è un agente che fa il lavoro della tua azienda.** È un assistente personale che gira in un cloud, che lavora per te come persona, con i tuoi prompt, e che non vive dentro il tuo ERP, il tuo CRM, la tua contabilità. ILAI è una cosa diversa: un agente costruito per i *processi* di quella specifica azienda, su una macchina dove i dati restano. Non è la stessa categoria, e il prezzo, da solo, non dice nulla sulla differenza.
 

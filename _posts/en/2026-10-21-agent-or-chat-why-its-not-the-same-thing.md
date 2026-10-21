@@ -20,6 +20,9 @@ It's the question we get more and more, and it's the right question. It deserves
 <p style="text-align:center;">
   <img src="/assets/images/screenshots/agent-vs-chat-teaser.webp" alt="A lighthouse beam cutting through a storm — your data guided home, in-house" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
+<p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.9rem;">
+  In the storm of a connected world, your data is scattered at sea. The lighthouse is the local box that guides it home — in-house, where it belongs.
+</p>
 
 The short answer: **Dot is an agent, but it's not an agent that does your company's work.** It's a personal assistant that runs in a cloud, that works for you as a person, with your prompts, and that doesn't live inside your ERP, your CRM, or your accounting. ILAI is something different: an agent built for *that* company's *processes*, on a machine where the data stays. It's not the same category, and price alone says nothing about the difference.
 
