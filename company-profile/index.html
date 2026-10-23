@@ -25,6 +25,67 @@
     padding: 0;
   }
 
+  /* ===== HEADER ===== */
+  .site-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(11, 15, 20, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--card-border);
+  }
+  .site-header__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.75rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .site-header__logo img {
+    height: 32px;
+    width: auto;
+  }
+  .site-header__nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: auto;
+    font-size: 0.9rem;
+  }
+  .site-header__nav a {
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+    white-space: nowrap;
+  }
+  .site-header__nav a:hover,
+  .site-header__nav a.active {
+    color: var(--fg);
+  }
+  .site-header__btns {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .site-header__btns .btn {
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .site-header__btns .btn:hover { opacity: 0.85; }
+  .btn--primary {
+    background: var(--teal);
+    color: var(--bg);
+  }
+  .btn--inverse {
+    background: transparent;
+    color: var(--fg);
+    border: 1px solid var(--card-border);
+  }
+
   /* ===== HERO ===== */
   .hero {
     position: relative;
@@ -76,27 +137,6 @@
     max-width: 480px;
     margin: 0 auto 2.5rem;
     font-weight: 400;
-  }
-  .hero__cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.9rem 2rem;
-    background: var(--teal);
-    color: var(--bg);
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .hero__cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(64, 191, 180, 0.3);
-  }
-  .hero__cta svg {
-    width: 18px;
-    height: 18px;
   }
   .hero__scroll {
     position: absolute;
@@ -246,6 +286,25 @@
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="site-header__logo">
+        <a href="/"><img src="/assets/images/ippocra-logo-white-ippo-green-background.png" alt="Ippocra"></a>
+      </div>
+      <nav class="site-header__nav">
+        <a href="/ippo/medici/">Doctors</a>
+        <a href="/ippo/imaging/">Imaging</a>
+        <a href="/ippo/prezzi/">Pricing</a>
+        <a href="/company-profile/" class="active">Company</a>
+        <a href="/ippo/security/">Security</a>
+      </nav>
+      <div class="site-header__btns">
+        <a href="https://app.ippocra.com/register" class="btn btn--primary">Register</a>
+        <a href="https://app.ippocra.com/" class="btn btn--inverse">Login</a>
+      </div>
+    </div>
+  </header>
+
   <div class="hero">
     <canvas class="hero__canvas" id="globeCanvas"></canvas>
     <div class="hero__content">
@@ -253,11 +312,6 @@
       <div class="hero__kicker">Ippocra</div>
       <h1 class="hero__title">Innovation<br>with Agency.</h1>
       <p class="hero__sub">Local, on-premise AI systems for regulated environments. Private by design. Local by default. Agency always.</p>
-      <a href="/company-profile/Ippocra-Company-Profile.pdf" class="hero__cta" download
-         id="heroDownloadBtn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Download Company Profile
-      </a>
     </div>
     <div class="hero__scroll">Scroll to explore</div>
   </div>
@@ -555,8 +609,6 @@
         }
       } catch(e) {}
     }
-    const heroBtn = document.getElementById('heroDownloadBtn');
-    if (heroBtn) heroBtn.addEventListener('click', () => trackDownload('hero'));
     const dlBtn = document.getElementById('downloadBtn');
     if (dlBtn) dlBtn.addEventListener('click', () => trackDownload('download_section'));
 
@@ -565,5 +617,25 @@
     draw();
   })();
   </script>
+
+  <footer class="page__footer" style="margin-top:4rem; border-top:1px solid #1e2a32;">
+    <div id="footer-links" style="max-width:960px; margin:0 auto; padding:2.5rem 2rem; display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem; font-size:0.9rem;">
+      <div id="footer__contact" style="color:#9FB2BD;">
+        <p style="margin:0 0 0.5rem;"><strong style="color:#E8EDF1;">CONTACT US</strong></p>
+        <p style="margin:0.3rem 0;">email: <strong style="color:#E8EDF1;">info@ippocra.com</strong></p>
+        <p style="margin:0.3rem 0;">pec: <strong style="color:#E8EDF1;">ippocra@pec.it</strong></p>
+        <p style="margin:0.3rem 0;"><a href="/company-profile/" style="color:#40BFB4; text-decoration:none;">Company</a></p>
+      </div>
+      <div class="footer__legal-links" style="color:#9FB2BD;">
+        <p style="margin:0 0 0.5rem;"><strong style="color:#E8EDF1;">LEGAL</strong></p>
+        <p style="margin:0.3rem 0;"><a href="/legal/terms/" style="color:#9FB2BD; text-decoration:none;">Terms</a></p>
+        <p style="margin:0.3rem 0;"><a href="/legal/policy/" style="color:#9FB2BD; text-decoration:none;">Privacy Policy</a></p>
+        <p style="margin:0.3rem 0;"><a href="/legal/cookies-policy/" style="color:#9FB2BD; text-decoration:none;">Cookies Policy</a></p>
+      </div>
+    </div>
+    <div class="page__footer-copyright" style="text-align:center; padding:1.5rem 2rem; border-top:1px solid #1e2a32; color:#9FB2BD; font-size:0.8rem;">
+      &copy; 2026 Ippocra P.I. IT 03010040420
+    </div>
+  </footer>
 </body>
 </html>
