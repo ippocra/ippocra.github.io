@@ -16,7 +16,7 @@
    {% if page.categories or page.url contains "/posts/" or page.url == "/posts" or page.url contains "/tag/" %}
       {% include_cached masthead-ilai.html page_url=page_url %}
       {% elsif page.nav_type == "ippo" or page.permalink contains "/ippo" or page.permalink contains "/en/ippo" or page.permalink contains "/el/ippo" %}
-      {% include_cached masthead-ippo-sub.html page_url=page_url %}
+      {% include_cached masthead-ippo.html page_url=page_url %}
       {% else %}
       {% include_cached masthead-general.html page_url=page_url %}
     {% endif %}
