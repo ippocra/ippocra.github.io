@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ippocra — Company Profile</title>
+<meta name="description" content="Ippocra builds local, on-premise AI systems for regulated environments. Private by design. Local by default. Agency always.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #0B0F14;
+    --fg: #E8EDF1;
+    --teal: #40BFB4;
+    --muted: #9FB2BD;
+    --card-border: #1e2a32;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    overflow: hidden;
+  }
+  .hero__canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .hero__content {
+    position: relative;
+    z-index: 1;
+  }
+  .hero__logo {
+    width: 64px;
+    height: auto;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  .hero__kicker {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--teal);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .hero__title {
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    font-weight: 800;
+    color: var(--fg);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+  }
+  .hero__sub {
+    font-size: 1.1rem;
+    color: var(--muted);
+    max-width: 480px;
+    margin: 0 auto 2.5rem;
+    font-weight: 400;
+  }
+  .hero__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 2rem;
+    background: var(--teal);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .hero__cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(64, 191, 180, 0.3);
+  }
+  .hero__cta svg {
+    width: 18px;
+    height: 18px;
+  }
+  .hero__scroll {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    z-index: 1;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  /* ===== SECTIONS ===== */
+  .section {
+    padding: 5rem 0;
+    border-top: 1px solid var(--card-border);
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .section__num {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--teal);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .section__title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--fg);
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    line-height: 1.15;
+  }
+  .section__text {
+    color: var(--muted);
+    max-width: 640px;
+    margin-bottom: 1rem;
+  }
+  .section__text strong {
+    color: var(--fg);
+    font-weight: 600;
+  }
+
+  /* ===== PILLARS ===== */
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .pillar {
+    padding-top: 1rem;
+    border-top: 2px solid var(--teal);
+  }
+  .pillar__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--fg);
+    margin-bottom: 0.4rem;
+  }
+  .pillar__desc {
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* ===== DOWNLOAD CTA ===== */
+  .download {
+    text-align: center;
+    padding: 5rem 0;
+    border-top: 1px solid var(--card-border);
+  }
+  .download__title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--fg);
+    margin-bottom: 1rem;
+  }
+  .download__text {
+    color: var(--muted);
+    margin-bottom: 2rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .download__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2.5rem;
+    background: var(--teal);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .download__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(64, 191, 180, 0.3);
+  }
+  .download__btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--card-border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .footer a {
+    color: var(--teal);
+    text-decoration: none;
+  }
+
+  /* ===== SCROLL REVEAL ===== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .pillars {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .hero {
+      padding: 3rem 1.5rem;
+    }
+    .section {
+      padding: 3.5rem 0;
+    }
+  }
+  @media (max-width: 480px) {
+    .pillars {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <canvas class="hero__canvas" id="globeCanvas"></canvas>
+  <div class="hero__content">
+    <img class="hero__logo" src="../assets/images/ippocra-logo-white-ippo-green-background.png" alt="Ippocra">
+    <div class="hero__kicker">Ippocra</div>
+    <h1 class="hero__title">Innovation<br>with Agency.</h1>
+    <p class="hero__sub">Local, on-premise AI systems for regulated environments. Private by design. Local by default. Agency always.</p>
+    <a href="Ippocra-Company-Profile.pdf" class="hero__cta" download
+       id="heroDownloadBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Company Profile
+    </a>
+  </div>
+  <div class="hero__scroll">Scroll to explore</div>
+</section>
+
+<!-- ===== WHO WE ARE ===== -->
+<section class="section">
+  <div class="container reveal">
+    <div class="section__num">01</div>
+    <h2 class="section__title">Who We Are</h2>
+    <p class="section__text">Ippocra is an R&amp;D lab and software company. We build intelligent systems that put people back in control — for enterprises and regulated environments where data sovereignty, auditability, and long-term ownership are non-negotiable.</p>
+    <p class="section__text"><strong>We are not a consultancy. We do not sell hours. We ship products.</strong></p>
+  </div>
+</section>
+
+<!-- ===== PILLARS ===== -->
+<section class="section" style="border-top:none; padding-top:0;">
+  <div class="container reveal">
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar__title">Private by Design</div>
+        <div class="pillar__desc">Sensitive data never leaves your network. By architecture, not by promise.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar__title">Local by Default</div>
+        <div class="pillar__desc">Runs where your data lives, on hardware you control. Zero lock-in.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar__title">Auditable by Architecture</div>
+        <div class="pillar__desc">Every system is legible, traceable, and under your command.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar__title">Agency, Always</div>
+        <div class="pillar__desc">You decide what it does, where it runs, and what it knows.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DOWNLOAD ===== -->
+<section class="download" id="download">
+  <div class="container reveal">
+    <h2 class="download__title">Company Profile</h2>
+    <p class="download__text">Architecture, capabilities, team, and process. 11 pages. A4 landscape.</p>
+    <a href="Ippocra-Company-Profile.pdf" class="download__btn" download
+       id="downloadBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download PDF
+    </a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <p>Ippocra &mdash; <a href="https://ippocra.com">ippocra.com</a> &mdash; <a href="mailto:info@ippocra.com">info@ippocra.com</a></p>
+    <p style="margin-top:0.5rem; color:var(--teal);">Innovation with Agency</p>
+  </div>
+</footer>
+
+<!-- ===== DITHERED GLOBE ===== -->
+<script>
+(function() {
+  const canvas = document.getElementById('globeCanvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, dpr;
+  let rotY = 0;
+  let dragging = false;
+  let lastX = 0;
+
+  const BAYER4 = [
+    [ 0,  8,  2, 10],
+    [12,  4, 14,  6],
+    [ 3, 11,  1,  9],
+    [15,  7, 13,  5]
+  ];
+
+  const CONTINENTS = {
+    na: [
+      [45,-125],[55,-130],[60,-140],[65,-165],[70,-160],[72,-155],[70,-140],
+      [65,-130],[60,-120],[55,-110],[50,-100],[45,-90],[40,-80],[35,-75],
+      [30,-80],[25,-80],[20,-90],[15,-100],[10,-105],[5,-90],[10,-85],
+      [15,-80],[20,-75],[25,-70],[30,-75],[35,-75]
+    ],
+    sa: [
+      [10,-75],[15,-70],[20,-60],[15,-50],[10,-40],[0,-40],[-10,-40],
+      [-20,-45],[-30,-50],[-40,-55],[-50,-60],[-55,-65],[-50,-70],
+      [-40,-70],[-30,-70],[-20,-70],[-10,-75],[0,-80],[5,-80]
+    ],
+    eu: [
+      [40,-10],[45,-5],[50,-5],[55,-5],[60,0],[65,5],[70,10],[70,20],
+      [65,30],[60,30],[55,35],[50,30],[45,30],[40,25],[35,20],[35,15],
+      [40,10],[38,0]
+    ],
+    af: [
+      [35,-10],[35,0],[30,10],[30,20],[25,30],[20,35],[15,40],[10,45],
+      [5,50],[0,45],[-10,40],[-20,35],[-30,30],[-35,25],[-35,20],
+      [-30,15],[-20,10],[-15,5],[-5,0],[0,-5],[5,-10],[10,-15],
+      [15,-15],[20,-15],[25,-10],[30,-5],[35,-10]
+    ],
+    as: [
+      [40,40],[45,45],[50,50],[55,55],[60,60],[65,70],[70,80],[70,90],
+      [65,100],[60,110],[55,120],[50,130],[45,135],[40,140],[35,140],
+      [30,130],[25,120],[20,110],[15,105],[10,100],[5,100],[0,100],
+      [5,95],[10,90],[15,85],[20,80],[25,75],[30,70],[35,65],[40,55]
+    ],
+    au: [
+      [-15,130],[-10,140],[-15,150],[-20,155],[-25,155],[-30,150],
+      [-35,145],[-40,140],[-38,135],[-35,130],[-30,125],[-25,120],
+      [-20,118],[-15,125],[-15,130]
+    ]
+  };
+
+  function resize() {
+    dpr = window.devicePixelRatio || 1;
+    W = canvas.clientWidth;
+    H = canvas.clientHeight;
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    ctx.scale(dpr, dpr);
+  }
+
+  function project(lat, lon, rot) {
+    const phi = (90 - lat) * Math.PI / 180;
+    const theta = (lon + rot) * Math.PI / 180;
+    const x = Math.sin(phi) * Math.cos(theta);
+    const y = Math.cos(phi);
+    const z = Math.sin(phi) * Math.sin(theta);
+    return { x, y, z };
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+
+    const cx = W / 2;
+    const cy = H / 2;
+    const radius = Math.min(W, H) * 0.38;
+    const cellSize = 3;
+
+    const landSet = new Set();
+    for (const key in CONTINENTS) {
+      const poly = CONTINENTS[key];
+      for (let i = 0; i < poly.length - 1; i++) {
+        const [lat1, lon1] = poly[i];
+        const [lat2, lon2] = poly[i + 1];
+        const steps = Math.max(3, Math.floor(Math.max(Math.abs(lat2-lat1), Math.abs(lon2-lon1)) * 2));
+        for (let s = 0; s <= steps; s++) {
+          const t = s / steps;
+          const lat = lat1 + (lat2 - lat1) * t;
+          const lon = lon1 + (lon2 - lon1) * t;
+          const p = project(lat, lon, rotY);
+          if (p.z > -0.05) {
+            const px = Math.round((cx + p.x * radius) / cellSize);
+            const py = Math.round((cy + p.y * radius) / cellSize);
+            landSet.add(px + ',' + py);
+            for (let dx = -3; dx <= 3; dx++) {
+              for (let dy = -3; dy <= 3; dy++) {
+                const dLat = lat + dy * 0.8;
+                const dLon = lon + dx * 0.8;
+                const dp = project(dLat, dLon, rotY);
+                if (dp.z > -0.05) {
+                  const dpx = Math.round((cx + dp.x * radius) / cellSize);
+                  const dpy = Math.round((cy + dp.y * radius) / cellSize);
+                  landSet.add(dpx + ',' + dpy);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    for (let py = 0; py < H; py += cellSize) {
+      for (let px = 0; px < W; px += cellSize) {
+        const dx = (px - cx) / radius;
+        const dy = (py - cy) / radius;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist > 1.05) continue;
+
+        const phi = Math.acos(Math.max(-1, Math.min(1, -dy)));
+        const theta = Math.atan2(dx, -dy);
+        const light = 0.5 + 0.5 * Math.cos(phi) * Math.cos(theta - 0.5);
+
+        const isLand = landSet.has(Math.round(px/cellSize) + ',' + Math.round(py/cellSize));
+        const baseVal = isLand ? 0.6 + 0.4 * light : 0.08 + 0.12 * light;
+
+        const idx = Math.round(py / cellSize) % 4;
+        const idy = Math.round(px / cellSize) % 4;
+        const threshold = (BAYER4[idx < 0 ? idx+4 : idx][idy < 0 ? idy+4 : idy] + 0.5) / 16;
+        const dithered = baseVal > threshold;
+
+        if (dithered) {
+          const r = Math.floor(15 + 45 * light);
+          const g = Math.floor(55 + 85 * light);
+          const b = Math.floor(50 + 75 * light);
+          ctx.fillStyle = `rgb(${r},${g},${b})`;
+        } else {
+          const r = Math.floor(8 + 8 * light);
+          const g = Math.floor(14 + 12 * light);
+          const b = Math.floor(18 + 12 * light);
+          ctx.fillStyle = `rgb(${r},${g},${b})`;
+        }
+        ctx.fillRect(px, py, cellSize, cellSize);
+      }
+    }
+
+    // Arcs
+    const arcs = [
+      { from: [45, -120], to: [51, 0] },
+      { from: [40, -75], to: [48, 2] },
+      { from: [35, 139], to: [51, 0] },
+      { from: [43, 13], to: [51, 0] }
+    ];
+    arcs.forEach(arc => {
+      const p1 = project(arc.from[0], arc.from[1], rotY);
+      const p2 = project(arc.to[0], arc.to[1], rotY);
+      if (p1.z < -0.1 || p2.z < -0.1) return;
+
+      const steps = 40;
+      ctx.beginPath();
+      for (let i = 0; i <= steps; i++) {
+        const t = i / steps;
+        const lat = arc.from[0] + (arc.to[0] - arc.from[0]) * t;
+        const lon = arc.from[1] + (arc.to[1] - arc.from[1]) * t;
+        const p = project(lat, lon, rotY);
+        const arcH = Math.sin(t * Math.PI) * 0.25;
+        const x = cx + (p.x + arcH * p.x * 0.5) * radius;
+        const y = cy + (p.y + arcH * p.y * 0.5) * radius;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = 'rgba(64, 191, 180, 0.5)';
+      ctx.lineWidth = 1.5;
+      ctx.setLineDash([4, 4]);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    });
+
+    // Markers
+    const markers = [
+      { lat: 45, lon: -120, label: 'SFO' },
+      { lat: 40, lon: -75, label: 'NYC' },
+      { lat: 51, lon: 0, label: 'LDN' },
+      { lat: 48, lon: 2, label: 'PAR' },
+      { lat: 35, lon: 139, label: 'TYO' },
+      { lat: -33, lon: 151, label: 'SYD' },
+      { lat: 43, lon: 13, label: 'ANK' }
+    ];
+    markers.forEach(m => {
+      const p = project(m.lat, m.lon, rotY);
+      if (p.z < 0) return;
+
+      const x = cx + p.x * radius;
+      const y = cy + p.y * radius;
+
+      ctx.beginPath();
+      ctx.arc(x, y, 3, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(64, 191, 180, 0.9)';
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(x, y, 7, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(64, 191, 180, 0.15)';
+      ctx.fill();
+
+      ctx.font = '10px -apple-system, BlinkMacSystemFont, sans-serif';
+      ctx.fillStyle = 'rgba(64, 191, 180, 0.7)';
+      ctx.textAlign = 'center';
+      ctx.fillText(m.label, x, y - 10);
+    });
+
+    if (!dragging) {
+      rotY += 0.15;
+    }
+    requestAnimationFrame(draw);
+  }
+
+  canvas.addEventListener('mousedown', (e) => { dragging = true; lastX = e.clientX; });
+  canvas.addEventListener('mousemove', (e) => {
+    if (!dragging) return;
+    rotY += (e.clientX - lastX) * 0.5;
+    lastX = e.clientX;
+  });
+  canvas.addEventListener('mouseup', () => { dragging = false; });
+  canvas.addEventListener('mouseleave', () => { dragging = false; });
+
+  canvas.addEventListener('touchstart', (e) => { dragging = true; lastX = e.touches[0].clientX; });
+  canvas.addEventListener('touchmove', (e) => {
+    if (!dragging) return;
+    e.preventDefault();
+    rotY += (e.touches[0].clientX - lastX) * 0.5;
+    lastX = e.touches[0].clientX;
+  }, { passive: false });
+  canvas.addEventListener('touchend', () => { dragging = false; });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  function trackDownload(source) {
+    try {
+      if (typeof window.umami !== 'undefined' && window.umami.track) {
+        window.umami.track('company_profile_download', {
+          source: source,
+          url: '/company-profile/Ippocra-Company-Profile.pdf'
+        });
+      }
+    } catch(e) {}
+  }
+  const heroBtn = document.getElementById('heroDownloadBtn');
+  if (heroBtn) heroBtn.addEventListener('click', () => trackDownload('hero'));
+  const dlBtn = document.getElementById('downloadBtn');
+  if (dlBtn) dlBtn.addEventListener('click', () => trackDownload('download_section'));
+
+  resize();
+  window.addEventListener('resize', resize);
+  draw();
+})();
+</script>
+
+</body>
+</html>
