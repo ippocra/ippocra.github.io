@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ippocra — Company Profile</title>
+<meta name="description" content="Ippocra builds local, on-premise AI systems for regulated environments. Private by design. Local by default. Agency always.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #0B0F14;
+    --fg: #E8EDF1;
+    --teal: #40BFB4;
+    --muted: #9FB2BD;
+    --card-border: #1e2a32;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    overflow: hidden;
+  }
+  .hero__canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .hero__content {
+    position: relative;
+    z-index: 1;
+  }
+  .hero__logo {
+    width: 64px;
+    height: auto;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  .hero__kicker {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--teal);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .hero__title {
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    font-weight: 800;
+    color: var(--fg);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+  }
+  .hero__sub {
+    font-size: 1.1rem;
+    color: var(--muted);
+    max-width: 480px;
+    margin: 0 auto 2.5rem;
+    font-weight: 400;
+  }
+  .hero__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.9rem 2rem;
+    background: var(--teal);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .hero__cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(64, 191, 180, 0.3);
+  }
+  .hero__cta svg {
+    width: 18px;
+    height: 18px;
+  }
+  .hero__scroll {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    z-index: 1;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  /* ===== SECTIONS ===== */
+  .section {
+    padding: 6rem 0;
+    border-top: 1px solid var(--card-border);
+  }
+  .section__num {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--teal);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .section__title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--fg);
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    line-height: 1.15;
+  }
+  .section__text {
+    color: var(--muted);
+    max-width: 640px;
+    margin-bottom: 2rem;
+  }
+  .section__text strong {
+    color: var(--fg);
+    font-weight: 600;
+  }
+
+  /* ===== QUOTE ===== */
+  .quote {
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--muted);
+    border-left: 3px solid var(--teal);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    max-width: 640px;
+    line-height: 1.5;
+  }
+
+  /* ===== CAPABILITY GRID ===== */
+  .cap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+  .cap-card {
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.02);
+    transition: border-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .cap-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(64, 191, 180, 0.03) 2px,
+      rgba(64, 191, 180, 0.03) 4px
+    );
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .cap-card:hover {
+    border-color: var(--teal);
+    transform: translateY(-4px);
+  }
+  .cap-card:hover::before {
+    opacity: 1;
+  }
+  .cap-card__num {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--teal);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+  }
+  .cap-card__title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--fg);
+    margin-bottom: 0.5rem;
+  }
+  .cap-card__desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* ===== ARCHITECTURE ===== */
+  .arch-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+  .arch-item {
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    background: rgba(255,255,255,0.02);
+  }
+  .arch-item__label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--teal);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+  }
+  .arch-item__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--fg);
+    margin-bottom: 0.5rem;
+  }
+  .arch-item__desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* ===== TEAM ===== */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .team-card {
+    text-align: center;
+  }
+  .team-card__photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    display: block;
+    border: 2px solid var(--card-border);
+  }
+  .team-card__name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--fg);
+  }
+  .team-card__role {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--teal);
+    margin-bottom: 0.75rem;
+  }
+  .team-card__bio {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  /* ===== WHY ===== */
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .why-item {
+    padding-top: 1rem;
+    border-top: 2px solid var(--teal);
+  }
+  .why-item__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--fg);
+    margin-bottom: 0.5rem;
+  }
+  .why-item__desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* ===== STEPS ===== */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  .step {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .step__num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--teal);
+    color: var(--bg);
+    font-weight: 800;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .step__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--fg);
+    margin-bottom: 0.25rem;
+  }
+  .step__desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* ===== DOWNLOAD CTA ===== */
+  .download {
+    text-align: center;
+    padding: 5rem 0;
+    border-top: 1px solid var(--card-border);
+  }
+  .download__title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--fg);
+    margin-bottom: 1rem;
+  }
+  .download__text {
+    color: var(--muted);
+    margin-bottom: 2rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .download__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2.5rem;
+    background: var(--teal);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .download__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(64, 191, 180, 0.3);
+  }
+  .download__btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--card-border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .footer a {
+    color: var(--teal);
+    text-decoration: none;
+  }
+
+  /* ===== SCROLL REVEAL ===== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .cap-grid, .arch-grid, .team-grid, .why-grid, .steps {
+      grid-template-columns: 1fr;
+    }
+    .hero {
+      padding: 3rem 1.5rem;
+    }
+    .section {
+      padding: 4rem 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <canvas class="hero__canvas" id="globeCanvas"></canvas>
+  <div class="hero__content">
+    <img class="hero__logo" src="../assets/images/ippocra-logo-white-ippo-green-background.png" alt="Ippocra">
+    <div class="hero__kicker">Ippocra</div>
+    <h1 class="hero__title">Innovation<br>with Agency.</h1>
+    <p class="hero__sub">Local, on-premise AI systems for regulated environments. Private by design. Local by default. Agency always.</p>
+    <a href="Ippocra-Company-Profile.pdf" class="hero__cta" download
+       id="heroDownloadBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download Company Profile
+    </a>
+  </div>
+  <div class="hero__scroll">Scroll to explore</div>
+</section>
+
+<!-- ===== 01 WHO WE ARE ===== -->
+<section class="section" id="who">
+  <div class="container reveal">
+    <div class="section__num">01</div>
+    <h2 class="section__title">Who We Are</h2>
+    <p class="section__text">Ippocra is an R&amp;D lab and software company. We design and build intelligent systems for enterprises and regulated environments where data sovereignty, auditability, and long-term ownership are non-negotiable.</p>
+    <p class="section__text"><strong>We are not a consultancy. We do not sell hours. We ship products.</strong></p>
+    <div class="cap-grid">
+      <div class="cap-card">
+        <div class="cap-card__num">ILAI</div>
+        <div class="cap-card__title">Ippocra Local Artificial Intelligence</div>
+        <div class="cap-card__desc">Local, on-premise AI systems for business operations. Private by architecture, growing with use. Runs on your hardware, connects to your channels, executes on your data.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-card__num">IPPO</div>
+        <div class="cap-card__title">Digital Health</div>
+        <div class="cap-card__desc">Encrypted, family-owned medical records. Designed to be shared on the family's terms, not the platform's. Sovereignty over your most personal data.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 02 ARCHITECTURE ===== -->
+<section class="section" id="architecture">
+  <div class="container reveal">
+    <div class="section__num">02</div>
+    <h2 class="section__title">The Architecture</h2>
+    <p class="section__text">Four architectural principles. Not features — constraints that shape every decision.</p>
+    <div class="arch-grid">
+      <div class="arch-item">
+        <div class="arch-item__label">Principle 01</div>
+        <div class="arch-item__title">Skill-Based AI</div>
+        <div class="arch-item__desc">AI capabilities as discrete, composable skills. Each skill has a defined input, output, and scope. Testable, auditable, deployable independently. The pattern that makes AI viable in regulated environments.</div>
+      </div>
+      <div class="arch-item">
+        <div class="arch-item__label">Principle 02</div>
+        <div class="arch-item__title">Local-First, Data Sovereignty</div>
+        <div class="arch-item__desc">Systems run where the data lives. On your hardware, in your network. No inference to third-party services. No data egress. No telemetry. Private by architecture, not by promise.</div>
+      </div>
+      <div class="arch-item">
+        <div class="arch-item__label">Principle 03</div>
+        <div class="arch-item__title">Multi-Profile, Persistent Memory</div>
+        <div class="arch-item__desc">Each user or context operates within its own profile — its own memory, context, and accumulated knowledge. Isolated by default. Persistent across sessions. Maps to multi-tenant enterprise.</div>
+      </div>
+      <div class="arch-item">
+        <div class="arch-item__label">Principle 04</div>
+        <div class="arch-item__title">Agentic Workflows</div>
+        <div class="arch-item__desc">Skills are not just queried — they are orchestrated. Multi-step workflows: read, decide, act, report. From "chat with your data" to "your data works for you."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 CAPABILITIES ===== -->
+<section class="section" id="capabilities">
+  <div class="container reveal">
+    <div class="section__num">03</div>
+    <h2 class="section__title">Core Capabilities</h2>
+    <div class="cap-grid">
+      <div class="cap-card">
+        <div class="cap-card__num">01</div>
+        <div class="cap-card__title">Document Intelligence</div>
+        <div class="cap-card__desc">Extraction pipelines that transform real, chaotic documentation into structured, interrogable context. Contracts, reports, specs — ingested and queryable without leaving your network.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-card__num">02</div>
+        <div class="cap-card__title">Local LLM Orchestration</div>
+        <div class="cap-card__desc">Routing sensitive workloads to the smallest capable local model, on-premise. No cloud dependency. No per-token billing. Predictable cost.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-card__num">03</div>
+        <div class="cap-card__title">AI Agent Design &amp; Integration</div>
+        <div class="cap-card__desc">Design and deployment of AI agents for specific business domains. Persistent, context-aware systems that execute workflows autonomously within a defined scope.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-card__num">04</div>
+        <div class="cap-card__title">Enterprise AI Architecture</div>
+        <div class="cap-card__desc">Advisory for AI integration in regulated or data-sensitive environments. Defining boundaries: what runs locally, what never leaves the perimeter. Mapping capabilities to compliance.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-card__num">05</div>
+        <div class="cap-card__title">Persistent Memory Systems</div>
+        <div class="cap-card__desc">Long-term memory architectures for AI systems that accumulate context over time. Structured, queryable, owned by the client. A designed, auditable memory model.</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-card__num">06</div>
+        <div class="cap-card__title">Multi-Tenant AI Deployment</div>
+        <div class="cap-card__desc">Deployment patterns for AI systems serving multiple users, teams, or organisations. Profile isolation, permission boundaries, context separation, per-tenant memory.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 04 THE TEAM ===== -->
+<section class="section" id="team">
+  <div class="container reveal">
+    <div class="section__num">04</div>
+    <h2 class="section__title">The Team</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <img class="team-card__photo" src="../assets/images/people/MM.webp" alt="Michele Mattioni">
+        <div class="team-card__name">Michele Mattioni, PhD</div>
+        <div class="team-card__role">Founder</div>
+        <div class="team-card__bio">Leads product vision, business development, and go-to-market strategy. Michele is the technical and product lead behind ILAI — a local, on-premise AI system designed for organisations that cannot send their data to a third-party cloud. He founded Ippocra to make private, sovereign AI accessible. His focus: skill-based AI architecture, local inference, and systems that are auditable by design.</div>
+      </div>
+      <div class="team-card">
+        <img class="team-card__photo" src="../assets/images/people/MK.webp" alt="Myrto Kostadima">
+        <div class="team-card__name">Myrto Kostadima, PhD</div>
+        <div class="team-card__role">Co-Founder</div>
+        <div class="team-card__bio">Works as a specialized Forward Deployed Engineer in core competencies, with a focus on Customer Success. Myrto is the technical bridge between Ippocra's architecture and the client's environment: she designs the integration pattern, deploys the system, and ensures the AI operates correctly within the client's infrastructure, data sources, and communication channels.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05 WHY IPPOCRA ===== -->
+<section class="section" id="why">
+  <div class="container reveal">
+    <div class="section__num">05</div>
+    <h2 class="section__title">Why Ippocra</h2>
+    <div class="quote">Innovation without agency is just cleverness. Agency without innovation is just caution. We do both, in that order.</div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-item__title">Private by Design</div>
+        <div class="why-item__desc">Sensitive data never leaves your network. No third-party inference, no hidden dependencies. If your data is private, it stays private — by architecture, not by promise.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-item__title">Local by Default</div>
+        <div class="why-item__desc">Software that runs where it needs to, on hardware you control. Predictable costs, zero lock-in, full sovereignty. You can migrate, fork, or change without being held hostage.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-item__title">Auditable by Architecture</div>
+        <div class="why-item__desc">Every system we ship is readable, auditable, and under your command. Skills are discrete units. Workflows are traceable. Memory is structured and queryable. This is what we mean by agency.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-item__title">Agency, Always</div>
+        <div class="why-item__desc">We build for the customer need. Every system we release is under your control. You decide what it does, where it runs, and what it knows.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 06 HOW WE WORK ===== -->
+<section class="section" id="process">
+  <div class="container reveal">
+    <div class="section__num">06</div>
+    <h2 class="section__title">How We Work</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step__num">1</div>
+        <div>
+          <div class="step__title">Discovery</div>
+          <div class="step__desc">We start with your context: what data is sensitive, what workflows need acceleration, what compliance constraints apply. We map the problem space and define architectural boundaries.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <div>
+          <div class="step__title">Proof of Concept</div>
+          <div class="step__desc">We build a working system on your hardware, with your data, for a specific workflow. You evaluate the result.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <div>
+          <div class="step__title">Integration</div>
+          <div class="step__desc">We design the integration pattern: how the AI connects to your infrastructure, channels, and data sources. We handle deployment, security model, and operational runbook.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">4</div>
+        <div>
+          <div class="step__title">Production</div>
+          <div class="step__desc">The system goes live. We monitor, iterate, and the system grows with use. You own the hardware, the data, and the accumulated knowledge.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DOWNLOAD ===== -->
+<section class="download" id="download">
+  <div class="container reveal">
+    <h2 class="download__title">Company Profile</h2>
+    <p class="download__text">The full Ippocra company profile — architecture, capabilities, team, and process. 11 pages. A4 landscape.</p>
+    <a href="Ippocra-Company-Profile.pdf" class="download__btn" download
+       id="downloadBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download PDF
+    </a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <p>Ippocra &mdash; <a href="https://ippocra.com">ippocra.com</a> &mdash; <a href="mailto:info@ippocra.com">info@ippocra.com</a></p>
+    <p style="margin-top:0.5rem; color:var(--teal);">Innovation with Agency</p>
+  </div>
+</footer>
+
+<!-- ===== DITHERED GLOBE ===== -->
+<script>
+(function() {
+  const canvas = document.getElementById('globeCanvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, dpr;
+  let rotY = 0;
+  let dragging = false;
+  let lastX = 0;
+
+  // Bayer 4x4 dithering matrix
+  const BAYER4 = [
+    [ 0,  8,  2, 10],
+    [12,  4, 14,  6],
+    [ 3, 11,  1,  9],
+    [15,  7, 13,  5]
+  ];
+
+  // Simplified continent data (rough lat/lon polygons)
+  const CONTINENTS = {
+    na: [
+      [45,-125],[55,-130],[60,-140],[65,-165],[70,-160],[72,-155],[70,-140],
+      [65,-130],[60,-120],[55,-110],[50,-100],[45,-90],[40,-80],[35,-75],
+      [30,-80],[25,-80],[20,-90],[15,-100],[10,-105],[5,-90],[10,-85],
+      [15,-80],[20,-75],[25,-70],[30,-75],[35,-75]
+    ],
+    sa: [
+      [10,-75],[15,-70],[20,-60],[15,-50],[10,-40],[0,-40],[-10,-40],
+      [-20,-45],[-30,-50],[-40,-55],[-50,-60],[-55,-65],[-50,-70],
+      [-40,-70],[-30,-70],[-20,-70],[-10,-75],[0,-80],[5,-80]
+    ],
+    eu: [
+      [40,-10],[45,-5],[50,-5],[55,-5],[60,0],[65,5],[70,10],[70,20],
+      [65,30],[60,30],[55,35],[50,30],[45,30],[40,25],[35,20],[35,15],
+      [40,10],[38,0]
+    ],
+    af: [
+      [35,-10],[35,0],[30,10],[30,20],[25,30],[20,35],[15,40],[10,45],
+      [5,50],[0,45],[-10,40],[-20,35],[-30,30],[-35,25],[-35,20],
+      [-30,15],[-20,10],[-15,5],[-5,0],[0,-5],[5,-10],[10,-15],
+      [15,-15],[20,-15],[25,-10],[30,-5],[35,-10]
+    ],
+    as: [
+      [40,40],[45,45],[50,50],[55,55],[60,60],[65,70],[70,80],[70,90],
+      [65,100],[60,110],[55,120],[50,130],[45,135],[40,140],[35,140],
+      [30,130],[25,120],[20,110],[15,105],[10,100],[5,100],[0,100],
+      [5,95],[10,90],[15,85],[20,80],[25,75],[30,70],[35,65],[40,55]
+    ],
+    au: [
+      [-15,130],[-10,140],[-15,150],[-20,155],[-25,155],[-30,150],
+      [-35,145],[-40,140],[-38,135],[-35,130],[-30,125],[-25,120],
+      [-20,118],[-15,125],[-15,130]
+    ]
+  };
+
+  function resize() {
+    dpr = window.devicePixelRatio || 1;
+    W = canvas.clientWidth;
+    H = canvas.clientHeight;
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    ctx.scale(dpr, dpr);
+  }
+
+  function project(lat, lon, rot) {
+    const phi = (90 - lat) * Math.PI / 180;
+    const theta = (lon + rot) * Math.PI / 180;
+    const r = 1;
+    const x = r * Math.sin(phi) * Math.cos(theta);
+    const y = r * Math.cos(phi);
+    const z = r * Math.sin(phi) * Math.sin(theta);
+    return { x, y, z };
+  }
+
+  function pointInPolygon(lat, lon, poly) {
+    let inside = false;
+    const lonN = ((lon + 540) % 360) - 180;
+    for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+      const latI = poly[i][0], lonI = poly[i][1];
+      const latJ = poly[j][0], lonJ = poly[j][1];
+      const lonIN = ((lonI + 540) % 360) - 180;
+      const lonJN = ((lonJ + 540) % 360) - 180;
+      if ((latI > lat) !== (latJ > lat) &&
+          lonN < (lonJN - lonIN) * (lat - latI) / (latJ - latI) + lonIN) {
+        inside = !inside;
+      }
+    }
+    return inside;
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+
+    const cx = W / 2;
+    const cy = H / 2;
+    const radius = Math.min(W, H) * 0.38;
+    const cellSize = 3;
+
+    // Pre-compute land points for current rotation
+    const landSet = new Set();
+    for (const key in CONTINENTS) {
+      const poly = CONTINENTS[key];
+      // Sample points along the polygon edges
+      for (let i = 0; i < poly.length - 1; i++) {
+        const [lat1, lon1] = poly[i];
+        const [lat2, lon2] = poly[i + 1];
+        const steps = Math.max(3, Math.floor(Math.max(Math.abs(lat2-lat1), Math.abs(lon2-lon1)) * 2));
+        for (let s = 0; s <= steps; s++) {
+          const t = s / steps;
+          const lat = lat1 + (lat2 - lat1) * t;
+          const lon = lon1 + (lon2 - lon1) * t;
+          const p = project(lat, lon, rotY);
+          if (p.z > -0.05) {
+            const px = Math.round((cx + p.x * radius) / cellSize);
+            const py = Math.round((cy + p.y * radius) / cellSize);
+            landSet.add(px + ',' + py);
+            // Fill interior: add neighboring cells
+            for (let dx = -3; dx <= 3; dx++) {
+              for (let dy = -3; dy <= 3; dy++) {
+                const dLat = lat + dy * 0.8;
+                const dLon = lon + dx * 0.8;
+                const dp = project(dLat, dLon, rotY);
+                if (dp.z > -0.05) {
+                  const dpx = Math.round((cx + dp.x * radius) / cellSize);
+                  const dpy = Math.round((cy + dp.y * radius) / cellSize);
+                  landSet.add(dpx + ',' + dpy);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Draw dithered grid
+    for (let py = 0; py < H; py += cellSize) {
+      for (let px = 0; px < W; px += cellSize) {
+        const dx = (px - cx) / radius;
+        const dy = (py - cy) / radius;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist > 1.05) continue;
+
+        const phi = Math.acos(Math.max(-1, Math.min(1, -dy)));
+        const theta = Math.atan2(dx, -dy);
+        const light = 0.5 + 0.5 * Math.cos(phi) * Math.cos(theta - 0.5);
+
+        const isLand = landSet.has(Math.round(px/cellSize) + ',' + Math.round(py/cellSize));
+        const baseVal = isLand ? 0.6 + 0.4 * light : 0.08 + 0.12 * light;
+
+        const idx = Math.round(py / cellSize) % 4;
+        const idy = Math.round(px / cellSize) % 4;
+        const threshold = (BAYER4[idx < 0 ? idx+4 : idx][idy < 0 ? idy+4 : idy] + 0.5) / 16;
+        const dithered = baseVal > threshold;
+
+        if (dithered) {
+          const r = Math.floor(15 + 45 * light);
+          const g = Math.floor(55 + 85 * light);
+          const b = Math.floor(50 + 75 * light);
+          ctx.fillStyle = `rgb(${r},${g},${b})`;
+        } else {
+          const r = Math.floor(8 + 8 * light);
+          const g = Math.floor(14 + 12 * light);
+          const b = Math.floor(18 + 12 * light);
+          ctx.fillStyle = `rgb(${r},${g},${b})`;
+        }
+        ctx.fillRect(px, py, cellSize, cellSize);
+      }
+    }
+
+    // Draw arcs
+    drawArcs(cx, cy, radius);
+
+    // Draw markers
+    drawMarkers(cx, cy, radius);
+
+    if (!dragging) {
+      rotY += 0.15;
+    }
+    requestAnimationFrame(draw);
+  }
+
+  function drawArcs(cx, cy, radius) {
+    const arcs = [
+      { from: [45, -120], to: [51, 0] },
+      { from: [40, -75], to: [48, 2] },
+      { from: [35, 139], to: [51, 0] },
+      { from: [43, 13], to: [51, 0] }
+    ];
+
+    arcs.forEach(arc => {
+      const p1 = project(arc.from[0], arc.from[1], rotY);
+      const p2 = project(arc.to[0], arc.to[1], rotY);
+      if (p1.z < -0.1 || p2.z < -0.1) return;
+
+      const steps = 40;
+      ctx.beginPath();
+      for (let i = 0; i <= steps; i++) {
+        const t = i / steps;
+        const lat = arc.from[0] + (arc.to[0] - arc.from[0]) * t;
+        const lon = arc.from[1] + (arc.to[1] - arc.from[1]) * t;
+        const p = project(lat, lon, rotY);
+        const arcH = Math.sin(t * Math.PI) * 0.25;
+        const x = cx + (p.x + arcH * p.x * 0.5) * radius;
+        const y = cy + (p.y + arcH * p.y * 0.5) * radius;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = 'rgba(64, 191, 180, 0.5)';
+      ctx.lineWidth = 1.5;
+      ctx.setLineDash([4, 4]);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    });
+  }
+
+  function drawMarkers(cx, cy, radius) {
+    const markers = [
+      { lat: 45, lon: -120, label: 'SFO' },
+      { lat: 40, lon: -75, label: 'NYC' },
+      { lat: 51, lon: 0, label: 'LDN' },
+      { lat: 48, lon: 2, label: 'PAR' },
+      { lat: 35, lon: 139, label: 'TYO' },
+      { lat: -33, lon: 151, label: 'SYD' },
+      { lat: 43, lon: 13, label: 'ANK' }
+    ];
+
+    markers.forEach(m => {
+      const p = project(m.lat, m.lon, rotY);
+      if (p.z < 0) return;
+
+      const x = cx + p.x * radius;
+      const y = cy + p.y * radius;
+
+      ctx.beginPath();
+      ctx.arc(x, y, 3, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(64, 191, 180, 0.9)';
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(x, y, 7, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(64, 191, 180, 0.15)';
+      ctx.fill();
+
+      ctx.font = '10px -apple-system, BlinkMacSystemFont, sans-serif';
+      ctx.fillStyle = 'rgba(64, 191, 180, 0.7)';
+      ctx.textAlign = 'center';
+      ctx.fillText(m.label, x, y - 10);
+    });
+  }
+
+  // Mouse/touch interaction
+  canvas.addEventListener('mousedown', (e) => { dragging = true; lastX = e.clientX; });
+  canvas.addEventListener('mousemove', (e) => {
+    if (!dragging) return;
+    rotY += (e.clientX - lastX) * 0.5;
+    lastX = e.clientX;
+  });
+  canvas.addEventListener('mouseup', () => { dragging = false; });
+  canvas.addEventListener('mouseleave', () => { dragging = false; });
+
+  canvas.addEventListener('touchstart', (e) => { dragging = true; lastX = e.touches[0].clientX; });
+  canvas.addEventListener('touchmove', (e) => {
+    if (!dragging) return;
+    e.preventDefault();
+    rotY += (e.touches[0].clientX - lastX) * 0.5;
+    lastX = e.touches[0].clientX;
+  }, { passive: false });
+  canvas.addEventListener('touchend', () => { dragging = false; });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Umami tracking
+  function trackDownload(source) {
+    try {
+      if (typeof window.umami !== 'undefined' && window.umami.track) {
+        window.umami.track('company_profile_download', {
+          source: source,
+          url: '/company-profile/Ippocra-Company-Profile.pdf'
+        });
+      }
+    } catch(e) {}
+  }
+  const heroBtn = document.getElementById('heroDownloadBtn');
+  if (heroBtn) heroBtn.addEventListener('click', () => trackDownload('hero'));
+  const dlBtn = document.getElementById('downloadBtn');
+  if (dlBtn) dlBtn.addEventListener('click', () => trackDownload('download_section'));
+
+  resize();
+  window.addEventListener('resize', resize);
+  draw();
+})();
+</script>
+
+</body>
+</html>
