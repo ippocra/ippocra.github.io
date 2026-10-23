@@ -87,6 +87,7 @@ redirect_stub_targets.each do |rel_path, canonical_path|
       <!DOCTYPE html>
       <html>
       <head>
+        <meta name="robots" content="noindex, follow">
         <meta http-equiv="refresh" content="0; url=https://ippocra.com#{canonical_path}">
         <link rel="canonical" href="https://ippocra.com#{canonical_path}">
         <title>Redirecting…</title>
