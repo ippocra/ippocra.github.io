@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ippocra — Company Profile</title>
+<style>
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+  @page :first {
+    margin: 0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { font-size: 11pt; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+    color: #1a1a2e;
+    line-height: 1.6;
+    background: #fff;
+  }
+
+  /* ===== COVER: matches ippocra.com hero ===== */
+  .cover {
+    page-break-after: always;
+    min-height: 21cm;
+    width: 29.7cm;
+    background: #0B0F14;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 3cm 4cm;
+  }
+  .cover__glow {
+    position: absolute;
+    width: 50cm;
+    height: 34cm;
+    background: radial-gradient(rgba(46, 125, 136, 0.28), rgba(0, 0, 0, 0) 65%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  .cover__logo {
+    width: 72px;
+    height: auto;
+    margin-bottom: 2.5em;
+    position: relative;
+    z-index: 1;
+  }
+  .cover__kicker {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #40BFB4;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.6em;
+    position: relative;
+    z-index: 1;
+  }
+  .cover__title {
+    font-size: 68pt;
+    font-weight: 800;
+    color: #E8EDF1;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ===== Content pages ===== */
+  .page {
+    page-break-after: always;
+    min-height: 19cm;
+    padding: 2.5cm 2cm;
+    position: relative;
+  }
+  .page:last-child { page-break-after: avoid; }
+
+  /* Typography */
+  h1 {
+    font-size: 28pt;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #0e0e10;
+    line-height: 1.1;
+    margin-bottom: 0.3em;
+  }
+  h2 {
+    font-size: 16pt;
+    font-weight: 700;
+    color: #0e0e10;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #0e0e10;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+  }
+  h4 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #0e0e10;
+    margin-top: 0.8em;
+    margin-bottom: 0.2em;
+  }
+  p {
+    margin-bottom: 0.8em;
+    color: #2a2a3e;
+  }
+  .lead {
+    font-size: 13pt;
+    font-weight: 400;
+    color: #3b9ba8;
+    margin-bottom: 1em;
+  }
+  .quote {
+    font-size: 14pt;
+    font-weight: 300;
+    font-style: italic;
+    color: #4a4a5e;
+    border-left: 3px solid #3b9ba8;
+    padding-left: 1em;
+    margin: 1em 0;
+    line-height: 1.5;
+  }
+
+  /* Section headers */
+  .section-num {
+    font-size: 9pt;
+    font-weight: 600;
+    color: #3b9ba8;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.3em;
+  }
+
+  /* Capability cards */
+  .cap-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2em;
+    margin-top: 1em;
+  }
+  .cap-card {
+    border-left: 3px solid #3b9ba8;
+    padding-left: 1em;
+  }
+  .cap-card h4 {
+    margin-top: 0;
+    color: #0e0e10;
+  }
+  .cap-card p {
+    font-size: 10pt;
+    color: #4a4a5e;
+    margin-bottom: 0;
+  }
+
+  /* Team */
+  .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin-top: 1.5em;
+  }
+  .team-card {
+    text-align: center;
+  }
+  .team-photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 0.8em;
+    display: block;
+  }
+  .team-name {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #0e0e10;
+  }
+  .team-role {
+    font-size: 10pt;
+    font-weight: 600;
+    color: #3b9ba8;
+    margin-bottom: 0.5em;
+  }
+  .team-bio {
+    font-size: 9.5pt;
+    color: #4a4a5e;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  /* Architecture diagram */
+  .arch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2em;
+    margin-top: 1em;
+  }
+  .arch-item {
+    padding: 1em;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+  }
+  .arch-item h4 {
+    color: #3b9ba8;
+    margin-top: 0;
+  }
+  .arch-item p {
+    font-size: 9.5pt;
+    margin-bottom: 0;
+  }
+
+  /* How we work */
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .step {
+    display: flex;
+    gap: 0.8em;
+    align-items: flex-start;
+  }
+  .step-num {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #3b9ba8;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .step-content h4 {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  .step-content p {
+    font-size: 9.5pt;
+    color: #4a4a5e;
+    margin-bottom: 0;
+  }
+
+  /* Why */
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+  .why-item {
+    padding-top: 0.5em;
+    border-top: 2px solid #3b9ba8;
+  }
+  .why-item h4 {
+    margin-top: 0;
+  }
+  .why-item p {
+    font-size: 10pt;
+    color: #4a4a5e;
+  }
+
+  /* Footer */
+  .page-footer {
+    position: absolute;
+    bottom: 1.5cm;
+    left: 2cm;
+    right: 2cm;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    color: #b0b0c0;
+  }
+
+  /* Contact */
+  .contact {
+    text-align: center;
+    margin-top: 3em;
+  }
+  .contact h2 {
+    font-size: 20pt;
+  }
+  .contact p {
+    font-size: 11pt;
+    color: #4a4a5e;
+  }
+  .contact .motto {
+    font-size: 13pt;
+    font-weight: 500;
+    color: #3b9ba8;
+    margin-top: 1em;
+  }
+
+  /* ILAI section */
+  .ilai-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+    margin-top: 1em;
+  }
+  .ilai-card {
+    padding: 1em;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+  }
+  .ilai-card h4 {
+    margin-top: 0;
+    color: #0e0e10;
+  }
+  .ilai-card p {
+    font-size: 10pt;
+    color: #4a4a5e;
+  }
+
+  /* Research */
+  .research-list {
+    list-style: none;
+    margin-top: 1em;
+  }
+  .research-list li {
+    margin-bottom: 0.8em;
+    padding-left: 1.2em;
+    position: relative;
+  }
+  .research-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 6px;
+    height: 6px;
+    background: #3b9ba8;
+    border-radius: 50%;
+  }
+  .research-list strong {
+    color: #0e0e10;
+  }
+  .research-list span {
+    font-size: 10pt;
+    color: #4a4a5e;
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== COVER (matches ippocra.com hero) ===== -->
+<div class="cover">
+  <div class="cover__glow"></div>
+  <img class="cover__logo" src="data:image/png;base64,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" alt="Ippocra">
+  <div class="cover__kicker">Ippocra</div>
+  <h1 class="cover__title">Innovation<br>with Agency.</h1>
+</div>
+
+<!-- ===== THE CONVICTION ===== -->
+<div class="page">
+  <div class="section-num">01</div>
+  <h1>The Conviction</h1>
+  <p class="quote">The most reliable technology is the one that asks nothing of you.</p>
+  <p>The information that defines us &mdash; the documents we produce, the data we generate, the decisions we make &mdash; belongs to whoever creates it. Not to platforms. Not to vendors. Not to whoever holds the API key.</p>
+  <p>This is why we build the other way around. Systems that run where your data lives, that you own fully and transparently. When control stays with you, technology stops being a risk and becomes an asset.</p>
+  <p class="quote">Innovation with Agency. Innovation without agency is just cleverness. Agency without innovation is just caution. We do both, in that order.</p>
+  <div class="page-footer">
+    <span>Ippocra &mdash; Company Profile</span>
+    <span>02</span>
+  </div>
+</div>
+
+<!-- ===== WHO WE ARE ===== -->
+<div class="page">
+  <div class="section-num">02</div>
+  <h1>Who We Are</h1>
+  <p>Ippocra is an R&amp;D lab and software company. We design and build intelligent systems for enterprises and regulated environments where data sovereignty, auditability, and long-term ownership are non-negotiable.</p>
+  <p><strong>We are not a consultancy. We do not sell hours. We ship products.</strong></p>
+  <p>Our work operates on two complementary fronts:</p>
+  <div class="cap-grid">
+    <div class="cap-card">
+      <h4>ILAI &mdash; Ippocra Local Artificial Intelligence</h4>
+      <p>Local, on-premise AI systems for business operations. Private by architecture, growing with use.</p>
+    </div>
+    <div class="cap-card">
+      <h4>Ippo &mdash; Digital Health</h4>
+      <p>Encrypted, family-owned medical records, designed to be shared on the family&rsquo;s terms, not the platform&rsquo;s.</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>Ippocra &mdash; Company Profile</span>
+    <span>03</span>
+  </div>
+</div>
+
+<!-- ===== THE TEAM ===== -->
+<div class="page">
+  <div class="section-num">03</div>
+  <h1>Meet the Founders</h1>
+  <div class="team">
+    <div class="team-card">
+      <img class="team-photo" src="../assets/images/people/MM.webp" alt="Michele Mattioni">
+      <div class="team-name">Michele Mattioni, PhD</div>
+      <div class="team-role">Founder</div>
+      <div class="team-bio">Leads product vision, business development, and go-to-market strategy. Michele is the technical and product lead behind ILAI &mdash; a local, on-premise AI system designed for organisations that cannot send their data to a third-party cloud. He founded Ippocra to make private, sovereign AI accessible. His focus: skill-based AI architecture, local inference, and systems that are auditable by design.</div>
+    </div>
+    <div class="team-card">
+      <img class="team-photo" src="../assets/images/people/MK.webp" alt="Myrto Kostadima">
+      <div class="team-name">Myrto Kostadima, PhD</div>
+      <div class="team-role">Co-Founder</div>
+      <div class="team-bio">Works as a specialized Forward Deployed Engineer in core competencies, with a focus on Customer Success. Myrto is the technical bridge between Ippocra&rsquo;s architecture and the client&rsquo;s environment: she designs the integration pattern, deploys the system, and ensures the AI operates correctly within the client&rsquo;s infrastructure, data sources, and communication channels. She is the point of contact for POC scoping, technical integration, operational deployment, and ongoing client support.</div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>Ippocra &mdash; Company Profile</span>
+    <span>04</span>
+  </div>
+</div>
+
+<!-- ===== THE ARCHITECTURE ===== -->
+<div class="page">
+  <div class="section-num">04</div>
+  <h1>The Architecture</h1>
+  <p>Ippocra&rsquo;s systems are built on four architectural principles. These are not features. They are constraints that shape every decision we make.</p>
+  <div class="arch-grid">
+    <div class="arch-item">
+      <h4>Skill-Based AI</h4>
+      <p>AI capabilities are implemented as discrete, composable skills &mdash; not as a single general-purpose LLM with a prompt. Each skill has a defined input, a defined output, and a defined scope. Skills can be tested, audited, and deployed independently. This is the pattern that makes AI integration viable in regulated environments.</p>
+    </div>
+    <div class="arch-item">
+      <h4>Local-First, Data Sovereignty</h4>
+      <p>Systems run where the data lives. On your hardware, in your network. No inference calls to third-party services. No data egress. No telemetry. If your data is sensitive, it stays sensitive &mdash; by architecture, not by promise.</p>
+    </div>
+    <div class="arch-item">
+      <h4>Multi-Profile, Persistent Memory</h4>
+      <p>Each user or system context operates within its own profile &mdash; its own memory, its own context, its own accumulated knowledge. Profiles are isolated by default. Memory is persistent across sessions. This maps naturally to multi-tenant enterprise deployments.</p>
+    </div>
+    <div class="arch-item">
+      <h4>Agentic Workflows</h4>
+      <p>Skills are not just queried. They are orchestrated. Ippocra&rsquo;s systems execute multi-step workflows: they read, decide, act, and report. This is how AI moves from &ldquo;chat with your data&rdquo; to &ldquo;your data works for you&rdquo;.</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>Ippocra &mdash; Company Profile</span>
+    <span>05</span>
+  </div>
+</div>
+
+<!-- ===== CORE CAPABILITIES ===== -->
+<div class="page">
+  <div class="section-num">05</div>
+  <h1>Core Capabilities</h1>
+  <div class="cap-grid">
+    <div class="cap-card">
+      <h4>Document Intelligence</h4>
+      <p>Pipeline of extraction that transforms real, chaotic documentation into structured, interrogable context. Contracts, reports, technical specifications, operational documents &mdash; ingested, parsed, and made queryable without leaving your network.</p>
+    </div>
+    <div class="cap-card">
+      <h4>Local LLM Orchestration</h4>
+      <p>Routing of sensitive workloads to the smallest capable local model, on-premise. No cloud dependency. No per-token billing. Predictable cost. The model selection layer is abstracted: your system gets the right capability for the task, not the most expensive model available.</p>
+    </div>
+    <div class="cap-card">
+      <h4>AI Agent Design &amp; Integration</h4>
+      <p>Design and deployment of AI agents for specific business domains. An agent is a persistent, context-aware system that executes workflows autonomously within a defined scope. We design the skill set, the memory model, the workflow orchestration, and the integration layer.</p>
+    </div>
+    <div class="cap-card">
+      <h4>Enterprise AI Architecture Consulting</h4>
+      <p>Advisory for organisations evaluating AI integration in regulated or data-sensitive environments. We help define the architectural boundaries: what runs locally, what runs in a private cloud, what never leaves the perimeter. We map capabilities to compliance requirements.</p>
+    </div>
+    <div class="cap-card">
+      <h4>Persistent Memory Systems</h4>
+      <p>Long-term memory architectures for AI systems that need to accumulate context over time. Memory is structured, queryable, and owned by the client. Not a vector database. Not a cache. A designed, auditable memory model that grows with the system.</p>
+    </div>
+    <div class="cap-card">
+      <h4>Multi-Tenant AI Deployment</h4>
+      <p>Deployment patterns for AI systems serving multiple users, teams, or organisations within the same infrastructure. Profile isolation, permission boundaries, context separation, and per-tenant memory management.</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>Ippocra &mdash; Company Profile</span>
+    <span>06</span>
+  </div>
+</div>
+
+<!-- ===== ILAI ===== -->
+<div class="page">
+  <div class="section-num">06</div>
+  <h1>ILAI</h1>
+  <p class="lead">Ippocra Local Artificial Intelligence.</p>
+  <p>ILAI is our flagship product: a local, on-premise AI system that operates as a persistent, skill-based assistant within your organisation. It runs on your hardware, connects to your existing communication channels (Slack, Teams, email, WhatsApp, Telegram), and executes workflows on your documents and data.</p>
+  <h3>How it works</h3>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Onboarding</h4>
+        <p>You configure the system with your context: who you are, what your organisation does, where resources and documents live.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Execution</h4>
+        <p>You assign a specific task. ILAI executes the workflow, produces the result, and reports. You review and correct if needed.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Growth</h4>
+        <p>Every interaction leaves knowledge on your machine. Over time, ILAI becomes more useful. The system is an asset, not a service.</p>
+      </div>
+    </div>
+  </div>
+  <h3>Deployment models</h3>
+  <div class="ilai-grid">
+    <div class="ilai-card">
+      <h4>Local</h4>
+      <p>Runs on your own workstation. Full sovereignty. Zero cloud dependency. You own the hardware, the data, and the accumulated knowledge.</p>
+    </div>
+    <div class="ilai-card">
+      <h4>Private Cloud</h4>
+      <p>Dedicated infrastructure with certified Zero Data Retention inference. No hardware on your side. Immediate start.</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>Ippocra &mdash; Company Profile</span>
+    <span>07</span>
+  </div>
+</div>
+
+<!-- ===== THE RESEARCH LAB ===== -->
+<div class="page">
+  <div class="section-num">07</div>
+  <h1>The Research Lab</h1>
+  <p>Ippocra operates as a research lab, not a product factory. We prototype in public, benchmark obsessively, and publish what we learn. Every product is a step along a longer line of experiments. When one matures enough to support real work, it goes to production. The rest stays in the lab, pushing the limits of what local, private intelligence can do.</p>
+  <h3>Research Register</h3>
+  <ul class="research-list">
+    <li><strong>Inference</strong> &mdash; <span>Orchestration of local models. Routing sensitive workloads to the smallest capable engine, on-premise. Benchmarking, quantization, and model selection for constrained hardware.</span></li>
+    <li><strong>Documents</strong> &mdash; <span>Extraction pipelines that transform real, chaotic documentation into structured, interrogable context.</span></li>
+    <li><strong>Health Data</strong> &mdash; <span>Encrypted family medical records, owned by the family. Designed to be shared on the family&rsquo;s terms, not the platform&rsquo;s.</span></li>
+    <li><strong>Sovereignty</strong> &mdash; <span>Zero-cloud architectures for regulated sectors: no egress, no telemetry, no escape route.</span></li>
+  </ul>
+  <div class="page-footer">
+    <span>Ippocra &mdash; Company Profile</span>
+    <span>08</span>
+  </div>
+</div>
+
+<!-- ===== HOW WE WORK ===== -->
+<div class="page">
+  <div class="section-num">08</div>
+  <h1>How We Work</h1>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Discovery</h4>
+        <p>We start with your context: what data is sensitive, what workflows need to be accelerated, what compliance constraints apply. We map the problem space and define the architectural boundaries.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Proof of Concept</h4>
+        <p>We build a working system on your hardware, with your data, for a specific workflow. You evaluate the result.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Integration</h4>
+        <p>We design the integration pattern: how the AI system connects to your existing infrastructure, communication channels, and data sources. We handle the deployment, the security model, and the operational runbook.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Production</h4>
+        <p>The system goes live. We monitor, we iterate, and the system grows with use. You own the hardware, the data, and the accumulated knowledge. We support the operational lifecycle.</p>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>Ippocra &mdash; Company Profile</span>
+    <span>09</span>
+  </div>
+</div>
+
+<!-- ===== WHY IPPOCRA ===== -->
+<div class="page">
+  <div class="section-num">09</div>
+  <h1>Why Ippocra</h1>
+  <div class="why-grid">
+    <div class="why-item">
+      <h4>Private by Design</h4>
+      <p>Sensitive data never leaves your network. No third-party inference, no hidden dependencies, no trust assumptions. If your data is private, it stays private &mdash; by architecture, not by promise.</p>
+    </div>
+    <div class="why-item">
+      <h4>Local by Default</h4>
+      <p>Software that runs where it needs to, on hardware you control. Predictable costs, zero lock-in, full sovereignty. You can migrate, fork, or change without being held hostage.</p>
+    </div>
+    <div class="why-item">
+      <h4>Auditable by Architecture</h4>
+      <p>Every system we ship is readable, auditable, and under your command. Skills are discrete units with defined inputs and outputs. Workflows are traceable. Memory is structured and queryable. This is what we mean by agency.</p>
+    </div>
+    <div class="why-item">
+      <h4>Agency, Always</h4>
+      <p>We build for the customer need. Every system we release is under your control. You decide what it does, where it runs, and what it knows.</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <span>Ippocra &mdash; Company Profile</span>
+    <span>10</span>
+  </div>
+</div>
+
+<!-- ===== CONTACT ===== -->
+<div class="page">
+  <div class="contact">
+    <img class="cover__logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACTCAYAAAAX6CKdAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAIABJREFUeJztnXd4VFXex7/T0yaZ9N4gvYcACaGDIm1BERAEF1jRVWy7+ry+6676utbXRd5FXBsgbZGOgoCwtBRaqCGkkQIhvU0mmUkymX7fP0JiJvdm0qbdcD/Pw6PPmXvvOZn5zplTfuf7Y4156x0CDAw0g23pBjAwDAVGuAy0hBEuAy1hhMtASxjhMtASRrgMtIQRLgMtYYTLQEsY4TLQEka4DLSEES4DLWGEy0BLGOEy0BJGuAy0hBEuAy3hWroBQ2W0lydiAwNw6959VIibLN0cq8eWz0dCcCDGjh4FPzdX/PeuPZZu0rCgrXDdHR3x3pKnAAANUhlulN7H1ZISZBbchUzeYeHWWQd+ri6YFhOFqdGRiAsMAJfDAQA0tbZauGXDh7bCVWk03f/v4eSIuUkJmJuUAK1Ohxv37uNsTh5OZedArlRasJXmx8HGBvOSErEweSzCfbwpr+FzeWZulfEZEcLtCYfNRnJoCJJDQ/Cn+XPw661sHLx8Fffq6s3cQvMS7uONZyZNwBOJ8bDhGRamgEfbj70b2v4FfQm3J/Y2AixJTcGS1BRkFZdg0/FTKKqpNUPrzIeHkyPemD8HsxLiwGaxBnQPj8MBm8WCjqDvccMRLdyepISFYvyfQ7D3wmVsOnEKGq3WRC0zH1OiIvDBssVwsrMb1H0sFgs8LhdKtdpELTM9tF0OoxKuRqs12IuwWSysmDIRm19eC3sbgSmbZ3JmxsVgw+qVBkWr1mqRkV+IlvZ20mt0Hy6MKOE+aGjEvI8/x9cnT6OupaXPe+ODAvHZyuVgs+n550cH+OGTFc/02f4KcRO+PH4Scz76X7y5/d9okMpI1whoPkGj7ddOpSYLl8/joUEqw7Zz6diRlonJkeF4btpkJAYHka6dGBGGZyamYO+Fy6ZvrBGx4fHw0fKl4D1c2urJ/foGfHXiFC4UFoHo8ctD9SWne49L29YrKT4MPve3D1On0yEjvxAZ+YV4LD4Wf1v8JBxtbfWuf/mJx3HyVg7lT6m18vvpUxDo7kYq//nqdfzj52OUIqUaywr6WXmwduj5WwlATSlc6u/h2ZxcvPjNFih6fYCdqw7JJmmfKXAVCvHc1Mmk8oz8Qnx66EifE1Yl1a9TH+8VXaBt63UEAbVWq/eTaWjcVlJbh+3n0vHy7Mf1ypdOTMGu9AsDmmGzWSx4ipzg5+oKdychnO3t4e7oCGcHB9jwuOBxubDh87qXpXQEAZVaA6VaDaVGg+a2djTKZN3/rWqSoK65ZcDLUi/OmgE7AV+vTCbvwMcHfzb4DKVm5PW4tBUu0DnO7SlcHpc87uvJnguXsWLqJL0hg4uDA+YlJeKnrGt619oJ+Ij080NsoD8i/XwR6O6GQHc3o/dUKo0GFY1ilDeKUVhVgzvlFSisqoJcqdK7ztfFGU8ljyPd/8O5NEja2gzWQdXjCpge13KoNBrY47dlrf4W1uVKJQ5fuYo1M6bplc8fm4jjN24hITgQqeFhSA4LQYiXp1lWHfhcLkK8vRDi7YWZcTEAOsfnpXX1uFpcistFxbhdVo6lEyeA06s9NZJmHLiU1W8dInvykhkzObMgvcd0LBYL40NDkFVc0uc9+y9mYdW0KXqijA8KRNpH7/W7VWou2Gw2wny8EebjjeemTYZCpeoOkOnJ96fP9bsR82TyOKSEhZLK+Vbytw4V2k7OAOqVhc9WLoO/m2uf9zTKZCiqqSOVW4toqbDh80nClcrl+E92jsH7wny88faT80nlkrY25JSVG7WN5oZFZ3/cVdOn4PV5s0nl9+sbsPqrb9Gu+C0yjM1mY3pMFJ6dnIqE4KAh1afSaFApbkKFWIy6ZimaWtvQ1NoKSVsb5EoVOlQqEASBVoUCACC0sQGLxYKAx4ODjQDODvZwFQrhKnSAl0iEQHc3+Lu5DnncfLvsAfZcuIy0vALodDq91xxsbLD7T6+QvsQ6gsCrm7fjaknpkOq0Fmg9VNiZlolQby/MGZOgVz7K0wOfPPsM3tz+bxAAZsRG45U5syjXP/tCqVajsKoaeRVVyC2vQGF1DWqbW0gCGS5sNhveziJE+vogNjAAMQF+iPDzHdAvQEJwEBKCg1DeKMbXJ0/jfG5+98bDe0sXUf7ybD59jvaiBWje4wKdk5st615ATIA/6bWTt27D382V8jUq7tc34PLdYlwuKkb2/QeDDuQxFnwuF4nBQUiNCENqRBhGeXoM6L68ikr889hJRPn54q2F80ivZxWX4LUtO2gdFdYF7YULdIb27XpjHdwdHQd9b32LFGl5+fjl+i0UVdeYoHXDJ9jTA7PiYzE3KRF+ri4GryUAEARBCnGsl0qx4p//QnMbfXYJDTEihAsAMQH+2LLuhQGNFwmCwOW7xfjxwiVcK7mnt69vzXSumozGiskTkRoRBtYA42+1Oh1e/HYrbpc9MG0DzQitx7g9ya+sQnp+AWbFx/V5jY4g8OvNbGw/n4EHDY1mbJ1xIAgCV4tLcbW4FEEe7lgzYxrmJiX0G0C+6cSpESVaAOB4p07+wNKNGC58LhefrngGjxsQ7aXCIry9aw9+yrqGlna5GVtnGlra5UjPK0BaXgG8nUUIMDDxbFcqkZlfCK2RJ5aWhPZDBRseDxvWrKRcZAc6T7R+/vMxnLuTZ+aWmZdJkeH46+In4enkRPn6laISvLVjN61PPfSE1j2uDY+HTWtXYXxoCOXrx29k440fdlrtpMuYVIib8Mv1m/BwckKojxfpdX83V8QFBeBMTt6I6HlpK1wWi4UPly/B5KgI0mtanQ5f/3oaG4//arElLUug0miQlpcPsawVE8JDSbENvi4uCPRwHxG/PrQV7h9mTsPyyamkcrlSide27sDJW7eHXQefy0WErw9GeXrATsBHi1xukhUIPpeLcF9vjPL0hK2Aj5b2dgynlsKqamSXPcDMuBjweq2yjPL0gFKjwW1my9f8xAb6Y9urL5Fm060dCry6ZTvyKiqH9Xweh4O1j03Hs1Mmwk7wW/RZc1s7vj99DoeuXDWKgHkcDtY+PgPPTk7Vq0fS2obvTp/FT1nXh1VPXGAAvnphNRxsbPTKdQSBNV99N+z3yZLQrsflsNnY+PwquAmFeuUarRavbdmBO+UVw3q+l0iELetewGPxsaTeypbPx6TIcIwZFYzzuflQD+OIu7ezCFvWvYjHKHpFWwEfk6MikBAchLS8oddTL5Uit7wSc8bE60XDsVgsRPn74cjVG7RZw+4N7YT77ORUzB87hlT++c/HcD43f1jPZrNY+GL1SsQEGt4i9nFxhrODPTIL7g65ng2rn0N0gJ/B63xdXeBoZ4uLhUVDqgcAapub0SKXY3Kk/lzATShES7uctr0urcIauRwOVkydRCq/dLcYh65cHfbzn0oZh7EhowZ07ZPjx2JcyOgh1fP0hGQkjQ4e2LUp4wd8bV8cunwVGfmFpPJV06dQxvnSAVoJd2ZsNGmdskOlwqeHjhjl+fOSyD15X7BYLMwfmzikegZzX2c9A29XX6w/cgwdKv3jQB5OjpgRGz3sZ1sCWgl3YfJYUtnPV68bNP8YDKO9BhaF1cUoT88h1TPY+0YPsZ6e1Da34Oi1G6TyJ8eT31M6QBvhdoX69URHENh/8YrR6mCzBvd2cNgDC3IZ7n3sIdbTm30Xr5BCGhOCA2l5VJ02wo0PIr/Bd6tqUNUkMVodFWLxoK4vbxzc9UO9b6j19KZS3ITiXm6VAh4PcUEBRnm+OaGNcMMotjGvl94zah1nbucO6vrTg7y+u56cwd032HYZ4noJ+T3rywDamqGNcF0cHEhlxg5N3J15EYVV1QO6NiO/EGl5Q1t+251xESW15AObVKTnFyA9v2BI9VBB9Z45O9gb7fnmgjbCFVG8ucb2/NJotfhg/+F+cySUN4rx8aGfh1yPSqPB+3sPQtJq2MjjQUMjPjlonBWTLqjMQ5wpOgVrhzbCpQqWNsXZqdLaOixevxEnb90m7SppdTrsSr+AZRs29Su6/iiuqcXi9RtxKjuHsp6daZlY/n9f9etS86hCm+lkz6PmXZjqJ04m78C7ew5g04lTiA8KhNDWFpLWNmSXPYBUbrwgdKlcjr/9uB+bjp9CXFAAhLa2aGptRXbZA5NlDnKicLWhY5Yi2gi3RtJMKgvxIk/YjEmDVDboidRQqJdKzVIPADjbm37IZQ5oM1QorSNPZsYNcHuW4TfCfX1IZWIZ/fKe0Ua4ueWVpKDw8IexsgwDh8qdfbgRdZaANsLtUKlwvfQ+qXzpxBQLtIaeBLq7wVOkH+shlrWikoYpZWkjXAD4hWqvPXkcfPsxyWDoZMH4JFJZNk2PrdNmcgYA6fmFqGtpgZdI1F3G43Dwt6efxCtbtg86KJrNZsPloRGd6GHaJTuBABwOGwIuFwJep7t47xMEdgI+OBz97zyHxe43BRWfyx2QJ5iOIND20DhPoVZDpdGAIAi0dSih0WlR3yJFtUSCKrEEso6BrQg42tli8QRy2oD0PONtbpgTWglXo9Viy+nzeG/pIr3y5LAQrJgyEbszLuqVczkc+Lo4I9jDAwHurvB3c4W7oyPcHIVwd3SEi4M9bVNGdSHr6ECVWNIp5KYmVDU1o6qpCdVNEtS3SLvXul+ZPYv0BWxpbx928L2loJVwAeDYjVtYOjGFNDt+fd5ssFksqLVaRPv7IcrfD36uLqSTriMNR1tbRPn7Isrfl/SaWqtFjaQZHUoVIvzIqwk/Zl6i7SloWh6WDPfxxq431tE2et8aEMta8dTnG0i5JugCLbuj4to6sy3Yj1RkHR0YMyp4wMZ51gbtetzk0BC8uWAuQrzJu2YEQQzqg5DK5RDLWtEok6GtQ4E2pRI6nQ4qjaYzJxrReeS9i1ZFB3rP/7qv7UVbh2LYJ2jtbQTdY/CuTEEiezv4ubo8/OcKdyfHAWdNp6KougZfHD2BW/fLhtVWc0Mb4bo5CvHn383F7MT4Ad8jV6pQIe5MxVTe0IjyRjFqm1vQKJNBLGul7fiuJ3wuFz4uzvB1dYG/qwt8XV3g6+KCIA/3QY3xz+TkYuOxk0Y7BmVqrF64bBYLS1JTsG7O46RZcW8qxU140NiIMzl5yCuvQIW4iba+AcYiwN0NS1NT8ERiPFz6CUpSqNXYcT4D286lW72/mFULV2Rvj4+WL0FqRJjB63IelGPH+Ywh+xw8CrBZLEyKDMeyyalI7sMksIv8yir8dfc+ox6LMjZWK9z4oAB89tzyPm0zAeDsnTxsO5uGol7nqBgME+nni7WPTce0mKg+r2ntUODjgz/hrJUa5FmlcJ+ZOAFvLpjb53JXeaMYnx0+avQzZ48ayaEheGvhPIz26vv4++6Mi9h4/KTVDbmszoJp9YypeHPBXModLaVajc1nzuP9vQdpGRhibVRLJPgp6zqa29qREBxEeUw9LigAniInXCgssirxWpVwV0+fitfmPUH5WoW4Ca9s3oazd0aGMbG1QBAE8iurcCo7B9EB/vASkYdmEb4+CPZwR3p+odWkmrIa4f5h5jS8OpdatGdzcvH6DztR3yI1c6seHdoUCpy4mQ0bHg9xgQGk9fDRXp4IcHezmtgGqxDuxMhwvLdkEeXmwTenzuAfR44Ny9LTEHwuFylhIZgaHYlpMVGICwqAj4sIzW1yyJXkc24jGR1BIKu4FBXiJkyNjiQN10K8PNGuVFpF4LnFg2y8nUX4cNliyt2fr0+exrZz6Sap18nODmtmTMXTE5JhJ+CTXicIAjfu3cfXJ08jt9x8VpwsFgsTI8IwIzYaiaOC4e4oBIvFQoNUhtzyCqTlFiAjv8CkP9mnsnPQplDgH79/FoJeYZivz5uNwqpq3Lxn2Z02i64qcNhs7Hz9ZUT6kSObvjh6HHsvXDZJvXGBAVi/agXcHIX9XksQBH44m4bvT58z+fgu0s8X7zy9ENH+hn1zS2vr8Onho8h5YFo7/OTQEHy5dhV4vVZ3mlpbsXj9RoueDrboUGFRyjgsShlPKj94OQvf/eesSeqMDwrE9y+vhfDh3n9/sFgsjBkdDGcH+2EZLPfHY/Gx2PiH5+Dt7NzvtS5CB8xNSkSjTIaiatOtYVdLJGjtUGBiZLheuZ1AAHuBwKTvR39YLDrMhsfDC4/PIJXnVVRiw9ETJqnTxcEBG1avHJI74ZLUFCwYRz76YgwSg4Pw0fIlpJ9lQ/A4HLy7ZBGmRfe9iWAM9l+6QpkI5umU8QigyM5uLiwm3GenTCQljVZpNHhn9z6TTcRenDWD0kSkXirF1rNpeG/vAaw/crzPjY3X5j3R7/GcwWLD4+HTlcv6/DJ1qFR9xsyyWSy8/8yi7sgxU/Hp4SOol+qv6LDZbKyaPsWk9RrCIkMFLoeD/125HLa9JkU/Zl7CWRPF2doJBPh05TJStFR6XgH++O1WZBWXoKS2DnkVlTh+IxtVTU2YFh2pt9Jhy+ejtrllwMZ4A2HF1EmUruAXC4vwl937sP7IMWw/n45zd/Lg4uBAOo5vw+OBAIFrFC6MxkKt1aK5vZ3UzkAPd+y7eMVkHY0hLNLjTowIg4tQ32hN1tGB7SZaQQCACeGhpF6tukmCd3bvo4yn/fXmbexIyySVT42KNGq7qMI0T9zMxp+27dLLiHmvrh5v79qDA5eyKJ6RYNQ2UXEq+w4p6MaWz8d0A/EOpsRCwg0nlR27fmvAJ1aHQpCHO6nsl+s3DcbkUomE6jlDRWRvj7Be3rQdKhW+OHK8z+3VL4+fJFkmeTuL4G/i8aZOp8Ox6zdJ5clhhiPNTIVFhEuVReZMzh2T1kkVi9pfvEOjTEZK+NH7l2I4eDo5ksrulFcY/AIr1GrcoFhD7W30YQrSKI6yJwQHmbxeKswuXD6XS5qNypUq5Fcab9xIBdWaozuFcHriaGtL8kEw5tpl78R8AKBU938qQ6EiD20EZsjjcL++gfSl8nYWDcgrwtiYXbjeziLSVmJZQwN0Jg6coQqKnjMmweB5rblJiaRtaGNGpVGZzUX6+Rj0emCxWIihSOzXIJUZrV19QRAEKnrlo2CzWGbp7XtjduFSHb9pbjO9zeXlomLSlyPC1wdvzJ9DGSMRG+iPV+bMIpVfKDTeKYsGqZQkXndHRyyeQN6U6WJ2YjxpnN2uUBo9rUBfSNvJ/sDGXiIcCGaPVdBQLJ1wOab//jS3teN8XgEei4vRK185dRKi/H1x+Mo1lDU0wtHWFtNiorAoZRxpFaJDpcKp7ByjtUlHEEjLy8eSVH3jvjcXzANBAIevXO3eZu5KCPjOooWk51wovGu2Jane1lMAoNWaP8zU7MJtpMiv4CrsP2bAGPzr1/9gSlQESZBjRgVjzKj+047uSMs0upfsrvQLWDh+rF6beBwO/rJoAVbPmILbZeXQ6QjEBwVQmvvpdDqTBSJR0XvTCAAaLeCva/ahQku7nBQI7iUSDcsbYKBUipvw3t6DQ4rkv1JUYpJ15hpJM77/zznK17xEIsxOjMfcpIQ+HSl3pmfiXl290dtFBZvNJo1ntTqdRRzNzS5cnU6Humb9s/tCWxtE9RMRZSzO5uTif/YdGpSnwtk7efivnT+a7OTFzvRMHKGwUO2Pszm5+ObkGRO0iJrYAD/SHKVG0myRUxEWWce9UlRCKpsSFUFxpWk4cTMbKzd+jUt3iw1eV98ixQf7D+Ev/95LWs81JgRB4OODP2PTiVMD+kJptFpsOXMe7+zeZ1bRTKb4jKg+S3NgkUDyzMK7WJyq79X6ZPJY/HAuHUqK7VdTcK+uHq9v3YFAdzdMjopAqLcXXBwc0K5Uora5BVnFJbh1r8xskx6CILAzLROnb9/B6hlTMSMmmrTZIZXLkZFfiO3n0lFh5sOiAh6PMou7MVdZBoNFhHu95B7kSiXsBL8to7gKhXg6ZTz2XLhk1raUN4pR3stX15LUNrfgs8NH8flPv3T6+T70BmuUtaK8UWzy9e6+WJKaTJqYyZVK3KBIb2AOLDJUUGk0OHCZHAewZuZUWqbnNAU6gkB5oxg3Su/jWsk9lNWbfpOmL1yEDlgzYyqpfP+lKxbzX7NYPO6utAukw4guDg74+7IltLW+HImwWCy8v2QRRL3yo8mVKvyYad5fx55YTLhSuZyy150YEYZnmEw6VsOySRMoJ2V7L1wyy45nX1jU2HnrmTTKrcq3FszDrIQ4C7SIoSczYqPx5u/mksrL6hvMuulBhUWF26FS4d09B0gzdzabjQ8H4NLIYDomRYbjs5XLSAE/aq0Wf9tzgDL43pxY3BBELGuFUqNBSlioXjmHzcZjcTGob2lBcQ05HSqD6VgwLgkfPbuUdCwdADadOIU0K3CzsbhwAeDOgwo42NggLjBAr5zDZmN6TDSc7GyRVVQC63CtGrmwWCz8cdZMvLVwHqWT+YFLWfj2lPl26gxhFcIFgKvFpfBzdUWoDzm3Q0yAP2IDA3C99P4jZ4tkLjydnPD575dj4fixlK8fv3ELnxw+YuZW9Y3VCJcAkFlQiEB3N0q/Vn83VywYl4T6FilKzRRU8qgwZ0wC/vn87/v0yT2VnYMP9h+2GqdGwIqEC3Rue57PzQeHzUZicBBpPVfA42FmXAwi/Xxxt6oaUjk5qJlh4AS6u2Hzyy9gcWoypRkJQRDYejYN648ctyrRAlYm3C6ul97Hg0YxJkeGU7qSB7q74ekJ4+EpckJeRSXlGSyGvnG0tcWLT8zER8uXdvun6Xql2lJpNPjwwE8m828bLlZppd9FuK8PPlq+xKDVe6tCgf0XLmPfpSsWXRCnA84O9lg2KRVLJ6YYdL8pqa3D+3sPotiKc2tYtXCBzlPBL89+HCunTtILNtfpdHprjAq1Gkev3cCPGRdRLWm2RFOtFl9XF6ycMgkLxyf16092+W4x3tqx2+pzwFm9cLuIDwrEO08vRChFRsme6AgC10vu4ei1G0jLK7D6D8BU8LlczIiNxoLxSRgXMnpAJ0yuFpdi3eZtZmjd8KGNcIFOz7ET774NtwGeUZN1dODUrRycz83HrftlIz53BIfNRtLoYMyIjcYTifGDMsMrqanFmn99b9KAeWNCK+ECwLToKGxYs3LQ98nkHcgsuIuM/AJkFZeOmPVgexsBUsJCMS06CpMiw+FoN3jnxua2djz35deobaZHOlSAhsIFgC+fX4VJkWT/sYGi0+lQVFOLnAflyC4rx7XiUpP6lhkTWz4fcYEBSAgORHxwIMaMCqbcmqVCRxCkIYNGq8W6zdtx855lAsKHCi2F6+fqgoP/9SdK3wMbHm/Q8bw6nQ4PGsUorqlFcU0t7lbXoKSmDpK2NmM2e9C4CB0Q5u2NcF9vhPl0/gtydzPodEMFQRBQqNWw5ZNzXXx6+AgOX7lmrCabDVoKF+g08vgzRchdXkUlbt0vw5wxCZQeAIOhtUOBaokEVU0SVDdJUC2RoEEqg7Rdjpb2djS3t6O1QzGkZwttbeBsbw+RvT2c7O3g4eQIX5fO7Od+DzOgC20NJ93ujwapDOfu5GFKdCR8XcgW/YcuX8VnPx0dVh2WwuJZd4bKj5mXMCE8lBRVFhPgjzaFAk99/k/E+PthWkwkpkZHwdtZNOg6hLY2iPD1QYSvT5/XaHU6tCuUaH041FCo1VBpNOjaaGKxOmf4XcZwQltb2NsIKINYjEGNpBkZ+YVIzy9AWX0jvnvpeUrRXr5bjPVHj5ukDeaAtj0u0Okvu+uNdZQfTM6Dcry9a0+380yErw8WpYzH0wZ8uegIASC3vAJXikqQkV/YbQbt7GCPb178A8l/FwDuVtfghW8292nRTwescst3oCjUalwruYe5YxJJ410vkQhzxySgpLYeVU0SiFtbUS+VYvEE/WPxrR0d0OoI8LgDm+BYGqLX1iwLwJIvNiKrqARND+2tAtxc8f1La0m2+0CnC/tL3/1g0VRPxoC2Q4Uu7tXV47Wt2/HV2jUk10BXoRBfv7gGZ3Ny8ckh6pC8gqpqvLp5O/zdXBHm440IXx+E+Xgj2NMDnk6Og54IGQudToe6FinKGhpRXFODourOieOXz68y6D4+KTIcf1+2mHS4Eeg0OHnp+x+6BU5naC9cAMh5UIFXt2zHprWrKSc0j8XHIjrAv0/vr66j4OWNYpzpkTyFy+HA21mEDatXkuIl7lbXwJbPh7OD/aCz3sjkHZCrlPAS6Y+7S2rrsPHYSVRLJKhtbqF0tqTC0c4W85PGYF5SIqIpvHOBTnf1P363FTUjZDt8RAgX6LSgf+7Lr7F+1QrKbWFvZxHeWfzkoJ6p0WpRKW7qnnj15K+796G8l8lxl4AFPB74vM63VqXWdLvz9Fwrjg30x47XXta7v0bSjKziwVsa/fzfbxlcy61ukuC1rTuMakptaUaMcIFON8bVm77F20/9jjKS39RuDd3CHMBmBlXswFBcJAEYFG1eRSX+vO3fFl+TNjYWPeVrChRqNT488BPe+GEnGmWmt5cfKiwW+a03ZrA2QRA4fOUa/vjt1hEnWmCE9bg9uVhYhMX/2Ig35s+mzBc8XIbrtkPVSw5WuFqdjrQerNFqcfFuEXaczzBr1ndzM2KFCwBtCgU+OXQE6XkFeHfJInj0yLJDtW8/GPa/9TrqWqQQy2QQy1ohaWuHXKVEu0IJtVYLDosNLocNWwEfAi4PIns7iOzt4SJ0gIuDPWWE22CHCj1Fe7++ASduZOOXGzchaR15PWxvRrRwu7h0txhLv9iI95YswsyHOSC6RMsCq98gFarelcvhwO/h9qyxGOoYd9Wmb5BXUWW0dtCBR0K4QGfcwdazad3C7WJ86Ghkff7RgJ7R+9SFsRnqGLfMTBl3rIlHRrjGwNSbEbMT4ylz+zKQGXGrCuZCPcwjQW2KoUWVMXTC9LhD5JkNm9Dc3g43oRCuQiGc7O1gx+fDhs+DHV8AAgRaOxTQEQTaFArIlUo0tbahpa0dLXI5kkYH46u1qy39Z9CWR0q4aq0W9S1pKnvAAAAAiElEQVRSozxLo9NBJu+ATN6B+/UNg76fMa8eHo+UcMvqGzD3488t3QwAgFKtRjVFfuGhMNTVCDpD63hchkcXZnLGQEsY4TLQEka4DLSEES4DLWGEy0BLGOEy0BJGuAy0hBEuAy1hhMtASxjhMtASRrgMtIQRLgMtYYTLQEsY4TLQEka4DLTk/wFPiHnMSqVW2QAAAABJRU5ErkJggg==" alt="Ippocra" style="margin: 0 auto 2em; width: 60px;">
+    <h2>Ippocra</h2>
+    <p>info@ippocra.com &middot; ippocra.com</p>
+    <p class="motto">Innovation with Agency</p>
+  </div>
+  <div class="page-footer">
+    <span>Ippocra &mdash; Company Profile</span>
+    <span>11</span>
+  </div>
+</div>
+
+</body>
+</html>
