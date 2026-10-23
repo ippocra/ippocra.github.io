@@ -22,11 +22,6 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
 
   /* ===== HERO ===== */
   .hero {
@@ -120,8 +115,13 @@
 
   /* ===== SECTIONS ===== */
   .section {
-    padding: 6rem 0;
+    padding: 5rem 0;
     border-top: 1px solid var(--card-border);
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2rem;
   }
   .section__num {
     font-size: 0.75rem;
@@ -142,210 +142,32 @@
   .section__text {
     color: var(--muted);
     max-width: 640px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .section__text strong {
     color: var(--fg);
     font-weight: 600;
   }
 
-  /* ===== QUOTE ===== */
-  .quote {
-    font-size: 1.3rem;
-    font-weight: 300;
-    font-style: italic;
-    color: var(--muted);
-    border-left: 3px solid var(--teal);
-    padding-left: 1.5rem;
-    margin: 2rem 0;
-    max-width: 640px;
-    line-height: 1.5;
-  }
-
-  /* ===== CAPABILITY GRID ===== */
-  .cap-grid {
+  /* ===== PILLARS ===== */
+  .pillars {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.25rem;
-    margin-top: 2rem;
-  }
-  .cap-card {
-    border: 1px solid var(--card-border);
-    border-radius: 10px;
-    padding: 1.5rem;
-    background: rgba(255,255,255,0.02);
-    transition: border-color 0.3s, transform 0.3s;
-    position: relative;
-    overflow: hidden;
-  }
-  .cap-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 2px,
-      rgba(64, 191, 180, 0.03) 2px,
-      rgba(64, 191, 180, 0.03) 4px
-    );
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .cap-card:hover {
-    border-color: var(--teal);
-    transform: translateY(-4px);
-  }
-  .cap-card:hover::before {
-    opacity: 1;
-  }
-  .cap-card__num {
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--teal);
-    letter-spacing: 0.1em;
-    margin-bottom: 0.75rem;
-    font-family: 'SF Mono', 'Fira Code', monospace;
-  }
-  .cap-card__title {
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--fg);
-    margin-bottom: 0.5rem;
-  }
-  .cap-card__desc {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.5;
-  }
-
-  /* ===== ARCHITECTURE ===== */
-  .arch-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-    margin-top: 2rem;
-  }
-  .arch-item {
-    border: 1px solid var(--card-border);
-    border-radius: 10px;
-    padding: 1.5rem;
-    background: rgba(255,255,255,0.02);
-  }
-  .arch-item__label {
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--teal);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    font-family: 'SF Mono', 'Fira Code', monospace;
-  }
-  .arch-item__title {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--fg);
-    margin-bottom: 0.5rem;
-  }
-  .arch-item__desc {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.5;
-  }
-
-  /* ===== TEAM ===== */
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  .team-card {
-    text-align: center;
-  }
-  .team-card__photo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto 1rem;
-    display: block;
-    border: 2px solid var(--card-border);
-  }
-  .team-card__name {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--fg);
-  }
-  .team-card__role {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--teal);
-    margin-bottom: 0.75rem;
-  }
-  .team-card__bio {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.5;
-    text-align: left;
-  }
-
-  /* ===== WHY ===== */
-  .why-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
-  .why-item {
+  .pillar {
     padding-top: 1rem;
     border-top: 2px solid var(--teal);
   }
-  .why-item__title {
-    font-size: 1rem;
+  .pillar__title {
+    font-size: 0.95rem;
     font-weight: 700;
     color: var(--fg);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
   }
-  .why-item__desc {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.5;
-  }
-
-  /* ===== STEPS ===== */
-  .steps {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-  .step {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-  .step__num {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: var(--teal);
-    color: var(--bg);
-    font-weight: 800;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .step__title {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--fg);
-    margin-bottom: 0.25rem;
-  }
-  .step__desc {
-    font-size: 0.85rem;
+  .pillar__desc {
+    font-size: 0.8rem;
     color: var(--muted);
     line-height: 1.5;
   }
@@ -417,14 +239,19 @@
 
   /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
-    .cap-grid, .arch-grid, .team-grid, .why-grid, .steps {
-      grid-template-columns: 1fr;
+    .pillars {
+      grid-template-columns: repeat(2, 1fr);
     }
     .hero {
       padding: 3rem 1.5rem;
     }
     .section {
-      padding: 4rem 0;
+      padding: 3.5rem 0;
+    }
+  }
+  @media (max-width: 480px) {
+    .pillars {
+      grid-template-columns: 1fr;
     }
   }
 </style>
@@ -448,181 +275,35 @@
   <div class="hero__scroll">Scroll to explore</div>
 </section>
 
-<!-- ===== 01 WHO WE ARE ===== -->
-<section class="section" id="who">
+<!-- ===== WHO WE ARE ===== -->
+<section class="section">
   <div class="container reveal">
     <div class="section__num">01</div>
     <h2 class="section__title">Who We Are</h2>
-    <p class="section__text">Ippocra is an R&amp;D lab and software company. We design and build intelligent systems for enterprises and regulated environments where data sovereignty, auditability, and long-term ownership are non-negotiable.</p>
+    <p class="section__text">Ippocra is an R&amp;D lab and software company. We build intelligent systems that put people back in control — for enterprises and regulated environments where data sovereignty, auditability, and long-term ownership are non-negotiable.</p>
     <p class="section__text"><strong>We are not a consultancy. We do not sell hours. We ship products.</strong></p>
-    <div class="cap-grid">
-      <div class="cap-card">
-        <div class="cap-card__num">ILAI</div>
-        <div class="cap-card__title">Ippocra Local Artificial Intelligence</div>
-        <div class="cap-card__desc">Local, on-premise AI systems for business operations. Private by architecture, growing with use. Runs on your hardware, connects to your channels, executes on your data.</div>
-      </div>
-      <div class="cap-card">
-        <div class="cap-card__num">IPPO</div>
-        <div class="cap-card__title">Digital Health</div>
-        <div class="cap-card__desc">Encrypted, family-owned medical records. Designed to be shared on the family's terms, not the platform's. Sovereignty over your most personal data.</div>
-      </div>
-    </div>
   </div>
 </section>
 
-<!-- ===== 02 ARCHITECTURE ===== -->
-<section class="section" id="architecture">
+<!-- ===== PILLARS ===== -->
+<section class="section" style="border-top:none; padding-top:0;">
   <div class="container reveal">
-    <div class="section__num">02</div>
-    <h2 class="section__title">The Architecture</h2>
-    <p class="section__text">Four architectural principles. Not features — constraints that shape every decision.</p>
-    <div class="arch-grid">
-      <div class="arch-item">
-        <div class="arch-item__label">Principle 01</div>
-        <div class="arch-item__title">Skill-Based AI</div>
-        <div class="arch-item__desc">AI capabilities as discrete, composable skills. Each skill has a defined input, output, and scope. Testable, auditable, deployable independently. The pattern that makes AI viable in regulated environments.</div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar__title">Private by Design</div>
+        <div class="pillar__desc">Sensitive data never leaves your network. By architecture, not by promise.</div>
       </div>
-      <div class="arch-item">
-        <div class="arch-item__label">Principle 02</div>
-        <div class="arch-item__title">Local-First, Data Sovereignty</div>
-        <div class="arch-item__desc">Systems run where the data lives. On your hardware, in your network. No inference to third-party services. No data egress. No telemetry. Private by architecture, not by promise.</div>
+      <div class="pillar">
+        <div class="pillar__title">Local by Default</div>
+        <div class="pillar__desc">Runs where your data lives, on hardware you control. Zero lock-in.</div>
       </div>
-      <div class="arch-item">
-        <div class="arch-item__label">Principle 03</div>
-        <div class="arch-item__title">Multi-Profile, Persistent Memory</div>
-        <div class="arch-item__desc">Each user or context operates within its own profile — its own memory, context, and accumulated knowledge. Isolated by default. Persistent across sessions. Maps to multi-tenant enterprise.</div>
+      <div class="pillar">
+        <div class="pillar__title">Auditable by Architecture</div>
+        <div class="pillar__desc">Every system is legible, traceable, and under your command.</div>
       </div>
-      <div class="arch-item">
-        <div class="arch-item__label">Principle 04</div>
-        <div class="arch-item__title">Agentic Workflows</div>
-        <div class="arch-item__desc">Skills are not just queried — they are orchestrated. Multi-step workflows: read, decide, act, report. From "chat with your data" to "your data works for you."</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 03 CAPABILITIES ===== -->
-<section class="section" id="capabilities">
-  <div class="container reveal">
-    <div class="section__num">03</div>
-    <h2 class="section__title">Core Capabilities</h2>
-    <div class="cap-grid">
-      <div class="cap-card">
-        <div class="cap-card__num">01</div>
-        <div class="cap-card__title">Document Intelligence</div>
-        <div class="cap-card__desc">Extraction pipelines that transform real, chaotic documentation into structured, interrogable context. Contracts, reports, specs — ingested and queryable without leaving your network.</div>
-      </div>
-      <div class="cap-card">
-        <div class="cap-card__num">02</div>
-        <div class="cap-card__title">Local LLM Orchestration</div>
-        <div class="cap-card__desc">Routing sensitive workloads to the smallest capable local model, on-premise. No cloud dependency. No per-token billing. Predictable cost.</div>
-      </div>
-      <div class="cap-card">
-        <div class="cap-card__num">03</div>
-        <div class="cap-card__title">AI Agent Design &amp; Integration</div>
-        <div class="cap-card__desc">Design and deployment of AI agents for specific business domains. Persistent, context-aware systems that execute workflows autonomously within a defined scope.</div>
-      </div>
-      <div class="cap-card">
-        <div class="cap-card__num">04</div>
-        <div class="cap-card__title">Enterprise AI Architecture</div>
-        <div class="cap-card__desc">Advisory for AI integration in regulated or data-sensitive environments. Defining boundaries: what runs locally, what never leaves the perimeter. Mapping capabilities to compliance.</div>
-      </div>
-      <div class="cap-card">
-        <div class="cap-card__num">05</div>
-        <div class="cap-card__title">Persistent Memory Systems</div>
-        <div class="cap-card__desc">Long-term memory architectures for AI systems that accumulate context over time. Structured, queryable, owned by the client. A designed, auditable memory model.</div>
-      </div>
-      <div class="cap-card">
-        <div class="cap-card__num">06</div>
-        <div class="cap-card__title">Multi-Tenant AI Deployment</div>
-        <div class="cap-card__desc">Deployment patterns for AI systems serving multiple users, teams, or organisations. Profile isolation, permission boundaries, context separation, per-tenant memory.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 04 THE TEAM ===== -->
-<section class="section" id="team">
-  <div class="container reveal">
-    <div class="section__num">04</div>
-    <h2 class="section__title">The Team</h2>
-    <div class="team-grid">
-      <div class="team-card">
-        <img class="team-card__photo" src="../assets/images/people/MM.webp" alt="Michele Mattioni">
-        <div class="team-card__name">Michele Mattioni, PhD</div>
-        <div class="team-card__role">Founder</div>
-        <div class="team-card__bio">Leads product vision, business development, and go-to-market strategy. Michele is the technical and product lead behind ILAI — a local, on-premise AI system designed for organisations that cannot send their data to a third-party cloud. He founded Ippocra to make private, sovereign AI accessible. His focus: skill-based AI architecture, local inference, and systems that are auditable by design.</div>
-      </div>
-      <div class="team-card">
-        <img class="team-card__photo" src="../assets/images/people/MK.webp" alt="Myrto Kostadima">
-        <div class="team-card__name">Myrto Kostadima, PhD</div>
-        <div class="team-card__role">Co-Founder</div>
-        <div class="team-card__bio">Works as a specialized Forward Deployed Engineer in core competencies, with a focus on Customer Success. Myrto is the technical bridge between Ippocra's architecture and the client's environment: she designs the integration pattern, deploys the system, and ensures the AI operates correctly within the client's infrastructure, data sources, and communication channels.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 05 WHY IPPOCRA ===== -->
-<section class="section" id="why">
-  <div class="container reveal">
-    <div class="section__num">05</div>
-    <h2 class="section__title">Why Ippocra</h2>
-    <div class="quote">Innovation without agency is just cleverness. Agency without innovation is just caution. We do both, in that order.</div>
-    <div class="why-grid">
-      <div class="why-item">
-        <div class="why-item__title">Private by Design</div>
-        <div class="why-item__desc">Sensitive data never leaves your network. No third-party inference, no hidden dependencies. If your data is private, it stays private — by architecture, not by promise.</div>
-      </div>
-      <div class="why-item">
-        <div class="why-item__title">Local by Default</div>
-        <div class="why-item__desc">Software that runs where it needs to, on hardware you control. Predictable costs, zero lock-in, full sovereignty. You can migrate, fork, or change without being held hostage.</div>
-      </div>
-      <div class="why-item">
-        <div class="why-item__title">Auditable by Architecture</div>
-        <div class="why-item__desc">Every system we ship is readable, auditable, and under your command. Skills are discrete units. Workflows are traceable. Memory is structured and queryable. This is what we mean by agency.</div>
-      </div>
-      <div class="why-item">
-        <div class="why-item__title">Agency, Always</div>
-        <div class="why-item__desc">We build for the customer need. Every system we release is under your control. You decide what it does, where it runs, and what it knows.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 06 HOW WE WORK ===== -->
-<section class="section" id="process">
-  <div class="container reveal">
-    <div class="section__num">06</div>
-    <h2 class="section__title">How We Work</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step__num">1</div>
-        <div>
-          <div class="step__title">Discovery</div>
-          <div class="step__desc">We start with your context: what data is sensitive, what workflows need acceleration, what compliance constraints apply. We map the problem space and define architectural boundaries.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__num">2</div>
-        <div>
-          <div class="step__title">Proof of Concept</div>
-          <div class="step__desc">We build a working system on your hardware, with your data, for a specific workflow. You evaluate the result.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__num">3</div>
-        <div>
-          <div class="step__title">Integration</div>
-          <div class="step__desc">We design the integration pattern: how the AI connects to your infrastructure, channels, and data sources. We handle deployment, security model, and operational runbook.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__num">4</div>
-        <div>
-          <div class="step__title">Production</div>
-          <div class="step__desc">The system goes live. We monitor, iterate, and the system grows with use. You own the hardware, the data, and the accumulated knowledge.</div>
-        </div>
+      <div class="pillar">
+        <div class="pillar__title">Agency, Always</div>
+        <div class="pillar__desc">You decide what it does, where it runs, and what it knows.</div>
       </div>
     </div>
   </div>
@@ -632,7 +313,7 @@
 <section class="download" id="download">
   <div class="container reveal">
     <h2 class="download__title">Company Profile</h2>
-    <p class="download__text">The full Ippocra company profile — architecture, capabilities, team, and process. 11 pages. A4 landscape.</p>
+    <p class="download__text">Architecture, capabilities, team, and process. 11 pages. A4 landscape.</p>
     <a href="Ippocra-Company-Profile.pdf" class="download__btn" download
        id="downloadBtn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
@@ -659,7 +340,6 @@
   let dragging = false;
   let lastX = 0;
 
-  // Bayer 4x4 dithering matrix
   const BAYER4 = [
     [ 0,  8,  2, 10],
     [12,  4, 14,  6],
@@ -667,7 +347,6 @@
     [15,  7, 13,  5]
   ];
 
-  // Simplified continent data (rough lat/lon polygons)
   const CONTINENTS = {
     na: [
       [45,-125],[55,-130],[60,-140],[65,-165],[70,-160],[72,-155],[70,-140],
@@ -716,27 +395,10 @@
   function project(lat, lon, rot) {
     const phi = (90 - lat) * Math.PI / 180;
     const theta = (lon + rot) * Math.PI / 180;
-    const r = 1;
-    const x = r * Math.sin(phi) * Math.cos(theta);
-    const y = r * Math.cos(phi);
-    const z = r * Math.sin(phi) * Math.sin(theta);
+    const x = Math.sin(phi) * Math.cos(theta);
+    const y = Math.cos(phi);
+    const z = Math.sin(phi) * Math.sin(theta);
     return { x, y, z };
-  }
-
-  function pointInPolygon(lat, lon, poly) {
-    let inside = false;
-    const lonN = ((lon + 540) % 360) - 180;
-    for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
-      const latI = poly[i][0], lonI = poly[i][1];
-      const latJ = poly[j][0], lonJ = poly[j][1];
-      const lonIN = ((lonI + 540) % 360) - 180;
-      const lonJN = ((lonJ + 540) % 360) - 180;
-      if ((latI > lat) !== (latJ > lat) &&
-          lonN < (lonJN - lonIN) * (lat - latI) / (latJ - latI) + lonIN) {
-        inside = !inside;
-      }
-    }
-    return inside;
   }
 
   function draw() {
@@ -747,11 +409,9 @@
     const radius = Math.min(W, H) * 0.38;
     const cellSize = 3;
 
-    // Pre-compute land points for current rotation
     const landSet = new Set();
     for (const key in CONTINENTS) {
       const poly = CONTINENTS[key];
-      // Sample points along the polygon edges
       for (let i = 0; i < poly.length - 1; i++) {
         const [lat1, lon1] = poly[i];
         const [lat2, lon2] = poly[i + 1];
@@ -765,7 +425,6 @@
             const px = Math.round((cx + p.x * radius) / cellSize);
             const py = Math.round((cy + p.y * radius) / cellSize);
             landSet.add(px + ',' + py);
-            // Fill interior: add neighboring cells
             for (let dx = -3; dx <= 3; dx++) {
               for (let dy = -3; dy <= 3; dy++) {
                 const dLat = lat + dy * 0.8;
@@ -783,7 +442,6 @@
       }
     }
 
-    // Draw dithered grid
     for (let py = 0; py < H; py += cellSize) {
       for (let px = 0; px < W; px += cellSize) {
         const dx = (px - cx) / radius;
@@ -818,26 +476,13 @@
       }
     }
 
-    // Draw arcs
-    drawArcs(cx, cy, radius);
-
-    // Draw markers
-    drawMarkers(cx, cy, radius);
-
-    if (!dragging) {
-      rotY += 0.15;
-    }
-    requestAnimationFrame(draw);
-  }
-
-  function drawArcs(cx, cy, radius) {
+    // Arcs
     const arcs = [
       { from: [45, -120], to: [51, 0] },
       { from: [40, -75], to: [48, 2] },
       { from: [35, 139], to: [51, 0] },
       { from: [43, 13], to: [51, 0] }
     ];
-
     arcs.forEach(arc => {
       const p1 = project(arc.from[0], arc.from[1], rotY);
       const p2 = project(arc.to[0], arc.to[1], rotY);
@@ -862,9 +507,8 @@
       ctx.stroke();
       ctx.setLineDash([]);
     });
-  }
 
-  function drawMarkers(cx, cy, radius) {
+    // Markers
     const markers = [
       { lat: 45, lon: -120, label: 'SFO' },
       { lat: 40, lon: -75, label: 'NYC' },
@@ -874,7 +518,6 @@
       { lat: -33, lon: 151, label: 'SYD' },
       { lat: 43, lon: 13, label: 'ANK' }
     ];
-
     markers.forEach(m => {
       const p = project(m.lat, m.lon, rotY);
       if (p.z < 0) return;
@@ -897,9 +540,13 @@
       ctx.textAlign = 'center';
       ctx.fillText(m.label, x, y - 10);
     });
+
+    if (!dragging) {
+      rotY += 0.15;
+    }
+    requestAnimationFrame(draw);
   }
 
-  // Mouse/touch interaction
   canvas.addEventListener('mousedown', (e) => { dragging = true; lastX = e.clientX; });
   canvas.addEventListener('mousemove', (e) => {
     if (!dragging) return;
@@ -918,7 +565,6 @@
   }, { passive: false });
   canvas.addEventListener('touchend', () => { dragging = false; });
 
-  // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) entry.target.classList.add('visible');
@@ -926,7 +572,6 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // Umami tracking
   function trackDownload(source) {
     try {
       if (typeof window.umami !== 'undefined' && window.umami.track) {
