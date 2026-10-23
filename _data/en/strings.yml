@@ -12,8 +12,8 @@ navigation:
     title: Pricing
     url: /en/ippo/prezzi
   about:
-    title: About
-    url: /about
+    title: Company
+    url: /company-profile/
   security:
     title: Security
     url: /en/ippo/security

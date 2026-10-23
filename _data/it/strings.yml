@@ -12,8 +12,8 @@ navigation:
     title: Prezzi
     url: /ippo/prezzi
   about:
-    title: Chi siamo
-    url: /chi-siamo
+    title: Company
+    url: /company-profile/
   security:
     title: Sicurezza
     url: /ippo/security
