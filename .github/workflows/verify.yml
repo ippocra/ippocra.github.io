@@ -1,0 +1,27 @@
+name: Verify Site
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build --destination /tmp/site
+
+      - name: Fix sitemap & inject redirect stubs
+        run: ruby scripts/fix-sitemap.rb /tmp/site
+
+      - name: Verify mastheads, content, redirects, sitemap
+        run: ruby scripts/verify-site.rb /home/runner/work/ippocra.github.io/ippocra.github.io
+        working-directory: /tmp/site

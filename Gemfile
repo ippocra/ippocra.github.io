@@ -10,7 +10,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.4.1"
 
 # Minimal mistakes theme
-gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :tag => "4.27.1"
+gem "minimal-mistakes-jekyll", :git => "https://github.com/mmistakes/minimal-mistakes.git", :tag => "4.28.1"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.

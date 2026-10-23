@@ -5,9 +5,11 @@
 /* ------------------------------------------------------------------
    Simple scalar variables (easy to read, useful for quick tweaks)
    ------------------------------------------------------------------ */
+@use "sass:color";
+
 $color-primary: #3b9ba8; // main brand colour
-$color-primary-dark: darken($color-primary, 10%);
-$color-primary-light: lighten($color-primary, 15%);
+$color-primary-dark: color.adjust($color-primary, $lightness: -10%);
+$color-primary-light: color.adjust($color-primary, $lightness: 15%);
 
 $color-secondary: #fff; // secondary button background
 $color-secondary-text: #3b9ba8; // secondary button text
