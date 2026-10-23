@@ -63,27 +63,24 @@
   .site-header__nav a.active {
     color: var(--fg);
   }
-  .site-header__btns {
+  .site-header__lang {
     display: flex;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
   }
-  .site-header__btns .btn {
-    padding: 0.4rem 1rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: opacity 0.2s;
-  }
-  .site-header__btns .btn:hover { opacity: 0.85; }
-  .btn--primary {
-    background: var(--teal);
-    color: var(--bg);
-  }
-  .btn--inverse {
+  .site-header__lang select {
     background: transparent;
-    color: var(--fg);
+    color: var(--muted);
     border: 1px solid var(--card-border);
+    border-radius: 4px;
+    padding: 0.2rem 0.3rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  .site-header__lang select:focus {
+    outline: none;
+    border-color: var(--teal);
   }
 
   /* ===== HERO ===== */
@@ -292,16 +289,21 @@
         <a href="/"><img src="/assets/images/ippocra-logo-white-ippo-green-background.png" alt="Ippocra"></a>
       </div>
       <nav class="site-header__nav">
-        <a href="/ippo/medici/">Doctors</a>
-        <a href="/ippo/imaging/">Imaging</a>
-        <a href="/ippo/prezzi/">Pricing</a>
+        <a href="/ilai/">ILAI</a>
+        <a href="/ippo/">Ippo</a>
+        <a href="/posts/">Blog</a>
         <a href="/company-profile/" class="active">Company</a>
-        <a href="/ippo/security/">Security</a>
+        <div class="site-header__lang">
+          <select onchange="
+            const page = window.location.pathname;
+            const stripped = page.replace(/^\/(en|it)\/?/, '/');
+            window.location.href = '/company-profile/';
+          ">
+            <option value="en">EN</option>
+            <option value="it" selected>IT</option>
+          </select>
+        </div>
       </nav>
-      <div class="site-header__btns">
-        <a href="https://app.ippocra.com/register" class="btn btn--primary">Register</a>
-        <a href="https://app.ippocra.com/" class="btn btn--inverse">Login</a>
-      </div>
     </div>
   </header>
 
