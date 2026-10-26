@@ -8,7 +8,7 @@ description: "AI cloud vs AI locale: i numeri reali. ChatGPT Business a $25/uten
 keywords: costo AI cloud vs locale, cloud AI vs on-premise cost, costo AI on-premise, agente AI costo, AI locale per PMI, intelligenza artificiale locale aziende, costo AI per PMI, AI agent business cost, on-premise AI cost, costo agente AI fai-da-te
 page_id: cloud-vs-locale-cost
 header:
-    teaser: /assets/images/screenshots/agent-vs-chat-teaser.webp
+    teaser: /assets/images/screenshots/cloud-vs-local-cost-teaser.webp
 classes: wide
 tags: ilai, ai, costo, business
 ---
@@ -16,6 +16,8 @@ tags: ilai, ai, costo, business
 **"Ok, il punto dell'agente lo ho capito. Ma quanto costa davvero? Mostrami i numeri."**
 
 Giusto. Questa è la versione-spreadsheet di [l'argomento che abbiamo fatto l'altra volta](/it/agente-o-chat): tre strade per far sì che un'AI faccia il lavoro della tua azienda, con le fatture vere. Nessuna fumisteria, nessun "dipende".
+
+Nota sulle valute: i prodotti USA (ChatGPT, Claude, agenti OpenAI) sono quotati in dollari perché è quello che chiedono. Tutto quello che quotiamo per ILAI è in euro. Non stiamo convertendo — stiamo mostrando quello che pagheresti davvero.
 
 ## Le tre strade
 
@@ -98,7 +100,7 @@ Il numero che conta non è il canone mensile. È la domanda con cui abbiamo comi
 
 ## In sintesi
 
-- **Strada A (chat):** $25–100 a persona/mese. Economica. Ma il lavoro lo fai ancora tu; la chat ti dà solo una risposta più veloce.
+- **Strada A (chat):** $25–100 a persona/mese (prezzi USA, come richiesti). Economica. Ma il lavoro lo fai ancora tu; la chat ti dà solo una risposta più veloce.
 - **Strada B (DIY):** €15–25K il primo anno. Lo costruisci tu, è tuo, lo mantieni tu. Ha senso se l'ingegneria è il tuo mestiere.
 - **Strada C (agente locale):** €350/mese, tutti gli utenti, skill inclusa. Il lavoro è fatto, i dati restano, il conto non cresce con l'organico.
 - **Il costo nascosto:** i dati nel cloud di qualcun altro. Non in fattura. Nel registro dei rischi.
