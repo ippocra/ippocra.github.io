@@ -6,8 +6,8 @@
    Simple scalar variables (easy to read, useful for quick tweaks)
    ------------------------------------------------------------------ */
 $color-primary: #3b9ba8; // main brand colour
-$color-primary-dark: darken($color-primary, 10%);
-$color-primary-light: lighten($color-primary, 15%);
+$color-primary-dark: #2d7d89; // darken($color-primary, 10%)
+$color-primary-light: #72c0ca; // lighten($color-primary, 15%)
 
 $color-secondary: #fff; // secondary button background
 $color-secondary-text: #3b9ba8; // secondary button text
