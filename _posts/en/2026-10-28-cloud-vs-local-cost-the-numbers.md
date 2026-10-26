@@ -4,7 +4,7 @@ categories: ai, business, cost
 excerpt: "The honest spreadsheet: a subsidized chat subscription, a DIY API build, and a local agent that does the work. Three paths, three very different bills — and the one nobody puts on the comparison sheet."
 permalink: /cloud-vs-local-cost
 lang: en
-description: "Cloud AI vs local AI: the real numbers. ChatGPT Business at $25/user, a DIY API build at €12K setup + ongoing token costs, and ILAI from €350/month. Three paths, three bills — and the hidden cost that doesn't show on the invoice."
+description: "Cloud AI vs local AI: the real numbers. ChatGPT Business at €23/user, a DIY API build at €12K setup + ongoing token costs, and ILAI from €350/month. Three paths, three bills — and the hidden cost that doesn't show on the invoice."
 keywords: cloud AI vs local AI cost, cloud AI vs on-premise cost, costo AI cloud vs locale, AI agent business cost, local AI agent pricing, AI locale per PMI, intelligenza artificiale locale aziende, AI cost for SME, on-premise AI cost, DIY AI agent cost
 page_id: cloud-vs-local-cost
 header:
@@ -17,7 +17,7 @@ tags: ilai, ai, cost, business
 
 Fair. This is the spreadsheet version of [the argument we made last time](/en/agent-or-chat): three ways to get AI doing work for your company, with the real bills. No hand-waving, no "it depends."
 
-A note on currency: the US products (ChatGPT, Claude, OpenAI agents) are priced in dollars because that's what they charge. Everything we quote for ILAI is in euros. We're not converting — we're showing what you'd actually pay.
+All prices are in euros. The US products (ChatGPT, Claude) are billed in dollars; we've converted at current rates so the comparison is on one currency.
 
 ## The three paths
 
@@ -26,25 +26,25 @@ A note on currency: the US products (ChatGPT, Claude, OpenAI agents) are priced 
 | What you get | A text box you talk to | An API you wire into your systems yourself | An agent that does the work, on a machine where data stays |
 | Setup cost | €0 — sign up | **€8,000–12,000** (dev time, integration, testing) | **€5,000** (on-cloud) / **€8,000** (on-prem) |
 | Hardware | None (their cloud) | A server or cloud VM (~€5,000–7,000, you buy) | Included (on-prem) / included (on-cloud) |
-| Monthly | $25–100 **per person** | Token costs: variable, scales with usage | **€350/month** (on-cloud, all users, skill included) |
+| Monthly | €23–89 **per person** | Token costs: variable, scales with usage | **€350/month** (on-cloud, all users, skill included) |
 | Who builds it | You prompt | You (or a dev shop) | We build the skill for your process |
 | Where the data lives | Their cloud (US) | Wherever you point the API | In your office / Italian infrastructure |
 | Time to first result | 5 minutes (a chat answer) | 6–12 weeks (build + test + train) | 2–4 weeks (onboarding + skill) |
 
 ## Path A: The subsidized chat
 
-ChatGPT Business: **$25/user/month**. Claude Team: **$20/user/month**. OpenAI's always-on agent (Dot): **$100/user/month**, included in Pro.
+ChatGPT Business: **€23/user/month**. Claude Team: **€18/user/month** (annual billing). OpenAI's always-on agent (Dot): **€89/user/month**, included in Pro.
 
 The math that looks good:
 
-- 5-person company → 5 × $25 = **$125/month**. That's it.
-- Add Dot for the one person who needs autonomy: $100 extra.
+- 5-person company → 5 × €23 = **€115/month**. That's it.
+- Add Dot for the one person who needs autonomy: €89 extra.
 
 The math that doesn't look good:
 
 - Every user who gets a chat box spends their day **talking to it and copy-pasting the answer into their system**. The work doesn't happen *in* the system. A person moves it.
 - The data (your client names, your prices, your margins) goes to a US server on every prompt. The ToS says it's not used to train the model. Fine. But it's **outside your walls**, and that's not a cost you can line-item.
-- Per-person pricing means the bill grows with headcount. Ten people → $1,000/month and you still have ten people copy-pasting.
+- Per-person pricing means the bill grows with headcount. Ten people → €890/month and you still have ten people copy-pasting.
 
 **The real cost of Path A isn't the subscription. It's the person-hours you keep spending doing the work the chat was supposed to save.**
 
@@ -70,7 +70,7 @@ This is ILAI. The numbers:
 - **On-cloud: €5,000 setup + €350/month.** The skill is built for your process, the integration is done, the data stays on Italian infrastructure (Seeweb, Regolo Zero Data Retention). One agent serves the whole company — not per person.
 - **On-prem: €8,000 setup + hardware (~€5,000, customer-bought) + maintenance.** Everything runs in your office. Voice, OCR, agent — no per-page, per-token, per-hour billing. The data never leaves the building.
 
-What the €350/month gets you that the $25/chat doesn't:
+What the €350/month gets you that the €23/chat doesn't:
 
 - The work is **done**, not answered. Invoices reconciled, quotes prepared, CRM updated, documents processed — inside your systems, continuously.
 - The bill doesn't grow with headcount. Five people or fifteen: same agent, same price.
@@ -96,18 +96,18 @@ No cloud subscription offers a way around this at any price tier. The on-prem op
 | You want the work done, in your systems, with your data, without managing a project | **Path C.** The agent is built, the integration is done, the data stays. |
 | You want the work done AND you can't have data leaving the building | **Path C, on-prem.** The only configuration that guarantees it. |
 
-The number that matters isn't the monthly fee. It's the question we started with: **who does the work.** The $25 chat answers. The €350 agent does.
+The number that matters isn't the monthly fee. It's the question we started with: **who does the work.** The €23 chat answers. The €350 agent does.
 
 ## In short
 
-- **Path A (chat):** $25–100/person/month (US pricing, as charged). Cheap. You still do the work; the chat just gives you a faster answer.
+- **Path A (chat):** €23–89/person/month. Cheap. You still do the work; the chat just gives you a faster answer.
 - **Path B (DIY):** €15–25K first year. You build it, you own it, you maintain it. Makes sense if engineering is your business.
 - **Path C (local agent):** €350/month, all users, skill included. The work is done, the data stays, the bill doesn't grow with headcount.
 - **The hidden cost:** the data in someone else's cloud. Not on the invoice. On the risk register.
 
 ## FAQ
 
-**Is the $25 chat really that much worse?**
+**Is the €23 chat really that much worse?**
 
 For a person who wants to ask questions and get answers: no, it's fine. For a company whose work needs to be *executed* — invoices, quotes, documents, CRM — the chat is a step, not the finish line. You still move the pieces.
 
