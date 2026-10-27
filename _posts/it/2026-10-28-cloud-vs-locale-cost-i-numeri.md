@@ -8,7 +8,7 @@ description: "Un abbonamento cloud AI non è un acquisto: è un affitto. Il mode
 keywords: AI locale vs cloud, rischio abbonamento AI, Termini di Servizio ChatGPT, sovranità dati AI, agente AI on-premise, proprietà skill AI, AI per PMI, rischio sospensione account AI, costo nascosto AI cloud, AI privata azienda
 page_id: cloud-vs-locale-cost
 header:
-    teaser: /assets/images/screenshots/cloud-vs-local-cost-teaser.webp
+    teaser: /assets/images/screenshots/cloud-vs-local-ownership-teaser.webp
 classes: wide
 tags: ilai, ai, cost, business
 ---
@@ -18,10 +18,10 @@ tags: ilai, ai, cost, business
 Domanda giusta. In fattura, l'abbonamento vince 15 a 1. Ma la fattura non è il costo completo — è il prezzo di un affitto. E quando firmi un abbonamento cloud AI, non stai comprando uno strumento. Stai affittando accesso a un modello che non è tuo, sotto regole che non hai scritto, con una skill che vive nell'account e muore con esso.
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/cloud-vs-local-cost-teaser.webp" alt="Una strada veloce verso i caselli: l'abbonamento cloud AI è un pedaggio a ogni chilometro, e chi controlla la strada non sei tu" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/cloud-vs-local-ownership-teaser.webp" alt="Un seme in una mano: ciò che possiedi è piccolo e silenzioso, ma ciò che ne cresce è tuo" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
 <p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.9rem;">
-  L'abbonamento cloud AI è un pedaggio a ogni chilometro. Il modello non è tuo, la strada non è tua, e chi controlla il casello decide quando si chiude. Un agente locale è la strada che passa a casa tua.
+  Il seme è ciò che possiedi: piccolo, silenzioso, tuo. L'albero è ciò che ne cresce: la skill, i workflow, i pattern che hai costruito negli anni. Su un abbonamento, l'albero non è tuo. Su un agente locale, lo è.
 </p>
 
 Questo post non dice "l'AI locale è più economica" — non lo è, sulla carta. Dice qualcos'altro: **la differenza non è il prezzo. È chi possiede cosa.** E per capire cosa stai davvero firmando, bisogna leggere i Termini di Servizio — non la landing page.

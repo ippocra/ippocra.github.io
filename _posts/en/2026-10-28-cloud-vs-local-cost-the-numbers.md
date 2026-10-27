@@ -8,7 +8,7 @@ description: "A cloud AI subscription isn't a purchase: it's a rental. The model
 keywords: local AI vs cloud AI, AI subscription risk, ChatGPT Terms of Service, AI data sovereignty, AI agent on-premise, AI skill ownership, AI for SMEs, AI account termination risk, hidden AI cloud cost, private AI for business
 page_id: cloud-vs-local-cost
 header:
-    teaser: /assets/images/screenshots/cloud-vs-local-cost-teaser.webp
+    teaser: /assets/images/screenshots/cloud-vs-local-ownership-teaser.webp
 classes: wide
 tags: ilai, ai, cost, business
 ---
@@ -18,10 +18,10 @@ tags: ilai, ai, cost, business
 Fair question. On the invoice, the subscription wins by 15x. But the invoice isn't the full cost — it's the price of a rental. And when you sign a cloud AI subscription, you're not buying a tool. You're renting access to a model that isn't yours, under rules you didn't write, with a skill that lives in the account and dies with it.
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/cloud-vs-local-cost-teaser.webp" alt="A highway speeding toward the toll booths: a cloud AI subscription is a toll at every mile, and the one who controls the road isn't you" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/cloud-vs-local-ownership-teaser.webp" alt="A seed in a hand: what you own is small and quiet, but what grows from it is yours" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
 <p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.9rem;">
-  A cloud AI subscription is a toll at every mile. The model isn't yours, the road isn't yours, and the one who controls the booth decides when it closes. A local agent is the road that passes through your own house.
+  The seed is what you own: small, quiet, yours. The tree is what grows from it: the skill, the workflows, the patterns you've built over years. On a subscription, the tree isn't yours. On a local agent, it is.
 </p>
 
 This post doesn't say "local AI is cheaper" — it isn't, on paper. It says something else: **the difference isn't the price. It's who owns what.** And to understand what you're actually signing, you have to read the Terms of Service — not the landing page.
