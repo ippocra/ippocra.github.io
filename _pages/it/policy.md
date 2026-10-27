@@ -6,7 +6,7 @@ title: Informativa sulla Privacy di Ippocra
 ---
 ## PRIVACY POLICY
 
-Data di ultimo aggiornamento: 2025/02/17
+Data di ultimo aggiornamento: 2026/10/27
 
 **1\. INTRODUZIONE**  
 
@@ -178,11 +178,13 @@ I professionisti e le strutture sanitarie, rispetto ai dati da loro raccolti e p
 
 I dati potrebbero essere poi condivisi con fornitori con Responsabili e Sub Responsabili (quali ad es. Commercialista/consulente del lavoro, Fornitore servizi hosting/provider), nonché al DPO nominato, limitatamente ai dati strettamente necessari allo svolgimento dei rispettivi ruoli e finalità.
 
+In particolare, per le funzionalità di intelligenza artificiale della piattaforma (inclusa l'estrazione di informazioni da esami di laboratorio e documenti), i contenuti dei documenti inviati dagli Utenti sono elaborati tramite servizi di inferenza AI forniti da **Seeweb s.r.l.** (con sede a Frosinone, Italia), che opera in qualità di **Responsabile del trattamento** ai sensi dell'art. 28 del Reg. (UE) 2016/679: i prompt e le relative risposte non sono conservati né loggati dal servizio di inferenza (Zero Data Retention) e nessun dato viene utilizzato per addestrare modelli.
+
 I dati potrebbero essere condivisi, su richiesta e per ottemperare a obblighi di legge, a Forze di polizia, Magistratura e altre Autorità pubbliche.
 
 **4.8. Trasferimento internazionale di dati**
 
-Alcuni dei soggetti terzi sopra indicati possono avere sede al di fuori della Comunità Europea. In tali casi ci assicuriamo che siano presenti i requisiti legali stabiliti dalle normative sulla protezione dei dati personali applicabili per il trasferimento sicuro degli stessi, garantendovi l'adozione dei più elevati standards di sicurezza adeguati a qualsiasi trasferimento internazionale di dati.
+Alcuni dei soggetti terzi sopra indicati possono avere sede al di fuori della Comunità Europea. In tali casi ci assicuriamo che siano presenti i requisiti legali stabiliti dalle normative sulla protezione dei dati personali applicabili per il trasferimento sicuro degli stessi, garantendovi l'adozione dei più elevati standards di sicurezza adeguati a qualsiasi trasferimento internazionale di dati. I servizi di elaborazione di cui al paragrafo 4.7 sono interamente erogati da data center situati in Italia (Frosinone) e, di conseguenza, i dati elaborati da tali servizi non sono trasferiti al di fuori dell'Unione Europea.
 
 **4.9. I diritti che puoi esercitare sui tuoi dati personali**
 

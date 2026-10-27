@@ -11,7 +11,7 @@ This is provided only to help our users, but you should always refer to the Ital
 
 ## PRIVACY POLICY
 
-Last updated: 2025/02/17
+Last updated: 2026/10/27
 
 **1. INTRODUCTION**  
 
@@ -183,11 +183,13 @@ Professionals and healthcare facilities, regarding the data they collect and lat
 
 Data may also be shared with service providers with Data Processors and Sub-processors (such as accountants/work consultants, hosting/service providers), as well as with the designated DPO, but only to the extent necessary to perform their respective roles and purposes.
 
+In particular, for the platform's artificial intelligence features (including the extraction of information from laboratory test results and documents), the contents of the documents sent by Users are processed through AI inference services provided by **Seeweb s.r.l.** (based in Frosinone, Italy), which acts as a **Data Processor** under Article 28 of Regulation (EU) 2016/679: prompts and the corresponding responses are neither stored nor logged by the inference service (Zero Data Retention) and no data is used to train models.
+
 Data may be shared, upon request, to comply with legal obligations, with law enforcement, the judiciary, and other public authorities.
 
 **4.8. International data transfer**
 
-Some of the third parties mentioned above may be located outside the European Union. In such cases, we ensure that the legal requirements established by applicable data protection laws are met for the safe transfer of such data, ensuring that the highest security standards are adopted for any international data transfer.
+Some of the third parties mentioned above may be located outside the European Union. In such cases, we ensure that the legal requirements established by applicable data protection laws are met for the safe transfer of such data, ensuring that the highest security standards are adopted for any international data transfer. The processing services referred to in Section 4.7 are entirely delivered from data centers located in Italy (Frosinone) and, accordingly, the data processed by those services are not transferred outside the European Union.
 
 **4.9. Rights you can exercise over your personal data**
 
