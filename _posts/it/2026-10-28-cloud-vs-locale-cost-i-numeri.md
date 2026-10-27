@@ -1,21 +1,17 @@
 ---
 title: "AI cloud vs AI locale: cosa stai davvero comprando quando firmi un abbonamento"
 categories: ai, business, cost
-excerpt: "L'abbonamento ChatGPT a €23/mese sembra economico. Ma stai affittando accesso a un modello che non è tuo, sotto regole che non hai scritto, con una skill che vive nell'account e muore con esso. Un agente locale è un'altra cosa: la skill è tua, l'hardware è tuo, i dati restano. Ecco cosa cambia — e cosa significa nei Termini di Servizio."
+excerpt: "Un abbonamento cloud AI è un affitto: il modello non è tuo, la skill vive nell'account, i dati attraversano un oceano, e i Termini di Servizio danno al vendor il diritto di spegnere tutto. Un agente locale inverte ogni punto. Ecco cosa significa, citando le clausole reali."
 permalink: /cloud-vs-locale-cost
 lang: it
 description: "Un abbonamento cloud AI non è un acquisto: è un affitto. Il modello non è tuo, la skill vive nell'account, i dati attraversano un oceano, e i Termini di Servizio danno al vendor il diritto di spegnere tutto. Un agente locale inverte ogni punto: la skill, l'hardware e i dati sono tuoi. Ecco cosa significa, citando le clausole reali."
-keywords: AI locale vs cloud, rischio abbonamento AI, Termini di Servizio ChatGPT, sovranità dati AI, agente AI on-premise, proprietà skill AI, AI per PMI, rischio sospensione account AI, costo nascosto AI cloud, AI privata azienda
-page_id: cloud-vs-locale-cost
+keywords: AI cloud vs locale, rischio abbonamento AI, Termini di Servizio ChatGPT, sovranità dati AI, agente AI on-premise, proprietà skill AI, AI per PMI, rischio sospensione account AI, costo nascosto AI cloud, AI privata azienda, proprietà vs affitto AI, confronto costi AI
+page_id: cloud-vs-local-cost
 header:
     teaser: /assets/images/screenshots/cloud-vs-local-ownership-teaser.webp
 classes: wide
-tags: ilai, ai, cost, business
+tags: ilai, ai
 ---
-
-**"Ok, il concetto di agente lo capisco. Ma l'abbonamento chat a €23/mese è economico. Perché dovrei mai guardare oltre?"**
-
-Domanda giusta. In fattura, l'abbonamento vince 15 a 1. Ma la fattura non è il costo completo — è il prezzo di un affitto. E quando firmi un abbonamento cloud AI, non stai comprando uno strumento. Stai affittando accesso a un modello che non è tuo, sotto regole che non hai scritto, con una skill che vive nell'account e muore con esso.
 
 <p style="text-align:center;">
   <img src="/assets/images/screenshots/cloud-vs-local-ownership-teaser.webp" alt="Un seme in una mano: ciò che possiedi è piccolo e silenzioso, ma ciò che ne cresce è tuo" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
@@ -36,13 +32,13 @@ La parte che nessuno legge prima di firmare sono i Termini di Servizio. Sono lun
 
 ### Il costo è una decisione di business, non un impegno
 
-L'abbonamento è sovvenzionato. Il prezzo che paghi non copre il costo dei token che consumi — il vendor mangia la differenza. OpenAI non pubblica quanto costa a loro servire un abbonamento. Non sono obbligati. La lista prezzi dell'API racconta la storia: le stesse chiamate che fai attraverso un abbonamento da €23 costerebbero **€150–800/mese** sull'API, a seconda del volume e del tier del modello. Un piano enterprise che fa processing documentale serio, voice e workflow multi-modello può facilmente arrivare a migliaia di euro di costo API equivalente al mese.
+L'abbonamento è sovvenzionato. Il prezzo che paghi non copre il costo dei token che consumi — il vendor mangia la differenza. OpenAI non pubblica quanto costa a loro servire un abbonamento. Non sono obbligati. La lista prezzi dell'API racconta la storia: le stesse chiamate che fai attraverso un abbonamento consumer costerebbero **€150–800/mese** sull'API, a seconda del volume e del tier del modello. Un piano enterprise che fa processing documentale serio, voice e workflow multi-modello può facilmente arrivare a migliaia di euro di costo API equivalente al mese.
 
 La sovvenzione è una decisione di business. Le decisioni di business cambiano. I [Termini di Uso](https://openai.com/policies/terms-of-use/) di OpenAI (correnti al **27 ottobre 2026**) dicono:
 
 > "Possiamo modificare i prezzi di tanto in tempo, con 30 giorni di preavviso."
 
-Non è una minaccia. È una clausola contrattuale. Il giorno in cui la sovvenzione non conviene più, i tuoi €23 diventano €230, o aggiungono limiti d'uso che rendono il tuo workflow impossibile, o cambiano silenziosamente il modello sottostante e i tuoi output peggiorano. Non hai un contratto che protegga il prezzo. Hai una clausola che dice "possiamo".
+Non è una minaccia. È una clausola contrattuale. Il giorno in cui la sovvenzione non conviene più, il tuo abbonamento raddoppia o triplica, o aggiungono limiti d'uso che rendono il tuo workflow impossibile, o cambiano silenziosamente il modello sottostante e i tuoi output peggiorano. Non hai un contratto che protegga il prezzo. Hai una clausola che dice "possiamo".
 
 **Non controlli il costo. Lo controllano loro. E possono cambiarlo quando vogliono.**
 

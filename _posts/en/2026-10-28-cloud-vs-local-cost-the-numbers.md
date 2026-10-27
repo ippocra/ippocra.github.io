@@ -1,21 +1,17 @@
 ---
 title: "Cloud AI vs local AI: what you're actually buying when you sign a subscription"
 categories: ai, business, cost
-excerpt: "The €23/month ChatGPT subscription looks cheap. But you're renting access to a model that isn't yours, under rules you didn't write, with a skill that lives in the account and dies with it. A local agent is a different thing: the skill is yours, the hardware is yours, the data stays. Here's what changes — and what it means in the Terms of Service."
+excerpt: "A cloud AI subscription is a rental: the model isn't yours, the skill lives in the account, the data crosses an ocean, and the Terms of Service give the vendor the right to turn everything off. A local agent inverts every point. Here's what that means, quoting the actual clauses."
 permalink: /cloud-vs-local-cost
 lang: en
 description: "A cloud AI subscription isn't a purchase: it's a rental. The model isn't yours, the skill lives in the account, your data crosses an ocean, and the Terms of Service give the vendor the right to turn everything off. A local agent inverts every point: the skill, the hardware, and the data are yours. Here's what that means, quoting the actual clauses."
-keywords: local AI vs cloud AI, AI subscription risk, ChatGPT Terms of Service, AI data sovereignty, AI agent on-premise, AI skill ownership, AI for SMEs, AI account termination risk, hidden AI cloud cost, private AI for business
+keywords: cloud AI vs local AI, AI subscription risk, ChatGPT Terms of Service, AI data sovereignty, AI agent on-premise, AI skill ownership, AI for SMEs, AI account termination risk, hidden AI cloud cost, private AI for business, AI ownership vs rental, AI cost comparison
 page_id: cloud-vs-local-cost
 header:
     teaser: /assets/images/screenshots/cloud-vs-local-ownership-teaser.webp
 classes: wide
-tags: ilai, ai, cost, business
+tags: ilai, ai
 ---
-
-**"Okay, I get the agent point. But the €23/month chat subscription is cheap. Why would I ever look past it?"**
-
-Fair question. On the invoice, the subscription wins by 15x. But the invoice isn't the full cost — it's the price of a rental. And when you sign a cloud AI subscription, you're not buying a tool. You're renting access to a model that isn't yours, under rules you didn't write, with a skill that lives in the account and dies with it.
 
 <p style="text-align:center;">
   <img src="/assets/images/screenshots/cloud-vs-local-ownership-teaser.webp" alt="A seed in a hand: what you own is small and quiet, but what grows from it is yours" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
@@ -36,13 +32,13 @@ The part nobody reads before signing is the Terms of Service. They're long, they
 
 ### The cost is a business decision, not a commitment
 
-The subscription is subsidized. The price you pay doesn't cover the cost of the tokens you consume — the vendor eats the difference. OpenAI doesn't publish what a subscription actually costs them to serve. They don't have to. The API price list tells the story: the same calls you make through a €23 subscription would cost **€150–800/month** on the API, depending on volume and which model tier you're on. An enterprise plan doing serious document processing, voice, and multi-model workflows can easily hit thousands of euros in equivalent API cost per month.
+The subscription is subsidized. The price you pay doesn't cover the cost of the tokens you consume — the vendor eats the difference. OpenAI doesn't publish what a subscription actually costs them to serve. They don't have to. The API price list tells the story: the same calls you make through a consumer subscription would cost **€150–800/month** on the API, depending on volume and which model tier you're on. An enterprise plan doing serious document processing, voice, and multi-model workflows can easily hit thousands of euros in equivalent API cost per month.
 
 The subsidy is a business decision. Business decisions change. OpenAI's [Terms of Use](https://openai.com/policies/terms-of-use/) (current as of **27 October 2026**) say:
 
 > "We may change our pricing from time to time, with 30 days' notice."
 
-That's not a threat. It's a contractual clause. The day the subsidy stops being worth it, your €23 becomes €230, or they add usage caps that make your workflow impossible, or they quietly swap the model underneath and your outputs get worse. You don't have a contract that protects the price. You have a clause that says "we may."
+That's not a threat. It's a contractual clause. The day the subsidy stops being worth it, your monthly fee doubles or triples, or they add usage caps that make your workflow impossible, or they quietly swap the model underneath and your outputs get worse. You don't have a contract that protects the price. You have a clause that says "we may."
 
 **You don't control the cost. They do. And they can change it whenever.**
 
