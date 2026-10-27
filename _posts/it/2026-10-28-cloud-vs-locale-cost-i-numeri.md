@@ -1,11 +1,11 @@
 ---
-title: "Cosa costa davvero l'AI cloud rispetto a un box locale: i numeri"
+title: "Cosa costa davvero l'AI cloud: i quattro rischi del tuo abbonamento"
 categories: ai, business, cost
-excerpt: "Lo spreadsheet onesto: un'abbonamento chat sovvenzionato, una build DIY su API, e un agente locale che fa il lavoro. Tre strade, tre fatture molto diverse — e quella che nessuno mette nel foglio di confronto."
+excerpt: "L'abbonamento ChatGPT a €23/mese sembra economico. Ma porta con sé quattro rischi che non compaiono in fattura: costi token che non controlli, restrizioni d'uso che possono cambiare, un account che possono chiudere, e i tuoi dati che attraversano un oceano. Un agente locale non ha nessuno di questi."
 permalink: /cloud-vs-locale-cost
 lang: it
-description: "AI cloud vs AI locale: i numeri veri. ChatGPT Business a €23/utente, una build DIY con setup da €12K + costi token ricorrenti, e ILAI da €350/mese. Tre strade, tre fatture — e il costo nascosto che non c'è in fattura."
-keywords: costo AI cloud vs locale, AI locale per PMI, intelligenza artificiale locale aziende, costo agente AI, AI locale costo, confronto cloud on-premise, costo AI per piccola azienda, build vs buy agente AI, costo infrastruttura AI locale, AI per PMI Italia
+description: "Gli abbonamenti cloud AI nascondono quattro costi reali: aumento dei prezzi token, restrizioni d'uso, sospensione dell'account, e dati fuori dalla tua giurisdizione. ILAI on-prem elimina tutti e quattro. ILAI on-cloud ti fa partire subito, con la possibilità di migrare on-prem."
+keywords: rischi AI cloud, costo nascosto abbonamento AI, rischio ChatGPT business, sovranità dati AI, AI locale vs cloud, agente AI on-premise, aumento costo token AI, rischio sospensione account AI, restrizioni uso AI, AI per PMI Italia
 page_id: cloud-vs-locale-cost
 header:
     teaser: /assets/images/screenshots/cloud-vs-local-cost-teaser.webp
@@ -13,134 +13,103 @@ classes: wide
 tags: ilai, ai, cost, business
 ---
 
-**"Ok, il concetto di agente lo capisco. Ma quanto costa davvero? Mostrami i numeri."**
+**"Ok, il concetto di agente lo capisco. Ma l'abbonamento chat a €23/mese è economico. Perché dovrei mai pagare €350?"**
 
-Giusto. Questa è la versione-spreadsheet di [l'argomento che abbiamo fatto l'altra volta](/it/agente-o-chat): tre strade per far sì che un'AI faccia il lavoro della tua azienda, con le fatture vere. Nessuna fumisteria, nessun "dipende"."
-keywords: costo AI cloud vs locale, AI locale per PMI, intelligenza artificiale locale aziende, costo agente AI, AI locale costo, confronto cloud on-premise, costo AI per piccola azienda, build vs buy agente AI, costo infrastruttura AI locale, AI per PMI Italia
-page_id: cloud-vs-locale-cost
-header:
-    teaser: /assets/images/screenshots/cloud-vs-local-cost-teaser.webp
-classes: wide
-tags: ilai, ai, cost, business
----
+Domanda giusta. In fattura, l'abbonamento chat vince 15 a 1. Ma la fattura non è il costo completo. Ci sono quattro cose a cui ti stai iscrivendo quando metti il tuo lavoro su un'abbonamento cloud AI, e nessuna di queste compare nella fattura mensile.
 
-**"Ok, il concetto di agente lo capisco. Ma quanto costa davvero? Mostrami i numeri."**
+## I quattro rischi
 
-Giusto. Questa è la versione-spreadsheet di [l'argomento che abbiamo fatto l'altra volta](/it/agente-o-chat): tre strade per far sì che un'AI faccia il lavoro della tua azienda, con le fatture vere. Nessuna fumisteria, nessun "dipende".
+### 1. Il costo dei token è una spada di Damocle
 
-Tutti i prezzi sono in euro. I prodotti USA (ChatGPT, Claude) sono fatturati in dollari; abbiamo convertito ai tassi correnti così il confronto è su un'unica valuta.
+Il prezzo dell'abbonamento non è il prezzo reale. È un prezzo sovvenzionato.
 
-## Le tre strade
+Ecco la matematica. Un utente aziendale che processa documenti, fa conversazioni lunghe con contesto, e usa un modello di fascia media (quello che fa lavoro vero, non piccole chiacchiere) consuma token velocemente. Le stesse chiamate al modello fatte attraverso un abbonamento da €23 costerebbero **€150–800/mese** sull'API, a seconda del volume e del tier del modello. Un piano enterprise da €200/mese che fa processing documentale serio, voice e workflow multi-modello può facilmente arrivare a **€8.000/mese** in costo API equivalente.
 
-| | **Strada A: Chat in abbonamento** | **Strada B: Build DIY su API** | **Strada C: Agente locale (ILAI)** |
-|---|---|---|---|
-| Cosa ottieni | Un box di testo a cui parli | Un'API che colleghi ai tuoi sistemi da solo | Un agente che fa il lavoro, su una macchina dove i dati restano |
-| Costo di setup | €0 — ti iscrivi | **€8.000–12.000** (tempo dev, integrazione, test) | **€5.000** (on-cloud) / **€8.000** (on-prem) |
-| Hardware | Nessuno (il loro cloud) | Un server o VM cloud (~€5.000–7.000, lo compri tu) | Incluso (on-prem) / incluso (on-cloud) |
-| Mensile | €23–89 **a persona** | Costi token: variabili, crescono con l'uso | **€350/mese** (on-cloud, tutti gli utenti, skill inclusa) |
-| Chi lo costruisce | Tu fai prompt | Tu (o uno studio di sviluppo) | Costruiamo la skill per il tuo processo |
-| Dove stanno i dati | Nel loro cloud (USA) | Dove punti tu l'API | Nel tuo ufficio / infrastruttura italiana |
-| Tempo al primo risultato | 5 minuti (una risposta in chat) | 6–12 settimane (build + test + training) | 2–4 settimane (onboarding + skill) |
+OpenAI non pubblica quanto costa davvero a loro servire un abbonamento. Non sono obbligati. La lista prezzi dell'API racconta la storia: l'abbonamento è sovvenzionato, e la sovvenzione è una decisione di business. Le decisioni di business cambiano.
 
-## Strada A: La chat sovvenzionata
+Cosa significa per te: il giorno in cui OpenAI decide che la sovvenzione non vale più, i tuoi €23 diventano €230. O aggiungono limiti d'uso che rendono il tuo workflow impossibile. O cambiano silenziosamente il modello sottostante e i tuoi output peggiorano. Non hai un contratto. Hai un ToS che dice "possiamo cambiare i prezzi di tanto in tanto" con 30 giorni di preavviso.
 
-ChatGPT Business: **€23/utente/mese**. Claude Team: **€18/utente/mese** (fatturazione annuale). L'agente sempre-acceso di OpenAI (Dot): **€89/utente/mese**, incluso in Pro.
+**Non controlli il costo. Lo controllano loro. E possono cambiarlo quando vogliono.**
 
-La matematica che sembra buona:
+### 2. Dicono loro cosa puoi farci
 
-- Azienda da 5 persone → 5 × €23 = **€115/mese**. Tutto qui.
-- Aggiungi Dot per la persona che ha bisogno di autonomia: €89 in più.
+Le [Usage Policies](https://openai.com/policies/usage-policies/) di OpenAI vengono aggiornate regolarmente. L'aggiornamento più recente (effettivo novembre 2026) ha aggiunto nuove restrizioni su:
 
-La matematica che non sembra buona:
+- Addestramento di modelli concorrenti dagli output
+- "Automazione di ad alta stakes in aree sensibili senza revisione umana" — inclusi attività finanziarie, legali, mediche, employment
+- Piattaforme intermedie di accesso ai modelli
 
-- Ogni utente che ha un box di chat passa la giornata **a parlarci e a copiare-incollare la risposta nel proprio sistema**. Il lavoro non succede *nel* sistema. Una persona lo sposta.
-- I dati (i nomi dei tuoi clienti, i tuoi prezzi, i tuoi margini) vanno su un server USA a ogni prompt. I ToS dicono che non servono ad addestrare il modello. Va bene. Ma stanno **fuori dalle tue mura**, e quello non è un costo che puoi mettere in un conto.
-- Il prezzo a persona significa che la fattura cresce con l'organico. Dieci persone → €890/mese e hai ancora dieci persone che copiano-incollano.
+La lista si allunga ad ogni aggiornamento. E l'applicazione non è coerente. Quello che funziona questo mese può essere segnalato il mese prossimo. Il tuo workflow — la cosa su cui hai costruito il tuo processo — può diventare una violazione di policy da un giorno all'altro.
 
-**Il vero costo della Strada A non è l'abbonamento. Sono le ore di persona che continui a spendere a fare il lavoro che la chat avrebbe dovuto risparmiare.**
+Non c'è un processo di appello che sia veloce. Non c'è un "ti lasciamo continuare per 6 mesi mentre ti trasferisci." La policy cambia, e la restrizione è live.
 
-## Strada B: La build fai-da-te
+**Non controlli cosa l'AI è autorizzata a fare. Lo controllano loro. E le regole cambiano senza il tuo consenso.**
 
-Questo è quello che fa un team tecnico (o un'agenzia di sviluppo) quando decide "ce la facciamo da soli": prendere l'API del modello, scrivere lo strato di integrazione, costruire il workflow, testarlo, mantenerlo.
+### 3. Possono chiudere il tuo account. Per qualsiasi motivo.
 
-I numeri onesti:
+Dai [Terms of Use](https://openai.com/policies/terms-of-use/) di OpenAI (gennaio 2026):
 
-- **Setup: €8.000–12.000** in tempo di sviluppo (o onorari di agenzia). Questo è l'integrazione, la logica del workflow, i test. Non un progetto da weekend.
-- **Hardware: €5.000–7.000** se vai on-prem (server GPU). Se resti sulla loro API, questo è zero ma la fattura token è tua.
-- **Costi token: ricorrenti.** Un'azienda che processa 200 documenti al mese su un'API di classe GPT-4o paga circa **€150–400/mese** in token. Un'azienda che fa voice, OCR e processing documentale su larga scala paga di più. La fattura cresce con l'uso, e paghi a pagina, a token, a ora di audio.
-- **Manutenzione: ricorrente.** L'API cambia. Il modello cambia. L'integrazione si rompe. Qualcuno deve tenerla d'occhio.
+> "Ci riserviamo il diritto di **sospendere o terminare** il tuo accesso ai nostri Servizi o **cancellare il tuo account** se determiniamo: Hai violato questi Termini o le nostre Usage Policies. Dobbiamo farlo per conformarci alla legge. Il tuo uso dei nostri Servizi potrebbe causare **rischio o danno a OpenAI, ai nostri utenti, o a chiunque altro**."
 
-Il costo totale del primo anno di una build DIY, fatta bene: **€15.000–25.000** (setup + hardware + un anno di token). E hai costruito un sistema che fa *un* workflow, per *una* azienda, questo è zero ma la fattura token è tua.
-- **Costi token: ricorrenti.** Un'azienda che processa 200 documenti al mese su un'API di classe GPT-4o paga circa **€150–400/mese** in token. Un'azienda che fa voice, OCR e processing documentale su larga scala paga di più. La fattura cresce con l'uso, e paghi a pagina, a token, a ora di audio.
-- **Manutenzione: ricorrente.** L'API cambia. Il modello cambia. L'integrazione si rompe. Qualcuno deve tenerla d'occhio.
+Nessun preavviso richiesto. Nessuna ragione specifica oltre "abbiamo determinato." Nessun contratto che protegga la tua continuità.
 
-Il costo totale del primo anno di una build DIY, fatta bene: **€15.000–25.000** (setup + hardware + un anno di token). E hai costruito un sistema che fa *un* workflow, per *una* azienda, di cui ora possiedi la manutenzione.
+Non è teorico. Aziende hanno avuto account sospesi a metà progetto, con mesi di lavoro e dati clienti bloccati dietro uno screen di login. Il processo di appello esiste, ma è lento, e nel frattempo, il tuo lavoro si ferma.
 
-Questa strada ha senso se hai un team di ingegneria il cui lavoro è costruire software. Non ha senso per un'azienda commerciale, un'officina, o un professionista che vuole il lavoro fatto, non un progetto da gestire.
+Per un'azienda che ha costruito un workflow intorno a un abbonamento cloud AI, una sospensione dell'account non è un fastidio. È uno shutdown operativo.
 
-## Strada C: L'agente locale
+**Non controlli se puoi continuare a usare il servizio. Lo controllano loro. E possono spegnerlo.**
 
-Questo è ILAI. I numeri:
+### 4. I tuoi dati — e la tua conoscenza — attraversano un oceano
 
-- **On-cloud: €5.000 di setup + €350/mese.** La skill è costruita per il tuo processo, l'integrazione è fatta, i dati restano su infrastruttura italiana (Seeweb, Regolo Zero Data Retention). Un agente serve tutta l'azienda — non a persona.
-- **On-prem: €8.000 di setup + hardware (~€5.000, acquistato dal cliente) + manutenzione.** Tutto gira nel tuo ufficio. Voice, OCR, agente — niente fatturazione a pagina, a token, a ora. I dati non escono mai dall'edificio.
+Ogni prompt che invii a un servizio cloud AI USA porta con sé i tuoi dati: nomi dei clienti, prezzi, margini, termini fornitori, documenti interni. Il ToS dice che non vengono usati per addestrare il modello. Va bene. Ma sono **processati su server che non possiedi, in una giurisdizione che non controlli, sotto leggi che non hai scritto tu.**
 
-Quello che i €350/mese ti danno che i €23 della chat non danno:
+I dati attraversano un oceano. Stanno in un'infrastruttura di un terzo. Sono governati da un ToS che dice "possiamo usare i Content per fornire, mantenere, sviluppare e migliorare i nostri Servizi." L'opt-out esiste, ma è sepolto, e non cambia il fatto che i dati fisicamente hanno lasciato il tuo edificio.
 
-- Il lavoro è **fatto**, non risposto. Fatture riconciliate, preventivi preparati, CRM aggiornato, documenti processati — dentro i tuoi sistemi, in continuo.
-- La fattura non cresce con l'organico. Cinque persone o quindici: stesso agente, stesso prezzo.
-- La capacità è **tua**. La skill codifica il tuo processo. La macchina è tua (on-prem) o tua (on-cloud, unità dedicata). Quando smetti di pagare, fermi il servizio — ma il pattern di lavoro, la conoscenza dell'integrazione, i dati: sono tuoi.
-- Voice, OCR, video: **nessun costo API a unità.** Un abbonamento cloud ti fattura a pagina, a token, a ora di audio. Il box locale li fa in blocco.
+Per uno studio professionale, significa che le tue relazioni clienti sono in un server USA. Per un'azienda commerciale, i tuoi prezzi e i termini fornitori sono in un server USA. Per un'officina, la tua conoscenza di processo — la cosa che è tua, la cosa che hai costruito negli anni — viene processata da un terzo, su hardware che non possiedi, sotto regole che non puoi cambiare.
 
-## La voce che nessuno mette sullo spreadsheet
+Non è una sanzione GDPR in attesa di succedere. È un'esposizione strutturale. Il rischio è basso se non filtra niente. L'esposizione è totale se filtra qualcosa.
 
-C'è un costo che non compare su nessuna fattura:
+**Non controlli dove vanno i tuoi dati o cosa ci succede. Lo controllano loro. Ed è dall'altra parte del mondo.**
 
-**Il costo dei dati fuori dalle tue mura.**
+## Cosa cambia l'agente locale
 
-Per la maggior parte delle PMI, non è una sanzione GDPR. È: la tua lista clienti, i tuoi prezzi, i tuoi margini, i tuoi termini con i fornitori — seduti in un cloud USA, processati da un terzo, governati da un ToS che non hai scritto tu. Il rischio è basso se non filtra niente. L'esposizione è totale se filtra qualcosa.
+ILAI on-prem elimina tutti e quattro i rischi:
 
-Nessun abbonamento cloud offre un modo per evitarlo a qualsiasi fascia di prezzo. L'opzione on-prem non è un add-on premium; è l'unica configurazione in cui i dati fisicamente non escono.
+| Rischio | Abbonamento cloud | ILAI on-prem |
+|---|---|---|
+| Costo token | Sovvenzionato, può cambiare in qualsiasi momento | **Fisso.** Niente fatturazione a token. L'hardware è tuo. |
+| Restrizioni d'uso | Le loro policy, aggiornate unilateralmente | **Nessuna.** È la tua macchina, le tue regole. |
+| Sospensione account | Possono fermarti, senza preavviso | **Impossibile.** L'hardware è nel tuo ufficio. |
+| Sovranità dati | Server USA, giurisdizione di un terzo | **Il tuo ufficio.** I dati non escono mai dall'edificio. |
+
+I numeri:
+
+- **Setup: €8.000** (integrazione, skill, deployment)
+- **Hardware: ~€5.000** (server GPU, lo compri tu, è tuo)
+- **In corso: solo manutenzione.** Niente abbonamento mensile. Niente fattura token. Niente fatturazione a pagina, a ora. Voice, OCR, agente — in fisso.
+
+Primo anno: ~€15.000–18.000. Secondo anno: manutenzione. Terzo anno: manutenzione. Il costo non cresce con l'uso, con l'organico, o con le decisioni di prezzo del vendor.
+
+## ILAI on-cloud: parti ora, migra quando vuoi
+
+Se €13.000 di setup sono troppi per questo trimestre, ILAI on-cloud è la strada:
+
+- **Setup: €5.000 + €350/mese.** La skill è costruita per il tuo processo, l'integrazione è fatta, i dati restano su infrastruttura italiana (Seeweb, inferenza certificata Regolo Zero Data Retention).
+- I €350/mese coprono l'unità dedicata, la skill, e la manutenzione. Non a persona. Non a token.
+- Quando sei pronto a passare on-prem, la skill, la logica dell'integrazione, e i pattern di lavoro si trasferiscono. La migrazione è un passo hardware + deployment, non una ricostruzione.
+
+Parti in settimane, non in mesi. Passi on-prem quando ha senso per il tuo budget e la tua tolleranza al rischio. Non sei bloccato — sei su un percorso.
 
 ## Il confronto onesto
 
 | La tua situazione | La strada giusta |
 |---|---|
-| Vuoi una chat intelligente per te, uso personale | **Strada A.** È più economica, è abbastanza buona, e non è quello che vendiamo. |
-| Hai un team di ingegneria che costruisce software di mestiere | **Strada B.** Ti godrai il build, e sarà tuo. |
-| Vuoi il lavoro fatto, nei tuoi sistemi, con i tuoi dati, senza gestire un progetto | **Strada C.** L'agente è costruito, l'integrazione è fatta, i dati restano. |
-| Vuoi il lavoro fatto E i dati non possono uscire dall'edificio | **Strada C, on-prem.** L'unica configurazione che lo garantisce. |
+| Vuoi una chat per domande personali | **Abbonamento cloud.** Va bene per quello. Non è quello che vendiamo. |
+| Vuoi il lavoro fatto, nei tuoi sistemi, con i tuoi dati che restano | **ILAI on-prem.** Tutti e quattro i rischi eliminati. |
+| Vuoi partire ora e migrare on-prem più tardi | **ILAI on-cloud.** Infrastruttura italiana, zero data retention, percorso verso on-prem. |
+| Hai un team di ingegneria che costruisce software | **Build DIY.** €15–25K il primo anno, lo possiedi tu, lo mantieni tu. Ha senso se è il tuo mestiere. |
 
-Il numero che conta non è la fee mensile. È la domanda da cui siamo partiti: **chi fa il lavoro.** La chat a €23 risponde. L'agente a €350 lo fa.
-
-## In sintesi
-
-- **Strada A (chat):** €23–89 a persona/mese. Economica. Ma il lavoro lo fai ancora tu; la chat ti dà solo una risposta più veloce.
-- **Strada B (DIY):** €15–25K il primo anno. Lo costruisci tu, è tuo, lo mantieni tu. Ha senso se l'ingegneria è il tuo mestiere.
-- **Strada C (agente locale):** €350/mese, tutti gli utenti, skill inclusa. Il lavoro è fatto, i dati restano, il conto non cresce con l'organico.
-- **Il costo nascosto:** i dati nel cloud di qualcun altro. Non in fattura. Nel registro dei rischi.
-
-## FAQ
-
-**La chat a €23 è davvero così tanto peggio?**
-
-Per una persona che vuole fare domande e avere risposte: no, va bene. Per un'azienda il cui lavoro va *eseguito* — fatture, preventivi, documenti, CRM — la chat è un passaggio, non l'arrivo. Le mosse le fai ancora tu.
-
-**Perché la strada DIY è €12K e non €500?**
-
-Perché "chiamare l'API" è il 5% del lavoro. L'altro 95% è: capire il tuo processo, costruire l'integrazione nel tuo specifico ERP/gestionale, gestire i casi limite, testare con dati reali, e mantenerlo quando l'API cambia. Sono settimane di ingegneria, non un weekend.
-
-**Perché ILAI è €350/mese e non €35 a utente?**
-
-Perché non è uno strumento a persona. È un agente che fa il lavoro dell'azienda. La skill si costruisce una volta, per il processo dell'azienda. Aggiungere un utente non aggiunge lavoro all'agente.
-
-**Cosa significa concretamente "on-cloud" per i miei dati?**
-
-Unità dedicata su infrastruttura italiana (Seeweb), inferenza certificata Regolo Zero Data Retention. I tuoi dati non vanno in un cloud condiviso, non vanno negli USA, non servono ad addestrare un modello condiviso. È un deployment privato, non un'istanza SaaS.
-
-**Posso partire on-cloud e passare on-prem più tardi?**
-
-Sì. La skill, la logica dell'integrazione, i pattern di lavoro si trasferiscono. La migrazione è un passo hardware + deployment, non una ricostruzione.
+Il numero che conta non è la fee mensile. È la domanda sotto: **chi controlla il costo, le regole, l'accesso, e i dati.** Con un abbonamento, la risposta è sempre "il vendor." Con un agente locale, la risposta è "tu."
 
 ---
 
