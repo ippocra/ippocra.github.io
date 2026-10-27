@@ -23,7 +23,7 @@ Fair question. On the invoice, the chat subscription wins by 15x. But the invoic
 
 The subscription price is not the real price. It's a subsidized price.
 
-Here's the math. A business user who processes documents, runs long conversations with context, and uses a mid-tier model (the kind that does real work, not small talk) burns through tokens fast. The same model calls made through a €23 subscription would cost **€150–800/month** on the API, depending on volume and which model tier you're on. A €200/month enterprise plan doing serious document processing, voice, and multi-model workflows can easily hit **€8,000/month** in equivalent API cost.
+Here's the math. A business user who processes documents, runs long conversations with context, and uses a mid-tier model (the kind that does real work, not small talk) burns through tokens fast. The same model calls made through a €23 subscription would cost **€150–800/month** on the API, depending on volume and which model tier you're on. A €200/month enterprise plan doing serious document processing, voice, and multi-model workflows can easily hit **€8,000/month** in equivalent API cost. (API pricing referenced from OpenAI's and Anthropic's public pricing pages, current as of **27 October 2026**.)
 
 OpenAI doesn't publish what a subscription actually costs them to serve. They don't have to. The API price list tells the story: the subscription is subsidized, and the subsidy is a business decision. Business decisions change.
 
@@ -33,7 +33,7 @@ What this means for you: the day OpenAI decides the subsidy is no longer worth i
 
 ### 2. They tell you what you can do with it
 
-OpenAI's [Usage Policies](https://openai.com/policies/usage-policies/) are updated regularly. The most recent update (effective November 2026) added new restrictions on:
+OpenAI's [Usage Policies](https://openai.com/policies/usage-policies/) (current as of **27 October 2026**) are updated regularly. The most recent update (effective November 2026) added new restrictions on:
 
 - Training competing models from outputs
 - "Automation of high-stakes actions in sensitive areas without human review" — including financial activities, legal, medical, employment
@@ -41,17 +41,34 @@ OpenAI's [Usage Policies](https://openai.com/policies/usage-policies/) are updat
 
 The list gets longer with every update. And the enforcement is not consistent. What works this month may be flagged next month. Your workflow — the thing you built your process around — can become a policy violation overnight.
 
+Anthropic's [Usage Policy](https://www.anthropic.com/aup) (current as of **27 October 2026**) is the same mechanism:
+
+> "If we suspect that you may have violated our Usage Policy, we may **warn you or throttle, limit, suspend, or terminate** your access to our products and services."
+
+Their Safeguards Team runs detection and monitoring. "We will update our policy as our technology and the associated risks evolve or as we learn about unanticipated risks."
+
 There's no appeal process that's fast. There's no "we'll let you keep using it for 6 months while you transition." The policy changes, and the restriction is live.
 
 **You don't control what the AI is allowed to do. They do. And the rules change without your consent.**
 
 ### 3. They can stop your account. For any reason.
 
-From the [OpenAI Terms of Use](https://openai.com/policies/terms-of-use/) (January 2026):
+From the [OpenAI Terms of Use](https://openai.com/policies/terms-of-use/) (current as of **27 October 2026**, retrieved the day we wrote this post):
 
 > "We reserve the right to **suspend or terminate** your access to our Services or **delete your account** if we determine: You breached these Terms or our Usage Policies. We must do so to comply with the law. Your use of our Services could cause **risk or harm to OpenAI, our users, or anyone else**."
 
 No notice required. No specific reason beyond "we determined." No contract protecting your continuity.
+
+This isn't OpenAI alone. Anthropic's [Consumer Terms](https://www.anthropic.com/legal/consumer-terms) (current as of **27 October 2026**) give them the same power, plus the right to delete your data:
+
+> "We may **modify, suspend, or discontinue** the Services or your access to the Services."
+> "Upon termination... we may **at our option delete any Materials or other data** associated with your account."
+
+And for business customers, Anthropic's [Commercial Terms](https://www.anthropic.com/legal/commercial-terms) (current as of **27 October 2026**) add suspension for cost reasons:
+
+> "Anthropic may **suspend** Customer's access... if Anthropic reasonably believes or determines that... Anthropic's provision of the Services to Customer is prohibited by applicable law **or would result in a material increase in the cost of providing the Services**."
+
+**Both vendors reserve the right to turn off your service. Neither needs a specific reason beyond their own determination. Neither requires notice.**
 
 This isn't theoretical. Companies have had accounts suspended mid-project, with months of work and client data locked behind a login screen. The appeal process exists, but it's slow, and in the meantime, your work stops.
 
@@ -61,11 +78,17 @@ For a company that has built a workflow around a cloud AI subscription, an accou
 
 ### 4. Your data — and your knowledge — goes across an ocean
 
-Every prompt you send to a US cloud AI service carries your data with it: client names, prices, margins, supplier terms, internal documents. The ToS says it's not used to train the model. Fine. But it's **processed on servers you don't own, in a jurisdiction you don't control, under laws you didn't write.**
+Every prompt you send to a US cloud AI service carries your data with it: client names, prices, margins, supplier terms, internal documents. OpenAI's [ToS](https://openai.com/policies/terms-of-use/) (current as of **27 October 2026**) says it's not used to train the model. Fine. But it's **processed on servers you don't own, in a jurisdiction you don't control, under laws you didn't write.**
 
 The data crosses an ocean. It sits in a third party's infrastructure. It's governed by a ToS that says "we may use Content to provide, maintain, develop, and improve our Services." The opt-out exists, but it's buried, and it doesn't change the fact that the data physically left your building.
 
-For a professional practice, this means your client relationships are in a US server. For a trading company, your pricing and supplier terms are in a US server. For a workshop, your process knowledge — the thing that's yours, the thing you built over years — is being processed by a third party, on hardware you don't own, under rules you can't change.
+Anthropic is more explicit about data ownership — their [Commercial Terms](https://www.anthropic.com/legal/commercial-terms) (current as of **27 October 2026**) state "Customer Content is Customer's Confidential Information" and "Anthropic may not train models on Customer Content from Services." That's reassuring. But the data still sits on their servers, in their jurisdiction, under their ToS. And their [Consumer Terms](https://www.anthropic.com/legal/consumer-terms) (current as of **27 October 2026**) add:
+
+> "We may use Materials to **provide, maintain, and improve the Services and to develop other products and services, including training our models**, unless you opt out of training through your account settings."
+
+Even with the opt-out, the data physically left your building. The difference between "we won't train on it" and "it's on your hardware" is the difference between a promise and a fact.
+
+For a professional practice, this means your client relationships are in a US or Irish server. For a trading company, your pricing and supplier terms are in a third-party data center. For a workshop, your process knowledge — the thing that's yours, the thing you built over years — is being processed by a third party, on hardware you don't own, under rules you can't change.
 
 This isn't a GDPR fine waiting to happen. It's a structural exposure. The risk is low if nothing leaks. The exposure is total if something does.
 
@@ -73,14 +96,14 @@ This isn't a GDPR fine waiting to happen. It's a structural exposure. The risk i
 
 ## What the local agent changes
 
-ILAI on-prem eliminates all four risks:
+ILAI on-prem eliminates all four risks — whether the subscription is OpenAI or Anthropic:
 
 | Risk | Cloud subscription | ILAI on-prem |
 |---|---|---|
 | Token cost | Subsidized, can change anytime | **Fixed.** No per-token billing. The hardware is yours. |
-| Usage restrictions | Their policies, updated unilaterally | **None.** It's your machine, your rules. |
-| Account termination | They can stop you, no notice | **Impossible.** The hardware is in your office. |
-| Data sovereignty | US servers, third-party jurisdiction | **Your office.** Data never leaves the building. |
+| Usage restrictions | Their policies, updated unilaterally (both OpenAI and Anthropic reserve this right) | **None.** It's your machine, your rules. |
+| Account termination | They can stop you, no notice required | **Impossible.** The hardware is in your office. |
+| Data sovereignty | US/Irish servers, third-party jurisdiction | **Your office.** Data never leaves the building. |
 
 The numbers:
 
@@ -109,7 +132,7 @@ You start in weeks, not months. You move to on-prem when it makes sense for your
 | You want to start now and move on-prem later | **ILAI on-cloud.** Italian infrastructure, zero data retention, path to on-prem. |
 | You have an engineering team that builds software | **DIY build.** €15–25K first year, you own it, you maintain it. Makes sense if that's your business. |
 
-The number that matters isn't the monthly fee. It's the question underneath: **who controls the cost, the rules, the access, and the data.** With a subscription, the answer is always "the vendor." With a local agent, the answer is "you."
+The number that matters isn't the monthly fee. It's the question underneath: **who controls the cost, the rules, the access, and the data.** With a subscription — OpenAI or Anthropic — the answer is always "the vendor." With a local agent, the answer is "you."
 
 ---
 
