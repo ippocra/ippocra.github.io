@@ -1,11 +1,11 @@
 ---
-title: "Cosa costa davvero l'AI cloud: i quattro rischi del tuo abbonamento"
+title: "AI cloud vs AI locale: cosa stai davvero comprando quando firmi un abbonamento"
 categories: ai, business, cost
-excerpt: "L'abbonamento ChatGPT a €23/mese sembra economico. Ma porta con sé quattro rischi che non compaiono in fattura: costi token che non controlli, restrizioni d'uso che possono cambiare, un account che possono chiudere, e i tuoi dati che attraversano un oceano. Un agente locale non ha nessuno di questi."
+excerpt: "L'abbonamento ChatGPT a €23/mese sembra economico. Ma stai affittando accesso a un modello che non è tuo, sotto regole che non hai scritto, con una skill che vive nell'account e muore con esso. Un agente locale è un'altra cosa: la skill è tua, l'hardware è tuo, i dati restano. Ecco cosa cambia — e cosa significa nei Termini di Servizio."
 permalink: /cloud-vs-locale-cost
 lang: it
-description: "Gli abbonamenti cloud AI nascondono quattro costi reali: aumento dei prezzi token, restrizioni d'uso, sospensione dell'account, e dati fuori dalla tua giurisdizione. ILAI on-prem elimina tutti e quattro. ILAI on-cloud ti fa partire subito, con la possibilità di migrare on-prem."
-keywords: rischi AI cloud, costo nascosto abbonamento AI, rischio ChatGPT business, sovranità dati AI, AI locale vs cloud, agente AI on-premise, aumento costo token AI, rischio sospensione account AI, restrizioni uso AI, AI per PMI Italia
+description: "Un abbonamento cloud AI non è un acquisto: è un affitto. Il modello non è tuo, la skill vive nell'account, i dati attraversano un oceano, e i Termini di Servizio danno al vendor il diritto di spegnere tutto. Un agente locale inverte ogni punto: la skill, l'hardware e i dati sono tuoi. Ecco cosa significa, citando le clausole reali."
+keywords: AI locale vs cloud, rischio abbonamento AI, Termini di Servizio ChatGPT, sovranità dati AI, agente AI on-premise, proprietà skill AI, AI per PMI, rischio sospensione account AI, costo nascosto AI cloud, AI privata azienda
 page_id: cloud-vs-locale-cost
 header:
     teaser: /assets/images/screenshots/cloud-vs-local-cost-teaser.webp
@@ -13,58 +13,67 @@ classes: wide
 tags: ilai, ai, cost, business
 ---
 
-**"Ok, il concetto di agente lo capisco. Ma l'abbonamento chat a €23/mese è economico. Perché dovrei mai pagare €350?"**
+**"Ok, il concetto di agente lo capisco. Ma l'abbonamento chat a €23/mese è economico. Perché dovrei mai guardare oltre?"**
 
-Domanda giusta. In fattura, l'abbonamento chat vince 15 a 1. Ma la fattura non è il costo completo. Ci sono quattro cose a cui ti stai iscrivendo quando metti il tuo lavoro su un'abbonamento cloud AI, e nessuna di queste compare nella fattura mensile.
+Domanda giusta. In fattura, l'abbonamento vince 15 a 1. Ma la fattura non è il costo completo — è il prezzo di un affitto. E quando firmi un abbonamento cloud AI, non stai comprando uno strumento. Stai affittando accesso a un modello che non è tuo, sotto regole che non hai scritto, con una skill che vive nell'account e muore con esso.
 
-## I quattro rischi
+<p style="text-align:center;">
+  <img src="/assets/images/screenshots/cloud-vs-local-cost-teaser.webp" alt="Una strada veloce verso i caselli: l'abbonamento cloud AI è un pedaggio a ogni chilometro, e chi controlla la strada non sei tu" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+</p>
+<p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.9rem;">
+  L'abbonamento cloud AI è un pedaggio a ogni chilometro. Il modello non è tuo, la strada non è tua, e chi controlla il casello decide quando si chiude. Un agente locale è la strada che passa a casa tua.
+</p>
 
-### 1. Il costo dei token è una spada di Damocle
+Questo post non dice "l'AI locale è più economica" — non lo è, sulla carta. Dice qualcos'altro: **la differenza non è il prezzo. È chi possiede cosa.** E per capire cosa stai davvero firmando, bisogna leggere i Termini di Servizio — non la landing page.
 
-Il prezzo dell'abbonamento non è il prezzo reale. È un prezzo sovvenzionato.
+## Come funziona davvero un abbonamento cloud AI
 
-Ecco la matematica. Un utente aziendale che processa documenti, fa conversazioni lunghe con contesto, e usa un modello di fascia media (quello che fa lavoro vero, non piccole chiacchiere) consuma token velocemente. Le stesse chiamate al modello fatte attraverso un abbonamento da €23 costerebbero **€150–800/mese** sull'API, a seconda del volume e del tier del modello. Un piano enterprise da €200/mese che fa processing documentale serio, voice e workflow multi-modello può facilmente arrivare a **€8.000/mese** in costo API equivalente. (Prezzi API riferiti dalle pagine pubbliche di OpenAI e Anthropic, correnti al **27 ottobre 2026**.)
+Partiamo da come è costruito il prodotto che stai comprando.
 
-OpenAI non pubblica quanto costa davvero a loro servire un abbonamento. Non sono obbligati. La lista prezzi dell'API racconta la storia: l'abbonamento è sovvenzionato, e la sovvenzione è una decisione di business. Le decisioni di business cambiano.
+Un abbonamento a ChatGPT o Claude ti dà accesso a un modello che gira su infrastruttura del vendor. Il modello non è tuo. L'infrastruttura non è tua. I tuoi prompt, le tue conversazioni, i tuoi documenti — passano da quella infrastruttura, vengono processati lì, e restano lì sotto un contratto che il vendor può aggiornare unilateralmente.
 
-Cosa significa per te: il giorno in cui OpenAI decide che la sovvenzione non vale più, i tuoi €23 diventano €230. O aggiungono limiti d'uso che rendono il tuo workflow impossibile. O cambiano silenziosamente il modello sottostante e i tuoi output peggiorano. Non hai un contratto. Hai un ToS che dice "possiamo cambiare i prezzi di tanto in tanto" con 30 giorni di preavviso.
+La parte che nessuno legge prima di firmare sono i Termini di Servizio. Sono lunghi, sono legali, e sono scritti per essere ignorati. Ma contengono il modello economico del prodotto, nero su bianco. Ecco cosa dicono, per esteso, i documenti pubblici di OpenAI e Anthropic (correnti al **27 ottobre 2026**, recuperati il giorno in cui abbiamo scritto questo post):
+
+### Il costo è una decisione di business, non un impegno
+
+L'abbonamento è sovvenzionato. Il prezzo che paghi non copre il costo dei token che consumi — il vendor mangia la differenza. OpenAI non pubblica quanto costa a loro servire un abbonamento. Non sono obbligati. La lista prezzi dell'API racconta la storia: le stesse chiamate che fai attraverso un abbonamento da €23 costerebbero **€150–800/mese** sull'API, a seconda del volume e del tier del modello. Un piano enterprise che fa processing documentale serio, voice e workflow multi-modello può facilmente arrivare a migliaia di euro di costo API equivalente al mese.
+
+La sovvenzione è una decisione di business. Le decisioni di business cambiano. I [Termini di Uso](https://openai.com/policies/terms-of-use/) di OpenAI (correnti al **27 ottobre 2026**) dicono:
+
+> "Possiamo modificare i prezzi di tanto in tempo, con 30 giorni di preavviso."
+
+Non è una minaccia. È una clausola contrattuale. Il giorno in cui la sovvenzione non conviene più, i tuoi €23 diventano €230, o aggiungono limiti d'uso che rendono il tuo workflow impossibile, o cambiano silenziosamente il modello sottostante e i tuoi output peggiorano. Non hai un contratto che protegga il prezzo. Hai una clausola che dice "possiamo".
 
 **Non controlli il costo. Lo controllano loro. E possono cambiarlo quando vogliono.**
 
-### 2. Dicono loro cosa puoi farci
+### Le regole cambiano senza il tuo consenso
 
-Le [Usage Policies](https://openai.com/policies/usage-policies/) di OpenAI (correnti al **27 ottobre 2026**) vengono aggiornate regolarmente. L'aggiornamento più recente (effettivo novembre 2026) ha aggiunto nuove restrizioni su:
+Le [Usage Policies](https://openai.com/policies/usage-policies/) di OpenAI vengono aggiornate regolarmente. L'aggiornamento più recente ha aggiunto nuove restrizioni su addestramento di modelli concorrenti, "automazione di alta stakes in aree sensibili senza revisione umana" — incluse attività finanziarie, legali, mediche, employment — e piattaforme intermedie di accesso ai modelli. La lista si allunga ad ogni aggiornamento.
 
-- Addestramento di modelli concorrenti dagli output
-- "Automazione di ad alta stakes in aree sensibili senza revisione umana" — inclusi attività finanziarie, legali, mediche, employment
-- Piattaforme intermedie di accesso ai modelli
-
-La lista si allunga ad ogni aggiornamento. E l'applicazione non è coerente. Quello che funziona questo mese può essere segnalato il mese prossimo. Il tuo workflow — la cosa su cui hai costruito il tuo processo — può diventare una violazione di policy da un giorno all'altro.
+L'applicazione non è coerente. Quello che funziona questo mese può essere segnalato il mese prossimo. Il tuo workflow — la cosa su cui hai costruito il tuo processo — può diventare una violazione di policy da un giorno all'altro.
 
 La [Usage Policy](https://www.anthropic.com/aup) di Anthropic (corrente al **27 ottobre 2026**) è lo stesso meccanismo:
 
 > "Se sospettiamo che tu possa aver violato la nostra Usage Policy, possiamo **avvisarti o limitare, sospendere o terminare** il tuo accesso ai nostri prodotti e servizi."
 
-Il loro Safeguards Team gestisce il rilevamento e il monitoraggio. "Aggiungeremo la nostra policy man mano che la nostra tecnologia e i rischi associati evolvono o man mano che scopriamo rischi imprevisti."
-
-Non c'è un processo di appello che sia veloce. Non c'è un "ti lasciamo continuare per 6 mesi mentre ti trasferisci." La policy cambia, e la restrizione è live.
+"Aggiungeremo la nostra policy man mano che la nostra tecnologia e i rischi associati evolvono o man mano che scopriamo rischi imprevisti." Non c'è un processo di appello che sia veloce. Non c'è un "ti lasciamo continuare per 6 mesi mentre ti trasferisci." La policy cambia, e la restrizione è live.
 
 **Non controlli cosa l'AI è autorizzata a fare. Lo controllano loro. E le regole cambiano senza il tuo consenso.**
 
-### 3. Possono chiudere il tuo account. Per qualsiasi motivo.
+### Possono spegnere il tuo servizio. Per qualsiasi motivo.
 
-Dai [Terms of Use](https://openai.com/policies/terms-of-use/) di OpenAI (correnti al **27 ottobre 2026**, recuperati il giorno in cui abbiamo scritto questo post):
+I [Termini di Uso](https://openai.com/policies/terms-of-use/) di OpenAI (correnti al **27 ottobre 2026**):
 
 > "Ci riserviamo il diritto di **sospendere o terminare** il tuo accesso ai nostri Servizi o **cancellare il tuo account** se determiniamo: Hai violato questi Termini o le nostre Usage Policies. Dobbiamo farlo per conformarci alla legge. Il tuo uso dei nostri Servizi potrebbe causare **rischio o danno a OpenAI, ai nostri utenti, o a chiunque altro**."
 
-Nessun preavviso richiesto. Nessuna ragione specifica oltre "abbiamo determinato." Nessun contratto che protegga la tua continuità.
+Nessun preavviso richiesto. Nessuna ragione specifica oltre "abbiamo determinato."
 
-Non è solo OpenAI. I [Consumer Terms](https://www.anthropic.com/legal/consumer-terms) di Anthropic (correnti al **27 ottobre 2026**) danno loro lo stesso potere, più il diritto di cancellare i tuoi dati:
+I [Consumer Terms](https://www.anthropic.com/legal/consumer-terms) di Anthropic (correnti al **27 ottobre 2026**) aggiungono il diritto di cancellare i tuoi dati:
 
 > "Possiamo **modificare, sospendere o dismettere** i Servizi o il tuo accesso ai Servizi."
 > "In caso di terminazione... possiamo **a nostra opzione cancellare qualsiasi Materiale o altro dato** associato al tuo account."
 
-E per i clienti business, i [Commercial Terms](https://www.anthropic.com/legal/commercial-terms) di Anthropic (correnti al **27 ottobre 2026**) aggiungono la sospensione per motivi di costo:
+E i [Commercial Terms](https://www.anthropic.com/legal/commercial-terms) di Anthropic (correnti al **27 ottobre 2026**) per i clienti business:
 
 > "Anthropic può **sospendere** l'accesso del Cliente... se Anthropic ritiene ragionevolmente o determina che... la fornitura dei Servizi al Cliente è vietata dalla legge applicabile **o comporterebbe un aumento significativo del costo di fornitura dei Servizi**."
 
@@ -72,17 +81,29 @@ E per i clienti business, i [Commercial Terms](https://www.anthropic.com/legal/c
 
 Non è teorico. Aziende hanno avuto account sospesi a metà progetto, con mesi di lavoro e dati clienti bloccati dietro uno screen di login. Il processo di appello esiste, ma è lento, e nel frattempo, il tuo lavoro si ferma.
 
-Per un'azienda che ha costruito un workflow intorno a un abbonamento cloud AI, una sospensione dell'account non è un fastidio. È uno shutdown operativo.
+## La cosa che non possiedi: la skill
 
-**Non controlli se puoi continuare a usare il servizio. Lo controllano loro. E possono spegnerlo.**
+Questo è il punto che la maggior parte dei post non nomina, e il più importante.
 
-### 4. I tuoi dati — e la tua conoscenza — attraversano un oceano
+Quando usi un abbonamento cloud AI per costruire un workflow — un processo di revisione documenti, un sistema di triage, un agente che fa il lavoro dentro i tuoi sistemi — stai costruendo una **skill**. Una skill è: il set di istruzioni che dice all'AI come fare il lavoro, le regole dell'azienda, i toni, i guardrail, l'integrazione con i tuoi sistemi (ERP, CRM, fatture), i pattern che hai affinato nel tempo.
 
-Ogni prompt che invii a un servizio cloud AI USA porta con sé i tuoi dati: nomi dei clienti, prezzi, margini, termini fornitori, documenti interni. I [ToS](https://openai.com/policies/terms-of-use/) di OpenAI (correnti al **27 ottobre 2026**) dicono che non vengono usati per addestrare il modello. Va bene. Ma sono **processati su server che non possiedi, in una giurisdizione che non controlli, sotto leggi che non hai scritto tu.**
+Quella skill è un asset. Ha un valore. L'hai costruito — o l'hai pagato a chi l'ha costruita. Ma dove vive?
+
+Vive **nell'account**. Nel tuo profilo ChatGPT o Claude. Sui loro server. Sui loro database. Legato al tuo login.
+
+Quando il vendor chiude l'account — e i Termini glielo permettono, come abbiamo appena visto — la skill muore con esso. Non la puoi esportare. Non la puoi portare su un altro sistema. Non la puoi trasferire. Era un affitto, e l'affitto è finito.
+
+Con un agente locale, la skill è un **file**. Sta su un disco che possiedi. È codice, configurazione, e logica — cose che puoi copiare, versionare, trasferire, e mantenere. Non è legata a un account. Non è soggetta a una clausola di terminazione. Se domani decidi di cambiare hardware, la skill si trasferisce. Se decidi di spegnere l'agente per un mese, la skill è ancora lì, intatta.
+
+**La skill è la cosa più preziosa che costruisci con l'AI. Su un abbonamento, non è tua. Su un agente locale, lo è.**
+
+## I tuoi dati attraversano un oceano — e la tua conoscenza pure
+
+Ogni prompt che invii a un servizio cloud AI USA porta con sé i tuoi dati: nomi dei clienti, prezzi, margini, termini fornitori, documenti interni. I [ToS](https://openai.com/policies/terms-of-use/) di OpenAI dicono che non vengono usati per addestrare il modello. Va bene. Ma sono **processati su server che non possiedi, in una giurisdizione che non controlli, sotto leggi che non hai scritto tu.**
 
 I dati attraversano un oceano. Stanno in un'infrastruttura di un terzo. Sono governati da un ToS che dice "possiamo usare i Content per fornire, mantenere, sviluppare e migliorare i nostri Servizi." L'opt-out esiste, ma è sepolto, e non cambia il fatto che i dati fisicamente hanno lasciato il tuo edificio.
 
-Anthropic è più esplicito sulla proprietà dei dati — i loro [Commercial Terms](https://www.anthropic.com/legal/commercial-terms) (correnti al **27 ottobre 2026**) stabiliscono "Il Customer Content è Confidenziale del Cliente" e "Anthropic non può addestrare modelli sul Customer Content dai Servizi." È rassicurante. Ma i dati stanno comunque sui loro server, nella loro giurisdizione, sotto i loro ToS. E i loro [Consumer Terms](https://www.anthropic.com/legal/consumer-terms) (correnti al **27 ottobre 2026**) aggiungono:
+Anthropic è più esplicito sulla proprietà dei dati — i loro [Commercial Terms](https://www.anthropic.com/legal/commercial-terms) stabiliscono "Il Customer Content è Confidenziale del Cliente" e "Anthropic non può addestrare modelli sul Customer Content dai Servizi." È rassicurante. Ma i dati stanno comunque sui loro server, nella loro giurisdizione, sotto i loro ToS. E i [Consumer Terms](https://www.anthropic.com/legal/consumer-terms) aggiungono:
 
 > "Possiamo usare i Materials per **fornire, mantenere e migliorare i Servizi e per sviluppare altri prodotti e servizi, incluso l'addestramento dei nostri modelli**, a meno che tu non opti fuori dall'addestramento attraverso le impostazioni del tuo account."
 
@@ -94,48 +115,48 @@ Non è una sanzione GDPR in attesa di succedere. È un'esposizione strutturale. 
 
 **Non controlli dove vanno i tuoi dati o cosa ci succede. Lo controllano loro. Ed è dall'altra parte del mondo.**
 
-## Cosa cambia l'agente locale
+## Cosa cambia quando possiedi il sistema
 
-ILAI on-prem elimina tutti e quattro i rischi — che l'abbonamento sia OpenAI o Anthropic:
+Un agente locale inverte ogni punto. Non è una questione di prezzo — è una questione di architettura.
 
-| Rischio | Abbonamento cloud | ILAI on-prem |
+| | Abbonamento cloud | Agente locale |
 |---|---|---|
-| Costo token | Sovvenzionato, può cambiare in qualsiasi momento | **Fisso.** Niente fatturazione a token. L'hardware è tuo. |
-| Restrizioni d'uso | Le loro policy, aggiornate unilateralmente (entrambi, OpenAI e Anthropic, se ne riservano il diritto) | **Nessuna.** È la tua macchina, le tue regole. |
-| Sospensione account | Possono fermarti, senza preavviso | **Impossibile.** L'hardware è nel tuo ufficio. |
-| Sovranità dati | Server USA/Irlanda, giurisdizione di un terzo | **Il tuo ufficio.** I dati non escono mai dall'edificio. |
+| **Il modello** | Loro. Gira sui loro server. | Tuo. Gira sul tuo hardware. |
+| **La skill** | Vive nell'account. Muore con l'account. | File sul tuo disco. Tu la possiedi, la versioni, la trasferisci. |
+| **Il costo** | Sovvenzionato. Può cambiare con 30 giorni di preavviso. | Fisso. Hardware che possiedi, manutenzione che controlli. |
+| **Le regole** | Le loro Usage Policies, aggiornate unilateralmente. | Le tue. È la tua macchina. |
+| **L'accesso** | Possono sospenderlo o terminarlo, senza preavviso. | Impossibile spegnerlo. L'hardware è nel tuo ufficio. |
+| **I dati** | Attraversano un oceano. Giurisdizione di un terzo. | Restano nel tuo edificio. |
 
-I numeri:
+La differenza non è "più costoso" o "meno costoso". È **chi possiede cosa**. E la risposta a quella domanda decide tutto il resto: il costo a lungo termine, la continuità operativa, la proprietà della skill, e dove stanno i tuoi dati.
 
-- **Setup: €8.000** (integrazione, skill, deployment)
-- **Hardware: ~€5.000** (server GPU, lo compri tu, è tuo)
-- **In corso: solo manutenzione.** Niente abbonamento mensile. Niente fattura token. Niente fatturazione a pagina, a ora. Voice, OCR, agente — in fisso.
+## ILAI: il sistema che possiedi
 
-Primo anno: ~€15.000–18.000. Secondo anno: manutenzione. Terzo anno: manutenzione. Il costo non cresce con l'uso, con l'organico, o con le decisioni di prezzo del vendor.
+ILAI on-prem è un agente locale. La skill è costruita per il tuo processo, l'integrazione è fatta nei tuoi sistemi, e l'hardware è un server che compri e possiedi.
 
-## ILAI on-cloud: parti ora, migra quando vuoi
+- **La skill è tua.** È un file sul tuo disco. Puoi versionarla, trasferirla, mantenerla. Non è legata a un account.
+- **L'hardware è tuo.** Un server GPU nel tuo ufficio. Lo compri tu. È tuo.
+- **Il costo non cresce con l'uso.** Niente fatturazione a token. Niente per pagina, per ora, per utente. Voice, OCR, agente — in fisso.
+- **I dati non escono dall'edificio.** Niente oceano. Niente giurisdizione di un terzo.
+- **Nessuno può spegnerlo.** Non c'è un account da sospendere. C'è un server nel tuo ufficio.
 
-Se €13.000 di setup sono troppi per questo trimestre, ILAI on-cloud è la strada:
+ILAI on-cloud è la strada per chi vuole partire ora: la skill è la stessa, l'integrazione è la stessa, ma l'hardware è su infrastruttura italiana (Seeweb, inferenza certificata Regolo Zero Data Retention). I dati restano in Italia. E quando sei pronto a passare on-prem, la skill, la logica dell'integrazione, e i pattern di lavoro si trasferiscono. La migrazione è un passo hardware + deployment, non una ricostruzione.
 
-- **Setup: €5.000 + €350/mese.** La skill è costruita per il tuo processo, l'integrazione è fatta, i dati restano su infrastruttura italiana (Seeweb, inferenza certificata Regolo Zero Data Retention).
-- I €350/mese coprono l'unità dedicata, la skill, e la manutenzione. Non a persona. Non a token.
-- Quando sei pronto a passare on-prem, la skill, la logica dell'integrazione, e i pattern di lavoro si trasferiscono. La migrazione è un passo hardware + deployment, non una ricostruzione.
-
-Parti in settimane, non in mesi. Passi on-prem quando ha senso per il tuo budget e la tua tolleranza al rischio. Non sei bloccato — sei su un percorso.
+Parti in settimane. Passi on-prem quando ha senso per il tuo budget e la tua tolleranza al rischio. Non sei bloccato — sei su un percorso.
 
 ## Il confronto onesto
 
 | La tua situazione | La strada giusta |
 |---|---|
 | Vuoi una chat per domande personali | **Abbonamento cloud.** Va bene per quello. Non è quello che vendiamo. |
-| Vuoi il lavoro fatto, nei tuoi sistemi, con i tuoi dati che restano | **ILAI on-prem.** Tutti e quattro i rischi eliminati. |
+| Vuoi il lavoro fatto, nei tuoi sistemi, con i tuoi dati che restano | **Agente locale.** Possiedi la skill, l'hardware, e i dati. |
 | Vuoi partire ora e migrare on-prem più tardi | **ILAI on-cloud.** Infrastruttura italiana, zero data retention, percorso verso on-prem. |
-| Hai un team di ingegneria che costruisce software | **Build DIY.** €15–25K il primo anno, lo possiedi tu, lo mantieni tu. Ha senso se è il tuo mestiere. |
+| Hai un team di ingegneria che costruisce software | **Build DIY.** Lo possiedi tu, lo mantieni tu. Ha senso se è il tuo mestiere. |
 
-Il numero che conta non è la fee mensile. È la domanda sotto: **chi controlla il costo, le regole, l'accesso, e i dati.** Con un abbonamento — OpenAI o Anthropic — la risposta è sempre "il vendor." Con un agente locale, la risposta è "tu."
+La domanda che conta non è "quanto costa al mese". È: **chi controlla il costo, le regole, l'accesso, e i dati?** Con un abbonamento — OpenAI o Anthropic — la risposta è sempre "il vendor." Con un agente locale, la risposta è "tu."
 
 ---
 
 [Nel prossimo post di questa serie](/it/build-vs-buy-agente), guarderemo la domanda che segue: costruire l'agente da soli vs prenderlo pronto — il costo reale in tempo, denaro, e la bolletta ambientale di una GPU che gira 24/7 nel tuo ufficio.
 
-[Vuoi vedere i numeri applicati al processo della tua azienda? Parliamone.](/it/ilai/cloud/)
+[Vuoi capire cosa significa per la tua azienda? Parliamone.](/it/ilai/cloud/)
