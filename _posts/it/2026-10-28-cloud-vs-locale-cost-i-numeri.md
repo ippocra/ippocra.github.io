@@ -1,11 +1,11 @@
 ---
-title: "AI cloud vs AI locale: cosa stai davvero comprando quando firmi un abbonamento"
+title: "AI cloud vs AI locale: il costo vero di un abbonamento"
 categories: ai, business, cost
-excerpt: "Un abbonamento cloud AI è un affitto: il modello non è tuo, la skill vive nell'account, i dati attraversano un oceano, e i Termini di Servizio danno al vendor il diritto di spegnere tutto. Un agente locale inverte ogni punto. Ecco cosa significa, citando le clausole reali."
+excerpt: "Quanto costa davvero un'AI in cloud rispetto a una locale? Il prezzo in fattura non è il costo reale: è il prezzo di un affitto. Il modello non è tuo, la skill vive nell'account, i dati attraversano un oceano, e i Termini di Servizio danno al vendor il diritto di spegnere tutto. Un agente locale inverte ogni punto. Ecco cosa significa, citando le clausole reali."
 permalink: /cloud-vs-locale-cost
 lang: it
-description: "Un abbonamento cloud AI non è un acquisto: è un affitto. Il modello non è tuo, la skill vive nell'account, i dati attraversano un oceano, e i Termini di Servizio danno al vendor il diritto di spegnere tutto. Un agente locale inverte ogni punto: la skill, l'hardware e i dati sono tuoi. Ecco cosa significa, citando le clausole reali."
-keywords: AI cloud vs locale, rischio abbonamento AI, Termini di Servizio ChatGPT, sovranità dati AI, agente AI on-premise, proprietà skill AI, AI per PMI, rischio sospensione account AI, costo nascosto AI cloud, AI privata azienda, proprietà vs affitto AI, confronto costi AI
+description: "Costo AI cloud vs locale: l'abbonamento non è un acquisto, è un affitto. Il modello non è tuo, la skill vive nell'account, i dati attraversano un oceano, e i Termini di Servizio danno al vendor il diritto di spegnere tutto. Un agente locale inverte ogni punto: la skill, l'hardware e i dati sono tuoi. Ecco cosa significa, citando le clausole reali."
+keywords: costo AI cloud vs locale, cloud AI vs on-premise cost, AI cloud vs AI locale, rischio abbonamento AI, proprietà skill AI, sovranità dati AI, agente AI on-premise, AI per PMI, costo nascosto AI cloud, AI privata azienda
 page_id: cloud-vs-local-cost
 header:
     teaser: /assets/images/screenshots/cloud-vs-local-ownership-teaser.webp
@@ -20,7 +20,7 @@ tags: ilai, ai
   Il seme è ciò che possiedi: piccolo, silenzioso, tuo. L'albero è ciò che ne cresce: la skill, i workflow, i pattern che hai costruito negli anni. Su un abbonamento, l'albero non è tuo. Su un agente locale, lo è.
 </p>
 
-Questo post non dice "l'AI locale è più economica" — non lo è, sulla carta. Dice qualcos'altro: **la differenza non è il prezzo. È chi possiede cosa.** E per capire cosa stai davvero firmando, bisogna leggere i Termini di Servizio — non la landing page.
+Questo post non dice "l'AI locale è più economica" — non lo è, sulla carta. Dice qualcos'altro: **la differenza non è il prezzo. È chi possiede cosa.** E per capire cosa stai davvero firmando, bisogna leggere i Termini di Servizio — non la landing page. Come già scritto nel [post che ha aperto questa serie](/agente-o-chat), la domanda non è "agent o chat": è chi possiede la capacità che ti fa lavorare.
 
 ## Come funziona davvero un abbonamento cloud AI
 
@@ -152,7 +152,5 @@ Parti in settimane. Passi on-prem quando ha senso per il tuo budget e la tua tol
 La domanda che conta non è "quanto costa al mese". È: **chi controlla il costo, le regole, l'accesso, e i dati?** Con un abbonamento — OpenAI o Anthropic — la risposta è sempre "il vendor." Con un agente locale, la risposta è "tu."
 
 ---
-
-[Nel prossimo post di questa serie](/it/build-vs-buy-agente), guarderemo la domanda che segue: costruire l'agente da soli vs prenderlo pronto — il costo reale in tempo, denaro, e la bolletta ambientale di una GPU che gira 24/7 nel tuo ufficio.
 
 [Vuoi capire cosa significa per la tua azienda? Parliamone.](/it/ilai/cloud/)

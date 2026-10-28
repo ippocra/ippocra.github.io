@@ -1,11 +1,11 @@
 ---
-title: "Cloud AI vs local AI: what you're actually buying when you sign a subscription"
+title: "Cloud AI vs local AI: the real cost of a subscription"
 categories: ai, business, cost
-excerpt: "A cloud AI subscription is a rental: the model isn't yours, the skill lives in the account, the data crosses an ocean, and the Terms of Service give the vendor the right to turn everything off. A local agent inverts every point. Here's what that means, quoting the actual clauses."
+excerpt: "What does cloud AI really cost compared to a local box? The price on the invoice isn't the real cost — it's the price of a rental. The model isn't yours, the skill lives in the account, the data crosses an ocean, and the Terms of Service give the vendor the right to turn everything off. A local agent inverts every point. Here's what that means, quoting the actual clauses."
 permalink: /cloud-vs-local-cost
 lang: en
-description: "A cloud AI subscription isn't a purchase: it's a rental. The model isn't yours, the skill lives in the account, your data crosses an ocean, and the Terms of Service give the vendor the right to turn everything off. A local agent inverts every point: the skill, the hardware, and the data are yours. Here's what that means, quoting the actual clauses."
-keywords: cloud AI vs local AI, AI subscription risk, ChatGPT Terms of Service, AI data sovereignty, AI agent on-premise, AI skill ownership, AI for SMEs, AI account termination risk, hidden AI cloud cost, private AI for business, AI ownership vs rental, AI cost comparison
+description: "Cloud AI vs local AI cost: a subscription isn't a purchase, it's a rental. The model isn't yours, the skill lives in the account, your data crosses an ocean, and the Terms of Service give the vendor the right to turn everything off. A local agent inverts every point: the skill, the hardware, and the data are yours. Here's what that means, quoting the actual clauses."
+keywords: cloud AI vs local AI cost, costo AI cloud vs locale, cloud AI vs on-premise cost, AI subscription risk, AI skill ownership, AI data sovereignty, AI agent on-premise, AI for SMEs, hidden AI cloud cost, private AI for business
 page_id: cloud-vs-local-cost
 header:
     teaser: /assets/images/screenshots/cloud-vs-local-ownership-teaser.webp
@@ -20,7 +20,7 @@ tags: ilai, ai
   The seed is what you own: small, quiet, yours. The tree is what grows from it: the skill, the workflows, the patterns you've built over years. On a subscription, the tree isn't yours. On a local agent, it is.
 </p>
 
-This post doesn't say "local AI is cheaper" — it isn't, on paper. It says something else: **the difference isn't the price. It's who owns what.** And to understand what you're actually signing, you have to read the Terms of Service — not the landing page.
+This post doesn't say "local AI is cheaper" — it isn't, on paper. It says something else: **the difference isn't the price. It's who owns what.** And to understand what you're actually signing, you have to read the Terms of Service — not the landing page. As the [post that opened this series](/en/agent-or-chat) already put it, the question isn't "agent or chat": it's who owns the capability that does the work.
 
 ## How a cloud AI subscription actually works
 
@@ -152,7 +152,5 @@ You start in weeks. You move to on-prem when it makes sense for your budget and 
 The question that matters isn't "how much does it cost per month." It's: **who controls the cost, the rules, the access, and the data?** With a subscription — OpenAI or Anthropic — the answer is always "the vendor." With a local agent, the answer is "you."
 
 ---
-
-[In the next post in this series](/en/build-vs-buy-agent), we'll look at the question that follows: build the agent yourself vs take it ready — the real cost in time, money, and the environmental bill of a GPU that runs 24/7 in your office.
 
 [Want to understand what this means for your company? Let's talk.](/en/ilai/cloud/)
