@@ -365,9 +365,9 @@ it: &DEFAULT_IT
   comment_success_msg        : "Grazie per il tuo commento! Verrà visualizzato nel sito una volta che sarà approvato."
   comment_error_msg          : "C'è stato un errore con il tuo invio. Assicurati che tutti i campi richiesti siano stati completati e riprova."
   loading_label              : "Caricamento..."
-  search_label_text          :
+  search_label_text          : "Cerca articoli…"
   search_placeholder_text    : "Inserisci termini di ricerca..."
-  search_algolia_no_results  :
+  search_algolia_no_results  : "Nessun risultato"
   results_found              : "Risultati"
   back_to_top                : "Vai su"
 it-IT:
