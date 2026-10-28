@@ -68,8 +68,6 @@ author:
 
 # Site Footer
 footer:
-  # Render only the current year in the copyright (no "since - year" range)
-  since: "2026"
   links:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
