@@ -20,7 +20,7 @@ It's the question we get more and more, and it's the right question. It deserves
 <p style="text-align:center;">
   <img src="/assets/images/screenshots/agent-vs-chat-teaser.webp" alt="A lighthouse beam cutting through a storm — your data guided home, in-house" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
-<p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.9rem;">
+<p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.6rem;">
   In the storm of a connected world, your data is scattered at sea. The lighthouse is the local box that guides it home — in-house, where it belongs.
 </p>
 
