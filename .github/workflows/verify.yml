@@ -8,10 +8,10 @@ jobs:
   verify:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout/fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby/086ffb1a2090c870a3f881cc91ea83aa4243d408 # v1
+        uses: ruby/setup-ruby@086ffb1a2090c870a3f881cc91ea83aa4243d408 # v1
         with:
           ruby-version: '3.2'
           bundler-cache: true
