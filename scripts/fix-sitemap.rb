@@ -9,7 +9,7 @@
 require 'fileutils'
 require 'set'
 
-site_dir = File.expand_path(ARGV[0] || File.join('..', '_site'), __dir__)
+site_dir = File.expand_path(ARGV[0] || File.join('..', '_site'), Dir.pwd)
 sitemap_path = File.join(site_dir, 'sitemap.xml')
 
 abort "Sitemap not found at #{sitemap_path}" unless File.exist?(sitemap_path)
@@ -100,6 +100,52 @@ redirect_stub_targets.each do |rel_path, canonical_path|
     File.write(index_file, stub_content)
     puts "Created redirect stub #{target_dir}/index.html → https://ippocra.com#{canonical_path}"
   end
+end
+
+# ── Strip dead entries (A12, 2026-11-11) ────────────────────────────────────
+# The sitemap template lists redirect_from URLs for every language (jekyll-polyglot),
+# but jekyll-redirect-from only generates stub files for the default language
+# (plus a handful of /el/ stubs from an earlier consolidation). Result: phantom
+# /en/ entries — and a couple of /el/ ones — with no backing file → live 404s
+# that Google keeps re-indexing. Drop any <loc> whose URL has no file in the build.
+# (The /ippo/*.html copied-HTML pages ARE generated into _site, so they pass.)
+existing_urls = Set.new(doc_content.scan(/<loc>(.*?)<\/loc>/).flatten)
+dead_entries = []
+existing_urls.each do |url|
+  path = url.sub(%r{^https://ippocra.com}, '').sub(%r{^/+}, '').sub(%r{/+$}, '')
+  candidates =
+    if path.empty?
+      [File.join(site_dir, 'index.html')]
+    elsif path.end_with?('.html')
+      [File.join(site_dir, path)]
+    else
+      [File.join(site_dir, "#{path}.html"), File.join(site_dir, path, 'index.html')]
+    end
+  dead_entries << url unless candidates.any? { |c| File.exist?(c) }
+end
+# The /el/ variant stubs are generated for 6 of the 7 redirects; the 7th
+# (…diagnostico-directamente-online) plus the bare /el/come-visualizare are
+# still emitted by the sitemap template but never built. They 404 live, so
+# strip them explicitly regardless of local build state.
+%w[
+  /el/come-visualizzare-i-referti-medici-di-imaging-diagnostico-directamente-online
+  /el/come-visualizzare
+].each do |p|
+  u = "https://ippocra.com#{p}"
+  dead_entries << u if existing_urls.include?(u)
+end
+
+unless dead_entries.empty?
+  puts "Removing #{dead_entries.size} dead sitemap entries (no backing file in build):"
+  dead_entries.each { |u| puts "  - #{u}" }
+  dead_entries.each do |u|
+    # The sitemap template pretty-prints <url> blocks with newlines, so remove
+    # by regex on the <loc> content, not by exact string match.
+    escaped = Regexp.escape(u)
+    doc_content.gsub!(/<url>\s*<loc>#{escaped}<\/loc>\s*<\/url>\n?/, "")
+  end
+  # refresh existing_urls so the "add missing" step below doesn't re-add them
+  existing_urls = Set.new(doc_content.scan(/<loc>(.*?)<\/loc>/).flatten)
 end
 
 # ── Add missing pages ───────────────────────────────────────────────────────

@@ -227,6 +227,28 @@ if sitemap
   }
   check("sitemap: no /ippo/ root (trailing slash)", ippo_root_trailing.empty?)
   check("sitemap: has /ilai/",      sitemap_locs.any? { |u| u.include?('/ilai/') })
+
+  # A12 gate: every sitemap URL must have a backing file in the build.
+  # Catches phantom redirect_from URLs (jekyll-polyglot lists every language,
+  # jekyll-redirect-from only builds stubs for the default language) and any
+  # other URL with no page behind it → live 404s Google keeps re-indexing.
+  dead_sitemap = sitemap_locs.reject do |u|
+    path = u.sub(%r{^https://ippocra\.com}, '').sub(%r{^/+}, '').sub(%r{/+$}, '')
+    candidates =
+      if path.empty?
+        [File.join(SITE_DIR, 'index.html')]
+      elsif path.end_with?('.html')
+        [File.join(SITE_DIR, path)]
+      else
+        [File.join(SITE_DIR, "#{path}.html"), File.join(SITE_DIR, path, 'index.html')]
+      end
+    candidates.any? { |c| File.exist?(c) }
+  end
+  if dead_sitemap.empty?
+    check("sitemap: no dead entries (all #{sitemap_locs.size} URLs have backing files)", true)
+  else
+    dead_sitemap.sort.each { |u| check("sitemap: #{u} has no backing file (would 404 live)", false) }
+  end
   # /company-profile/ is a hidden page (not in sitemap) — check file exists instead
   true
 else
