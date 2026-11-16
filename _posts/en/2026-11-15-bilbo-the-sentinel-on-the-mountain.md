@@ -24,7 +24,27 @@ tags: ilai, privacy
   <iframe src="https://www.youtube.com/embed/fVBWs3PvCbE" title="Bilbo — the sentinel that never sleeps" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 </div>
 
-Every piece of software in production is built on thousands of third-party libraries. And every day, somewhere, someone publishes a vulnerability in one of them. A CVE. A number. A door that stays open until you close it.
+# It's a new world
+
+With the advancement of AI agents and tools, we have seen the rising of the security risk. In particular, we also
+have witnessed the diminishing lag between a security problem being flagged and then begin exploited.
+
+This is due to the fact that attackers are employing AI agents to take down systems, as soon as there is a 
+possibility. This means that teams need to react way faster than they used to.
+
+Bilbo was built to help solving this problem. The loop is pretty simple:
+
+  - bilbo understands the requirements and dependencies you use in your repository
+  - bilbo crosschecks this with the CVE databases, and see if anything is applicable
+  - bilbo propose a patch which solve that CVE(s), and then runs the tests locally to make sure everything is ready
+  - bilbo opens a PR (on github or where you keep your code), so a human can review it and decide to merge it.
+
+What really makes this work very nicely, is that bilbo has been written to be driven by an agent, that can 
+step in when the deterministic approach cannot solve the current problem. Bilbo is built to be driven by ILAI,
+and to be run daily, to be always on the lookout and patch whatever new CVEs gets discovered.
+
+This gives you a way to keep track on whatever is happening, keep your code private, and integrate it in your 
+ILAI deployment.
 
 Patching is no longer a human decision. It's a process. And the gap between "vulnerability published" and "your server is patched" is exactly where the damage happens.
 
