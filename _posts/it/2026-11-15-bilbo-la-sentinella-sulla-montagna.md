@@ -26,7 +26,7 @@ tags: ilai, privacy
 
 # Un mondo nuovo
 
-Con l'avanzamento degli agenti AI e dei tool, abbiamo visto crescere il rischio sicurezza. In particolare, abbiamo anche assistito alla riduzione del lag tra una vulnerabilità segnalata e il suo sfruttamento.
+Con l'avanzamento degli agenti AI e dei tools, abbiamo visto crescere il rischio sicurezza. In particolare, abbiamo anche assistito alla riduzione del lag tra una vulnerabilità segnalata e il suo sfruttamento.
 
 Questo perché gli attaccanti stanno impiegando agenti AI per colpire i sistemi, non appena c'è una possibilità. Questo significa che i team devono reagire molto più velocemente di prima.
 
