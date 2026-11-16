@@ -26,25 +26,21 @@ tags: ilai, privacy
 
 # It's a new world
 
-With the advancement of AI agents and tools, we have seen the rising of the security risk. In particular, we also
-have witnessed the diminishing lag between a security problem being flagged and then begin exploited.
+With the advancement of AI agents and tools, we have seen the rise of security risk. In particular, we have also witnessed the diminishing lag between a security problem being flagged and then being exploited.
 
 This is due to the fact that attackers are employing AI agents to take down systems, as soon as there is a 
 possibility. This means that teams need to react way faster than they used to.
 
 Bilbo was built to help solving this problem. The loop is pretty simple:
 
-  - bilbo understands the requirements and dependencies you use in your repository
-  - bilbo crosschecks this with the CVE databases, and see if anything is applicable
-  - bilbo propose a patch which solve that CVE(s), and then runs the tests locally to make sure everything is ready
-  - bilbo opens a PR (on github or where you keep your code), so a human can review it and decide to merge it.
+  - Bilbo understands the requirements and dependencies you use in your repository
+  - Bilbo cross-checks this with the CVE databases and sees if anything is applicable
+  - Bilbo proposes a patch that solves that CVE, then runs the tests locally to make sure everything is ready
+  - Bilbo opens a PR (on GitHub or wherever you keep your code), so a human can review it and decide to merge it.
 
-What really makes this work very nicely, is that bilbo has been written to be driven by an agent, that can 
-step in when the deterministic approach cannot solve the current problem. Bilbo is built to be driven by ILAI,
-and to be run daily, to be always on the lookout and patch whatever new CVEs gets discovered.
+What really makes this work very nicely is that Bilbo has been written to be driven by an agent that can step in when the deterministic approach cannot solve the current problem. Bilbo is built to be driven by ILAI, and to be run daily — always on the lookout, patching whatever new CVEs get discovered.
 
-This gives you a way to keep track on whatever is happening, keep your code private, and integrate it in your 
-ILAI deployment.
+This gives you a way to keep track of whatever is happening, keep your code private, and integrate it in your ILAI deployment. As we explored in [Welcome ILAI](/welcome-ilai), the local agent runs on hardware you own — and Bilbo is the first security workload built for it.
 
 Patching is no longer a human decision. It's a process. And the gap between "vulnerability published" and "your server is patched" is exactly where the damage happens.
 
@@ -94,7 +90,7 @@ This is where it changes.
 
 Bilbo is the deterministic core. ILAI is the generalizer.
 
-ILAI is Ippocra's local agent. It runs on hardware you own. The data doesn't leave the building. And when Bilbo hits a problem the deterministic can't solve, the handoff is a structured packet: the context, the constraints, the resume command.
+ILAI is Ippocra's local agent — [the one we introduced in June](/welcome-ilai). It runs on hardware you own. The data doesn't leave the building. And when Bilbo hits a problem the deterministic can't solve, the handoff is a structured packet: the context, the constraints, the resume command.
 
 Three cases where the deterministic stops and the agent takes over:
 
@@ -128,7 +124,7 @@ There are great tools for finding vulnerabilities. Dependabot, Snyk, Trivy, OSV-
 
 - **The list isn't the action.** It gives you 751 CVEs and says "do something." Who decides which one is critical? Who decides which one actually touches the code I use? This question requires an engineer. And the engineer has 750 other questions in the queue.
 
-- **The triage is in the cloud.** Snyk sends your lockfiles to its servers. Your dependency patterns, your lockfiles, your stack — they pass through a third party's infrastructure.
+- **The triage is in the cloud.** Snyk sends your lockfiles to its servers. Your dependency patterns, your lockfiles, your stack — they pass through a third party's infrastructure. [As we broke down in the cost post](/cloud-vs-local-cost-the-numbers), the cloud model doesn't just cost more — it gives someone else a copy of your data.
 
 - **No one verifies.** The PR opens. Do the tests pass? Did the bump break something? Is the vulnerability actually closed? Most tools don't know.
 
@@ -161,4 +157,4 @@ If you have software running in production — a site, an app, a server, an API 
 
 *Security isn't a project. It's a process. And the process doesn't run by itself — unless there's a system that runs it for you, an agent that solves where the system stops, and a human who says "yes."*
 
-[As we saw in the post on [the real cost of a cloud AI subscription](/cloud-vs-local-cost-the-numbers), the question isn't "cloud or local." It's who owns what. Let's talk.](/en/ilai/)
+[As we saw in [the real cost of a cloud AI subscription](/cloud-vs-local-cost-the-numbers), the question isn't "cloud or local." It's who owns what. Let's talk.](/en/ilai/)

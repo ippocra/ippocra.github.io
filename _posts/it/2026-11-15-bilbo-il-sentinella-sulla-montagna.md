@@ -24,6 +24,23 @@ tags: ilai, privacy
   <iframe src="https://www.youtube.com/embed/fVBWs3PvCbE" title="Bilbo — The Watcher" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 </div>
 
+# Un mondo nuovo
+
+Con l'avanzamento degli agenti AI e dei tool, abbiamo visto crescere il rischio sicurezza. In particolare, abbiamo anche assistito alla riduzione del lag tra una vulnerabilità segnalata e il suo sfruttamento.
+
+Questo perché gli attaccanti stanno impiegando agenti AI per colpire i sistemi, non appena c'è una possibilità. Questo significa che i team devono reagire molto più velocemente di prima.
+
+Bilbo è stato creato per risolvere questo problema. Il loop è semplice:
+
+  - Bilbo capisce i requisiti e le dipendenze che usi nel tuo repository
+  - Bilbo le confronta con i database CVE e vede se c'è qualcosa di applicabile
+  - Bilbo propone una patch che risolve quella CVE, e poi gira i test localmente per assicurarsi che tutto sia pronto
+  - Bilbo apre una PR (su GitHub o dove tieni il tuo codice), così un essere umano può rivederla e decidere di mergiare.
+
+Quello che rende il tutto molto efficace è che Bilbo è stato scritto per essere guidato da un agente, che può intervenire quando l'approccio deterministico non può risolvere il problema attuale. Bilbo è costruito per essere guidato da ILAI, e per girare ogni giorno — sempre in allerta, a patchare le nuove CVE che vengono scoperte.
+
+Questo ti dà un modo per tenere traccia di cosa sta succedendo, mantenere il tuo codice privato, e integrarlo nel tuo deployment ILAI. Come abbiamo esplorato in [Benvenuto ILAI](/benvenuto-ilai), l'agente locale gira su hardware che possiedi — e Bilbo è il primo workload di sicurezza costruito per esso.
+
 Ogni software che gira in produzione è costruito su migliaia di librerie di terze parti. E ogni giorno, da qualche parte, qualcuno pubblica una vulnerabilità in una di quelle librerie. Un CVE. Un numero. Una porta aperta che, finché non la chiudi, resta aperta.
 
 La patching non è più una decisione umana. È un processo. E il gap tra "vulnerabilità pubblicata" e "il tuo server è patchato" è esattamente dove succede il danno.
@@ -74,7 +91,7 @@ Qui è dove la cosa cambia.
 
 Bilbo è il core deterministico. ILAI è il generalizer.
 
-ILAI è l'agente locale di Ippocra. Gira su hardware che possiedi. I dati non escono dall'edificio. E quando Bilbo incontra un problema che il deterministico non risolve, il handoff è un packet strutturato: il contesto, i vincoli, il comando per riprendere.
+ILAI è l'agente locale di Ippocra — [quello che abbiamo presentato a giugno](/benvenuto-ilai). Gira su hardware che possiedi. I dati non escono dall'edificio. E quando Bilbo incontra un problema che il deterministico non risolve, il handoff è un packet strutturato: il contesto, i vincoli, il comando per riprendere.
 
 Tre casi in cui il deterministico si ferma e l'agente prende il sopravvento:
 
@@ -108,7 +125,7 @@ Esistono ottimi strumenti per trovare le vulnerabilità. Dependabot, Snyk, Trivy
 
 - **La lista non è l'azione.** Ti dà 751 CVE e ti dice "fai tu." Chi decide quale è critico? Chi decide quale tocca davvero il codice che uso? Questa domanda richiede un ingegnere. E l'ingegnere ha altre 750 domande in coda.
 
-- **Il triage è in cloud.** Snyk manda i tuoi lockfile ai suoi server. I tuoi pattern di dipendenza, i tuoi lockfile, il tuo stack — passano da un'infrastruttura di terzi.
+- **Il triage è in cloud.** Snyk manda i tuoi lockfile ai suoi server. I tuoi pattern di dipendenza, i tuoi lockfile, il tuo stack — passano da un'infrastruttura di terzi. [Come abbiamo analizzato nel post sui costi](/cloud-vs-locale-cost), il modello cloud non costa solo di più — dà a qualcun altro una copia dei tuoi dati.
 
 - **Nessuno verifica.** La PR si apre. I test girano? Il bump ha rotto qualcosa? La vulnerabilità è davvero chiusa? La maggior parte degli strumenti non lo sa.
 
