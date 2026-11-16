@@ -8,13 +8,13 @@ description: "Bilbo: the deterministic process that runs daily, opens PRs, verif
 keywords: Bilbo, security sentinel, dependency security, CVE automated patching, ILAI, local security, audit trail, software vulnerabilities, autonomous patching, security for SMBs, vulnerability management, open source security, local AI security, software supply chain security
 page_id: bilbo-sentinel
 header:
-    teaser: /assets/images/screenshots/bilbo-sentinel-teaser.webp
+    teaser: /assets/images/screenshots/bilbo-sentinel-cover.webp
 classes: wide
 tags: ilai, privacy
 ---
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/bilbo-sentinel-teaser.webp" alt="A sentinel on top of a mountain peak: a solitary, small figure gazing at the horizon. Below, the valley. Above, the sky. It does not threaten. It watches." style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/bilbo-sentinel-cover.webp" alt="Bilbo — The Watcher. A sentinel on top of a mountain peak, gazing at the horizon. The Ippocra logo in the corner." style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
 <p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.9rem;">
   The sentinel does not sleep. It does not come down from the mountain. It does not ask for permission. It watches the horizon. And when it sees something, it does what it must: flags, proposes, verifies. And when morning comes, the valley is safer than it was.
