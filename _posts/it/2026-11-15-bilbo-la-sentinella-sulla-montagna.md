@@ -14,7 +14,7 @@ tags: ilai, privacy
 ---
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/bilbo-sentinel-cover.webp" alt="Bilbo — The Watcher. Un sentinella sulla cima di una montagna, che guarda l'orizzonte. Il logo Ippocra nell'angolo." style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/bilbo-sentinel-cover.webp" alt="Bilbo — The Watcher. Una sentinella sulla cima di una montagna, che guarda l'orizzonte. Il logo Ippocra nell'angolo." style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
 <p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.9rem;">
   La sentinella non dorme. Non scende in valle. Non ti chiede permesso. Guarda l'orizzonte. E quando vede qualcosa, fa quello che deve: segnala, propone, verifica. E quando arriva il mattino, la valle è più sicura di prima.
@@ -61,7 +61,7 @@ Bilbo è un software deterministico. Non ragiona. Non improvvisa. Fa le stesse c
 
 **5. Registra.** Scrive ogni azione in un log append-only, hash-chained. Ogni entry è collegata all'entry precedente con un hash. Modificare un'entry passata rompe la catena. È una prova di integrità, non un database. Non puoi falsificare la storia.
 
-Quello che Bilbo **non** fa: non decide cosa patchare. Non improvvisa una soluzione. Non ragiona su un repository che non ha mai visto. Non ripara una rottura a livello di codice. È un sentinella preciso, non un ingegnere.
+Quello che Bilbo **non** fa: non decide cosa patchare. Non improvvisa una soluzione. Non ragiona su un repository che non ha mai visto. Non ripara una rottura a livello di codice. È una sentinella precisa, non un ingegnere.
 
 E questo è il punto. Il deterministico è affidabile, ripetibile, e verificabile. Ma si ferma quando il lavoro va oltre il deterministico.
 
