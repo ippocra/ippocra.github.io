@@ -20,38 +20,38 @@ tags: ilai, ai
   oggi è diventato molto più facile grazie a fatture-pec. Già pronto per essere utilizzato in maniera agentica.
 </p>
 
-
-Ogni Azienda italiana o ogni professionista ha bisogno di una PEC per legge. Per fare la fatturazione è possibile utilizzare la PEC, sia per riceverle che per mandarle.
-
-Ricevere le fatture è abbastanza semplice, invece per mandarle il processo è più complesso. Per questo molte soluzioni
-ricadono nel, o utilizzare il sistema offerto dall'agenzia delle entrate direttamente, o quello di affidarsi ad un 
-gestionale per la fatturazione elettronica.
+Ricevere le fatture per PEC è abbastanza semplice. E' il sistema principale. Invece per mandarle il processo è più complesso. Per questo molte soluzioni ricadono nel, o utilizzare il sistema offerto dall'agenzia delle entrate direttamente, o quello di affidarsi ad un gestionale per la fatturazione elettronica.
 
 Forse conoscete come funziona, una volta che avete scelto un gestionale per la fatturazione, questo vi affida un codice univoco, che diventa il metodo da segnalare in tutte le fatture che riceverete, in maniera tale da averle tutte all'interno di quel sistema. Inoltre questo sistema si occuperá di creare le fatture in formato XML e mandarle 
 attraverso il sistema SDI.
 
+Il problema classico è che la fatturazione è **staccata dal resto**. Un software a sé, da aggiornare a sé, da interrogare a sé. Un sistema che non parla con il CRM, con il sistema contabile, con i dati che già hai. E rimane in capo al personale dell'azienda la necessitá di copiare i dati, trasferirli da un sistema ad un altro, e far si che siano in 
+sincrono.
 
-Il problema classico è che la fatturazione è **staccata dal resto**. Un software a sé, da aggiornare a sé, da interrogare a sé. Un sistema che non parla con il CRM, con il contabile, con i dati che già hai. E tu ci stai dentro: copi, trasferisci i dati, ricontrolli.
+## La fatturazione a se stante è il problema
 
-## La fatturazione staccata è il problema
+Ogni azienda che fattura lo sa: c'è il CRM, c'è il gestionale, c'è il software contabile, c'è il software di contabilizzazione. E tra uno e l'altro c'è sempre una copia, un controllo, e del tempo dedicato a far si che 
+questi dati siano presenti e corretti. Tantissimo tempo.
 
-Ogni azienda che fattura lo sa: c'è il CRM, c'è il gestionale, c'è il software contabile, c'è la PEC. E tra uno e l'altro c'è sempre una copia, un controllo, un dato che non torna.
-
-Non è un problema di tool. È un problema di **discontinuità**. La fatturazione non è un processo: è un'isola. E ogni isola ha un ponte che qualcuno deve attraversare a mano.
+Non è un problema di strumenti. È un problema di **discontinuità**. La fatturazione non è un processo: è un'isola. 
+E ogni isola ha un ponte che qualcuno deve attraversare a mano.
 
 ## La PEC è il canale che già hai
 
-Lo SdI accetta fatture via PEC. Niente accreditamento. Niente certificato. Niente software di fatturazione da installare a sé.
-
-Se hai già un gestionale con SDICoop e funziona per te, va benissimo — usalo. Ma se la fatturazione per te è ancora staccata, la PEC è il canale che già possiedi. Hai già i dati. Bisogna in qualche modo unirli.
+Lo SdI accetta le fatture anche via PEC. Una strada meno battuta di quella classica. Se hai già un gestionale di 
+fatturazione che ti fornisce un codice univoco, e funziona per te, va benissimo — usalo. Ma se la fatturazione 
+rimane come funzione a se stante, è difficile da integrare con gli altri processi, forse vale la pena considerare la 
+PEC, visto che è un canale che già possiedi. Hai già i dati. Bisogna in qualche modo unirli.
 
 ## La storia: volevamo la fatturazione dentro
 
-Questa era la nostra situazione. Ogni volta che guardavamo le opzioni per la fatturazione, il risultato era lo stesso: un sistema a sé. Da aggiornare a sé, da interrogare a sé, da collegare a sé. Staccato dal CRM. Staccato dal contabile. Staccato dal flusso che già girava.
+Questa era la nostra situazione. Ogni volta che guardavamo le opzioni per la fatturazione, il risultato era lo stesso: un sistema a sé. Da aggiornare a sé, da interrogare a sé, da collegare in qualche modo. Di solito senza API o un'interfaccia 
+efficace. Staccato dal nostro smart-CRM. Staccato dal nostro software che si occupa del contabile e controllo di gestione. Staccato dal nostro flusso che già girava.
 
-Volevamo la fatturazione *dentro*: dentro il CRM, dentro i dati che già avevamo, dentro il flusso che già funzionava.
+Volevamo la fatturazione *dentro*: dentro al nostro sistema, semplice, veloce. Capace di interagire con il nostro CRM, di 
+utilizzare i dati che già avevamo, dentro il flusso che già funzionava.
 
-Per questo abbiamo costruito fattura-pec. Non come un'alternativa al gestionale. Come il modo per avere la fatturazione senza doverla staccare dal resto.
+Per questo abbiamo costruito fattura-pec. Si interseca con i nostri dati, puó essere utilizzato in maniera agentica. Non è un'alternativa ad un gestionale di fatturazione. E' un sistema per evitare la **discontinuitá**.
 
 ## Dici "fammi la fattura". Il resto lo fa lui.
 
@@ -94,4 +94,4 @@ SDI via PEC.
 
 Visto che ci sei, mi fai anche la previsione di cassa per il prossimo mese, partendo dai dati della banca? Perché 
 quando tutto è connesso, diventa parte di un flusso, ed hai la capacità di andare più veloce, e sapere esattamente
-quello che succede all'interno della tua azienda.
+quello che succede all'interno della tua azienda. 
