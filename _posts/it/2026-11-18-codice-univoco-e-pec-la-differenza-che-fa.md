@@ -16,14 +16,22 @@ tags: ilai, ai
   <img src="/assets/images/screenshots/fattura-pec-teaser.webp" alt="Una busta PEC che si chiude da sola su un tavolo di legno — la fattura che si manda da sola" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
 <p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.6rem;">
-  La PEC esiste già. Da oggi non la ricevi più solo: la mandi. E la manda un agente.
+  Ogni azienda ha bisogno di avere una PEC per legge. E' possibile sia ricevere che mandare fatture tramite PEC. Da 
+  oggi è diventato molto piú facile grazie a fatture-pec. Giá pronto per essere utilizzato in maniera agentica.
 </p>
 
-**"Ma non posso già mandare fatture via PEC?"**
 
-Sì. Puoi. Se hai un software di fatturazione, compili il FatturaPA, lo validi, lo invii. Funziona.
+Ogni Azienda italiana o ogni professionista ha bisogno di una PEC per legge. Per fare la fatturazione è possibile utilizzare la PEC, sia per riceverle che per mandarle.
 
-Il problema non è che non si *può*. Il problema è che la fatturazione è **staccata dal resto**. Un software a sé, da aggiornare a sé, da interrogare a sé. Un sistema che non parla con il CRM, con il contabile, con i dati che già hai. E tu ci stai dentro: copi, incolla, ricontrolli.
+Ricevere le fatture è abbastanza semplice, invece per mandarle il processo è piú complesso. Per questo molte soluzioni
+ricadono nel, o utilizzare il sistema offerto dall'agenzia delle entrate direttamente, o quello di affidarsi ad un 
+gestionale per la fatturazione elettronica.
+
+Forse conoscete come funziona, una volta che avete scelto un gestionale per la fatturazione, questo vi affida un codice univoco, che diventa il metodo da segnalare in tutte le fatture che riceverete, in maniera tale da averle tutte all'interno di quel sistema. Inoltre questo sistema si occuperá di creare le fatture in formato XML e mandarle 
+attraverso il sistema SDI.
+
+
+Il problema classico è che la fatturazione è **staccata dal resto**. Un software a sé, da aggiornare a sé, da interrogare a sé. Un sistema che non parla con il CRM, con il contabile, con i dati che già hai. E tu ci stai dentro: copi, trasferisci i dati, ricontrolli.
 
 ## La fatturazione staccata è il problema
 
@@ -33,13 +41,9 @@ Non è un problema di tool. È un problema di **discontinuità**. La fatturazion
 
 ## La PEC è il canale che già hai
 
-La PEC è la casella di posta elettronica certificata. Ogni azienda in Italia ne ha una. Le mail mandate a quella casella sono verificate e, per legge, hanno un certo tipo di valore.
+Lo SdI accetta fatture via PEC. Niente accreditamento. Niente certificato. Niente software di fatturazione da installare a sé.
 
-E lo SdI accetta fatture via PEC. Niente accreditamento. Niente certificato. Niente software di fatturazione da installare a sé.
-
-Se hai già un gestionale con SDICoop e funziona per te, va benissimo — usalo. Ma se la fatturazione per te è ancora staccata, la PEC è il canale che già possiedi.
-
-E ha un vantaggio che il canale SDICoop non ha: genera **ricevute di accettazione e consegna** con valore legale. Non solo sai che la fattura è arrivata allo SdI — hai la prova certificata che il destinatario l'ha ricevuta.
+Se hai già un gestionale con SDICoop e funziona per te, va benissimo — usalo. Ma se la fatturazione per te è ancora staccata, la PEC è il canale che già possiedi. Hai giá i dati. Bisogna in qualche modo unirli.
 
 ## La storia: volevamo la fatturazione dentro
 
@@ -53,15 +57,16 @@ Per questo abbiamo costruito fattura-pec. Non come un'alternativa al gestionale.
 
 Detto "fammi la fattura", l'agente fa questo:
 
-**Legge i dati di partenza.** Prende la scheda cliente dal CRM (o dalla sorgente che gli hai indicato). Estrae denominazione, P.IVA, codice fiscale, indirizzo. Se manca un dato, lo chiede. Non lo inventa.
+**Legge i dati di partenza.** Prende la scheda cliente dal CRM (o dalla sorgente che gli hai indicato). Estrae denominazione, P.IVA, codice fiscale, indirizzo e PEC o codice unico. Se manca un dato, lo chiede. Non lo inventa.
 
-**Costruisce il file FatturaPA.** Mappa i dati nel formato XML che lo SdI richiede. Il file è identico a quello che produrrebbe qualsiasi software di fatturazione — la differenza è che non l'hai compilato tu.
+**Costruisce il file FatturaPA.** Mappa i dati nel formato XML che lo SdI richiede. Il file è identico a quello che produrrebbe qualsiasi software di fatturazione — la differenza è che viene generato da fattura-pec.
 
-**Lo valida. Prima di ogni invio.** Il file passa attraverso un gate di validazione: struttura, regole di business, coerenza dei dati. Se non è valido, l'agente non lo invia. Lo corregge e riprova.
+**Lo valida. Prima di ogni invio.** Il file passa attraverso un gate di validazione: struttura, regole di business, coerenza dei dati. Se non è valido, l'agente non lo invia. Lo corregge e lo valida.
 
-**Lo invia via PEC.** L'SMTP PEC invia l'XML all'indirizzo SdI corretto. La prima fattura va a `sdi01@pec.fatturapa.it`; le successive all'indirizzo dedicato che lo SdI comunica. L'agente impara quell'indirizzo e lo memorizza.
+**Lo invia via PEC.** Avendo a disposizione sia la capacitá di leggere le email che quello per inviarle, l'agente 
+lo invia all'indirizzo SdI corretto. La prima fattura va a `sdi01@pec.fatturapa.it`; le successive all'indirizzo dedicato che lo SdI comunica. L'agente impara quell'indirizzo e lo memorizza.
 
-**Riconcilia.** Quando la notifica arriva in PEC, l'agente la legge, la associa alla fattura, e aggiorna lo stato: *emessa → ricevuta da SdI → consegnata al destinatario*. Se arriva uno scarto, legge il codice di errore, corregge, e se siamo entro i 5 giorni risubmette con lo stesso progressivo.
+**Riconcilia.** Quando la notifica arriva in PEC, l'agente la legge, la associa alla fattura, e aggiorna lo stato: *emessa → ricevuta da SdI → consegnata al destinatario*. Se arriva uno scarto, legge il codice di errore, corregge, e se siamo entro i 5 giorni la rinvia con lo stesso progressivo.
 
 **Tutto questo senza che tu compili un modulo. Senza che tu apra un software di fatturazione. Senza che tu copi un dato da un foglio a un altro.**
 
@@ -77,14 +82,16 @@ Questo vale anche per il **software contabile**: le fatture sono già strutturat
 
 ## Tutto questo gira in locale
 
-L'intero flusso — lettura dei dati, costruzione del file, validazione, invio PEC, riconciliazione — gira su **hardware dedicato**. Non c'è un cloud che riceve i dati dei clienti. Non c'è un intermediario che sa quanto fatturi e a chi.
+L'intero flusso — lettura dei dati, costruzione del file, validazione, invio PEC, riconciliazione — gira su ILAI. 
 
 Questo non è un dettaglio tecnico. È la differenza tra un sistema che ti dice "la fattura è stata inviata" e un sistema che *sa* — perché il dato è stato letto, scritto e riconciliato da un processo che gira dentro i tuoi confini.
 
 La fatturazione non è un modulo da compilare. Non è un software da aggiornare a sé. È uno stato che si aggiorna da solo, dentro il flusso che già hai. Come abbiamo visto nel post sul [CRM intelligente](/il-crm-intelligente), lo stato della compagnia non è un database da alimentare: è il risultato di un sistema che lavora.
 
-[Parliamo.](/contatti)
+ILAI, come al solito, è quel collega di lavoro a vui puoi dire, mi fai la fattura di X EUR per il cliente Y. Trovi
+i dati nel nostro CRM. Quando è pronta fammela ricontrollare. Poi creami la copia di cortesia, e manda la fattura allo
+SDI via PEC.
 
----
-
-<em>Correlato: [Benvenuto ILAI](/benvenuto-ilai) — il fondamento: i dati non escono. [Cloud vs locale: il costo](/cloud-vs-locale-cost) — perché il cloud non funziona per le imprese.</em>
+Visto che ci sei, mi fai anche la previsione di cassa per il prossimo mese, partendo dai dati della banca? Perche' 
+quando tutto è connesso, diventa parte di un flusso, ed hai la capacitá di andare piú veloce, e sapere esattamente
+quello che succede all'interno della tua azienda.
