@@ -1,10 +1,10 @@
 ---
-title: "Fattura-pec: the invoice that sends itself"
+title: "Fattura-pec: why not give your unique code to a billing provider"
 categories: news
-excerpt: "Every company in Italy has a PEC. Until now you received it. Today you send it too — and an agent sends it, from the data you already have. The flow becomes operational."
+excerpt: "Every billing system asks for your unique code. From that moment, your invoices flow through their system. PEC is the way out."
 lang: en
-description: "Fattura-pec: the agent reads data from the CRM, builds the FatturaPA, validates it, and sends it via PEC. All local. The flow becomes operational, not a procedure."
-keywords: fattura-pec, PEC, e-invoicing, SdI, FatturaPA, electronic invoice, send invoice via PEC, agentic, ILAI, Smart CRM, invoicing automation, accounting software, sensitive data, privacy, unique code
+description: "Fattura-pec: send e-invoices via PEC without giving your unique code to a billing provider. The agent reads data from the CRM, builds the FatturaPA, validates it, and sends it. All local."
+keywords: fattura-pec, PEC, e-invoicing, SdI, FatturaPA, electronic invoice, send invoice via PEC, unique code, billing software, ILAI, Smart CRM, invoicing automation, accounting software, sensitive data, privacy
 page_id: fattura-pec-unique-code
 header:
     teaser: /assets/images/screenshots/fattura-pec-teaser.webp
@@ -23,19 +23,35 @@ tags: ilai, ai
 
 Yes. You can. If you have invoicing software, you fill in the FatturaPA, validate it, send it. It works.
 
-The problem isn't that you *can't*. The problem is that you have to *do it yourself*: open the software, copy the data from the CRM, fill in the form, validate, send, check the PEC inbox to see if it arrived. Every invoice. Every time.
+The problem isn't that you *can't*. The problem is that almost every billing system asks you for one thing first: **the unique code.** And from that moment, your invoices no longer flow through you. They flow through their system.
 
-We built fattura-pec to remove that "do it yourself."
+## The unique code is a choice you can't take back
 
-## The starting point: the data you already have
+The SdI accepts invoices via PEC or via unique code. It doesn't care which: it needs a way to deliver inbound invoices to you.
 
-To issue an invoice you need three things: the client's data, the invoice items, and the sequential number.
+If you give the unique code to a billing provider — web, desktop, bank-integrated — inbound invoices arrive there. Not on your PEC. Inside their system. And you don't control that system.
 
-In a manual flow, this data is scattered: in an Excel sheet, in an email, in a proposal you already sent, in the head of the person invoicing. Gathering it is the part that costs time — not the invoice itself.
+If you switch providers, inbound invoices change destination. If the provider shuts down, inbound invoices stop arriving. If you want a second opinion, the data is in their database, not yours.
 
-In our case, the starting data is in the **Ippocra Smart CRM**: the client card already carries name, VAT number, unique code, interaction history. The agent reads it, without you having to copy it from anywhere else.
+We chose not to make that choice. Not because billing providers are bad — because invoicing data shouldn't depend on a third-party provider you don't control.
 
-But the point isn't our CRM. It's that **the data can come from wherever you want**: an accepted proposal, an order, a spreadsheet, an API. The agent knows where to look and how to map the data.
+## PEC is the channel you already have
+
+PEC is the certified electronic mailbox. Every company in Italy has one. Emails sent to that mailbox are verified and, by law, carry a certain type of legal value.
+
+And the SdI accepts invoices via PEC. No unique code to give to anyone. No accreditation. No certificate.
+
+If you already have a billing provider with SDICoop and it works for you, that's fine — use it. But if you don't, or if you don't want to be tied to one, PEC is the channel you already own.
+
+And it has an advantage the SDICoop channel doesn't: it generates **acceptance and delivery receipts** with legal value. You don't just know the invoice reached the SdI — you have certified proof that the recipient received it.
+
+## The story: we didn't have a billing provider
+
+This was our situation. We had chosen not to tie ourselves to a specific billing provider. Not on principle — because every time we looked at the options, invoicing became detached from everything else. A system by itself, to be updated by itself, to be queried by itself.
+
+We wanted invoicing *inside*: inside the CRM, inside the data we already had, inside the flow that was already running.
+
+That's why we built fattura-pec. Not as an alternative to a billing provider. As the way to have invoicing without having to hand it to a third-party provider.
 
 ## You say "make me the invoice." The rest, it does.
 
@@ -53,12 +69,6 @@ Say "make me the invoice," and the agent does this:
 
 **All of this without you filling in a form. Without you opening an invoicing software. Without you copying a data point from one sheet to another.**
 
-## PEC is the channel you already have
-
-The SdI accepts invoices via SDICoop too — but that requires a qualified PFX certificate and an accreditation as an AdE intermediary. If you have it, use it, it's fine.
-
-If you don't, PEC is the channel you already own: every company in Italy has a PEC, it requires no certificates or accreditations. And it has an advantage SDICoop doesn't: it generates **acceptance and delivery receipts** with legal value. You don't just know the invoice reached the SdI — you have certified proof that the recipient received it.
-
 ## The state updates on its own
 
 The point isn't "send the invoice." It's that **every invoice has a state, and the state updates on its own**.
@@ -75,7 +85,9 @@ The entire flow — reading data, building the file, validation, PEC send, recon
 
 This isn't a technical detail. It's the difference between a system that tells you "the invoice was sent" and a system that *knows* — because the data was read, written, and reconciled by a process that runs inside your boundaries.
 
-As we saw in the post on the [intelligent CRM](/the-smart-crm), the company's state isn't a database to feed: it's the result of a system that works. Invoicing is the same pattern, with an agent that closes the loop.
+The invoice isn't a form to fill in. It's a state that updates on its own. As we saw in the post on the [intelligent CRM](/the-smart-crm), the company's state isn't a database to feed: it's the result of a system that works.
+
+[Let's talk.](/contacts)
 
 ---
 

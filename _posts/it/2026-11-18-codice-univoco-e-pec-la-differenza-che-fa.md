@@ -1,10 +1,10 @@
 ---
-title: "Fattura-pec: la fattura che si manda da sola"
+title: "Fattura-pec: perché non dare il codice univoco a un gestionale"
 categories: news
-excerpt: "Ogni azienda ha una PEC. Finora la ricevi. Da oggi la mandi anche tu — e la manda un agente, dai dati che hai già. Il flusso diventa operativo."
+excerpt: "Ogni gestionale ti chiede il codice univoco. Da quel momento le fatture girano nel loro sistema. La PEC è la via d'uscita."
 lang: it
-description: "Fattura-pec: l'agente legge i dati dal CRM, costruisce il FatturaPA, lo valida e lo invia via PEC. Tutto in locale. Il flusso diventa operativo, non una procedura."
-keywords: fattura-pec, PEC, fatturazione elettronica, SdI, FatturaPA, fattura elettronica, inviare fattura via PEC, agentico, ILAI, Smart CRM, automazione fatturazione, software contabile, dati sensibili, privacy, codice univoco
+description: "Fattura-pec: invia fatture via PEC senza dare il codice univoco a un gestionale. L'agente legge i dati dal CRM, costruisce il FatturaPA, lo valida e lo invia. Tutto in locale."
+keywords: fattura-pec, PEC, fatturazione elettronica, SdI, FatturaPA, fattura elettronica, inviare fattura via PEC, codice univoco, gestionale, ILAI, Smart CRM, automazione fatturazione, software contabile, dati sensibili, privacy
 page_id: fattura-pec-unique-code
 header:
     teaser: /assets/images/screenshots/fattura-pec-teaser.webp
@@ -23,19 +23,35 @@ tags: ilai, ai
 
 Sì. Puoi. Se hai un software di fatturazione, compili il FatturaPA, lo validi, lo invii. Funziona.
 
-Il problema non è che non si *può*. Il problema è che devi *farlo tu*: aprire il software, copiare i dati dal CRM, compilare il modulo, validare, inviare, controllare la PEC per vedere se è arrivata. Ogni fattura. Ogni volta.
+Il problema non è che non si *può*. Il problema è che quasi tutti i gestionali ti chiedono una cosa prima: **il codice univoco.** E da quel momento, le fatture non girano più da te. Girano nel loro sistema.
 
-Noi abbiamo costruito fattura-pec per togliere quel "farlo tu".
+## Il codice univoco è una scelta che non puoi fare indietro
 
-## Il punto di partenza: i dati che hai già
+Lo SdI accetta fatture via PEC o via codice univoco. Non gli importa quale: gli serve un modo per consegnarti le fatture in entrata.
 
-Per emettere una fattura servono tre cose: i dati del cliente, le voci della fattura, e il numero di progressivo.
+Se dai il codice univoco a un gestionale — web, desktop, integrato con la banca — le fatture in entrata arrivano lì. Non sulla tua PEC. Dentro il loro sistema. E tu non controlli quel sistema.
 
-In un flusso manuale, questi dati stanno sparsi: in un foglio Excel, in una mail, in una proposta che hai già inviato, nella testa di chi fattura. Raccoglierli è la parte che costa tempo — non la fattura in sé.
+Se cambi gestionale, le fatture in entrata cambiano destinazione. Se il gestionale chiude, le fatture in entrata smettono di arrivare. Se vuoi un secondo parere, il dato sta nel loro database, non nel tuo.
 
-Nel nostro caso, i dati di partenza sono nel **Smart CRM di Ippocra**: la scheda cliente porta già denominazione, P.IVA, codice univoco, cronologia delle interazioni. L'agente li legge, senza che tu debba copiarli da nessun'altra parte.
+Noi abbiamo scelto di non fare questa scelta. Non perché i gestionali siano cattivi — perché il dato della fatturazione non dovrebbe dipendere da un fornitore terzo che non controlli.
 
-Ma il punto non è il nostro CRM. È che **i dati possono venire da dove vuoi**: un preventivo accettato, un ordine, un foglio di calcolo, una API. L'agente sa dove guardare e come mappare il dato.
+## La PEC è il canale che già hai
+
+La PEC è la casella di posta elettronica certificata. Ogni azienda in Italia ne ha una. Le mail mandate a quella casella sono verificate e, per legge, hanno un certo tipo di valore.
+
+E lo SdI accetta fatture via PEC. Niente codice univoco da dare a nessuno. Niente accreditamento. Niente certificato.
+
+Se hai già un gestionale con SDICoop e funziona per te, va benissimo — usalo. Ma se non ce l'hai, o se non vuoi legarti, la PEC è il canale che già possiedi.
+
+E ha un vantaggio che il canale SDICoop non ha: genera **ricevute di accettazione e consegna** con valore legale. Non solo sai che la fattura è arrivata allo SdI — hai la prova certificata che il destinatario l'ha ricevuta.
+
+## La storia: non avevamo un gestionale
+
+Questa era la nostra situazione. Avevamo scelto di non legarci a un gestore di fatturazione specifico. Non per principio — perché ogni volta che lo guardavamo, la fatturazione diventava staccata dal resto. Un sistema a sé, da aggiornare a sé, da interrogare a sé.
+
+Volevamo la fatturazione *dentro*: dentro il CRM, dentro i dati che già avevamo, dentro il flusso che già girava.
+
+Per questo abbiamo costruito fattura-pec. Non come un'alternativa al gestionale. Come il modo per avere la fatturazione senza doverla dare a un fornitore terzo.
 
 ## Dici "fammi la fattura". Il resto lo fa lui.
 
@@ -53,12 +69,6 @@ Detto "fammi la fattura", l'agente fa questo:
 
 **Tutto questo senza che tu compili un modulo. Senza che tu apra un software di fatturazione. Senza che tu copi un dato da un foglio a un altro.**
 
-## La PEC è il canale che già hai
-
-Lo SdI accetta fatture anche tramite SDICoop — ma quello richiede un certificato PFX qualificato e un accreditamento come intermediario AdE. Se ce l'hai, usalo, va benissimo.
-
-Se non ce l'hai, la PEC è il canale che già possiedi: ogni azienda in Italia ha una PEC, non richiede né certificati né accreditamenti. E ha un vantaggio che SDICoop non ha: genera **ricevute di accettazione e consegna** con valore legale. Non solo sai che la fattura è arrivata allo SdI — hai la prova certificata che il destinatario l'ha ricevuta.
-
 ## Lo stato si aggiorna da solo
 
 Il punto non è "invia la fattura". È che **ogni fattura ha uno stato, e lo stato si aggiorna da solo**.
@@ -75,7 +85,9 @@ L'intero flusso — lettura dei dati, costruzione del file, validazione, invio P
 
 Questo non è un dettaglio tecnico. È la differenza tra un sistema che ti dice "la fattura è stata inviata" e un sistema che *sa* — perché il dato è stato letto, scritto e riconciliato da un processo che gira dentro i tuoi confini.
 
-Come abbiamo visto nel post sul [CRM intelligente](/il-crm-intelligente), lo stato della compagnia non è un database da alimentare: è il risultato di un sistema che lavora. La fatturazione è lo stesso pattern, con un agente che chiude il ciclo.
+La fattura non è un modulo da compilare. È uno stato che si aggiorna da solo. Come abbiamo visto nel post sul [CRM intelligente](/il-crm-intelligente), lo stato della compagnia non è un database da alimentare: è il risultato di un sistema che lavora.
+
+[Parliamo.](/contatti)
 
 ---
 
