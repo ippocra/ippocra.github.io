@@ -1,10 +1,10 @@
 ---
-title: "Codice univoco e PEC: la differenza che fa"
+title: "Fattura-PEC: la fattura diventa agentica"
 categories: news
-excerpt: "Il codice univoco non è la PEC. Ecco come la PEC si integra nel flusso di fatturazione di Ippocra — e perché lo stato resta al punto, tutto in locale con ILAI."
+excerpt: "Ogni azienda ha una PEC. Da oggi, via fattura-pec, la mandi, non solo la ricevi. E la manda un agente, dai dati che hai già. Il flusso diventa operativo."
 lang: it
-description: "Codice univoco e PEC: cos'è, come si usa, e come si integra nel flusso di fatturazione. Lo stato, sempre al punto, tutto in locale con ILAI."
-keywords: codice univoco, PEC, fatturazione elettronica, SdI, FatturaPA, fattura elettronica, PEC aziendale, ILAI, Smart CRM, software contabile, dati sensibili, privacy
+description: "Fattura-pec: inviare fatture via PEC in modo agentico. L'agente legge i dati dal CRM, costruisce il FatturaPA, lo valida e lo invia. Il flusso diventa operativo."
+keywords: fattura-pec, PEC, fatturazione elettronica, SdI, FatturaPA, fattura elettronica, inviare fattura via PEC, agentico, ILAI, Smart CRM, automazione fatturazione, software contabile, dati sensibili, privacy, codice univoco
 page_id: fattura-pec-unique-code
 header:
     teaser: /assets/images/screenshots/fattura-pec-teaser.webp
@@ -13,107 +13,124 @@ tags: ilai, ai
 ---
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/fattura-pec-teaser.webp" alt="Codice univoco e PEC: due chiavi diverse per la stessa cassetta delle lettere" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/fattura-pec-teaser.webp" alt="Una fattura elettronica che parte da un dato nel CRM e arriva come PEC certificata — senza passaggi manuali" style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
 <p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.6rem;">
-  La cassetta delle lettere esiste già. Il codice univoco è l'indirizzo. La PEC è la posta che ci arriva.
+  La PEC esiste già. Da oggi non la ricevi più solo: la mandi. E la manda un agente.
 </p>
 
-**Il codice univoco non è la PEC. Sono due cose diverse, e confonderle costa tempo — a volte anche fatture respinte.**
+**Ogni azienda in Italia ha una PEC. Finora, nella fatturazione elettronica, la PEC era un punto di arrivo: il posto dove le fatture entravano. Da oggi, è anche un punto di partenza.**
 
-Se fatturi in Italia, queste due parole le senti insieme. Ma fanno due lavori diversi, e capire la differenza è il primo passo per tenere il flusso pulito.
+Con fattura-pec, il flusso si chiude. Non solo ricevi le fatture via PEC e le parsei automaticamente: le *invi* anche tu via PEC, in modo agentico, partendo dai dati che hai già.
 
-## Cos'è il codice univoco
+## Il punto di partenza: i dati che hai già
 
-Il **Codice di Destinatario** — comunemente detto codice univoco — è un identificativo che l'azienda riceve dall'IndicePA. Serve a dire al Sistema di Interscambio (SdI) *dove* recapitare la fattura: l'indirizzo PEC dove l'SdI deve consegnarla al destinatario.
+Per emettere una fattura elettronica servono:
+- i dati del cliente (denominazione, P.IVA, indirizzo, codice univoco);
+- le voci della fattura (descrizione, quantità, prezzo, aliquota IVA);
+- il numero di progressivo e la data.
 
-Per le P.A. è un codice a 6 caratteri (es. `M5UXCR1`). Per le aziende private B2B, il codice univoco può essere sostituito dalla P.IVA — ma il campo `CodiceDestinatario` nel file FatturaPA va comunque compilato, e il valore giusto dipende dal destinatario.
+In un flusso manuale, questi dati stanno sparsi: in un foglio Excel, in una mail, in una proposta che hai già inviato, nella testa di chi fattura. Raccoglierli è la parte che costa tempo — non la fattura in sé.
 
-**Il codice univoco è un campo del file. Non è un'email. Non è una cassetta.**
+Nel nostro caso, i dati di partenza sono nel **Smart CRM di Ippocra**: la scheda cliente porta già denominazione, P.IVA, codice univoco, e la cronologia delle interazioni. L'agente li legge, senza che tu debba copiarli da nessun'altra parte.
 
-## Cos'è la PEC
+Ma il punto non è che i dati siano nel nostro CRM specificamente. È che **i dati di partenza possono venire da qualsiasi sorgente**: un preventivo accettato, un ordine, un foglio di calcolo, una API. L'agente sa dove guardare e come mappare il dato.
 
-La **Posta Elettronica Certificata** è un sistema di email con valore legale: il mittente riceve una ricevuta di accettazione e una di consegna, che attestano in modo certificato l'avvenuto invio e l'avvenuta ricezione.
+## Cosa fa l'agente
 
-Per la fatturazione elettronica, la PEC è il **trasporto**: il canale attraverso cui l'SdI recapita la fattura al destinatario, e il canale attraverso cui tu puoi inviare la fattura *a* l'SdI.
+Detto "fammi la fattura", l'agente fa questo, in sequenza:
 
-**La PEC è la cassetta. Il codice univoco è l'indirizzo scritto sull'etichetta.**
+**1. Legge i dati di partenza.**
+Prende la scheda cliente dal CRM (o dalla sorgente che gli hai indicato). Estrae denominazione, P.IVA, codice univoco, indirizzo. Se il codice univoco non c'è, usa la P.IVA — che per i destinatari italiani è il valore corretto nel campo `CodiceDestinatario`.
 
-## Perché la distinzione conta in pratica
+**2. Costruisce il file FatturaPA.**
+Mappa i dati nel formato XML richiesto dallo SdI: `FatturaElettronica` con header, corpo, righe, riepilogo IVA. Il file è identico a quello che produrrebbe qualsiasi software di fatturazione — la differenza è che non l'hai compilato tu.
 
-Quando compili un file FatturaPA per un destinatario italiano, il campo `CodiceDestinatario` deve contenere:
-- il **codice univoco** (7 caratteri) del destinatario, se lo ha;
-- la **P.IVA** del destinatario, se è un'azienda privata;
-- `XXXXXXX` **solo** per destinatari esteri.
+**3. Lo valida localmente.**
+Prima di ogni invio, il file passa attraverso un gate: validazione XSD (struttura) + regole SdI (business rules). Il gate cattura gli errori che costano di più in pratica:
+- **Codice 00313** — `CodiceDestinatario=XXXXXXX` con destinatario italiano (va usato il codice univoco o la P.IVA);
+- **Codice 00422** — `DatiRiepilogo` non corrispondente alla somma delle righe;
+- **Codice 00472** — tipo documento TD21/TD27 usato per una fattura B2B (sono autofatture).
 
-Usare `XXXXXXX` per un destinatario italiano è un errore che l'SdI respinge al volo (Codice 00313). Usare un codice univoco sbagliato, o non aggiornato, significa che la fattura va in una cassetta diversa da quella giusta — e il destinatario non la riceve, o la riceve con ritardo.
+Se il file non è VALID, l'agente non lo invia. Lo corregge e riprova.
 
-La buona notizia: nel nostro Smart CRM, il codice univoco è un campo della scheda cliente. Lo inserisci una volta, e ogni fattura generata dal CRM lo porta già.
+**4. Lo invia via PEC.**
+L'SMTP PEC invia l'XML come allegato all'indirizzo SdI corretto. La prima fattura va a `sdi01@pec.fatturapa.it`; le successive all'indirizzo dedicato che lo SdI comunica nella prima risposta. L'agente impara quell'indirizzo e lo memorizza.
 
-## Come la PEC si integra nel flusso di Ippocra
+**5. Riconcilia.**
+Quando la prima notifica arriva in PEC (RicevutaConsegna), l'agente la legge, la associa alla fattura inviata, e aggiorna lo stato: *emessa → ricevuta da SdI → consegnata al destinatario*. Se arriva una notifica di scarto (RicevutaScarto), l'agente legge il codice di errore, corregge la fattura, e — se siamo entro i 5 giorni — la risubmette con lo stesso progressivo.
 
-Il flusso di fatturazione di Ippocra si muove su due binari:
+**Tutto questo senza che tu compili un modulo. Senza che tu apri un software di fatturazione. Senza che tu copi un dato da un foglio a un altro.**
 
-**In entrata** — il sistema legge la PEC aziendale in modo automatico:
-- Le fatture ricevute (XML FatturaPA) e le notifiche SdI (ricevute di consegna, scarti, esiti) arrivano nella casella PEC.
-- Il sistema le scarica, le classifica, le parse, e le associa al cliente o alla fattura in uscita corretta.
-- Ogni notifica di scarto (Codice 00313, 00422, 00472) viene segnalata con il motivo esatto, così la fattura viene corretta e risubmittata senza che tu debba cercare a mano l'errore.
+## Perché la PEC è il trasporto giusto
 
-**In uscita** — il sistema invia la fattura a SdI via PEC:
-- Il file FatturaPA viene validato localmente (XSD + regole SdI) prima di ogni invio.
-- L'SMTP PEC invia l'XML come allegato all'indirizzo SdI corretto.
-- La prima notifica dall'SdI (RicevutaConsegna) riporta il file di riepilogo: il sistema la riconcilia con la fattura inviata e aggiorna lo stato.
+La PEC non è l'unico canale per inviare fatture allo SdI. Esiste anche il canale SDICoop, che richiede un certificato PFX qualificato e un accreditamento come intermediario AdE.
 
-**Tutto questo gira in locale.** La PEC è un protocollo, non un servizio cloud: il server IMAP/SMTP è il nostro, il parser è il nostro, il database delle fatture è il nostro. Nessun dato passa da un intermediario.
+La PEC richiede **nessun requisito in più**:
+- nessuna accreditazione;
+- nessun certificato;
+- solo una casella PEC, che ogni azienda ha già.
 
-## Perché lo stato della compagnia resta al punto
+Il file FatturaPA è identico in tutti i canali — cambia solo il trasporto. Usare la PEC significa usare il canale che già possiedi, senza aggiungere infrastruttura.
 
-Il punto non è solo "invia la fattura." È che **ogni fattura ha uno stato, e lo stato è sempre aggiornabile in un unico posto**.
+E c'è un vantaggio che il canale SDICoop non ha: la PEC genera **ricevute di accettazione e consegna** con valore legale. Non solo sai che la fattura è arrivata allo SdI: hai la prova certificata che il destinatario l'ha ricevuta.
 
-Nel Smart CRM di Ippocra, la scheda cliente porta:
-- il codice univoco, la P.IVA, i dati anagrafici;
-- la cronologia delle fatture emesse e ricevute;
-- lo stato di ogni fattura: emessa, ricevuta da SdI, consegnata, scartata, corretta;
-- la fattura di cortesia PDF, generata dallo stesso dato.
+## Lo stato della compagnia, sempre al punto
 
-Quando una notifica di scarto arriva in PEC, lo stato della fattura nel CRM si aggiorna da solo. Non c'è un foglio Excel da aggiornare a mano, non c'è una mail da controllare, non c'è una domanda da fare a qualcuno. Lo stato è il risultato di un processo che legge la PEC, parse il file, e scrive il dato nel posto giusto.
+Il punto non è solo "invia la fattura." È che **ogni fattura ha uno stato, e lo stato si aggiorna da solo**.
 
-Questo vale anche per il **software contabile**: le fatture parseate sono già strutturate — date, importi, IVA, dati anagrafici — e pronte per essere importate o riconciliate. Il contabile non riparte da zero: parte da un dato pulito, già associato al cliente, già con lo stato aggiornato.
+Quando l'agente invia la fattura, la scheda cliente nel CRM si aggiorna:
+- fattura emessa, numero, data, importo;
+- stato: *inviata a SdI*;
+- quando la RicevutaConsegna arriva: *consegnata al destinatario*, con data e ora;
+- se arriva uno scarto: *scartata*, con il codice di errore e la motivazione.
 
-## Perché tutto questo tramite ILAI
+Non c'è un foglio Excel da aggiornare. Non c'è una mail da controllare. Non c'è una domanda da fare a qualcuno. Lo stato è il risultato di un processo che legge la PEC, parse il file, e scrive il dato nel posto giusto.
 
-La parte che cambia davvero non è il parser. È che **il parser gira su hardware che è nostro**.
+Questo vale anche per il **software contabile**: le fatture parseate sono già strutturate — date, importi, IVA, dati anagrafici, stato — e pronte per essere importate o riconciliate. Il contabile non riparte da zero: parte da un dato pulito, già associato al cliente, già aggiornato.
 
-Con ILAI, il trattamento delle fatture — la lettura della PEC, il parsing del XML, la riconciliazione con il CRM, la generazione della fattura di cortesia — avviene sul nostro hardware dedicato, con i nostri dati al sicuro. Non c'è un cloud che riceve i dati anagrafici dei clienti, non c'è un servizio che legge le fatture, non c'è un intermediario che sa quanto fatturi e a chi.
+## Perché tutto questo gira in locale
 
-Questo non è un dettaglio tecnico. È la differenza tra un sistema che ti dice "il tuo stato è questo" e un sistema che lo *sa*, perché il dato è stato letto e scritto da un processo che gira dentro i tuoi confini.
+L'intero flusso — lettura dei dati dal CRM, costruzione del file, validazione, invio PEC, riconciliazione — gira su **hardware dedicato**.
 
-[Come abbiamo visto nel post sul [CRM intelligente](/il-crm-intelligente), lo stato della compagnia non è un database da alimentare: è il risultato di un sistema che lavora. La fatturazione è lo stesso pattern.](/il-crm-intelligente)
+Non c'è un cloud che riceve i dati anagrafici dei clienti. Non c'è un servizio che legge le fatture. Non c'è un intermediario che sa quanto fatturi, a chi, e con quale stato.
+
+Questo non è un dettaglio tecnico. È la differenza tra un sistema che ti dice "la fattura è stata inviata" e un sistema che *sa* — perché il dato è stato letto, scritto e riconciliato da un processo che gira dentro i tuoi confini.
+
+[Come abbiamo visto nel post sul [CRM intelligente](/il-crm-intelligente), lo stato della compagnia non è un database da alimentare: è il risultato di un sistema che lavora. La fatturazione è lo stesso pattern, con un agente che chiude il ciclo.](/il-crm-intelligente)
 
 ---
 
 ## Domande Frequenti
 
-**Il codice univoco è lo stesso per tutte le fatture?**
+**Cos'è fattura-pec?**
 
-No. Il codice univoco è un identificativo *del destinatario*, non del mittente. Ogni azienda ha il proprio codice univoco, che va inserito nel campo `CodiceDestinatario` del file FatturaPA quando fatturi *a quell'azienda*. Per i destinatari italiani senza codice univoco, si usa la P.IVA.
+È il flusso di Ippocra per emettere fatture elettroniche via PEC in modo agentico. L'agente legge i dati di partenza (dal CRM o da altra sorgente), costruisce il file FatturaPA, lo valida localmente, lo invia via PEC allo SdI, e riconcilia le notifiche che arrivano. L'utente dice "fammi la fattura" — il resto lo fa il flusso.
+
+**Devo avere un software di fatturazione per usare fattura-pec?**
+
+No. Il flusso genera il file FatturaPA direttamente dai dati di partenza. Non c'è un modulo da compilare, non c'è un software di fatturazione da aprire. Il file è identico a quello che produrrebbe qualsiasi software — ma non l'hai compilato tu.
+
+**Posso usare un'altra sorgente oltre al CRM?**
+
+Sì. I dati di partenza possono venire da un preventivo accettato, un ordine, un foglio di calcolo, una API. L'agente sa come mappare il dato nel formato FatturaPA. Il CRM è la sorgente più comoda perché ha già i dati strutturati, ma non è l'unica.
+
+**Cosa succede se lo SdI scarta la fattura?**
+
+L'agente riceve la notifica di scarto (RicevutaScarto) in PEC, legge il codice di errore (00313, 00422, 00472, ecc.), corregge la fattura e — se siamo entro 5 giorni — la risubmette con lo stesso progressivo. Lo stato nel CRM si aggiorna con il motivo dello scarto, senza che tu debba cercare l'errore a mano.
+
+**I dati escono dal nostro ambiente?**
+
+No. L'intero flusso gira su hardware dedicato. I dati anagrafici dei clienti, gli importi, le fatture: tutto resta dentro. È lo stesso principio di [ILAI](/benvenuto-ilai): il controllo sui dati non è una funzione, è il fondamento.
 
 **La PEC è obbligatoria per la fatturazione elettronica?**
 
-No. L'SdI può recapitare le fatture anche tramite canali diversi (SDICoop, email ordinaria in alcuni casi). Ma la PEC è il canale più diffuso per le aziende private, e nel nostro flusso è il canale che usiamo: è il trasporto nativo del sistema, con ricevute di accettazione e consegna.
-
-**Cosa succede se una fattura viene scartata dall'SdI?**
-
-Il sistema riceve la notifica di scarto (RicevutaScarto) in PEC, la parse, e aggiorna lo stato della fattura nel CRM con il codice di errore esatto (00313, 00422, 00472, ecc.). Se lo scarto è entro 5 giorni, la fattura può essere risubmittata con lo stesso progressivo. Il CRM mostra lo stato e il motivo, senza che tu debba cercare l'errore a mano.
-
-**I dati delle fatture escono dal nostro ambiente?**
-
-No. L'intero flusso — lettura PEC, parsing, riconciliazione, generazione — gira su hardware dedicato. I dati anagrafici dei clienti, gli importi, le fatture: tutto resta dentro. È lo stesso principio di [ILAI](/benvenuto-ilai): il controllo sui dati non è una funzione, è il fondamento.
+No. Lo SdI accetta fatture anche tramite SDICoop. Ma la PEC è il canale più semplice per le aziende private: non richiede accreditamenti né certificati, e genera ricevute di accettazione e consegna con valore legale. È il canale che già possiedi.
 
 **Come si relaziona questo al software contabile?**
 
-Le fatture parseate sono già strutturate: date, importi, IVA, dati anagrafici, stato. Sono pronte per l'importazione nel software contabile, o per la riconciliazione diretta. Il contabile parte da un dato pulito e aggiornato, non da una casella di posta da controllare.
+Le fatture emesse e ricevute sono parseate e strutturate: date, importi, IVA, dati anagrafici, stato. Sono pronte per l'importazione nel software contabile o per la riconciliazione diretta. Il contabile parte da un dato pulito e aggiornato, non da una casella di posta da controllare.
 
 ---
 
-<em>Correlato: [Il CRM intelligente: quando un CRM diventa un system integrator](/il-crm-intelligente) — il pattern generale: lo stato della compagnia non è un database da alimentare, è il risultato di un sistema che lavora. [Benvenuto ILAI](/benvenuto-ilai) — il fondamento: il controllo sui dati. E [Cloud vs locale: il costo](/cloud-vs-locale-cost) — perché il cloud non funziona per le imprese, e cosa costa davvero un abbonamento.</em>
+<em>Correlato: [Il CRM intelligente: quando un CRM diventa un system integrator](/il-crm-intelligente) — il pattern: lo stato della compagnia non è un database da alimentare, è il risultato di un sistema che lavora. [Benvenuto ILAI](/benvenuto-ilai) — il fondamento: il controllo sui dati. E [Cloud vs locale: il costo](/cloud-vs-locale-cost) — perché il cloud non funziona per le imprese.</em>
