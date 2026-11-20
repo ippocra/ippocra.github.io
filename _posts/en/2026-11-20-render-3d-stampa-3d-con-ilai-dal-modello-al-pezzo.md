@@ -22,7 +22,7 @@ tags: ilai, ai
 
 **Most companies that use 3D printing stop at the model.** They have the CAD, they have the printer, and between the two there is always someone who has to check that the part stands up, that the dimensions are right, that the render actually shows what will be printed. That someone is time — and time is exactly what 3D printing is supposed to save you.
 
-At Ippocra we built an ILAI specialization that covers exactly that stretch: from a model or a drawing, to a verified render and a file ready for the printer.
+At Ippocra we built an ILAI [specialization](/welcome-ilai) that covers exactly that stretch: from a model or a drawing, to a verified render and a file ready for the printer.
 
 ## From model to part: what ILAI does
 
@@ -38,7 +38,7 @@ Told "prepare the render of this part," the agent does this:
 
 ## Why local
 
-3D rendering is one of those cases where local AI is not an ideological choice: it is a quality choice. A Cycles render at 64 samples requires minutes of GPU work. In the cloud, those minutes cost tokens. Locally, they cost energy and compute time — and the model, the materials, the scene stay on your file, not in a data center.
+3D rendering is one of those cases where local AI is not an ideological choice: it is a [quality choice](/local-ai-for-sme). A Cycles render at 64 samples requires minutes of GPU work. In the cloud, those minutes cost tokens. Locally, they cost energy and compute time — and the model, the materials, the scene stay on your file, not in a data center.
 
 This applies to the data as well. A CAD model contains dimensions, tolerances, proprietary geometry. Sending it to the cloud for a render means sending the part somewhere you do not control. Locally, the part does not leave.
 
@@ -48,10 +48,17 @@ A beautiful render is not a correct render. A correct render is one that shows t
 
 ILAI does not stop at the render. It verifies it. Projects the key points of the model into the image space and checks that they are where they should be. Measures brightness, variance, radial structure. If the part reads flat, if a surface does not read, if a detail is too small to be seen — it knows, and corrects.
 
-This is the difference between a render that "looks right" and a render that has been verified. It is the same difference between an [agent](/en/agent-or-chat) and a chat: it is not speed, it is control.
+This is the difference between a render that "looks right" and a render that has been verified. It is the same difference between an [agent](/agent-or-chat) and a chat: it is not speed, it is control.
+
+<p style="text-align:center;margin:2rem 0;">
+  <img src="/assets/images/screenshots/render-3d-cad-model.webp" alt="CAD model of the 3D printer produced by ILAI, imported into Blender" style="max-width:720px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);"/>
+</p>
+<p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.8rem;">
+  The model ILAI produced: geometry, components, tolerances. This is the file that gets imported into Blender and from which the render starts.
+</p>
 
 ## The render in the photo is the result of this process
 
-The printer you see above was not drawn by hand. It was built by ILAI: geometry, materials, lighting, camera. The render ran locally, in Cycles, on the CPU (the GPU was occupied by another job). The STL file was exported and verified.
+The render at the top of this page is not a photo: it is the result of this model, imported into Blender, composed and rendered locally by ILAI. The file was exported as STL and verified before reaching the printer.
 
-If you have a model, a drawing, a part to prepare for 3D printing, [let's talk](/en/contatti).
+If you have a model, a drawing, a part to prepare for 3D printing, [let's talk](/ilai/#contact).
