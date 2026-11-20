@@ -55,5 +55,3 @@ Questa è la differenza tra un render che "sembra giusto" e un render che è sta
 La stampante che vedi qui sopra non è stata disegnata a mano. È stata costruita da ILAI: geometria, materiali, illuminazione, camera. Il rendering è girato in locale, in Cycles, sulla CPU (la GPU era occupata da un altro lavoro). Il file STL è stato esportato e verificato.
 
 Se hai un modello, un disegno, un pezzo da preparare per la stampa 3D, [parliamone](/contatti).
-
-<em>Correlato:</em> <a href="/creare-video-ai-in-locale">Creare video con AI in locale</a> · <a href="/bilbo-lasentinella-sulla-montagna">Bilbo, la sentinella</a>

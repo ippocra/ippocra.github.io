@@ -55,5 +55,3 @@ This is the difference between a render that "looks right" and a render that has
 The printer you see above was not drawn by hand. It was built by ILAI: geometry, materials, lighting, camera. The render ran locally, in Cycles, on the CPU (the GPU was occupied by another job). The STL file was exported and verified.
 
 If you have a model, a drawing, a part to prepare for 3D printing, [let's talk](/en/contatti).
-
-<em>Related:</em> <a href="/en/create-video-ai-locally">Creating video with local AI</a> · <a href="/en/bilbo-the-sentinel-on-the-mountain">Bilbo, the sentinel</a>
