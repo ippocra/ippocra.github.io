@@ -22,9 +22,20 @@ existing_urls = Set.new(doc_content.scan(/<loc>(.*?)<\/loc>/).flatten)
 # Pattern: ilai/**/*.html, en/ilai/**/*.html, ippo/**/*.html
 missing = []
 
+# Redirect stubs (meta-refresh pages for retired URLs) are noindex and must
+# never be added to the sitemap.
+redirect_stub_files = Set.new(%w[
+  ilai/cosa-fa/index.html
+  en/ilai/cosa-fa/index.html
+  en/ilai/what-ilai-does/index.html
+  el/ilai/cosa-fa/index.html
+  el/en/ilai/what-ilai-does/index.html
+])
+
 ['ilai', 'en/ilai', 'ippo'].each do |prefix|
   Dir.glob(File.join(site_dir, prefix, '**', '*.html')).each do |file|
     rel = file.sub(site_dir, '').sub(/^\//, '')
+    next if redirect_stub_files.include?(rel)
     url = "https://ippocra.com/#{rel}"
     url = url.sub(/\/index\.html$/, '/')
     missing << url unless existing_urls.include?(url)
@@ -129,7 +140,21 @@ end
 # strip them explicitly regardless of local build state.
 %w[
   /el/come-visualizzare-i-referti-medici-di-imaging-diagnostico-directamente-online
-  /el/come-visualizzare
+  /el/come-visualizare
+].each do |p|
+  u = "https://ippocra.com#{p}"
+  dead_entries << u if existing_urls.include?(u)
+end
+
+# ── Strip redirect stubs from sitemap (2026-11-19) ─────────────────────────
+# Old ILAI URLs kept as meta-refresh redirect stubs (noindex, follow) must
+# NOT appear in the sitemap: they're transitional, not canonical pages.
+%w[
+  /ilai/cosa-fa/
+  /en/ilai/cosa-fa/
+  /en/ilai/what-ilai-does/
+  /el/ilai/cosa-fa/
+  /el/en/ilai/what-ilai-does/
 ].each do |p|
   u = "https://ippocra.com#{p}"
   dead_entries << u if existing_urls.include?(u)
