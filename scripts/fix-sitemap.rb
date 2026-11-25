@@ -18,12 +18,16 @@ abort "Sitemap not found at #{sitemap_path}" unless File.exist?(sitemap_path)
 doc_content = File.read(sitemap_path)
 existing_urls = Set.new(doc_content.scan(/<loc>(.*?)<\/loc>/).flatten)
 
-# Find ILAI and Ippo pages in _site
-# Pattern: ilai/**/*.html, en/ilai/**/*.html, ippo/**/*.html
-missing = []
-
 # Redirect stubs (meta-refresh pages for retired URLs) are noindex and must
 # never be added to the sitemap.
+#
+# Detection is CONTENT-BASED, not path-based: a redirect stub is any built
+# .html whose head carries a meta-refresh (or a location= script) pointing at
+# the canonical URL. jekyll-redirect-from emits these for every `redirect_from`
+# entry regardless of where the source lives (flagship post, ILAI page, …), so
+# a hardcoded path list will always miss the next one (this was the A12
+# bug — the list only covered ILAI stubs, so the 7 flagship stubs under
+# /come-visualizare* leaked back in via the "add missing" step below).
 redirect_stub_files = Set.new(%w[
   ilai/cosa-fa/index.html
   en/ilai/cosa-fa/index.html
@@ -32,17 +36,17 @@ redirect_stub_files = Set.new(%w[
   el/en/ilai/what-ilai-does/index.html
 ])
 
-['ilai', 'en/ilai', 'ippo'].each do |prefix|
-  Dir.glob(File.join(site_dir, prefix, '**', '*.html')).each do |file|
-    rel = file.sub(site_dir, '').sub(/^\//, '')
-    next if redirect_stub_files.include?(rel)
-    url = "https://ippocra.com/#{rel}"
-    url = url.sub(/\/index\.html$/, '/')
-    missing << url unless existing_urls.include?(url)
-  end
+def redirect_stub?(abs_path)
+  return false unless File.exist?(abs_path)
+  # Redirect stubs are tiny; don't read large real pages.
+  return false if File.size(abs_path) > 4096
+  content = File.read(abs_path)
+  content =~ /http-equiv=["']?refresh/ || content =~ /<script>location\s*=/
 end
 
-missing.uniq!
+# NOTE: the actual `missing` list is computed AFTER the dead-entry strip (see
+# "Add missing pages" below) so it can never re-add a URL that the strip just
+# removed. Computing it up-front was the A12 re-leak.
 
 # ── Trailing-slash dedup ────────────────────────────────────────────────────
 # If both /ippo and /ippo/ exist in sitemap, strip the trailing-slash version
@@ -174,9 +178,25 @@ unless dead_entries.empty?
 end
 
 # ── Add missing pages ───────────────────────────────────────────────────────
+# Computed AFTER the dead-entry strip (see above) so a stripped URL can never be
+# re-added. Collect real ILAI/Ippo pages (skipping redirect stubs by content),
+# de-dup against the current sitemap, and append.
+
+missing = []
+['ilai', 'en/ilai', 'ippo'].each do |prefix|
+  Dir.glob(File.join(site_dir, prefix, '**', '*.html')).each do |file|
+    rel = file.sub(site_dir, '').sub(/^\//, '')
+    next if redirect_stub_files.include?(rel)
+    next if redirect_stub?(file)
+    url = "https://ippocra.com/#{rel}"
+    url = url.sub(/\/index\.html$/, '/')
+    missing << url unless existing_urls.include?(url)
+  end
+end
+missing.uniq!
 
 if missing.empty?
-  puts "Sitemap already includes all ILAI and Ippo pages."
+  puts "Sitemap already includes all ILAI and Ippo pages (no redirect stubs re-added)."
   exit 0
 end
 
