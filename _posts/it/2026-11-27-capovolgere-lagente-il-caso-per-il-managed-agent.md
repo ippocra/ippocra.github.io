@@ -14,10 +14,10 @@ tags: ilai, ai
 ---
 
 <p style="text-align:center;">
-  <img src="/assets/images/screenshots/managed-agent-orchestra-director.webp" alt="Il direttore d'orchestra che alza la bacchetta: il momento in cui il violino prende il solo. Illustrazione piatta, tre colori." style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
+  <img src="/assets/images/screenshots/managed-agent-orchestra-director.webp" alt="Il direttore d'orchestra che alza la bacchetta per dare spazio al violino nel suo solo. Illustrazione piatta, tre colori." style="max-width:920px;width:100%;border-radius:12px;box-shadow:0 4px 24px rgba(15,59,46,0.10);margin:1.5rem 0;"/>
 </p>
 <p style="text-align:center;font-size:0.92rem;color:#5b6b63;margin-top:-0.6rem;">
-  Il direttore non suona. Decide il momento in cui il violino prende il solo. È così che funziona un managed agent.
+  Il direttore non suona. Segnala al violino il momento del suo solo. È così che funziona un managed agent.
 </p>
 
 # Due direzioni opposte
@@ -58,6 +58,6 @@ Questo non è un difetto. È il punto. La robustezza di un managed agent non sta
 
 # Chi guida?
 
-In un'orchestra il direttore non suona. Decide il momento in cui il violino prende il solo, tiene il tempo, e assicura che l'insieme resti coeso. Il solo è del violino — ma è il direttore che lo rende possibile.
+In un'orchestra il direttore non suona. Tiene il tempo, segnala al violino il momento del suo solo, e assicura che l'insieme resti coeso. Il solo è del violino — ma è il direttore che lo rende possibile.
 
 Un managed agent è un'orchestra. Il nucleo deterministico è il direttore. L'LLM è il violino. E il resto dell'insieme è tutto il codice che fa il lavoro, ogni giorno, senza chiedere permesso.
