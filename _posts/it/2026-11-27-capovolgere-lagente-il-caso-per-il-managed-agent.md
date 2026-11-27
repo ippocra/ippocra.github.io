@@ -36,21 +36,21 @@ Il nucleo deterministico di un managed agent non è una piattaforma. Non cerca d
 
 La differenza con l'agentic software è proprio qui: lì il modello decide *quando* e *cosa* chiamare, dentro uno spazio di possibilità aperto; qui lo spazio è chiuso, il codice sa cosa sta facendo e chiede aiuto soltanto quando non può procedere da solo. È il rovescio di un [agente o una chat](/agente-o-chat): non il modello che corre libero, ma il lavoro che segue un percorso e che, nei punti giusti, si affida a un'intelligenza.
 
-# Comportamento da modello addestrato, senza addestrarlo
+# Comportamento da modello fine-tuned, senza fine-tuning
 
-Questo è il punto che ci tiene svegli.
+Questo è il punto che conta davvero.
 
-Un modello addestrato per un compito *conosce* il dominio: le sue risposte sono state modellate per rispondere in un certo modo, con un certo registro, per un certo scopo. Ma addestrarlo costa: dati, GPU, tempo, e un modello che invecchia ogni volta che il modello di base cambia.
+Un modello fine-tuned *conosce* il dominio: le sue risposte sono state modellate per rispondere in un certo modo, con un certo registro, per un certo compito. Ma il fine-tuning costa: dati, GPU, tempo, e un modello che invecchia ogni volta che il modello di base cambia.
 
-Il managed agent ottiene lo stesso effetto **senza toccare il modello.** Il codice costruisce il contesto giusto, fissa i vincoli sulla risposta, valida il risultato e ha già pronto un piano alternativo se l'LLM sbaglia. Il modello non *conosce* il dominio: ci viene *condotto*. Stesso comportamento specializzato in uscita, zero costi di addestramento.
+Il managed agent ottiene lo stesso effetto **senza toccare il modello.** Il codice costruisce il contesto giusto, fissa i vincoli sulla risposta, valida il risultato e ha già pronto un piano alternativo se l'LLM sbaglia. Il modello non *conosce* il dominio: ci viene *condotto*. Stesso comportamento specializzato in uscita, zero costi di fine-tuning.
 
-È la differenza tra formare un musicista e dare a un musicista esperto il coperto, la partitura e un direttore che lo tiene in linea.
+È la differenza tra formare un musicista e dare a un musicista esperto il coperto, la partitura e un direttore che lo guida.
 
 # Il limite, detto chiaro
 
 L'analogia ha un bordo, e vale la pena segnalarlo.
 
-Addestrare un modello cambia la sua *natura*: il modello cambia. Lo scrigno non cambia nulla. Forma il contesto, valida la risposta, gestisce la via d'uscita — ma il modello resta quello che è. Un modello addestrato *conosce* il dominio; un modello condotto da uno scrigno *viene guidato dentro* il dominio.
+Un fine-tuning cambia la *natura* del modello: il modello cambia. Lo scrigno non cambia nulla. Forma il contesto, valida la risposta, gestisce la via d'uscita — ma il modello resta quello che è. Un modello fine-tuned *conosce* il dominio; un modello condotto da uno scrigno *viene guidato dentro* il dominio.
 
 Il che significa che uno scrigno è buono solo quanto i suoi prompt, la sua validazione e la sua via d'uscita. Se il modello risponde male e la validazione non se ne accorge, il managed agent eredita l'errore. La robustezza non viene dal modello: viene dal codice che lo circonda.
 
